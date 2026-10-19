@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>岳阳 3 日轻松游 · 国庆活动版 | 如何去远行</title>
+<meta name="description" content="岳阳3日轻松游国庆活动版：行程与国庆活动强关联，每场活动独立卡（真实性/参加方式/交通/安全/时间/地点/官方渠道），烧烤与岳阳美食清单含位置与人均消费。A5圆角卡片，打印即用。">
+<style>
+:root{
+  --night:#0f172a; --navy:#1e3a8a; --blue:#2563eb; --sky:#0ea5e9;
+  --orange:#ea580c; --amber:#f59e0b; --green:#16a34a; --red:#dc2626;
+  --ink:#111827; --muted:#64748b; --bg:#eef2f7; --card:#fff;
+  --grad:linear-gradient(90deg,#1e3a8a,#2563eb,#0ea5e9);
+  --grad-cover:linear-gradient(160deg,#0f172a 0%,#1e3a8a 62%,#7c2d12 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+img{max-width:100%;display:block}
+
+.deck{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:22px;padding:28px 14px}
+.sheet{width:148mm;height:210mm;background:var(--card);border-radius:20px;overflow:hidden;box-shadow:0 10px 40px rgba(15,23,42,.14);page-break-after:always;display:flex;flex-direction:column;padding:9mm 8mm 10mm;position:relative}
+.topbar{position:absolute;top:0;left:0;right:0;height:3.5mm;background:var(--grad)}
+
+.phead{display:flex;align-items:center;gap:8px;margin-bottom:7px;padding-top:1mm}
+.pnum{width:26px;height:26px;flex:0 0 26px;border-radius:8px;background:var(--grad);color:#fff;font-size:12.5px;font-weight:800;display:flex;align-items:center;justify-content:center;letter-spacing:.2px;box-shadow:0 2px 8px rgba(37,99,235,.35)}
+.ptitle{font-size:17px;font-weight:800;letter-spacing:-.3px;line-height:1.2;color:var(--night)}
+.ptag{margin-left:auto;font-size:8.5px;font-weight:700;color:var(--muted);letter-spacing:1.2px;text-transform:uppercase;background:#f1f5f9;border-radius:999px;padding:2.5px 8px;white-space:nowrap}
+.divider{height:3px;border-radius:2px;background:var(--grad);margin:0 0 8px}
+
+.sec{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:800;letter-spacing:.3px;color:#fff;background:var(--grad);border-radius:999px;padding:3.5px 12px;margin:9px 0 5px}
+.sec.red{background:linear-gradient(90deg,#b91c1c,#dc2626)}
+.sec.green{background:linear-gradient(90deg,#15803d,#16a34a)}
+.sec.orange{background:linear-gradient(90deg,#c2410c,#f97316)}
+
+ul.tight{list-style:none;display:grid;gap:4px}
+ul.tight li{font-size:11.5px;padding-left:14px;position:relative}
+ul.tight li::before{content:"•";position:absolute;left:2px;color:var(--blue);font-weight:900}
+ul.tight li b{color:var(--night);font-weight:800}
+.hl{color:var(--orange);font-weight:800}
+
+.tbl{width:100%;border-collapse:collapse;font-size:10.5px;margin-top:2px;border-radius:10px;overflow:hidden}
+.tbl th{background:var(--grad);color:#fff;text-align:left;padding:5px 8px;font-size:10px;font-weight:800;letter-spacing:.3px}
+.tbl td{padding:5px 8px;border-top:1px solid #e2e8f0;vertical-align:top;line-height:1.5;background:#fff}
+.tbl tr:nth-child(even) td{background:#f8fafc}
+.tbl td b{color:var(--navy);font-weight:800}
+.tbl .price{color:var(--orange);font-weight:800}
+.good{color:var(--green);font-weight:800}.bad{color:var(--red);font-weight:800}
+
+/* cover */
+.cover{background:var(--grad-cover);color:#fff;justify-content:space-between}
+.cover .badge{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:1px;padding:3.5px 10px;border-radius:999px;background:rgba(249,115,22,.9);border:none;margin-right:4px;color:#fff;box-shadow:0 2px 8px rgba(249,115,22,.4)}
+.cover .badge.b2{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3)}
+.cover h1{font-size:34px;font-weight:800;letter-spacing:-.8px;line-height:1.18;margin:12px 0 6px}
+.cover .cv-sub{font-size:11.5px;color:#cbd5e1;line-height:1.9}
+.cover .cv-sub b{color:#fbbf24;font-weight:800}
+.hlcard{display:grid;gap:7px;margin-top:12px}
+.hlcard .row{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:9px 12px}
+.hlcard .row .el{font-size:9px;color:#cbd5e1;letter-spacing:.4px;flex:0 0 104px}
+.hlcard .row .en{font-size:14px;font-weight:800;color:#fbbf24;letter-spacing:.2px}
+.hlcard .row .en.red{color:#f87171}
+.cv-foot{font-size:8.5px;color:#94a3b8;border-top:1px solid rgba(255,255,255,.16);padding-top:6px}
+.cv-foot b{color:#f1f5f9}
+
+/* kv blocks */
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:3px}
+.kv .kvx{background:#fff;border-left:4px solid var(--blue);border-radius:10px;padding:7px 9px;box-shadow:0 1px 4px rgba(15,23,42,.08)}
+.kv .kvx b{font-size:11.5px;display:block;color:var(--navy);font-weight:800;margin-bottom:2px}
+.kv .kvx span{font-size:10px;color:#374151;line-height:1.55}
+
+/* steps */
+.steps{display:grid;gap:5px;margin-top:3px}
+.stp{display:flex;gap:7px;align-items:flex-start;font-size:11px;padding:6px 8px;background:#fff;border-left:4px solid var(--sky);border-radius:10px;line-height:1.55;box-shadow:0 1px 4px rgba(15,23,42,.08)}
+.stp b{flex:0 0 88px;color:var(--navy);font-weight:800;font-size:11px}
+.stp .s{color:var(--sky);flex:0 0 10px;font-weight:900}
+
+.warn{background:#fef2f2;border:2px solid var(--red);border-radius:12px;padding:8px 12px;text-align:center;margin-top:8px}
+.warn b{color:var(--red);font-size:14px;font-weight:900;letter-spacing:.5px}
+.warn span{display:block;font-size:10px;color:#b91c1c;margin-top:2px}
+
+/* event source */
+.src{display:flex;gap:5px;align-items:flex-start;background:#f0f9ff;border:1px solid #bae6fd;border-radius:10px;padding:6px 9px;margin-top:8px;font-size:9.5px;color:#075985;line-height:1.6}
+.src b{color:#0369a1;font-weight:800;flex:0 0 60px}
+.link{color:#1d4ed8;font-weight:700;word-break:break-all}
+.gzh{display:inline-block;background:#eff6ff;border:1px solid #bfdbfe;color:#1e40af;border-radius:6px;padding:0 5px;font-size:9px;font-weight:700}
+
+.evt-tag{display:inline-block;font-size:9px;font-weight:800;border-radius:999px;padding:2px 8px;margin-right:4px}
+.t-free{background:#dcfce7;color:#166534}
+.t-fee{background:#fef3c7;color:#92400e}
+.t-near{background:#fce7f3;color:#9d174d}
+.t-far{background:#f1f5f9;color:#334155}
+
+.pfoot{position:absolute;bottom:5mm;left:8mm;right:8mm;display:flex;justify-content:space-between;font-size:8.5px;color:var(--muted);border-top:1px dashed #cbd5e1;padding-top:3px}
+.pfoot b{color:var(--navy)}
+
+/* print */
+@page{size:A5;margin:0}
+@media print{
+  body{background:#fff}
+  .deck{display:block;padding:0;gap:0}
+  .sheet{margin:0;box-shadow:none;border-radius:0;page-break-after:always}
+  .sheet:last-child{page-break-after:auto}
+  .no-print{display:none!important}
+}
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/my/bus/3/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="岳阳 3 日轻松游 · 国庆活动版 | 如何去远行">
+    <meta property="og:description" content="岳阳3日轻松游国庆活动版：行程与国庆活动强关联，每场活动独立卡（真实性/参加方式/交通/安全/时间/地点/官方渠道），烧烤与岳阳美食清单含位置与人均消费。A5圆角卡片，打印即用。">
+    <meta property="og:url" content="https://worldstip.com/my/bus/3/">
+    <meta property="og:image" content="https://worldstip.com/assets/og-cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="岳阳 3 日轻松游 · 国庆活动版 | 如何去远行">
+    <meta name="twitter:description" content="岳阳3日轻松游国庆活动版：行程与国庆活动强关联，每场活动独立卡（真实性/参加方式/交通/安全/时间/地点/官方渠道），烧烤与岳阳美食清单含位置与人均消费。A5圆角卡片，打印即用。">
+    <meta name="twitter:image" content="https://worldstip.com/assets/og-cover.png">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "岳阳 3 日轻松游 · 国庆活动版 | 如何去远行",
+      "url": "https://worldstip.com/my/bus/3/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+
+<div class="no-print" style="text-align:center;padding:14px;background:#0f172a;color:#fff">
+  <b style="font-size:14px">岳阳 3 日轻松游 · 国庆活动版 · 共 16 张</b>
+  <span style="font-size:12px;margin-left:10px;opacity:.8">行程卡 3 张 + 活动卡 10 张 + 美食卡 2 张 + 总览 1 张 · 点「打印」选 A5 纸张每张一页</span>
+  <button onclick="window.print()" style="margin-left:12px;background:#f97316;border:none;color:#fff;border-radius:999px;padding:8px 18px;font-size:13px;font-weight:800;cursor:pointer">打印 / PDF</button>
+</div>
+
+<div class="deck">
+
+<!-- P1 封面 -->
+<section class="sheet cover">
+  <div>
+    <div><span class="badge">轻松 3 日</span><span class="badge b2">国庆活动版</span><span class="badge b2">烧烤必吃</span></div>
+    <h1>岳阳 3 日<br>轻松游</h1>
+    <p class="cv-sub">9/30 晚到 · 10/3 返程 · 全程不赶<br>核心：<b>落地烧烤</b> / <b>岳阳楼</b> / <b>洞庭湖慢走</b> / <b>国庆活动全收录</b></p>
+    <div class="hlcard">
+      <div class="row"><span class="el">烧烤第一站</span><span class="en red">炮台山夜市</span></div>
+      <div class="row"><span class="el">必打卡景点</span><span class="en">岳阳楼 · 巴陵广场</span></div>
+      <div class="row"><span class="el">国庆重头戏</span><span class="en">江豚湾音乐季 · 烟花 · 漫展</span></div>
+      <div class="row"><span class="el">新玩法</span><span class="en">七星雪·星光雪域 滑雪馆</span></div>
+    </div>
+  </div>
+  <div class="cv-foot"><b>WorldStip · 如何去远行</b> · 国庆活动信息以官方渠道与现场公示为准（P4 总览可速查）</div>
+</section>
+
+<!-- P2 Day1-2 行程+活动关联 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">1</div><div class="ptitle">Day 1-2 · 落地开吃 + 岳阳楼</div><div class="ptag">9/30-10/1</div></div>
+  <div class="divider"></div>
+  <div class="sec orange">Day 1 · 9/30 晚 · 落地就吃烧烤</div>
+  <ul class="tight">
+    <li><b>入住</b>：岳阳楼附近（洞庭北路，靠景区看湖）或东茅岭步行街（吃喝热闹），两处相距约 2-3 公里</li>
+    <li><b>第一顿</b>：直奔<b>炮台山夜市</b>（岳阳烧烤第一名片，一条巷子全是店）——<b>柒酒烤肉</b>、<b>二狗烧烤</b>（大串牛筋、牛油招牌）；<b>老店</b>：老婆婆烤肉（民本广场正对面，30 多年只烤猪肉串）</li>
+  </ul>
+  <div class="sec">Day 2 · 10/1 · 岳阳楼 + 湖边慢走</div>
+  <div class="steps">
+    <div class="stp"><span class="s">1</span><b>上午 · 岳阳楼</b>8:00 开门就进躲人流；提前公众号预约（约 70 元）；背《岳阳楼记》可免票（见 P6）</div>
+    <div class="stp"><span class="s">2</span><b>中午 · 巴陵全鱼宴</b>景区对面老巴陵鱼馆：剁椒鱼头、银鱼蒸蛋</div>
+    <div class="stp"><span class="s">3</span><b>下午 · 湖边慢走</b>汴河街闲逛 → 巴陵广场看洞庭湖 → 飘尾/湖边等日落</div>
+    <div class="stp"><span class="s">4</span><b>晚上 · 双活动可选</b>《今上岳阳楼》夜游 + "月满华裳"国风音乐节（见 P6）；或去二次方漫展（见 P7）；夜市嗦螺哥 + 蔡师傅豆皮收尾</div>
+  </div>
+  <div class="sec green">国庆活动关联</div>
+  <ul class="tight">
+    <li><span class="evt-tag t-near">P6</span>岳阳楼《今上岳阳楼》夜游（138 元）＋国风音乐节（免费），在酒店步行范围</li>
+    <li><span class="evt-tag t-near">P7</span>二次方动漫展 S2 · 10/1 当天（39 元起），漫友可去</li>
+    <li><span class="evt-tag t-far">P12</span>河泊潭火把烟花夜（10/1 开演）较远，自驾可选，回程晚需留意</li>
+  </ul>
+  <div class="sec green">轻松提示</div>
+  <ul class="tight">
+    <li>Day 2 全程步行可达（岳阳楼、汴河街、巴陵广场、洞庭南路连成一片），不用赶车</li>
+    <li>烧烤普遍偏辣，<b>微辣起步</b>；牛油必点，咬开爆汁</li>
+  </ul>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游</span><span>02 / 16</span></div>
+</section>
+
+<!-- P3 Day3-4 行程+活动关联 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">2</div><div class="ptitle">Day 3-4 · 滑雪 / 君山 + 返程</div><div class="ptag">10/2-10/3</div></div>
+  <div class="divider"></div>
+  <div class="sec">Day 3 · 10/2 · 主方案 A：室内滑雪</div>
+  <div class="steps">
+    <div class="stp"><span class="s">1</span><b>上午</b>自然醒，吃碗鱼粉再出门</div>
+    <div class="stp"><span class="s">2</span><b>中午 · 滑雪馆</b>打车约 30 分钟到临港高新区；提前线上买票（218/248 元，1 小时票 98 元，陪同 20 元）</div>
+    <div class="stp"><span class="s">3</span><b>玩 2-3 小时</b>新手初级道，雪服雪板租赁齐全；9:30-17:30，16:00 停入园</div>
+    <div class="stp"><span class="s">4</span><b>晚上</b>回市区炮台山烧烤二刷；市区活动：洞庭南路游园会 / 洞庭湖小镇非遗（见 P14）</div>
+  </div>
+  <div class="sec orange">Day 3 · 替代方案 B：君山线（活动最多）</div>
+  <ul class="tight">
+    <li><b>B1 君山岛</b>：岳阳楼码头坐船约 30 分钟上岛，叠加<b>《君灵记》剧本游</b>（见 P10）；下午 3 点前返程避开排队</li>
+    <li><b>B2 麋鹿苑 / 江豚湾展陈馆</b>：福鹿游园会 + 花灯手作（见 P11），下午逛</li>
+    <li><b>B3 傍晚 · 江豚湾音乐季</b>：18:00 起免费听歌看市集（见 P5），君山线顺路，晚上 21:30 结束返程</li>
+    <li><b>B4 大熊猫苑</b>：国宝萌友季（见 P13），与圣安寺、花语世界串联</li>
+  </ul>
+  <div class="sec">Day 4 · 10/3 · 返程 + 顺路活动</div>
+  <ul class="tight">
+    <li>睡懒觉 → 吃碗鱼粉 → 买<b>君山银针、银鱼干</b>伴手礼 → 返程</li>
+    <li><span class="evt-tag t-near">P8</span>若从<b>岳阳火车站</b>走："漫叙"漫展 10/3 就在火车站旁酒店（29.9 元起），候车间隙可逛</li>
+    <li><span class="evt-tag t-near">P9</span>星辰 ACG 漫展在 10/4（岳阳大酒店），留到 10/4 走的人可去</li>
+  </ul>
+  <div class="warn"><b>国庆提醒</b><span>岳阳楼建议早去 + 提前线上预约；滑雪票提前线上买；烧烤晚高峰排队，可错峰 17:00 开吃</span></div>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游</span><span>03 / 16</span></div>
+</section>
+
+<!-- P4 活动总览 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">3</div><div class="ptitle">国庆活动总览 · 速查</div><div class="ptag">10/1-10/7</div></div>
+  <div class="divider"></div>
+  <table class="tbl">
+    <tr><th style="width:34%">活动</th><th style="width:16%">时间</th><th style="width:30%">地点</th><th>费用 / 卡</th></tr>
+    <tr><td><b>江豚湾音乐季</b></td><td>10/1-7 晚</td><td>君山·微笑绿洲营地</td><td><span class="good">免费</span> · P5</td></tr>
+    <tr><td><b>《今上岳阳楼》夜游</b></td><td>国庆每晚</td><td>岳阳楼景区</td><td>138 元 · P6</td></tr>
+    <tr><td><b>"月满华裳"国风音乐节</b></td><td>9/24-10/7</td><td>洞庭渔火季舞台</td><td><span class="good">免费</span> · P6</td></tr>
+    <tr><td><b>二次方动漫展 S2</b></td><td>10/1</td><td>科德职工篮球中心</td><td>39 元起 · P7</td></tr>
+    <tr><td><b>"漫叙"动漫嘉年华</b></td><td>10/3</td><td>与鹿美美酒店(火车站店)</td><td>29.9 元起 · P8</td></tr>
+    <tr><td><b>星辰 ACG 嘉年华</b></td><td>10/4</td><td>岳阳大酒店</td><td>45 元起 · P9</td></tr>
+    <tr><td><b>君山岛《君灵记》剧本游</b></td><td>9/24-10/7</td><td>君山岛</td><td>门票+船票 · P10</td></tr>
+    <tr><td><b>麋鹿苑福鹿游园会</b></td><td>10/1-8</td><td>洞庭湖麋鹿苑</td><td>入园费 · P11</td></tr>
+    <tr><td><b>江豚湾展陈馆双节活动</b></td><td>9/25-10/7</td><td>"守护好一江碧水"展陈馆</td><td>打卡赠礼 · P11</td></tr>
+    <tr><td><b>河泊潭火把烟花夜</b></td><td>10/1-5</td><td>屈原区·河泊潭</td><td>赠票 30 元 · P12</td></tr>
+    <tr><td><b>大熊猫苑国宝萌友季</b></td><td>9/25-10/7</td><td>南湖新区·大熊猫苑</td><td>68 元 · P13</td></tr>
+    <tr><td><b>洞庭南路月光游园会</b></td><td>国庆期间</td><td>洞庭南路</td><td><span class="good">免费</span> · P14</td></tr>
+    <tr><td><b>洞庭湖小镇非遗手作</b></td><td>9/25-10/7</td><td>洞庭湖小镇</td><td>单项收费 · P14</td></tr>
+    <tr><td><b>洋沙湖森岛精灵季</b></td><td>9/25-10/7</td><td>洋沙湖·溪龙里</td><td>门票 · P14</td></tr>
+  </table>
+  <div class="sec orange">按天怎么选</div>
+  <ul class="tight">
+    <li><b>10/1</b>：岳阳楼白天 + 夜游/国风音乐节（P6），或二次方漫展（P7）</li>
+    <li><b>10/2</b>：君山线（P10/P11）+ 晚场江豚湾音乐季（P5），或滑雪 + 城区（P14）</li>
+    <li><b>10/3</b>：返程前顺路漫叙漫展（P8，火车站旁）</li>
+    <li><b>河泊潭烟花（P12）</b>自驾可拆半天，适合 10/1 或 10/2 下午出发、晚上看火把烟花</li>
+  </ul>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游 · 2026-09 整理</span><span>04 / 16</span></div>
+</section>
+
+<!-- P5 江豚湾音乐季 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">4</div><div class="ptitle">江豚湾音乐季</div><div class="ptag">音乐会</div></div>
+  <div class="divider"></div>
+  <div class="kv">
+    <div class="kvx"><b>时间</b><span>10/1-10/7 每晚<br>18:00 预热 · 18:30 开演 · 21:00-21:30 全民K歌</span></div>
+    <div class="kvx"><b>地点</b><span>君山区·微笑绿洲生态营地（江豚湾生态体育公园，长江大草坪）</span></div>
+    <div class="kvx"><b>费用</b><span><span class="good">免费入场</span>，无门槛</span></div>
+    <div class="kvx"><b>主办</b><span>君山城投集团 · 承办：岳阳青萝文旅</span></div>
+  </div>
+  <div class="sec">看点</div>
+  <ul class="tight">
+    <li>每晚<b>双乐队 + 双唱作人</b>：摇滚 / 民谣 / 流行 / 国风轮番上演，观众席地而坐看长江</li>
+    <li><b>全民K歌</b>：21:00 后主舞台开放，每人限唱 1 首（≤5 分钟），唱得精彩送麋鹿苑门票、江豚文创</li>
+    <li><b>现场氛围</b>：江豚主题打卡点、江边市集（美食/文创/精酿），可能有"娃娃雨"随机福利</li>
+    <li>白天可逛：江豚湾景区"守护好一江碧水"展陈馆（见 P11）</li>
+  </ul>
+  <div class="sec orange">交通与安全</div>
+  <ul class="tight">
+    <li><b>怎么去</b>：在君山长江岸线，建议打车/自驾，导航"微笑绿洲生态营地"；晚间散场约车紧张，<b>提前约车或拼车</b></li>
+    <li><b>安全</b>：草坪席地场，自带垫子；江边夜风大、降温快，带外套；舞台周边有警戒区，听从引导、勿拥挤推搡</li>
+    <li><b>天气</b>：遇恶劣天气关注官方通知，安排以现场为准</li>
+  </ul>
+  <div class="src"><b>官方渠道</b><span>无独立官网/公众号；官方发布见<b>「岳阳发布」</b>政务号及红网、华声在线、新湖南、中国旅游新闻网（2026/9/22-26 报道），活动以现场公示为准</span></div>
+  <div class="warn"><b>免费但早去</b><span>国庆草坪场地人流大，建议 17:30 前到占位，顺带看江畔日落</span></div>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游</span><span>05 / 16</span></div>
+</section>
+
+<!-- P6 岳阳楼夜游+国风音乐节 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">5</div><div class="ptitle">岳阳楼《今上岳阳楼》夜游 + 国风音乐节</div><div class="ptag">夜游演艺</div></div>
+  <div class="divider"></div>
+  <div class="kv">
+    <div class="kvx"><b>《今上岳阳楼》夜游</b><span>国庆期间每晚（具体场次以景区当日公示为准）<br>成人 <span class="price">138 元</span> / 优待 <span class="price">98 元</span></span></div>
+    <div class="kvx"><b>"月满华裳"国风音乐节</b><span>9/24-10/7 · 洞庭渔火季主舞台（岳阳楼往西）<br><span class="good">免费</span>观演</span></div>
+    <div class="kvx"><b>白天岳阳楼</b><span>冬令时 7:30-18:00（主楼 17:45 停）；成人 70 元 / 优惠 35 元</span></div>
+    <div class="kvx"><b>背记免票</b><span>支付宝搜<b>「岳阳楼智能背记」</b>，5 分钟内背完 80 分以上，当日免票</span></div>
+  </div>
+  <div class="sec">怎么参加</div>
+  <ul class="tight">
+    <li><b>线上预约</b>：微信搜公众号<b>「岳阳市岳阳楼君山岛景区」</b>→ 购门票 → 个人购票；或官网 <span class="link">yueyanglou.com</span>；携程等平台亦可</li>
+    <li><b>背记免票</b>：非法定节假日 8:00/12:00 抢号（各 100 个），国庆按法定节假日 8:00/11:00/13:00 放号（各 100 个），需本人身份证签到，评分≥80 当日免票</li>
+    <li><b>夜游票</b>：与白天门票分开购买，先约白天场次再约夜场</li>
+  </ul>
+  <div class="sec orange">交通与安全</div>
+  <ul class="tight">
+    <li><b>交通</b>：火车站乘 10/15/22 路公交直达（约 7 分钟车程）；岳阳东站打车约 30 分钟；自驾导航"岳阳楼景区"</li>
+    <li><b>安全</b>：国庆人流大，提前预约、按预约时段入园；主楼木梯较陡，老人小孩扶稳；夜场散场打车排队，可步行回洞庭北路住宿</li>
+    <li><b>提示</b>：背记名额少且要抢号，想免票提前 1-3 天练熟全文</li>
+  </ul>
+  <div class="src"><b>官方渠道</b><span>公众号「岳阳市岳阳楼君山岛景区」/ 官网 yueyanglou.com / 支付宝小程序「岳阳楼智能背记」；夜游信息参考携程景区页，以景区公示为准</span></div>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游</span><span>06 / 16</span></div>
+</section>
+
+<!-- P7 二次方动漫展 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">6</div><div class="ptitle">二次方动漫展 S2</div><div class="ptag">漫展 · 10/1</div></div>
+  <div class="divider"></div>
+  <div class="kv">
+    <div class="kvx"><b>时间</b><span>2026/10/1（国庆当天）</span></div>
+    <div class="kvx"><b>地点</b><span>科德职工篮球中心（岳阳市内，导航"科德职工篮球中心"）</span></div>
+    <div class="kvx"><b>票价</b><span>39 元起（现场/预售档位以票务页为准）</span></div>
+    <div class="kvx"><b>适合</b><span>国庆当天在市区、想体验漫展氛围的人</span></div>
+  </div>
+  <div class="sec">参加方式</div>
+  <ul class="tight">
+    <li>线上票务平台购票：<b>零玖零展览网（090expo.com）</b>、次元黄页（yunmanzhan.com）等均可查排期与购票入口</li>
+    <li>建议<b>提前线上购票</b>，现场票通常更贵；关注平台是否支持退改</li>
+  </ul>
+  <div class="sec orange">交通与安全</div>
+  <ul class="tight">
+    <li><b>交通</b>：市区内，打车/公交均可；与 Day 2 岳阳楼行程同城，可上午景区、下午漫展</li>
+    <li><b>安全</b>：漫展人多，手机钱包贴身放；cos 道具需过安检，尖锐/长柄道具勿带；室内空调足，带薄外套</li>
+    <li><b>提示</b>：合照先问 coser 意愿；现场购物留好凭证</li>
+  </ul>
+  <div class="src"><b>官方渠道</b><span>无独立官网；票务与排期见零玖零展览网 / 次元黄页（2026/9 排期表），以票务平台与现场公示为准</span></div>
+  <div class="warn"><b>行程关联</b><span>10/1 上午岳阳楼 + 下午漫展，均在市区；晚上可选夜游（P6）</span></div>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游</span><span>07 / 16</span></div>
+</section>
+
+<!-- P8 漫叙漫展 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">7</div><div class="ptitle">"漫叙"动漫游戏嘉年华</div><div class="ptag">漫展 · 10/3</div></div>
+  <div class="divider"></div>
+  <div class="kv">
+    <div class="kvx"><b>时间</b><span>2026/10/3</span></div>
+    <div class="kvx"><b>地点</b><span>与鹿美美酒店（岳阳火车站店）<br>巴陵东路与琵琶王立交桥交叉口</span></div>
+    <div class="kvx"><b>票价</b><span>早鸟 <span class="price">29.9</span> / 预售 45 / 现场 50 / VIP 65</span></div>
+    <div class="kvx"><b>适合</b><span>10/3 返程日，火车站候车间隙顺路逛</span></div>
+  </div>
+  <div class="sec">参加方式</div>
+  <ul class="tight">
+    <li>早鸟/预售票线上买更划算（零玖零展览网等票务平台），<b>早鸟最便宜但要早抢</b></li>
+    <li>现场票 50 元兜底；VIP 含快速通道/礼包，按需购买</li>
+  </ul>
+  <div class="sec orange">交通与安全</div>
+  <ul class="tight">
+    <li><b>交通</b>：就在<b>岳阳火车站旁</b>，步行即达；从岳阳楼片区打车约 15-20 分钟</li>
+    <li><b>安全</b>：同城活动人多，保管财物；排队入场听从工作人员引导</li>
+    <li><b>提示</b>：返程赶车的话预留 1.5-2 小时逛展时间，别误车</li>
+  </ul>
+  <div class="src"><b>官方渠道</b><span>无独立官网；票务与排期见零玖零展览网 2026/10 湖南排期表（2026/9/23），以票务平台与现场公示为准</span></div>
+  <div class="warn"><b>行程关联</b><span>10/3 从岳阳站返程前顺路逛（P3 Day 4），29.9 元起性价比高</span></div>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游</span><span>08 / 16</span></div>
+</section>
+
+<!-- P9 星辰ACG -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">8</div><div class="ptitle">星辰 ACG 动漫嘉年华（第四届）</div><div class="ptag">漫展 · 10/4</div></div>
+  <div class="divider"></div>
+  <div class="kv">
+    <div class="kvx"><b>时间</b><span>2026/10/4</span></div>
+    <div class="kvx"><b>地点</b><span>岳阳大酒店 · 站前西路 1 号（近火车站）</span></div>
+    <div class="kvx"><b>票价</b><span>早鸟普 <span class="price">45</span> / 预售普 55 / 现场普 60<br>预售 VIP 85 / 现场 VIP 90</span></div>
+    <div class="kvx"><b>适合</b><span>行程延到 10/4 或返程日在岳阳站出发的人</span></div>
+  </div>
+  <div class="sec">参加方式</div>
+  <ul class="tight">
+    <li>线上票务平台（零玖零展览网等）购票，早鸟普票 45 元最划算</li>
+    <li>地点在<b>岳阳大酒店</b>（站前西路 1 号），注意与"漫叙"（与鹿美美酒店）不是同一家</li>
+  </ul>
+  <div class="sec orange">交通与安全</div>
+  <ul class="tight">
+    <li><b>交通</b>：近岳阳火车站，步行/短途打车即达；从岳阳楼片区打车约 15-20 分钟</li>
+    <li><b>安全</b>：酒店场地室内，空调足带外套；返程日逛展注意发车时间</li>
+    <li><b>提示</b>：10/4 已是返程日，本卡适合改签晚走或从岳阳站中转的朋友</li>
+  </ul>
+  <div class="src"><b>官方渠道</b><span>无独立官网；票务与排期见零玖零展览网 2026/10 湖南排期表（2026/9/23），以票务平台与现场公示为准</span></div>
+  <div class="warn"><b>行程关联</b><span>本行程 10/3 返程，去 10/4 场需推迟返程；若坚持 10/4 走可上午逛展下午返程</span></div>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游</span><span>09 / 16</span></div>
+</section>
+
+<!-- P10 君山岛剧本游 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">9</div><div class="ptitle">君山岛《君灵记》沉浸式剧本游</div><div class="ptag">君山线 · 9/24-10/7</div></div>
+  <div class="divider"></div>
+  <div class="kv">
+    <div class="kvx"><b>时间</b><span>9/24-10/7 全岛开启（随景区开放时间）</span></div>
+    <div class="kvx"><b>地点</b><span>君山岛景区（"湖山揽月 君灵寻踪"主题）</span></div>
+    <div class="kvx"><b>费用</b><span>君山岛门票 + 船票（门票约 60-80 元，以公众号公示为准）</span></div>
+    <div class="kvx"><b>内容</b><span>全岛剧本任务、一元素斋、猴园互动、水上灯谜</span></div>
+  </div>
+  <div class="sec">怎么玩</div>
+  <ul class="tight">
+    <li><b>登岛</b>：岳阳楼码头坐船约 30 分钟上岛；岛上化身"寻灵者"，按任务解锁剧情</li>
+    <li><b>购票</b>：公众号<b>「岳阳市岳阳楼君山岛景区」</b>→ 购门票 → 选君山岛景区，实名分时预约</li>
+    <li><b>节奏</b>：上午登岛、下午 3 点前返程避开排队；岛上步行多，穿舒适鞋</li>
+  </ul>
+  <div class="sec orange">交通与安全</div>
+  <ul class="tight">
+    <li><b>交通</b>：岳阳楼码头乘船约 30 分钟；船票与门票分开，返程末班船时间现场确认</li>
+    <li><b>安全</b>：湖心岛风大，湖边栈道勿翻越护栏；国庆排队人多，按码头引导分批登船</li>
+    <li><b>提示</b>：天气不好（大风停航）先查码头公告，改走 P3 方案 B4 大熊猫苑</li>
+  </ul>
+  <div class="src"><b>官方渠道</b><span>公众号「岳阳市岳阳楼君山岛景区」；活动信息见红网时刻/岳阳晚报社（2026/9/24 君山双节文旅季发布），以景区公示为准</span></div>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游</span><span>10 / 16</span></div>
+</section>
+
+<!-- P11 君山双节 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">10</div><div class="ptitle">君山双节：麋鹿苑 + 展陈馆 + 鸟语林</div><div class="ptag">游园会</div></div>
+  <div class="divider"></div>
+  <div class="sec">麋鹿苑 "鹿遇双节"福鹿游园会 · 10/1-10/8</div>
+  <ul class="tight">
+    <li><b>地点</b>：洞庭湖麋鹿苑（"长江湿地生命方舟"，占地 403 亩）</li>
+    <li><b>看点</b>：敦煌舞、飞天仙女散花、小丑表演、不倒翁、魔术表演</li>
+    <li><b>费用</b>：入园费以景区公示为准；江豚湾音乐季 K 歌可赢麋鹿苑门票</li>
+  </ul>
+  <div class="sec">江豚湾展陈馆 "月映洞庭·双节同欢" · 9/25-10/7</div>
+  <ul class="tight">
+    <li><b>地点</b>：江豚湾景区"守护好一江碧水"展陈馆</li>
+    <li><b>玩法</b>：中秋花灯墙打卡、玉兔花灯手作、国风游戏"后羿射日"（软质弓箭）</li>
+    <li><b>福利</b>：宣发打卡即赠江豚文创雪糕或小礼品</li>
+  </ul>
+  <div class="sec green">鸟语林亲子抓鸡大赛 · 10/1-10/7</div>
+  <ul class="tight">
+    <li><b>地点</b>：鸟语林旅游度假区（米谷农场）；1.1 米以下 / 65 岁以上 / 现役军人免票</li>
+    <li><b>玩法</b>：亲子组队抓鸡，抓到的土鸡可打包带走或换奖品；旁有萌宠喂食、小火车</li>
+  </ul>
+  <div class="sec orange">交通与安全</div>
+  <ul class="tight">
+    <li><b>交通</b>：均在君山区，建议自驾/打车，导航各园区；麋鹿苑与江豚湾音乐季（P5）可同日串联</li>
+    <li><b>安全</b>：户外活动防晒补水；抓鸡/喂食项目看管好孩子，听现场工作人员指挥</li>
+  </ul>
+  <div class="src"><b>官方渠道</b><span>信息见红网时刻 / 岳阳晚报社 / 网易（2026/9/24-25 君山金秋双节文旅季发布）；公众号以「岳阳发布」及景区现场公示为准</span></div>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游</span><span>11 / 16</span></div>
+</section>
+
+<!-- P12 河泊潭 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">11</div><div class="ptitle">河泊潭菊艺花海 · 火把烟花游园会</div><div class="ptag">烟花 · 游园</div></div>
+  <div class="divider"></div>
+  <div class="kv">
+    <div class="kvx"><b>时间</b><span>9/25-10/8 日间开放（8:30-21:00）<br><b>10/1-10/5 火把晚会 + 烟花秀</b></span></div>
+    <div class="kvx"><b>地点</b><span>屈原管理区 · 河泊潭文化旅游区</span></div>
+    <div class="kvx"><b>门票</b><span>价值 30 元，<span class="good">百万张免费送</span>（转发官方推文领取）</span></div>
+    <div class="kvx"><b>内容</b><span>百亩菊艺花海、巨型昆虫展、丰收晒秋；夜场火把巡游、楚风演艺、"心动五分钟"烟花</span></div>
+  </div>
+  <div class="sec">免费票怎么领</div>
+  <ul class="tight">
+    <li><b>连续 2 天</b>、每天 1 次转发官方指定活动推文至朋友圈，配文<b>"谁和我一起去"</b></li>
+    <li>凭转发记录到<b>河泊潭游客服务中心</b>领票：每人限 1 张、仅限成人、不可代领、截图无效</li>
+    <li><b>提前至少 1 天</b>完成连续 2 天转发（兑票当天转发无效）；领票期 9/25-10/8，每天 8:30-19:30</li>
+    <li>没领到免费票也可现场购票入园（30 元档）</li>
+  </ul>
+  <div class="sec orange">交通与安全</div>
+  <ul class="tight">
+    <li><b>交通</b>：位于屈原管理区，距市区较远，<b>建议自驾/包车</b>，导航"河泊潭文化旅游区"；夜间返程注意车程预留</li>
+    <li><b>安全</b>：火把与烟花为明火项目，<b>看管好孩子</b>、勿近火源；凭票入园、按导流行进；夜间灯光暗处注意脚下</li>
+    <li><b>提示</b>：白天看花海昆虫展人少，晚上 19:00 前后占位看烟花最佳</li>
+  </ul>
+  <div class="src"><b>官方渠道</b><span>岳阳日报 / 岳阳网（2026/9/16 报道）、岳阳新闻网（2026/9/22 报道）；领票规则以官方推文与现场为准</span></div>
+  <div class="warn"><b>行程关联</b><span>自驾可选：10/1 或 10/2 下午出发，看火把烟花后返程（单程车程较长，回程晚）</span></div>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游</span><span>12 / 16</span></div>
+</section>
+
+<!-- P13 大熊猫苑 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">12</div><div class="ptitle">岳阳中华大熊猫苑 · 国宝萌友季</div><div class="ptag">9/25-10/7</div></div>
+  <div class="divider"></div>
+  <div class="kv">
+    <div class="kvx"><b>时间</b><span>常规 8:30-17:00（16:30 停入园）；国庆活动 9/25-10/7</span></div>
+    <div class="kvx"><b>地点</b><span>南湖新区 · 龙山保护区（与圣安寺、花语世界相邻）</span></div>
+    <div class="kvx"><b>门票</b><span>成人 <span class="price">68 元</span>；1.2 米以下 / 65 岁以上免票；需乘摆渡车</span></div>
+    <div class="kvx"><b>看点</b><span>10 只大熊猫；主题舞蹈、小丑秀、NPC 互动、<b>全国首发熊猫粑粑冰激凌</b>、草地露营音乐会</span></div>
+  </div>
+  <div class="sec">怎么参加</div>
+  <ul class="tight">
+    <li><b>购票</b>：官网 <span class="link">pandaweb.worldmaipu.com</span> 或票务平台；建议提前线上购票</li>
+    <li><b>节奏</b>：上午 9 点左右熊猫最活跃；园内有科普馆、熊猫餐厅、文创街区，可玩半天</li>
+    <li><b>串联</b>：隔壁花语世界（花海/帐篷营地）、圣安寺（4A，可登塔俯瞰南湖）一并玩</li>
+  </ul>
+  <div class="sec orange">交通与安全</div>
+  <ul class="tight">
+    <li><b>交通</b>：市区打车约 20-30 分钟；公交可达龙山方向，建议打车；自驾导航"岳阳中华大熊猫苑"</li>
+    <li><b>安全</b>：景区需乘摆渡车，排队有序；看熊猫勿拍打玻璃、勿投喂；国庆人多早去</li>
+    <li><b>提示</b>：活动含"草地露营音乐会"，白天户外注意防晒；熊猫粑粑冰激凌为猎奇款，按需尝试</li>
+  </ul>
+  <div class="src"><b>官方渠道</b><span>官方网站 <span class="link">pandaweb.worldmaipu.com</span>（岳阳中华大熊猫苑）；活动信息见岳阳新闻网（2026/9/22）</span></div>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游</span><span>13 / 16</span></div>
+</section>
+
+<!-- P14 城区其他活动 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">13</div><div class="ptitle">城区其他活动</div><div class="ptag">游园 · 非遗 · 精灵</div></div>
+  <div class="divider"></div>
+  <div class="sec">洞庭南路月光游园会 · 国庆期间</div>
+  <ul class="tight">
+    <li><b>地点</b>：洞庭南路（岳阳楼片区往西，步行可达）</li>
+    <li><b>看点</b>：诗词灯笼长廊、巨型发光月球、滚月饼赛、月下水景舞</li>
+    <li><b>费用</b>：<span class="good">免费</span>，适合 Day 2 夜游替代或顺路逛</li>
+  </ul>
+  <div class="sec green">洞庭湖小镇 · 非遗工匠城 · 9/25-10/7</div>
+  <ul class="tight">
+    <li><b>地点</b>：洞庭湖小镇</li>
+    <li><b>玩法</b>：二十余项非遗手工一站式体验——剪纸、陶艺、皮影、掐丝珐琅、木刻版画、拓印、面塑、扎染、刺绣、香囊、油纸伞手绘等，从零开始做一件带走</li>
+    <li><b>费用</b>：单项手作收费，以现场公示为准；适合雨天备选与亲子</li>
+  </ul>
+  <div class="sec orange">洋沙湖 · 森岛精灵季 · 9/25-10/7</div>
+  <ul class="tight">
+    <li><b>地点</b>：洋沙湖旅游景区溪龙里森岛及沿湖游览区</li>
+    <li><b>玩法</b>：白天精灵 NPC 互动、主题巡游、沉浸式市集；夜间森系演艺、千人竞技、烟花视觉大秀</li>
+    <li><b>费用</b>：需景区门票，以官方公示为准</li>
+  </ul>
+  <div class="sec">交通与安全</div>
+  <ul class="tight">
+    <li>洞庭南路 / 洞庭湖小镇均在市区，打车起步价即达；洋沙湖在湘阴方向，建议自驾或单独排期</li>
+    <li>夜间游园人多，照看好随身物品与儿童；非遗手作教室注意工具安全</li>
+  </ul>
+  <div class="src"><b>官方渠道</b><span>洞庭南路游园会以现场公示为准；洞庭湖小镇 / 洋沙湖活动见岳阳新闻网（2026/9/22 报道）</span></div>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游</span><span>14 / 16</span></div>
+</section>
+
+<!-- P15 烧烤清单 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">14</div><div class="ptitle">烧烤名店清单</div><div class="ptag">位置 + 人均</div></div>
+  <div class="divider"></div>
+  <div class="sec orange">必吃核心</div>
+  <table class="tbl">
+    <tr><th style="width:24%">店</th><th style="width:40%">位置</th><th>人均 / 提示</th></tr>
+    <tr><td><b>定三毛烧烤</b></td><td>炮台山总店：东茅岭街道新胜路与得胜南路交口</td><td>人均约 <span class="price">93 元</span>；炭烤生蚝、口味虾、黄金牛油、烤鲫鱼</td></tr>
+    <tr><td><b>纸厂老李烧烤城</b></td><td>城陵矶纸厂老厂门口（岳阳楼区城陵矶社区卫生服务中心西北）</td><td>人均约 <span class="price">83 元</span>；烤肉筋、烤虾、烤鲫鱼、炒面</td></tr>
+    <tr><td><b>老徐虾尾</b></td><td>炮台山夜市（本地人扎堆）</td><td>人均约 <span class="price">40-60 元</span>；虾尾招牌</td></tr>
+    <tr><td><b>三毛烧烤</b></td><td>炮台山夜市</td><td>人均约 <span class="price">40-60 元</span>；本地老牌</td></tr>
+    <tr><td><b>柒酒烤肉</b></td><td>炮台山夜市入口</td><td>人均约 <span class="price">40-60 元</span>；五花肉、黑椒西冷、孜然香干</td></tr>
+    <tr><td><b>二狗烧烤</b></td><td>炮台山夜市</td><td>人均约 <span class="price">40-60 元</span>；大串牛筋、牛油（十串一份不拆卖）</td></tr>
+    <tr><td><b>老婆婆烤肉</b></td><td>民本广场正对面</td><td>只烤猪肉串；30 年老店，排队警告</td></tr>
+    <tr><td><b>嗦螺哥</b></td><td>洞庭南路</td><td>果木炭烤串 + 嗦螺虾尾锅；晚 9 点后排号</td></tr>
+    <tr><td><b>蔡师傅豆皮</b></td><td>洞庭南路（巴陵广场旁）</td><td><span class="price">5 元</span>/块；香菇肉馅，下午垫肚子</td></tr>
+  </table>
+  <div class="sec green">怎么吃最值</div>
+  <ul class="tight">
+    <li><b>错峰</b>：17:00-18:00 开吃不用排队；20:00 后是高峰</li>
+    <li><b>人均参考</b>：炮台山夜市整条街人均 <span class="price">40-60 元</span>能吃饱吃好（携程本地攻略口径）；单点硬菜多的店 80-95 元</li>
+    <li><b>口味</b>：普遍偏辣，微辣起步；牛油必点；配冰汽水或洞庭啤酒</li>
+  </ul>
+  <div class="src"><b>数据来源</b><span>人均/地址参考携程美食榜单（2026 年数据）与本地攻略，价格以店内菜单为准</span></div>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游</span><span>15 / 16</span></div>
+</section>
+
+<!-- P16 美食饭馆清单 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">15</div><div class="ptitle">岳阳美食 + 饭馆清单</div><div class="ptag">位置 + 人均</div></div>
+  <div class="divider"></div>
+  <div class="sec orange">早餐 / 小吃</div>
+  <table class="tbl">
+    <tr><th style="width:30%">美食</th><th style="width:40%">位置</th><th>人均 / 提示</th></tr>
+    <tr><td><b>牛肉炒码粉</b></td><td>老城区老店（岳阳米粉）</td><td><span class="price">12 元</span>/碗；筒骨浓汤打底，加剁椒酸豆角</td></tr>
+    <tr><td><b>洞庭虾饼</b></td><td>汴河街小摊</td><td><span class="price">5 元</span>/块；现炸，趁热吃</td></tr>
+    <tr><td><b>糖油粑粑</b></td><td>汴河街 / 夜市小摊</td><td><span class="price">3 元</span>/串；外糯里软</td></tr>
+    <tr><td><b>华容团子</b></td><td>老城早餐店</td><td>糯米外皮蒸制，老岳阳早餐标配</td></tr>
+    <tr><td><b>洞庭银鱼羹</b></td><td>鱼馆 / 饭店</td><td>银鱼透亮无骨，适合老人小孩</td></tr>
+  </table>
+  <div class="sec green">饭馆 / 正餐</div>
+  <table class="tbl">
+    <tr><th style="width:26%">店</th><th style="width:42%">位置</th><th>人均 / 招牌</th></tr>
+    <tr><td><b>晓团圆</b>（炮台山店）</td><td>炮台山路 1 号（市一人民医院南侧）</td><td>人均 <span class="price">62 元</span>；干捞粉丝、团圆本草鸭、荷叶粉蒸肉</td></tr>
+    <tr><td><b>老巴陵鱼馆</b></td><td>岳阳楼景区对面</td><td>巴陵全鱼宴：剁椒鱼头、银鱼蒸蛋</td></tr>
+    <tr><td><b>海底捞</b>（步步高新天地店）</td><td>东茅岭路 1 号步步高新天地 7 层</td><td>人均 <span class="price">122 元</span>；连锁保底，怕辣可选</td></tr>
+  </table>
+  <div class="sec orange">避雷提示</div>
+  <ul class="tight">
+    <li><b>汴河街正街饭店慎选</b>：景区溢价偏高；往侧巷、老城区步行街走，味道更正、价格砍半</li>
+    <li>伴手礼（酱板鱼、银鱼干、君山银针）<b>别在景区买</b>，市区超市便宜近一半</li>
+    <li>胃肠敏感者少吃生冷小吃，夜宵选正规店铺</li>
+  </ul>
+  <div class="src"><b>数据来源</b><span>人均/地址参考携程美食榜单与本地攻略（2026 年数据），价格以菜单为准</span></div>
+  <div class="pfoot"><span>WorldStip · 岳阳 3 日轻松游</span><span>16 / 16</span></div>
+</section>
+
+</div>
+
+</body>
+</html>

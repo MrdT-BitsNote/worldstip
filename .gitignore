@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.pyo
+*.bak
+*.tmp
+_diff_log.txt
+_srv.md5
+_incr.zip
+_full.zip
+_scp_sep*.txt
+
+# 源目录顶层下划线开头的本地调试脚本（与同步排除规则一致，不上站也不入库）
+/_*.py
+/_*.js
+index.bak22.html

@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>欢乐谷 · 本土乐园连锁旗舰全攻略</title>
+<meta name="description" content="欢乐谷全攻略：华侨城主打的本土连锁主题乐园，深圳旗舰详解，过山车、玛雅水公园、迷你世界冒险山，门票交通玩法。">
+<meta name="keywords" content="欢乐谷,华侨城,深圳欢乐谷,过山车,水公园,主题乐园">
+<style>
+:root{--hv:#d6332a;--hv-soft:#fdeeed;--gold:#e7a33c;--ink:#25222a;--sub:#6b6673;--line:#e3e0d6;--bg:#faf8f2}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+.wrap{max-width:1060px;margin:0 auto;padding:28px 20px 80px}
+.hero{border-radius:24px;padding:38px 30px;color:#fff;background:linear-gradient(135deg,#d6332a 0%,#b0241c 45%,#7a150f 100%);box-shadow:0 18px 42px rgba(0,0,0,.16);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-60px;top:-60px;width:230px;height:230px;border-radius:50%;background:rgba(255,255,255,.12)}
+.hero .kbd{display:inline-block;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.35);padding:4px 14px;border-radius:999px;font-size:12px;letter-spacing:.12em}
+.hero h1{font-size:34px;margin:16px 0 6px}
+.hero p.sub{font-size:15px;opacity:.94;max-width:680px}
+.hero .badges{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.hero .badge{background:rgba(255,255,255,.92);color:#333;padding:8px 14px;border-radius:12px;font-size:13px;font-weight:600}
+.h2{display:flex;align-items:center;gap:10px;font-size:22px;margin:36px 0 14px}
+.h2 .ic{width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;background:var(--hv);flex:none}
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
+.card h4{font-size:15px;margin-bottom:6px}.card p{font-size:13px;color:var(--sub)}
+.card .tag{display:inline-block;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700;margin-bottom:8px}
+.spots{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.spot{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.spot img{width:100%;height:200px;object-fit:cover;display:block}
+.spot .bd{padding:13px 15px;flex:1;display:flex;flex-direction:column}
+.spot h4{font-size:15px;margin-bottom:4px}.spot .pr{font-size:12px;font-weight:700;margin-bottom:6px}
+.spot p{font-size:13px;color:var(--sub);flex:1}
+.spot .play{margin-top:10px;font-size:12px;background:var(--soft);padding:8px 10px;border-radius:9px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:13px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line)}th{background:var(--hv-soft);color:#b0241c;font-size:12px}
+tr:last-child td{border-bottom:0}
+.note{background:#fff8ea;border:1px solid #f0e2b8;border-radius:12px;padding:12px 14px;font-size:13px;margin-top:14px}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);text-align:center;font-size:13px;color:var(--sub)}
+@media(max-width:640px){.cards2{grid-template-columns:1fr}.hero h1{font-size:26px}}
+.camtab{position:fixed;top:110px;left:14px;right:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+<link rel="canonical" href="https://worldstip.com/map/happyvalley/">
+<meta name="theme-color" content="#d6332a">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="WorldStip · 旅行小册子">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="欢乐谷 · 本土乐园连锁旗舰全攻略">
+<meta property="og:description" content="欢乐谷全攻略：华侨城主打的本土连锁主题乐园，深圳旗舰详解，过山车、玛雅水公园、迷你世界冒险山。">
+<meta property="og:url" content="https://worldstip.com/map/happyvalley/">
+<meta property="og:image" content="https://worldstip.com/map/happyvalley/assets/hv_entry.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="欢乐谷 · 本土乐园连锁旗舰全攻略">
+<meta name="twitter:description" content="欢乐谷全攻略：华侨城主打的本土连锁主题乐园，深圳旗舰详解。">
+<meta name="twitter:image" content="https://worldstip.com/map/happyvalley/assets/hv_entry.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"WorldStip · 旅行小册子","url":"https://worldstip.com/"},
+    {"@type":"ListItem","position":2,"name":"欢乐谷 · 本土乐园连锁旗舰全攻略","url":"https://worldstip.com/map/happyvalley/"}
+  ]
+}
+</script>
+<!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/happyvalley/",
+  "name": "欢乐谷 · 本土乐园连锁旗舰全攻略",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <span class="kbd">华侨城 · 本土连锁第一品牌</span>
+    <h1>欢乐谷</h1>
+    <p class="sub">由华侨城打造的中国本土主题乐园连锁品牌，自深圳大本营起步，现已布局深圳、北京、成都、上海、武汉、天津、重庆、南京、西安、南昌等地。欢乐谷以「过山车+主题区+玛雅水公园」为核心，全国设园最多、覆盖最广，是「家门口的国际范儿乐园」。</p>
+    <div class="badges">
+      <span class="badge">🎢 过山车天堂</span>
+      <span class="badge">🌊 玛雅海滩水公园</span>
+      <span class="badge">🧒 迷你世界·冒险山</span>
+      <span class="badge">🚇 地铁直达</span>
+    </div>
+  </div>
+
+  <div class="h2"><span class="ic">🏙️</span>全国布局 · 怎么选</div>
+  <div class="cards2">
+    <div class="card"><span class="tag" style="background:#fdeeed;color:#b0241c">旗舰</span><h4>深圳欢乐谷</h4><p>1998 年开园，国内最早的欢乐谷、规模与项目最全，含欢乐时光、西部矿镇、魔幻城堡等九大主题区 + 玛雅水公园。</p></div>
+    <div class="card"><span class="tag" style="background:#fdeeed;color:#b0241c">华北</span><h4>北京欢乐谷</h4><p>华北地区人气园，拥有「极速飞车」「水晶神翼」等一流过山车，紧邻地铁 7 号线欢乐谷景区站。</p></div>
+    <div class="card"><span class="tag" style="background:#fdeeed;color:#b0241c">西南</span><h4>成都 欢乐谷</h4><p>西南旗舰，主打「大摆锤+跳楼机+激流勇进」，地铁 6 号线直达，配套完善。</p></div>
+    <div class="card"><span class="tag" style="background:#fdeeed;color:#b0241c">更多城市</span><h4>上海 / 武汉 / 天津 / 重庆 / 南京 / 西安 / 南昌</h4><p>多数园区配有玛雅海滩水公园（仅夏季开放），全国统一风格、各有特色项目。</p></div>
+  </div>
+  <div class="note">💡 全国各地欢乐谷门票、设施略有差异，本篇以深圳旗舰为例展开，其他城市可参考园区官网。</div>
+
+  <div class="h2"><span class="ic">🎫</span>深圳欢乐谷 · 门票参考 <span style="font-size:12px;color:var(--sub);font-weight:500">（元/人，以官方与当日为准）</span></div>
+  <table>
+    <tr><th>票种</th><th>参考价</th><th>说明</th></tr>
+    <tr><td>日场全价票</td><td>260</td><td>陆公园一票通玩</td></tr>
+    <tr><td>夜场全价票</td><td>149</td><td>下午入园至闭园</td></tr>
+    <tr><td>儿童 / 学生 / 长者</td><td>更优惠</td><td>按身高 / 年龄核验</td></tr>
+    <tr><td>玛雅水公园</td><td>夏季另购</td><td>仅 4–9 月运营</td></tr>
+  </table>
+  <div class="note">💡 陆公园一票通玩：除餐饮、蹦极、雨衣、代步工具外，所有机动游乐和表演不再单独收费；网上订票按选定日期刷身份证入园，出门再进需重新购票。</div>
+
+  <div class="h2"><span class="ic">🚇</span>怎么去</div>
+  <div class="cards2">
+    <div class="card"><h4>🚇 地铁</h4><p>深圳地铁 1 号线「世界之窗站」即达（欢乐谷近世界之窗）；多城市欢乐谷均有直达地铁。</p></div>
+    <div class="card"><h4>🚌 公交</h4><p>华侨城站 / 世界之窗站多路公交可达。</p></div>
+    <div class="card"><h4>🅿️ 自驾</h4><p>园区与周边设大型停车场，节假日建议早到或公共交通。</p></div>
+    <div class="card"><h4>🎒 雨天</h4><p>小雨照常开放，室内项目（卡洛儿八音盒、魔族城堡等）不受影响，中大雨室外项目暂停。</p></div>
+  </div>
+
+  <div class="h2"><span class="ic">🎡</span>玩什么 · 深圳旗舰主题区</div>
+  <div class="spots" style="--soft:var(--hv-soft);--c:var(--hv)">
+    <div class="spot"><picture>
+<source srcset="assets/hv_rollercoaster.webp" type="image/webp">
+<img loading="lazy" src="assets/hv_rollercoaster.jpg" alt="欢乐谷过山车">
+</picture><div class="bd"><span class="tag" style="background:#fdeeed;color:#b0241c">刺激王牌</span><h4>过山车矩阵</h4><div class="pr">金涛骇浪 · 环翼飞车 · 矿山车</div><p>垂直过山车、环翼飞车（国内首座 360° 循环）、W 型水花过山车金涛骇浪，西部矿镇过山车接连上强度。</p><div class="play">刺激玩家直奔西部矿镇 + 金涛骇浪，上午体力最旺时刷。</div></div></div>
+    <div class="spot"><picture>
+<source srcset="assets/hv_maya.webp" type="image/webp">
+<img loading="lazy" src="assets/hv_maya.jpg" alt="玛雅水公园">
+</picture><div class="bd"><span class="tag" style="background:#fdeeed;color:#b0241c">夏季限定</span><h4>玛雅海滩水公园</h4><div class="pr">成人园区 · 仅夏季</div><p>亚洲首座玛雅主题水寨、雨林巨蟒水上过山车、天地泛筏奇幻漂流、万神滑板，深圳唯一主题水公园。</p><div class="play">夏天想玩水必去，提前安排更衣储物，戴好防晒。</div></div></div>
+    <div class="spot"><picture>
+<source srcset="assets/hv_west.webp" type="image/webp">
+<img loading="lazy" src="assets/hv_west.jpg" alt="西部矿镇">
+</picture><div class="bd"><span class="tag" style="background:#fdeeed;color:#b0241c">异域风情</span><h4>西部矿镇</h4><div class="pr">环翼飞车 · 恐怖塔 · 金矿漂流</div><p>美国西部矿镇风格，国内首座 360° 循环过山车环翼飞车、沉浸式跳楼机恐怖塔、W 型水花过山车金涛骇浪。</p><div class="play">拍照也很出片，异域木结构与牛仔氛围。</div></div></div>
+    <div class="spot"><picture>
+<source srcset="assets/hv_pirate.webp" type="image/webp">
+<img loading="lazy" src="assets/hv_pirate.jpg" alt="海盗船与加勒比风情">
+</picture><div class="bd"><span class="tag" style="background:#fdeeed;color:#b0241c">经典刺激</span><h4>海盗船 · 激流勇进 · 飓风湾</h4><div class="pr">激流勇进 · 完美风暴 · 暴风秋千</div><p>经典海盗船、飓风海湾加勒比废墟小镇里的激流勇进与完美风暴，湾区首台高空暴风秋千等你挑战。</p><div class="play">激流勇进带雨衣；后半段体能下降时玩这里。</div></div></div>
+    <div class="spot"><picture>
+<source srcset="assets/hv_entry.webp" type="image/webp">
+<img loading="lazy" src="assets/hv_entry.jpg" alt="迷你世界冒险山">
+</picture><div class="bd"><span class="tag" style="background:#fdeeed;color:#b0241c">亲子新地标</span><h4>迷你世界·冒险山</h4><div class="pr">星空塔 · 密林历险 · 兔美美蹦蹦伞</div><p>全球首个迷你世界 IP 潮玩主题区，迷萌小镇、探险部落、尖叫密林、幽幽花境四大分区，亲子一站式。</p><div class="play">带娃直奔冒险山，星空塔高空观光 + 亲子过山车密林历险。</div></div></div>
+    <div class="spot"><picture>
+<source srcset="assets/hv_maya.webp" type="image/webp">
+<img loading="lazy" src="assets/hv_maya.jpg" alt="魔幻城堡与演艺">
+</picture><div class="bd"><span class="tag" style="background:#fdeeed;color:#b0241c">奇幻演艺</span><h4>魔幻城堡 · 演艺秀</h4><div class="pr">《欢乐大冒险》· 地道战实景 · 大巡游</div><p>魔幻城堡亲子奇幻剧、大型实景《地道战》《大魔术家》、日夜大巡游与电音派对，表演丰富不冷场。</p><div class="play">看好当日演出时刻表，巡游和夜场派对别错过。</div></div></div>
+  </div>
+
+  <div class="h2"><span class="ic">🗓️</span>经典一日路线（深圳旗舰）</div>
+  <div class="tl" style="--c:var(--hv)">
+    <div class="ti"><span class="tt">10:00</span>入园：直奔西部矿镇，先刷环翼飞车 + 金涛骇浪 + 恐怖塔。</div>
+    <div class="ti"><span class="tt">12:00</span>玛雅水公园 / 午餐：夏季玩水消暑，或先用餐。</div>
+    <div class="ti"><span class="tt">14:00</span>魔幻城堡 + 迷你世界·冒险山：亲子区 + 演艺。</div>
+    <div class="ti"><span class="tt">16:00</span>飓风湾 / 海盗船：经典项目补漏。</div>
+    <div class="ti"><span class="tt">19:00</span>夜间派对 / 大巡游：欢乐广场电音派对收尾。</div>
+  </div>
+  <div class="note">🚀 小贴士：9 月开学后排队约少一半，票价常有特惠（开学季券后约 168 元，原价 260）；上海、北京等园提前在官方渠道购票更划算。<a href="https://www.happyvalley.cn" target="_blank" rel="noopener noreferrer">欢乐谷官网</a></div>
+
+  <footer>
+    欢乐谷 · 华侨城 ｜ 门票 / 开放时间随淡旺季与日期浮动，请以各园区官网与当日现场为准<br>
+    <a href="https://www.happyvalley.cn" target="_blank" rel="noopener noreferrer">欢乐谷官网</a> · 配图均为原创生成 · 无版权风险<br>
+    深圳旗舰：深圳市南山区 · 地铁 1 号线世界之窗站；全国多城设有分园<br>
+    Made with care by <b>MrdT</b> · <a href="https://worldstip.com" target="_blank" rel="noopener noreferrer">worldstip.com</a> · 旅行小册子
+  </footer>
+</div>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

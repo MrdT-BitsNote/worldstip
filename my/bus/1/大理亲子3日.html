@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>杭州 → 大理 · 旅行报告</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --canvas:#fdf8f3;--surface:#fff;--ink:#2b2333;--muted:#7a6f85;
+  --line:#eee3d8;--radius:13px;
+  --font:system-ui,-apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+/* 目录导航 */
+.toc{position:sticky;top:0;z-index:20;background:rgba(253,248,243,.95);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+  margin:0 -18px 14px;padding:0 18px}
+.toc-in{max-width:980px;margin:0 auto;display:flex;align-items:center;
+  gap:5px;overflow-x:auto;scrollbar-width:none}
+.toc-in::-webkit-scrollbar{display:none}
+.toc-lab{font-size:11px;color:var(--muted);letter-spacing:.08em;
+  white-space:nowrap;padding-right:3px;flex:0 0 auto}
+.toc a{display:inline-flex;align-items:center;gap:4px;white-space:nowrap;
+  padding:6px 10px;border-radius:7px;font-size:12px;color:#5a5266;
+  text-decoration:none;transition:background .12s,color .12s;flex:0 0 auto}
+.toc a:hover{background:#f3ece3;color:var(--ink)}
+.toc a.on{background:var(--a);color:#fff;font-weight:500}
+.toc .n{font-family:var(--mono);font-size:10px;opacity:.6}
+.toc .prog{margin-left:auto;padding-left:10px;flex:0 0 auto;
+  font-size:11px;color:var(--muted);font-family:var(--mono)}
+.toc .top{font-size:11px;color:var(--muted);text-decoration:none;
+  padding:4px 8px;border:1px solid var(--line);border-radius:6px;flex:0 0 auto}
+.toc .top:hover{background:#f3ece3}
+
+body{font-family:var(--font);background:var(--canvas);color:var(--ink);
+  line-height:1.58;-webkit-font-smoothing:antialiased;font-size:13.5px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 18px 44px}
+
+.hero{background:linear-gradient(135deg,var(--a),var(--b));color:#fff;
+  padding:26px 18px 22px;margin-bottom:14px}
+.hero-in{max-width:1000px;margin:0 auto}
+.kicker{font-size:11px;letter-spacing:.2em;opacity:.85;text-transform:uppercase}
+.hero h1{font-size:24px;font-weight:600;margin:6px 0 3px;line-height:1.28}
+.route{font-size:15px;opacity:.95;display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:9px}
+.tag{display:inline-block;background:rgba(255,255,255,.22);padding:3px 9px;
+  border-radius:999px;font-size:11.5px;border:1px solid rgba(255,255,255,.3)}
+.meta-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;font-size:12px;opacity:.94}
+.meta-row b{font-weight:600}
+
+section{background:var(--surface);border-radius:var(--radius);padding:15px 17px;
+  margin-bottom:11px;border:1px solid var(--line);scroll-margin-top:50px}
+h2{font-size:15.5px;font-weight:600;margin-bottom:3px;display:flex;
+  align-items:center;gap:7px}
+h2 .ico{font-size:16px}
+h2 .no{font-family:var(--mono);font-size:11px;color:var(--a);
+  background:rgba(0,0,0,.05);padding:1px 6px;border-radius:5px;font-weight:600}
+.sub{color:var(--muted);font-size:12px;margin-bottom:10px;line-height:1.5}
+h3{font-size:13.5px;font-weight:600;margin:12px 0 6px;
+  padding-left:8px;border-left:3px solid var(--a)}
+
+/* 概览网格 */
+.grid{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(112px,1fr))}
+.stat{background:linear-gradient(180deg,#fffdfb,#faf5ee);border:1px solid var(--line);
+  border-radius:9px;padding:8px 11px}
+.stat .k{font-size:10.5px;color:var(--muted);letter-spacing:.03em}
+.stat .v{font-size:17px;font-weight:600;margin-top:1px;line-height:1.22}
+.stat .u{font-size:11px;color:var(--muted);font-weight:400}
+
+/* 逐日卡片 */
+.day{background:linear-gradient(180deg,#fffdfb,#faf6f0);border:1px solid var(--line);
+  border-radius:10px;padding:11px 13px;margin-bottom:8px;
+  break-inside:avoid;page-break-inside:avoid}
+.day-h{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap;
+  padding-bottom:6px;border-bottom:1px dashed var(--line);margin-bottom:8px}
+.dnum{font-size:12.5px;font-weight:600;color:var(--a);font-family:var(--mono)}
+.dtag{font-size:10.5px;background:var(--a);color:#fff;padding:1.5px 7px;border-radius:4px}
+.dcity{font-size:13px;font-weight:600}
+.dinfo{margin-left:auto;font-size:11.5px;color:var(--muted)}
+.dinfo b{color:var(--ink);font-weight:600}
+
+.slot{display:grid;grid-template-columns:50px 44px 1fr;gap:9px;
+  padding:4px 0;border-bottom:1px solid #f5efe6;font-size:12.5px;align-items:baseline}
+.slot:last-child{border-bottom:none}
+.stime{font-family:var(--mono);font-size:11.5px;color:var(--a);font-weight:600}
+.spart{font-size:11.5px;color:var(--muted)}
+.snote{color:#4a4256}
+.dnote{margin-top:7px;padding:6px 10px;background:#fff;border-radius:6px;
+  font-size:12px;color:#5a5266;border-left:3px solid var(--b)}
+.active{margin-top:6px;padding:7px 10px;background:var(--b);color:#2b2333;
+  border-radius:6px;font-size:12px;font-weight:500}
+
+/* 表格 */
+table{width:100%;border-collapse:collapse;font-size:12.5px;margin:3px 0}
+th{background:#faf5ee;text-align:left;padding:6px 8px;font-weight:600;
+  font-size:11.5px;color:#5a5266;border-bottom:2px solid var(--line);white-space:nowrap}
+td{padding:5px 8px;border-bottom:1px solid #f5efe6;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#fffdf9}
+.num{text-align:right;font-family:var(--mono);white-space:nowrap}
+.tot{background:var(--a)!important;color:#fff;font-weight:600}
+.tot td{border-bottom:none}
+
+/* 清单 */
+.gear{display:grid;gap:9px;grid-template-columns:repeat(auto-fit,minmax(222px,1fr))}
+.gbox{background:#fffdfb;border:1px solid var(--line);border-radius:9px;padding:9px 12px}
+.gcat{font-size:12px;font-weight:600;margin-bottom:5px;color:var(--a);
+  display:flex;align-items:center;gap:5px}
+.gitem{display:flex;gap:6px;align-items:flex-start;font-size:12px;
+  padding:1.5px 0;color:#4a4256;line-height:1.6}
+.gitem::before{content:"";width:11px;height:11px;flex:0 0 11px;margin-top:4px;
+  border:1.5px solid var(--b);border-radius:3px;background:#fff}
+
+/* 调研板块 */
+.blk{margin-bottom:11px}
+.blk:last-child{margin-bottom:0}
+.btitle{font-size:13px;font-weight:600;margin-bottom:5px;
+  display:flex;align-items:center;gap:6px}
+.blk p{font-size:12.5px;color:#4a4256;margin-bottom:4px}
+.blk ul{margin:0 0 5px 16px;font-size:12.5px;color:#4a4256}
+.blk li{margin-bottom:2.5px;padding-left:2px}
+.blk strong{color:var(--ink);font-weight:600}
+
+.warn{background:#fff8f6;border:1px solid #F7C1C1;border-left:3px solid #E24B4A;
+  border-radius:7px;padding:8px 11px;margin:6px 0;font-size:12.5px;color:#5a2b2b}
+.warn b{color:#A32D2D}
+.tip{background:#f4f9f2;border:1px solid #C0DD97;border-left:3px solid #639922;
+  border-radius:7px;padding:8px 11px;margin:6px 0;font-size:12.5px;color:#3a4a2a}
+.tip b{color:#3B6D11}
+.note{background:#f7f5f2;border-radius:7px;padding:8px 11px;margin:7px 0;
+  font-size:11.5px;color:var(--muted);line-height:1.55}
+
+/* 天气预检卡片 */
+.wcheck{border-radius:10px;padding:11px 13px;margin-bottom:9px;border:1px solid}
+.wcheck.ok{background:#f2f9f4;border-color:#C0DD97;border-left:4px solid #639922}
+.wcheck.caution{background:#fffbf0;border-color:#FAC775;border-left:4px solid #BA7517}
+.wcheck.indoor_rewrite{background:#f5f8fc;border-color:#B5D4F4;border-left:4px solid #378ADD}
+.wcheck.not_recommended{background:#fff5f4;border-color:#F7C1C1;border-left:4px solid #E24B4A}
+.wh{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.wverdict{font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:5px;color:#fff}
+.wcheck.ok .wverdict{background:#639922}
+.wcheck.caution .wverdict{background:#BA7517}
+.wcheck.indoor_rewrite .wverdict{background:#378ADD}
+.wcheck.not_recommended .wverdict{background:#E24B4A}
+.wcity{font-size:13px;font-weight:600}
+.wthresh{font-size:11px;color:var(--muted);margin-left:auto}
+.wrow{display:grid;grid-template-columns:46px 18px 1fr 96px 76px;gap:7px;
+  font-size:12px;padding:3.5px 0;border-bottom:1px solid rgba(0,0,0,.05);align-items:center}
+.wrow:last-child{border-bottom:none}
+.wrow .wd{font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.wrow .wi{text-align:center}
+.wrow .wn{font-weight:500}
+.wrow .wm{color:var(--muted);font-size:10.5px;text-align:right;font-family:var(--mono)}
+.wflag{color:#A32D2D;font-size:10.5px}
+.wgood{background:#f2f9f4;border-radius:6px;padding:6px 10px;margin-top:7px;
+  font-size:11.5px;color:#3B6D11}
+.wnone{background:#fff0ee;border-radius:6px;padding:6px 10px;margin-top:7px;
+  font-size:11.5px;color:#A32D2D;font-weight:500}
+.waction{margin-top:8px;padding:8px 11px;background:rgba(255,255,255,.75);
+  border-radius:6px;font-size:11.5px;line-height:1.65}
+.waction b{display:block;margin-bottom:3px;font-size:12px}
+.waction ol{margin:0;padding-left:17px}
+.waction li{margin-bottom:2px}
+
+/* 住宿卡片 */
+.stayplan{background:linear-gradient(180deg,#fffdfb,#faf5ee);border:1px solid var(--line);
+  border-radius:10px;padding:11px 13px}
+.roomline{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-bottom:6px}
+.roomn{font-size:17px;font-weight:600;color:var(--a)}
+.roomt{font-size:12.5px}
+.staywhy{font-size:12.5px;color:#4a4256;margin-bottom:8px;padding-left:9px;
+  border-left:3px solid var(--b)}
+.staytip{display:flex;gap:6px;font-size:12px;padding:2px 0;color:#4a4256;line-height:1.6}
+.staytip::before{content:"▸";color:var(--a);flex:0 0 auto;font-weight:600}
+
+/* 交通段 */
+.leg{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;
+  padding:14px 0;border-bottom:1px solid #f5efe6}
+.leg:last-child{border-bottom:none}
+.leg-badge{background:var(--a);color:#fff;border-radius:11px;padding:9px 13px;
+  text-align:center;font-size:12px;font-weight:600;min-width:76px;line-height:1.4}
+.leg-badge .big{font-size:15px;display:block}
+.leg-body{font-size:13.5px}
+.leg-title{font-weight:600;margin-bottom:4px}
+.leg-note{color:var(--muted);font-size:12.5px;margin-top:5px}
+
+footer{text-align:center;color:var(--muted);font-size:12.5px;padding:26px 20px 0;
+  border-top:1px solid var(--line);margin-top:10px}
+footer a{color:var(--a);text-decoration:none}
+
+@media print{
+  body{background:#fff;font-size:11.5px}
+  .wrap{max-width:100%;padding:0 8px}
+  .toc,.no-print{display:none}
+  .hero{padding:16px 10px;margin-bottom:10px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  section{padding:11px 13px;margin-bottom:8px;box-shadow:none;break-inside:auto;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .day{box-shadow:none;padding:9px 11px;margin-bottom:6px;break-inside:avoid}
+  .slot{padding:2.5px 0}
+  .stat,.gbox,.active,.warn,.tip,.wcheck,.stayplan,.tbl{
+    -webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h2{font-size:13.5px}h3{font-size:12.5px}
+  table{font-size:11px}th,td{padding:4px 6px}
+  .wrow{font-size:10.5px;padding:2.5px 0}
+  footer{padding:14px 0 0;font-size:10.5px}
+}
+@media (max-width:640px){
+  .hero h1{font-size:20px}
+  .dinfo{margin-left:0;width:100%}
+  .slot{grid-template-columns:46px 40px 1fr;gap:7px;font-size:11.5px}
+  section{padding:13px 13px}
+  .toc-lab,.toc .prog{display:none}
+  .wrow{grid-template-columns:42px 16px 1fr;gap:6px}
+  .wrow .wm{display:none}
+}
+</style></head>
+<body id="top" style="--a:#3B6D11;--b:#C0DD97">
+<div class="hero"><div class="hero-in">
+<div class="kicker">WorldsTip · 旅行规划报告</div>
+<h1>杭州 → 大理</h1>
+<div class="route">
+<span class="tag">家庭亲子节奏</span>
+<span class="tag">3 天</span>
+<span class="tag">3 人</span>
+<span class="tag">强度 2/5</span>
+</div>
+<div class="meta-row">
+<span>语气 <b>带娃 · 亲子 · 不累 · 午睡</b></span>
+</div>
+</div></div>
+<nav class="toc"><div class="toc-in"><span class="toc-lab">目录</span><a href="#overview" data-t="overview"><span class="n">01</span>行程概览</a><a href="#route" data-t="route"><span class="n">02</span>逐日动线</a><a href="#research" data-t="research"><span class="n">03</span>实地调研</a><a href="#stay" data-t="stay"><span class="n">04</span>住宿安排</a><a href="#budget" data-t="budget"><span class="n">05</span>预算安排</a><a href="#gear" data-t="gear"><span class="n">06</span>装备与物资清单</a><span class="prog" id="prog"></span><a class="top" href="#top">↑ 顶部</a></div></nav><div class="wrap">
+<section id="overview"><h2><span class="no">01</span><span class="ico">📋</span>行程概览</h2>
+<div class="sub">整份报告的骨架：节奏、强度、花费一目了然，细节在下方各板块展开。</div>
+<div class="grid">
+<div class="stat"><div class="k">总天数</div><div class="v">{plan.get('days')} <span class="u">天</span></div></div>
+<div class="stat"><div class="k">节奏画像</div><div class="v" style="font-size:17px">{esc(plan.get('style_label',''))}</div></div>
+<div class="stat"><div class="k">累计活动</div><div class="v">{total_h:.0f} <span class="u">小时</span></div></div>
+{f'<div class="stat"><div class="k">累计里程</div><div class="v">{total_km} <span class="u">km</span></div></div>' if total_km else ''}
+<div class="stat"><div class="k">人均预算</div><div class="v" style="color:{th['a']}">¥{b.get('per_person_total',0):,}</div></div>
+<div class="stat"><div class="k">全团预算</div><div class="v">¥{b.get('group_total',0):,}</div></div>
+</div>
+</section>
+<section id="route"><h2><span class="no">02</span><span class="ico">🗺️</span>逐日动线</h2>
+<div class="sub">按「上午 / 下午 / 晚上」三段切分，每日景点数与停留时长已按节奏画像配平。首末日自动减量，留出交通与缓冲。</div>
+<div class="day">
+<div class="day-h">
+<span class="dnum">DAY 1</span>
+<span class="dtag">抵达日</span>
+<span class="dcity">大理</span>
+<span class="dinfo">2 个点 · <b>6.6h</b></span>
+</div>
+<div class="slot">
+<div class="stime">08:30</div>
+<div class="spart">上午 1点</div>
+<div class="snote">一个慢点, 慢慢逛, 别赶（约 3.3h，单点 3.3h）</div>
+</div><div class="slot">
+<div class="stime">13:30</div>
+<div class="spart">下午 1点</div>
+<div class="snote">留白时间, 咖啡馆/民宿发呆/周边散步（约 3.3h，单点 3.3h）</div>
+</div>
+
+<div class="dnote">💡 抵达后先安顿，轻活动开胃；别急着连打两个点</div>
+</div>
+<div class="day">
+<div class="day-h">
+<span class="dnum">DAY 2</span>
+<span class="dtag">游玩日</span>
+<span class="dcity">大理</span>
+<span class="dinfo">3 个点 · <b>6.4h</b></span>
+</div>
+<div class="slot">
+<div class="stime">08:30</div>
+<div class="spart">上午 2点</div>
+<div class="snote">安排 1-2 个轻松点（约 4.1h，单点 2.3h）</div>
+</div><div class="slot">
+<div class="stime">13:30</div>
+<div class="spart">下午 1点</div>
+<div class="snote">留白时间, 咖啡馆/民宿发呆/周边散步（约 2.3h，单点 2.3h）</div>
+</div>
+
+<div class="dnote">💡 上午户外、下午室内或回房午睡，20:00 前回住处</div>
+</div>
+<div class="day">
+<div class="day-h">
+<span class="dnum">DAY 3</span>
+<span class="dtag">返程日</span>
+<span class="dcity">大理</span>
+<span class="dinfo">2 个点 · <b>6.6h</b></span>
+</div>
+<div class="slot">
+<div class="stime">08:30</div>
+<div class="spart">上午 1点</div>
+<div class="snote">一个慢点, 慢慢逛, 别赶（约 3.3h，单点 3.3h）</div>
+</div><div class="slot">
+<div class="stime">13:30</div>
+<div class="spart">下午 1点</div>
+<div class="snote">留白时间, 咖啡馆/民宿发呆/周边散步（约 3.3h，单点 3.3h）</div>
+</div>
+
+<div class="dnote">💡 留足缓冲，别安排需要预约的项目；优先返程</div>
+</div>
+</section>
+<section id="research"><h2><span class="no">03</span><span class="ico">🔍</span>实地调研</h2>
+<div class="sub">来自联网调研与官方/用户实际反馈，按主题归档。</div>
+<div class="blk"><div class="btitle">🚄 交通与接驳</div><p><b>抵达方式</b>：飞机到大理凤仪机场（约30km 到古城，打车 40 分钟 /¥60-80）；或高铁到大理站，下关镇离古城约 12km。高铁站与古城是两个片区，别搞混</p><p><b>古城内交通</b>：2 元公交可覆盖主要景点；带娃建议租电动车（正规门店 40-60 元/全天），但生态廊道禁外部车辆进入</p><div class="warn"><b>带娃关键</b>：生态廊道全长约 46km，禁外部电动车/自行车/私家车驶入，所有入口有物理关卡。带娃要在村口停车（3-5 元看车费）再步行进入，或改租廊道内共享单车（限速 15km/h，约 20 元/小时）</div></div>
+<div class="blk"><div class="btitle">🎫 景点与预约</div><p><b>D1 · 洱海生态廊道 + 才村 + 龙龛古渡</b>：上午租亲子自行车沿廊道骑行（推荐面包屑引红嘴鸥，冬季景观），午餐后逛才村码头，傍晚到龙龛古渡看日落。这条线车程短、风景密度高，最适合带娃首日</p><p><b>D2 · 喜洲 + 海舌 + 周城扎染</b>：海舌公园免费但每日限量 200 人需提前公众号预约。周城扎染坊把白棉布捆成小云朵、拆线时有靛蓝惊喜，是孩子会喜欢的动手项目</p><div class="tip"><b>D3 · 苍山 + 床单厂</b>：苍山采菌子（雨季体验）、床单厂淘玩偶后返程。若孩子较小，苍山缆车段可替换为感通索道 + 玉带云游路轻量版</div><p><b>崇圣寺三塔</b>：大理国皇家寺院遗存，有分量的历史点。带孩子讲南诏大理国的历史比走马观花更有意义</p><div class="tip"><b>淡旺季取舍</b>：海舌公园、磻溪 S 湾旺季人多；磻溪 S 湾免费公共区域拍照效果优于收费「天空之镜」（20-50 元/张），完全没必要花</div></div>
+<div class="blk"><div class="btitle">🍜 美食与私房菜</div><p><b>特色必吃</b>：乳扇、饵块、酸辣鱼、生皮、雕梅、喜洲粑粑。带娃建议先从清淡的乳扇、饵丝入手，生皮（生猪肉）孩子别碰</p><div class="warn"><b>洱海鱼点法</b>：点洱海鱼前一定确认是按份还是按斤，避免天价纠纷，优先选明码标价套餐</div><div class="tip"><b>私房菜思路</b>：避开古城主街低价揽客店，往人民路南段、苍山路一带的老店走；点菜前先问清加工费与份量</div><div class="warn"><b>避坑</b>：不要跟路边阿姨去「隐秘农家菜店」，大多拿高额提成、定价虚高</div></div>
+<div class="blk"><div class="btitle">🏛 人文与历史</div><p><b>南诏与大理国</b>：苍山洱海之间是南诏古国与大理国故地。崇圣寺三塔是皇家寺院，佛教在南诏大理文化中地位极重——带孩子讲这段历史，比背景点介绍更有意义</p><p><b>白族三道茶</b>：一苦二甜三回味，是理解白族生活观的入口。喜洲白族人家可体验，务必提前问好是否接待</p><p><b>扎染与白族手艺</b>：周城是白族扎染的重要村落。孩子动手做一块扎染，是理解白族文化最直接的方式</p><p><b>茶马古道</b>：从大理经剑川、丽江通往西藏的商路，是理解云南与藏区联系的历史主线</p></div>
+<div class="blk"><div class="btitle">🛍 商圈与购物</div><p><b>人民路</b>：古城主街，手工银器、扎染、鲜花饼集中；价格偏高，适合逛不必急着买</p><div class="tip"><b>本地采购更实惠</b>：鲜花饼、茶叶、扎染品去古城本地人超市或市场买，环湖纪念品店溢价明显</div><p><b>避坑</b>：路边兜售的无证书苗银、散装普洱、野生药材不要买，假货居多</p></div>
+<div class="blk"><div class="btitle">🏨 住宿安排</div><div class="tip"><b>选址逻辑（带娃最重要）</b>：推荐住古城南门村或才村/银桥一带：离生态廊道近、租金比洱海边一线网红海景民宿低一半以上，且多数民宿有院子，孩子能跑动</div><p><b>亲子房型要点</b>：预订时确认三件事：① 是否儿童护栏（尤其loft/上下铺）② 是否有儿童洗漱用品/拖鞋 ③ 是否有游戏室或家庭影院。实测亲子房型常见配置：滑梯、巨幕投影、儿童桌角防护、婴儿推车借用</p><p><b>价位参考</b>：经济民宿 200-330 元（评分 4.5+）、舒适型 380-600 元、高档设计民宿 700-800 元。亲子度假型普遍比普通房贵 50-100 元，但省心很多</p><div class="warn"><b>避坑</b>：尽量避开周五、周六入住，房价普遍上涨 50%。洱海边一线海景民宿景色好但性价比低、夜晚可能有潮声与湿气，住一晚体验即可不必连住</div></div>
+<div class="blk"><div class="btitle">🎒 装备与物资</div><p><b>带娃核心</b>：儿童雨衣、湿巾、零食、常用儿童药、推车、保温壶。洱海边风大，薄外套必带</p><div class="warn"><b>防晒（大理紫外线 6-8 级）</b>：SPF50+ 防晒霜、宽檐帽、儿童防晒。裸露皮肤半小时即晒红，这是大理最需要认真对待的事</div><p><b>高原与温差</b>：大理海拔约 2000m，苍山更高。儿童首次上高原注意观察精神状态；早晚温差大，带外套</p><p><b>骑行装备</b>：租亲子自行车时确认头盔尺寸是否合适（车行通常免费提供但尺码要问）、护膝；儿童身高不足 1.2m 不建议环长途</p></div>
+<div class="blk"><div class="btitle">⚠️ 安全提示</div><div class="warn"><b>禁行规则</b>：洱海生态廊道全段禁外部电动车/自行车/私家车，入口有物理关卡；才村码头至龙龛码头白天禁行电动车</div><div class="warn"><b>高原反应</b>：大理 2000m、苍山 3900m+。儿童上苍山前确认无感冒发热，出现头痛呕吐立即下撤到低处</div><div class="warn"><b>水域安全</b>：洱海禁止下水游泳，岸边湿滑石板路尤其小心。带娃全程手不离视线</div><div class="tip"><b>天气</b>：风力瞬时超 5 级暂停骑行；雨季（6-8 月）备雨具，雷雨时不要在廊道空旷处停留</div><p><b>日落后</b>：生态廊道 22:00 后封闭，不要深夜带娃在偏僻路段逗留</p></div>
+<div class="blk"><div class="btitle">🚧 避坑指南</div><div class="warn"><b>低价团</b>：不要报名 50 元「环海一日游」，全程购物推销、几乎没有游玩时间，带娃尤其容易被折腾</div><div class="warn"><b>低价黑车</b>：拒绝古城门口无牌照低价电动车，半路没电会被索要高额拖车费；租车前拍清车身划痕避免还车被讹押金</div><div class="warn"><b>旅拍套路</b>：10 元低价白族服装旅拍会加收化妆费、场地费、底片费，最后消费几百元；务必提前问清所有收费项</div><div class="warn"><b>限量景点</b>：海舌公园每日限量 200 人需预约，周末建议提前 3-5 天在小程序抢票，临时到场可能进不去</div><div class="tip"><b>住海边</b>：洱海边一线海景民宿周末动辄 300+ 元且隔音差，湿气重；把钱花在孩子能玩的设施上更值</div></div>
+</section>
+<section id="stay"><h2><span class="no">04</span><span class="ico">🏨</span>住宿安排</h2>
+<div class="sub">按人员构成「一家三口」计算房间数与床型。住宿按<b>房间数 × 晚数</b>计, 而非按人数 —— 这是预算合理性的关键。</div>
+<div class="stayplan">
+<div class="roomline">
+<span class="roomn">1 间</span>
+<span class="roomt">家庭房 / 双床房+加床(1.35m或1.5m大床 + 单人床)</span>
+</div>
+<div class="staywhy">三口之家订1 间家庭房或双床加床即可, 房间面积通常比 2 间标准房更宽敞, 且小孩与父母同住便于照看</div>
+<div class="staytip">预订时明确告知「2 大 1 小」，确认酒店是否提供儿童床/加床（部分免费、部分需另收费）</div><div class="staytip">优先选家庭房：多为 1.5m 大床 + 0.9m 单床，部分含儿童洗漱用品与拖鞋</div><div class="staytip">若酒店无家庭房，可订「双床房」并申请加床，注意确认加床后房间是否拥挤</div><div class="staytip">带 3 岁以下婴儿需确认婴儿床是否提供、是否免费</div>
+</div>
+</section>
+<section id="budget"><h2><span class="no">05</span><span class="ico">💰</span>预算安排</h2>
+<div class="sub">住宿「舒适」、餐饮「舒适」档位，按 3 人计。住宿口径：1 间 × 2 晚（按房间计, 非按人数）。机票/火车票实时价格需自行查 12306 或购票平台。</div>
+<table><thead><tr><th>项目</th><th class="num">人均</th><th class="num">全团</th></tr></thead>
+<tbody><tr><td>交通</td><td class="num">¥800</td><td class="num">¥2,400</td></tr><tr><td>住宿</td><td class="num">¥200</td><td class="num">¥600</td></tr><tr><td>餐饮</td><td class="num">¥420</td><td class="num">¥1,260</td></tr><tr><td>门票</td><td class="num">¥96</td><td class="num">¥288</td></tr><tr><td>其他</td><td class="num">¥115</td><td class="num">¥344</td></tr>
+<tr class="tot"><td>合计</td><td class="num">¥1,631</td>
+<td class="num">¥4,892</td></tr>
+</tbody></table>
+<div class="note">⚠️ 票价说明：火车票与机票的实时价格、折扣与余票无法自动获取，请以 12306 App/官网、航司官网或购票平台为准。上表交通项为经验估算，实际费用随出发地、日期、席别变化很大。</div>
+</section>
+<section id="gear"><h2><span class="no">06</span><span class="ico">🎒</span>装备与物资清单</h2>
+<div class="sub">按「家庭亲子」画像与薄羽绒、围巾、润唇膏、徒步鞋(防滑) 天气生成。打印后可逐项勾选。</div>
+<div class="gear"><div class="gbox"><div class="gcat">📦 证件</div><div class="gitem">身份证</div><div class="gitem">现金/银行卡</div><div class="gitem">手机+充电器</div></div><div class="gbox"><div class="gcat">📦 衣物</div><div class="gitem">换洗衣物</div><div class="gitem">舒适鞋</div><div class="gitem">外套(昼夜温差)</div></div><div class="gbox"><div class="gcat">📦 防护</div><div class="gitem">防晒霜</div><div class="gitem">墨镜</div><div class="gitem">帽子</div><div class="gitem">雨伞/雨衣</div></div><div class="gbox"><div class="gcat">📦 健康</div><div class="gitem">常用药</div><div class="gitem">创可贴</div><div class="gitem">晕车药(自驾)</div></div><div class="gbox"><div class="gcat">📦 电子</div><div class="gitem">充电宝</div><div class="gitem">数据线</div><div class="gitem">耳机</div></div><div class="gbox"><div class="gcat">📦 画像重点</div><div class="gitem">儿童雨衣</div><div class="gitem">湿巾</div><div class="gitem">零食</div><div class="gitem">常用儿童药</div><div class="gitem">推车</div><div class="gitem">保温壶</div><div class="gitem">玩具</div><div class="gitem">围兜</div></div><div class="gbox"><div class="gcat">📦 季节性</div><div class="gitem">薄羽绒</div><div class="gitem">围巾</div><div class="gitem">润唇膏</div><div class="gitem">徒步鞋(防滑)</div></div></div>
+</section>
+<footer>
+由 <b>WorldsTip 旅行规划</b> skill 生成 · 创作者 MrdT·WorldsTip.COM · 分类：旅行<br>
+数据 worldstip.com 整站导航（234 个国内目的地）· 天气 Open-Meteo · 车站 12306<br>
+<span class="no-print">票价、天气、开放时间为生成时状态，出行前请再次核实。</span>
+</footer>
+</div>
+<script>(function(){
+var secs=[].slice.call(document.querySelectorAll('section[id]'));
+var links={};[].slice.call(document.querySelectorAll('.toc a[data-t]')).forEach(function(a){
+  links[a.getAttribute('data-t')]=a;});
+var prog=document.getElementById('prog');
+function upd(){
+  var y=window.scrollY+80,cur=null;
+  for(var i=0;i<secs.length;i++){ if(secs[i].offsetTop<=y) cur=secs[i].id; }
+  for(var k in links) links[k].classList.toggle('on',k===cur);
+  var h=document.body.scrollHeight-window.innerHeight;
+  prog.textContent=h>0?Math.round(window.scrollY/h*100)+'%':'0%';
+}
+window.addEventListener('scroll',upd,{passive:true});upd();
+})();</script>
+
+</body></html>

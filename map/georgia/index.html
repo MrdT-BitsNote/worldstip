@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>格鲁吉亚 7 日 · A5 卡片手册</title>
+<meta name="description" content="格鲁吉亚7日深度旅行指南：第比利斯、卡兹别克雪山、西格纳吉红酒小镇、巴统海滨，含西格纳吉山城、卡赫季红酒小镇与生命之柱大教堂，附交通住宿与避坑。">
+<meta name="keywords" content="格鲁吉亚旅游,格鲁吉亚旅行,第比利斯,卡兹别克,格鲁吉亚美食">
+<style>
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Roboto,sans-serif;
+    color:#333a44;
+    background:linear-gradient(160deg,#fdf6ef 0%,#f4ecff 45%,#e8f4ff 100%);
+    line-height:1.55;
+    overflow-wrap:break-word;
+    min-height:100vh;
+  }
+  img{max-width:100%;height:auto;display:block;}
+
+  /* ===== 顶部标题 ===== */
+  header.masthead{
+    text-align:center;
+    padding:42px 20px 14px;
+    position:relative;
+  }
+  header.masthead .title-emoji{font-size:42px;line-height:1;margin-bottom:8px;}
+  header.masthead h1{
+    margin:0 0 6px;
+    font-size:clamp(1.5rem,4vw,2rem);
+    font-weight:800;
+    letter-spacing:.5px;
+    background:linear-gradient(90deg,#ff8a5c,#f06ba4,#7f8cff);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  header.masthead p{color:#7c8291;margin:0;font-size:.95rem;}
+
+  /* ===== 卡片册舞台 ===== */
+  .deck-wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:8px 18px 40px;
+  }
+
+  /* 目录导航 chip（横向滚动） */
+  .chips{
+    display:flex;gap:8px;align-items:center;
+    margin:14px auto 26px;max-width:940px;
+    overflow-x:auto;padding:6px 4px 10px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+  }
+  .chips::-webkit-scrollbar{height:6px;}
+  .chips::-webkit-scrollbar-thumb{background:#cfc6e8;border-radius:99px;}
+  .chips button{
+    font:inherit;font-size:.85rem;font-weight:600;white-space:nowrap;
+    border:none;cursor:pointer;flex:none;
+    padding:8px 15px;border-radius:999px;
+    background:#fff;color:#5b6372;
+    box-shadow:0 4px 14px rgba(120,90,160,.10);
+    transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+  }
+  .chips button:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(120,90,160,.16);}
+  .chips button.active{background:#6f6fe8;color:#fff;}
+  .chips .grp-label{
+    flex:none;font-size:.72rem;font-weight:800;letter-spacing:.08em;color:#a39ab8;
+    padding:0 2px;
+  }
+
+  /* 卡片网格 */
+  .deck{
+    display:flex;flex-wrap:wrap;gap:22px;
+    justify-content:center;align-items:flex-start;
+    scroll-behavior:smooth;
+  }
+
+  /* ===== A5 卡片本体 ===== */
+  .card{
+    width:148mm;height:210mm;
+    background:#fff;border-radius:26px;
+    box-shadow:0 18px 44px rgba(80,60,120,.16),0 3px 10px rgba(80,60,120,.08);
+    overflow:hidden;position:relative;
+    display:flex;flex-direction:column;
+    border:1px solid rgba(255,255,255,.7);
+    scroll-margin-top:20px;
+  }
+  .card .topbar{flex:none;height:7px;background:linear-gradient(90deg,var(--tc1),var(--tc2));}
+  .card header.c{
+    padding:15px 20px 5px;display:flex;align-items:center;gap:12px;
+  }
+  .card header.c .ico{
+    flex:none;width:44px;height:44px;border-radius:14px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:24px;background:var(--tc-soft);
+    box-shadow:0 4px 10px rgba(0,0,0,.06);
+  }
+  .card header.c h2{margin:0;font-size:1.16rem;font-weight:800;line-height:1.25;color:var(--tc-strong);}
+  .card header.c .en{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#b3bac6;margin-top:2px;}
+  .card .body{flex:1;min-height:0;padding:8px 18px 16px;overflow:hidden;display:flex;flex-direction:column;}
+  .card .page-num{position:absolute;bottom:12px;right:16px;font-size:.72rem;font-weight:700;color:#c2c8d4;}
+
+  .pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.66rem;font-weight:700;white-space:nowrap;}
+  .pill.must{background:#ffe9e4;color:#e5533d;}
+  .pill.flex{background:#e4f4e8;color:#2f9e63;}
+  .pill.day{background:#eef0ff;color:#6f6fe8;}
+
+  /* 封面卡片 */
+  .card.cover{
+    background:
+      linear-gradient(180deg,rgba(60,45,120,.15) 0%,rgba(60,45,120,.72) 92%),
+      url('../../assets/images/AGyYD-KzdLg.jpg') center/cover no-repeat #2a2050;
+    /* WebP 优先，不支持则回落上面的 JPEG（渐进增强） */
+    background-image:
+        linear-gradient(180deg,rgba(60,45,120,.15) 0%,rgba(60,45,120,.72) 92%),
+        image-set(url('../../assets/images/AGyYD-KzdLg.webp') type('image/webp'), url('../../assets/images/AGyYD-KzdLg.jpg') type('image/jpeg'));
+
+  }
+  .card.cover .overlay{color:#fff;flex:1;display:flex;flex-direction:column;padding:24px 22px;justify-content:flex-end;}
+  .card.cover .kick{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:#ffe08a;font-weight:700;margin-bottom:10px;}
+  .card.cover h2{font-size:2rem;margin:0 0 10px;line-height:1.14;font-weight:800;}
+  .card.cover .sub{font-size:.94rem;opacity:.95;margin:0 0 20px;max-width:40ch;}
+  .card.cover .meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;}
+  .card.cover .meta span{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);padding:5px 11px;border-radius:999px;font-size:.8rem;}
+  .cover-deco{position:absolute;top:22px;left:22px;font-size:30px;line-height:1;filter:drop-shadow(0 3px 6px rgba(0,0,0,.3));}
+
+  /* ===== 动线总览 ===== */
+  .timeline{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;}
+  .timeline li{display:flex;gap:10px;align-items:flex-start;background:#faf8ff;border:1px solid #ece7fa;border-radius:13px;padding:8px 11px;}
+  .timeline li .d{flex:none;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#8f84f7,#6f6fe8);color:#fff;font-weight:800;font-size:.82rem;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.05;}
+  .timeline li .d small{font-size:.55rem;font-weight:600;opacity:.9;}
+  .timeline li .tt{flex:1;min-width:0;}
+  .timeline li .tt b{font-size:.85rem;color:#3d3f52;}
+  .timeline li .tt span{display:block;font-size:.76rem;color:#82889a;margin-top:1px;}
+  .timeline .tag-row{margin-top:2px;}
+
+  /* ===== 逐日行程卡片 ===== */
+  .day-head{
+    display:flex;align-items:center;gap:11px;
+    background:linear-gradient(90deg,var(--tc-soft),#fff);
+    border-left:5px solid var(--tc-strong);
+    border-radius:13px;padding:9px 12px;margin-bottom:9px;
+  }
+  .day-head .dn{
+    flex:none;width:40px;height:40px;border-radius:13px;
+    background:linear-gradient(135deg,var(--tc1),var(--tc2));color:#fff;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    line-height:1.02;font-weight:800;font-size:.9rem;
+  }
+  .day-head .dn small{font-size:.56rem;font-weight:600;opacity:.92;}
+  .day-head .dh{flex:1;min-width:0;}
+  .day-head .dh b{font-size:.98rem;color:var(--tc-strong);display:block;line-height:1.2;}
+  .day-head .dh span{font-size:.74rem;color:#82889a;}
+  .day-route{font-size:.78rem;color:#6b7280;margin:-2px 0 8px;background:#faf8ff;border:1px dashed #ddd3f0;border-radius:10px;padding:7px 11px;}
+  .day-route b{color:#3d3f52;}
+  .day-blocks{display:flex;flex-direction:column;gap:8px;}
+  .dset{border-radius:13px;border:1px solid #ececf1;background:#fbfbfd;padding:8px 11px;}
+  .dset .dt{font-size:.72rem;font-weight:800;color:#a06a1f;letter-spacing:.04em;margin-bottom:4px;}
+  .dset .dset-r{font-size:.76rem;color:#5f6674;margin:3px 0;}
+  .spot{display:flex;gap:8px;align-items:flex-start;margin:5px 0;}
+  .spot .p{flex:none;width:19px;height:19px;border-radius:50%;text-align:center;line-height:19px;font-size:.7rem;color:#fff;background:#c0a56f;margin-top:1px;}
+  .spot .p.m{background:#e5533d;}
+  .spot .p.x{background:#2f9e63;}
+  .spot .nm{font-size:.79rem;font-weight:600;color:#3d3f52;}
+  .spot .nm span{font-size:.68rem;color:#8a91a0;font-weight:500;display:block;margin-top:1px;}
+  .day-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;}
+  .day-thumbs .th{border-radius:12px;overflow:hidden;border:1px solid #ececf1;background:#fff;}
+  .day-thumbs .th .ph{aspect-ratio:16/9;overflow:hidden;background:#eef0f4;}
+  .day-thumbs .th .ph img{width:100%;height:100%;object-fit:cover;}
+  .day-thumbs .th figcaption{padding:5px 8px 7px;font-size:.68rem;color:#8a91a0;}
+  .day-tip{margin-top:8px;font-size:.74rem;background:#fff3dc;border:1px solid #f0dfae;color:#8a6210;border-radius:10px;padding:7px 11px;}
+
+  /* ===== 火车攻略卡 ===== */
+  .rail-a{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;}
+  .rail-a .ra{display:flex;gap:8px;align-items:center;border-radius:12px;border:1px solid #ececf1;background:#fbfbfd;padding:8px 10px;}
+  .rail-a .ri{flex:none;font-size:19px;}
+  .rail-a .ra b{font-size:.78rem;color:#3d3f52;display:block;}
+  .rail-a .ra span{font-size:.68rem;color:#8a91a0;}
+  .rail-a .ra.hot{border:1.5px solid #e5533d;background:#fff4f2;}
+  .rail-a .ra.hot b{color:#e5533d;}
+  .rail-a .ra.hot span{color:#c96a57;}
+
+  /* ===== 注意事项 / 贴士 ===== */
+  .notes{display:flex;flex-direction:column;gap:8px;}
+  .note{display:flex;gap:9px;align-items:flex-start;border-radius:13px;padding:9px 11px;border:1px solid #eee;background:#fbfbfd;}
+  .note .ni{flex:none;font-size:19px;width:30px;height:30px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.06);}
+  .note .nt{flex:1;min-width:0;}
+  .note .nt b{font-size:.84rem;display:block;color:#3d3f52;}
+  .note .nt p,.note .nt ul{margin:.2rem 0 0;font-size:.76rem;color:#6b7280;}
+  .note .nt li{margin-top:2px;}
+
+  /* ===== 热门景点 / 美食网格 ===== */
+  .spots{display:grid;grid-template-columns:1fr 1fr;gap:9px;}
+  .spot-card{border-radius:13px;overflow:hidden;border:1px solid #ececf1;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.05);}
+  .spot-card .ph{aspect-ratio:16/10;overflow:hidden;background:#eef0f4;}
+  .spot-card .ph img{width:100%;height:100%;object-fit:cover;}
+  .spot-card .st{padding:6px 9px 8px;}
+  .spot-card .st b{font-size:.76rem;color:#3d3f52;display:block;line-height:1.3;}
+  .spot-card .st span{font-size:.68rem;color:#8a91a0;display:block;margin-top:1px;}
+
+  /* ===== 游客中心 / 使馆 ===== */
+  .res{display:flex;flex-direction:column;gap:9px;}
+  .res-box{border-radius:15px;border:1px solid #eee;overflow:hidden;background:#fff;}
+  .res-box .rp{aspect-ratio:16/7;overflow:hidden;background:#eef0f4;}
+  .res-box .rp img{width:100%;height:100%;object-fit:cover;}
+  .res-box .res-c{padding:11px 13px 12px;}
+.res-box .res-c h3{margin:0 0 6px;font-size:.9rem;display:flex;align-items:center;gap:6px;color:#3d3f52;}
+.res-box .res-c h3 .kind{padding:1px 8px;border-radius:999px;font-size:.64rem;background:#e8f0ff;color:#4f7fd6;font-weight:700;}
+.res-box .res-c p{margin:.3rem 0;font-size:.76rem;line-height:1.5;color:#4c5563;}
+.res-box .res-c p.tip{margin-top:.55rem;padding:7px 10px;border-radius:10px;background:#eefaf3;color:#2f9e63;font-weight:600;}
+.res-box .res-c ul{margin:.45rem 0 0;padding-left:1.05rem;font-size:.75rem;line-height:1.55;color:#505b6b;}
+.res-box .res-c li{margin-top:3px;}
+.res-box .res-c a{color:#6f6fe8;text-decoration:none;font-weight:600;word-break:break-all;}
+.res-qr{display:flex;align-items:center;gap:12px;margin-top:9px;padding:11px 13px;border-radius:15px;border:1px solid #eee;background:linear-gradient(135deg,#ffffff, #eef3ff);}
+.res-qr img{width:86px;height:86px;border-radius:10px;flex-shrink:0;background:#fff;object-fit:contain;}
+.res-qr .qr-t p{margin:0 0 3px;font-size:.85rem;font-weight:800;color:#3d3f52;}
+.res-qr .qr-t span{font-size:.72rem;line-height:1.45;color:#6b7280;}
+.res-box .rb{padding:9px 12px 11px;}
+  .res-box .rb h3{margin:0 0 4px;font-size:.9rem;display:flex;align-items:center;gap:6px;color:#3d3f52;}
+  .res-box .rb h3 .kind{padding:1px 8px;border-radius:999px;font-size:.64rem;background:#e8f0ff;color:#4f7fd6;font-weight:700;}
+  .res-box .rb p{margin:.2rem 0;font-size:.75rem;color:#6b7280;}
+  .res-box .rb ul{margin:.35rem 0 0;padding-left:1rem;font-size:.74rem;color:#626a78;}
+  .res-box .rb li{margin-top:2px;}
+  .res-box .rb a{color:#6f6fe8;text-decoration:none;font-weight:600;}
+
+  .foot-note{text-align:center;color:#8b909c;font-size:.8rem;padding:6px 18px 44px;max-width:720px;margin:0 auto;}
+  .foot-note a{color:#6f6fe8;text-decoration:none;}
+
+  /* ===== 定制纪念页 ===== */
+  .end-mark{display:flex;flex-direction:column;align-items:center;gap:6px;}
+  .end-g{width:76px;height:76px;border-radius:22px;background:linear-gradient(135deg,var(--tc1),var(--tc2));box-shadow:0 8px 22px rgba(90,84,214,.28);margin-bottom:6px;display:flex;align-items:center;justify-content:center;font-size:36px;}
+  .end-s{font-size:.98rem;color:#9a83e8;font-weight:600;margin:10px 0 0;}
+  .end-h2{margin:4px 0 0;font-size:2rem;color:#3d3f52;letter-spacing:.5px;}
+  .end-t{margin:10px 0 0;font-size:.92rem;color:#8a91a0;}
+
+  /* ===== 打印：每卡独立一页 A5 ===== */
+  @page{size:A5;margin:0;}
+  @media print{
+    body{background:#fff;}
+    header.masthead,.chips{display:none;}
+    .deck{display:block;}
+    .card{
+      width:148mm;height:210mm;border-radius:0;box-shadow:none;
+      page-break-after:always;margin:0;border:none;
+    }
+    .card:last-child{page-break-after:auto;}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/georgia/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="格鲁吉亚 7 日 · A5 卡片手册">
+    <meta property="og:description" content="格鲁吉亚7日深度旅行指南：第比利斯、卡兹别克雪山、西格纳吉红酒小镇、巴统海滨，含西格纳吉山城、卡赫季红酒小镇与生命之柱大教堂，附交通住宿与避坑。">
+    <meta property="og:url" content="https://worldstip.com/map/georgia/">
+    <meta property="og:image" content="https://worldstip.com/assets/images/pWa55P3q5EU.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="格鲁吉亚 7 日 · A5 卡片手册">
+    <meta name="twitter:description" content="格鲁吉亚7日深度旅行指南：第比利斯、卡兹别克雪山、西格纳吉红酒小镇、巴统海滨，含西格纳吉山城、卡赫季红酒小镇与生命之柱大教堂，附交通住宿与避坑。">
+    <meta name="twitter:image" content="https://worldstip.com/assets/images/pWa55P3q5EU.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "格鲁吉亚 7 日 · A5 卡片手册",
+      "url": "https://worldstip.com/map/georgia/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/georgia/",
+  "name": "格鲁吉亚 7 日 · A5 卡片手册",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="title-emoji">🏔️🍷🚞</div>
+  <h1>格鲁吉亚 · 7 日旅程 A5 卡片手册</h1>
+  <p>2026.10.03 — 10.09 ｜ 高加索之魂 · 一册在手，边走边看</p>
+</header>
+
+<div class="deck-wrap">
+  <nav class="chips" aria-label="卡片目录" style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;">
+    <button data-target="c-cover" class="active">📕 封面</button>
+    <span class="grp-label">── 7天旅程 ──</span>
+    <button data-target="c-overview">🗺️ 总览</button>
+    <button data-target="c-d1">Day1</button>
+    <button data-target="c-d2">Day2</button>
+    <button data-target="c-d3">Day3</button>
+    <button data-target="c-d4">Day4</button>
+    <button data-target="c-d5">Day5</button>
+    <button data-target="c-d6">Day6</button>
+    <button data-target="c-d7">Day7</button>
+    <span class="grp-label">── 更多 ──</span>
+    <button data-target="c-note">⚠️ 注意事项</button>
+    <button data-target="c-spot">🏞️ 景点</button>
+    <button data-target="c-food">🍽️ 美食</button>
+    <button data-target="c-tip">💡 贴士</button>
+    <button data-target="c-res">🛟 游客中心·使馆</button>
+  </nav>
+
+  <div class="deck" id="deck">
+
+    <!-- 1 · 封面 -->
+    <article class="card cover" id="c-cover" style="--tc1:#ff9a5c;--tc2:#7f8cff;--tc-strong:#6f6fe8;--tc-soft:#eee8ff;">
+      <span class="cover-deco" aria-hidden="true">🇬🇪</span>
+      <div class="overlay">
+        <p class="kick">Georgia · 高加索之魂</p>
+        <h2>7 日旅程<br>路书手册</h2>
+        <p class="sub">前 4 天第比利斯·包车漫游，后 2 天巴统·火车赴约——都市、红酒与世界遗产的深度慢游。</p>
+        <div class="meta"><span>📅 10.03—10.09</span><span>🚞 双层火车</span><span>🚗 包车</span><span>🍷 红酒山城</span></div>
+        <div class="meta" style="margin-bottom:0"><span>🔖 红标必去 · 绿标弹性</span></div>
+      </div>
+      <span class="page-num" style="color:rgba(255,255,255,.7)">1 / 16</span>
+    </article>
+
+    <!-- 2 · 动线总览 -->
+    <article class="card" id="c-overview" style="--tc1:#6f6fe8;--tc2:#9a7ef0;--tc-strong:#5a54d6;--tc-soft:#ede9ff;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🗺️</div>
+        <div><h2>7 天旅程 · 动线总览</h2><div class="en">7-Day Route Map</div></div>
+      </header>
+      <div class="body">
+        <ul class="timeline">
+          <li><span class="d"><small>Day</small>1</span><div class="tt"><b>抵达第比利斯</b><span>初见和平桥 · 木偶钟楼 · 老城黄昏</span></div></li>
+          <li><span class="d"><small>Day</small>2</span><div class="tt"><b>西格纳吉包车一日</b><span>博德贝修道院 · 红酒山城「爱情之城」</span><span class="tag-row"><span class="pill day">🚗 包车</span></span></div></li>
+          <li><span class="d"><small>Day</small>3</span><div class="tt"><b>卡兹别克两日·去程</b><span>姆茨赫塔→军事公路→山口·住卡兹别克</span><span class="tag-row"><span class="pill day">🚗 包车</span></span></div></li>
+          <li><span class="d"><small>Day</small>4</span><div class="tt"><b>卡兹别克返程</b><span>圣三一教堂日照金山 → 硫磺浴</span></div></li>
+          <li><span class="d"><small>Day</small>5</span><div class="tt"><b>第比利斯→巴统</b><span>双层火车 17:10-21:11 · 住巴统</span><span class="tag-row"><span class="pill day">🚞 火车</span></span></div></li>
+          <li><span class="d"><small>Day</small>6</span><div class="tt"><b>巴统自由懒散</b><span>黑海大道 · 阿里尼诺 · 教堂缆车</span></div></li>
+          <li><span class="d"><small>Day</small>7</span><div class="tt"><b>巴统→第比利斯</b><span>早班火车北返 → 机场返程</span><span class="tag-row"><span class="pill day">🚞 火车</span></span></div></li>
+        </ul>
+      </div>
+      <span class="page-num">2 / 16</span>
+    </article>
+
+    <!-- 3 · Day 1 -->
+    <article class="card" id="c-d1" style="--tc1:#ff9a5c;--tc2:#f06ba4;--tc-strong:#e5593d;--tc-soft:#ffece4;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">✈️</div>
+        <div><h2>第 1 天 · 抵达初见</h2><div class="en">10.03 · 第比利斯老城</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>Day</small>1</span>
+          <div class="dh"><b>抵达第比利斯</b><span>10月3日 · 第比利斯老城</span></div>
+        </div>
+        <p class="day-route">放下行李，用一场老城黄昏与硫磺浴，开启格鲁吉亚之夜。<b>节奏松弛</b></p>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">✈️ 航班 · 抵达</div>
+            <div class="dset-r"><b>全天</b> 抵达第比利斯国际机场（TBS），专车接机前往老城酒店入住。</div>
+            <div class="dset-r"><b>傍晚</b> 老城漫步，黄昏光线下的斜屋顶与阳台本身就是风景。</div>
+          </div>
+          <div class="dset"><div class="dt">🌃 今晚 · 老城夜景</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">和平桥<span>库拉河上的白色玻璃步行桥，入夜点亮蓝紫灯光</span></div></div>
+            <div class="spot"><span class="p m">★</span><div class="nm">木偶钟楼<span>童话斜塔，红砖瓷砖拼贴，整点有木偶敲钟表演</span></div></div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/pWa55P3q5EU.webp" type="image/webp">
+<img src="../../assets/images/pWa55P3q5EU.jpg" alt="第比利斯和平桥" loading="lazy" width="800" height="600">
+</picture></div><figcaption>和平桥 · 库拉河玻璃地标</figcaption></figure>
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/rjzsYxylC4U.webp" type="image/webp">
+<img src="../../assets/images/rjzsYxylC4U.jpg" alt="第比利斯木偶钟楼" loading="lazy" width="800" height="600">
+</picture></div><figcaption>木偶钟楼 · 童话斜塔</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 建议：落地后先到老城，夜游两地标后回酒店倒时差。</div>
+      </div>
+      <span class="page-num">3 / 16</span>
+    </article>
+
+    <!-- 4 · Day 2 -->
+    <article class="card" id="c-d2" style="--tc1:#46b98a;--tc2:#ff9a5c;--tc-strong:#2f9e63;--tc-soft:#e5f6ee;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🚗</div>
+        <div><h2>第 2 天 · 西格纳吉包车</h2><div class="en">10.04 · 卡赫季红酒山城</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>Day</small>2</span>
+          <div class="dh"><b>西格纳吉 · 包车一日游</b><span>博德贝 → 老城 → 古墙 → 红酒山城</span></div>
+        </div>
+        <p class="day-route">往东跨过山脊，去卡赫季红葡萄酒产区最浪漫的山城。🚗 <b>包车一日</b>（单程约 2h / 110km），昼出夜归住第比利斯。</p>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">☀️ 上午 · 朝圣博德贝</div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">博德贝修道院 Bodbe<span>圣妮诺传教旧址，花园远眺阿拉扎尼河谷与雪山</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🌇 下午 · 爱情之城</div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">西格纳吉老城 &amp; 古墙<span>红瓦山城、蜿蜒古堡；可 24 小时登记结婚的「爱情小城」</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">红酒小镇品鉴<span>卡赫季是格鲁吉亚葡萄酒心脏，尝 qvevri 陶罐红酒与恰恰酒</span></div></div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/tCGR1C6QhvQ.webp" type="image/webp">
+<img src="../../assets/images/tCGR1C6QhvQ.jpg" alt="西格纳吉山城" loading="lazy" width="800" height="600">
+</picture></div><figcaption>西格纳吉 · 爱情之城</figcaption></figure>
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/n1XoqM__LHM.webp" type="image/webp">
+<img src="../../assets/images/n1XoqM__LHM.jpg" alt="卡赫季红酒小镇" loading="lazy" width="800" height="600">
+</picture></div><figcaption>卡赫季 · 葡萄酒之乡</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 城头观景台是打卡位，傍晚顺光返回第比利斯较从容。</div>
+      </div>
+      <span class="page-num">4 / 16</span>
+    </article>
+
+    <!-- 5 · Day 3 -->
+    <article class="card" id="c-d3" style="--tc1:#7f8cff;--tc2:#46b98a;--tc-strong:#5a54d6;--tc-soft:#ede9ff;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">⛰️</div>
+        <div><h2>第 3 天 · 卡兹别克去程</h2><div class="en">10.05 · 军事公路进山</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>Day</small>3</span>
+          <div class="dh"><b>卡兹别克两日 · 去程</b><span>第比利斯→姆茨赫塔→山口→住卡兹别克</span></div>
+        </div>
+        <p class="day-route">沿「红色自驾路线」完整走通——湖泊、古堡、山口与雪山。🚗 <b>包车边逛边玩约 6h</b>，夜宿卡兹别克。</p>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">🛤️ 自驾路线图</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">姆茨赫塔 Mtskheta<span>最古老首都·世界遗产，生命之柱大教堂是东正教精神中心</span></div></div>
+            <div class="dset-r">→ 津瓦利水库观景台 → 阿纳努里要塞（Free 9:00-20:00）→ 帕萨瑙里午餐 Khinkali → 俄格友谊纪念碑 → 克里斯托维山口（至高点）→ Sno 村石头人像 → <b>终点卡兹别克小镇住 Hotel Memoir</b></div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/MbojXdqjWGw.webp" type="image/webp">
+<img src="../../assets/images/MbojXdqjWGw.jpg" alt="生命之柱大教堂" loading="lazy" width="800" height="600">
+</picture></div><figcaption>姆茨赫塔 · 生命之柱大教堂</figcaption></figure>
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/Rk7SnzrW63Q.webp" type="image/webp">
+<img src="../../assets/images/Rk7SnzrW63Q.jpg" alt="格鲁吉亚军事公路" loading="lazy" width="800" height="600">
+</picture></div><figcaption>军事公路 M3 · 雪山自驾线</figcaption></figure>
+        </div>
+        <div class="day-tip">⚠️ 姆茨赫塔不在 M3 主干道，结束务必切回军事公路向北；沿途勿走小路。</div>
+      </div>
+      <span class="page-num">5 / 16</span>
+    </article>
+
+    <!-- 6 · Day 4 -->
+    <article class="card" id="c-d4" style="--tc1:#f06ba4;--tc2:#ff9a5c;--tc-strong:#e0478f;--tc-soft:#ffe7f1;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🌅</div>
+        <div><h2>第 4 天 · 卡兹别克返程</h2><div class="en">10.06 · 日照金山</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>Day</small>4</span>
+          <div class="dh"><b>卡兹别克返程</b><span>圣三一教堂 → 返回第比利斯 → 硫磺浴</span></div>
+        </div>
+        <p class="day-route">清晨的日照金山是此行最值得守候的一刻——教堂与雪山同框。</p>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">🌅 清晨 · 日照金山</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">圣三一教堂 Gergeti<span>海拔 2170m 悬崖石教堂，旭日染金雪峰，封面机位</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">卡兹别克山<span>海拔 5047m 终年积雪火山，主景在教堂背后</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">⬇️ 上午 · 返程南下</div>
+            <div class="dset-r">沿军事公路原路返回第比利斯（约 3h / 160km），宽裕可顺路停古达乌里观景台。</div>
+          </div>
+          <div class="dset"><div class="dt">🛁 傍晚 · 温泉犒劳</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">观景小火车 &amp; 硫磺浴<span>登小火车看华灯初上，再泡阿巴诺图巴尼硫磺浴收尾</span></div></div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/09k1jK28MRk.webp" type="image/webp">
+<img src="../../assets/images/09k1jK28MRk.jpg" alt="卡兹别克圣三一教堂" loading="lazy" width="800" height="600">
+</picture></div><figcaption>圣三一教堂 · 日照金山</figcaption></figure>
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/14G5ACqxOxY.webp" type="image/webp">
+<img src="../../assets/images/14G5ACqxOxY.jpg" alt="第比利斯硫磺浴" loading="lazy" width="800" height="600">
+</picture></div><figcaption>阿巴诺图巴尼硫磺浴</figcaption></figure>
+        </div>
+        <div class="day-tip">🌅 建议 6:00 前后守候日出；教堂可自驾或徒步上山（约 1.5–2h）。</div>
+      </div>
+      <span class="page-num">6 / 16</span>
+    </article>
+
+    <!-- 7 · Day 5 -->
+    <article class="card" id="c-d5" style="--tc1:#39b0c9;--tc2:#6f6fe8;--tc-strong:#3981c9;--tc-soft:#e3f3fb;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🚞</div>
+        <div><h2>第 5 天 · 驰向黑海</h2><div class="en">10.07 · 双层火车 → 巴统</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>Day</small>5</span>
+          <div class="dh"><b>乘双层火车 · 驰向黑海</b><span>第比利斯 → 巴统 · 住巴统</span></div>
+        </div>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">🚆 双层观光列车 Train 804</div>
+            <div class="dset-r"><b>17:10 → 21:11</b>（约 4 小时）· 二等 36 GEL / 一等 76 GEL</div>
+            <div class="dset-r">途经 Kutaisi → Ureki → Kobuleti → 巴统中央站；TKT.ge 网上购票，护照号购票，上层靠右看黑海。</div>
+          </div>
+          <div class="dset"><div class="dt">🏙️ 白天 · 第比利斯余韵</div>
+            <div class="dset-r">自由广场、鲁斯塔维利大街漫步，或补看格鲁吉亚国家博物馆；午后取行李到中央车站。</div>
+          </div>
+          <div class="dset"><div class="dt">🌊 晚上 · 抵达巴统</div>
+            <div class="dset-r">约 21:11 到站，乘 Bolt 短驳到酒店（中央站在北缘，距海滨大道约 10 分钟车程）；可沿海滨大道散步看黑海夜色。</div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/uQhHUECRh9U.webp" type="image/webp">
+<img src="../../assets/images/uQhHUECRh9U.jpg" alt="巴统黑海夜色" loading="lazy" width="800" height="600">
+</picture></div><figcaption>巴统黑海海滨夜色</figcaption></figure>
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/2Z9r3CNV8kQ.webp" type="image/webp">
+<img src="../../assets/images/2Z9r3CNV8kQ.jpg" alt="格鲁吉亚铁道 Stadler 双层列车开往巴统" loading="lazy" width="800" height="600">
+</picture></div><figcaption>Stadler KISS 双层列车开往巴统</figcaption></figure>
+        </div>
+        <div class="day-tip">🌊 若精力尚可，入住后沿海滨大道走走，看阿里尼诺雕像灯光。</div>
+      </div>
+      <span class="page-num">7 / 16</span>
+    </article>
+
+    <!-- 8 · Day 6 -->
+    <article class="card" id="c-d6" style="--tc1:#46b98a;--tc2:#39b0c9;--tc-strong:#2f9e63;--tc-soft:#e5f6ee;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🏖️</div>
+        <div><h2>第 6 天 · 巴统黑海之滨</h2><div class="en">10.08 · 巴统自由懒散</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>Day</small>6</span>
+          <div class="dh"><b>巴统 · 黑海之滨</b><span>阿里尼诺 → 海滨大道 → 主教座堂 → 缆车</span></div>
+        </div>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">☀️ 上午 · 海边精华</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">阿里尼诺雕像<span>海边动态雕塑，日落两身影相拥再分离，巴统地标</span></div></div>
+            <div class="spot"><span class="p m">★</span><div class="nm">黑海海滨大道<span>约 7km 观海步道，一侧碧浪一侧棕榈喷泉</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🌇 下午 · 登高与老城</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">圣母主教座堂<span>1900 年哥特复兴式天主堂，尖顶彩窗精美</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">巴统缆车 Argo<span>登高俯瞰市区与黑海全景，黄昏光线绝佳</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🌙 更多玩法</div>
+            <div class="dset-r">字母塔（130m 双螺旋塔）· 巴统水族馆 &amp; 喷泉广场 · 傍晚黑海餐厅烤鱼+美酒。</div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/uLNb9IWDKfE.webp" type="image/webp">
+<img src="../../assets/images/uLNb9IWDKfE.jpg" alt="巴统阿里尼诺雕像" loading="lazy" width="800" height="600">
+</picture></div><figcaption>阿里尼诺雕像 · 落日相拥</figcaption></figure>
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/k_fshY9ukYw.webp" type="image/webp">
+<img src="../../assets/images/k_fshY9ukYw.jpg" alt="巴统黑海海滨大道" loading="lazy" width="800" height="600">
+</picture></div><figcaption>黑海海滨大道</figcaption></figure>
+        </div>
+        <div class="day-tip">🌇 傍晚回海滨大道看雕像相拥的灯光秀——巴统最动人的一幕。</div>
+      </div>
+      <span class="page-num">8 / 16</span>
+    </article>
+
+    <!-- 9 · Day 7 -->
+    <article class="card" id="c-d7" style="--tc1:#6f6fe8;--tc2:#8f84f7;--tc-strong:#5a54d6;--tc-soft:#ede9ff;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🛫</div>
+        <div><h2>第 7 天 · 火车北返归程</h2><div class="en">10.09 · 巴统 → 第比利斯</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>Day</small>7</span>
+          <div class="dh"><b>火车北返 · 归程</b><span>巴统 → 双层火车 → 第比利斯 → 返程航班</span></div>
+        </div>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">🚆 回程早班双层列车</div>
+            <div class="dset-r"><b>Train 803 08:00→12:00</b>（备选 806 06:30→10:31）· 二等 36 / 一等 76 GEL</div>
+            <div class="dset-r">到第比利斯中央车站 Station Square，转地铁/打车赴机场。</div>
+          </div>
+          <div class="dset"><div class="dt">🕐 时间轴（确保赶上 16:00 航班）</div>
+            <div class="dset-r">06:30–08:00 巴统乘早班火车 → 10:30–12:00 抵中央车站 Uber/Bolt 赴机场（约 40 分钟）→ 14:00 前到第比利斯机场 → <b>16:00 起飞</b>。</div>
+          </div>
+          <div class="dset"><div class="dt">✅ 收尾清单</div>
+            <div class="dset-r">确认护照/机票 · 中格免签凭护照出入境 · 提前 24h 订回程票 · 采买葡萄洒、恰恰、香料与陶器。</div>
+          </div>
+        </div>
+        <div class="day-tip">⏰ 机场距中央车站不近，务必为打车留足余量。</div>
+      </div>
+      <span class="page-num">9 / 16</span>
+    </article>
+
+    <!-- 10 · 注意事项 -->
+    <article class="card" id="c-note" style="--tc1:#ff9a5c;--tc2:#ff6f74;--tc-strong:#e5593d;--tc-soft:#ffece4;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">⚠️</div>
+        <div><h2>注意事项</h2><div class="en">Things to Know</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><span class="ni">🛂</span><div class="nt"><b>签证与证件</b><p>中格互免签证（2024.5.28 生效），10 月赴格免签；护照有效期需 ≥6 个月，打印往返机票+酒店订单备用。</p></div></div>
+          <div class="note"><span class="ni">🛡️</span><div class="nt"><b>出行保险</b><p>建议出行前购买涵盖医疗、意外与航班延误的境外旅行保险，登山/自驾项目尽量选可附加条款，保障更安心。</p></div></div>
+          <div class="note"><span class="ni">💵</span><div class="nt"><b>货币与支付</b><p>使用格鲁吉亚拉里 GEL，机场可换汇；打车建议备现金零钱 + 银行卡。</p></div></div>
+          <div class="note"><span class="ni">🚗</span><div class="nt"><b>自驾安全</b><p>军事公路弯多海拔高，控速、勿走小路；出发加满油，沿线加油站有限（SOCAR）。</p></div></div>
+          <div class="note"><span class="ni">🌡️</span><div class="nt"><b>十月天气</b><p>平均 10–20°C、山区更低，卡兹别克近 0°C，务必带羽绒/厚外套，昼夜温差大。</p></div></div>
+          <div class="note"><span class="ni">🍷</span><div class="nt"><b>礼仪与文化</b><p>教堂内着装得体、保持安静；敬酒时举杯说「Gaumarjos」更拉好感。</p></div></div>
+          <div class="note"><span class="ni">🔌</span><div class="nt"><b>电源与网络</b><p>欧标双圆孔（C/F 型），带转换插头；机场/市区可购 eSIM 或当地电话卡。</p></div></div>
+        </div>
+      </div>
+      <span class="page-num">10 / 16</span>
+    </article>
+
+    <!-- 11 · 热门景点 -->
+    <article class="card" id="c-spot" style="--tc1:#46b98a;--tc2:#39b0c9;--tc-strong:#2f9e63;--tc-soft:#e2f5ec;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🏞️</div>
+        <div><h2>热门景点介绍</h2><div class="en">Must-See Spots</div></div>
+      </header>
+      <div class="body">
+        <div class="spots">
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/09k1jK28MRk.webp" type="image/webp">
+<img src="../../assets/images/09k1jK28MRk.jpg" alt="卡兹别克圣三一教堂与雪山" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>卡兹别克圣三一教堂 <span class="pill must">必去</span></b><span>海拔 2170m 悬崖圣堂 · 日照金山封面机位</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/MbojXdqjWGw.webp" type="image/webp">
+<img src="../../assets/images/MbojXdqjWGw.jpg" alt="姆茨赫塔生命之柱大教堂" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>姆茨赫塔生命之柱 <span class="pill must">必去</span></b><span>世界遗产古城 · 东正教精神中心</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/uLNb9IWDKfE.webp" type="image/webp">
+<img src="../../assets/images/uLNb9IWDKfE.jpg" alt="巴统阿里和尼诺雕像" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>阿里 &amp; 尼诺雕像 <span class="pill must">必去</span></b><span>海边动态雕塑 · 日落相拥，巴统地标</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/pWa55P3q5EU.webp" type="image/webp">
+<img src="../../assets/images/pWa55P3q5EU.jpg" alt="第比利斯和平桥" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>和平桥 <span class="pill must">必去</span></b><span>库拉河上玻璃步行桥 · 入夜蓝紫灯光</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/14G5ACqxOxY.webp" type="image/webp">
+<img src="../../assets/images/14G5ACqxOxY.jpg" alt="第比利斯硫磺浴" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>阿巴诺图巴尼硫磺浴 <span class="pill must">必去</span></b><span>老城红砖圆顶浴池 · 泡汤解乏</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/k_fshY9ukYw.webp" type="image/webp">
+<img src="../../assets/images/k_fshY9ukYw.jpg" alt="巴统黑海海滨大道" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>黑海海滨大道 <span class="pill must">必去</span></b><span>7km 观海步道 · 棕榈与雕塑</span></div></div>
+        </div>
+      </div>
+      <span class="page-num">11 / 16</span>
+    </article>
+
+    <!-- 12 · 经典美食 -->
+    <article class="card" id="c-food" style="--tc1:#ffb454;--tc2:#ff8a5c;--tc-strong:#d98818;--tc-soft:#fff1dc;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🍽️</div>
+        <div><h2>经典美食介绍</h2><div class="en">Taste of Georgia</div></div>
+      </header>
+      <div class="body">
+        <div class="spots">
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/n1XoqM__LHM.webp" type="image/webp">
+<img src="../../assets/images/n1XoqM__LHM.jpg" alt="qvevri 陶罐红酒与葡萄园" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>qvevri 陶罐红酒</b><span>世界葡萄酒摇篮 · 卡赫季陶罐窖藏</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/I6jZ1iLFCoE.webp" type="image/webp">
+<img src="../../assets/images/I6jZ1iLFCoE.jpg" alt="khinkali 卡里饺子" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>Khinkali 卡里饺</b><span>帕萨瑙里沿线必吃 · 肉汁大饺子</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/LbmdBTOq4RQ.webp" type="image/webp">
+<img src="../../assets/images/LbmdBTOq4RQ.jpg" alt="khachapuri 船型奶酪饼" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>Khachapuri 奶酪饼</b><span>船形卧蛋黄 · 第比利斯打卡王</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/amnS2quOxoA.webp" type="image/webp">
+<img src="../../assets/images/amnS2quOxoA.jpg" alt="chacha 恰恰烈酒" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>Chacha 恰恰</b><span>葡萄渣烈酒 · 格鲁吉亚「口服液」</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/Tc9ZEkTOgOI.webp" type="image/webp">
+<img src="../../assets/images/Tc9ZEkTOgOI.jpg" alt="lobio 陶罐豆汤" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>Lobio 豆汤</b><span>陶罐炖红豆 · 配玉米面包暖胃</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/eeUXJ3r7V54.webp" type="image/webp">
+<img src="../../assets/images/eeUXJ3r7V54.jpg" alt="churchkhela 坚果甜食" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>Churchkhela</b><span>坚果葡萄干串糖 · 甜食伴手礼</span></div></div>
+        </div>
+      </div>
+      <span class="page-num">12 / 16</span>
+    </article>
+
+    <!-- 13 · 实用贴士 -->
+    <article class="card" id="c-tip" style="--tc1:#39b0c9;--tc2:#7f8cff;--tc-strong:#3981c9;--tc-soft:#e3f3fb;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">💡</div>
+        <div><h2>实用贴士</h2><div class="en">Smart Tips</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><span class="ni">🚞</span><div class="nt"><b>双层火车购票</b><p>TKT.ge / railway.ge 网上购票，护照号购票，凭电子票上车；想看黑海选<b>右侧、上层</b>座位。</p></div></div>
+          <div class="note"><span class="ni">🚇</span><div class="nt"><b>市区交通</b><p>第比利斯地铁+打车（Bolt/Yandex），市区紧凑；老城酒店到各景点多在步行 20 分钟内。</p></div></div>
+          <div class="note"><span class="ni">📅</span><div class="nt"><b>火车班次</b><p>去程 Train 804 17:10-21:11；返程 803 08:00/806 06:30 早发，回程提前 24h 订票免无座。</p></div></div>
+          <div class="note"><span class="ni">🕰️</span><div class="nt"><b>机场时间</b><p>返程建议 14:00 前到第比利斯机场（距中央车站不近），为打车留足余量。</p></div></div>
+          <div class="note"><span class="ni">🎁</span><div class="nt"><b>伴手礼</b><p>葡萄酒、恰恰烈酒、香料与陶器是必买；硫磺浴区逛逛老城小店。</p></div></div>
+          <div class="note"><span class="ni">🌇</span><div class="nt"><b>黄金时刻</b><p>清晨看阿里尼诺&海滨大道（人少光好），傍晚看雕像灯光秀与卡兹别克日照金山。</p></div></div>
+        </div>
+      </div>
+      <span class="page-num">13 / 16</span>
+    </article>
+
+    <!-- 14 · 第比利斯→巴统 火车攻略 -->
+    <article class="card" id="c-train" style="--tc1:#3981c9;--tc2:#6f6fe8;--tc-strong:#3981c9;--tc-soft:#e3f3fb;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🚄</div>
+        <div><h2>第比利斯 → 巴统 · 火车攻略</h2><div class="en">Tbilisi to Batumi by Train</div></div>
+      </header>
+      <div class="body">
+        <div class="rail-a">
+          <div class="ra"><span class="ri">🚌</span><div><b>大巴</b><span>约 40 GEL · ≈5.5h</span></div></div>
+          <div class="ra hot"><span class="ri">🚄</span><div><b>火车（推荐）</b><span>二等 ≈36 GEL · ≈5h · 舒适+海景</span></div></div>
+        </div>
+        <div class="dset">
+          <div class="dt">🛒 怎么购票 · 两个渠道，账号不通用</div>
+          <div class="dset-r"><b>TKT.ge</b>（APP：TRE）· 火车+大巴都能买 · 二等 36 GEL + 10% 服务费</div>
+          <div class="dset-r"><b>GR App</b>（官方）· 只卖火车 · 二等 35 GEL · 无服务费</div>
+          <div class="dset-r" style="font-weight:700;color:#a06a1f">只坐火车→用 GR 更省；可能坐大巴→用 TKT/TRE</div>
+        </div>
+        <div class="dset">
+          <div class="dt">💺 怎么选座 · 这钱必须花</div>
+          <div class="dset-r">选座 <b>+1 GEL</b> · 自己挑位置，务必勾选</div>
+          <div class="dset-r">取消保障 <b>+2 GEL</b> · 免费退改，行程保险</div>
+          <div class="dset-r">提前约 <b>2 周</b>购票（最快约 20 天开售）· 旺季(6–9月)热门时段早买</div>
+        </div>
+        <div class="day-tip" style="background:#ffe9e4;border-color:#f5c6b8;color:#c2402c">
+          🌊 抢海景座核心：选 <b>二层</b> + 座位靠 <b>右侧</b>！去巴统方向右侧临海，窗外就是黑海海岸线。
+        </div>
+        <div class="dset">
+          <div class="dt">🧳 乘车与行李</div>
+          <div class="dset-r"><b>出发站</b> Tbilisi Central · 无安检无闸机，像坐公交</div>
+          <div class="dset-r"><b>检票</b> 列车员车门口看手机截图（座位号+姓名）</div>
+          <div class="dset-r"><b>行李</b> 标称限重约 36kg 基本不查 · 车厢门口有行李区，28 寸箱随便放</div>
+        </div>
+      </div>
+      <span class="page-num">14 / 16</span>
+    </article>
+
+    <!-- 15 · 游客中心 / 使馆 -->
+    <article class="card" id="c-res" style="--tc1:#46b98a;--tc2:#7f8cff;--tc-strong:#2f9e63;--tc-soft:#e3f5ec;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🛟</div>
+        <div><h2>游客中心 · 中国驻格使馆</h2><div class="en">Help &amp; Consulate</div></div>
+      </header>
+      <div class="body">
+        <div class="res">
+          <div class="res-box">
+            <div class="res-c"><h3>🅿️ 第比利斯游客中心 <span class="kind">便民</span></h3>
+              <p>位于市中心<span style="color:#2f9e63;font-weight:700;">自由广场（Liberty Square）</span>旁·亚历山大·普希金公园内。</p>
+              <p>☎️ <b>+995 32 2 15 86 97</b> &nbsp;·&nbsp; ✉️ tictbilisi@gmail.com</p>
+              <p>🕐 每天开放：<b>10月–3月 10:00–21:00</b> ／ <b>4月–9月 09:00–21:00</b></p>
+              <p class="tip">免费地图、信息册、卫生间与出行咨询，可索取多语资料，出发求助第一站。</p>
+            </div>
+          </div>
+          <div class="res-box">
+            <div class="res-c"><h3>✈️ 第比利斯机场游客中心 <span class="kind">便民</span></h3>
+              <p>位于<span style="color:#2f9e63;font-weight:700;">机场大楼到达大厅</span>（距市中心约 17 公里）。</p>
+              <p>☎️ <b>+995 32 2 31 00 07</b> &nbsp;·&nbsp; ✉️ ticairport@gmail.com</p>
+              <p>🕐 全年 <b>24 小时</b>无休，抵达即取资料。</p>
+            </div>
+          </div>
+          <div class="res-box">
+            <div class="res-c"><h3>🛡️ 中国驻格鲁吉亚大使馆 <span class="kind">求助</span></h3>
+              <p>📍 第比利斯市 Barnov Str. 52（距老城约 10 分钟车程）</p>
+              <p>🌐 官网：<a href="http://ge.china-embassy.gov.cn/" target="_blank" rel="noopener noreferrer">ge.china-embassy.gov.cn</a></p>
+              <ul>
+                <li>领事保护与协助（24h）：<b>+995 599 650 585</b></li>
+                <li>领事证件咨询：+995 22 59 0000 · 总机 +995 322 259 000</li>
+                <li>办公时间：周二、周三、周五 09:30–12:00</li>
+                <li>紧急也可拨打 <b>外交部 12308 领保热线</b></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="res-qr">
+          <picture>
+<source srcset="../../assets/images/georgia_qr.webp" type="image/webp">
+<img src="../../assets/images/georgia_qr.png" alt="格鲁吉亚国家旅游局官方微信二维码" loading="lazy" width="800" height="600">
+</picture>
+          <div class="qr-t"><p>📱 扫码关注</p><span>格鲁吉亚国家旅游局官方微信<br>了解最新旅游信息</span></div>
+        </div>
+      </div><span class="page-num">15 / 16</span></article>
+
+    <!-- 15 · 定制纪念页 -->
+    <article class="card" id="c-end" style="--tc1:#6f6fe8;--tc2:#9a7ef0;--tc-strong:#5a54d6;--tc-soft:#ede9ff;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🇬🇪</div>
+        <div><h2>Georgia · 高加索之魂</h2><div class="en">Made with Love</div></div>
+      </header>
+      <div class="body" style="align-items:center;justify-content:center;text-align:center;">
+        <div class="end-mark">
+          <div class="end-g"></div>
+          <p class="end-s">🎒 愿这 7 天，装下山与海</p>
+          <h2 class="end-h2">由「WorldStip」定制</h2>
+          <p class="end-t">旅途愉快 · 一路平安 ✨</p>
+        </div>
+      </div>
+      <span class="page-num">16 / 16</span>
+    </article>
+
+  </div>
+</div>
+
+<p class="foot-note">
+  格鲁吉亚 7 日旅程卡片手册 · 由「WorldStip」定制。<br>
+  出行前请以 <a href="https://www.georgiatravel.cn/" target="_blank" rel="noopener noreferrer">格鲁吉亚国家旅游局官网</a> 及当地实时信息核对为准。
+</p>
+
+<script>
+(function(){
+  'use strict';
+  try {
+    var chips = document.querySelectorAll('.chips button');
+    function activate(id){
+      chips.forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-target') === id); });
+    }
+    chips.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var id = btn.getAttribute('data-target');
+        var card = document.getElementById(id);
+        if (card) { card.scrollIntoView({behavior:'smooth', block:'center'}); activate(id); }
+      });
+    });
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting) activate(en.target.id); });
+    }, {root:null, threshold:0.55});
+    document.querySelectorAll('.card').forEach(function(c){ observer.observe(c); });
+  } catch(err){ /* 静态内容仍完整可读 */ }
+})();
+</script>
+<footer style="position:relative;margin:44px auto 8px;padding:18px 24px;max-width:1180px;width:calc(100% - 40px);text-align:center;background:rgba(13,17,32,.55);border:1px solid rgba(255,255,255,.12);border-radius:14px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:2">
+  <span style="font-size:13px;color:#dfe3ea;letter-spacing:.03em">Made with care by <b style="color:#fff">WorldStip</b> &nbsp;·&nbsp; <a href="https://worldstip.com" style="color:#9fb6ff;text-decoration:none" target="_blank" rel="noopener noreferrer">worldstip.com</a> &nbsp;·&nbsp; 旅行小册子</span>
+</footer>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

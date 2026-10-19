@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>宜昌 · 三种玩法组合指南（市区+周边 / 自驾 / 乘船）</title>
+<meta name="description" content="宜昌到三峡怎么玩？三种玩法拆开讲：宜昌市区+周边轻松游、自驾自由行、乘船畅游两坝一峡/三峡游轮，各自的优势、预留时间、费用、安全要求与准备工作。含葛洲坝与三峡大坝方位澄清、沿线景点与美食。">
+<meta name="keywords" content="宜昌旅行,宜昌市区周边游,宜昌自驾游,三峡乘船游,两坝一峡,三峡大坝,葛洲坝,宜昌美食,攻略">
+<style>
+:root{
+  --ink:#1b2a33; --mut:#6b7a83; --line:#dfe6ea; --bg:#fbfaf6;
+  --green:#1f7a5c; --green-deep:#155c45; --sand:#c9a46a; --sand-soft:#f0e6d3;
+  --blue:#2b6cb0; --red:#c0392b; --amber:#b97a12;
+  --paper:#ffffff; --section:#f4f2ea;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg);line-height:1.75}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.hero{background:linear-gradient(135deg,#13505e,#1c768f 55%,#2a97b5);color:#fff;padding:46px 0 40px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-60px;top:-40px;width:280px;height:280px;background:radial-gradient(circle,rgba(255,255,255,.14),transparent 70%)}
+.hero .kicker{letter-spacing:.35em;font-size:12px;opacity:.85}
+.hero h1{font-size:32px;line-height:1.25;margin:8px 0 6px}
+.hero p{font-size:15px;opacity:.95;max-width:680px}
+.hero .badge{display:inline-block;margin-top:14px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:4px 14px;border-radius:20px;font-size:13px}
+.sec{margin:34px 0 14px;display:flex;align-items:center;gap:12px}
+.sec .no{width:34px;height:34px;border-radius:9px;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;flex:none}
+.sec h2{font-size:22px}
+.sec .sub{color:var(--mut);font-size:13px;margin-top:2px}
+/* dam-clarify */
+.dams{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:10px}
+.dam{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;border-left:4px solid}
+.dam.g{ border-left-color:var(--blue)}
+.dam.t{ border-left-color:var(--green)}
+.dam h4{font-size:15px;margin-bottom:4px}
+.dam p{font-size:13px;color:var(--mut)}
+.dam .where{display:inline-block;margin-top:8px;font-size:12px;background:var(--section);padding:3px 10px;border-radius:6px;color:var(--ink)}
+/* switch */
+.switch{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 6px}
+.switch button{flex:1;min-width:210px;background:var(--paper);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;text-align:left;cursor:pointer;transition:.18s}
+.switch button .t{font-size:14px;font-weight:700;display:block}
+.switch button .d{font-size:12px;color:var(--mut);display:block;margin-top:2px}
+.switch button.active{background:var(--green);border-color:var(--green);color:#fff}
+.switch button.active .d{color:rgba(255,255,255,.85)}
+.panel{display:none}
+.panel.active{display:block;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;margin:14px 0}
+.card h3{font-size:17px;margin-bottom:6px;color:var(--green-deep)}
+.card .lead{color:var(--mut);font-size:13px;margin-bottom:14px}
+.pro{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.pro div{background:var(--section);border-radius:12px;padding:12px 14px;font-size:13.5px}
+.pro div b{display:block;margin-bottom:3px;color:var(--green-deep)}
+.day{display:flex;gap:16px;border-left:2px solid var(--line);margin:6px 0 0;padding:0 0 20px 20px;position:relative}
+.day::before{content:"";position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--sand);border:2px solid var(--paper)}
+.day .dl{font-weight:700;color:var(--green-deep);flex:none;width:96px;font-size:15px}
+.day .dc p{margin:2px 0 8px;font-size:14px}
+.tag{display:inline-block;background:var(--sand-soft);color:#8a6a33;border-radius:6px;padding:0 7px;font-size:12px;margin:0 4px 4px 0}
+/* safety/prep */
+.safeprep{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:10px}
+.safeprep .box{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.safeprep .box h4{font-size:15px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.safeprep .box.safe h4{color:var(--red)}
+.safeprep .box.prep h4{color:var(--amber)}
+.safeprep ul{margin-left:18px}
+.safeprep li{font-size:13.5px;margin-bottom:6px}
+.safeprep li b{color:var(--ink)}
+/* spots */
+.spots{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:6px}
+.spots figure{overflow:hidden;border-radius:14px;background:var(--section);border:1px solid var(--line)}
+.spots img{width:100%;height:150px;object-fit:cover;display:block}
+.spots figcaption{padding:8px 10px;font-size:12.5px;background:#fff}
+.spots figcaption b{display:block;font-size:13.5px}
+.spots figcaption span{color:var(--mut);font-size:12px}
+.route{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px}
+.route .node{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;position:relative}
+.route .node .m{font-size:11px;color:#fff;background:var(--green);border-radius:20px;padding:1px 8px;display:inline-block;margin-bottom:8px}
+.route .node .m.city{background:var(--blue)}
+.route .node .m.drive{background:var(--amber)}
+.route .node .m.boat{background:var(--green)}
+.route .node h4{font-size:15px;margin-bottom:4px}
+.route .node p{font-size:12.5px;color:var(--mut)}
+.foodlist{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
+.foodlist div{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:13.5px}
+.foodlist div b{display:block;color:var(--green-deep);font-size:14.5px;margin-bottom:2px}
+.budget{width:100%;border-collapse:collapse;margin-top:10px;background:var(--paper);font-size:13.5px}
+.budget th,.budget td{border:1px solid var(--line);padding:9px 12px;text-align:left}
+.budget th{background:var(--green);color:#fff;font-weight:600}
+.budget td:first-child{font-weight:600;white-space:nowrap}
+.tips{background:var(--sand-soft);border:1px solid #e2cfae;border-radius:14px;padding:16px 18px;margin-top:16px;font-size:13.5px}
+.tips h3{color:#8a6a33;font-size:15px;margin-bottom:8px}
+.tips li{margin-left:18px;margin-bottom:4px}
+footer{margin:40px 0 24px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:12.5px;text-align:center;line-height:1.9}
+@media(max-width:760px){.spots,.route,.foodlist,.pro,.dams,.safeprep{grid-template-columns:1fr}.hero h1{font-size:26px}}
+@media(max-width:520px){.day .dl{width:76px}}
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/yichang/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="宜昌 · 三种玩法组合指南（市区+周边 / 自驾 / 乘船）">
+    <meta property="og:description" content="宜昌到三峡怎么玩？三种玩法拆开讲：宜昌市区+周边轻松游、自驾自由行、乘船畅游两坝一峡/三峡游轮，各自的优势、预留时间、费用、安全要求与准备工作。含葛洲坝与三峡大坝方位澄清、沿线景点与美食。">
+    <meta property="og:url" content="https://worldstip.com/map/yichang/">
+    <meta property="og:image" content="https://worldstip.com/assets/images/yichang_dam.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="宜昌 · 三种玩法组合指南（市区+周边 / 自驾 / 乘船）">
+    <meta name="twitter:description" content="宜昌到三峡怎么玩？三种玩法拆开讲：宜昌市区+周边轻松游、自驾自由行、乘船畅游两坝一峡/三峡游轮，各自的优势、预留时间、费用、安全要求与准备工作。含葛洲坝与三峡大坝方位澄清、沿线景点与美食。">
+    <meta name="twitter:image" content="https://worldstip.com/assets/images/yichang_dam.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "宜昌 · 三种玩法组合指南（市区+周边 / 自驾 / 乘船）附时间·费用·安全准备",
+      "url": "https://worldstip.com/map/yichang/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/yichang/",
+  "name": "宜昌 · 三种玩法组合指南（市区+周边 / 自驾 / 乘船）",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">YICHANG · THREE GORGES</div>
+    <h1>宜昌 · 三种玩法组合指南</h1>
+    <p>先分清"宜昌的两个坝"，再把玩法归成三类：<b>市区+周边轻松游</b>、<b>自驾自由行</b>、<b>乘船畅游</b>。每种玩法给出优势、预留时间、费用、安全要求与准备工作，按你的节奏挑一种。</p>
+    <span class="badge">市区周边 · 自驾 · 乘船 · 三模式切换</span>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- 先分清两个坝 -->
+  <section>
+    <div class="sec"><span class="no">1</span><div><h2>先分清：宜昌有两个坝</h2><div class="sub">很多人混这两个名，位置不同、玩法不同</div></div></div>
+    <div class="dams">
+      <div class="dam g">
+        <h4>葛洲坝 · "长江第一坝"</h4>
+        <p>在<span>宜昌市西陵区</span>，长江三峡出口处紧邻市区，1970年代施工、1981年通航发电，是长江干流第一座大型水电站。游览核心体验是<b>坐船过它的船闸</b>，感受水位升降。离市区最近，进坝门槛最低。</p>
+        <span class="where">📍 宜昌市区边 · 可当日往返 · 偏"城景"</span>
+      </div>
+      <div class="dam t">
+        <h4>三峡大坝 · "世界第一坝"</h4>
+        <p>在<span>宜昌市夷陵区三斗坪镇</span>，比葛洲坝再往上游约38公里，是当今世界最大的水利枢纽。游览核心是<b>坛子岭360°俯瞰、185平台近距大坝、截流纪念园</b>。需实名预约 + 身份证 + 景区观光车换乘。</p>
+        <span class="where">📍 宜昌夷陵区 · 需预约换乘 · 偏"大国工程"</span>
+      </div>
+    </div>
+    <p style="margin-top:10px;font-size:13px;color:var(--mut)">"两坝一峡" = 三峡大坝 + 葛洲坝 + 中间的西陵峡，三者都在宜昌市域内。"两坝一峡"游船从宜昌市区<b>三峡游客中心</b>出发，先过葛洲坝船闸、再穿西陵峡、抵三峡大坝下游的三斗坪码头。</p>
+  </section>
+
+  <!-- 2 三种玩法 -->
+  <section>
+    <div class="sec"><span class="no">2</span><div><h2>三种玩法，按需切换</h2><div class="sub">点开切换 · 每个含优势/时间/费用/安全/准备</div></div></div>
+    <div class="switch">
+      <button data-plan="p1" class="active"><span class="t">① 市区 + 周边游</span><span class="d">轻松 · 城景近郊 · 2天</span></button>
+      <button data-plan="p2"><span class="t">② 自驾游</span><span class="d">自由 · 深入山野 · 3-4天</span></button>
+      <button data-plan="p3"><span class="t">③ 乘船游</span><span class="d">经典 · 两坝一峡/游轮 · 1~5天</span></button>
+    </div>
+
+    <!-- A 市区+周边 -->
+    <section class="panel active" id="p1">
+      <div class="card">
+        <h3>玩法一 · 宜昌市区 + 周边游</h3>
+        <p class="lead">不折腾"进坝/预约/船闸"，主打城景人文与市郊近景，适合时间紧张、带老人小孩、或只想轻松过周末的人。</p>
+        <div class="pro">
+          <div><b>优势</b>轻量、机动、无预约负担；市区公共交通便利；看江景、品美食、逛人文都能兼顾，门票大多免费或低价。</div>
+          <div><b>适合谁</b>周末游、带长辈/娃、商务顺路、不想赶行程的休闲派。</div>
+        </div>
+        <h3>行程建议 · 预留 2 天</h3>
+        <div class="day"><div class="dl">D1 · 市区</div><div class="dc">
+          <p><span class="tag">景</span><b>滨江公园 + 镇江阁</b>沿江散步看江景 → <b>西坝岛</b>隔江看市区 → <b>宜昌博物馆</b>（长江/巴楚文化，免费）→ 傍晚<b>CBD/万达商圈</b>吃肥鱼火锅。</p>
+        </div></div>
+        <div class="day"><div class="dl">D2 · 周边</div><div class="dc">
+          <p><span class="tag">景</span>近郊二选一：<b>磨基山</b>（市郊看三峡城市天际线全景）或 <b>车溪民俗 / 下牢溪</b>（地道田园溪谷，市区打车或公交可达）；想添一道江湖景可加<b>宜昌三峡人家</b>一日（需多留大半天）。</p>
+        </div></div>
+        <table class="budget"><tr><th>项目</th><th>参考预算（元/人，2天）</th></tr>
+          <tr><td>市区文博/公园</td><td>大多免费，个别20–40</td></tr>
+          <tr><td>市内交通（公交/打车）</td><td>约 60–120</td></tr>
+          <tr><td>住宿（市区2晚）</td><td>300–600</td></tr>
+          <tr><td>正餐+小吃</td><td>约 250–400</td></tr>
+          <tr><td><b>合计</b></td><td><b>约 700–1200</b></td></tr></table>
+        <div class="safeprep">
+          <div class="box safe"><h4>⚠️ 安全要求</h4><ul>
+            <li>市区均平坦规范，主要注意<b>江边观景不要翻越护栏</b>，下雨湿滑。</li>
+            <li>去磨基山/下牢溪注意<b>山路台阶与蚊虫</b>，穿防滑鞋。</li>
+          </ul></div>
+          <div class="box prep"><h4>🧳 准备工作</h4><ul>
+            <li>基本不用预约；<b>宜昌博物馆</b>带身份证。</li>
+            <li>轻装出行，夏防暑、春秋带薄外套；GPS定位或在线地图即可。</li>
+          </ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- B 自驾 -->
+    <section class="panel" id="p2">
+      <div class="card">
+        <h3>玩法二 · 自驾游</h3>
+        <p class="lead">自由度最高，能去只有自驾/包车才顺路的非核心点，还能把 G348 三峡地质公路当风景本身。适合会开车、爱自由组合、2-4人结伴。</p>
+        <div class="pro">
+          <div><b>优势</b>想停就停、景点间灵活串联；导航直达各景区换乘中心；去三峡人家、清江画廊、秭归屈原故里等非核心点最省心。</div>
+          <div><b>适合谁</b>亲子/情侣/好友包车，行程想自定义、不赶团队节奏的人。</div>
+        </div>
+        <h3>行程建议 · 预留 3-4 天</h3>
+        <div class="day"><div class="dl">D1 · 进峡</div><div class="dc"><p><span class="tag">景</span>自驾抵宜昌东/机场取车 → 下午<b>三峡大坝</b>（导航至坝区换乘中心，预约+身份证+观光车）→ 夜宿坝区民宿或市区。</p></div></div>
+        <div class="day"><div class="dl">D2 · 山水</div><div class="dc"><p><span class="tag">景</span><b>三峡人家</b>（导航至王家坪停车场，可坐索道/观光梯）全天土家风情；或改<b>三峡大瀑布</b>穿瀑。</p></div></div>
+        <div class="day"><div class="dl">D3 · 画廊</div><div class="dc"><p><span class="tag">景</span><b>清江画廊</b>乘船游碧水青山 + 武落钟离山；时间富余加<b>秭归屈原故里</b>。</p></div></div>
+        <div class="day"><div class="dl">D4 · 返程</div><div class="dc"><p><span class="tag">景</span>沿 G348 地质公路慢行回市区，逛滨江/西坝后还车返程。</p></div></div>
+        <table class="budget"><tr><th>项目</th><th>参考预算（元/人，3-4天）</th></tr>
+          <tr><td>租车费（含油/过路，4人摊）</td><td>人均 350–650</td></tr>
+          <tr><td>景区门票（大坝/人家/清江）</td><td>约 350–500</td></tr>
+          <tr><td>住宿3晚</td><td>450–800</td></tr>
+          <tr><td>餐饮</td><td>400–650</td></tr>
+          <tr><td><b>合计</b></td><td><b>约 1600–2600</b></td></tr></table>
+        <div class="safeprep">
+          <div class="box safe"><h4>⚠️ 安全要求</h4><ul>
+            <li><b>山区道路多弯、部分临崖</b>：G348及进景区的山路限速、连续弯道多，雨雾天更需谨慎，切勿弯道超车。</li>
+            <li><b>雨季防落石/塌方</b>：关注当地天气预报与路况，预警天气别冒险进山。</li>
+            <li>务必<b>系安全带</b>；进坝区、景区均需在<b>换乘中心停车换乘</b>，私家车不能直接开进大坝核心区。</li>
+            <li>夜间少走陌生山路，优先市区/镇区住宿。</li>
+          </ul></div>
+          <div class="box prep"><h4>🧳 准备工作</h4><ul>
+            <li><b>提前实名预约三峡大坝</b>（官方/门票平台）+ 带身份证；各 5A 景区建议订票。</li>
+            <li>检查车况（胎压/刹车/备胎）；带<strong>手机支架导航 + 离线地图</strong>（山里信号不稳）。</li>
+            <li>备现金零钱、雨具、防滑徒步鞋、饮用水与简单干粮。</li>
+            <li>提前了解各景区<b>换乘/停车指引</b>与闭园时间，别卡点赶末班。</li>
+          </ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- C 乘船 -->
+    <section class="panel" id="p3">
+      <div class="card">
+        <h3>玩法三 · 乘船游</h3>
+        <p class="lead">最经典的看三峡方式：游船视野最佳、体验船闸"水涨船高"、不用自己开车换乘。短线走"两坝一峡"，长线走"三峡游轮"（宜昌↔重庆）连玩上游峡段。</p>
+        <div class="pro">
+          <div><b>优势</b>峡谷最佳视角 + 过闸/升船机体验 + 省心免自驾；两坝一峡一次看满"两坝+一峡"；游轮可一线连玩巫峡/瞿塘峡/白帝城。</div>
+          <div><b>适合谁</b>第一次来、想省心、喜水上视角、或要连玩三峡全线的人。</div>
+        </div>
+        <h3>行程建议 · 短线1天 / 长线4-5天</h3>
+        <div class="day"><div class="dl">短线1天</div><div class="dc"><p><span class="tag">船</span><b>两坝一峡</b>：约8:30三峡游客中心登船 → 过葛洲坝船闸 → 游西陵峡 → 12:30三斗坪码头 → 下午<b>三峡大坝</b>（坛子岭/185/截流园）→ 环线返程。可加<b>旗舰版过三峡升船机</b>。</p></div></div>
+        <div class="day"><div class="dl">长线4-5天</div><div class="dc"><p><span class="tag">船</span><b>三峡游轮航线</b>：从宜昌往上游连玩<b>秭归屈原故里 → 巫山巫峡 · 小三峡 → 奉节瞿塘峡 · 白帝城</b>；宜昌→重庆约5天、重庆→宜昌约4天，一线串起三峡精华。</p></div></div>
+        <table class="budget"><tr><th>项目</th><th>参考预算（元/人）</th></tr>
+          <tr><td>两坝一峡船+大坝套票</td><td>80–320（游船等级不同）</td></tr>
+          <tr><td>两坝一峡游玩1天</td><td>合计约 500–900</td></tr>
+          <tr><td>三峡游轮（4-5天，含船宿餐饮）</td><td>2000–4000（按舱位）</td></tr>
+          <tr><td><b>合计</b></td><td><b>短线 500–900 / 长线 2000–4500</b></td></tr></table>
+        <div class="safeprep">
+          <div class="box safe"><h4>⚠️ 安全要求</h4><ul>
+            <li>全程<b>实名购票</b>，登船携带身份证；按乘务指引穿救生衣、听安全说明。</li>
+            <li>甲板观景<b>抓稳栏杆、别靠边探身</b>，过闸、弯道时勿在甲板奔跑。</li>
+            <li>易晕船者提前备晕船药，江上风大备防风外套。</li>
+            <li>遵守游船出发/返回时间，<b>别单独脱团赶不上船</b>。</li>
+          </ul></div>
+          <div class="box prep"><h4>🧳 准备工作</h4><ul>
+            <li><b>旺季务必提前线上订票</b>，不买现场黄牛；提前确认出发码头与集合时间（约需提前30-45分钟登船）。</li>
+            <li><b>三峡大坝需另行实名预约 + 身份证</b>；游轮需提前办登船手续。</li>
+            <li>备防水袋/相机套（甲板水雾）、防晒、充电宝。</li>
+            <li>了解<strong>退改规则</strong>与天气改期政策；长线游轮提前订舱位。</li>
+          </ul></div>
+        </div>
+        <div class="spots">
+          <figure><picture>
+<source srcset="../../assets/images/yichang_dam.webp" type="image/webp">
+<img loading="lazy" src="../../assets/images/yichang_dam.jpg" alt="三峡大坝" width="600" height="338">
+</picture><figcaption><b>三峡大坝</b><span>世界第一坝 · 坛子岭俯瞰</span></figcaption></figure>
+          <figure><picture>
+<source srcset="../../assets/images/yichang_cruise.webp" type="image/webp">
+<img loading="lazy" src="../../assets/images/yichang_cruise.jpg" alt="两坝一峡游船" width="600" height="338">
+</picture><figcaption><b>两坝一峡游船</b><span>葛洲坝过闸 · 西陵峡航线</span></figcaption></figure>
+          <figure><picture>
+<source srcset="../../assets/images/yichang_xiling.webp" type="image/webp">
+<img loading="lazy" src="../../assets/images/yichang_xiling.jpg" alt="西陵峡" width="600" height="338">
+</picture><figcaption><b>西陵峡</b><span>绝版三峡 · 石壁如削</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- 3 沿线景点 -->
+  <section>
+    <div class="sec"><span class="no">3</span><div><h2>沿线景点 · 适合哪种玩法</h2><div class="sub">标注「市区周边/自驾/乘船」各用哪种方式最合适</div></div></div>
+    <div class="route">
+      <div class="node"><span class="m city">市区</span><h4>滨江公园 · 镇江阁</h4><p>宜昌城市名片沿江景，免费，步行可逛，半天零负担。</p></div>
+      <div class="node"><span class="m city">市区</span><h4>西坝岛 · 宜昌博物馆</h4><p>隔江看城景 + 长江/巴楚人文，室内免费，适合雨天。</p></div>
+      <div class="node"><span class="m city">市区</span><h4>磨基山 / 下牢溪 / 车溪</h4><p>市郊近景，看城市天际线或田园溪谷，打车/自驾最省心。</p></div>
+      <div class="node"><span class="m drive">自驾</span><h4>三峡人家</h4><p>吊脚楼 + 土家风情出片圣地，自驾直达王家坪，约1天。</p></div>
+      <div class="node"><span class="m drive">自驾</span><h4>清江画廊</h4><p>碧水青山如屏，自驾+景区游船，近秭归可连玩，半天-1天。</p></div>
+      <div class="node"><span class="m drive">自驾</span><h4>三峡大瀑布</h4><p>穿瀑水帘，上午水量足，自驾或包车较顺，约半天。</p></div>
+      <div class="node"><span class="m boat">乘船</span><h4>葛洲坝 · 西陵峡</h4><p>两坝一峡游船串联，过船闸+绝版峡谷全程精华，约半天。</p></div>
+      <div class="node"><span class="m boat">乘船</span><h4>三峡大坝</h4><p>坛子岭/185/截流园，船到三斗坪换车+机票环节，约半天。</p></div>
+      <div class="node"><span class="m boat">乘船</span><h4>上游：秭归→巫峡→瞿塘峡</h4><p>长线游轮连玩：屈原故里、巫山小三峡、奉节白帝城。</p></div>
+    </div>
+  </section>
+
+  <!-- 4 美食 -->
+  <section>
+    <div class="sec"><span class="no">4</span><div><h2>宜昌吃什么</h2><div class="sub">峡江鲜味 + 巴楚风味</div></div></div>
+    <div class="foodlist">
+      <div><b>长江肥鱼火锅</b>清蒸/火锅，鱼肉嫩极少刺，汤底鲜，市区人均七八十。</div>
+      <div><b>清蒸江鲢</b>坝区农家乐招牌，鲜嫩肥美，现杀现蒸。</div>
+      <div><b>三游神仙鸡</b>因"三游洞"得名的非遗名菜，酱香入味。</div>
+      <div><b>土家十大碗 / 炕土豆</b>清江岸边土家风味，山野实在。</div>
+      <div><b>红油小面 / 凉虾</b>宜昌街头烟火气，早餐小面配凉虾。</div>
+    </div>
+  </section>
+
+  <div class="tips">
+    <h3>💡 三种方式通用提示</h3>
+    <ul>
+      <li><b>进三峡大坝无论哪种方式都要实名预约 + 身份证 + 景区观光车换乘</b>。</li>
+      <li>旺季（节假日/暑期）两坝一峡游船、各5A门票都要<b>提前线上预订</b>，别现场找黄牛。</li>
+      <li>先想清自己要"进坝/坐船"还是"只看城景"，再选玩法——<b>市区周边玩法不必预约大坝</b>，最省心。</li>
+      <li>三峡天气多变，出行前查预报；雨季山区自驾留意落石与路面湿滑。</li>
+    </ul>
+  </div>
+
+  <footer>
+    宜昌 · 三种玩法组合指南 ｜ 票价/班次为参考值，旺季上浮请以实时为准<br>
+    配图均为原创生成 · 无版权风险<br>
+    Made with care by <b>MrdT</b> &middot; <a href="https://worldstip.com" target="_blank" rel="noopener noreferrer">worldstip.com</a> &middot; 旅行小册子
+  </footer>
+</main>
+
+<script>
+function show(id){
+  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
+  document.querySelectorAll('.switch button').forEach(function(b){b.classList.remove('active')});
+  document.getElementById(id).classList.add('active');
+  document.querySelector('.switch button[data-plan="'+id+'"]').classList.add('active');
+  window.scrollTo({top:document.getElementById(id).offsetTop-20,behavior:'smooth'});
+}
+document.querySelectorAll('.switch button').forEach(function(b){
+  b.addEventListener('click',function(){show(b.dataset.plan)});
+});
+</script>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+</body>
+</html>

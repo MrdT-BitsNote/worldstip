@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>广州 · 陈家祠·沙面·广州塔（2/3/4天三方案）</title>
+<meta name="description" content="广州2/3/4天旅行组合指南：陈家祠、沙面、永庆坊、广州塔珠江夜游、广式早茶与美食，含沙面岛，附交通住宿与避坑。">
+<meta name="keywords" content="广州旅游,广州攻略,广州美食,陈家祠,沙面,广州塔,早茶">
+<style>
+  :root{
+    --city:#c4492f;        /* 岭南砖红 */
+    --city-deep:#8f3a1f;   /* 砖红深 */
+    --city-soft:#fbe7df;   /* 砖红浅 */
+    --river:#1f4e79;       /* 珠江深蓝 */
+    --arcade:#f7ead2;      /* 骑楼米黄 */
+    --gold:#e0a02e;        /* 鎏金 */
+    --ink:#2f2823;         /* 正文 */
+    --ink-soft:#7a6a5e;    /* 次要文字 */
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(196,73,47,.28);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(224,160,46,.16), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(196,73,47,.12), transparent 55%),
+      #fbf6ec;
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--river)}
+
+  /* ===== 顶部横幅 ===== */
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--city) 8%,#d95f3f 55%,var(--city-deep));
+    padding:40px 36px 38px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-30px;bottom:-70px;width:300px;height:260px;
+    background:
+      repeating-linear-gradient(45deg, rgba(255,255,255,.12) 0 14px, transparent 14px 32px),
+      radial-gradient(circle at 70% 70%, rgba(255,214,120,.35), transparent 60%);
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.94;max-width:660px}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{
+    font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:10px;
+  }
+
+  /* ===== 方案切换 ===== */
+  .switch{display:flex;gap:12px;margin:28px 0 6px;flex-wrap:wrap}
+  .switch button{
+    flex:1;min-width:240px;border:2px solid var(--arcade);
+    background:var(--card);color:var(--ink);cursor:pointer;text-align:left;
+    border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  }
+  .switch button:hover{border-color:var(--city);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(196,73,47,.4)}
+  .switch button.on{border-color:var(--city);background:linear-gradient(135deg,#fdf0ea,#fbe7df)}
+  .switch .t{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:800}
+  .switch .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff;background:var(--river)}
+  .switch .d{font-size:13px;color:var(--ink-soft);margin-top:5px}
+
+  /* ===== 区块通用 ===== */
+  section.panel{
+    margin-top:26px;background:var(--card);border-radius:var(--radius);
+    padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(196,73,47,.08);
+  }
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--city-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--city-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--city-deep);margin-top:20px}
+  .hint b{font-weight:800}
+
+  /* 日程时间轴 */
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--city-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;
+    background:var(--city);border:3px solid var(--city-soft);box-sizing:content-box;
+  }
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--city-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--city-soft);color:var(--city-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--gold);font-weight:800}
+
+  /* 特色景点详览 */
+  .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+  .spot{display:flex;gap:18px;background:#fdfbf6;border:1px solid var(--arcade);border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+  .spot:hover{border-color:rgba(196,73,47,.35);box-shadow:0 10px 22px -12px rgba(196,73,47,.3)}
+  .spimg{flex:0 0 42%;margin:0;min-width:0}
+  .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+  .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+  .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+  .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+  .sptxt h3{margin:0;font-size:19px;color:var(--city-deep)}
+  .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+  .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#f6efe2;border-radius:10px;padding:9px 12px;margin-top:10px}
+  .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+  @media (max-width:640px){
+    .spot{flex-direction:column}
+    .spimg{flex:none}
+    .spimg img{height:auto;max-height:220px;object-fit:cover}
+  }
+
+  /* 住宿 / 美食卡片 */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid var(--arcade);border-radius:14px;padding:14px 16px;background:#fdfbf6;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(196,73,47,.35);box-shadow:0 8px 18px -10px rgba(196,73,47,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--river);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--arcade);padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--city-soft);color:var(--city-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--gold);font-weight:800;white-space:nowrap}
+
+  /* 预算表 */
+  .budget{border:1px solid var(--arcade);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fdfbf6}
+  .budget caption{background:var(--river);color:#fff;font-weight:800;font-size:14px;padding:10px 14px;text-align:left}
+  .budget th,.budget td{padding:9px 14px;text-align:left}
+  .budget thead th{background:var(--city-soft);color:var(--city-deep);font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#f8f1e3}
+  .budget .tot{font-weight:800;color:var(--city-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  /* 底部 */
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--river)}
+
+  @media print{
+    body{background:#fff}
+    .switch button{display:none}
+    .wrap{max-width:none;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
+    .card,.budget,.spot{page-break-inside:avoid}
+  }
+  @media (max-width:600px){
+    .hero{padding:30px 22px 28px}
+    .hero h1{font-size:27px}
+    .wrap{padding:18px 14px 48px}
+    section.panel{padding:20px 18px}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/gz/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="广州 · 陈家祠·沙面·广州塔（2/3/4天三方案）">
+    <meta property="og:description" content="广州2/3/4天旅行组合指南：陈家祠、沙面、永庆坊、广州塔珠江夜游、广式早茶与美食，含沙面岛，附交通住宿与避坑。">
+    <meta property="og:url" content="https://worldstip.com/map/gz/">
+    <meta property="og:image" content="https://worldstip.com/assets/images/kX-qY8YM1pw.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="广州 · 陈家祠·沙面·广州塔（2/3/4天三方案）">
+    <meta name="twitter:description" content="广州2/3/4天旅行组合指南：陈家祠、沙面、永庆坊、广州塔珠江夜游、广式早茶与美食，含沙面岛，附交通住宿与避坑。">
+    <meta name="twitter:image" content="https://worldstip.com/assets/images/kX-qY8YM1pw.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "广州 · 三模式组合旅行指南（2天精华 · 3天加长 · 4天深度）",
+      "url": "https://worldstip.com/map/gz/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/gz/",
+  "name": "广州 · 陈家祠·沙面·广州塔（2/3/4天三方案）",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">🏮 广州 · GUANGZHOU TRAVEL GUIDE</div>
+  <h1>广州三模式组合指南</h1>
+  <p>一座泡在早茶与骑楼里的城市：<b>2 天精华</b> 走西关文化和珠江夜景；<b>3 天加长</b> 加长隆乐园适合亲子年轻；<b>4 天深度</b> 把老城、山水、美食慢慢吃透。美味之都，1–3 人均适合。</p>
+  <div class="meta">
+    <span>📍 目的地：广州</span>
+    <span>👥 1–3 人 / 亲子</span>
+    <span>⏱️ 精华2天 · 加长3天 · 深度4天</span>
+    <span>💰 人均预算已附</span>
+  </div>
+</header>
+
+<!-- 方案切换 -->
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="on" role="tab" aria-selected="true" data-plan="planA" id="tabA">
+    <span class="t"><span class="badge">2天</span> 精华版 🏮</span>
+    <div class="d">西关文化 + 珠江夜景 / 人均约 600–1000</div>
+  </button>
+  <button role="tab" aria-selected="false" data-plan="planB" id="tabB">
+    <span class="t"><span class="badge">3天</span> 加长版 🎢</span>
+    <div class="d">精华 + 长隆乐园（亲子）/ 人均约 1000–1700</div>
+  </button>
+  <button role="tab" aria-selected="false" data-plan="planC" id="tabC">
+    <span class="t"><span class="badge">4天</span> 深度版 🍲</span>
+    <div class="d">老城+山水+美食吃透 / 人均约 1400–2300</div>
+  </button>
+</div>
+
+<!-- ============ 方案A：2天精华 ============ -->
+<section class="panel" id="planA" role="tabpanel">
+  <h2><span class="emo">🏮</span>2 天 · 精华版（西关文化 + 珠江夜景）</h2>
+  <p class="sub">广州的第一次见面：一天泡在西关老城与欧陆风情里，一天走上现代中轴看小蛮腰夜珠江，好吃好拍。</p>
+  <div class="hint">👥 <b>1–3 人适配：</b>广州景点多在市区、地铁便利，1–3 人自由行最合适；预算按 <b>人均</b>。</div>
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 西关 + 老城人文</div>
+      <div class="seg"><span>🗿 上午 陈家祠（岭南建筑/雕饰）</span><span>🏛️ 中午 沙面岛欧陆建筑+午餐</span></div>
+      <div class="seg"><span>🏮 下午 永庆坊/西关骑楼老街</span><span>🐟 晚上 黄沙海鲜/地道粤菜</span></div>
+      <div class="tip2"><span class="arr">💡</span> 陈家祠、沙面、永庆坊都在老城区，地铁串联顺路；早茶安排在中午当 brunch 很广州。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 现代中轴 + 珠江夜游</div>
+      <div class="seg"><span>🌆 上午 花城广场/广东省博物馆（建筑+看展）</span><span>🗼 下午 广州塔俯瞰全城</span></div>
+      <div class="seg"><span>🚢 晚上 珠江夜游看两岸灯光</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 广州塔登顶与珠江游船建议提前购票、选好时段；博物馆周一闭馆，注意安排。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ 方案B：3天加长 ============ -->
+<section class="panel" id="planB" role="tabpanel" hidden>
+  <h2><span class="emo">🎢</span>3 天 · 加长版（精华 + 长隆乐园）</h2>
+  <p class="sub">前两天的城市精华之外，留一整天给长隆（动物世界/欢乐世界任选），亲子与年轻人都能玩尽兴。</p>
+  <div class="hint">👥 <b>亲子/年轻人适配：</b>长隆多个园区（动物世界、欢乐世界、水上乐园、国际大马戏），门票按园、淡旺季浮动大；乐园周边住宿更省时间。预算按 <b>人均</b>。</div>
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 西关 + 老城人文</div>
+      <div class="seg"><span>🗿 陈家祠 → 沙面岛（午餐）</span><span>🏮 永庆坊/西关骑楼老街</span></div>
+      <div class="seg"><span>🐟 黄沙海鲜晚餐</span></div>
+      <div class="tip2"><span class="arr">📌</span> 与精华版 DAY1 相同，老城经典一次走完。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 长隆乐园一整天</div>
+      <div class="seg"><span>🐼 全天 长隆野生动物世界（乘车参观/步行区）</span><span>🎢 或 欢乐世界/水上乐园（按喜好选）</span></div>
+      <div class="seg"><span>🌙 晚上 长隆国际大马戏（可选）</span></div>
+      <div class="tip2"><span class="arr">💡</span> 长隆园区很大，早点入园、官网/APP 提前订票省排队；动物园小火车和无障碍通道很适合亲子。</div>
+    </li>
+    <li>
+      <div class="day">DAY 3 · 现代中轴 + 珠江夜景</div>
+      <div class="seg"><span>🌆 花城广场/省博 → 🗼 广州塔</span><span>🚢 珠江夜游 → 返程</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 若 DAY2 玩得累，DAY3 可放慢节奏，睡到自然醒再走中轴。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ 方案C：4天深度 ============ -->
+<section class="panel" id="planC" role="tabpanel" hidden>
+  <h2><span class="emo">🍲</span>4 天 · 深度版（老城+山水+美食吃透）</h2>
+  <p class="sub">把广州当「目的地」慢慢住下来：不只走老城与中轴，还上白云山俯瞰、钻进街区吃遍新旧粤味。</p>
+  <div class="hint">👥 <b>深度适配：</b>节奏松弛、老少皆宜；4 天足够老少皆宜，美食与博物馆穿插，不走马观花。预算按 <b>人均</b>。</div>
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 西关人文日</div>
+      <div class="seg"><span>🥢 上午 地道早茶（brunch）</span><span>🗿 陈家祠 → 🏛️ 沙面岛（午餐）</span></div>
+      <div class="seg"><span>🏮 永庆坊/西关骑楼老街</span><span>🌇 傍晚 1860 创意园/老城区漫步</span></div>
+      <div class="tip2"><span class="arr">💡</span> 广州早茶不赶早，10 点前后入茶楼慢悠悠吃最惬意；沙面适合拍照。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 现代中轴 + 白云山</div>
+      <div class="seg"><span>🌆 上午 花城广场/广东省博物馆</span><span>⛰️ 下午 白云山西门登高/坐缆车俯瞰全城</span></div>
+      <div class="seg"><span>🗼 傍晚 广州塔光影 + 珠江夜游</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 白云山很大，坐景区电瓶车/缆车上山更省力；省博周一闭馆要避。</div>
+    </li>
+    <li>
+      <div class="day">DAY 3 · 深度美食 + 市井</div>
+      <div class="seg"><span>🥟 上午 老字号早茶/点心</span><span>🛍️ 北京路/上下九老街逛吃</span></div>
+      <div class="seg"><span>🍜 下午 陈添记/坚记等老字号小店扫街</span><span>🌃 晚上 珠江琶醍夜景/夜市</span></div>
+      <div class="tip2"><span class="arr">🍢</span> 越秀/荔湾一带老字号密集，跟着饭点走没错；上下九人多，早去体验好。</div>
+    </li>
+    <li>
+      <div class="day">DAY 4 · 收尾 + 伴手礼</div>
+      <div class="seg"><span>🍤 上午 慢早餐 + 自由补漏（二沙岛/石室圣心教堂）</span><span>🎁 中午 逛逛买手信（腊味/糕点/凉茶）</span></div>
+      <div class="seg"><span>🚆 下午 返程</span></div>
+      <div class="tip2"><span class="arr">💡</span> 石室圣心大教堂是哥特式建筑地标、免费开放；腊味与广式糕点适合当伴手礼。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ 特色景点详览 ============ -->
+<section class="panel" id="spots">
+  <h2><span class="emo">⭐</span>特色亮点 · 单独详览</h2>
+  <p class="sub">把广州最有辨识度的亮点单独拎出来看图说清楚——值不值得去、怎么玩、藏在哪。</p>
+  <div class="spotlist">
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/kX-qY8YM1pw.webp" type="image/webp">
+<img src="../../assets/images/kX-qY8YM1pw.jpg" alt="广州塔珠江夜景：珠江边矗立的多彩灯光广州塔（小蛮腰），夜景灯光璀璨通亮，倒影映在珠江江面，城市天际线" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>广州塔 · 珠江夜色地标</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e6eef6;color:#1f4e79">海珠 · 现代地标</span><h3>广州塔 · 小蛮腰与夜珠江</h3></div>
+        <p>广州的城市名片，纤腰般的「小蛮腰」塔身高耸珠江畔，登顶可俯瞰全城。夜幕降临，塔身灯色与江面倒影、两岸高楼构成广州最具代表性的夜景画面。</p>
+        <p class="spgo">👍 必去理由：登观景层看城市全景 + 坐珠江游船看两岸灯光，是广州必打卡。登塔与游船提前订票选时段，周末人更多。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/DXdAPuGmWrk.webp" type="image/webp">
+<img src="../../assets/images/DXdAPuGmWrk.jpg" alt="广州沙面岛：欧式风情建筑街区，欧陆老式洋楼、绿树成荫的街道，优雅静谧的历史风情街，盆栽与老建筑" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>沙面岛 · 欧陆风情街</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#f0e7d3;color:#7a5a1a">荔湾 · 历史风貌</span><h3>沙面岛 · 欧陆老建筑</h3></div>
+        <p>珠江边的小岛，保留着整齐的欧式洋楼与绿茵街道，曾是近代广州的商贸区。红砖洋房、老树、骑楼连成一片西式街区，漫步其中像走进一部老电影。</p>
+        <p class="spgo">👍 必去理由：广州最好拍的街区之一，随便一条街都是景。步行即可逛完，适合安排在陈家祠与永庆坊之间顺路。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/lSV2TqxyjZ4.webp" type="image/webp">
+<img src="../../assets/images/lSV2TqxyjZ4.jpg" alt="广州陈家祠：岭南传统祠堂建筑，青砖灰瓦、精美石雕木雕砖雕，庄严典雅的岭南传统建筑与庭院" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>陈家祠 · 岭南建筑巅峰</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#fbe7df;color:#8f3a1f">荔湾 · 岭南祠堂</span><h3>陈家祠 · 岭南建筑与雕饰</h3></div>
+        <p>陈氏书院的俗称，被誉为「岭南建筑艺术的明珠」。青砖灰墙之间，石雕、木雕、砖雕、灰塑繁复精美，一座祠堂看尽岭南传统工艺巅峰。</p>
+        <p class="spgo">👍 必去理由：看岭南建筑天花板必去。建筑、庭院、砖雕都值得细看，门票便宜、性价比高。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/6G33cluf7vY.webp" type="image/webp">
+<img src="../../assets/images/6G33cluf7vY.jpg" alt="广州永庆坊骑楼老街：西关骑楼建筑街道，岭南骑楼商铺，彩色招牌，市井烟火气与旧城老街氛围" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>永庆坊 · 西关骑楼老街</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#f0e7d3;color:#7a5a1a">荔湾 · 旧城新生</span><h3>永庆坊 · 西关骑楼里的新烟火</h3></div>
+        <p>藏在西关老街里的「旧城改造样本」，骑楼、趟栊门与新潮小店、咖啡馆混搭共生。白天看骑楼老建筑，入夜灯火亮起，老广州的市井味与年轻活力都在这里。</p>
+        <p class="spgo">👍 必去理由：看西关文化又想要好拍好逛的第一选择。免费、可逛半天，和沙面/陈家祠同片区顺路。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/qbYOUlJQfHY.webp" type="image/webp">
+<img src="../../assets/images/qbYOUlJQfHY.jpg" alt="广式早茶点心：竹蒸笼里热气腾腾的虾饺、烧卖、凤爪等广式茶点，配茶壶茶杯，精致粤式早茶" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>广式早茶 · 一盅两件</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#fbe7df;color:#8f3a1f">食在广州 · 早茶</span><h3>广式早茶 · 一盅两件的仪式</h3></div>
+        <p>「食在广州」的起点就是早茶。虾饺、烧卖、凤爪、肠粉、糯米鸡……竹蒸笼一笼笼端上，配上滚热茶水，是广州人唯一把「吃饭」过成仪式的时刻。</p>
+        <p class="spgo">👍 必去理由：来广州不吃早茶等于白来。不赶早、10 点后入座慢吃当 brunch，1–3 人也能点得很丰盛。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/OYQUZNmiu2U.webp" type="image/webp">
+<img src="../../assets/images/OYQUZNmiu2U.jpg" alt="广州白云山俯瞰：从白云山上俯瞰广州全城，山间绿树茂密，远处城市高楼与珠江，蓝天白云" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>白云山 · 市区登高望远</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e7f2e7;color:#3c6e3c">白云 · 城市绿肺</span><h3>白云山 · 俯瞰广州城</h3></div>
+        <p>广州「市肺」，紧贴市区的山。绿树浓密、空气清新，登到摩星岭可将珠江与高楼尽收眼底，是踩腻了街道后想「换口气」的放松去处。</p>
+        <p class="spgo">👍 必去理由：想登高俯瞰全城就去白云山，门票 5 元，缆车/电瓶车上山另计；山很大，适合 1–3 人与亲子。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ 住宿 ============ -->
+<section class="panel">
+  <h2><span class="emo">🏨</span>住宿推荐</h2>
+  <p class="sub">商圈地铁便利优先，2 人房计，多人按需调整。</p>
+  <div class="grid">
+    <div class="card">
+      <span class="tag" style="background:#fbe7df;color:#8f3a1f">经济实惠</span>
+      <div class="nm">市中心连锁 / 老城区民宿</div>
+      <div class="pr">约 180–350 元/晚 · 人均 90–175</div>
+      <div class="ds">越秀/荔湾老城区一带，地铁方便、美食步行可及。适合短途精华、美食党。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#e6eef6;color:#1f4e79">舒适便利</span>
+      <div class="nm">天河/珠江新城 中端酒店</div>
+      <div class="pr">约 350–650 元/晚 · 人均 175–325</div>
+      <div class="ds">近现代中轴与地铁枢纽，交通往来各景点都顺；商旅与度假兼顾。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#f0e7d3;color:#7a5a1a">乐园近住</span>
+      <div class="nm">长隆周边 / 番禺度假酒店</div>
+      <div class="pr">约 400–800 元/晚 · 人均 200–400</div>
+      <div class="ds">适合 3 天加长版：住乐园周边省通勤，热门园区旺季一房难求提前订。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#efe0dd;color:#7a3a2a">江景高端</span>
+      <div class="nm">珠江江景高端酒店</div>
+      <div class="pr">约 800–1800 元/晚 · 人均 400–900</div>
+      <div class="ds">正对珠江看夜景、离广州塔与游船近。度假感强，适合深度版犒劳自己。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 美食 ============ -->
+<section class="panel">
+  <h2><span class="emo">🍜</span>广州必吃清单</h2>
+  <p class="sub">食在广州，从早茶吃到宵夜。丰俭由人，1–3 人均适合。</p>
+  <div class="food">
+    <div class="row"><span class="no">1</span><div class="it"><b>广式早茶</b><div class="w">虾饺/烧卖/凤爪/肠粉 · 一盅两件</div></div><span class="prx">人均 50–120</span></div>
+    <div class="row"><span class="no">2</span><div class="it"><b>烧腊</b><div class="w">烧鹅/叉烧/白切鸡 · 明炉现斩</div></div><span class="prx">人均 60–120</span></div>
+    <div class="row"><span class="no">3</span><div class="it"><b>云吞面 / 竹升面</b><div class="w">爽滑云吞配弹牙竹升面</div></div><span class="prx">约 18–35 元/碗</span></div>
+    <div class="row"><span class="no">4</span><div class="it"><b>牛杂 / 粥粉</b><div class="w">街头牛杂、及第粥、艇仔粥</div></div><span class="prx">约 15–40 元/份</span></div>
+    <div class="row"><span class="no">5</span><div class="it"><b>广式甜品 / 糖水</b><div class="w">双皮奶、杨枝甘露、绿豆沙</div></div><span class="prx">约 12–30 元/碗</span></div>
+    <div class="row"><span class="no">6</span><div class="it"><b>煲仔饭 / 啫啫煲</b><div class="w">滋滋作响的砂锅煲仔</div></div><span class="prx">约 30–60 元/份</span></div>
+  </div>
+</section>
+
+<!-- ============ 预算 ============ -->
+<section class="panel">
+  <h2><span class="emo">💰</span>预算对比（人均）</h2>
+  <p class="sub">区间为保守–宽松参考，长隆门票与旺季住宿浮动明显。</p>
+  <div class="budget">
+    <table>
+      <caption>人均预算（含大交通参考）</caption>
+      <thead><tr><th scope="col">项目</th><th scope="col" class="sc">2天精华</th><th scope="col" class="sc">3天加长</th><th scope="col" class="sc">4天深度</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">大交通（往返）</th><td class="sc">200–500</td><td class="sc">200–500</td><td class="sc">200–500</td></tr>
+        <tr><th scope="row">住宿</th><td class="sc">1 晚 90–325</td><td class="sc">2 晚 200–650</td><td class="sc">3 晚 300–900</td></tr>
+        <tr><th scope="row">餐饮</th><td class="sc">150–280</td><td class="sc">230–450</td><td class="sc">320–620</td></tr>
+        <tr><th scope="row">景点/游船</th><td class="sc">120–260</td><td class="sc">350–700</td><td class="sc">300–560</td></tr>
+        <tr><th scope="row">市内交通</th><td class="sc">40–80</td><td class="sc">60–120</td><td class="sc">80–140</td></tr>
+        <tr><th scope="row">长隆门票（仅加长版）</th><td class="sc">—</td><td class="sc">250–500</td><td class="sc">—</td></tr>
+        <tr><th scope="row" class="tot">合计 · 人均</th><td class="sc tot">约 600–1000</td><td class="sc tot">约 1000–1700</td><td class="sc tot">约 1400–2300</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">💡 <b>1–3 人怎么省：</b>广州地铁发达、景点多免费或低价，交通花费很省；早茶与烧腊丰俭由人；长隆淡旺季价差与提前购票影响较大。老城区（越秀/荔湾）餐饮比天河商圈亲民。</div>
+</section>
+
+<footer>
+  广州 · 三模式组合旅行指南 ｜ 适配 1–3 人及亲子出行 · 价格为参考值<br>
+  长隆/广州塔/珠江游船请提前购票；旺季价格与客流波动大，请以实时为准。
+<br>Made with care by <b>MrdT</b> &middot; <a href="https://worldstip.com" target="_blank" rel="noopener noreferrer">worldstip.com</a> &middot; 旅行小册子</footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+  try{
+    var tabs=document.querySelectorAll('.switch button');
+    var plans=document.querySelectorAll('section[role="tabpanel"]');
+    function show(id){
+      tabs.forEach(function(t){
+        var on=t.getAttribute('data-plan')===id;
+        t.classList.toggle('on',on);
+        t.setAttribute('aria-selected',on?'true':'false');
+      });
+      plans.forEach(function(p){ p.hidden = p.id!==id; });
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+    tabs.forEach(function(t){
+      t.addEventListener('click',function(){ show(t.getAttribute('data-plan')); });
+    });
+  }catch(e){}
+})();
+</script>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

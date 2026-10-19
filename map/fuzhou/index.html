@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>福州 3 日 · A5 卡片手册｜有福之州·榕城</title>
+<meta name="description" content="福州3日城市漫游手册：三坊七巷、鼓山、烟台山老洋房、西湖公园，尝福州鱼丸、肉燕、荔枝肉，探茶与茉莉花城——「有福之州」玩法全收录。">
+<meta name="keywords" content="福州旅游,福州旅行,三坊七巷,鼓山,烟台山,福州西湖,福州美食">
+<style>
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Roboto,sans-serif;
+    color:#333a44;
+    background:linear-gradient(160deg,#eef7f2 0%,#eef4ee 45%,#eaf1e6 100%);
+    line-height:1.55;
+    overflow-wrap:break-word;
+    min-height:100vh;
+  }
+  img{max-width:100%;height:auto;display:block;}
+
+  /* ===== 顶部标题 ===== */
+  header.masthead{
+    text-align:center;
+    padding:42px 20px 14px;
+    position:relative;
+  }
+  header.masthead .title-emoji{font-size:42px;line-height:1;margin-bottom:8px;}
+  header.masthead h1{
+    margin:0 0 6px;
+    font-size:clamp(1.5rem,4vw,2rem);
+    font-weight:800;
+    letter-spacing:.5px;
+    background:linear-gradient(90deg,#2f7a5c,#3f9d7a,#5aa5c9);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  header.masthead p{color:#7c9990;margin:0;font-size:.95rem;}
+
+  /* ===== 卡片册舞台 ===== */
+  .deck-wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:8px 18px 40px;
+  }
+
+  /* 目录导航 chip（横向滚动） */
+  .chips{
+    display:flex;gap:8px;align-items:center;
+    margin:14px auto 26px;max-width:940px;
+    overflow-x:auto;padding:6px 4px 10px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+  }
+  .chips::-webkit-scrollbar{height:6px;}
+  .chips::-webkit-scrollbar-thumb{background:#cfe0d8;border-radius:99px;}
+  .chips button{
+    font:inherit;font-size:.85rem;font-weight:600;white-space:nowrap;
+    border:none;cursor:pointer;flex:none;
+    padding:8px 15px;border-radius:999px;
+    background:#fff;color:#5b6372;
+    box-shadow:0 4px 14px rgba(70,120,90,.10);
+    transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+  }
+  .chips button:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(70,120,90,.16);}
+  .chips button.active{background:#2f7a5c;color:#fff;}
+  .chips .grp-label{
+    flex:none;font-size:.72rem;font-weight:800;letter-spacing:.08em;color:#9ab3a6;
+    padding:0 2px;
+  }
+
+  /* 卡片网格 */
+  .deck{
+    display:flex;flex-wrap:wrap;gap:22px;
+    justify-content:center;align-items:flex-start;
+    scroll-behavior:smooth;
+  }
+
+  /* ===== A5 卡片本体 ===== */
+  .card{
+    width:148mm;height:210mm;
+    background:#fff;border-radius:26px;
+    box-shadow:0 18px 44px rgba(45,95,70,.15),0 3px 10px rgba(45,95,70,.08);
+    overflow:hidden;position:relative;
+    display:flex;flex-direction:column;
+    border:1px solid rgba(255,255,255,.7);
+    scroll-margin-top:20px;
+  }
+  .card .topbar{flex:none;height:7px;background:linear-gradient(90deg,var(--tc1),var(--tc2));}
+  .card header.c{
+    padding:15px 20px 5px;display:flex;align-items:center;gap:12px;
+  }
+  .card header.c .ico{
+    flex:none;width:44px;height:44px;border-radius:14px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:24px;background:var(--tc-soft);
+    box-shadow:0 4px 10px rgba(0,0,0,.06);
+  }
+  .card header.c h2{margin:0;font-size:1.16rem;font-weight:800;line-height:1.25;color:var(--tc-strong);}
+  .card header.c .en{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#b3bac6;margin-top:2px;}
+  .card .body{flex:1;min-height:0;padding:8px 18px 16px;overflow:hidden;display:flex;flex-direction:column;}
+  .card .page-num{position:absolute;bottom:12px;right:16px;font-size:.72rem;font-weight:700;color:#c2c8d4;}
+
+  .pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.66rem;font-weight:700;white-space:nowrap;}
+  .pill.must{background:#ffe9e4;color:#e5533d;}
+  .pill.flex{background:#e4f3ec;color:#2f7a5c;}
+  .pill.day{background:#e8f0ff;color:#4f7fd6;}
+
+  /* 封面卡片 */
+  .card.cover{
+    background:
+      linear-gradient(180deg,rgba(30,90,60,.16) 0%,rgba(15,55,40,.78) 92%),
+      url('assets/sanfang.jpg') center/cover no-repeat #17352b;
+    background-image:
+        linear-gradient(180deg,rgba(30,90,60,.16) 0%,rgba(15,55,40,.78) 92%),
+        url('assets/sanfang.jpg');
+    background-size:cover;background-position:center;
+  }
+  .card.cover .overlay{color:#fff;flex:1;display:flex;flex-direction:column;padding:24px 22px;justify-content:flex-end;}
+  .card.cover .kick{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:#bce8d2;font-weight:700;margin-bottom:10px;}
+  .card.cover h2{font-size:2rem;margin:0 0 10px;line-height:1.14;font-weight:800;}
+  .card.cover .sub{font-size:.94rem;opacity:.95;margin:0 0 20px;max-width:40ch;}
+  .card.cover .meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;}
+  .card.cover .meta span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.26);padding:5px 11px;border-radius:999px;font-size:.8rem;}
+  .cover-deco{position:absolute;top:22px;left:22px;font-size:30px;line-height:1;filter:drop-shadow(0 3px 6px rgba(0,0,0,.35));}
+
+  /* ===== 动线总览 ===== */
+  .timeline{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;}
+  .timeline li{display:flex;gap:10px;align-items:flex-start;background:#f0f7f2;border:1px solid #dfefe5;border-radius:13px;padding:8px 11px;}
+  .timeline li .d{flex:none;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#3f9d7a,#2f7a5c);color:#fff;font-weight:800;font-size:.82rem;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.05;}
+  .timeline li .d small{font-size:.55rem;font-weight:600;opacity:.9;}
+  .timeline li .tt{flex:1;min-width:0;}
+  .timeline li .tt b{font-size:.85rem;color:#3d3f52;}
+  .timeline li .tt span{display:block;font-size:.76rem;color:#8a8a94;margin-top:1px;}
+  .timeline .tag-row{margin-top:2px;}
+
+  /* ===== 逐日行程卡片 ===== */
+  .day-head{
+    display:flex;align-items:center;gap:11px;
+    background:linear-gradient(90deg,var(--tc-soft),#fff);
+    border-left:5px solid var(--tc-strong);
+    border-radius:13px;padding:9px 12px;margin-bottom:9px;
+  }
+  .day-head .dn{
+    flex:none;width:40px;height:40px;border-radius:13px;
+    background:linear-gradient(135deg,var(--tc1),var(--tc2));color:#fff;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    line-height:1.02;font-weight:800;font-size:.9rem;
+  }
+  .day-head .dn small{font-size:.56rem;font-weight:600;opacity:.92;}
+  .day-head .dh{flex:1;min-width:0;}
+  .day-head .dh b{font-size:.98rem;color:var(--tc-strong);display:block;line-height:1.2;}
+  .day-head .dh span{font-size:.74rem;color:#8a8a94;}
+  .day-route{font-size:.78rem;color:#6b7280;margin:-2px 0 8px;background:#f0f7f2;border:1px dashed #cfe5d8;border-radius:10px;padding:7px 11px;}
+  .day-route b{color:#3d3f52;}
+  .day-blocks{display:flex;flex-direction:column;gap:8px;}
+  .dset{border-radius:13px;border:1px solid #dfefe5;background:#fbfefb;padding:8px 11px;}
+  .dset .dt{font-size:.72rem;font-weight:800;color:#2f7a5c;letter-spacing:.04em;margin-bottom:4px;}
+  .dset .dset-r{font-size:.76rem;color:#5f6674;margin:3px 0;}
+  .spot{display:flex;gap:8px;align-items:flex-start;margin:5px 0;}
+  .spot .p{flex:none;width:19px;height:19px;border-radius:50%;text-align:center;line-height:19px;font-size:.7rem;color:#fff;background:#3f9d7a;margin-top:1px;}
+  .spot .p.m{background:#e5533d;}
+  .spot .p.x{background:#4f7fd6;}
+  .spot .nm{font-size:.79rem;font-weight:600;color:#3d3f52;}
+  .spot .nm span{font-size:.68rem;color:#8a8a94;font-weight:500;display:block;margin-top:1px;}
+  .day-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;}
+  .day-thumbs .th{border-radius:12px;overflow:hidden;border:1px solid #dfefe5;background:#fff;}
+  .day-thumbs .th .ph{aspect-ratio:16/9;overflow:hidden;background:#f0efef;}
+  .day-thumbs .th .ph img{width:100%;height:100%;object-fit:cover;}
+  .day-thumbs .th figcaption{padding:5px 8px 7px;font-size:.68rem;color:#8a8a94;}
+  .day-tip{margin-top:8px;font-size:.74rem;background:#fff3dc;border:1px solid #f0dfae;color:#8a6210;border-radius:10px;padding:7px 11px;}
+
+  /* ===== 交通攻略卡 ===== */
+  .rail-a{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;}
+  .rail-a .ra{display:flex;gap:8px;align-items:center;border-radius:12px;border:1px solid #dfefe5;background:#fbfefb;padding:8px 10px;}
+  .rail-a .ri{flex:none;font-size:19px;}
+  .rail-a .ra b{font-size:.78rem;color:#3d3f52;display:block;}
+  .rail-a .ra span{font-size:.68rem;color:#8a8a94;}
+  .rail-a .ra.hot{border:1.5px solid #e5533d;background:#fff4f2;}
+  .rail-a .ra.hot b{color:#e5533d;}
+  .rail-a .ra.hot span{color:#c96a57;}
+
+  /* ===== 注意事项 / 贴士 ===== */
+  .notes{display:flex;flex-direction:column;gap:8px;}
+  .note{display:flex;gap:9px;align-items:flex-start;border-radius:13px;padding:9px 11px;border:1px solid #eee;background:#fbfbfd;}
+  .note .ni{flex:none;font-size:19px;width:30px;height:30px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.06);}
+  .note .nt{flex:1;min-width:0;}
+  .note .nt b{font-size:.84rem;display:block;color:#3d3f52;}
+  .note .nt p,.note .nt ul{margin:.2rem 0 0;font-size:.76rem;color:#6b7280;}
+  .note .nt li{margin-top:2px;}
+
+  /* ===== 热门景点 / 美食网格 ===== */
+  .spots{display:grid;grid-template-columns:1fr 1fr;gap:9px;}
+  .spot-card{border-radius:13px;overflow:hidden;border:1px solid #dfefe5;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.05);}
+  .spot-card .ph{aspect-ratio:16/10;overflow:hidden;background:#f0efef;}
+  .spot-card .ph img{width:100%;height:100%;object-fit:cover;}
+  .spot-card .st{padding:6px 9px 8px;}
+  .spot-card .st b{font-size:.76rem;color:#3d3f52;display:block;line-height:1.3;}
+  .spot-card .st span{font-size:.68rem;color:#8a8a94;display:block;margin-top:1px;}
+
+  /* ===== 游客中心 / 车站 ===== */
+  .res{display:flex;flex-direction:column;gap:9px;}
+  .res-box{border-radius:15px;border:1px solid #eee;overflow:hidden;background:#fff;}
+  .res-box .rp{aspect-ratio:16/7;overflow:hidden;background:#f0efef;}
+  .res-box .rp img{width:100%;height:100%;object-fit:cover;}
+  .res-box .res-c{padding:11px 13px 12px;}
+.res-box .res-c h3{margin:0 0 6px;font-size:.9rem;display:flex;align-items:center;gap:6px;color:#3d3f52;}
+.res-box .res-c h3 .kind{padding:1px 8px;border-radius:999px;font-size:.64rem;background:#e4f3ec;color:#2f7a5c;font-weight:700;}
+.res-box .res-c p{margin:.3rem 0;font-size:.76rem;line-height:1.5;color:#4c5563;}
+.res-box .res-c p.tip{margin-top:.55rem;padding:7px 10px;border-radius:10px;background:#eaf6ef;color:#2f7a5c;font-weight:600;}
+.res-box .res-c ul{margin:.45rem 0 0;padding-left:1.05rem;font-size:.75rem;line-height:1.55;color:#505b6b;}
+.res-box .res-c li{margin-top:3px;}
+.res-box .res-c a{color:#2f7a5c;text-decoration:none;font-weight:600;word-break:break-all;}
+
+  .foot-note{text-align:center;color:#7c9990;font-size:.8rem;padding:6px 18px 44px;max-width:720px;margin:0 auto;}
+  .foot-note a{color:#2f7a5c;text-decoration:none;}
+
+  /* 打印：每卡独立一页 A5 */
+  @page{size:A5;margin:0;}
+  @media print{
+    body{background:#fff;}
+    header.masthead,.chips{display:none;}
+    .deck{display:block;}
+    .card{
+      width:148mm;height:210mm;border-radius:0;box-shadow:none;
+      page-break-after:always;margin:0;border:none;
+    }
+    .card:last-child{page-break-after:auto;}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/fuzhou/">
+    <meta name="theme-color" content="#2f7a5c">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="福州 3 日 · A5 卡片手册｜有福之州·榕城">
+    <meta property="og:description" content="福州3日城市漫游手册：三坊七巷、鼓山、烟台山老洋房、西湖公园，尝福州鱼丸、肉燕、荔枝肉。">
+    <meta property="og:url" content="https://worldstip.com/map/fuzhou/">
+    <meta property="og:image" content="https://worldstip.com/map/fuzhou/assets/sanfang.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="福州 3 日 · A5 卡片手册｜有福之州·榕城">
+    <meta name="twitter:description" content="福州3日城市漫游手册：三坊七巷、鼓山、烟台山、西湖公园，闽味美食全收录。">
+    <meta name="twitter:image" content="https://worldstip.com/map/fuzhou/assets/sanfang.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "福州 3 日 · A5 卡片手册",
+      "url": "https://worldstip.com/map/fuzhou/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "福州 3 日 · A5 卡片手册",
+  "description": "有福之州福州3日漫游：三坊七巷、鼓山、烟台山老洋房、西湖公园与闽菜美食。"
+}
+</script>
+<link rel="stylesheet" href="https://worldstip.com/assets/css/pro-guard.css">
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="title-emoji">🌳</div>
+  <h1>福州 3 日 · 有福之州</h1>
+  <p>三坊七巷 · 鼓山 · 烟台山 · 西湖公园</p>
+</header>
+
+<div class="deck-wrap">
+  <div class="chips" id="chips">
+    <button data-go="#c-cover">封面</button>
+    <button data-go="#c-overview">动线总览</button>
+    <button data-go="#c-d1">Day 1</button>
+    <button data-go="#c-d2">Day 2</button>
+    <button data-go="#c-d3">Day 3</button>
+    <button data-go="#c-spot">热门景点</button>
+    <button data-go="#c-food">闽味美食</button>
+    <button data-go="#c-tip">出行贴士</button>
+    <button data-go="#c-res">交通住宿</button>
+  </div>
+
+  <div class="deck">
+
+    <!-- 封面 -->
+    <article class="card cover" id="c-cover" style="--tc1:#2f7a5c;--tc2:#3f9d7a;--tc-strong:#1f5f46;--tc-soft:#e4f3ec;">
+      <span class="cover-deco">🌳有福之州</span>
+      <div class="overlay">
+        <div class="kick">FUZHOU · FUJIAN · CN</div>
+        <h2>福州 3 日<br>榕树蔽城 · 有福之州</h2>
+        <p class="sub">三坊七巷里泡茶听闽剧，鼓山涌泉寺看江海，烟台山的老洋房藏着开埠记忆——一座泡在茶香与榕荫里的慢城。</p>
+        <div class="meta">
+          <span>📍 福建福州</span>
+          <span>🗓 建议 2–3 天</span>
+          <span>🧭 老城+山水</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 动线总览 -->
+    <article class="card" id="c-overview" style="--tc1:#2f7a5c;--tc2:#3f9d7a;--tc-strong:#1f5f46;--tc-soft:#e4f3ec;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🗺️</div>
+        <div><h2>动线总览</h2><div class="en">OVERVIEW · 3 DAYS</div></div>
+      </header>
+      <div class="body">
+        <ul class="timeline">
+          <li><div class="d">D1<small>老城</small></div><div class="tt"><b>三坊七巷—西湖</b><span>逛坊巷、泡茶，午后西湖泛舟看榕树绿荫</span></div></li>
+          <li><div class="d">D2<small>山水</small></div><div class="tt"><b>鼓山—涌泉寺—烟台山</b><span>晨登鼓山看江海，黄昏到烟台山看老洋房</span></div></li>
+          <li><div class="d">D3<small>美食</small></div><div class="tt"><b>台江—上下杭—老字号</b><span>一条街吃遍鱼丸肉燕，把福州味带回家</span></div></li>
+        </ul>
+        <div class="day-tip">🎯 想更松弛就把 D1 拆两天：一天坊巷，一天西湖+烟台山。</div>
+      </div>
+    </article>
+
+    <!-- Day1 -->
+    <article class="card" id="c-d1" style="--tc1:#2f7a5c;--tc2:#3f9d7a;--tc-strong:#1f5f46;--tc-soft:#e4f3ec;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🌅</div>
+        <div><h2>Day 1 · 坊巷与湖</h2><div class="en">LANES & LAKE</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <div class="dn">1<small>DAY</small></div>
+          <div class="dh"><b>三坊七巷 → 西湖公园</b><span>泡茶、逛巷、看湖</span></div>
+        </div>
+        <div class="day-route"><b>路线：</b>南后街主街 → 衣锦坊/水榭戏台 → 渔船往西湖（步行或短程车）→ 西湖泛舟、看榕树</div>
+        <div class="day-blocks">
+          <div class="dset">
+            <div class="dt">必看 · 三坊七巷</div>
+            <div class="spot"><span class="p">1</span><div class="nm">南后街主街<span>福州历史文化街区，明清古厝聚集</span></div></div>
+            <div class="spot"><span class="p m">2</span><div class="nm">水榭戏台<span>老宅院里的池塘戏台，福州园林趣致</span></div></div>
+          </div>
+          <div class="dset">
+            <div class="dt">午后 · 西湖公园</div>
+            <div class="spot"><span class="p x">3</span><div class="nm">西湖泛舟<span>湖中小船，看榕树垂入水中的绿荫</span></div></div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="assets/sanfang.webp" type="image/webp">
+<img src="assets/sanfang.jpg" alt="三坊七巷">
+</picture></div><figcaption>三坊七巷 · 青砖灰瓦的老城心脏</figcaption></figure>
+          <figure class="th"><div class="ph"><picture>
+<source srcset="assets/xihu.webp" type="image/webp">
+<img src="assets/xihu.jpg" alt="福州西湖">
+</picture></div><figcaption>西湖公园 · 榕荫下的碧波</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 三坊七巷清晨最安静；傍晚南后街灯笼亮起适合夜拍。</div>
+      </div>
+    </article>
+
+    <!-- Day2 -->
+    <article class="card" id="c-d2" style="--tc1:#5aa05a;--tc2:#3f8f6f;--tc-strong:#2f6f4e;--tc-soft:#e9f3ea;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">⛰️</div>
+        <div><h2>Day 2 · 山与洋房</h2><div class="en">MOUNTAIN & MANSION</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <div class="dn">2<small>DAY</small></div>
+          <div class="dh"><b>鼓山 → 涌泉寺 → 烟台山</b><span>上午登山、下午洋房</span></div>
+        </div>
+        <div class="day-route"><b>路线：</b>鼓山（缆车/登山）→ 涌泉寺 → （车约30min）烟台山历史文化街区</div>
+        <div class="day-blocks">
+          <div class="dset">
+            <div class="dt">必看 · 鼓山</div>
+            <div class="spot"><span class="p">1</span><div class="nm">涌泉寺<span>千年古刹，藏经阁藏福州佛寺记忆</span></div></div>
+          </div>
+          <div class="dset">
+            <div class="dt">必看 · 烟台山</div>
+            <div class="spot"><span class="p m">2</span><div class="nm">老洋房街区<span>近代开埠留下的使馆、洋行与骑楼，文艺出片</span></div></div>
+            <div class="spot"><span class="p x">3</span><div class="nm">江岸夕照<span>闽江畔看日落，把一天的疲惫都带走</span></div></div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="assets/gushan.webp" type="image/webp">
+<img src="assets/gushan.jpg" alt="鼓山">
+</picture></div><figcaption>鼓山 · 登山远眺江海</figcaption></figure>
+          <figure class="th"><div class="ph"><picture>
+<source srcset="assets/yantaishan.webp" type="image/webp">
+<img src="assets/yantaishan.jpg" alt="烟台山">
+</picture></div><figcaption>烟台山 · 红砖老洋房与江岸</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 烟台山下午光线最好，很多老建筑改造的咖啡馆适合小憩。</div>
+      </div>
+    </article>
+
+    <!-- Day3 -->
+    <article class="card" id="c-d3" style="--tc1:#e5533d;--tc2:#ef8a4d;--tc-strong:#c03a28;--tc-soft:#fdeae4;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🍜</div>
+        <div><h2>Day 3 · 吃遍台江</h2><div class="en">FOOD HUNT</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <div class="dn">3<small>DAY</small></div>
+          <div class="dh"><b>台江 → 上下杭 → 老字号</b><span>一条线把福州味吃透</span></div>
+        </div>
+        <div class="day-route"><b>路线：</b>台江步行街 → 上下杭传统街区 → 百年老字号（鱼丸/肉燕/荔枝肉）</div>
+        <div class="day-blocks">
+          <div class="dset">
+            <div class="dt">闽味必吃</div>
+            <div class="spot"><span class="p">1</span><div class="nm">福州鱼丸<span>包心鱼丸，Q弹鲜嫩</span></div></div>
+            <div class="spot"><span class="p m">2</span><div class="nm">肉燕（扁肉燕）<span>薄如纸的燕皮裹馅，福州特色</span></div></div>
+            <div class="spot"><span class="p x">3</span><div class="nm">荔枝肉·佛跳墙<span>闽菜代表，老字号最地道</span></div></div>
+          </div>
+        </div>
+        <div class="day-tip">🍲 茉莉花茶是福州的「市花茶」，离开前带些茶叶当伴手礼很应景。</div>
+      </div>
+    </article>
+
+    <!-- 热门景点 -->
+    <article class="card" id="c-spot" style="--tc1:#2f7a5c;--tc2:#3f9d7a;--tc-strong:#1f5f46;--tc-soft:#e4f3ec;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🎒</div>
+        <div><h2>热门景点清单</h2><div class="en">MUST-SEE</div></div>
+      </header>
+      <div class="body">
+        <div class="spots">
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="assets/sanfang.webp" type="image/webp">
+<img src="assets/sanfang.jpg" alt="三坊七巷">
+</picture></div><div class="st"><b>三坊七巷</b><span>历史文化街区</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="assets/gushan.webp" type="image/webp">
+<img src="assets/gushan.jpg" alt="鼓山">
+</picture></div><div class="st"><b>鼓山·涌泉寺</b><span>登山礼佛</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="assets/yantaishan.webp" type="image/webp">
+<img src="assets/yantaishan.jpg" alt="烟台山">
+</picture></div><div class="st"><b>烟台山</b><span>开埠老洋房</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="assets/xihu.webp" type="image/webp">
+<img src="assets/xihu.jpg" alt="福州西湖">
+</picture></div><div class="st"><b>西湖公园</b><span>榕荫泛舟</span></div></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 闽味美食 -->
+    <article class="card" id="c-food" style="--tc1:#e5533d;--tc2:#ef8a4d;--tc-strong:#c03a28;--tc-soft:#fdeae4;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🍲</div>
+        <div><h2>闽味美食</h2><div class="en">FOOD</div></div>
+      </header>
+      <div class="body">
+        <div class="spots">
+          <div class="spot-card"><div class="st"><b>福州鱼丸</b><span>包心鱼丸，早餐夜宵皆可</span></div></div>
+          <div class="spot-card"><div class="st"><b>肉燕</b><span>燕皮薄如纸，汤鲜</span></div></div>
+          <div class="spot-card"><div class="st"><b>荔枝肉</b><span>酸甜酥嫩，闽菜招牌</span></div></div>
+          <div class="spot-card"><div class="st"><b>佛跳墙/锅边糊</b><span>大菜配小吃，丰俭由人</span></div></div>
+        </div>
+        <div class="day-tip">🍲 上下杭与台江一带老字号最集中，跟着本地人排队准没错。</div>
+      </div>
+    </article>
+
+    <!-- 出行贴士 -->
+    <article class="card" id="c-tip" style="--tc1:#2f9e63;--tc2:#4fa3c9;--tc-strong:#1f7a4a;--tc-soft:#e9f7ef;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">💡</div>
+        <div><h2>出行贴士</h2><div class="en">TIPS</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><div class="ni">🌤️</div><div class="nt"><b>最佳时间</b><p>春秋最舒服（3-5月、9-11月）；夏季湿热心闷，注意防暑。</p></div></div>
+          <div class="note"><div class="ni">🚇</div><div class="nt"><b>市内交通</b><p>地铁+公交便利；去鼓山可坐地铁到鼓山站再转车/步行。</p></div></div>
+          <div class="note"><div class="ni">🎫</div><div class="nt"><b>门票规例</b><p>三坊七巷、西湖免费；鼓山、涌泉寺收门票。</p></div></div>
+          <div class="note"><div class="ni">🧭</div><div class="nt"><b>泡茶文化</b><p>闽人好茶也爱泡温泉，行程松点找个茶馆/温泉馆歇脚最是福州味。</p></div></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 交通住宿 -->
+    <article class="card" id="c-res" style="--tc1:#2f7a5c;--tc2:#3f9d7a;--tc-strong:#1f5f46;--tc-soft:#e4f3ec;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🏨</div>
+        <div><h2>交通 & 住宿</h2><div class="en">STAY & GO</div></div>
+      </header>
+      <div class="body">
+        <div class="rail-a">
+          <div class="ra"><span class="ri">🚄</span><div><b>高铁到福州站/福州南</b><span>地铁接驳市区</span></div></div>
+          <div class="ra"><span class="ri">✈️</span><div><b>长乐机场</b><span>距市区约50km，机场大巴/地铁可达</span></div></div>
+        </div>
+        <div class="res">
+          <div class="res-box">
+            <div class="res-c">
+              <h3><span class="kind">住哪</span>三坊七巷/鼓楼区</h3>
+              <p>住坊巷附近最方便，步行逛古城、西湖都在半小时兜底内。</p>
+              <p class="tip">💡 2 晚足以覆盖精华；时间充裕再住一晚感受夜生活。</p>
+            </div>
+          </div>
+          <div class="res-box">
+            <div class="res-c">
+              <h3><span class="kind">线路</span>2 日精简版</h3>
+              <ul>
+                <li>D1：三坊七巷–西湖（老城一日）</li>
+                <li>D2：鼓山–涌泉寺–烟台山（山水一日）</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="page-num pin">9/9</div>
+  </div>
+
+  <p class="foot-note">WorldStip 旅行小册子 · 福州 3 日 · WEAR A STAMP · FUZHOU 2026</p>
+</div>
+
+<script>
+  (function(){
+    var btns=document.querySelectorAll('#chips button');
+    btns.forEach(function(b){
+      b.addEventListener('click',function(){
+        document.querySelector(b.getAttribute('data-go')).scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+  })();
+</script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

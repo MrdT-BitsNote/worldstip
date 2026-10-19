@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>厦门 · 双版组合旅行指南（2天周末 / 5天深度）</title>
+<meta name="description" content="厦门2天/5天双版旅行指南：鼓浪屿、厦大、环岛路骑行、沙坡尾、海鲜小吃，含日光岩、芙蓉隧道与南普陀寺，附交通住宿与避坑。">
+<meta name="keywords" content="厦门旅游,厦门攻略,鼓浪屿,环岛路,沙坡尾,厦门美食">
+<style>
+  :root{
+    --sea:#0e7490;        /* 主海蓝 */
+    --sea-deep:#155e75;   /* 深海 */
+    --sea-soft:#e0f2fe;   /* 浅海 */
+    --sand:#f6efe3;       /* 沙滩底 */
+    --sand-line:#e6d9c3;  /* 沙纹线 */
+    --sun:#f59e0b;        /* 落日橙 */
+    --coral:#fb7185;      /* 珊瑚 */
+    --leaf:#0f766e;       /* 绿植 */
+    --ink:#1f3a44;        /* 正文 */
+    --ink-soft:#54707b;   /* 次要文字 */
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(14,116,144,.35);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(245,158,11,.16), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(14,116,144,.14), transparent 55%),
+      var(--sand);
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--sea-deep)}
+
+  /* ===== 顶部横幅 ===== */
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--sea) 8%,#0b5d78 55%,var(--sea-deep));
+    padding:40px 36px 34px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-40px;bottom:-60px;width:300px;height:300px;
+    background:radial-gradient(circle, rgba(255,255,255,.16), transparent 62%);
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.92;max-width:600px}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{
+    font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:10px;
+  }
+  .hero .wave{
+    position:absolute;left:0;right:0;bottom:0;height:26px;opacity:.35;
+    background:radial-gradient(110px 26px at 12% 0%, transparent 98%, #cff 99%) ,
+               radial-gradient(110px 26px at 40% 0%, transparent 98%, #cff 99%) ,
+               radial-gradient(110px 26px at 68% 0%, transparent 98%, #cff 99%) ,
+               radial-gradient(110px 26px at 92% 0%, transparent 98%, #cff 99%);
+    background-size:280px 26px;background-repeat:repeat-x;
+  }
+
+  /* ===== 方案切换 ===== */
+  .switch{
+    display:flex;gap:12px;margin:30px 0 6px;flex-wrap:wrap;
+  }
+  .switch button{
+    flex:1;min-width:230px;border:2px solid var(--sea-line,var(--sand-line));
+    background:var(--card);color:var(--ink);cursor:pointer;text-align:left;
+    border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  }
+  .switch button:hover{border-color:var(--sea);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(14,116,144,.4)}
+  .switch button.on{border-color:var(--sea);background:linear-gradient(135deg,#f0fbfe,#eaf6fa)}
+  .switch button .t{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800}
+  .switch button .t .badge{
+    font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff;
+  }
+  .switch button .d{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .b-2d .badge{background:var(--sun)}
+  .b-5d .badge{background:var(--coral)}
+
+  /* ===== 区块通用 ===== */
+  section.panel{
+    margin-top:26px;background:var(--card);border-radius:var(--radius);
+    padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(14,116,144,.08);
+  }
+  .panel h2{
+    display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--sea-deep);
+  }
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{
+    background:var(--sea-soft);border-radius:12px;padding:12px 16px;font-size:14px;
+    color:var(--sea-deep);margin-top:20px;
+  }
+  .hint b{font-weight:800}
+
+  /* 日程时间轴 */
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--sea-soft);margin-left:8px;padding-left:0}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;
+    background:var(--sea);border:3px solid var(--sea-soft);box-sizing:content-box;
+  }
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--sea-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{
+    background:var(--sea-soft);color:var(--sea-deep);font-size:13px;padding:4px 10px;border-radius:8px;
+  }
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--coral);font-weight:800}
+
+  /* 住宿 / 美食卡片 */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{
+    border:1px solid var(--sand-line);border-radius:14px;padding:14px 16px;background:#fffbf5;
+    transition:box-shadow .18s ease,border-color .18s ease;
+  }
+  .card:hover{border-color:rgba(14,116,144,.35);box-shadow:0 8px 18px -10px rgba(14,116,144,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--sea-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  /* 美食 */
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{
+    display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--sand-line);
+    padding-bottom:10px;
+  }
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{
+    flex:none;width:26px;height:26px;border-radius:8px;background:var(--sea-soft);color:var(--sea-deep);
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;
+    transform:translateY(6px);
+  }
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--coral);font-weight:800;white-space:nowrap}
+
+  /* 预算表 */
+  .budget{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fffbf5}
+  .budget th,.budget td{padding:10px 14px;text-align:left}
+  .budget thead th{background:var(--sea-deep);color:#fff;font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#fdf6ea}
+  .budget .tot{font-weight:800;color:var(--sea-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  /* 底部 */
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--sea-deep)}
+
+  /* 打印 */
+  @media print{
+    body{background:#fff}
+    .switch button{display:none}
+    .wrap{max-width:none;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
+    .card,.budget{page-break-inside:avoid}
+  }
+  @media (max-width:600px){
+    .hero{padding:30px 22px 26px}
+    .hero h1{font-size:27px}
+    .wrap{padding:18px 14px 48px}
+    section.panel{padding:20px 18px}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/xiamen/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="厦门 · 双版组合旅行指南（2天周末 / 5天深度）">
+    <meta property="og:description" content="厦门2天/5天双版旅行指南：鼓浪屿、厦大、环岛路骑行、沙坡尾、海鲜小吃，含日光岩、芙蓉隧道与南普陀寺，附交通住宿与避坑。">
+    <meta property="og:url" content="https://worldstip.com/map/xiamen/">
+    <meta property="og:image" content="https://worldstip.com/assets/images/JJshXL6FZlk.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="厦门 · 双版组合旅行指南（2天周末 / 5天深度）">
+    <meta name="twitter:description" content="厦门2天/5天双版旅行指南：鼓浪屿、厦大、环岛路骑行、沙坡尾、海鲜小吃，含日光岩、芙蓉隧道与南普陀寺，附交通住宿与避坑。">
+    <meta name="twitter:image" content="https://worldstip.com/assets/images/JJshXL6FZlk.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "厦门 · 双版组合旅行指南（2天周末 / 5天深度）",
+      "url": "https://worldstip.com/map/xiamen/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/xiamen/",
+  "name": "厦门 · 双版组合旅行指南（2天周末 / 5天深度）",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<!-- 顶部 -->
+<header class="hero">
+  <div class="kicker">🏝️ 厦门 · XIAMEN TRAVEL GUIDE</div>
+  <h1>厦门双版组合指南</h1>
+  <p>一份搞定两种玩法：<b>2天周末冲刺版</b> 适合请不动假的上班族，极限玩到精华；<b>5天松弛深度版</b> 适合有假期，慢慢住、慢慢逛、甚至上岛过夜。1–3 人出行均适用，含日程 / 住宿 / 美食 / 预算。</p>
+  <div class="meta">
+    <span>📍 目的地：厦门</span>
+    <span>👥 1–3 人</span>
+    <span>⏱️ 2 天 / 5 天双方案</span>
+    <span>💰 人均预算已附</span>
+  </div>
+  <div class="wave" aria-hidden="true"></div>
+</header>
+
+<!-- 方案切换 -->
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="b-2d on" role="tab" aria-selected="true" data-plan="plan2" id="tab2">
+    <span class="t"><span class="badge">2天周末</span> 快充版 ⚡</span>
+    <div class="d">紧凑高效 / 鼓浪屿+厦大+海边 / 人均约 900–1500</div>
+  </button>
+  <button class="b-5d" role="tab" aria-selected="false" data-plan="plan5" id="tab5">
+    <span class="t"><span class="badge">5天深度</span> 慢享版 🌊</span>
+    <div class="d">松弛沉浸 / 上岛过夜+土楼 / 人均约 2000–3300</div>
+  </button>
+</div>
+
+<!-- ============ 2天方案 ============ -->
+<section class="panel" id="plan2" role="tabpanel">
+  <h2><span class="emo">⚡</span>2 天周末 · 快充版</h2>
+  <p class="sub">适合只有周末、想快速过瘾。核心策略：鼓浪屿占 1 天，另一半塞进厦大+海边，别贪多。</p>
+
+  <div class="hint">👥 <b>1–3 人适配：</b>各行程点均不限人数；住宿与餐饮按 2 人房、人均分摊计价，3 人加床或开双房更划算。下方预算按 <b>人均</b> 标注。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 鼓浪屿 + 中山路夜</div>
+      <div class="seg"><span>🚢 上午 8:30 轮渡上岛（提前订票）</span><span>🏛️ 日光岩登顶</span><span>🏠 岛上老别墅群</span></div>
+      <div class="seg"><span>🍱 中午 岛上小吃/海鲜面</span><span>🎹 钢琴博物馆</span><span>📸 最美转角打卡</span></div>
+      <div class="seg"><span>🚢 下午 4-5 点返程</span><span>🍜 晚上 中山路小吃街扫街</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 船票节假日紧张，务必提前在官网/官方小程序订；上岛后别跟着大队走，往小巷钻人少景好。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 厦大 + 环岛路 + 收尾</div>
+      <div class="seg"><span>🏫 上午 厦门大学（需预约）</span><span>🕳️ 芙蓉隧道涂鸦</span><span>🙏 南普陀寺 + 素饼</span></div>
+      <div class="seg"><span>🌊 下午 白城沙滩 → 环岛路骑行</span><span>🎨 沙坡尾/猫街文艺扫街</span></div>
+      <div class="seg"><span>🌇 傍晚 黄厝/椰风寨看日落</span><span>🚄 晚上 动车返程</span></div>
+      <div class="tip2"><span class="arr">💡</span> 厦大需提前预约（入校参观）；环岛路可租共享单车或电单车，晴天骑行体验最佳。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ 5天方案 ============ -->
+<section class="panel" id="plan5" role="tabpanel" hidden>
+  <h2><span class="emo">🌊</span>5 天深度 · 慢享版</h2>
+  <p class="sub">适合有假期的松弛玩法：上鼓浪屿住一晚感受夜清，再抽一天去世界遗产土楼。若时间再挤 2 天，土楼可升级为 2 日游。</p>
+
+  <div class="hint">👥 <b>1–3 人适配：</b>第 2 晚可住鼓浪屿民宿（2 人房人均分摊）；土楼一日游可选包车或当地拼团，3 人包车更划算。下方预算按 <b>人均</b> 标注。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 抵达 + 老厦门烟火</div>
+      <div class="seg"><span>✈️/🚄 抵达厦门</span><span>🏙️ 中山路骑楼夜景</span><span>🦐 晚上 八市海鲜市场 + 自选加工晚餐</span></div>
+      <div class="tip2"><span class="arr">💡</span> 第一晚住市区：厦大/中山路一带，交通餐饮都方便。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 鼓浪屿全天（上岛过夜）</div>
+      <div class="seg"><span>🚢 上午 轮渡上岛</span><span>⛰️ 日光岩登顶全景</span><span>🏠 老别墅 + 钢琴博物馆</span></div>
+      <div class="seg"><span>📸 傍晚 最美转角、在海边看日落</span><span>🌙 夜宿岛上 逛安静小巷</span></div>
+      <div class="tip2"><span class="arr">🛏️</span> 一定要住岛上 1 晚！白天游客散去后，清晨和夜晚的鼓浪屿才是它的本来样子。</div>
+    </li>
+    <li>
+      <div class="day">DAY 3 · 厦大 + 海边骑行</div>
+      <div class="seg"><span>🚢 上午 离岛回市区</span><span>🏫 厦门大学（预约）</span><span>🙏 南普陀 + 素饼</span></div>
+      <div class="seg"><span>🌊 下午 白城沙滩 → 环岛路骑行</span><span>🌇 傍晚 黄厝/椰风寨日落</span></div>
+      <div class="tip2"><span class="arr">💡</span> 骑行累了就在海边咖啡厅歇脚，别赶时间，5 天版本允许慢。</div>
+    </li>
+    <li>
+      <div class="day">DAY 4 · 文艺 + 嘉庚建筑</div>
+      <div class="seg"><span>🎨 上午 沙坡尾 + 猫街文艺街区</span><span>☕ 下午茶 + 手作小店</span></div>
+      <div class="seg"><span>🏛️ 下午 集美学村（嘉庚建筑）</span><span>🌆 晚上 自由活动/夜宵</span></div>
+      <div class="tip2"><span class="arr">💡</span> 集美学村地铁直达、人少安静，避高峰好去处。</div>
+    </li>
+    <li>
+      <div class="day">DAY 5 · 收尾 +（可选）土楼</div>
+      <div class="seg"><span>🛍️ 上午 买伴手礼（中山路）</span><span>🍜 中午 最后一顿海鲜/沙茶面</span></div>
+      <div class="seg"><span>🚄 下午/晚上 返程</span></div>
+      <div class="tip2"><span class="arr">🏯 升级玩法：</span>若能把 5 天再挪 1–2 天，强烈建议加 <b>南靖/永定土楼一日游或两日游</b>——世界文化遗产，厦门周边最值得的一程（自驾或当地拼团，约 300–600 元/人）。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ 特色景点详览 ============ -->
+<section class="panel" id="spots">
+  <h2><span class="emo">⭐</span>特色景点 · 单独详览</h2>
+  <p class="sub">把厦门最有辨识度的 5 个点单独拎出来看图说清楚——值不值得去、怎么玩、藏在哪。</p>
+
+  <div class="spotlist">
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/JJshXL6FZlk.webp" type="image/webp">
+<img src="../../assets/images/JJshXL6FZlk.jpg" alt="鼓浪屿日光岩：巨大的浅灰花岗岩主峰高耸于海岛绿林之上，山间可见红顶老别墅群与海天远景" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>日光岩 · 鼓浪屿最高点</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e0f2fe;color:#0e7490">鼓浪屿</span><h3>日光岩 · 登顶看全景</h3></div>
+        <p>鼓浪屿西南部的制高点，由一块巨大圆润的花岗岩构成。登顶可 360° 俯瞰整座鼓浪屿的红顶老别墅群、对岸厦门岛的城市天际线与无边海景，是这座小岛最标志性的"打卡坐标"。</p>
+        <p class="spgo">👍 必去理由：不来日光岩，等于没到鼓浪屿。建议清晨或傍晚登顶，阳光柔和、人相对少，拍照最出片；山路用护栏+台阶，体力要求不高。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/cXWibRwPXW8.webp" type="image/webp">
+<img src="../../assets/images/cXWibRwPXW8.jpg" alt="厦门大学芙蓉隧道内铺满学生创作的卡通涂鸦、彩色标语与层层叠叠的留言签名" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>芙蓉隧道 · 网红告白墙</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#fde3e8;color:#be3b5a">厦门大学</span><h3>芙蓉隧道 · 行走的青春涂鸦墙</h3></div>
+        <p>全国高校里少见的超长涂鸦隧道，数百米墙面被历届学生的壁画、告白与留言层层铺满，既有专业墙绘，也有无数游客和学子留下的青春印记。</p>
+        <p class="spgo">👍 必去理由：文艺又接地气，随手一拍都满载校园青春感。适合边逛边找"我爱妳，再见"等经典标语；隧道内较暗，注意看路。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/Y003C1KkjoM.webp" type="image/webp">
+<img src="../../assets/images/Y003C1KkjoM.jpg" alt="南普陀寺闽南燕尾脊风格主殿、红柱石阶与前方开阔石砌庭院" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>南普陀寺 · 千年闽南古刹</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e8f5e9;color:#33691e">思明区</span><h3>南普陀寺 · 闽南古刹 + 素饼</h3></div>
+        <p>紧邻厦门大学的千年古刹，闽南传统燕尾脊建筑庄重精致。香火旺盛，寺前的放生池与荷塘宁静清幽，寺院还以素饼（绿豆/椰蓉馅）出名，是本地人爱带的伴手礼。</p>
+        <p class="spgo">👍 必去理由：与厦大、白城沙滩安排在同一段顺路游览。进门免费，素饼可现买带走；傍晚游客散去后更显清幽。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/eWFSGSXSi5Y.webp" type="image/webp">
+<img src="../../assets/images/eWFSGSXSi5Y.jpg" alt="沙坡尾避风坞：港湾停泊的渔船与两岸旧骑楼、咖啡馆和彩色店招交错" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>沙坡尾避风坞 · 老渔港重生</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#fff3cd;color:#8a6d00">思明区</span><h3>沙坡尾 · 文艺与烟火并存</h3></div>
+        <p>厦门最古老的避风坞之一，老渔船停泊的港湾两岸，错落着旧骑楼、涂鸦墙、独立咖啡馆、手作店与小吃铺，是"老厦门"生活与年轻文艺潮流碰撞的地方。</p>
+        <p class="spgo">👍 必去理由：比起网红店扎堆的曾厝垵，这里更有味道。适合下午来，逛手作、喝咖啡、看渔船，逛完就近去猫街拍照。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/NBQ2a4fsix8.webp" type="image/webp">
+<img src="../../assets/images/NBQ2a4fsix8.jpg" alt="南靖田螺坑客家土楼群：四座圆形土楼环抱一座方楼，"四菜一汤"，被层层梯田绿意与远山薄雾环抱" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>南靖土楼 · 藏在山里的世界遗产</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#ede7f6;color:#5e35b1">5天升级·周边</span><h3>南靖土楼 · 世界文化遗产</h3></div>
+        <p>厦门周边 1.5–2 小时车程的南靖/永定客家土楼群，是《大鱼海棠》取景地。圆形土楼（"四菜一汤"）依山而建、与梯田环抱，被誉为"东方古城堡"，被列入世界遗产。</p>
+        <p class="spgo">👍 必去理由：5 天版强烈推荐的周边行程。可自驾或当地拼团一日游（约 300–600 元/人）；建议晴天去，山野梯田+土楼最出片。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+  </div>
+
+  <style>
+    .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+    .spot{
+      display:flex;gap:18px;background:#fffcF5;border:1px solid var(--sand-line);
+      border-radius:16px;padding:16px;align-items:stretch;
+      transition:box-shadow .18s ease,border-color .18s ease;
+    }
+    .spot:hover{border-color:rgba(14,116,144,.35);box-shadow:0 10px 22px -12px rgba(14,116,144,.3)}
+    .spimg{flex:0 0 42%;margin:0;min-width:0}
+    .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+    .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+    .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+    .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+    .sptxt h3{margin:0;font-size:19px;color:var(--sea-deep)}
+    .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+    .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#fff8ee;border-radius:10px;padding:9px 12px;margin-top:10px}
+    .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+    .sptxt .spsrc a{color:var(--sea-deep)}
+    @media (max-width:640px){
+      .spot{flex-direction:column}
+      .spimg{flex:none}
+      .spimg img{height:auto;max-height:220px;object-fit:cover}
+    }
+  </style>
+</section>
+
+<!-- ============ 共用：住宿 ============ -->
+<section class="panel">
+  <h2><span class="emo">🏨</span>住宿推荐</h2>
+  <p class="sub">三档价位，均为 2 人房计，多人出行请按需调整。</p>
+  <div class="grid">
+    <div class="card">
+      <span class="tag" style="background:#fff3cd;color:#8a6d00">经济型</span>
+      <div class="nm">青旅 / 经济连锁酒店</div>
+      <div class="pr">约 100–180 元/晚 · 人均 50–90</div>
+      <div class="ds">思明区（厦大/中山路一带）交通便捷。适合预算紧、只睡不挑的年轻组合。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#e0f2fe;color:#0e7490">中端舒适</span>
+      <div class="nm">精品民宿 / 中档连锁</div>
+      <div class="pr">约 250–450 元/晚 · 人均 125–225</div>
+      <div class="ds">环岛路海边景观、曾厝垵文艺民宿。2 人分摊性价比高，3 人可选家庭房。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#fde3e8;color:#be3b5a">高端体验</span>
+      <div class="nm">海景度假酒店 / 岛上民宿</div>
+      <div class="pr">约 600–1200 元/晚 · 人均 300–600</div>
+      <div class="ds">海景房看日出、鼓浪屿特色老别墅民宿。5 天深度的鼓浪屿过夜首选。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 共用：美食 ============ -->
+<section class="panel">
+  <h2><span class="emo">🍜</span>厦门必吃清单</h2>
+  <p class="sub">口味随人数可按份点，1–3 人均适用。</p>
+  <div class="food">
+    <div class="row"><span class="no">1</span><div class="it"><b>沙茶面</b><div class="w">海鲜/猪杂配料自选 · 本地人早餐日常</div></div><span class="prx">约 20–35 元/碗</span></div>
+    <div class="row"><span class="no">2</span><div class="it"><b>海蛎煎</b><div class="w">蚵仔煎，配甜辣酱 · 必点</div></div><span class="prx">约 15–25 元/份</span></div>
+    <div class="row"><span class="no">3</span><div class="it"><b>花生汤</b><div class="w">甜口热汤，配油条 · 经典早餐</div></div><span class="prx">约 8–12 元/碗</span></div>
+    <div class="row"><span class="no">4</span><div class="it"><b>土笋冻</b><div class="w">特色小吃，蒜蓉酱 · 敢吃才懂</div></div><span class="prx">约 10–15 元/份</span></div>
+    <div class="row"><span class="no">5</span><div class="it"><b>姜母鸭</b><div class="w">姜香浓郁 · 硬菜，多人聚餐合适</div></div><span class="prx">约 80–120 元/份</span></div>
+    <div class="row"><span class="no">6</span><div class="it"><b>海鲜大排档</b><div class="w">八市市场自选 + 加工 · 新鲜便宜</div></div><span class="prx">人均约 60–120</span></div>
+  </div>
+</section>
+
+<!-- ============ 预算对比 ============ -->
+<section class="panel">
+  <h2><span class="emo">💰</span>预算对比（人均）</h2>
+  <p class="sub">含 1–3 人出行说明；区间为保守–宽松，实际以淡旺季与选择为准。</p>
+  <div class="budget">
+    <table>
+      <caption style="position:absolute;left:-9999px">厦门2天与5天方案人均预算对比</caption>
+      <thead><tr><th scope="col">项目</th><th scope="col" class="sc">2天周末版</th><th scope="col" class="sc">5天深度版</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">大交通（往返）</th><td class="sc">约 300–600</td><td class="sc">约 300–600</td></tr>
+        <tr><th scope="row">住宿</th><td class="sc">1 晚 80–300</td><td class="sc">4 晚 400–1200</td></tr>
+        <tr><th scope="row">餐饮</th><td class="sc">约 200–350</td><td class="sc">约 450–700</td></tr>
+        <tr><th scope="row">景点/船票</th><td class="sc">约 80–150</td><td class="sc">约 150–300</td></tr>
+        <tr><th scope="row">市内交通</th><td class="sc">约 40–80</td><td class="sc">约 100–200</td></tr>
+        <tr><th scope="row">可选（土楼）</th><td class="sc">—</td><td class="sc">约 300–600</td></tr>
+        <tr><th scope="row" class="tot">合计 · 人均</th><td class="sc tot">约 900–1500</td><td class="sc tot">约 2000–3300</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">💡 <b>1–3 人怎么省：</b>住宿双人房人均分摊最划算（3 人加床或双房次之）；美食按份多人共享省预算；土楼拼团比独立包车更便宜；避开节假日可显著降低房费与船票抢购压力。</div>
+</section>
+
+<footer>
+  厦门 · 双版组合旅行指南 ｜ 适配 1–3 人出行 · 价格为淡旺季区间的参考值<br>
+  船票/厦大入校请提前预约；旺季价格会大幅上浮，请以实时为准。
+</footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+  try{
+    var tabs=document.querySelectorAll('.switch button');
+    var plans=document.querySelectorAll('section[role="tabpanel"]');
+    function show(id){
+      tabs.forEach(function(t){
+        var on=t.getAttribute('data-plan')===id;
+        t.classList.toggle('on',on);
+        t.setAttribute('aria-selected',on?'true':'false');
+      });
+      plans.forEach(function(p){
+        p.hidden = p.id!==id;
+      });
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+    tabs.forEach(function(t){
+      t.addEventListener('click',function(){
+        show(t.getAttribute('data-plan'));
+      });
+    });
+  }catch(e){}
+})();
+</script>
+<footer style="position:relative;margin:44px auto 8px;padding:18px 24px;max-width:1180px;width:calc(100% - 40px);text-align:center;background:rgba(13,17,32,.55);border:1px solid rgba(255,255,255,.12);border-radius:14px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:2">
+  <span style="font-size:13px;color:#dfe3ea;letter-spacing:.03em">Made with care by <b style="color:#fff">WorldStip</b> &nbsp;·&nbsp; <a href="https://worldstip.com" style="color:#9fb6ff;text-decoration:none" target="_blank" rel="noopener noreferrer">worldstip.com</a> &nbsp;·&nbsp; 旅行小册子</span>
+</footer>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

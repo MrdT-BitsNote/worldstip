@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>四季旅行地图 · 中国春夏秋冬赏景攻略（春赏花/夏避暑/秋看彩林/冬玩雪&避寒）</title>
+<meta name="description" content="中国四季旅行全攻略：春天去婺源/林芝赏花，夏天到恩施/荔波/呼伦贝尔避暑，秋天看九寨沟/喀纳斯/额济纳胡杨彩林，冬天到哈尔滨/雪乡玩雪、三亚/陵水避寒。按季节精选目的地、最佳观赏时间、玩法与错峰建议，一套讲清。">
+<meta name="keywords" content="四季旅行,春季赏花,夏季避暑,秋季赏秋,冬季玩雪,避寒过冬,婺源,林芝,恩施,九寨沟,喀纳斯,额济纳,哈尔滨,三亚,中国旅游攻略">
+<style>
+  :root{
+    --sp-spring:#4d9b6a;   /* 春绿 */
+    --sp-spring-deep:#2f6f4a;
+    --sp-spring-soft:#e3f0e6;
+    --sp-summer:#2a7cb8;   /* 夏蓝 */
+    --sp-summer-deep:#1a5b87;
+    --sp-summer-soft:#ddeef8;
+    --sp-autumn:#d07a2e;   /* 秋橙 */
+    --sp-autumn-deep:#a4581a;
+    --sp-autumn-soft:#f9e8d3;
+    --sp-winter:#5b6f8b;   /* 冬霜蓝灰 */
+    --sp-winter-deep:#3b4a61;
+    --sp-winter-soft:#e8edf3;
+    --warm:#e8604c;
+    --ink:#24333c;
+    --ink-soft:#5f707a;
+    --card:#ffffff;
+    --sand-line:#dbe4e8;
+    --shadow:0 16px 40px -18px rgba(30,50,70,.30);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--font);color:var(--ink);background:radial-gradient(1100px 480px at 85% -5%, rgba(42,124,184,.12), transparent 60%),radial-gradient(900px 500px at -5% 10%, rgba(208,122,46,.10), transparent 55%),#f3f6f8;line-height:1.7}
+  .wrap{max-width:1120px;margin:0 auto;padding:26px 20px 64px}
+  a{color:#1a5b87}
+  .hero{position:relative;border-radius:28px;overflow:hidden;color:#fff;background:linear-gradient(135deg,#2a7cb8 0%,#3b6f9e 40%,#d07a2e 100%);min-height:190px;box-shadow:var(--shadow)}
+  .hero .hbg{width:100%;height:270px;object-fit:cover;display:block;opacity:.30}
+  .hero .hinner{position:absolute;left:0;right:0;bottom:0;padding:26px 36px 30px;background:linear-gradient(0deg, rgba(10,28,40,.94), rgba(10,28,40,.28) 70%, transparent)}
+  .hero .kicker{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:2px;background:rgba(255,255,255,.16);padding:5px 13px;border-radius:999px;margin-bottom:12px}
+  .hero h1{font-size:31px;line-height:1.28;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:14.5px;opacity:.94;max-width:780px}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+  .hero .meta span{font-size:12.5px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);padding:5px 11px;border-radius:9px}
+  .toc{background:var(--card);border-radius:18px;padding:18px 22px;margin:26px 0 8px;box-shadow:0 8px 22px -18px rgba(30,50,70,.4);border:1px solid rgba(42,124,184,.10);display:flex;flex-wrap:wrap;gap:8px 14px;font-size:13.5px}
+  .toc b{color:#1a5b87;margin-right:4px}
+  .toc a{color:var(--ink-soft);text-decoration:none}.toc a:hover{color:#2a7cb8;text-decoration:underline}
+  .season{margin-top:30px;background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(42,124,184,.12)}
+  .season .shead{display:flex;align-items:center;gap:14px;padding:20px 28px 16px;border-bottom:2px solid var(--sand-line)}
+  .season .shead .em{font-size:26px}
+  .season .shead h2{margin:0;font-size:23px;color:#24333c}.season .shead h2 small{font-size:13px;color:var(--ink-soft);font-weight:600;margin-left:10px;letter-spacing:1px}
+  .season .shead .bar{flex:1;height:6px;border-radius:999px;background:var(--sand-line);margin-left:8px}
+  .season .shead .bar i{display:block;height:100%;border-radius:999px}
+  .season .sbody{padding:8px 28px 28px}
+  .spots{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:16px}
+  .spot{border:1px solid var(--sand-line);border-radius:14px;padding:15px 16px;background:#fafcfd;transition:transform .18s ease,box-shadow .18s ease}
+  .spot:hover{transform:translateY(-3px);box-shadow:0 12px 26px -16px rgba(30,50,70,.35)}
+  .spot .t{font-size:15px;font-weight:800;color:#24333c;display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .spot .t .tag{font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap}
+  .spot p{font-size:13px;color:var(--ink-soft);margin:8px 0 0;line-height:1.65}
+  .spot .when{font-size:12px;color:var(--ink-soft);margin-top:8px;padding-top:8px;border-top:1px dashed var(--sand-line)}
+  .spot .when b{color:#24333c}
+  .zone{margin-top:20px;border-radius:13px;padding:15px 17px;font-size:13.5px}
+  .zone b{color:#24333c}
+  .note{font-size:12px;color:var(--ink-soft);margin-top:10px;line-height:1.6}
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.85}
+  @media (max-width:640px){.hero .hinner{padding:20px 18px 24px}.hero h1{font-size:23px}.hero .hbg{height:210px}.season .sbody{padding:8px 18px 22px}.season .shead{padding:18px 18px 14px;flex-wrap:wrap}}
+  @media print{body{background:#fff}.hero .hbg{display:none}.hero{background:#2a7cb8!important}.wrap{max-width:none;padding:0}.spot,.season{page-break-inside:avoid}}
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+    <link rel="canonical" href="https://worldstip.com/map/seasons/">
+    <meta name="theme-color" content="#2a7cb8">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="../../favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="四季旅行地图 · 中国春夏秋冬赏景攻略">
+    <meta property="og:description" content="春赏花婺源林芝、夏避暑恩施荔波、秋看彩林九寨沟喀纳斯、冬玩雪哈尔滨三亚避寒——按季节精选目的地与最佳观赏时间一套讲清。">
+    <meta property="og:url" content="https://worldstip.com/map/seasons/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="四季旅行地图 · 中国春夏秋冬赏景攻略">
+    <meta name="twitter:description" content="春赏花·夏避暑·秋看彩林·冬玩雪避寒，按季节精选目的地与最佳时间。">
+    <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"WorldStip · 旅行小册子","url":"https://worldstip.com/"},{"@type":"ListItem","position":2,"name":"四季旅行地图","url":"https://worldstip.com/map/seasons/"}]}
+    </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"四季旅行地图 · 中国春夏秋冬赏景攻略","description":"春赏花、夏避暑、秋看彩林、冬玩雪与避寒过冬，按季节精选目的地与最佳观赏时间","inLanguage":"zh-CN","author":{"@type":"Organization","name":"旅行小册子"},"publisher":{"@type":"Organization","name":"旅行小册子"},"datePublished":"2026-10-12","dateModified":"2026-10-12"}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<figure class="hero" style="margin:0">
+  <div class="hinner">
+    <div class="kicker">🍃 四季旅行地图 · WHY TRAVEL BY SEASON</div>
+    <h1>中国四季旅行地图 · 会玩的人总在对的季节去对的地方</h1>
+    <p>同一个地方，换个季节完全是另一种风景。本页把<b>春天赏花、夏天避暑、秋天看彩林、冬天玩雪与避寒过冬</b>的目的地和最佳时间一次讲清，帮你把年假花在最合适的时间点上。</p>
+    <div class="meta">
+      <span>🌸 春 · 花海 3–5 月</span>
+      <span>☀️ 夏 · 避暑 6–8 月</span>
+      <span>🍁 秋 · 彩林 9–11 月</span>
+      <span>❄️ 冬 · 玩雪/避寒 12–2 月</span>
+    </div>
+  </div>
+</figure>
+
+<nav class="toc"><b>目录</b>
+  <a href="#spring">🌸 春 · 花海</a>
+  <a href="#summer">☀️ 夏 · 避暑</a>
+  <a href="#autumn">🍁 秋 · 彩林</a>
+  <a href="#winter">❄️ 冬 · 玩雪/避寒</a>
+  <a href="#tips">📍 四季错峰 & 实用提示</a>
+</nav>
+
+<!-- ============ 春 ============ -->
+<article class="season" id="spring">
+  <div class="shead">
+    <span class="em">🌸</span>
+    <h2>春 · 花海 <small>SPRING · 3–5 月</small></h2>
+    <div class="bar"><i style="width:100%;background:linear-gradient(90deg,#6ab58a,#4d9b6a)"></i></div>
+  </div>
+  <div class="sbody">
+    <p style="font-size:14px;margin:14px 0 2px;color:var(--ink)">春天是<b>油菜花、桃花、樱花、杏花</b>轮番登场的季节。气温回升、昼夜温差大，各地花期略有先后，出发前务必看好当年花讯。</p>
+    <div class="spots">
+      <div class="spot">
+        <div class="t">婺源 · 油菜花海 <span class="tag" style="background:var(--sp-spring-soft);color:var(--sp-spring-deep)">踏春</span></div>
+        <p>江岭、篁岭万亩梯田油菜花与徽派村落同框，是「中国最美乡村」的招牌画面；还可以顺便看晒秋与古村晨雾。</p>
+        <div class="when">⏱️ <b>最佳 3 月中–4 月初</b>（梯田花最盛）</div>
+      
+          <div class="spot">
+        <div class="t">洛阳 · 牡丹 <span class="tag" style="background:var(--sp-spring-soft);color:var(--sp-spring-deep)">国色</span></div>
+        <p>「唯有牡丹真国色」，洛阳四月牡丹甲天下，王城公园、中国国花园花海如潮，配洛邑古城牡丹夜赏灯会。</p>
+        <div class="when">⏱️ <b>最佳 4 月上旬–中旬</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">武汉 · 樱花 <span class="tag" style="background:var(--sp-spring-soft);color:var(--sp-spring-deep)">樱花</span></div>
+        <p>武大樱花大道+东湖樱园，三月中旬「江城樱花雨」刷屏，夜间赏樱最出片。</p>
+        <div class="when">⏱️ <b>最佳 3 月中–下旬</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">伊犁 · 吐尔根杏花 <span class="tag" style="background:var(--sp-spring-soft);color:var(--sp-spring-deep)">杏花</span></div>
+        <p>新疆伊犁吐尔根杏花沟，四月漫山粉白野杏林沿山坡铺开，牧羊与雪山同框，春日西陲秘境。</p>
+        <div class="when">⏱️ <b>最佳 4 月上旬</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">金川 · 梨花 <span class="tag" style="background:var(--sp-spring-soft);color:var(--sp-spring-deep)">梨花</span></div>
+        <p>四川金川「雪梨之乡」，三月高原雪山下万亩梨花如雪，沙耳乡、神仙包是最佳机位。</p>
+        <div class="when">⏱️ <b>最佳 3 月中–下旬</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">罗平 · 油菜花 <span class="tag" style="background:var(--sp-spring-soft);color:var(--sp-spring-deep)">油菜花</span></div>
+        <p>云南罗平峰林下万亩油菜花海，金鸡峰丛、螺丝田，花期全国最早，二月即黄。</p>
+        <div class="when">⏱️ <b>最佳 2 月–3 月初</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">兴化 · 垛田油菜花 <span class="tag" style="background:var(--sp-spring-soft);color:var(--sp-spring-deep)">油菜花</span></div>
+        <p>江苏兴化千垛景区，油菜花长在河网垛田上、游船穿行花海，「水上菜花」全国独一份。</p>
+        <div class="when">⏱️ <b>最佳 4 月上旬</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">毕节 · 百里杜鹃 <span class="tag" style="background:var(--sp-spring-soft);color:var(--sp-spring-deep)">杜鹃</span></div>
+        <p>贵州毕节百里杜鹃风景区，绵延五十余里的高山杜鹃花廊，四月中旬成片怒放。</p>
+        <div class="when">⏱️ <b>最佳 4 月中旬</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">杭州 · 太子湾郁金香 <span class="tag" style="background:var(--sp-spring-soft);color:var(--sp-spring-deep)">郁金香</span></div>
+        <p>西湖边太子湾公园，三月郁金香+樱花同开，溪涧草坪似调色盘，杭城春日顶流。</p>
+        <div class="when">⏱️ <b>最佳 3 月中–4 月初</b></div>
+      </div>
+  </div>
+      <div class="spot">
+        <div class="t">林芝 · 桃花园 <span class="tag" style="background:var(--sp-spring-soft);color:var(--sp-spring-deep)">高原</span></div>
+        <p>雅鲁藏布大峡谷两岸野桃花与南迦巴瓦雪山相映，「西藏江南」春日顶流；3 月底–4 月初桃花节。</p>
+        <div class="when">⏱️ <b>最佳 3 月下–4 月上</b>（桃花节）</div>
+      </div>
+      <div class="spot">
+        <div class="t">扬州 · 瘦西湖 <span class="tag" style="background:var(--sp-spring-soft);color:var(--sp-spring-deep)">园林</span></div>
+        <p>「烟花三月下扬州」，瘦西湖柳绿桃红、亭台楼阁，配淮扬早茶，是最从容的江南春游。</p>
+        <div class="when">⏱️ <b>最佳 3–4 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">无锡 · 鼋头渚 <span class="tag" style="background:var(--sp-spring-soft);color:var(--sp-spring-deep)">樱花</span></div>
+        <p>太湖鼋头渚「中华第一赏樱地」，三月上中旬樱花谷盛放，夜樱尤为壮观。</p>
+        <div class="when">⏱️ <b>最佳 3 月中–4 月初</b></div>
+      </div>
+    </div>
+    <div class="zone" style="background:var(--sp-spring-soft)"><b>🌸 春游小贴士：</b>早春昼夜温差大（尤其高原），带足保暖衣物；花期受当年气温影响明显，出发前 3–5 天关注花讯与天气，错开清明小长假的拥挤。</div>
+  </div>
+</article>
+
+<!-- ============ 夏 ============ -->
+<article class="season" id="summer">
+  <div class="shead">
+    <span class="em">☀️</span>
+    <h2>夏 · 避暑 <small>SUMMER · 6–8 月</small></h2>
+    <div class="bar"><i style="width:100%;background:linear-gradient(90deg,#5aa8d6,#2a7cb8)"></i></div>
+  </div>
+  <div class="sbody">
+    <p style="font-size:14px;margin:14px 0 2px;color:var(--ink)">酷暑难耐时，往<b>高原、山地、湖畔、草原、海边</b>走最舒服。暑期也是亲子游旺季，热门地要早点订房。</p>
+    <div class="spots">
+      <div class="spot">
+        <div class="t">恩施 · 大峡谷避暑 <span class="tag" style="background:var(--sp-summer-soft);color:var(--sp-summer-deep)">清凉</span></div>
+        <p>恩施大峡谷、屏山峡谷（「中国仙本那」）清流飞瀑，平均气温比城市低 5–8℃；土司文化+自然奇观兼具。</p>
+        <div class="when">⏱️ <b>最佳 6–9 月</b></div>
+      
+          <div class="spot">
+        <div class="t">承德 · 避暑山庄 <span class="tag" style="background:var(--sp-summer-soft);color:var(--sp-summer-deep)">皇家</span></div>
+        <p>清代皇家避暑地，园林+湖泊+草原山峦，夏季平均 24℃，满眼清凉绿意。</p>
+        <div class="when">⏱️ <b>最佳 6–8 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">贵阳 · 清凉省会 <span class="tag" style="background:var(--sp-summer-soft);color:var(--sp-summer-deep)">清凉</span></div>
+        <p>「爽爽的贵阳」夏季均温 23℃+，甲秀楼、黔灵山、青岩古镇，酸汤鱼+夜市消夏。</p>
+        <div class="when">⏱️ <b>最佳 6–8 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">六盘水 · 中国凉都 <span class="tag" style="background:var(--sp-summer-soft);color:var(--sp-summer-deep)">避暑</span></div>
+        <p>「中国凉都」夏季均温仅 19℃，乌蒙大草原、妥乐银杏、水城烙锅，避暑首选。</p>
+        <div class="when">⏱️ <b>最佳 6–8 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">黄山 · 山上清凉 <span class="tag" style="background:var(--sp-summer-soft);color:var(--sp-summer-deep)">云海</span></div>
+        <p>盛夏黄山山上仅 20℃ 出头，云海、日出、松涛避暑，看夏雨后的「黄山云」。</p>
+        <div class="when">⏱️ <b>最佳 6–8 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">青海湖 · 环湖骑行 <span class="tag" style="background:var(--sp-summer-soft);color:var(--sp-summer-deep)">湖畔</span></div>
+        <p>七月青海湖环湖，油菜花与碧湖同框，骑行/自驾都很过瘾，早晚需加外套。</p>
+        <div class="when">⏱️ <b>最佳 7–8 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">张家界 · 武陵源 <span class="tag" style="background:var(--sp-summer-soft);color:var(--sp-summer-deep)">峰林</span></div>
+        <p>三千奇峰+溪谷森林，林中气温比市内低不少，玻璃桥、袁家界避暑观景。</p>
+        <div class="when">⏱️ <b>最佳 6–8 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">庐山 · 牯岭镇 <span class="tag" style="background:var(--sp-summer-soft);color:var(--sp-summer-deep)">避暑</span></div>
+        <p>「匡庐奇秀甲天下」，牯岭镇老牌避暑地，山间云雾凉爽，三叠泉瀑布。</p>
+        <div class="when">⏱️ <b>最佳 6–8 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">北戴河 · 海滨 <span class="tag" style="background:var(--sp-summer-soft);color:var(--sp-summer-deep)">海滨</span></div>
+        <p>老牌北方海滨避暑地，秦皇岛鸽子窝看日出、碧螺塔，暑期亲子+看海性价比之选。</p>
+        <div class="when">⏱️ <b>最佳 6–8 月</b></div>
+      </div>
+  </div>
+      <div class="spot">
+        <div class="t">荔波 · 小七孔 <span class="tag" style="background:var(--sp-summer-soft);color:var(--sp-summer-deep)">绿波</span></div>
+        <p>「地球腰带上的绿宝石」，卧龙潭、七孔桥碧水如玉，赏瀑布踩水清凉一夏，暑期水量足景色最美。</p>
+        <div class="when">⏱️ <b>最佳 6–8 月（雨后）</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">呼伦贝尔 · 大草原 <span class="tag" style="background:var(--sp-summer-soft);color:var(--sp-summer-deep)">草原</span></div>
+        <p>夏季草原碧绿如毯、风吹草低见牛羊，黑山头看日落、额尔古纳湿地、骑马露营，是避暑+亲子首选。</p>
+        <div class="when">⏱️ <b>最佳 6–8 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">青岛 / 威海 · 海滨 <span class="tag" style="background:var(--sp-summer-soft);color:var(--sp-summer-deep)">海边</span></div>
+        <p>啤酒海鲜+红瓦绿树，栈桥、八大关、金石滩、刘公岛；暑期是海滨旺季，性价比高的是威海。</p>
+        <div class="when">⏱️ <b>最佳 6–8 月（7 月最热闹）</b></div>
+      </div>
+    </div>
+    <div class="zone" style="background:var(--sp-summer-soft)"><b>☀️ 夏游小贴士：</b>暑期是全国出游高峰，热门目的地（尤其海边、亲子乐园）提前 1–2 月订房订票；高原/草原防晒补水、早晚添衣；南方注意暴雨山洪，进山前看天气。</div>
+  </div>
+</article>
+
+<!-- ============ 秋 ============ -->
+<article class="season" id="autumn">
+  <div class="shead">
+    <span class="em">🍁</span>
+    <h2>秋 · 彩林 <small>AUTUMN · 9–11 月</small></h2>
+    <div class="bar"><i style="width:100%;background:linear-gradient(90deg,#e3a45e,#d07a2e)"></i></div>
+  </div>
+  <div class="sbody">
+    <p style="font-size:14px;margin:14px 0 2px;color:var(--ink)">秋天是<b>彩林、胡杨、银杏、雪山</b>的色彩盛宴，气温舒适、游客相对少，是全年最「出片」的季节之一。</p>
+    <div class="spots">
+      <div class="spot">
+        <div class="t">九寨沟 · 彩林碧水 <span class="tag" style="background:var(--sp-autumn-soft);color:var(--sp-autumn-deep)">顶流</span></div>
+        <p>「九寨归来不看水」，十月中下旬彩林倒映五花海、长海，五彩斑斓，是九寨颜值巅峰。</p>
+        <div class="when">⏱️ <b>最佳 10 月中–11 月初</b></div>
+      
+          <div class="spot">
+        <div class="t">本溪 · 枫叶 <span class="tag" style="background:var(--sp-autumn-soft);color:var(--sp-autumn-deep)">枫叶</span></div>
+        <p>「中国枫叶之都」，关门山、老边沟十月枫林层林尽染，东北秋色代表作。</p>
+        <div class="when">⏱️ <b>最佳 10 月上–中旬</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">南京 · 栖霞山红叶 <span class="tag" style="background:var(--sp-autumn-soft);color:var(--sp-autumn-deep)">红叶</span></div>
+        <p>「金陵第一明秀山」，栖霞寺红叶+古银杏，深秋十月满山似火。</p>
+        <div class="when">⏱️ <b>最佳 10 月下–11 月上</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">长沙 · 岳麓山枫 <span class="tag" style="background:var(--sp-autumn-soft);color:var(--sp-autumn-deep)">红叶</span></div>
+        <p>爱晚亭「停车坐爱枫林晚」，岳麓山红枫+古书院，深秋长沙最动人一景。</p>
+        <div class="when">⏱️ <b>最佳 11 月中–下旬</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">毕棚沟 · 红叶彩林 <span class="tag" style="background:var(--sp-autumn-soft);color:var(--sp-autumn-deep)">彩林</span></div>
+        <p>川西毕棚沟，雪山湖泊瀑布+十月红叶彩林，光谷若尔盖，秋季好出片。</p>
+        <div class="when">⏱️ <b>最佳 10 月中–下旬</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">米亚罗 · 红叶 <span class="tag" style="background:var(--sp-autumn-soft);color:var(--sp-autumn-deep)">彩林</span></div>
+        <p>「中国最大红叶区」四川米亚罗，杂谷脑河两岸万山红遍，金秋徒步。</p>
+        <div class="when">⏱️ <b>最佳 10 月中</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">光雾山 · 彩林 <span class="tag" style="background:var(--sp-autumn-soft);color:var(--sp-autumn-deep)">彩林</span></div>
+        <p>四川光雾山「中国红叶第一山」，天然彩林画廊长达数百里，十月末是颜值巅峰。</p>
+        <div class="when">⏱️ <b>最佳 10 月下–11 月上</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">北京 · 香山红叶 <span class="tag" style="background:var(--sp-autumn-soft);color:var(--sp-autumn-deep)">红叶</span></div>
+        <p>「香山红叶红满天」，十月下旬至十一月上旬，登香炉峰俯瞰京城秋色。</p>
+        <div class="when">⏱️ <b>最佳 10 月下–11 月上</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">川西 · 新都桥 <span class="tag" style="background:var(--sp-autumn-soft);color:var(--sp-autumn-deep)">摄影</span></div>
+        <p>「摄影家天堂」，十月金黄杨树林+藏寨+雪山，光与影的最佳角，秋季最出片。</p>
+        <div class="when">⏱️ <b>最佳 10 月中</b></div>
+      </div>
+  </div>
+      <div class="spot">
+        <div class="t">喀纳斯（阿勒泰）<span class="tag" style="background:var(--sp-autumn-soft);color:var(--sp-autumn-deep)">胡杨</span></div>
+        <p>喀纳斯湖+禾木村白桦林染金，西北秋色天花板；9 月底–10 月初黄金周前后最美。</p>
+        <div class="when">⏱️ <b>最佳 9 月下–10 月上</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">额济纳 · 胡杨林 <span class="tag" style="background:var(--sp-autumn-soft);color:var(--sp-autumn-deep)">胡杨</span></div>
+        <p>「生而千年不死」的胡杨林每年只有 20 多天金黄窗口期，十月中下旬进入最盛，沙漠+胡杨大片。</p>
+        <div class="when">⏱️ <b>最佳 10 月中–10 月下</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">稻城亚丁 · 雪山彩林 <span class="tag" style="background:var(--sp-autumn-soft);color:var(--sp-autumn-deep)">高原</span></div>
+        <p>三神山+牛奶海，秋季高原草甸与森林金黄，天气最稳定、能见度最高，是看神山的理想季节。</p>
+        <div class="when">⏱️ <b>最佳 9–10 月</b></div>
+      </div>
+    </div>
+    <div class="zone" style="background:var(--sp-autumn-soft)"><b>🍁 秋游小贴士：</b>彩林、胡杨窗口期短且每年受霜期影响波动，务必关注当年「叶情播报」；国庆假期人流量大，能错峰（节前/节后一周）体验更佳；高原秋夜已冷，备好冲锋衣。</div>
+  </div>
+</article>
+
+<!-- ============ 冬 ============ -->
+<article class="season" id="winter">
+  <div class="shead">
+    <span class="em">❄️</span>
+    <h2>冬 · 玩雪 / 避寒 <small>WINTER · 12–2 月</small></h2>
+    <div class="bar"><i style="width:100%;background:linear-gradient(90deg,#8fa3c2,#5b6f8b)"></i></div>
+  </div>
+  <div class="sbody">
+    <p style="font-size:14px;margin:14px 0 2px;color:var(--ink)">冬天有两条截然相反的好路线：往北去<b>冰雪王国</b>玩雪滑雪，往南去<b>热带海岛</b>避寒过冬。</p>
+    <div class="spots">
+      <div class="spot">
+        <div class="t">哈尔滨 · 冰雪大世界 <span class="tag" style="background:var(--sp-winter-soft);color:var(--sp-winter-deep)">玩雪</span></div>
+        <p>冰雪大世界冰雕、中央大街、索菲亚教堂雪景，「音乐之都」的冬日魔法，12 月底–2 月最盛。</p>
+        <div class="when">⏱️ <b>最佳 12 月下–2 月</b></div>
+      
+          <div class="spot">
+        <div class="t">亚布力 · 滑雪 <span class="tag" style="background:var(--sp-winter-soft);color:var(--sp-winter-deep)">滑雪</span></div>
+        <p>中国最著名滑雪度假区，专业雪道+高山缆车，雪友冬季第一站，配温泉暖身。</p>
+        <div class="when">⏱️ <b>最佳 12–2 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">阿勒泰 · 禾木雪村 <span class="tag" style="background:var(--sp-winter-soft);color:var(--sp-winter-deep)">雪村</span></div>
+        <p>喀纳斯禾木村「雪蘑菇」童话世界，乘马拉爬犁、看晨雾炊烟，深冬封神。</p>
+        <div class="when">⏱️ <b>最佳 12 月下–2 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">漠河 · 北极村 <span class="tag" style="background:var(--sp-winter-soft);color:var(--sp-winter-deep)">极寒</span></div>
+        <p>中国最北，零下四十度泼水成冰，冬夜偶遇极光，寻北之旅的极致体验。</p>
+        <div class="when">⏱️ <b>最佳 12 月–次年 2 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">拉萨 · 冬日暖阳 <span class="tag" style="background:var(--sp-winter-soft);color:var(--sp-winter-deep)">暖阳</span></div>
+        <p>拉萨冬季晴天多、日照强，白天体感并不太冷，身处淡季的布宫+大昭寺更从容。</p>
+        <div class="when">⏱️ <b>最佳 12 月–2 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">西双版纳 · 暖冬 <span class="tag" style="background:var(--sp-winter-soft);color:var(--sp-winter-deep)">避寒</span></div>
+        <p>冬季 15–25℃ 的热带雨林，告庄夜市+傣族风情，避寒过冬新宠，比三亚更「异域」。</p>
+        <div class="when">⏱️ <b>最佳 11 月–次年 3 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">厦门 · 冬日海滨 <span class="tag" style="background:var(--sp-winter-soft);color:var(--sp-winter-deep)">海滨</span></div>
+        <p>冬天仍在 15–20℃，鼓浪屿慢游+沙茶面，人少清净，南方过冬的文艺之选。</p>
+        <div class="when">⏱️ <b>最佳 12 月–2 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">昆明 · 春城暖冬 <span class="tag" style="background:var(--sp-winter-soft);color:var(--sp-winter-deep)">春城</span></div>
+        <p>「春城」冬季均温 10℃+、阳光充沛，滇池喂海鸥、翠湖慢生活，寒冬里的春天。</p>
+        <div class="when">⏱️ <b>最佳 12 月–次年 2 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">腾冲 · 火山温泉 <span class="tag" style="background:var(--sp-winter-soft);color:var(--sp-winter-deep)">泡汤</span></div>
+        <p>火山地热温泉全国顶级，和顺古镇+银杏村，冬日泡汤康养，云南避寒的深度选择。</p>
+        <div class="when">⏱️ <b>最佳 11 月–次年 2 月</b></div>
+      </div>
+  </div>
+      <div class="spot">
+        <div class="t">雪乡（牡丹江）<span class="tag" style="background:var(--sp-winter-soft);color:var(--sp-winter-deep)">雪村</span></div>
+        <p>「中国雪乡」被雪蘑菇覆盖的木屋村落，童话感拉满；亚雪公路、滑雪、雪地摩托体验丰富。</p>
+        <div class="when">⏱️ <b>最佳 12 月–2 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">三亚 / 陵水 · 避寒 <span class="tag" style="background:var(--sp-winter-soft);color:var(--sp-winter-deep)">避寒</span></div>
+        <p>冬日仍在 25℃+ 的海岛天堂，亚龙湾/蜈支洲岛潜水、免税购物，是「逃离寒冬」的 No.1 目的地。</p>
+        <div class="when">⏱️ <b>最佳 11 月–次年 3 月</b></div>
+      </div>
+      <div class="spot">
+        <div class="t">长白山 · 雪岭温泉 <span class="tag" style="background:var(--sp-winter-soft);color:var(--sp-winter-deep)">泡汤</span></div>
+        <p>北坡天池雪景+长白温泉，滑雪尽兴后泡汤，冬日的「冰火两重天」；12–2 月雪最厚。</p>
+        <div class="when">⏱️ <b>最佳 12–2 月</b></div>
+      </div>
+    </div>
+    <div class="zone" style="background:var(--sp-winter-soft)"><b>❄️ 冬游小贴士：</b>东北玩雪注意防寒（-20℃ 级别羽绒、雪地防滑）、手机相机保暖；三亚/陵水旺季在新年–春节，越早订越划算；需要避寒过冬 1 个月以上可考虑「长期度假」类型，详见本册长期度假专题。</div>
+  </div>
+</article>
+
+<!-- ============ 提示 ============ -->
+<article class="season" id="tips">
+  <div class="shead">
+    <span class="em">📍</span>
+    <h2>四季错峰 & 实用提示 <small>WHEN TO GO</small></h2>
+    <div class="bar"><i style="width:100%;background:linear-gradient(90deg,#f0a06a,#e8604c)"></i></div>
+  </div>
+  <div class="sbody">
+    <div class="zone" style="background:#fdf2ef"><b>⏱️ 全年错峰口诀：</b>避开三大黄金周（春节、五一、十一）与暑期周末 peak；想便宜看秋景选 11 月淡季，想便宜避寒选 11 月底–12 月初（新年未涨）；去看花、看雪前先看当地「季节播报」再订票。</div>
+    <div class="zone" style="background:#eef4fb" style="margin-top:12px"><b>🧳 通用打包：</b>四季通用带「洋葱式穿法」应对大温差；高原/北方备唇膏防晒；带充电宝与轻便雨具；热门景区提前实名预约（多数已实行暑期/节假限流）。</div>
+    <p class="note">注：目的地具体玩法、门票、交通与线路，可回主册查看对应城市/景区分页；季节建议仅供参考，实际以当年官方公告为准。</p>
+  </div>
+</article>
+
+<footer>
+  <div>🍃 四季旅行地图 · WorldStip 旅行小册子 · 让每次出行都踩在最好的时间点上</div>
+  <div style="margin-top:6px">© <span id="yr"></span> WorldStip · 旅行小册子</div>
+</footer>
+</div>
+
+<a class="camtab" href="https://insta360.worldstip.com/" target="_blank" rel="noopener noreferrer" aria-label="Insta360 全景相机">
+  <span class="ct-black"><span class="ct-brand">INSTA360</span><span class="ct-lens"><span class="l-ring"></span><span class="l-glass"></span></span></span>
+  <span class="ct-red"><span class="ct-bar">全景</span><span class="ct-full"><span class="f1">360°</span><span class="f2">拍遍好风景</span></span></span>
+</a>
+<script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
+</body>
+</html>

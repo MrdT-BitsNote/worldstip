@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>北京 · Beijing 7日旅行指南 | WorldStip</title>
+<meta name="description" content="北京环球之旅7日逐日攻略：皇城中轴、万里长城、皇家园林、坛庙老城、佛寺文脉、人文艺术、环球乐园。七大主题章回，图文并茂。">
+<style>
+
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Roboto,sans-serif;
+  color:#24304d;line-height:1.55;overflow-wrap:break-word;min-height:100vh;
+  /* 环球度假区：多彩梦幻背景 */
+  background:
+    radial-gradient(46% 36% at 12% 6%,rgba(88,120,255,.22),transparent 60%),
+    radial-gradient(40% 32% at 88% 2%,rgba(255,120,150,.20),transparent 60%),
+    radial-gradient(42% 36% at 6% 92%,rgba(46,198,180,.20),transparent 60%),
+    radial-gradient(46% 40% at 94% 88%,rgba(255,196,64,.22),transparent 62%),
+    linear-gradient(160deg,#eaf0ff 0%,#fdf0f6 40%,#e8fbf6 100%);
+  background-attachment:fixed;
+}
+img{max-width:100%;height:auto;display:block;}
+
+/* ===== 顶部标题（电影感渐变） ===== */
+header.masthead{text-align:center;padding:46px 20px 10px;position:relative;}
+header.masthead .title-emoji{font-size:46px;line-height:1;margin-bottom:10px;filter:drop-shadow(0 3px 6px rgba(60,60,120,.18));}
+header.masthead h1{
+  margin:0 0 8px;font-size:clamp(1.6rem,4.2vw,2.2rem);font-weight:900;letter-spacing:1px;
+  background:linear-gradient(90deg,#2b6ef0,#8a3bf0,#ff5c8a 60%,#ff9d2e);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+header.masthead p{color:#5a6482;margin:0;font-size:.95rem;font-weight:600;}
+
+/* ===== 目录导航（彩色胶囊，自动换行居中全部可见） ===== */
+.chips{
+  display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center;
+  margin:18px auto 28px;max-width:940px;padding:8px 10px;
+  background:rgba(255,255,255,.66);border-radius:24px;backdrop-filter:blur(10px);
+  box-shadow:0 6px 20px rgba(70,80,160,.12);border:1px solid rgba(120,130,220,.18);
+}
+.chips button{
+  cursor:pointer;padding:8px 16px;border-radius:999px;border:none;
+  background:#fff;color:#44507a;font-size:13px;font-weight:700;box-shadow:0 2px 6px rgba(70,80,160,.10);
+  transition:.18s;
+}
+.chips button:hover{transform:translateY(-1px);box-shadow:0 4px 10px rgba(70,80,160,.20);}
+.chips button.active{
+  background:linear-gradient(90deg,#2b6ef0,#8a3bf0);color:#fff;box-shadow:0 4px 14px rgba(80,80,210,.35);
+}
+
+/* ===== 卡片册 ===== */
+.deck{max-width:1160px;margin:0 auto;padding:6px 16px 46px;display:flex;flex-direction:column;gap:34px;}
+@media(min-width:1100px){.deck{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:22px;align-items:start;}}
+.card{
+  --tc1:#3a6cf0;--tc2:#8a4af0;--tc-strong:#2b56d0;--tc-soft:#eef2ff;
+  background:#fff;border-radius:22px;box-shadow:0 10px 30px rgba(50,70,150,.10);
+  width:100%;padding:0;overflow:hidden;position:relative;
+}
+/* 卡片顶部彩色边条 */
+.card::before{
+  content:"";display:block;height:6px;
+  background:linear-gradient(90deg,var(--tc1),var(--tc2));
+}
+
+.card .topbar{
+  font-size:11px;letter-spacing:2.5px;color:var(--tc1);font-weight:700;
+  padding:0;margin:0;text-align:center;padding-top:14px;
+}
+.card header.c{
+  display:flex;align-items:center;gap:12px;padding:12px 22px 6px;
+}
+.card header.c .ico{
+  width:52px;height:52px;flex:none;border-radius:16px;display:flex;align-items:center;justify-content:center;
+  font-size:26px;background:var(--tc-soft);box-shadow:inset 0 -3px 0 var(--tc1)/*26*/;
+}
+.card header.c .ico::after{content:"";width:0;}
+.card header.c h2{margin:0;font-size:20px;font-weight:900;color:#26335a;letter-spacing:.3px;}
+.card header.c .en{font-size:12px;color:#8a92b0;font-weight:600;margin-top:2px;}
+
+.card .body{padding:14px 22px 22px;}
+.kick{font-size:14px;color:#4a5478;line-height:1.7;margin:0 0 14px;}
+
+/* 动线总览 */
+.tl{background:var(--tc-soft);border-radius:16px;padding:6px 14px;}
+.tl .row{display:flex;align-items:baseline;gap:10px;padding:8px 2px;border-bottom:1px dashed rgba(120,130,200,.25);}
+.tl .row:last-child{border-bottom:none;}
+.tl .d{font-size:12.5px;font-weight:900;color:var(--tc1);min-width:34px;}
+.tl .tt{font-size:13.5px;color:#38415f;}
+
+/* 逐日章回 */
+.day-head{display:flex;align-items:center;gap:10px;margin:2px 0 10px;}
+.day-head .dn{
+  font-size:12px;font-weight:900;letter-spacing:1.5px;color:#fff;padding:4px 12px;border-radius:999px;
+  background:linear-gradient(90deg,var(--tc1),var(--tc2));
+}
+.day-head .dh{font-size:12px;color:#8a92b0;font-weight:600;}
+.day-route{
+  display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--tc-soft);
+  border-radius:14px;padding:10px 14px;margin-bottom:12px;
+}
+.day-route b{color:var(--tc-strong);font-size:13px;}
+.day-route i{color:var(--tc2);font-style:normal;font-size:13px;}
+
+.day-blocks{display:flex;flex-direction:column;gap:10px;margin-bottom:12px;}
+.dset{background:#f7f9ff;border-radius:14px;padding:10px 14px;border:1px solid rgba(110,130,220,.10);}
+.dset .dt{font-size:13.5px;font-weight:800;color:var(--tc-strong);margin-bottom:4px;}
+.dset .dset-r{font-size:12.8px;color:#465175;line-height:1.6;}
+.dset .dset-r b{color:#28407f;}
+
+.day-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.day-thumbs .th .ph{border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:#eef1fb;}
+.day-thumbs .th img{width:100%;height:100%;object-fit:cover;}
+.day-thumbs .th .c{display:block;text-align:center;font-size:11.5px;color:#7a84a5;margin-top:4px;}
+
+.day-tip{
+  margin-top:12px;font-size:12.8px;color:#4a5478;background:linear-gradient(90deg,var(--tc-soft),#fff);
+  border:1px dashed var(--tc2);border-radius:12px;padding:8px 12px;line-height:1.6;
+}
+.day-tip b{color:var(--tc-strong);}
+
+/* 注意事项 */
+.notes{display:flex;flex-direction:column;gap:10px;}
+.notes .note{display:flex;gap:12px;background:#f7f9ff;border-radius:14px;padding:10px 12px;border:1px solid rgba(110,130,220,.10);}
+.notes .note .ni{font-size:20px;flex:none;}
+.notes .note .nt{font-size:13px;color:#465175;line-height:1.6;}
+.notes .note .nt b{color:#28407f;}
+
+/* 美食 spot 卡 */
+.spots{display:flex;flex-direction:column;gap:14px;}
+.spot-card{background:#f7f9ff;border-radius:16px;overflow:hidden;border:1px solid rgba(110,130,220,.10);}
+.spot-card .ph{aspect-ratio:16/9;background:#eef1fb;overflow:hidden;}
+.spot-card .ph img{width:100%;height:100%;object-fit:cover;}
+.spot-card .st{font-size:15px;font-weight:900;color:#26335a;padding:10px 14px 2px;}
+.spot-card .pill{display:inline-block;margin:2px 14px 6px;background:var(--tc-soft);color:var(--tc-strong);font-size:11px;font-weight:800;padding:2px 10px;border-radius:999px;}
+.spot-card .p{font-size:12.8px;color:#465175;line-height:1.6;padding:0 14px 12px;}
+
+/* 结尾 */
+.end-mark{display:inline-flex;flex-direction:column;align-items:center;}
+.end-g{width:82px;height:82px;border-radius:24px;background:linear-gradient(135deg,var(--tc1),var(--tc2));box-shadow:0 10px 26px rgba(80,80,210,.30);display:flex;align-items:center;justify-content:center;font-size:38px;}
+.end-s{font-size:.98rem;color:#8a76e8;font-weight:700;margin:12px 0 0;}
+.end-h2{margin:4px 0 0;font-size:1.9rem;color:#26335a;letter-spacing:.5px;}
+.end-t{margin:10px 0 0;font-size:.9rem;color:#8a92b0;}
+
+/* 打印：每卡独立一页 A5 */
+@page{size:A5;margin:0;}
+@media print{
+  body{background:#fff;}
+  header.masthead,.chips{display:none;}
+  .deck{display:block;gap:0;}
+  .card{width:148mm;height:210mm;border-radius:0;box-shadow:none;page-break-after:always;margin:0;border:none;}
+  .card:last-child{page-break-after:auto;}
+}
+
+</style>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="title-emoji">🌏</div>
+    <h1>北京 · Beijing 环球之旅</h1>
+    <p>五朝古都 × 大片世界 · 让电影走进现实</p>
+  </header>
+  <nav class="chips">
+    <button data-target="c-cover">封面</button>
+    <button data-target="c-overview">动线</button>
+    <button data-target="c-day1">Day1</button>
+    <button data-target="c-day2">Day2</button>
+    <button data-target="c-day3">Day3</button>
+    <button data-target="c-day4">Day4</button>
+    <button data-target="c-day5">Day5</button>
+    <button data-target="c-day6">Day6</button>
+    <button data-target="c-day7">Day7</button>
+    <button data-target="c-note">准备</button>
+    <button data-target="c-food">美食</button>
+    <button data-target="c-res">实用</button>
+    <button data-target="c-end">结束</button>
+  </nav><div class="deck">
+
+      <div class="card" id="c-cover" style="--tc1:#3a6cf0;--tc2:#8a4af0;--tc-strong:#2b56d0;--tc-soft:#eef2ff">
+        <div class="deck-cov" style="position:relative;height:100%;overflow:hidden;">
+          <img src="assets/bj_cover.jpg" alt="北京" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.62);">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.55));"></div>
+          <div style="position:absolute;left:0;right:0;bottom:0;padding:30px 28px;color:#fff;">
+            <div style="font-size:13px;letter-spacing:3px;opacity:.9;">WORLDSTIP · TRAVEL GUIDE</div>
+            <div style="font-size:52px;font-weight:900;line-height:1.05;margin:8px 0 2px;">北京</div>
+            <div style="font-size:20px;font-weight:600;opacity:.95;">Beijing · 五朝古都</div>
+            <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:8px;">
+              <span style="background:rgba(255,255,255,.22);backdrop-filter:blur(4px);padding:5px 12px;border-radius:20px;font-size:12px;">🏛 皇城中轴</span>
+              <span style="background:rgba(255,255,255,.22);backdrop-filter:blur(4px);padding:5px 12px;border-radius:20px;font-size:12px;">⛰ 万里长城</span>
+              <span style="background:rgba(255,255,255,.22);backdrop-filter:blur(4px);padding:5px 12px;border-radius:20px;font-size:12px;">🍽 京味美食</span>
+              <span style="background:rgba(255,255,255,.22);backdrop-filter:blur(4px);padding:5px 12px;border-radius:20px;font-size:12px;">🏞 皇家园林</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="c-overview" style="--tc1:#2b6ef0;--tc2:#00b0a0;--tc-strong:#1f5fd0;--tc-soft:#eaf7f4">
+        <div class="topbar">WORLDSTIP · BEIJING</div>
+        <header class="c">
+          <div class="ico">🏛</div>
+          <div><h2>北京 · 7 日动线</h2><div class="en">The Forbidden City to the Great Wall</div></div>
+        </header>
+        <div class="body">
+          <p class="kick">从晨光里的升旗仪式，到暮色中的什刹海；从皇城的中轴，到山脊上的长城。这是一条历史与烟火并行的北京主线。</p>
+          <div class="tl">
+            <div class="row">
+              <div class="d">D1</div><div class="tt">升旗 · 故宫 · 景山 · 前门</div>
+            </div>
+            <div class="row">
+              <div class="d">D2</div><div class="tt">八达岭长城 · 十三陵定陵</div>
+            </div>
+            <div class="row">
+              <div class="d">D3</div><div class="tt">颐和园 · 圆明园 · 香山</div>
+            </div>
+            <div class="row">
+              <div class="d">D4</div><div class="tt">天坛 · 前门 · 什刹海 · 胡同</div>
+            </div>
+            <div class="row">
+              <div class="d">D5</div><div class="tt">雍和宫 · 孔庙 · 五道营</div>
+            </div>
+            <div class="row">
+              <div class="d">D6</div><div class="tt">国博 · 798 · 美术馆</div>
+            </div>
+            <div class="row">
+              <div class="d">D7</div><div class="tt">环球影城 · 返程</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="c-day1" style="--tc1:#e23a3a;--tc2:#ff7a45;--tc-strong:#c02626;--tc-soft:#fdeeea">
+        <div class="topbar">BEIJING · {{EN}}</div>
+        <header class="c">
+          <div class="ico">🏛</div>
+          <div><h2>Day 1 · 皇城中轴</h2><div class="en">Forbidden City Route</div></div>
+        </header>
+        <div class="body">
+          <div class="day-head">
+            <span class="dn">DAY 1</span>
+            <span class="dh">中轴经典首日</span>
+          </div>
+          <div class="day-route"><b>升旗</b><i>→</i><b>故宫</b><i>→</i><b>景山</b><i>→</i><b>前门</b></div>
+          <div class="day-blocks">
+          <div class="dset"><div class="dt">🏛 天安门广场</div><div class="dset-r">晨观<b>庄严升旗</b>；毗邻<b>毛主席纪念堂</b>与<b>国家博物馆</b>。</div></div>
+          <div class="dset"><div class="dt">🏯 故宫 · 中轴</div><div class="dset-r">沿午门-太和殿-乾清宫-神武门一路南向北；<b>珍宝馆/钟表馆</b>可选。</div></div>
+          <div class="dset"><div class="dt">⛰ 景山 · 俯瞰</div><div class="dset-r">万春亭俯瞰<b>紫禁城全景</b>，日落时分最美。</div></div>
+          </div>
+          <div class="day-thumbs">
+<div class="th"><div class="ph"><img src="assets/bj_qianmen.jpg" alt="升旗·纪念堂前" loading="lazy"></div><span class="c">升旗·纪念堂前</span></div><div class="th"><div class="ph"><img src="assets/bj_gugong.jpg" alt="故宫太和殿" loading="lazy"></div><span class="c">故宫太和殿</span></div>          </div>
+          <div class="day-tip"><b>TIP</b> 交通：地铁最便利，故宫从东/西华门出。</div>
+        </div>
+      </div>
+
+      <div class="card" id="c-day2" style="--tc1:#5a7bd0;--tc2:#8aa8f5;--tc-strong:#465fc0;--tc-soft:#eef1fd">
+        <div class="topbar">BEIJING · {{EN}}</div>
+        <header class="c">
+          <div class="ico">⛰</div>
+          <div><h2>Day 2 · 万里长城</h2><div class="en">The Great Wall</div></div>
+        </header>
+        <div class="body">
+          <div class="day-head">
+            <span class="dn">DAY 2</span>
+            <span class="dh">长城雄关一日</span>
+          </div>
+          <div class="day-route"><b>八达岭</b><i>→</i><b>好汉坡</b><i>→</i><b>十三陵</b></div>
+          <div class="day-blocks">
+          <div class="dset"><div class="dt">⛰ 八达岭长城</div><div class="dset-r">最经典段，<b>缆车/滑车</b>可上山；好汉坡留念。</div></div>
+          <div class="dset"><div class="dt">⚱ 十三陵定陵</div><div class="dset-r">明十三陵核心，地下宫开放；<b>长陵祾恩殿</b>明代木构。</div></div>
+          </div>
+          <div class="day-thumbs">
+<div class="th"><div class="ph"><img src="assets/bj_changcheng.jpg" alt="八达岭长城" loading="lazy"></div><span class="c">八达岭长城</span></div>          </div>
+          <div class="day-tip"><b>TIP</b> 交通：地铁最便利，故宫从东/西华门出。</div>
+        </div>
+      </div>
+
+      <div class="card" id="c-day3" style="--tc1:#2ea56a;--tc2:#7fc66a;--tc-strong:#218555;--tc-soft:#e9f7ef">
+        <div class="topbar">BEIJING · {{EN}}</div>
+        <header class="c">
+          <div class="ico">🏞</div>
+          <div><h2>Day 3 · 皇家园林</h2><div class="en">Royal Gardens</div></div>
+        </header>
+        <div class="body">
+          <div class="day-head">
+            <span class="dn">DAY 3</span>
+            <span class="dh">园林漫游首日</span>
+          </div>
+          <div class="day-route"><b>颐和园</b><i>→</i><b>圆明园</b><i>→</i><b>香山</b></div>
+          <div class="day-blocks">
+          <div class="dset"><div class="dt">🌊 颐和园</div><div class="dset-r">昆明湖+万寿山，<b>长廊/十七孔桥</b>必看；游船环湖。</div></div>
+          <div class="dset"><div class="dt">🏚 圆明园遗址</div><div class="dset-r">大水法残柱凭吊，西洋楼区。<b>徒步/骑行</b>园区较大。</div></div>
+          <div class="dset"><div class="dt">🍁 香山公园</div><div class="dset-r">山林特色<b>皇家园林</b>（静宜园）；<b>香炉峰</b>登高、深秋红叶。</div></div>
+          </div>
+          <div class="day-thumbs">
+<div class="th"><div class="ph"><img src="assets/bj_yiheyuan.jpg" alt="颐和园·佛香阁" loading="lazy"></div><span class="c">颐和园·佛香阁</span></div><div class="th"><div class="ph"><img src="assets/bj_jingshan.jpg" alt="景山俯瞰" loading="lazy"></div><span class="c">景山俯瞰</span></div>          </div>
+          <div class="day-tip"><b>TIP</b> 交通：地铁最便利，故宫从东/西华门出。</div>
+        </div>
+      </div>
+
+      <div class="card" id="c-day4" style="--tc1:#e0a02e;--tc2:#ffb84d;--tc-strong:#c07f1e;--tc-soft:#fdf3e0">
+        <div class="topbar">BEIJING · {{EN}}</div>
+        <header class="c">
+          <div class="ico">🐉</div>
+          <div><h2>Day 4 · 老城烟火</h2><div class="en">Old City & Hutong</div></div>
+        </header>
+        <div class="body">
+          <div class="day-head">
+            <span class="dn">DAY 4</span>
+            <span class="dh">老城烟火一日</span>
+          </div>
+          <div class="day-route"><b>天坛</b><i>→</i><b>前门</b><i>→</i><b>什刹海</b><i>→</i><b>胡同</b></div>
+          <div class="day-blocks">
+          <div class="dset"><div class="dt">🧧 天坛</div><div class="dset-r">祈年殿+回音壁，明清皇家祭天；<b>祈年殿</b>清晨静谧。</div></div>
+          <div class="dset"><div class="dt">🏮 前门·大栅栏</div><div class="dset-r">老字号街，<b>全聚德/六必居</b>；夜景灯火辉煌。</div></div>
+          <div class="dset"><div class="dt">🌊 什刹海</div><div class="dset-r">后海环湖漫步，<b>宋庆龄故居/郭沫若纪念馆</b>；胡同骑行。</div></div>
+          </div>
+          <div class="day-thumbs">
+<div class="th"><div class="ph"><img src="assets/bj_tiantan.jpg" alt="天坛祈年殿" loading="lazy"></div><span class="c">天坛祈年殿</span></div><div class="th"><div class="ph"><img src="assets/bj_hutong.jpg" alt="老城胡同" loading="lazy"></div><span class="c">老城胡同</span></div>          </div>
+          <div class="day-tip"><b>TIP</b> 交通：地铁最便利，故宫从东/西华门出。</div>
+        </div>
+      </div>
+
+      <div class="card" id="c-day5" style="--tc1:#b05ad0;--tc2:#d88af0;--tc-strong:#8f3fb0;--tc-soft:#f6ecfb">
+        <div class="topbar">BEIJING · {{EN}}</div>
+        <header class="c">
+          <div class="ico">🛕</div>
+          <div><h2>Day 5 · 佛寺文脉</h2><div class="en">Temples & Intellect</div></div>
+        </header>
+        <div class="body">
+          <div class="day-head">
+            <span class="dn">DAY 5</span>
+            <span class="dh">佛寺文脉悠游</span>
+          </div>
+          <div class="day-route"><b>雍和宫</b><i>→</i><b>孔庙·国子监</b><i>→</i><b>五道营</b></div>
+          <div class="day-blocks">
+          <div class="dset"><div class="dt">🛕 雍和宫</div><div class="dset-r">最大藏传佛教寺院；<b>万福阁檀木弥勒</b>，香火极盛。</div></div>
+          <div class="dset"><div class="dt">📚 孔庙·国子监</div><div class="dset-r">国学文脉所在，<b>进士题名碑</b>；成贤街古槐。</div></div>
+          <div class="dset"><div class="dt">☕ 五道营胡同</div><div class="dset-r">文艺小店+咖啡馆，<b>雍和宫步行5分钟</b>。</div></div>
+          </div>
+          <div class="day-thumbs">
+<div class="th"><div class="ph"><img src="assets/bj_hutong.jpg" alt="雍和宫红墙" loading="lazy"></div><span class="c">雍和宫红墙</span></div>          </div>
+          <div class="day-tip"><b>TIP</b> 交通：地铁最便利，故宫从东/西华门出。</div>
+        </div>
+      </div>
+
+      <div class="card" id="c-day6" style="--tc1:#e8c31e;--tc2:#ffd94d;--tc-strong:#c09a1a;--tc-soft:#fdf9e6">
+        <div class="topbar">BEIJING · {{EN}}</div>
+        <header class="c">
+          <div class="ico">🎨</div>
+          <div><h2>Day 6 · 人文艺术</h2><div class="en">Museums & Art</div></div>
+        </header>
+        <div class="body">
+          <div class="day-head">
+            <span class="dn">DAY 6</span>
+            <span class="dh">人文艺术沉浸</span>
+          </div>
+          <div class="day-route"><b>国博</b><i>→</i><b>首博</b><i>→</i><b>798</b></div>
+          <div class="day-blocks">
+          <div class="dset"><div class="dt">🏛 国家博物馆</div><div class="dset-r"><b>古代中国</b>通史展镇馆；后母戊鼎、四羊方尊。<b>免费预约</b>。</div></div>
+          <div class="dset"><div class="dt">🎨 798 艺术区</div><div class="dset-r">老厂房改造的艺术聚落，<b>UCCA尤伦斯</b>、画廊云集。</div></div>
+          <div class="dset"><div class="dt">🖼 首都博物馆</div><div class="dset-r">老北京民俗+青铜器，<b>燕地青铜</b>专题。</div></div>
+          </div>
+          <div class="day-thumbs">
+<div class="th"><div class="ph"><img src="assets/bj_798.jpg" alt="798 艺术区" loading="lazy"></div><span class="c">798 艺术区</span></div><div class="th"><div class="ph"><img src="assets/bj_gugong.jpg" alt="故宫博物院" loading="lazy"></div><span class="c">故宫博物院</span></div>          </div>
+          <div class="day-tip"><b>TIP</b> 交通：地铁最便利，故宫从东/西华门出。</div>
+        </div>
+      </div>
+
+      <div class="card" id="c-day7" style="--tc1:#2b9ad8;--tc2:#5ac8f5;--tc-strong:#1f75b5;--tc-soft:#e8f5fc">
+        <div class="topbar">BEIJING · {{EN}}</div>
+        <header class="c">
+          <div class="ico">🎡</div>
+          <div><h2>Day 7 · 环球乐园</h2><div class="en">Universal & Home</div></div>
+        </header>
+        <div class="body">
+          <div class="day-head">
+            <span class="dn">DAY 7</span>
+            <span class="dh">乐园完结之日</span>
+          </div>
+          <div class="day-route"><b>环球影城</b><i>→</i><b>返程</b></div>
+          <div class="day-blocks">
+          <div class="dset"><div class="dt">🎡 环球影城</div><div class="dset-r"><b>哈利波特/变形金刚/功夫熊猫</b>主题区；7号线直达。<b>买优速通</b>省时。</div></div>
+          <div class="dset"><div class="dt">🧳 返程</div><div class="dset-r">按航班/高铁择半日逛<b>王府井/西单</b>购物收尾。</div></div>
+          </div>
+          <div class="day-thumbs">
+<div class="th"><div class="ph"><img src="assets/bj_huanyu2.jpg" alt="环球影城·地球仪" loading="lazy"></div><span class="c">环球影城·地球仪</span></div>          </div>
+          <div class="day-tip"><b>TIP</b> 交通：地铁最便利，故宫从东/西华门出。</div>
+        </div>
+      </div>
+
+      <div class="card" id="c-note" style="--tc1:#ff8a3d;--tc2:#ffb14d;--tc-strong:#e06a1e;--tc-soft:#fff3e8">
+        <div class="topbar">BEIJING · NOTES</div>
+        <header class="c">
+          <div class="ico">📌</div>
+          <div><h2>行前准备</h2><div class="en">Packing & Notes</div></div>
+        </header>
+        <div class="body">
+          <div class="notes">
+            <div class="note"><div class="ni">🎫</div><div class="nt"><b>实名预约</b>故宫、国博、天安门需提前 App 预约，旺季提前7天。</div></div>
+            <div class="note"><div class="ni">🚇</div><div class="nt"><b>地铁最方便</b>，景区停车难；下载北京一卡通/亿通行。</div></div>
+            <div class="note"><div class="ni">🪪</div><div class="nt"><b>身份证随身</b>，进故宫/国博/广场安检必查。</div></div>
+            <div class="note"><div class="ni">🍽</div><div class="nt"><b>美食时间</b>烤鸭可预约，涮肉/炸酱面排队高峰在饭点。</div></div>
+            <div class="note"><div class="ni">🧥</div><div class="nt"><b>天气</b>冬季干冷备羽绒；春秋风大，长城加一件防风。</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="c-food" style="--tc1:#ff5c6a;--tc2:#ff8a9a;--tc-strong:#e03a4a;--tc-soft:#fdecef">
+        <div class="topbar">BEIJING · EATS</div>
+        <header class="c">
+          <div class="ico">🍽</div>
+          <div><h2>京味美食</h2><div class="en">Taste of Beijing</div></div>
+        </header>
+        <div class="body">
+          <div class="spots">
+            <div class="spot-card"><div class="ph"><img src="assets/bj_kaoya.jpg" alt="北京烤鸭" loading="lazy"></div><div class="st">北京烤鸭</div><div class="pill">必尝</div><div class="p">全聚德/四季民福，皮脆肉嫩，卷饼蘸酱。</div></div>
+            <div class="spot-card"><div class="ph"><img src="assets/bj_shuanrou.jpg" alt="铜锅涮肉" loading="lazy"></div><div class="st">铜锅涮肉</div><div class="pill">暖冬</div><div class="p">东来顺/聚宝源，蘸麻酱配糖蒜。</div></div>
+            <div class="spot-card"><div class="ph"><img src="assets/bj_zhajiangmian.jpg" alt="炸酱面" loading="lazy"></div><div class="st">老北京炸酱面</div><div class="pill">地道</div><div class="p">海碗居/方砖厂，菜码齐全。</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="c-res" style="--tc1:#8a7cf5;--tc2:#b09af0;--tc-strong:#6a5ad0;--tc-soft:#f0edfc">
+        <div class="topbar">BEIJING · PRACTICAL</div>
+        <header class="c">
+          <div class="ico">🛬</div>
+          <div><h2>交通实用</h2><div class="en">Getting Around</div></div>
+        </header>
+        <div class="body">
+          <div class="dset"><div class="dt">✈️ 机场</div><div class="dset-r">首都机场（T2/T3）地铁机场线直达；大兴机场距城远，留足时间。</div></div>
+          <div class="dset"><div class="dt">🚇 市内</div><div class="dset-r">地铁网覆盖全部主要景点，2号线环线串老城；公交刷码。</div></div>
+          <div class="dset"><div class="dt">⏰ 最佳时间</div><div class="dset-r">春秋（4-5月/9-11月）气候最佳；避开黄金周与暑期大客流。</div></div>
+          <div class="dset"><div class="dt">🛍 购物</div><div class="dset-r">王府井/西单/南锣鼓巷；伴手礼稻香村糕点、同仁堂。</div></div>
+        </div>
+      </div>
+
+      <div class="card" id="c-end" style="--tc1:#3a6cf0;--tc2:#ff5c8a;--tc-strong:#2b56d0;--tc-soft:#eef2ff">
+        <div class="topbar"></div>
+        <header class="c">
+          <div class="ico">🇨🇳</div>
+          <div><h2>北京 · 五朝古都</h2><div class="en">Made with Care</div></div>
+        </header>
+        <div class="body" style="align-items:center;justify-content:center;text-align:center;">
+          <div class="end-mark">
+            <div class="end-g">🏯</div>
+            <p class="end-s">🎒 愿这 7 天，装下皇城与烟火</p>
+            <h2 class="end-h2">北京，后会有期</h2>
+            <p class="end-t">WORLDSTIP · worldstip.com / readme.org.cn</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+<script>
+(function(){
+  'use strict';
+  try {
+    var chips=document.querySelectorAll('.chips button');
+    function activate(id){chips.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-target')===id);});}
+    chips.forEach(function(btn){btn.addEventListener('click',function(){
+      var id=btn.getAttribute('data-target');var card=document.getElementById(id);
+      if(card){card.scrollIntoView({behavior:'smooth',block:'center'});activate(id);}
+    });});
+    var ob=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting)activate(en.target.id);});},{root:null,threshold:0.55});
+    document.querySelectorAll('.card').forEach(function(c){ob.observe(c);});
+  }catch(err){}
+})();
+</script>
+
+</body>
+</html>

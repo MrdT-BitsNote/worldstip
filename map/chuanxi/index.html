@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>川西大环线自驾全攻略（四姑娘山/色达/稻城亚丁/新都桥）</title>
+<meta name="description" content="川西大环线自驾全攻略：小环线/大环线路线对比、四姑娘山双桥沟、色达五明佛学院、稻城亚丁、新都桥塔公草原、丹巴甲居藏寨。门票、里程、高反预防、住宿美食预算避坑一篇讲清。">
+<meta name="keywords" content="川西,川西大环线,川西自驾,四姑娘山,双桥沟,色达,五明佛学院,稻城亚丁,新都桥,塔公草原,甲居藏寨,墨石公园,自驾路线,高反">
+<style>
+  :root{
+    --route:#3a7fb0;
+    --route-deep:#2a5f8a;
+    --route-soft:#dbeaf6;
+    --sand:#f3f6f9;
+    --sand-line:#daE4ee;
+    --coral:#d9674a;
+    --cyan:#2f8db8;
+    --leaf:#3e7d4f;
+    --ink:#1e3142;
+    --ink-soft:#5d6f80;
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(42,95,138,.3);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(58,127,176,.14), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(47,141,184,.12), transparent 55%),
+      var(--sand);
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--route-deep)}
+
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--route) 8%,#285c86 55%,var(--route-deep));
+    padding:40px 36px 34px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-40px;bottom:-60px;width:300px;height:300px;
+    background:radial-gradient(circle, rgba(255,255,255,.18), transparent 62%);
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.94;max-width:680px}
+  .hero p b{color:#fff}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{
+    font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:10px;
+  }
+
+  .switch{display:flex;gap:12px;margin:30px 0 6px;flex-wrap:wrap}
+  .switch button{
+    flex:1;min-width:230px;border:2px solid var(--sand-line);
+    background:var(--card);color:var(--ink);cursor:pointer;text-align:left;
+    border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  }
+  .switch button:hover{border-color:var(--route);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(58,127,176,.4)}
+  .switch button.on{border-color:var(--route);background:linear-gradient(135deg,#e8f2fa,#eef5fb)}
+  .switch button .t{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800}
+  .switch button .t .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff}
+  .switch button .d{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .b-1d .badge{background:var(--cyan)}
+  .b-2d .badge{background:var(--coral)}
+  .b-3d .badge{background:var(--leaf)}
+
+  section.panel{margin-top:26px;background:var(--card);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(58,127,176,.12)}
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--route-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--route-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--route-deep);margin-top:20px}
+  .hint b{font-weight:800}
+
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--route-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;
+    background:var(--route);border:3px solid var(--route-soft);box-sizing:content-box;
+  }
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--route-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--route-soft);color:var(--route-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--coral);font-weight:800}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid var(--sand-line);border-radius:14px;padding:14px 16px;background:#fbfcfe;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(58,127,176,.35);box-shadow:0 8px 18px -10px rgba(58,127,176,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--route-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+  .spot{display:flex;gap:18px;background:#fbfcfe;border:1px solid var(--sand-line);border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+  .spot:hover{border-color:rgba(58,127,176,.35);box-shadow:0 10px 22px -12px rgba(58,127,176,.3)}
+  .spimg{flex:0 0 40%;margin:0;min-width:0}
+  .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+  .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+  .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+  .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+  .sptxt h3{margin:0;font-size:19px;color:var(--route-deep)}
+  .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+  .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#e8f2fa;border-radius:10px;padding:9px 12px;margin-top:10px}
+  .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+  @media (max-width:640px){
+    .spot{flex-direction:column}
+    .spimg{flex:none}
+    .spimg img{height:auto;max-height:220px;object-fit:cover}
+  }
+
+  .cmp{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .cmp table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fefdfb}
+  .cmp th,.cmp td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--sand-line)}
+  .cmp thead th{background:var(--route-deep);color:#fff;font-weight:700}
+  .cmp tbody tr:nth-child(even){background:#f2f7fb}
+  .cmp .hd2{background:var(--route-soft);color:var(--route-deep);font-weight:800;border-bottom:1px solid var(--sand-line)}
+  .cmp .good{color:#2f7d32;font-weight:700}
+  .cmp .bad{color:#c0504d;font-weight:700}
+
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--sand-line);padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--route-soft);color:var(--route-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--coral);font-weight:800;white-space:nowrap}
+
+  .budget{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fefdfb}
+  .budget th,.budget td{padding:10px 14px;text-align:left}
+  .budget thead th{background:var(--route-deep);color:#fff;font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#f2f7fb}
+  .budget .tot{font-weight:800;color:var(--route-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  .tips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .tips li{font-size:14px;color:var(--ink);background:#e8f2fa;border-left:4px solid var(--route);border-radius:8px;padding:10px 14px}
+  .tips li b{color:var(--route-deep)}
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--route-deep)}
+
+  @media print{
+    body{background:#fff}
+    .switch button{display:none}
+    .wrap{max-width:none;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
+    .card,.budget,.cmp{page-break-inside:avoid}
+  }
+  @media (max-width:600px){
+    .hero{padding:30px 22px 26px}
+    .hero h1{font-size:27px}
+    .wrap{padding:18px 14px 48px}
+    section.panel{padding:20px 18px}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/chuanxi/">
+    <meta name="theme-color" content="#3a7fb0">
+    <link rel="icon" href="../../favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="川西大环线自驾全攻略（四姑娘山/色达/稻城亚丁/新都桥）">
+    <meta property="og:description" content="川西大环线自驾全攻略：小环线/大环线对比、四姑娘山双桥沟、色达五明佛学院、稻城亚丁、新都桥塔公草原、甲居藏寨。里程门票高反避坑一篇讲清。">
+    <meta property="og:url" content="https://worldstip.com/map/chuanxi/">
+    <meta property="og:image" content="https://worldstip.com/map/chuanxi/assets/chuanxi_cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="川西大环线自驾全攻略">
+    <meta name="twitter:description" content="四姑娘山、色达、稻城亚丁、新都桥、甲居藏寨；小/大环线对比、里程门票高反避坑一篇讲清。">
+    <meta name="twitter:image" content="https://worldstip.com/map/chuanxi/assets/chuanxi_cover.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "川西大环线自驾全攻略",
+      "url": "https://worldstip.com/map/chuanxi/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/chuanxi/",
+  "name": "川西大环线自驾全攻略",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "publisher": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "copyrightHolder": { "@type": "Organization", "name": "旅行小册子" },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">🚗 川西大环线 · WEST SICHUAN ROAD TRIP</div>
+  <h1>川西大环线自驾全攻略</h1>
+  <p>中国风景最密集的自驾天堂之一——<b>蜀山皇后四姑娘山、「红色佛国」色达、最后的香格里拉稻城亚丁</b>赛跑般接连出现。川西环线分<b>小环线（800–1000km）</b>与<b>大环线（1500–2400km）</b>：小环线轻松休闲适合首刷与亲子，大环线串联三大IP适合摄影深度游，但海拔渐升、驾驶强度大。折多山隧道已通车、路面基本柏油，普通轿车可走主线。**每天开车 3–6 小时**、住低玩高防高反。本文含小/大环线双路线、沿途核心景点、门票、高反应对、住宿美食预算、避坑全讲清。</p>
+  <div class="meta">
+    <span>📍 目的地：四川甘孜 · 阿坝</span>
+    <span>👥 2–6 人 拼车/自驾</span>
+    <span>⏱️ 小环线5–7日 / 大环线7–10日</span>
+    <span>💰 人均 3000–6000</span>
+  </div>
+</header>
+
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="b-1d on" role="tab" aria-selected="true" data-plan="plan1" id="tab1">
+    <span class="t"><span class="badge">小环线</span> 休闲版 🏞️</span>
+    <div class="d">四姑娘山-丹巴-塔公-新都桥 / 人均约 3000–4500</div>
+  </button>
+  <button class="b-2d" role="tab" aria-selected="false" data-plan="plan2" id="tab2">
+    <span class="t"><span class="badge">大环线</span> 深度版 ⛰️</span>
+    <div class="d">四姑娘山-色达-稻城亚丁 / 人均约 4500–7000</div>
+  </button>
+</div>
+
+<!-- 小环线方案 -->
+<section class="panel" id="plan1" role="tabpanel">
+  <h2><span class="emo">🏞️</span>小环线 · 休闲版</h2>
+  <p class="sub">核心策略：成都→四姑娘山→丹巴→塔公→新都桥→康定→成都，全程约 800–1000km，日均开车 3–4h，海拔循序渐进，首晚住宿尽量选低海拔（丹巴约1900m），亲子带宠友好。</p>
+  <div class="hint">👥 <b>首刷/亲子/怕高反适配：</b>小环线不像大环线那样「身体在地狱」，节奏松弛、每天 2–3 个核心景点，是绝大多数人的川西入门首选。</div>
+
+  <h3 style="margin-top:24px">🗺️ 小环线 7 日参考动线</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 成都 → 四姑娘山镇</div>
+      <div class="seg"><span>🚗 约4h</span><span>🏔️ 下午游双桥沟（观光车直达）</span></div>
+      <div class="tip2"><span class="arr">💡</span> 双桥沟最轻松、适合懒人，长坪沟/海子沟徒步强度大；住四姑娘山镇（约3200m）。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 四姑娘山 → 丹巴甲居藏寨</div>
+      <div class="seg"><span>🚗 约3–4h</span><span>🏯 甲居藏寨碉楼/大金川河谷</span></div>
+      <div class="tip2"><span class="arr">💡</span> 甲居藏寨火遍全网，住藏式民宿、看碉楼，海拔仅约2100m，正好休整补充。</div>
+    </li>
+    <li>
+      <div class="day">DAY 3 · 丹巴 → 塔公 → 新都桥</div>
+      <div class="seg"><span>🚗 约3h（经八美）</span><span>⛰️ 塔公草原/塔公寺远眺雅拉雪山</span></div>
+      <div class="seg"><span>🪨 墨石公园（异域星球感，约60元）</span></div>
+      <div class="tip2"><span class="arr">💡</span> 新都桥是「摄影家天堂」，傍晚到可逛镇内；选供氧房住更舒适（约3300m）。</div>
+    </li>
+    <li>
+      <div class="day">DAY 4 · 新都桥休闲/摄影日</div>
+      <div class="seg"><span>🌉 鱼子西/贡嘎观景台</span><span>🛖 甲根坝/冷嘎措（可选）</span></div>
+      <div class="tip2"><span class="arr">💡</span> 小环线精华在「慢」，塔公草原河边一坐一下午，看云从雅拉雪山后翻过来才是对的打开方式。</div>
+    </li>
+    <li>
+      <div class="day">DAY 5–7 · 新都桥 → 康定 → 成都</div>
+      <div class="seg"><span>🚗 穿过康定（折多山隧道已通）</span><span>🏙️ 回到成都吃火锅</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 返程日尽量早出发，避开午后与节假日堵点；折多山段有施工管制时关注实时路况。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 大环线方案 -->
+<section class="panel" id="plan2" role="tabpanel" hidden>
+  <h2><span class="emo">⛰️</span>大环线 · 深度版</h2>
+  <p class="sub">核心策略：成都→四姑娘山→色达→稻城亚丁→新都桥→成都（或走亚丁+色达+四姑娘山的经典大环线约1500–2400km），一次串联三大IP，按顺时针走海拔逐渐升高更易适应。</p>
+  <div class="hint">👥 <b>老司机/摄影狂热者适配：</b>大环线里程长、日均开车4–7h，需2人轮换驾驶；高原弯道多、部分地区路况一般，建议底盘高的SUV更稳妥。</div>
+
+  <h3 style="margin-top:24px">🗺️ 大环线 8–10 日参考动线</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1–2 · 成都 → 四姑娘山（双桥沟）</div>
+      <div class="seg"><span>🚗 约4h</span><span>🏔️ 双桥沟观光车轻松游</span></div>
+      <div class="tip2"><span class="arr">💡</span> 双桥沟门票80+观光车70约150元；四姑娘山镇住一晚适应海拔（约3200m）。</div>
+    </li>
+    <li>
+      <div class="day">DAY 3 · 四姑娘山 → 色达（红色佛国）</div>
+      <div class="seg"><span>🚗 约6h</span><span>🕍 色达五明佛学院/红房子</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 色达每日限流约3000人，需提前抢金马游客中心名额预约；进入圈定区域时控制游览时间，尊重当地习俗。</div>
+    </li>
+    <li>
+      <div class="day">DAY 4 · 色达 → 新都桥</div>
+      <div class="seg"><span>🚗 约5h</span><span>🌉 鱼子西/摄影家天堂新都桥</span></div>
+      <div class="tip2"><span class="arr">💡</span> 返程翻折多山（隧道已通），住新都桥供氧房，为进亚丁养精蓄锐。</div>
+    </li>
+    <li>
+      <div class="day">DAY 5 · 新都桥 → 稻城亚丁</div>
+      <div class="seg"><span>🚗 约6h（经理塘天空之城）</span><span>⛰️ 海子山/稻城白塔</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 理塘县城海拔4014m不建议过夜，住稻城县/香格里拉镇（约2900–3750m）更利于适应。</div>
+    </li>
+    <li>
+      <div class="day">DAY 6 · 稻城亚丁短线/长线游</div>
+      <div class="seg"><span>🏔️ 短线冲古寺→珍珠海</span><span>🥾 或长线牛奶海→五色海</span></div>
+      <div class="tip2"><span class="arr">⭐</span> 稻城亚丁 2026 年免票期见公告、须官方小程序实名预约限流1.5万；长线徒步约6–8h海拔最高4700m，量力而行。</div>
+    </li>
+    <li>
+      <div class="day">DAY 7–10 · 亚丁返成都（可顺游丹巴）</div>
+      <div class="seg"><span>🚗 原路/经丹巴返成都回程</span></div>
+      <div class="tip2"><span class="arr">💡</span> 全程弹性安排，可在丹巴甲居藏寨、墨石公园停留；返程预留缓冲应对路况，别赶夜路。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 沿途核心景点 -->
+<section class="panel" id="spots">
+  <h2><span class="emo">⭐</span>沿途核心景点 · 单独详览</h2>
+  <p class="sub">川西环线上的王牌景点——值不值得去、怎么玩、大概门票，按动线顺序。</p>
+
+  <div class="spotlist">
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/chuanxi_a.webp" type="image/webp">
+<img src="assets/chuanxi_a.jpg" alt="四姑娘山双桥沟雪山草地溪流的高山峡谷风光，蜀山皇后巍峨壮美" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>四姑娘山 · 蜀山皇后</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#dbeaf6;color:#2a5f8a">首站</span><h3>四姑娘山 · 「蜀山皇后」</h3></div>
+        <p>由四座相连雪山组成，主峰幺妹峰海拔6250米，被誉为「东方阿尔卑斯」。景区分为双桥沟、长坪沟、海子沟三条沟：双桥沟全程观光车最轻松，长坪沟、海子沟徒步更具挑战，雪山草甸溪流风光绝美。</p>
+        <p class="spgo">👍 必去理由：川西第一站名片。双桥沟门票80+观光车70约150元，轻松拍雪山大片，亲子首选。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/chuanxi_b.webp" type="image/webp">
+<img src="assets/chuanxi_b.jpg" alt="色达五明佛学院漫山遍野绛红色小木屋，红色佛国庄严震撼的喇荣山谷" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>色达 · 红色佛国</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#fde9e3;color:#c0552e">大环线</span><h3>色达五明佛学院 · 红色佛国</h3></div>
+        <p>漫山遍野的绛红色小木屋沿喇荣山谷而建，是全世界最大的藏传佛学院之一，被视为「红色佛国」。红房子、经幡、僧人诵经声构成震撼画面，晴日里绛红与雪山相映格外庄严。</p>
+        <p class="spgo">👍 必去理由：大环线最特别的景观。每日限流约3000人，务必提前预约；游览尊重当地规矩、控制圈定区域停留时间。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/chuanxi_cover.webp" type="image/webp">
+<img src="assets/chuanxi_cover.jpg" alt="稻城亚丁仙乃日雪山与高山海子在云雾间若隐若现，蓝色星球最后一片净土的圣洁晨曦" width="800" height="1067" loading="lazy">
+</picture>
+        <figcaption>稻城亚丁 · 蓝色净土</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e4edfb;color:#2f5fa8">大环线</span><h3>稻城亚丁 · 蓝色星球最后一片净土</h3></div>
+        <p>仙乃日、央迈勇、夏诺多吉三座神山下的高山圣湖，被《刘子超》的「最后的香格里拉」形容无数次的纯净之地。短线看珍珠海、长线冲牛奶海五色海，是川西环线的高潮。</p>
+        <p class="spgo">👍 必去理由：不来亚丁不算走完川西大环线。2026 年免票期看公告、限流1.5万须小程序实名预约；长线徒步量大，量力而行。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/chuanxi_a.webp" type="image/webp">
+<img src="assets/chuanxi_a.jpg" alt="新都桥塔公草原秋日金黄草甸与雅拉雪山，摄影家天堂的光影流转" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>新都桥/塔公 · 摄影天堂</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e4f2ec;color:#3e7d4f">小环线</span><h3>新都桥 · 塔公草原 · 摄影家天堂</h3></div>
+        <p>新都桥是川西「摄影家天堂」，金秋时节白杨金黄、光影流转；塔公草原上塔公寺经幡飞扬，远眺雅拉雪山的画面经典。两处最适合慢慢游、拍日落晨光。</p>
+        <p class="spgo">👍 必去理由：小环线精华。塔公草原看雪山倒影、鱼子西/贡嘎观景台等日落，随手都是屏保级大片。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/chuanxi_b.webp" type="image/webp">
+<img src="assets/chuanxi_b.jpg" alt="丹巴甲居藏寨依山而建的白色碉楼点缀在金黄梯田与森林之间，宁静祥和的嘉绒藏寨" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>甲居藏寨 · 嘉绒秘境</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#f3e8fb;color:#6b3fa8">小环线</span><h3>丹巴甲居藏寨 · 中国最美乡村之首</h3></div>
+        <p>依山而建的嘉绒藏族碉楼民居，白色外墙点缀在金黄梯田与森林间，被《中国国家地理》评为「中国最美乡村」之一。住进碉楼民宿、看大金川河谷，是深入川西人文的最佳体验。</p>
+        <p class="spgo">👍 必去理由：人文+风光兼得、海拔低（约2100m）适合休整。自驾可开车进寨，门票约50元，傍晚拍村落全景最出片。</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 自驾对比 -->
+<section class="panel">
+  <h2><span class="emo">🚗</span>小环线 vs 大环线 怎么选</h2>
+  <p class="sub">两张图看清主干路线差异，再决定走哪条。</p>
+  <div class="cmp">
+    <table>
+      <caption style="position:absolute;left:-9999px">川西小环线与大环线对比</caption>
+      <thead><tr><th scope="col">对比</th><th scope="col">🏞️ 小环线</th><th scope="col">⛰️ 大环线</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="hd2">总里程</th><td>约 800–1000km</td><td>约 1500–2400km</td></tr>
+        <tr><th scope="row">日均驾驶</th><td>约 3–4h</td><td>约 4–7h</td></tr>
+        <tr><th scope="row">覆盖IP</th><td>四姑娘山/丹巴/塔公/新都桥</td><td>四姑娘山/色达/稻城亚丁/新都桥</td></tr>
+        <tr><th scope="row">最高住宿海拔</th><td>新都桥约3300m</td><td>色达约3800m、稻城约3750m</td></tr>
+        <tr><th scope="row">高反风险</th><td class="good">低（循序渐进）</td><td class="bad">高（海拔起伏大）</td></tr>
+        <tr><th scope="row">适合人群</th><td>首刷/亲子/怕高反</td><td>摄影/深度/老司机</td></tr>
+        <tr><th scope="row">预算（人均）</th><td>约 3000–4500</td><td>约 4500–7000</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">💡 <b>决策建议：</b>第一次去、带老人孩子→<b>小环线</b>；想一次看够三大IP、能接受赶路的摄影党→<b>大环线</b>；怕高反又想看亚丁，可选「小环线+稻城」折中方案。</div>
+</section>
+
+<!-- 高反 === 自驾注意事项 -->
+<section class="panel">
+  <h2><span class="emo">🧭</span>高反 & 自驾安全要点</h2>
+  <ul class="tips">
+    <li><b>血氧与氧气：</b>川西普遍2000–4700m，到高原不剧烈运动、不立刻洗澡喝酒；备红景天、布洛芬、便携氧气瓶，头痛持续加重立刻下撤低海拔。</li>
+    <li><b>住低玩高：</b>白天可爬4000m垭口，但晚上尽量睡3300m以下（丹巴1900/新都桥3300/雅江2600），住宿海拔是高反最大变量。</li>
+    <li><b>加满油再走：</b>川西加油站间隔远，遇到加油站就加满、油箱过半就补，别赌续航。</li>
+    <li><b>轿车可走主线：</b>2026年主要垭口已铺装柏油，轿车可走主线；野路/色达境内部分烂路建议SUV，租车买全险（含轮胎底盘）。</li>
+    <li><b>防滑链与物资：</b>雨季（6–9月）注意落石、弯道减速；备防滑链、厚羽绒、防晒用品与肠胃药感冒药。</li>
+    <li><b>不赶夜路：</b>川西山路易弯多雾，出发早、回程预留缓冲，避免夜间跑山路。</li>
+  </ul>
+</section>
+
+<!-- 预算 -->
+<section class="panel">
+  <h2><span class="emo">💰</span>预算参考（人均）</h2>
+  <p class="sub">自驾/拼车为主，区间为保守–宽松，实际以季节与选择为准。</p>
+  <div class="budget">
+    <table>
+      <caption style="position:absolute;left:-9999px">川西小环线与大环线人均预算对比</caption>
+      <thead><tr><th scope="col">项目</th><th scope="col" class="sc">小环线7日</th><th scope="col" class="sc">大环线8–10日</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">油费/过路费（人均拼车）</th><td class="sc">约 500–800</td><td class="sc">约 800–1200</td></tr>
+        <tr><th scope="row">门票（四姑娘山/亚丁/色达等）</th><td class="sc">约 200–400</td><td class="sc">约 400–700</td></tr>
+        <tr><th scope="row">住宿</th><td class="sc">约 700–1200</td><td class="sc">约 1000–1800</td></tr>
+        <tr><th scope="row">餐饮</th><td class="sc">约 600–1000</td><td class="sc">约 800–1400</td></tr>
+        <tr><th scope="row">氧气/装备/杂费</th><td class="sc">约 200–400</td><td class="sc">约 300–600</td></tr>
+        <tr><th scope="row" class="tot">合计 · 人均</th><td class="sc tot">约 2200–3800</td><td class="sc tot">约 3300–5700</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">💡 <b>省法：</b>4人拼车/拼房人均最省；避开节假日大旺季；稻城亚丁逢免票期能省一大笔；淡季（非5–10月）住宿便宜但部分路段可能冰雪。</div>
+</section>
+
+<!-- 避坑建议 -->
+<section class="panel">
+  <h2><span class="emo">🧭</span>避坑 & 实用贴士</h2>
+  <ul class="tips">
+    <li><b>首晚住宿别贪高：</b>丹巴（1900m）比新都桥（3300m）更利好首夜适应，很多攻略建议首晚住低海拔「先高后低」适应海拔。</li>
+    <li><b>色达必须预约：</b>每日限流约3000人，名额靠抢，务必提前上「金马游客中心」等官方渠道预约，别指望现场。</li>
+    <li><b>亚丁免票也要约：</b>2026年免门票期看公告，但观光车/电瓶车照收、限流1.5万，仍需小程序实名预约。</li>
+    <li><b>警惕路边拉客：</b>不轻易相信收费观景台前的「野生拉客」或「免费停车看景」，可能产生纠纷。</li>
+    <li><b>厕所是痛点：</b>理塘—稻城段沿途厕所少，出发前在康定/新都桥解决，备好便携用品。</li>
+    <li><b>离线地图+提前订房：</b>下载离线地图；旺季新都桥、丹巴、香格里拉镇住宿务必提前订，房少价涨。</li>
+  </ul>
+</section>
+
+<footer>
+  川西大环线自驾全攻略 ｜ 适配 2–6 人自驾/拼车 · 价格为参考值 · 门票/限流/免票政策以景区实时公告为准<br>
+  高原自驾安全第一：防高反、防落石、不赶夜路；出发前关注官方实时公告。 · <a href="../../index.html">← 返回小册子</a>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+  try{
+    var tabs=document.querySelectorAll('.switch button');
+    var plans=document.querySelectorAll('section[role="tabpanel"]');
+    function show(id){
+      tabs.forEach(function(t){
+        var on=t.getAttribute('data-plan')===id;
+        t.classList.toggle('on',on);
+        t.setAttribute('aria-selected',on?'true':'false');
+      });
+      plans.forEach(function(p){ p.hidden = p.id!==id; });
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+    tabs.forEach(function(t){ t.addEventListener('click',function(){ show(t.getAttribute('data-plan')); }); });
+  }catch(e){}
+})();
+</script>
+<footer style="position:relative;margin:44px auto 8px;padding:18px 24px;max-width:1180px;width:calc(100% - 40px);text-align:center;background:rgba(13,17,32,.55);border:1px solid rgba(255,255,255,.12);border-radius:14px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:2">
+  <span style="font-size:13px;color:#dfe3ea;letter-spacing:.03em">Made with care by <b style="color:#fff">WorldStip</b> &nbsp;·&nbsp; <a href="https://worldstip.com" style="color:#9fb6ff;text-decoration:none" target="_blank" rel="noopener noreferrer">worldstip.com</a> &nbsp;·&nbsp; 旅行小册子</span>
+</footer>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

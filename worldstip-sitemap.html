@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WorldStip 旅行小册子 · 整站导航：区域分页、拼音索引、搜索、想去清单、深色模式、分享海报。">
+<title>WorldStip 旅行小册子 · 整站导航</title>
+<link rel="canonical" href="https://worldstip.com/worldstip-sitemap.html">
+<link rel="alternate" hreflang="zh-CN" href="https://worldstip.com/worldstip-sitemap.html">
+<meta name="og:type" content="website">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WorldStip · 旅行小册子">
+<meta property="og:title" content="WorldStip 旅行小册子 · 整站导航">
+<meta property="og:description" content="WorldStip 旅行小册子 · 整站导航：9 大区域 254 个目的地，区域分页、拼音索引、搜索、想去清单、深色模式、分享海报。点任意卡片直达对应攻略。">
+<meta property="og:url" content="https://worldstip.com/worldstip-sitemap.html">
+<meta property="og:image" content="https://worldstip.com/assets/og-cover.png">
+<meta property="og:image:alt" content="WorldStip 旅行小册子 · 整站导航">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@WorldStip">
+<meta name="twitter:image" content="https://worldstip.com/assets/og-cover.png">
+<meta name="twitter:title" content="WorldStip 旅行小册子 · 整站导航">
+<meta name="twitter:description" content="WorldStip 旅行小册子 · 整站导航：9 大区域 254 个目的地，区域分页、拼音索引、搜索、想去清单、深色模式、分享海报。">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":"WorldStip 旅行小册子 · 整站导航","description":"9 大区域 254 个目的地，区域分页、拼音索引、搜索、想去清单、深色模式、分享海报。","url":"https://worldstip.com/worldstip-sitemap.html","isPartOf":{"@type":"WebSite","name":"WorldStip 旅行小册子","url":"https://worldstip.com/"}}
+</script>
+
+<style>
+/* ============ 基础变量（支持深色模式） ============ */
+:root{
+  --ink:#1f2430; --paper:#fffaf3; --card:#ffffff; --line:#e9e2d6;
+  --muted:#7d7a72; --focus:#ff6b6b; --visited:#8e4fa0; --gold:#ffd479;
+  --toolbar-bg:rgba(255,250,243,.92); --modal-bg:rgba(20,24,36,.6); --chip:#fff4d6; --chip-ink:#8a6d1f;
+  --day-bg:#e2f8ef; --day-ink:#0f6a5a; --star-off:#d6cfc3;
+}
+body.dark{
+  --ink:#e8ecf4; --paper:#131a26; --card:#1d2534; --line:#2d3a50;
+  --muted:#9aa7bd; --visited:#c9a0e0; --toolbar-bg:rgba(19,26,38,.92);
+  --modal-bg:rgba(0,0,0,.65); --chip:#3a3220; --chip-ink:#f0d48a;
+  --day-bg:#12352e; --day-ink:#7fe3c5; --star-off:#5b6475;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; font-family:"PingFang SC","Microsoft YaHei",-apple-system,sans-serif;
+  background:
+    radial-gradient(circle at 8% 6%, rgba(255,107,107,.08), transparent 26%),
+    radial-gradient(circle at 92% 18%, rgba(54,209,220,.10), transparent 30%),
+    radial-gradient(circle at 15% 88%, rgba(251,133,58,.08), transparent 28%),
+    var(--paper);
+  color:var(--ink); line-height:1.6; transition:background .3s, color .3s;
+}
+a{color:inherit; text-decoration:none}
+button{font-family:inherit}
+
+/* ============ 顶部横幅 ============ */
+.site-head{position:relative; overflow:hidden; background:linear-gradient(135deg,#1f2430 0%,#2c3a5e 55%,#3a5a9c 100%); color:#fff; padding:48px 20px 70px}
+.site-head::after{content:""; position:absolute; left:0; right:0; bottom:-14px; height:44px; background:var(--paper); border-radius:50% 50% 0 0 / 100% 100% 0 0; transition:background .3s}
+.head-inner{max-width:1180px; margin:0 auto; position:relative; z-index:1}
+.head-top{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap}
+.breadcrumb{display:flex; gap:10px; align-items:center; flex-wrap:wrap; font-size:13px; color:#c9d4ea}
+.breadcrumb a{color:#fff; padding:4px 10px; border:1px solid rgba(255,255,255,.35); border-radius:999px; transition:.2s}
+.breadcrumb a:hover,.breadcrumb a:focus-visible{background:#fff; color:#1f2430; outline:none}
+.breadcrumb .cur{color:#ffd479; font-weight:600}
+.btn-mode{
+  border:none; cursor:pointer; width:42px; height:42px; border-radius:50%; font-size:18px;
+  background:rgba(255,255,255,.14); color:#fff; border:1px solid rgba(255,255,255,.35);
+  transition:.2s; display:flex; align-items:center; justify-content:center;
+}
+.btn-mode:hover{transform:rotate(15deg); background:#fff; color:#1f2430}
+.btn-mode:focus-visible{outline:3px solid #ffd479; outline-offset:2px}
+.site-title{font-size:clamp(34px,6vw,58px); line-height:1.12; margin:14px 0 10px; display:flex; align-items:baseline; gap:14px; flex-wrap:wrap}
+.site-title .main{font-weight:800}
+.site-title .cn{font-size:.52em; font-weight:700; background:linear-gradient(90deg,#ffd479,#ff9a44); -webkit-background-clip:text; background-clip:text; color:transparent}
+.site-sub{font-size:clamp(14px,2.2vw,17px); color:#dbe4f2; max-width:680px; margin:6px 0 20px}
+.head-actions{display:flex; gap:12px; flex-wrap:wrap}
+.btn{display:inline-flex; align-items:center; gap:8px; font-weight:700; padding:12px 22px; border-radius:14px; font-size:15px; cursor:pointer; border:none; transition:transform .15s, box-shadow .15s, background .15s}
+.btn-home{background:linear-gradient(135deg,#ffd479,#ff9a44); color:#1f2430; box-shadow:0 8px 24px rgba(255,154,68,.35)}
+.btn-ghost{background:rgba(255,255,255,.12); color:#fff; border:1px solid rgba(255,255,255,.4)}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid #ffd479; outline-offset:2px}
+.stat-line{margin-top:20px; display:flex; gap:28px; flex-wrap:wrap; font-size:14px; color:#c9d4ea}
+.stat-line b{color:#ffd479; font-size:22px; font-weight:800; margin-right:4px}
+
+/* ============ 吸顶工具条 ============ */
+.toolbar{position:sticky; top:0; z-index:50; background:var(--toolbar-bg); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); padding:12px 20px 8px; margin-top:-28px; transition:background .3s}
+.toolbar-inner{max-width:1180px; margin:0 auto}
+.row1{display:flex; gap:14px; align-items:center; flex-wrap:wrap}
+.tabs{display:flex; gap:6px; flex-wrap:wrap; flex:1; min-width:200px}
+.tab-btn{border:none; cursor:pointer; font-weight:700; font-size:13.5px; color:var(--ink); background:var(--card); border:1.5px solid var(--line); border-radius:999px; padding:8px 15px; transition:.18s}
+.tab-btn:hover{transform:translateY(-1px); border-color:var(--focus); color:var(--focus)}
+.tab-btn:focus-visible{outline:3px solid var(--focus); outline-offset:2px}
+.tab-btn.active{background:var(--ink); color:var(--paper); border-color:var(--ink)}
+.tab-btn .n{font-size:11px; opacity:.65; margin-left:3px}
+.tab-btn.fav-tab.active{background:linear-gradient(135deg,#f093fb,#f5576c); border-color:transparent; color:#fff}
+.tab-btn.fav-tab .star-ic{color:var(--gold)}
+.search-box{position:relative; display:flex; align-items:center}
+.search-box input{width:min(220px,70vw); padding:9px 38px 9px 14px; border-radius:999px; border:1.5px solid var(--line); background:var(--card); color:var(--ink); font-size:14px; outline:none; transition:.2s}
+.search-box input::placeholder{color:var(--muted)}
+.search-box input:focus{border-color:var(--focus); box-shadow:0 0 0 3px rgba(255,107,107,.15)}
+.search-box .ic{position:absolute; right:13px; color:var(--muted); pointer-events:none; font-size:15px}
+.btn-random{border:none; cursor:pointer; font-weight:700; font-size:13.5px; color:#fff; background:linear-gradient(135deg,#f093fb,#f5576c); border-radius:999px; padding:9px 16px; box-shadow:0 6px 16px rgba(240,147,251,.35); transition:.18s}
+.btn-random:hover{transform:translateY(-2px) rotate(-2deg)}
+
+/* 拼音首字母索引条 */
+.row2{display:flex; gap:4px; align-items:center; flex-wrap:wrap; margin-top:8px}
+.alpha-label{font-size:12px; color:var(--muted); margin-right:6px; flex:0 0 auto}
+.alpha-btn{
+  border:1px solid transparent; background:transparent; cursor:pointer; color:var(--muted);
+  font-size:12.5px; font-weight:700; width:26px; height:26px; border-radius:7px; transition:.15s; padding:0;
+}
+.alpha-btn:hover{color:var(--focus); background:var(--card)}
+.alpha-btn:focus-visible{outline:2px solid var(--focus); outline-offset:1px}
+.alpha-btn.on{background:var(--ink); color:var(--paper)}
+.alpha-btn.all{width:auto; padding:0 9px; border:1px solid var(--line)}
+
+/* ============ 主体 ============ */
+main{max-width:1180px; margin:0 auto; padding:20px 20px 60px; position:relative; z-index:1}
+.result-note{font-size:13.5px; color:var(--muted); margin:6px 0 14px; min-height:1.4em}
+.region{margin-bottom:0}
+.region[hidden]{display:none}
+.card[hidden]{display:none !important}
+.region-head{display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin:8px 0 16px}
+.region-title{display:inline-flex; align-items:center; gap:10px; font-size:clamp(19px,3vw,24px); font-weight:800; margin:0}
+.region-title .tag{font-size:.55em; font-weight:700; color:#fff; padding:6px 14px; border-radius:999px; letter-spacing:.3px}
+.region-title .count{font-size:.62em; color:var(--muted); font-weight:600; background:var(--card); border:1px dashed var(--line); border-radius:999px; padding:4px 12px}
+.region-title .count b{font-size:1.15em; color:var(--ink)}
+
+/* 卡片网格 */
+.cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(255px,1fr)); gap:14px; list-style:none; padding:0; margin:0}
+.card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px 14px 12px 16px; position:relative; overflow:visible; box-shadow:0 1px 2px rgba(31,36,48,.05); transition:transform .16s, box-shadow .16s, border-color .16s, background .3s; display:flex; flex-direction:column; gap:6px}
+.card::before{content:""; position:absolute; left:0; top:0; bottom:0; width:6px; background:var(--dot,"#ccc"); border-radius:16px 0 0 16px}
+.card a.link{font-weight:700; font-size:16.5px; display:flex; align-items:center; gap:8px; border-radius:8px; padding:2px 44px 2px 0; position:relative}
+.card a.link .idx{font-size:11px; font-weight:800; color:#fff; background:var(--dot,"#ccc"); border-radius:6px; min-width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto}
+.card a.link:hover,.card a.link:focus-visible{color:var(--focus)}
+.card a.link:focus-visible{outline:3px solid var(--focus); outline-offset:2px}
+.card a.link:visited{color:var(--visited)}
+.card a.link:visited .idx{background:var(--visited)}
+.card p.desc{margin:0; font-size:12.8px; color:var(--muted); line-height:1.55; flex:1}
+.card .tags{display:flex; gap:6px; align-items:center; flex-wrap:wrap}
+.card .lvl{font-size:11px; color:var(--chip-ink); background:var(--chip); border-radius:6px; padding:2px 8px; font-weight:600; letter-spacing:.5px}
+.card .days{font-size:11px; color:var(--day-ink); background:var(--day-bg); border-radius:6px; padding:2px 8px; font-weight:600}
+.card .actions{position:absolute; top:9px; right:9px; display:flex; gap:4px}
+.card .ibtn{width:28px; height:28px; border:none; background:transparent; cursor:pointer; font-size:16px; line-height:1; color:var(--star-off); border-radius:8px; transition:.15s; display:flex; align-items:center; justify-content:center}
+.card .ibtn:hover{transform:scale(1.15)}
+.card .ibtn:focus-visible{outline:3px solid var(--focus); outline-offset:2px}
+.card .star.on{color:var(--gold)}
+.card:hover{transform:translateY(-4px); box-shadow:0 12px 26px rgba(31,36,48,.12); border-color:var(--dot,"#ccc")}
+.card .rpoint{position:absolute; right:74px; top:16px; width:9px; height:9px; border-radius:50%; background:var(--dot)}
+.empty-tip{background:var(--card); border:1.5px dashed var(--line); border-radius:16px; padding:34px; text-align:center; color:var(--muted); font-size:14px}
+
+/* 层级说明 */
+.lvl-note{background:var(--card); border:1px dashed var(--line); border-radius:16px; padding:18px 22px; margin-top:34px; transition:background .3s}
+.lvl-note h2{margin:0 0 10px; font-size:16px}
+.lvl-note ul{margin:0; padding-left:20px; font-size:13.5px; color:var(--muted); display:grid; gap:6px}
+.lvl-note a{color:var(--visited); text-decoration:underline}
+
+/* ============ 底部 ============ */
+.site-foot{background:linear-gradient(135deg,#1f2430,#2c3a5e); color:#b9c5dd; padding:44px 20px 36px; margin-top:30px}
+.foot-inner{max-width:1180px; margin:0 auto; display:flex; gap:40px; flex-wrap:wrap; justify-content:space-between}
+.foot-brand{max-width:360px}
+.foot-brand h3{margin:0 0 6px; color:#fff; font-size:20px}
+.foot-brand p{margin:0; font-size:13px; line-height:1.7}
+.foot-links{display:flex; gap:46px; flex-wrap:wrap}
+.foot-col h4{margin:0 0 12px; color:#ffd479; font-size:14px; letter-spacing:1px}
+.foot-col ul{list-style:none; padding:0; margin:0; display:grid; gap:8px}
+.foot-col a{font-size:13.5px; color:#c9d4ea; transition:.2s; border-radius:4px; padding:2px 4px}
+.foot-col a:hover,.foot-col a:focus-visible{color:#fff; outline:none; background:rgba(255,255,255,.12)}
+.foot-col a:visited{color:#d5b0e0}
+.copyright{margin-top:30px; font-size:12px; color:#8d9ab8; text-align:center}
+
+/* 返回顶部 */
+.to-top{position:fixed; right:22px; bottom:22px; z-index:60; width:46px; height:46px; border:none; border-radius:50%; cursor:pointer; font-size:19px; color:#fff; background:linear-gradient(135deg,#2c3a5e,#3a5a9c); box-shadow:0 8px 22px rgba(44,58,94,.4); opacity:0; visibility:hidden; transform:translateY(8px); transition:.25s}
+.to-top.show{opacity:1; visibility:visible; transform:translateY(0)}
+.to-top:hover{transform:translateY(-3px)}
+.to-top:focus-visible{outline:3px solid var(--gold); outline-offset:2px}
+
+
+/* ============ 路书制作 ============ */
+.book-view{padding:26px 20px 56px}
+.book-inner{max-width:1180px;margin:0 auto}
+.book-head{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.book-head h2{margin:0;font-size:clamp(22px,3vw,30px)}
+.book-head p{margin:0;width:100%;color:var(--muted);font-size:13.5px}
+.btn-nav-back{background:var(--card);color:var(--ink);border:1.5px solid var(--line);padding:9px 16px;border-radius:12px;font-weight:700;cursor:pointer;font-size:14px}
+.btn-nav-back:hover{border-color:var(--focus);color:var(--focus)}
+.book-layout{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+@media (max-width:960px){.book-layout{grid-template-columns:1fr}}
+.book-form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;transition:background .3s}
+.form-step{border-top:1px dashed var(--line);padding-top:14px;margin-top:14px}
+.form-step:first-child{border-top:none;padding-top:0;margin-top:0}
+.form-step h3{display:flex;align-items:center;gap:10px;margin:0 0 12px;font-size:16px}
+.form-step h3 span{background:linear-gradient(135deg,#ff6b6b,#ff8e53);color:#fff;font-size:13px;font-weight:800;width:24px;height:24px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px}
+@media (max-width:520px){.form-grid{grid-template-columns:1fr}}
+.book-form label{display:block;font-size:12.5px;color:var(--muted);font-weight:600;margin-bottom:4px}
+.book-form input[type=text],.book-form input[type=date],.book-form textarea{width:100%;margin-top:5px;padding:9px 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink);font-size:14px;font-family:inherit;outline:none;box-sizing:border-box;transition:.2s}
+.book-form input:focus,.book-form textarea:focus{border-color:var(--focus);box-shadow:0 0 0 3px rgba(255,107,107,.15)}
+.book-form textarea{min-height:64px;resize:vertical}
+.dest-pick{margin-top:12px}
+.dest-hits{display:flex;flex-direction:column;gap:6px;margin-top:8px}
+.dest-hit{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:10px;padding:8px 12px;text-align:left;cursor:pointer;font-size:14px;font-weight:600;transition:.15s}
+.dest-hit:hover{border-color:var(--focus);color:var(--focus);transform:translateX(3px)}
+.dh-tag{display:inline-block;font-size:11px;color:#fff;border-radius:6px;padding:2px 7px;margin-right:8px;font-weight:800}
+.dest-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;min-height:8px}
+.dchip{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;background:var(--paper);border:2px solid;border-radius:999px;padding:4px 6px 4px 12px}
+.dchip-x{border:none;background:transparent;cursor:pointer;color:inherit;font-size:15px;line-height:1;padding:0 3px}
+.dchip-x:hover{transform:scale(1.2)}
+.day-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:10px;transition:background .3s}
+.day-head{display:flex;align-items:center;gap:10px}
+.day-num{font-size:12px;font-weight:800;color:#fff;background:linear-gradient(135deg,#ff6b6b,#ff8e53);border-radius:8px;padding:4px 9px;flex:0 0 auto}
+.day-title{flex:1;min-width:0;padding:8px 10px;border-radius:9px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font-size:14px;font-family:inherit;outline:none}
+.day-title:focus{border-color:var(--focus)}
+.day-del{border:none;background:transparent;color:var(--muted);font-size:18px;cursor:pointer;padding:2px 6px;border-radius:6px}
+.day-del:hover{color:#ff6b6b}
+.day-fields{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:10px}
+@media (max-width:720px){.day-fields{grid-template-columns:1fr}}
+.day-fields label span{font-size:11px;color:var(--muted);font-weight:700}
+.day-fields textarea{width:100%;margin-top:4px;padding:8px 10px;border-radius:9px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font-size:13px;font-family:inherit;min-height:70px;resize:vertical;outline:none;box-sizing:border-box}
+.day-fields textarea:focus{border-color:var(--focus)}
+.mini-btn{border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;transition:.15s;margin-top:4px}
+.mini-btn:hover{border-color:var(--focus);color:var(--focus);transform:translateY(-1px)}
+.mini-btn.danger:hover{border-color:#ff6b6b;color:#ff6b6b}
+.food-row{display:grid;grid-template-columns:1fr 1.4fr .7fr auto;gap:8px;margin-bottom:8px;align-items:center}
+@media (max-width:560px){.food-row{grid-template-columns:1fr 1fr}}
+.food-row input{width:100%;padding:8px 10px;border-radius:9px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink);font-size:13px;font-family:inherit;outline:none;box-sizing:border-box}
+.food-row input:focus{border-color:var(--focus)}
+.food-del{border:none;background:transparent;color:var(--muted);font-size:17px;cursor:pointer;padding:2px 6px}
+.food-del:hover{color:#ff6b6b}
+.pack-chip{cursor:pointer}
+.pack-chip:hover{text-decoration:line-through;opacity:.7}
+.book-preview{position:sticky;top:76px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;transition:background .3s}
+.preview-tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.preview-tools .pt-label{font-size:13px;font-weight:800;margin-right:auto}
+.preview-tools .mini-btn{font-size:12.5px;padding:6px 12px}
+.paper{background:#fff;color:#1f2430;border-radius:14px;padding:22px;box-shadow:0 3px 12px rgba(31,36,48,.1);line-height:1.65}
+.paper-head{background:linear-gradient(135deg,#1f2430,#2c3a5e);color:#fff;border-radius:16px;padding:20px 18px;margin-bottom:18px}
+.ph-kicker{font-size:11px;letter-spacing:2px;color:#ffd479;font-weight:800}
+.paper-head h1{margin:6px 0 2px;font-size:24px;line-height:1.25}
+.ph-sub{margin:0;color:#c9d4ea;font-size:12.5px}
+.ph-meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;font-size:12px;color:#e8ecf4}
+.ph-dests{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.ph-dest{font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:999px;background:#fff;border:2px solid #2ccf8a;color:#0f6a5a}
+.paper-sec h2{margin:20px 0 10px;font-size:16px;padding-left:10px;border-left:5px solid #ff6b6b;color:#1f2430}
+.paper-day{background:#fffaf3;border:1px solid #e9e2d6;border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.pd-head{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.pd-num{font-size:11px;font-weight:800;color:#fff;background:linear-gradient(135deg,#ff6b6b,#ff8e53);border-radius:7px;padding:3px 8px}
+.pd-head h3{margin:0;font-size:15px;color:#1f2430}
+.pd-row{display:grid;grid-template-columns:44px 1fr;gap:8px;padding:5px 0;border-top:1px dashed #eee;font-size:12.5px}
+.pd-row b{color:#ff6b6b}
+.pd-row p{margin:0;color:#3a3f4b}
+.paper-food table{width:100%;border-collapse:collapse;font-size:12.5px;background:#fffaf3;border:1px solid #e9e2d6;border-radius:10px;overflow:hidden}
+.paper-food th{background:#1f2430;color:#fff;padding:7px 9px;text-align:left;font-size:11.5px}
+.paper-food td{padding:7px 9px;border-top:1px solid #eee}
+.paper-info{background:#fffaf3;border:1px solid #e9e2d6;border-radius:12px;padding:12px 14px}
+.pi{margin-bottom:8px;font-size:12.5px}
+.pi:last-child{margin-bottom:0}
+.pi b{display:inline-block;color:#fff;background:#2ccf8a;border-radius:5px;padding:1px 7px;font-size:11px;margin-right:6px}
+.pi p{margin:4px 0 0;color:#3a3f4b}
+.paper-foot{margin-top:18px;text-align:center;color:#9aa4b6;font-size:11.5px}
+.drafts{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.draft-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;min-width:200px;transition:background .3s}
+.draft-card b{font-size:14px}
+.draft-card span{font-size:12px;color:var(--muted)}
+.draft-card .mini-btn{margin-top:2px}
+.draft-note{color:var(--muted);font-size:13px}
+@media print{
+  body *{visibility:hidden}
+  #bookView #previewBox, #bookView #previewBox *{visibility:visible}
+  #bookView #previewBox{position:absolute;left:0;top:0;width:100%;max-width:none}
+  .book-form,.preview-tools,.drafts,.book-head,.site-head,.toolbar,.site-foot,.to-top,.btn-mode{display:none!important}
+}
+/* 移动端 */
+@media (max-width:640px){
+  .cards{grid-template-columns:1fr}
+  .site-head{padding:38px 16px 58px}
+  .toolbar{padding:10px 12px}
+  .search-box input{width:100%}
+  .foot-links{gap:28px}
+  .stat-line{gap:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important; scroll-behavior:auto!important}
+}
+
+/* ==== insta360 相机方块：ONE RS 徕卡联名版·红黑配色 ==== */
+.camtab{position:fixed;top:54px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+
+/* ==== AI 旅行规划大师·千问技能 右侧固定标签 ==== */
+.aitab{position:fixed;top:164px;right:18px;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#14120e;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.aitab:hover{width:180px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.aitab .ai-top{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    radial-gradient(circle at 30% 18%,rgba(224,178,90,.20),transparent 62%),
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.04) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#221d12,#12100a);
+  border-bottom:3px solid #e0b25a}
+.aitab .ai-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;letter-spacing:.13em;color:#e0b25a;opacity:.95}
+.aitab .ai-mark{position:relative;display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:900;font-style:italic;letter-spacing:.4px;color:#fff;
+  text-shadow:0 0 9px rgba(224,178,90,.75)}
+.aitab .ai-mark .spark{position:absolute;top:-6px;right:-3px;font-size:8px;color:#ffd98a;opacity:.95}
+.aitab .ai-gold{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#3b3216 0%,#2b230f 55%,#1f1809 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.10)}
+.aitab .ai-bar{font-size:11px;font-weight:800;letter-spacing:1.1px;color:#ffd98a;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.aitab .ai-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;align-items:center;opacity:0;transform:translateX(30px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.aitab .ai-full .g1{font-size:11.5px;font-weight:800;letter-spacing:.5px;line-height:1.1;color:#ffe9b8}
+.aitab .ai-full .g2{font-size:6.6px;font-weight:600;letter-spacing:.12em;color:#c9a75e;margin-top:2px}
+.aitab:hover .ai-bar{transform:translateX(-30px);opacity:0}
+.aitab:hover .ai-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.aitab{display:none}}
+
+</style>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<a class="skip" href="#main" style="position:absolute;left:-999px;top:0;background:#ff6b6b;color:#fff;padding:10px 16px;border-radius:0 0 10px 0;z-index:99">跳到主要内容</a>
+
+<header class="site-head">
+  <div class="head-inner">
+    <div class="head-top">
+      <nav class="breadcrumb" aria-label="面包屑">
+        <a href="https://worldstip.com/">首页</a><span aria-hidden="true">/</span><span class="cur">整站导航</span>
+      </nav>
+      <button class="btn-mode" id="modeBtn" aria-label="切换深色/浅色模式">🌙</button>
+    </div>
+    <h1 class="site-title"><span class="main">WorldStip</span><span class="cn">旅行小册子 · 整站导航</span></h1>
+    <p class="site-sub">一份可以随身带着走的目的地小册子合集。按区域分页、按拼音索引、搜索、随机翻牌，收藏想去清单，还能把单卡海报分享给朋友。</p>
+    <div class="head-actions">
+      <button class="btn btn-home" id="goBookBtn" type="button">✎ 路书制作</button>
+      <a class="btn btn-ghost" href="#foot">联系与关于</a>
+    </div>
+    <div class="stat-line">
+      <span><b id="stat-dest">254</b> 篇目的地手册</span>
+      <span><b id="stat-region">9</b> 大区域栏目</span>
+      <span><b id="stat-star">0</b> 个想去</span>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar" role="navigation" aria-label="区域分页、拼音索引与搜索">
+  <div class="toolbar-inner">
+    <div class="row1">
+      <div class="tabs" id="tabs" role="tablist"></div>
+      <div class="search-box">
+        <input id="searchInput" type="search" placeholder="搜索目的地，如 桂林 / 温泉 / 海岛" aria-label="搜索目的地">
+        <span class="ic" aria-hidden="true">⌕</span>
+      </div>
+      <button class="btn-random" id="randomBtn" title="随机翻到一页小册子">🎲 随机翻一页</button>
+    </div>
+    <div class="row2" id="alphaRow" aria-label="拼音首字母索引">
+      <span class="alpha-label">拼音索引</span>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+  <div class="result-note" id="resultNote" role="status" aria-live="polite"></div>
+  <div id="regions"></div>
+  <div id="resultArea"></div>
+
+  <section class="lvl-note" aria-labelledby="lvl-h">
+    <h2 id="lvl-h">页面层级说明</h2>
+    <ul>
+      <li><b>L1 · 站点首页</b> — <a href="https://worldstip.com/">worldstip.com</a>，品牌介绍与全局入口。</li>
+      <li><b>L2 · 区域栏目</b> — 本导航页，按区域分页聚合全部目的地手册。</li>
+      <li><b>L3 · 目的地手册</b> — 每张卡片对应一份独立小册子（如 <a href="https://worldstip.com/map/beijing/index.html">北京手册</a>），含景点、美食、路线与避坑。</li><li><b>L4 · 器材档案</b> — <a href="https://insta360.worldstip.com/" target="_blank" rel="noopener noreferrer">Insta360 相机选购指南</a>：出游带哪台相机，八款机型参数对比与场景组合选购。</li>
+    </ul>
+  </section>
+</main>
+
+<section class="book-view" id="bookView" hidden aria-label="路书制作">
+  <div class="book-inner">
+    <div class="book-head">
+      <button class="btn-nav-back" id="backNavBtn" type="button">← 返回导航</button>
+      <h2>路书制作</h2>
+      <p>参考旅行手册：① 填基本信息 → ② 排每日行程 → ③ 补美食与实用清单 → 实时预览，一键导出独立 HTML 路书。</p>
+    </div>
+    <div class="book-layout">
+      <div class="book-form">
+        <div class="form-step">
+          <h3><span>1</span>基本信息</h3>
+          <div class="form-grid">
+            <label>路书标题<input type="text" id="fTitle" placeholder="如：岳阳 3 日轻松游"></label>
+            <label>副标题<input type="text" id="fSub" placeholder="如：国庆活动版 · 全程不赶"></label>
+            <label>开始日期<input type="date" id="fStart"></label>
+            <label>结束日期<input type="date" id="fEnd"></label>
+          </div>
+          <div class="dest-pick">
+            <label>目的地（搜索添加，点击候选加入）</label>
+            <input type="text" id="destInput" placeholder="搜索目的地，如 桂林 / 三清山">
+            <div class="dest-hits" id="destHits"></div>
+            <div class="dest-chips" id="destChips"></div>
+          </div>
+        </div>
+        <div class="form-step">
+          <h3><span>2</span>每日行程</h3>
+          <div id="daysWrap"></div>
+          <button class="mini-btn" id="addDayBtn" type="button">+ 添加一天</button>
+        </div>
+        <div class="form-step">
+          <h3><span>3</span>美食清单（可选）</h3>
+          <div id="foodWrap"></div>
+          <button class="mini-btn" id="addFoodBtn" type="button">+ 添加美食行</button>
+        </div>
+        <div class="form-step">
+          <h3><span>4</span>实用信息（可选）</h3>
+          <label style="margin-bottom:10px">交通备注<textarea id="fTraffic" placeholder="高铁 / 自驾 / 班车衔接…"></textarea></label>
+          <label style="margin-bottom:10px">必带清单（输入后按回车添加）<input type="text" id="fPack" placeholder="如：身份证 防晒 充电宝"></label>
+          <div class="dest-chips" id="packChips"></div>
+          <label style="margin-bottom:10px">预算参考<input type="text" id="fBudget" placeholder="如：人均 1500 元"></label>
+          <label>注意事项<textarea id="fNotes" placeholder="避坑、安全提醒…"></textarea></label>
+        </div>
+      </div>
+      <div class="book-preview">
+        <div class="preview-tools">
+          <span class="pt-label">实时预览</span>
+          <button class="mini-btn" id="saveDraftBtn" type="button">保存草稿</button>
+          <button class="mini-btn" id="exportBtn" type="button">导出 HTML 路书</button>
+          <button class="mini-btn" id="printBtn" type="button">打印</button>
+        </div>
+        <div class="paper" id="previewBox"></div>
+      </div>
+    </div>
+    <div class="drafts" id="draftsBox"></div>
+  </div>
+</section>
+
+
+<footer class="site-foot" id="foot">
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <h3>WorldStip · 旅行小册子</h3>
+      <p>把远方装进口袋。覆盖全国三十余省区、港澳台、欧洲与格鲁吉亚，每个目的地都有一本独立小册子。</p>
+    </div>
+    <div class="foot-links">
+      <div class="foot-col">
+        <h4>站点</h4>
+        <ul>
+          <li><a href="https://worldstip.com/">返回首页</a></li>
+          <li><a href="https://worldstip.com/about.html">关于 WorldStip</a></li>
+          <li><a href="#main">回到顶部</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>联系</h4>
+        <ul>
+          <li>QQ：1114008</li>
+          <li>Email：dengting@qq.com</li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>热门目的地</h4>
+        <ul id="hotLinks"></ul>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">© <span id="year"></span> WorldStip · 旅行小册子 | 静默更新，常翻常新</div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="返回顶部">↑</button>
+
+<script>
+const DATA = {
+  "华北": [{"n": "包头", "u": "https://worldstip.com/map/baotou/index.html", "d": "五当召藏传佛教圣地、亚洲最大城中草原赛汗塔拉、希拉穆仁草原，北线草原与黄河落日不可错过", "dy": "", "py": "B"}, {"n": "赤峰", "u": "https://worldstip.com/map/chifeng/index.html", "d": "乌兰布统坝上草原、克什克腾阿斯哈图石林花岗岩柱群、玉龙沙湖白沙丘，草原与地质奇观兼备", "dy": "", "py": "C"}, {"n": "鄂尔多斯", "u": "https://worldstip.com/map/eerduosi/index.html", "d": "成吉思汗陵八白室祭祀圣地、库布齐沙漠响沙湾、现代草原新城康巴什，草原文化深度体验", "dy": "", "py": "E"}, {"n": "额济纳", "u": "https://worldstip.com/map/ejina/index.html", "d": "秋季金色胡杨林、居延海戈壁碧波、黑城西夏古城遗址，沙漠碧海与枯胡杨千姿百态", "dy": "", "py": "E"}, {"n": "通辽", "u": "https://worldstip.com/map/tongliao/index.html", "d": "科尔沁草原草海、大青沟原始森林沟壑、珠日河赛马蒙古风情，沙地湿地与峡谷景致独特", "dy": "", "py": "T"}, {"n": "乌兰察布", "u": "https://worldstip.com/map/wulanchabu/index.html", "d": "辉腾锡勒高山草甸、乌兰哈达火山群完整火山锥、黄花沟草原湿地，火山与草原交织的地貌奇观", "dy": "", "py": "W"}, {"n": "锡林郭勒", "u": "https://worldstip.com/map/xilinguole/index.html", "d": "元上都世界文化遗产、东乌珠穆沁游牧文化、锡林草原锡林河，草原腹地的历史与牧民风情", "dy": "", "py": "X"}, {"n": "北京", "u": "https://worldstip.com/map/beijing/index.html", "d": "皇城中轴、万里长城、皇家园林、坛庙老城、人文艺术、环球乐园六大主题逐卡；升旗仪式、故宫、八达…", "dy": "", "py": "B"}, {"n": "承德", "u": "https://worldstip.com/map/chengde/index.html", "d": "清代皇家园林、汉藏建筑交融、丹霞地质奇观", "dy": "", "py": "C"}, {"n": "呼和浩特", "u": "https://worldstip.com/map/hohhot/index.html", "d": "塞外名刹、辽阔草原", "dy": "", "py": "H"}, {"n": "呼伦贝尔", "u": "https://worldstip.com/map/hulunbuir/index.html", "d": "中国最美草原、边境风情", "dy": "", "py": "H"}, {"n": "平遥", "u": "https://worldstip.com/map/pingyao/index.html", "d": "中国最完整明清古城、晋商金融中心", "dy": "", "py": "P"}, {"n": "皇城相府", "u": "https://worldstip.com/map/huangcheng/index.html", "d": "山西晋城清代相府城堡，河山楼最震撼", "dy": "", "py": "H"}, {"n": "晋祠", "u": "https://worldstip.com/map/jinci/index.html", "d": "三晋之冠古建园林，圣母殿是宋代建筑代表作", "dy": "", "py": "J"}, {"n": "乔家大院", "u": "https://worldstip.com/map/qiaodadayuan/index.html", "d": "山西祁县晋商大院，大红灯笼高高挂取景地", "dy": "", "py": "Q"}, {"n": "悬空寺", "u": "https://worldstip.com/map/xuankongsi/index.html", "d": "建在悬崖峭壁上的千年古寺，登临需预约限量", "dy": "", "py": "X"}, {"n": "云冈石窟", "u": "https://worldstip.com/map/yungang/index.html", "d": "北魏石窟世界遗产，露天大佛是标志", "dy": "", "py": "Y"}, {"n": "秦皇岛", "u": "https://worldstip.com/map/qinhuangdao/index.html", "d": "天下第一关、长城入海奇观、避暑胜地", "dy": "", "py": "Q"}, {"n": "天津", "u": "https://worldstip.com/map/tianjin/index.html", "d": "3天短途（五大道/古文化街/天津之眼海河）+ 7天长程（滨海航母、蓟州盘山）；煎饼果子锅巴菜…", "dy": "", "py": "T"}, {"n": "五台山", "u": "https://worldstip.com/map/wutaishan/index.html", "d": "文殊菩萨道场、中国四大佛教名山之首", "dy": "", "py": "W"}],
+  "东北": [{"n": "鞍山", "u": "https://worldstip.com/map/anshan/index.html", "d": "千山风景名胜区、玉佛山、汤岗子温泉、岫玉文化；东北名山与玉文化的宝藏城市", "dy": "", "py": "A"}, {"n": "本溪", "u": "https://worldstip.com/map/benxi/index.html", "d": "本溪水洞、关门山红叶、五女山山城、大石湖；辽东山水与秋日枫红的宝藏目的地", "dy": "", "py": "B"}, {"n": "长白山", "u": "https://worldstip.com/map/changbaishan/index.html", "d": "长白山天池、长白瀑布、绿渊潭、地下森林、锦江大峡谷、聚龙温泉；东北名山暑期避暑、冬季冰雪两相…", "dy": "", "py": "Z"}, {"n": "长春", "u": "https://worldstip.com/map/changchun/index.html", "d": "伪满皇宫博物院、净月潭、长影世纪城、南湖公园、这有山；北国春城的伪满史迹与湖光山色", "dy": "", "py": "Z"}, {"n": "朝阳", "u": "https://worldstip.com/map/chaoyang/index.html", "d": "牛河梁红山文化遗址、古生物化石博物馆、北塔、三燕古都；中华文明曙光与远古生灵的发现之城", "dy": "", "py": "C"}, {"n": "大连", "u": "https://worldstip.com/map/dalian/index.html", "d": "星海广场、老虎滩海洋公园、金石滩国家度假区、滨海路、东港；山海相依的北方滨海都会，海风与欧式…", "dy": "", "py": "D"}, {"n": "丹东", "u": "https://worldstip.com/map/dandong/index.html", "d": "鸭绿江断桥、虎山长城、凤凰山、抗美援朝纪念馆；中朝边境的英雄之城，山水与历史交融", "dy": "", "py": "D"}, {"n": "哈尔滨", "u": "https://worldstip.com/map/harbin/index.html", "d": "中央大街、圣索菲亚大教堂、冰雪大世界、松花江、太阳岛、伏尔加庄园；冰城之都冬夏皆宜的欧式风情", "dy": "", "py": "H"}, {"n": "吉林市", "u": "https://worldstip.com/map/jilin/index.html", "d": "雾凇岛晨雾、松花湖冬捕、北大湖滑雪、朱雀山、雪地温泉；东北雾凇之都的冰雪奇观", "dy": "", "py": "J"}, {"n": "牡丹江·镜泊湖", "u": "https://worldstip.com/map/jingpohu/index.html", "d": "吊水楼瀑布、地下森林火山口与渤海国遗址，湖瀑雪韵之城；火山堰塞湖奇观", "dy": "", "py": "M"},
+    {"n": "浙江莫干山", "u": "https://worldstip.com/map/moganshan/index.html", "d": "森林民宿度假，98%竹海比市区低5-8℃，剑池飞瀑、旭光台云海、庾村民国小镇、大斗坞水库、裸心谷/开元森泊；中国民宿发源地、竹海避暑胜地", "dy": "", "py": "M"},
+    {"n": "漠河", "u": "https://worldstip.com/map/mohe/index.html", "d": "北极村、北极哨所、圣诞村、最北邮局、黑龙江界江、北极光；中国最北端的极寒与极光之旅", "dy": "", "py": "M"}, {"n": "盘锦", "u": "https://worldstip.com/map/panjin/index.html", "d": "红海滩国家风景廊道、芦苇荡、稻田画、丹顶鹤、双台子河口湿地；火红碱蓬草的生态奇观", "dy": "", "py": "P"}, {"n": "齐齐哈尔", "u": "https://worldstip.com/map/qiqihar/index.html", "d": "扎龙自然保护区观丹顶鹤放飞、明月岛、龙沙公园、嫩江；丹顶鹤故乡的湿地生态避暑游", "dy": "", "py": "Q"}, {"n": "沈阳", "u": "https://worldstip.com/map/shenyang/index.html", "d": "沈阳故宫、张氏帅府、清昭陵（北陵公园）、九一八历史博物馆、中街方城；红墙金瓦的盛京古都，东北…", "dy": "", "py": "S"}, {"n": "五大连池", "u": "https://worldstip.com/map/wudalianchi/index.html", "d": "世界地质公园，老黑山火山口、堰塞湖、石海与冷矿泉疗养；火山地质奇观", "dy": "", "py": "W"},
+    {"n": "兴城", "u": "https://worldstip.com/map/xingcheng/index.html", "d": "宁远古城（明代卫城）、海滨浴场、温泉疗养、菊花岛、文庙鼓楼；古城古韵与海滨悠闲并存的辽西小城", "dy": "", "py": "X"}, {"n": "中国雪乡", "u": "https://worldstip.com/map/xuexiang/index.html", "d": "双峰林场雪蘑菇村、雪韵大街、镜泊湖吊水楼瀑布、亚布力滑雪；黑龙江冬季童话冰雪线", "dy": "", "py": "Z"}, {"n": "伊春", "u": "https://worldstip.com/map/yichun/index.html", "d": "红松林海五营森林、汤旺河林海奇石与梅花鹿园森林氧吧之旅；林都森林度假", "dy": "", "py": "Y"},
+    {"n": "延吉", "u": "https://worldstip.com/map/yanji/index.html", "d": "朝鲜族民俗园、水上市场、延边大学网红墙、帽儿山、图们口岸；边境风情与美食天堂", "dy": "", "py": "Y"}],
+  "华东": [{"n": "阿尔山", "u": "https://worldstip.com/map/aershan/index.html", "d": "火山口湖与森林温泉疗养胜地，天池、白狼峰、不冻河、杜鹃湖石塘林驼峰岭皆可游，悠游草原安心而行", "dy": "", "py": "A"}, {"n": "矮寨", "u": "https://worldstip.com/map/aizhai/index.html", "d": "矮寨大桥、德夯大峡谷、苗寨、精准扶贫首倡地，含矮寨大桥、德夯大峡谷与苗寨 · 十八洞", "dy": "", "py": "A"}, {"n": "常州", "u": "https://worldstip.com/map/changzhou/index.html", "d": "中华恐龙园、环球动漫嬉戏谷、天目湖、南山竹海、茅山；自然山水与主题乐活的融合", "dy": "", "py": "C"}, {"n": "法门寺", "u": "https://worldstip.com/map/famen/index.html", "d": "法门寺佛骨舍利与真身宝塔、地宫文化，登太白山看高山花海、大爷海与秦岭主峰", "dy": "", "py": "F"}, {"n": "葛仙村", "u": "https://worldstip.com/map/gexiancun/index.html", "d": "江西上饶铅山县葛仙山下的徽派度假村落。短程1-2天、长程2-3天逐日行程，葛仙山缆车登顶、村…", "dy": "", "py": "G"}, {"n": "广州", "u": "https://worldstip.com/map/gz/index.html", "d": "陈家祠、沙面、永庆坊、广州塔珠江夜游、广式早茶与美食，含沙面岛", "dy": "4天", "py": "G"}, {"n": "杭州", "u": "https://worldstip.com/map/hangzhou/index.html", "d": "西湖十景、灵隐飞来峰、龙井问茶、河坊街御街、G20峰会灯光秀、钱塘江畔。人间天堂的湖山与烟火", "dy": "", "py": "H"}, {"n": "湖州", "u": "https://worldstip.com/map/huzhou/index.html", "d": "南浔古镇中西合璧、莫干山避暑民宿、太湖溇港、安吉大竹海、湖笔丝绸。江南丝府与竹海山林", "dy": "", "py": "H"}, {"n": "嘉兴", "u": "https://worldstip.com/map/jiaxing/index.html", "d": "南湖红船革命圣地、乌镇水乡古镇、西塘汉服夜游、月河老街、粽子之乡。江南水乡的诗意与红色记忆", "dy": "", "py": "J"}, {"n": "济南", "u": "https://worldstip.com/map/jinan/index.html", "d": "趵突泉三股腾空、大明湖超然楼、千佛山俯瞰全城、黑虎泉市民打水、曲水亭街泉水老巷；鲁菜发源地把…", "dy": "4天", "py": "J"}, {"n": "景德镇", "u": "https://worldstip.com/map/jingdezhen/index.html", "d": "御窑博物馆、古窑民俗博览区、陶溪川、三宝瓷谷、中国陶瓷博物馆，做陶体验、瓷都美食", "dy": "", "py": "J"}, {"n": "金华", "u": "https://worldstip.com/map/jinhua/index.html", "d": "双龙洞地下河、诸葛八卦村、横店影视城、火腿之乡、婺州古城。浙中名城的山水与影视盛宴", "dy": "", "py": "J"}, {"n": "连云港", "u": "https://worldstip.com/map/lianyungang/index.html", "d": "花果山、连岛海滨、海上云台山、东海水晶、山海相依的海滨之城", "dy": "", "py": "L"}, {"n": "临沂", "u": "https://worldstip.com/map/linyi/index.html", "d": "沂蒙山云海、萤火虫水洞与地下大峡谷、王羲之故居书圣故里；沂蒙煎饼炒鸡", "dy": "", "py": "L"}, {"n": "庐山", "u": "https://worldstip.com/map/lushan/index.html", "d": "含鄱口云海日出、三叠泉瀑布、五老峰、牯岭、花径、锦绣谷，庐山云雾茶，含三叠泉、牯岭 · 山中…", "dy": "", "py": "L"}, {"n": "南昌", "u": "https://worldstip.com/map/nanchang/index.html", "d": "短程2-3天、长程5天逐日行程，景点、购物、美食、交通避坑、特产伴手礼全覆盖，每天白天玩什么…", "dy": "", "py": "N"}, {"n": "南京", "u": "https://worldstip.com/map/nanjing/index.html", "d": "中山陵、明孝陵、夫子庙、秦淮河、玄武湖、总统府、六朝古都的文化与烟火", "dy": "", "py": "N"}, {"n": "宁波", "u": "https://worldstip.com/map/ningbo/index.html", "d": "天一阁藏书楼、老外滩洋楼、东钱湖山水、象山港海鲜、城隍庙小吃。东南港城的书香与烟火", "dy": "", "py": "N"},
+    {"n": "宁海森林温泉", "u": "https://worldstip.com/map/ninghai/index.html", "d": "南溪森林温泉与天明山竹海秘汤、森呼吸康养，泡汤后访前童古镇梁皇山；含交通住宿预算避坑一篇讲清", "dy": "", "py": "N"}, {"n": "青岛", "u": "https://worldstip.com/map/qingdao/index.html", "d": "德式老城与百年啤酒、超长海岸线与海上名山；寻一座城、一片海、一瓶啤", "dy": "", "py": "Q"}, {"n": "福州", "u": "https://worldstip.com/map/fuzhou/index.html", "d": "有福之州·榕城，古城街巷与茉莉花茶慢游", "dy": "", "py": "F"}, {"n": "湄洲岛", "u": "https://worldstip.com/map/meizhoudao/index.html", "d": "福建妈祖文化圣屿，轮渡往返，岛上环岛骑行很惬意", "dy": "", "py": "M"}, {"n": "泉州", "u": "https://worldstip.com/map/quanzhou/index.html", "d": "世界遗产之城刺桐港，宋元海上丝路起点的多元文化古城", "dy": "", "py": "Q"}, {"n": "福建土楼", "u": "https://worldstip.com/map/tulou/index.html", "d": "永定南靖土楼世界文化遗产，客家围屋与田园风光", "dy": "", "py": "F"}, {"n": "武夷山", "u": "https://worldstip.com/map/wuyishan/index.html", "d": "世界文化与自然双遗产，九曲溪竹筏与岩茶最经典", "dy": "", "py": "W"}, {"n": "霞浦", "u": "https://worldstip.com/map/xiapu/index.html", "d": "滩涂摄影天堂，光线与潮汐季节决定出片率", "dy": "", "py": "X"}, {"n": "曲阜", "u": "https://worldstip.com/map/qufu/index.html", "d": "孔庙大成殿、孔府孔林、尼山圣境孔子像；东方圣城礼制建筑", "dy": "", "py": "Q"}, {"n": "日照", "u": "https://worldstip.com/map/rizhao/index.html", "d": "万平口沙滩、灯塔广场日出、阳光海岸赶海拾贝、九仙山五莲山；日照海鲜与海鲜水饺", "dy": "", "py": "R"}, {"n": "三清山", "u": "https://worldstip.com/map/sanqingshan/index.html", "d": "巨蟒出山、女神峰、云海日出、西海岸栈道、三清宫道教文化，含西海岸 · 云海、三清宫 · 道源…", "dy": "", "py": "S"}, {"n": "上海", "u": "https://worldstip.com/map/shanghai/index.html", "d": "外滩万国建筑、陆家嘴天际线、豫园老城厢、武康路梧桐漫步、迪士尼乐园；魔都在地玩法与城市 Tr…", "dy": "", "py": "S"}, {"n": "绍兴", "u": "https://worldstip.com/map/shaoxing/index.html", "d": "鲁迅故里三味书屋、兰亭书法圣地、沈园林亭、安昌古镇、黄酒之乡。越国古都的书香酒韵", "dy": "", "py": "S"}, {"n": "松阳", "u": "https://worldstip.com/map/songyang/index.html", "d": "最后江南秘境·陈家铺悬崖村与悬崖先锋书店、杨家堂金色布达拉、四都三都云海梯田；古村免费、宿崖居民宿看云海日出", "dy": "", "py": "S"}, {"n": "苏州", "u": "https://worldstip.com/map/suzhou/index.html", "d": "拙政园、留园、虎丘、平江路、山塘街、周庄水乡；园林之城与江南水乡的婉约", "dy": "", "py": "S"}, {"n": "遂昌", "u": "https://worldstip.com/map/suichang/index.html", "d": "南尖岩云海梯田观云亭日出、九级飞瀑、玻璃栈道、高山避暑崖居民宿；加遂昌金矿/神龙谷", "dy": "", "py": "S"}, {"n": "泰山", "u": "https://worldstip.com/map/taishan/index.html", "d": "红门古道、天外村索道、岱顶日出、山麓岱庙封禅；五岳之首1545米", "dy": "", "py": "T"}, {"n": "皖南川藏线", "u": "https://worldstip.com/map/wannan/index.html", "d": "储家滩、青龙湾、落羽杉、桃岭六道弯、水墨汀溪、月亮湾，含自驾/包车/跟团对比、秋色最佳时机、…", "dy": "2天", "py": "W"}, {"n": "潍坊", "u": "https://worldstip.com/map/weifang/index.html", "d": "世界风筝都杨家埠风筝、青州古城、十笏园袖珍园林、坊茨小镇；风筝博物馆与非遗手艺", "dy": "", "py": "W"}, {"n": "威海", "u": "https://worldstip.com/map/weihai/index.html", "d": "刘公岛甲午遗存、成山头天尽头、环海路海风、那香海沙滩与海草房；海鲜小烧烤", "dy": "", "py": "W"}, {"n": "温州", "u": "https://worldstip.com/map/wenzhou/index.html", "d": "雁荡山飞瀑奇峰、楠溪江竹筏漂流、江心屿双塔、五马街老城、洞头岛。浙南山海雄奇与市井活力", "dy": "", "py": "W"}, {"n": "武功山", "u": "https://worldstip.com/map/wugongshan/index.html", "d": "高山草甸、金顶日出、星空露营、吊马桩徒步路线，含徒步路线，门票约70元", "dy": "", "py": "W"}, {"n": "无锡", "u": "https://worldstip.com/map/wuxi/index.html", "d": "太湖鼋头渚、灵山大佛、拈花湾小镇、惠山古镇、三国水浒城；太湖明珠的山水禅意", "dy": "", "py": "W"}, {"n": "婺源篁岭", "u": "https://worldstip.com/map/wuyuan/index.html", "d": "篁岭晒秋晒工坊、江岭梯田油菜花、庆源/李坑徽派古村，含自驾/包车/跟团对比、避坑、预算", "dy": "2天", "py": "W"}, {"n": "厦门", "u": "https://worldstip.com/map/xiamen/index.html", "d": "鼓浪屿、厦大、环岛路骑行、沙坡尾、海鲜小吃，含日光岩、芙蓉隧道与南普陀寺", "dy": "2天", "py": "S"}, {"n": "徐州", "u": "https://worldstip.com/map/xuzhou/index.html", "d": "云龙湖、汉文化景区、楚王陵、回龙窝、彭祖文化；两汉文明与山水休闲", "dy": "", "py": "X"}, {"n": "扬州", "u": "https://worldstip.com/map/yangzhou/index.html", "d": "瘦西湖、个园、何园、大明寺、东关街、淮扬菜；烟花三月下扬州的温婉雅致", "dy": "", "py": "Y"}, {"n": "烟台", "u": "https://worldstip.com/map/yantai/index.html", "d": "蓬莱阁仙境、长岛海岛渔家、养马岛环岛、烟台山欧式洋街；蓬莱传说与胶东海鲜", "dy": "", "py": "Y"}, {"n": "枣庄", "u": "https://worldstip.com/map/zaozhuang/index.html", "d": "台儿庄古城桨声灯影、京杭大运河夜景、大战纪念馆、微山湖红荷湿地；江北水乡与鲁南小吃", "dy": "", "py": "Z"}, {"n": "镇江", "u": "https://worldstip.com/map/zhenjiang/index.html", "d": "金山寺、焦山、北固山、西津渡古街、锅盖面；江河交汇的诗画小城", "dy": "", "py": "Z"}, {"n": "舟山", "u": "https://worldstip.com/map/zhoushan/index.html", "d": "普陀山观音道场、朱家尖沙滩、嵊泗列岛、沈家门渔港、桃花岛。东海佛国与海岛度假", "dy": "", "py": "Z"}, {"n": "淄博", "u": "https://worldstip.com/map/zibo/index.html", "d": "八大局烧烤、小饼卷葱、海岱楼夜景、临淄齐文化博物馆古车马馆；人间烟火与千年齐国故都", "dy": "", "py": "Z"}, {"n": "宏村·西递", "u": "https://worldstip.com/map/hongcun/index.html", "d": "牛形水系、南湖画桥、月沼、承志堂，西递胡文光牌坊、300明清宅更安静；各104元（线上约94…", "dy": "", "py": "H"}, {"n": "木梨硔", "u": "https://worldstip.com/map/muli/index.html", "d": "云上海拔近千米的皖南云端村落，徒步进村看云海日出、悬崖观景台与星空，宿山顶木屋品土灶瓦罐鸡，无门票", "dy": "", "py": "M"}, {"n": "黄山", "u": "https://worldstip.com/map/huangshan/index.html", "d": "迎客松、光明顶、西海大峡谷、天都峰；平旺季190元冬游150元、三日多次入园、索道云谷80/…", "dy": "", "py": "H"}, {"n": "徽州古城", "u": "https://worldstip.com/map/huizhou/index.html", "d": "中国四大古城、许国石坊、徽州府衙、渔梁坝、斗山街；街巷免费、核心联票80-95元3日、歙县北…", "dy": "", "py": "H"}, {"n": "九华山", "u": "https://worldstip.com/map/jiuhua/index.html", "d": "地藏菩萨道场、化城寺/祇园寺/肉身宝殿礼佛、天台1306米看山；旺季160淡季140、景交5…", "dy": "", "py": "J"}, {"n": "天柱山", "u": "https://worldstip.com/map/tianzhu/index.html", "d": "安徽三大名山、全球地质公园、天柱峰/炼丹湖/神秘谷/飞来峰；旺季130元、潜山高铁直达、官方…", "dy": "", "py": "T"},{"n": "安吉", "u": "https://worldstip.com/map/anji/index.html", "d": "安吉竹海、白茶茶园、云上草原、Hello Kitty乐园，浙北山野亲子度假。", "dy": "", "py": "A"},{"n": "淳安·千岛湖", "u": "https://worldstip.com/map/chunan/index.html", "d": "环湖骑行、梅峰观岛、龙山岛、湖鲜鱼宴，浙江湖光山色度假。", "dy": "", "py": "C"},{"n": "平潭岛", "u": "https://worldstip.com/map/pingtan/index.html", "d": "蓝眼泪追泪、石厝村落、环岛风车、坛南湾看海，福建看海。", "dy": "", "py": "P"},{"n": "仙居", "u": "https://worldstip.com/map/xianju/index.html", "d": "神仙居云海栈道、玻璃桥、皤滩古镇、三黄鸡，浙江山水。", "dy": "", "py": "X"}],
+  "华中": [{"n": "长沙好友周末行 A5 卡片", "u": "https://worldstip.com/map/changsha/index.html", "d": "橘子洲、岳麓山、黄鹤楼都市美食，好友周末行卡片手册，含长沙五一广场、长沙太平老街牌坊与橘子洲…", "dy": "", "py": "Z"}, {"n": "郴州", "u": "https://worldstip.com/map/chenzhou/index.html", "d": "雾漫小东江、高椅岭丹霞、莽山云海、仰天湖草原，含高椅岭、莽山五指峰与仰天湖 · 白廊", "dy": "", "py": "C"}, {"n": "赤壁", "u": "https://worldstip.com/map/chibi/index.html", "d": "三国赤壁古战场、陆水湖游船、羊楼洞明清古街与青砖茶；赤壁鱼糕，湖北三国文化重镇", "dy": "", "py": "C"}, {"n": "丹江口", "u": "https://worldstip.com/map/danjiangkou/index.html", "d": "环库公路、千岛画廊、丹江口大坝、百喜岛、武当山、静乐宫，含自驾/包车/跟团对比、行程、预算", "dy": "2天", "py": "D"}, {"n": "恩施", "u": "https://worldstip.com/map/ensi/index.html", "d": "恩施大峡谷、屏山峡谷（仙本那）、土家女儿城、清江画廊、土司城，含自驾/包车/跟团对比、行程、…", "dy": "4天", "py": "E"}, {"n": "鄂州", "u": "https://worldstip.com/map/ezhou/index.html", "d": "西山风景区、梁子湖亲水、观音阁、武昌鱼故里，武汉都市圈周末湖山慢游，含鄂州风光、鄂州牌坊与鄂…", "dy": "", "py": "E"}, {"n": "凤凰古城", "u": "https://worldstip.com/map/fenghuang/index.html", "d": "沱江夜景、晨雾跳岩、沈从文故居、苗寨体验，含沱江夜色、苗寨体验与凤凰必吃", "dy": "", "py": "F"}, {"n": "芙蓉镇", "u": "https://worldstip.com/map/furong/index.html", "d": "挂在瀑布上的古镇、电影《芙蓉镇》取景地、土家吊脚楼、瀑布夜景，含瀑布夜景、古镇街市与电影《芙…", "dy": "", "py": "F"}, {"n": "G348三峡公路", "u": "https://worldstip.com/map/g348/index.html", "d": "湖北宜昌沿西陵峡江岸的39.6公里免费风景廊道，紧贴葛洲坝与三峡大坝之间，串联三峡大坝、西陵…", "dy": "", "py": "#"}, {"n": "黄冈", "u": "https://worldstip.com/map/huanggang/index.html", "d": "东坡赤壁、大别山天堂寨、杜鹃花海、英山温泉、罗田板栗，含东坡赤壁与黄冈必吃", "dy": "", "py": "H"}, {"n": "黄石", "u": "https://worldstip.com/map/huangshi/index.html", "d": "东方山佛教名山、磁湖环湖休闲、西塞山古战场、黄石国家矿山公园工业遗迹；黄石港饼，湖北工矿山湖…", "dy": "", "py": "H"}, {"n": "荆门", "u": "https://worldstip.com/map/jingmen/index.html", "d": "世界文化遗产明显陵、莫愁湖听雨、黄仙洞溶洞探险、大口国家森林公园洗肺；蒸肉粉蒸藕，湖北中部慢…", "dy": "", "py": "J"}, {"n": "荆州", "u": "https://worldstip.com/map/jingzhou/index.html", "d": "古城墙宾阳楼、楚王车马阵、荆州博物馆楚文化、三国关公故地，含古城墙夜色、楚王车马阵与荆州必吃…", "dy": "", "py": "J"}, {"n": "开封", "u": "https://worldstip.com/map/kaifeng/index.html", "d": "河南开封，八朝古都、宋都汴京。短程1-2天、长程2-3天逐日行程，清明上河园、龙亭、开封府、…", "dy": "", "py": "K"}, {"n": "老君山", "u": "https://worldstip.com/map/laojunshan/index.html", "d": "河南洛阳栾川，道教名山与网红冬雪胜地。短程1日经典、长程2天1夜逐时行程，金顶道观群、十里画…", "dy": "", "py": "L"}, {"n": "洛阳", "u": "https://worldstip.com/map/luoyang/index.html", "d": "河南洛阳，十三朝古都。短程1-2天、长程2-3天逐日行程，龙门石窟、白马寺、应天门、洛阳博物…", "dy": "", "py": "L"}, {"n": "南岳衡山", "u": "https://worldstip.com/map/nanyue/index.html", "d": "祝融峰日出云海、南岳大庙祈福、雾凇、夏日避暑，含日出云海与南岳必吃", "dy": "", "py": "N"}, {"n": "潜江", "u": "https://worldstip.com/map/qianjiang/index.html", "d": "小龙虾之城吃潜江油焖大虾、曹禺故里访文化名人、返湾湖与兴隆水利枢纽生态休闲", "dy": "", "py": "Q"}, {"n": "神农架", "u": "https://worldstip.com/map/shennongjia/index.html", "d": "原始森林、大九湖湿地、神农顶、官门山、天生桥，含自驾/包车/跟团对比、避坑、预算", "dy": "2天", "py": "S"}, {"n": "十堰", "u": "https://worldstip.com/map/shiyan/index.html", "d": "武当山门户、郧阳汉江山水、青龙山恐龙蛋化石群、东风汽车城工业旅游；十堰三合汤，湖北山水车城之…", "dy": "", "py": "S"},
+    {"n": "石阡温泉", "u": "https://worldstip.com/map/shiqian/index.html", "d": "佛顶山麓四百余年古温泉、城南古泉可饮可浴、温泉之乡汤养之旅；含交通住宿预算避坑一篇讲清", "dy": "", "py": "S"}, {"n": "随州", "u": "https://worldstip.com/map/suizhou/index.html", "d": "曾侯乙编钟、随州博物馆、炎帝故里、千年银杏谷、大洪山，含曾侯乙编钟、千年银杏谷与大洪山", "dy": "", "py": "S"}, {"n": "新乡万仙山", "u": "https://worldstip.com/map/wanxianshan/index.html", "d": "新乡辉县南太行，世界闻名的挂壁公路绝壁长廊、悬崖上的石头古村、南坪丹分沟。门票+观光车约10…", "dy": "", "py": "X"}, {"n": "武当山", "u": "https://worldstip.com/map/wudang/index.html", "d": "金顶太和宫金殿、紫霄宫、南岩宫、太子坡、太极武术，道教文化，含金顶 · 太和宫、紫霄宫与南岩…", "dy": "", "py": "W"}, {"n": "武汉好友周末行 A5 卡片", "u": "https://worldstip.com/map/wuhan/index.html", "d": "黄鹤楼、长江大桥、江汉路、东湖骑行、热干面，含黄鹤楼与长江大桥、武汉长江与楚河汉街", "dy": "", "py": "W"}, {"n": "襄阳", "u": "https://worldstip.com/map/xiangyang/index.html", "d": "襄阳古城临汉门、古隆中三顾茅庐、汉江夜色、三国文化，含临汉门 · 汉江、古隆中与襄阳必吃", "dy": "", "py": "X"}, {"n": "咸宁", "u": "https://worldstip.com/map/xianning/index.html", "d": "九宫山云中湖、温泉养生、楠竹海、地热养生、赤壁青砖茶，含九宫山、温泉养生与楠竹海", "dy": "", "py": "X"}, {"n": "孝感", "u": "https://worldstip.com/map/xiaogan/index.html", "d": "双峰山国家森林公园、观音湖亲水、董永故里访孝文化、汤池温泉泡汤；孝感麻糖米酒，湖北武汉后花园", "dy": "", "py": "X"}, {"n": "信阳", "u": "https://worldstip.com/map/xinyang/index.html", "d": "豫南明珠南湾湖（茶岛鸟岛猴岛）、中国四大避暑胜地鸡公山（万国建筑）、信阳毛尖茶乡文新茶村。门…", "dy": "", "py": "X"}, {"n": "宜昌", "u": "https://worldstip.com/map/yichang/index.html", "d": "宜昌市区+周边轻松游、自驾自由行、乘船畅游两坝一峡/三峡游轮，各自的优势、预留时间、费用、安…", "dy": "", "py": "Y"}, {"n": "永州", "u": "https://worldstip.com/map/yongzhou/index.html", "d": "零陵古城、柳子街、舜帝陵、永州血鸭东安鸡，含零陵古城与永州必吃", "dy": "", "py": "Y"}, {"n": "岳阳 1 日", "u": "https://worldstip.com/map/yueyang/index.html", "d": "岳阳楼、洞庭湖、岳阳中华大熊猫苑、汴河街、飘尾日落、岳阳烧烤，含岳阳飘尾与岳阳汴河街", "dy": "", "py": "Y"}, {"n": "焦作云台山", "u": "https://worldstip.com/map/yuntaishan/index.html", "d": "世界地质公园，红石峡红岩碧水、云台天瀑314米、茱萸峰王维诗意、太行峡谷绝景。门票约180元…", "dy": "", "py": "J"}, {"n": "张家界", "u": "https://worldstip.com/map/zhangjiajie/index.html", "d": "武陵源国家森林公园（袁家界/天子山/金鞭溪）、天门山（玻璃栈道/天门洞）、大峡谷玻璃桥，含自…", "dy": "2-3天", "py": "Z"}, {"n": "郑州", "u": "https://worldstip.com/map/zhengzhou/index.html", "d": "河南郑州，中原枢纽。短程1-2天、长程2-3天逐日行程，嵩山少林寺、河南博物院、二七纪念塔、…", "dy": "", "py": "Z"}],
+  "华南": [{"n": "百色", "u": "https://worldstip.com/map/baise/index.html", "d": "世界级乐业大石围天坑群、靖西鹅泉与通灵大峡谷等喀斯特地质奇观，含自驾路线、最佳季节与住宿避坑", "dy": "", "py": "B"},{"n": "北海", "u": "https://worldstip.com/map/beihai/index.html", "d": "天下第一滩银滩、涠洲岛火山海岛、百年骑楼老街、侨港越式风情街、金海湾红树林；2-5天海边慢游", "dy": "", "py": "B"},{"n": "潮汕", "u": "https://worldstip.com/map/chaoshan/index.html", "d": "潮汕（潮州+汕头）怎么玩？潮州古城广济桥牌坊街看骑楼、汕头南澳岛灯塔海岛打卡，工夫茶与牛肉火…", "dy": "4天", "py": "C"},{"n": "崇左", "u": "https://worldstip.com/map/chongzuo/index.html", "d": "亚洲第一、世界第四的跨国瀑布，明仕田园喀斯特山水，中越边关玩法", "dy": "", "py": "C"},{"n": "韶关", "u": "https://worldstip.com/map/danxiashan/index.html", "d": "长老峰/阳元石/锦江游船看色如渥丹的奇峰，南华寺禅意，张九龄故里。含交通、适合人群、美食与避", "dy": "3天", "py": "S"},{"n": "防城港", "u": "https://worldstip.com/map/fcg/index.html", "d": "白浪滩、怪石滩、万尾金滩、东兴国门、越南芒街，短中长行程 + 钦州北海周边 + 自驾跟团对比", "dy": "", "py": "F"},{"n": "桂林阳朔", "u": "https://worldstip.com/map/guilin/index.html", "d": "漓江竹筏、遇龙河漂流、十里画廊、阳朔西街、龙脊梯田；3-4天山水慢游", "dy": "", "py": "G"},{"n": "贺州", "u": "https://worldstip.com/map/hezhou/index.html", "d": "中国最美十大古镇之一的青石板巷、客家围屋与百年古桥古榕", "dy": "", "py": "H"},{"n": "江门", "u": "https://worldstip.com/map/kaiping/index.html", "d": "自力村/立园/马降龙看中西合璧碉楼，那琴半岛地质海洋公园看海，赤坎古镇侨乡风情。含交通、美食…", "dy": "3天", "py": "J"},{"n": "柳州", "u": "https://worldstip.com/map/liuzhou/index.html", "d": "百里柳江夜景、蟠龙山、窑埠古镇夜游，螺蛳粉故乡，延伸三江程阳风雨桥侗寨风情", "dy": "", "py": "L"},{"n": "南宁", "u": "https://worldstip.com/map/nanning/index.html", "d": "青秀山、邕江夜游、中山路建政路夜市，绿城首府兼桂南边境中转门户", "dy": "", "py": "N"},{"n": "清远", "u": "https://worldstip.com/map/qingyuan/index.html", "d": "古龙峡/黄腾峡漂流、清远长隆森林王国看非洲象、连州地下河溶洞、英德茶园。含自驾线路、美食与避…", "dy": "3天", "py": "Q"},{"n": "海口", "u": "https://worldstip.com/map/haikou/index.html", "d": "骑楼老街、火山口地质公园、世纪大桥云洞与椰城滨海慢生活；南洋风情与热带海岛之城", "dy": "", "py": "H"},{"n": "陵水", "u": "https://worldstip.com/map/lingshui/index.html", "d": "分界洲岛潜水、南湾猴岛索道、清水湾与疍家渔排黎族海岛风情；热带海岛嬉水度假", "dy": "", "py": "L"},{"n": "桂林 · 龙脊梯田", "u": "https://worldstip.com/map/longji/index.html", "d": "龙脊梯田层层叠叠铺满山，金坑大寨与平安寨梯田云海，壮族瑶族村寨，四季皆景", "py": "L"},{"n": "万宁", "u": "https://worldstip.com/map/wanning/index.html", "d": "石梅湾、日月湾冲浪、神州半岛灯塔与兴隆咖啡热带度假体验；冲浪与海岛度假胜地", "dy": "", "py": "W"},{"n": "文昌", "u": "https://worldstip.com/map/wenchang/index.html", "d": "铜鼓岭月亮湾、文昌航天发射场、东郊椰林与南洋骑楼人文底蕴；椰乡航天之旅", "dy": "", "py": "W"},{"n": "北海 · 涠洲岛", "u": "https://worldstip.com/map/weizhoudao/index.html", "d": "中国最年轻火山岛，鳄鱼山火山熔岩、天主教堂、五彩滩霞光，骑行环岛慢游", "py": "W"},{"n": "三亚", "u": "https://worldstip.com/map/sanya/index.html", "d": "四模式（2/3天短途+5/7天度假），亚龙湾、天涯海角、南山观音、蜈支洲岛、海滩休闲玩法", "dy": "3天", "py": "S"},{"n": "深圳", "u": "https://worldstip.com/map/shenzhen/index.html", "d": "短程2-3天、长程4-5天逐日行程（白天玩什么晚上干什么），深圳湾、世界之窗、欢乐海岸、大鹏…", "dy": "", "py": "S"},{"n": "珠海", "u": "https://worldstip.com/map/zhuhai/index.html", "d": "情侣路、珠海渔女、港珠澳大桥、东澳岛外伶仃岛、粤式美食", "dy": "4天", "py": "Z"},{"n": "长隆篇", "u": "https://worldstip.com/map/zhuhai_chimelong/index.html", "d": "广州野生动物世界欢乐世界，珠海海洋王国鲸鲨馆烟花夜秀+飞船乐园，清远森林王国（2026新开）…", "dy": "", "py": "Z"},{"n": "阳朔", "u": "https://worldstip.com/map/yangshuo/index.html", "d": "漓江竹筏、遇龙河漂流、十里画廊、西街、啤酒鱼，桂林山水。", "dy": "", "py": "Y"}],
+  "西南": [{"n": "成都", "u": "https://worldstip.com/map/chengdu/index.html", "d": "短程2-3天、长程4-5天逐日行程（白天玩什么晚上干什么），熊猫基地、宽窄巷子、锦里武侯祠、…", "dy": "", "py": "C"},{"n": "茨中村", "u": "https://worldstip.com/map/cizhong/index.html", "d": "澜沧江河谷高山村落，白墙哥特式天主教堂、百年葡萄园自酿葡萄酒、雪山峡谷旅游", "dy": "", "py": "C"}, {"n": "重庆", "u": "https://worldstip.com/map/chongqing/index.html", "d": "8D魔幻山城，两江夜景观赏、洪崖洞吊脚楼、长江索道、李子坝轻轨穿楼，武隆天生三桥喀斯特、大足…", "dy": "", "py": "Z"}, {"n": "大理", "u": "https://worldstip.com/map/dali/index.html", "d": "环洱海骑行、喜洲古镇、双廊、龙龛日出、苍山索道，2/5/10天三档休闲行程，含出行对比、住宿…", "dy": "2天", "py": "D"}, {"n": "黄果树", "u": "https://worldstip.com/map/huangguoshu/index.html", "d": "亚洲第一大瀑布、喀斯特奇观", "dy": "", "py": "H"}, {"n": "拉萨", "u": "https://worldstip.com/map/lhasa/index.html", "d": "世界屋脊圣地、藏传佛教中心", "dy": "", "py": "L"}, {"n": "丽江", "u": "https://worldstip.com/map/lijiang/index.html", "d": "玉龙雪山冰川公园、蓝月谷、大研古城、束河、白沙、拉市海、虎跳峡、泸沽湖。门票：玉龙雪山100…", "dy": "", "py": "L"}, {"n": "泸沽湖", "u": "https://worldstip.com/map/luguhu/index.html", "d": "里格、大落水、环湖70km、草海走婚桥、格姆女神山、猪槽船、摩梭篝火。门票约70元，建议2-…", "dy": "", "py": "L"}, {"n": "抚仙湖", "u": "https://worldstip.com/map/fuxianhu/index.html", "d": "中国最大深水型淡水湖，湖岸孤山岛、禄充帆船、水下古城与环湖轻骑行", "dy": "", "py": "F"},
+    {"n": "梵净山", "u": "https://worldstip.com/map/fanjingshan/index.html", "d": "世界自然遗产武陵山主峰，云海佛光奇观，需乘索道+徒步", "dy": "", "py": "F"}, {"n": "贵阳", "u": "https://worldstip.com/map/guiyang/index.html", "d": "避暑之都林城，夏季最凉快，黔味小吃很能打", "dy": "", "py": "G"}, {"n": "肇兴侗寨", "u": "https://worldstip.com/map/zhaoxing/index.html", "d": "黔东南侗族文化核心，鼓楼群与侗族大歌是灵魂", "dy": "", "py": "Z"},{"n": "增冲侗寨", "u": "https://worldstip.com/map/zengchong/index.html", "d": "黔东南从江深山古老侗寨，全国文保增冲鼓楼、风雨桥与吊脚楼群、侗族大歌", "dy": "", "py": "Z"}, {"n": "镇远古镇", "u": "https://worldstip.com/map/zhenyuan/index.html", "d": "黔东南千年水城，舞阳河夜景与古巷最迷人", "dy": "", "py": "Z"}, {"n": "香格里拉", "u": "https://worldstip.com/map/shangrila/index.html", "d": "普达措、松赞林寺、独克宗古城、纳帕海、虎跳峡。门票：普达措138（含环保车）、松赞林通票90…", "dy": "", "py": "X"}, {"n": "腾冲", "u": "https://worldstip.com/map/tengchong/index.html", "d": "和顺古镇、热海、火山地质公园、北海湿地、银杏村、国殇墓园。门票：和顺55、热海50、火山35…", "dy": "", "py": "T"},{"n": "雾里村", "u": "https://worldstip.com/map/wuli/index.html", "d": "怒江丙中洛云端的木屋村落，茶马古道徒步进村看晨雾与雪山、怒江第一湾", "dy": "", "py": "W"}, {"n": "西昌", "u": "https://worldstip.com/map/xichang/index.html", "d": "彝族火把节狂欢、邛海泸山、泸沽湖女儿国、卫星发射中心，2/3/5天三档行程，含本地特色、火把…", "dy": "2天", "py": "X"}, {"n": "西江千户苗寨", "u": "https://worldstip.com/map/xijiang/index.html", "d": "中国最大苗族聚居村寨、万家灯火夜景", "dy": "", "py": "X"}, {"n": "西双版纳", "u": "https://worldstip.com/map/xishuangbanna/index.html", "d": "告庄西双景、野象谷、中科院植物园、曼听、傣族园、望天树、勐泐大佛寺。门票：野象谷58-60、…", "dy": "", "py": "X"}, {"n": "元阳", "u": "https://worldstip.com/map/yuanyang/index.html", "d": "多依树日出、老虎嘴日落、坝达云海、箐口民俗村、阿者科蘑菇房。门票通票70元，建议2-3天逐日…", "dy": "", "py": "Y"}, {"n": "川西大环线", "u": "https://worldstip.com/map/chuanxi/index.html", "d": "四姑娘山双桥沟、色达五明佛学院、稻城亚丁、新都桥塔公草原、丹巴甲居藏寨；小环线/大环线路线、…", "dy": "", "py": "C"}, {"n": "稻城亚丁", "u": "https://worldstip.com/map/daocheng/index.html", "d": "仙乃日央迈勇夏诺多吉三神山、冲古寺、珍珠海、牛奶海、五色海；短线/长线徒步、2026免票与限…", "dy": "", "py": "D"}, {"n": "都江堰 · 青城山", "u": "https://worldstip.com/map/dujiangyan/index.html", "d": "都江堰鱼嘴飞沙堰宝瓶口、安澜索桥、二王庙；青城山前山天师洞上清宫、道教发源地；门票80/80…", "dy": "", "py": "D"}, {"n": "峨眉山 · 乐山", "u": "https://worldstip.com/map/emeishan/index.html", "d": "峨眉金顶云海日出十方普贤、报国寺、清音阁；乐山大佛凌云山；旺季160淡季110、金顶索道、峨…", "dy": "", "py": "E"}, {"n": "九寨沟", "u": "https://worldstip.com/map/jiuzhaigou/index.html", "d": "五花海、诺日朗瀑布、长海、五彩池、树正群海；1日2日双方案、旺季280淡季160、高铁直达避…", "dy": "", "py": "J"}, {"n": "阆中古城", "u": "https://worldstip.com/map/langzhong/index.html", "d": "中国四大古城、张飞庙、清代四川贡院、川北道署、中天楼；街巷免费、110元一票通3天有效、高铁…", "dy": "", "py": "L"},{"n": "阿里", "u": "https://worldstip.com/map/ali/index.html", "d": "世界屋脊的屋脊。冈仁波齐转山、玛旁雍错圣湖、札达土林、古格王朝、班公湖。", "dy": "", "py": "A"},{"n": "建水古城", "u": "https://worldstip.com/map/jianshui/index.html", "d": "米轨小火车、朱家花园、双龙桥、汽锅鸡，云南滇南慢游。", "dy": "", "py": "J"},{"n": "荔波", "u": "https://worldstip.com/map/libo/index.html", "d": "小七孔古桥、卧龙潭、大七孔、茂兰森林，贵州绿宝石。", "dy": "", "py": "L"},{"n": "林芝", "u": "https://worldstip.com/map/linzhi/index.html", "d": "西藏海拔最低的江南，桃花季巴松措、雅鲁藏布大峡谷、南迦巴瓦、鲁朗石锅鸡。", "dy": "", "py": "L"},{"n": "怒江·丙中洛", "u": "https://worldstip.com/map/nujiang/index.html", "d": "怒江大峡谷99道拐、丙中洛人神共居与独龙江秘境自驾之旅；峡谷秘境", "dy": "", "py": "N"},
+    {"n": "普者黑", "u": "https://worldstip.com/map/puqizhe/index.html", "d": "喀斯特孤峰湖泊，青龙山全景、仙人洞彝村、柳叶小舟与田园花海", "dy": "", "py": "P"},
+    {"n": "纳木错", "u": "https://worldstip.com/map/namtso/index.html", "d": "西藏三大圣湖之一，念青唐古拉雪山环抱，扎西半岛、星空、日出。", "dy": "", "py": "N"},{"n": "日喀则", "u": "https://worldstip.com/map/rikaze/index.html", "d": "后藏重镇、珠峰大本营所在地。扎什伦布寺、珠峰大本营、绒布寺、江孜宗山。", "dy": "", "py": "R"},{"n": "羊卓雍措", "u": "https://worldstip.com/map/yangzhuoyongcuo/index.html", "d": "西藏三大圣湖之一，岗巴拉山口俯瞰全景、日托寺、鲁日拉360度观景台。", "dy": "", "py": "Y"}],
+  "西北": [{"n": "阿克苏", "u": "https://worldstip.com/map/aksu/index.html", "d": "托木尔峰雪山、温宿大峡谷、天山神木园、冰糖心苹果、柯坪绿洲。南疆天山的雄奇与果香", "dy": "", "py": "A"},{"n": "安康 & 瀛湖", "u": "https://worldstip.com/map/ankang/index.html", "d": "瀛湖景区", "dy": "", "py": "A"},{"n": "博尔塔拉", "u": "https://worldstip.com/map/bortala/index.html", "d": "赛里木湖天山明珠、果子沟大桥、阿拉山口口岸、温泉疗养、天山草原。新疆北缘的湖山与口岸", "dy": "", "py": "B"},{"n": "新疆独库公路+伊犁", "u": "https://worldstip.com/map/duku/index.html", "d": "纵贯天山的中国最美公路、一日有四季、那拉提草原、巴音布鲁克九曲十八弯、大龙池、乔尔玛烈士陵园…", "dy": "3天", "py": "X"},{"n": "敦煌", "u": "https://worldstip.com/map/dunhuang/index.html", "d": "莫高窟千年壁画、鸣沙山月牙泉、雅丹魔鬼城、玉门关；丝路圣地的沙漠奇观", "dy": "", "py": "D"},{"n": "富蕴", "u": "https://worldstip.com/map/fuyun/index.html", "d": "可可托海国家地质公园、神钟山、额尔齐斯大峡谷、三号功勋矿脉、伊雷木湖。北疆峡谷与地质奇景", "dy": "", "py": "F"},{"n": "甘南", "u": "https://worldstip.com/map/gannan/index.html", "d": "拉卜楞寺（世界藏学府转经长廊）、扎尕那石城秘境与洛克之路、桑科草原、郎木寺、尕海湖，含自驾/…", "dy": "3天", "py": "G"},{"n": "哈密", "u": "https://worldstip.com/map/hami/index.html", "d": "哈密有名的哈密瓜、大海道魔鬼城雅丹、回王陵古建、巴里坤草原雪山；新疆东大门瓜果甜香", "dy": "", "py": "H"},{"n": "汉中", "u": "https://worldstip.com/map/hanzhong/index.html", "d": "汉中油菜花海、汉人老家文化、石门栈道与汉江、勉县武侯祠、兴汉胜境；秦巴山间的汉水人家", "dy": "", "py": "H"},{"n": "和田", "u": "https://worldstip.com/map/hetian/index.html", "d": "玉龙喀什河淘玉、和田玉巴扎、千里葡萄长廊、艾德莱斯绸、核桃王大树。南疆丝路的玉都与绿洲", "dy": "", "py": "H"},{"n": "华山", "u": "https://worldstip.com/map/huashan/index.html", "d": "西岳华山的长空栈道、苍龙岭、鹞子翻身、金锁关、西峰北峰登山；奇险天下第一山，云海日出壮美", "dy": "", "py": "H"},{"n": "壶口瀑布", "u": "https://worldstip.com/map/hukou/index.html", "d": "黄河第一瀑的咆哮雄姿、瀑布彩虹、冬春冰瀑、观瀑崖与壶口小镇；顺访革命圣地延安", "dy": "", "py": "H"},{"n": "银川 · 贺兰山", "u": "https://worldstip.com/map/helanshan/index.html", "d": "贺兰山横亘宁夏西缘，滚钟口、苏峪口森林、西夏北部岩画群，山势雄浑，守护塞上江南", "dy": "", "py": "H"},{"n": "嘉峪关", "u": "https://worldstip.com/map/jiayuguan/index.html", "d": "天下第一雄关关城、悬壁长城、第一墩、长城博物馆；长城西端尽头的雄浑", "dy": "", "py": "J"},{"n": "阿勒泰喀纳斯", "u": "https://worldstip.com/map/kanas/index.html", "d": "喀纳斯湖神秘碧湖、禾木村图瓦村落、观鱼台、五彩滩雅丹；北疆油画般的秘境", "dy": "", "py": "A"},{"n": "喀什", "u": "https://worldstip.com/map/kashgar/index.html", "d": "喀什古城维吾尔风情、香妃园、帕米尔高原、慕士塔格峰、喀拉库勒湖；纯粹的西域古城与高原圣湖", "dy": "", "py": "K"},{"n": "青海可可西里", "u": "https://worldstip.com/map/kekexili/index.html", "d": "世界自然遗产、青藏线G109自驾穿越，看藏羚羊/藏野驴/野牦牛、昆仑山口、索南达杰保护站、玉珠峰、不冻泉。世界第三极的苍茫与生灵", "dy": "", "py": "K"},{"n": "克孜勒苏", "u": "https://worldstip.com/map/kizilsu/index.html", "d": "帕米尔高原门户、慕士塔格峰雪山、卡拉库里湖、公格尔峰、高原村落。南疆高原的雄奇与苍茫", "dy": "", "py": "K"},{"n": "库尔勒", "u": "https://worldstip.com/map/korla/index.html", "d": "巴音布鲁克九曲十八弯、高昌故城、博斯腾湖芦荡、铁门关雄关、天鹅湖；南疆绿洲与草原湖泊", "dy": "", "py": "K"},{"n": "兰州", "u": "https://worldstip.com/map/lanzhou/index.html", "d": "黄河穿城、中山桥夜色、白塔山、五泉山、黄河母亲像、正宗牛肉面；金城的市井与河山", "dy": "", "py": "L"},{"n": "临夏", "u": "https://worldstip.com/map/linxia/index.html", "d": "八坊十三巷回族风情、炳灵寺石窟、刘家峡水库、莲花山；河州的美景与民俗", "dy": "", "py": "L"},
+    {"n": "林甸温泉", "u": "https://worldstip.com/map/lindian/index.html", "d": "北国雪地温泉、世界温泉养生基地、地热王国泡汤滑冰；含大庆周边交通住宿预算避坑一篇讲清", "dy": "", "py": "L"},{"n": "青海湖", "u": "https://worldstip.com/map/qinghaihu/index.html", "d": "中国最大内陆咸水湖、环湖骑行、二郎剑景区、黑马河日出、盛夏油菜花与湖天一色、茶卡盐湖天空之镜…", "dy": "2天", "py": "Q"},{"n": "茶卡盐湖", "u": "https://worldstip.com/map/chaka/index.html", "d": "中国最大盐湖影像圣地，盐湖倒影、盐雕、观光小火车——高原最纯净的镜面之路，含门票、路线、拍摄…", "dy": "", "py": "C"},{"n": "门源", "u": "https://worldstip.com/map/menyuan/index.html", "d": "最佳赏花期、观花点位、拍照机位、门源-祁连线路玩法、门票与避坑，一页讲清", "dy": "", "py": "M"},{"n": "祁连山", "u": "https://worldstip.com/map/qilianshan/index.html", "d": "卓尔山丹霞、祁连大草原、雪山湖泊、门源-祁连线路线玩法，交通、季节、车程与避坑一页讲清", "dy": "", "py": "Q"},{"n": "塔尔寺", "u": "https://worldstip.com/map/taersi/index.html", "d": "藏传佛教格鲁派六大寺之一，大金瓦殿、酥油花、壁画堆绣——雪域之外的信仰圣地，交通、参观顺序、…", "dy": "", "py": "T"},{"n": "商洛", "u": "https://worldstip.com/map/shangluo/index.html", "d": "秦岭腹地的金丝大峡谷、柞水溶洞、牛背梁国家公园、终南山与秦岭绿意；避暑康养的天然氧吧", "dy": "", "py": "S"},{"n": "中卫 · 沙坡头", "u": "https://worldstip.com/map/shapotou/index.html", "d": "沙坡头在腾格里沙漠与黄河交汇处，金色沙丘直落河岸，滑沙、羊皮筏、驼队看大漠长河繁星", "dy": "", "py": "S"},{"n": "塔城", "u": "https://worldstip.com/map/tacheng/index.html", "d": "手风琴博物馆、巴克图口岸、小白杨哨所、天山北麓草原、多民族风情。边境小城的文艺与宁静", "dy": "", "py": "T"},{"n": "天水", "u": "https://worldstip.com/map/tianshui/index.html", "d": "麦积山石窟东方雕塑馆、伏羲庙人文先祖、仙人崖、南郭寺；西北的温柔宝地", "dy": "", "py": "T"},{"n": "吐鲁番", "u": "https://worldstip.com/map/turpan/index.html", "d": "火焰山西游记传奇、葡萄沟绿洲果香、坎儿井智慧、交河故城、库木塔格沙漠；新疆火洲与果香", "dy": "", "py": "T"},{"n": "乌鲁木齐", "u": "https://worldstip.com/map/urumqi/index.html", "d": "天山天池雪山湖泊、国际大巴扎清真风情、南山牧场草原、红山公园；中亚风情与天山壮景", "dy": "", "py": "W"},{"n": "武威", "u": "https://worldstip.com/map/wuwei/index.html", "d": "雷台汉墓马踏飞燕、天梯山石窟、白塔寺、文庙；丝路重镇的历史回声", "dy": "", "py": "W"},{"n": "西安", "u": "https://worldstip.com/map/xian/index.html", "d": "秦始皇兵马俑、明城墙、钟鼓楼、大雁塔、大唐不夜城、回民街；十三朝古都的长安，历史与美食双重盛…", "dy": "", "py": "X"},{"n": "咸阳 & 乾陵", "u": "https://worldstip.com/map/xianyang/index.html", "d": "乾陵无字碑与神道、乾陵地宫、茂陵霍去病墓、大秦帝都咸阳湖，顺逛袁家村关中民俗", "dy": "", "py": "X"},{"n": "银川 · 西夏王陵", "u": "https://worldstip.com/map/xixiawangling/index.html", "d": "西夏皇家陵园，金字塔形夯土陵塔散布贺兰山下，西夏博物馆解读神秘王朝，苍茫大漠边史", "dy": "", "py": "X"},{"n": "伊犁", "u": "https://worldstip.com/map/yili/index.html", "d": "那拉提空中草原、赛里木湖高山明珠、果子沟大桥、霍城薰衣草、伊昭公路；新疆最美夏天", "dy": "", "py": "Y"},{"n": "银川", "u": "https://worldstip.com/map/yinchuan/index.html", "d": "东方金字塔、黄河大漠风光、塞上江南", "dy": "", "py": "Y"},{"n": "榆林", "u": "https://worldstip.com/map/yulin/index.html", "d": "镇北台长城、红石峡摩崖、靖边波浪谷丹霞、榆林古城墙与窑洞、陕北塞上风光", "dy": "", "py": "Y"},{"n": "张掖", "u": "https://worldstip.com/map/zhangye/index.html", "d": "七彩丹霞地质奇观、大佛寺西夏古刹、马蹄寺、焉支山；如画的河西走廊明珠", "dy": "", "py": "Z"}],
+  "港澳台海外": [{"n": "台湾", "u": "https://worldstip.com/map/taiwan/index.html", "d": "北（台北/九份/野柳）中（日月潭/阿里山）南（台南/高雄/垦丁）东（苏花/太鲁阁）+澎湖绿岛…", "dy": "五日", "py": "T"}, {"n": "欧洲自驾", "u": "https://worldstip.com/map/europe/index.html", "d": "驾照与国际驾照、租车实操、加油停车、各国限速与交规、高速收费、预算拆解、最佳季节、十大经典路…", "dy": "", "py": "O"}, {"n": "格鲁吉亚 7 日", "u": "https://worldstip.com/map/georgia/index.html", "d": "第比利斯、卡兹别克雪山、西格纳吉红酒小镇、巴统海滨，含西格纳吉山城、卡赫季红酒小镇与生命之柱…", "dy": "", "py": "G"}, {"n": "香港", "u": "https://worldstip.com/map/hongkong/index.html", "d": "第一次去香港（区域+交通）、九龙油尖旺港片文艺、港岛山海相逢、半小时逃离城市的麦理浩径/长洲…", "dy": "", "py": "X"}, {"n": "珠海 → 澳门", "u": "https://worldstip.com/map/macao/index.html", "d": "四个口岸对比、大三巴、议事亭、氹仔度假区，含大三巴牌坊与澳门威尼斯人", "dy": "一日", "py": "Z"},{"n": "海岛度假指南", "u": "https://worldstip.com/map/island-holiday/index.html", "d": "马尔代夫·巴厘岛·长滩岛·斐济·夏威夷五大岛全面对比：签证、交通、度假玩法、预算、安全应急，蜜月亲子潜水皆宜。", "dy": "", "py": "H"}],
+  "主题乐园": [{"n": "迪士尼篇", "u": "https://worldstip.com/map/disney/index.html", "d": "上海迪士尼疯狂动物城创极速光轮奇幻童话城堡，香港迪士尼魔雪奇缘世界灰熊山极速矿车,门票交通玩…", "dy": "", "py": "D"}, {"n": "方特", "u": "https://worldstip.com/map/fangte/index.html", "d": "华强方特全国 40 余园分布与特色——东方神画（中国文化）、欢乐世界（科幻互动）、梦幻王国、…", "dy": "", "py": "F"}, {"n": "海昌海洋公园", "u": "https://worldstip.com/map/haichang/index.html", "d": "上海主场详解，虎鲸馆、极地馆、奥特曼主题区、航海王宝藏区，海洋大秀，门票交通玩法", "dy": "", "py": "H"}, {"n": "欢乐谷", "u": "https://worldstip.com/map/happyvalley/index.html", "d": "华侨城主打的本土连锁主题乐园，深圳旗舰详解，过山车、玛雅水公园、迷你世界冒险山，门票交通玩法", "dy": "", "py": "H"}, {"n": "中华恐龙园", "u": "https://worldstip.com/map/konglongyuan/index.html", "d": "常州东方侏罗纪，中华恐龙馆、魔幻雨林、鲁布拉、库克苏克、梦幻庄园七大主题区，门票交通玩法", "dy": "", "py": "Z"}, {"n": "宋城", "u": "https://worldstip.com/map/songcheng/index.html", "d": "宋城演艺「千古情」系列分布城市与特色——杭州/上海/西安/佛山/三亚/丽江/九寨/桂林/张家…", "dy": "", "py": "S"}, {"n": "融创文旅城", "u": "https://worldstip.com/map/sunac/index.html", "d": "南昌/合肥/哈尔滨/青岛/广州/无锡/昆明/重庆/成都/济南/桂林/西双版纳 12 城布局，…", "dy": "", "py": "R"}, {"n": "北京环球影城", "u": "https://worldstip.com/map/universal_beijing/index.html", "d": "哈利波特魔法世界、变形金刚基地、侏罗纪世界、小黄人乐园、功夫熊猫盖世之地，门票交通玩法路线", "dy": "", "py": "B"}, {"n": "世界之窗 & 锦绣中华", "u": "https://worldstip.com/map/worldwindow/index.html", "d": "世界之窗看全球 130+ 微缩地标、锦绣中华看中国名胜与 56 民族村寨，二园分布与特色、联…", "dy": "", "py": "S"}]
+};
+const META = {"华北": {"tag": "华北", "full": "华北 · 京津冀晋蒙", "grad": "linear-gradient(135deg,#ff6b6b,#ff8e53)", "dot": "#ff6b6b", "hex1": "#ff6b6b", "hex2": "#ff8e53"}, "东北": {"tag": "东北", "full": "东北 · 辽吉黑", "grad": "linear-gradient(135deg,#4facfe,#00c6fb)", "dot": "#4facfe", "hex1": "#4facfe", "hex2": "#00c6fb"}, "华东": {"tag": "华东", "full": "华东 · 沪苏浙皖闽赣鲁", "grad": "linear-gradient(135deg,#43e97b,#38f9d7)", "dot": "#2ccf8a", "hex1": "#2ccf8a", "hex2": "#38f9d7"}, "华中": {"tag": "华中", "full": "华中 · 豫鄂湘", "grad": "linear-gradient(135deg,#fa709a,#fee140)", "dot": "#fa709a", "hex1": "#fa709a", "hex2": "#fee140"}, "华南": {"tag": "华南", "full": "华南 · 粤桂琼", "grad": "linear-gradient(135deg,#ff9a44,#fc6076)", "dot": "#ff8a3d", "hex1": "#ff8a3d", "hex2": "#fc6076"}, "西南": {"tag": "西南", "full": "西南 · 川渝黔滇藏", "grad": "linear-gradient(135deg,#a18cd1,#fbc2eb)", "dot": "#a18cd1", "hex1": "#a18cd1", "hex2": "#fbc2eb"}, "西北": {"tag": "西北", "full": "西北 · 陕甘宁青新", "grad": "linear-gradient(135deg,#f6d365,#fda085)", "dot": "#f6b93b", "hex1": "#f6b93b", "hex2": "#fda085"}, "港澳台海外": {"tag": "港澳台·海外", "full": "港澳台 · 海外", "grad": "linear-gradient(135deg,#36d1dc,#5b86e5)", "dot": "#36d1dc", "hex1": "#36d1dc", "hex2": "#5b86e5"}, "主题乐园": {"tag": "主题乐园", "full": "主题乐园", "grad": "linear-gradient(135deg,#f093fb,#f5576c)", "dot": "#f093fb", "hex1": "#f093fb", "hex2": "#f5576c"}};
+</script>
+<script>
+(function(){
+  "use strict";
+  var regionsBox = document.getElementById("regions");
+  var resultArea = document.getElementById("resultArea");
+  var resultNote = document.getElementById("resultNote");
+  var tabsBox = document.getElementById("tabs");
+  var searchInput = document.getElementById("searchInput");
+  var randomBtn = document.getElementById("randomBtn");
+  var toTop = document.getElementById("toTop");
+  var statStar = document.getElementById("stat-star");
+  var modeBtn = document.getElementById("modeBtn");
+  var alphaRow = document.getElementById("alphaRow");
+
+  var KEY = "ws_fav_v1", MODE_KEY = "ws_mode_v1";
+  var favs = {};
+  try { favs = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch(e){ favs = {}; }
+  var all = [];
+  var idx = 0, curTab = "华北", curAlpha = "";
+
+  /* ---------- 渲染区域卡片 ---------- */
+  Object.keys(DATA).forEach(function(r){
+    var items = DATA[r];
+    items.forEach(function(it){
+      idx += 1;
+      all.push({ r: r, n: it.n, u: it.u, d: it.d, dy: it.dy, py: it.py, idx: idx });
+    });
+    var sec = document.createElement("section");
+    sec.className = "region"; sec.id = "grp-" + r; sec.dataset.region = r;
+    sec.setAttribute("aria-labelledby", "h-" + r);
+    var head = document.createElement("div"); head.className = "region-head";
+    var h2 = document.createElement("h2"); h2.className = "region-title"; h2.id = "h-" + r;
+    var tag = document.createElement("span"); tag.className = "tag"; tag.style.background = META[r].grad; tag.textContent = META[r].full;
+    var cnt = document.createElement("span"); cnt.className = "count"; cnt.innerHTML = "<b>" + items.length + "</b> 篇";
+    h2.appendChild(tag); h2.appendChild(cnt); head.appendChild(h2); sec.appendChild(head);
+    var ul = document.createElement("ul"); ul.className = "cards";
+    items.forEach(function(it){ ul.appendChild(makeCard(it, r)); });
+    sec.appendChild(ul); regionsBox.appendChild(sec);
+  });
+
+  /* ---------- Tab 分页（区域 + 想去） ---------- */
+  Object.keys(DATA).forEach(function(r){
+    var b = document.createElement("button");
+    b.className = "tab-btn"; b.setAttribute("role", "tab"); b.dataset.region = r;
+    b.innerHTML = META[r].tag + ' <span class="n">' + DATA[r].length + "</span>";
+    b.addEventListener("click", function(){ activate(r); });
+    tabsBox.appendChild(b);
+  });
+  var favTab = document.createElement("button");
+  favTab.className = "tab-btn fav-tab"; favTab.id = "favTab"; favTab.setAttribute("role", "tab");
+  favTab.innerHTML = '<span class="star-ic">★</span> 想去 <span class="n" id="favCount">0</span>';
+  favTab.addEventListener("click", function(){ activate("fav"); });
+  tabsBox.appendChild(favTab);
+
+  function activate(r){
+    curTab = r;
+    var btns = tabsBox.querySelectorAll(".tab-btn");
+    btns.forEach(function(b){ b.classList.toggle("active", (b.dataset.region || (b.id === "favTab" ? "fav" : "")) === r); });
+    var secs = regionsBox.querySelectorAll(".region");
+    secs.forEach(function(s){ s.hidden = (s.dataset.region !== r); });
+    resultArea.innerHTML = "";
+    if (r === "fav") {
+      renderFav();
+    } else {
+      resultNote.textContent = "当前栏目：" + META[r].full + " · 共 " + DATA[r].length + " 篇";
+      if (searchInput.value) doSearch(searchInput.value);
+    }
+    applyAlpha();
+  }
+
+  /* ---------- 卡片工厂 ---------- */
+  function shortTag(r){
+    return ({ "华北":"华北", "东北":"东北", "华东":"华东", "华中":"华中", "华南":"华南", "西南":"西南", "西北":"西北", "港澳台海外":"港澳", "主题乐园":"乐园" })[r] || r;
+  }
+  function makeCard(it, r){
+    var li = document.createElement("li");
+    li.className = "card"; li.style.setProperty("--dot", META[r].dot); li.dataset.py = it.py;
+    var a = document.createElement("a"); a.className = "link"; a.href = it.u;
+    var num = document.createElement("span"); num.className = "idx"; num.textContent = shortTag(r); num.setAttribute("aria-hidden", "true");
+    var name = document.createElement("span"); name.textContent = it.n;
+    a.appendChild(num); a.appendChild(name);
+
+    var p = document.createElement("p"); p.className = "desc"; p.textContent = it.d;
+    var tags = document.createElement("div"); tags.className = "tags";
+    var lvl = document.createElement("span"); lvl.className = "lvl"; lvl.textContent = "L3 · 目的地手册";
+    tags.appendChild(lvl);
+    if (it.dy) { var dy = document.createElement("span"); dy.className = "days"; dy.textContent = "约" + it.dy; tags.appendChild(dy); }
+
+    var actions = document.createElement("div"); actions.className = "actions";
+    var star = document.createElement("button");
+    star.className = "ibtn star"; star.setAttribute("aria-label", "标记想去：" + it.n); star.textContent = "☆";
+    if (favs[it.u]) { star.classList.add("on"); star.textContent = "★"; }
+    star.addEventListener("click", function(ev){ ev.preventDefault(); ev.stopPropagation(); toggleFav(it.u, star); });
+    actions.appendChild(star);
+
+    li.appendChild(a); li.appendChild(p); li.appendChild(tags); li.appendChild(actions);
+    return li;
+  }
+
+  function toggleFav(u, star){
+    if (favs[u]) { delete favs[u]; star.classList.remove("on"); star.textContent = "☆"; }
+    else { favs[u] = 1; star.classList.add("on"); star.textContent = "★"; }
+    try { localStorage.setItem(KEY, JSON.stringify(favs)); } catch(e){}
+    refreshFavCount();
+    if (curTab === "fav") renderFav();
+  }
+  function refreshFavCount(){
+    var c = Object.keys(favs).length;
+    statStar.textContent = c;
+    document.getElementById("favCount").textContent = c;
+  }
+
+  /* ---------- 想去清单 Tab ---------- */
+  function renderFav(){
+    var keys = Object.keys(favs);
+    resultArea.innerHTML = "";
+    if (!keys.length) {
+      resultNote.textContent = "还没有想去的目的地 —— 点击卡片右上角 ☆ 收藏";
+      var tip = document.createElement("div"); tip.className = "empty-tip";
+      tip.innerHTML = "想去清单空空的，<strong>点卡片右上角的 ☆</strong> 把心动目的地收进来。";
+      resultArea.appendChild(tip);
+      return;
+    }
+    resultNote.textContent = "想去清单 · 共 " + keys.length + " 篇（点击 ☆ 可取消收藏）";
+    var ul = document.createElement("ul"); ul.className = "cards result-cards";
+    all.forEach(function(it){
+      if (favs[it.u]) {
+        var li = makeCard(it, it.r);
+        var rp = document.createElement("span"); rp.className = "rpoint"; rp.style.setProperty("--dot", META[it.r].dot); rp.setAttribute("aria-hidden", "true");
+        li.appendChild(rp); ul.appendChild(li);
+      }
+    });
+    resultArea.appendChild(ul);
+  }
+
+  /* ---------- 即时搜索（跨区） ---------- */
+  function doSearch(q){
+    q = q.trim().toLowerCase();
+    resultArea.innerHTML = "";
+    if (!q) {
+      if (curTab === "fav") { renderFav(); return; }
+      resultNote.textContent = "当前栏目：" + META[curTab].full + " · 共 " + DATA[curTab].length + " 篇";
+      return;
+    }
+    var hits = all.filter(function(it){
+      return (it.n + it.d + it.r).toLowerCase().indexOf(q) !== -1;
+    });
+    if (!hits.length) { resultNote.textContent = "没有找到匹配「" + q + "」的小册子"; return; }
+    resultNote.textContent = "找到 " + hits.length + " 篇匹配「" + q + "」的小册子（跨全部栏目）";
+    var ul = document.createElement("ul"); ul.className = "cards result-cards";
+    hits.forEach(function(it){
+      var li = makeCard(it, it.r);
+      var rp = document.createElement("span"); rp.className = "rpoint"; rp.style.setProperty("--dot", META[it.r].dot); rp.setAttribute("aria-hidden", "true");
+      li.appendChild(rp); ul.appendChild(li);
+    });
+    resultArea.appendChild(ul);
+  }
+  searchInput.addEventListener("input", function(){ doSearch(this.value); });
+
+  /* ---------- 拼音首字母索引 ---------- */
+  var ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+  var allBtn = document.createElement("button");
+  allBtn.className = "alpha-btn all"; allBtn.textContent = "全部"; allBtn.dataset.a = "";
+  allBtn.addEventListener("click", function(){ setAlpha(""); });
+  alphaRow.appendChild(allBtn);
+  ALPHA.forEach(function(ch){
+    var b = document.createElement("button");
+    b.className = "alpha-btn"; b.textContent = ch; b.dataset.a = ch;
+    b.addEventListener("click", function(){ setAlpha(ch); });
+    alphaRow.appendChild(b);
+  });
+  function setAlpha(a){
+    curAlpha = (curAlpha === a ? "" : a);
+    alphaRow.querySelectorAll(".alpha-btn").forEach(function(b){ b.classList.toggle("on", b.dataset.a === curAlpha); });
+    applyAlpha();
+  }
+  function applyAlpha(){
+    var container = resultArea.querySelector(".cards") || regionsBox.querySelector(".region:not([hidden]) .cards");
+    if (!container) return;
+    var cards = container.querySelectorAll(".card");
+    var show = 0;
+    cards.forEach(function(c){
+      var ok = !curAlpha || (c.dataset.py || "") === curAlpha;
+      c.hidden = !ok; if (ok) show++;
+    });
+    if (curAlpha) resultNote.textContent = "首字母 " + curAlpha + " · 当前视图 " + show + " 篇";
+  }
+
+  /* ---------- 随机翻一页 ---------- */
+  randomBtn.addEventListener("click", function(){
+    var it = all[Math.floor(Math.random() * all.length)];
+    window.open(it.u, "_blank");
+  });
+
+  /* ---------- 深色模式 ---------- */
+  function applyMode(dark){
+    document.body.classList.toggle("dark", dark);
+    modeBtn.textContent = dark ? "☀️" : "🌙";
+    modeBtn.setAttribute("aria-label", dark ? "切换到浅色模式" : "切换到深色模式");
+    try { localStorage.setItem(MODE_KEY, dark ? "1" : "0"); } catch(e){}
+  }
+  var savedMode = "0"; try { savedMode = localStorage.getItem(MODE_KEY) || "0"; } catch(e){}
+  applyMode(savedMode === "1");
+  modeBtn.addEventListener("click", function(){ applyMode(!document.body.classList.contains("dark")); });
+
+
+
+  /* ---------- 返回顶部 ---------- */
+  window.addEventListener("scroll", function(){ toTop.classList.toggle("show", window.scrollY > 500); }, {passive:true});
+  toTop.addEventListener("click", function(){ window.scrollTo({top:0, behavior:"smooth"}); });
+
+  /* ---------- 底部热门（随机 5 个，每次刷新变更） ---------- */
+  var hotPool = all.slice();
+  for (var i = hotPool.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = hotPool[i]; hotPool[i] = hotPool[j]; hotPool[j] = t;
+  }
+  hotPool.slice(0, 5).forEach(function(it){
+    var li = document.createElement("li"); var a = document.createElement("a"); a.href = it.u; a.textContent = it.n; li.appendChild(a); hotLinks.appendChild(li);
+  });
+
+  /* ---------- 统计与初始化 ---------- */
+  document.getElementById("stat-dest").textContent = all.length;
+  document.getElementById("stat-region").textContent = Object.keys(DATA).length;
+  refreshFavCount();
+  document.getElementById("year").textContent = new Date().getFullYear();
+  var skip = document.querySelector(".skip");
+  skip.addEventListener("focus", function(){ this.style.left = "0"; });
+  skip.addEventListener("blur", function(){ this.style.left = "-999px"; });
+  activate("华北");
+})();
+</script>
+
+<script>
+var BOOK_CSS = 'body{margin:0;background:#f5efe4;color:#1f2430;font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.65}.page{max-width:760px;margin:0 auto;padding:34px 22px 60px}.paper-head{background:linear-gradient(135deg,#1f2430,#2c3a5e);color:#fff;border-radius:22px;padding:30px 28px;margin-bottom:26px}.ph-kicker{font-size:12px;letter-spacing:2px;color:#ffd479;font-weight:700}.paper-head h1{margin:8px 0 4px;font-size:32px;line-height:1.2}.ph-sub{margin:0;color:#c9d4ea;font-size:14px}.ph-meta{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:13px;color:#e8ecf4}.ph-dests{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.ph-dest{font-size:12.5px;font-weight:700;padding:4px 12px;border-radius:999px;background:#fff;border:2px solid #2ccf8a;color:#0f6a5a}.paper-sec h2{margin:30px 0 12px;font-size:20px;padding-left:12px;border-left:6px solid #ff6b6b}.paper-day{background:#fff;border:1px solid #e9e2d6;border-radius:16px;padding:16px 18px;margin-bottom:14px;box-shadow:0 2px 8px rgba(31,36,48,.06)}.pd-head{display:flex;align-items:center;gap:12px;margin-bottom:8px}.pd-num{font-size:12px;font-weight:800;color:#fff;background:linear-gradient(135deg,#ff6b6b,#ff8e53);border-radius:8px;padding:4px 10px}.pd-head h3{margin:0;font-size:18px}.pd-row{display:grid;grid-template-columns:52px 1fr;gap:10px;padding:7px 0;border-top:1px dashed #eee;font-size:14px}.pd-row b{color:#ff6b6b}.pd-row p{margin:0}.paper-food table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;border:1px solid #e9e2d6}.paper-food th{background:#1f2430;color:#fff;padding:10px;font-size:13px;text-align:left}.paper-food td{padding:9px 10px;font-size:13.5px;border-top:1px solid #eee}.paper-info{background:#fff;border:1px solid #e9e2d6;border-radius:16px;padding:16px 18px}.pi{margin-bottom:12px;font-size:14px}.pi:last-child{margin-bottom:0}.pi b{display:inline-block;color:#fff;background:#2ccf8a;border-radius:6px;padding:1px 8px;font-size:12px;margin-right:8px}.pi p{margin:6px 0 0}.paper-foot{margin-top:34px;text-align:center;color:#8d9ab8;font-size:12px}@media print{body{background:#fff}.paper-day,.paper-info,.paper-food table{box-shadow:none;break-inside:avoid}}@media (max-width:640px){.pd-row{grid-template-columns:1fr}.page{padding:18px 12px}}';
+</script>
+
+<script>
+(function(){
+  "use strict";
+  /* ============ 路书制作 ============ */
+  var main = document.getElementById("main");
+  var bookView = document.getElementById("bookView");
+  var goBookBtn = document.getElementById("goBookBtn");
+  var backNavBtn = document.getElementById("backNavBtn");
+  var fTitle=document.getElementById("fTitle"), fSub=document.getElementById("fSub"),
+      fStart=document.getElementById("fStart"), fEnd=document.getElementById("fEnd");
+  var destInput=document.getElementById("destInput"), destHits=document.getElementById("destHits"),
+      destChips=document.getElementById("destChips");
+  var daysWrap=document.getElementById("daysWrap"), addDayBtn=document.getElementById("addDayBtn");
+  var foodWrap=document.getElementById("foodWrap"), addFoodBtn=document.getElementById("addFoodBtn");
+  var fTraffic=document.getElementById("fTraffic"), fPack=document.getElementById("fPack"),
+      fBudget=document.getElementById("fBudget"), fNotes=document.getElementById("fNotes"),
+      packChips=document.getElementById("packChips");
+  var previewBox=document.getElementById("previewBox");
+  var saveDraftBtn=document.getElementById("saveDraftBtn"), exportBtn=document.getElementById("exportBtn"),
+      printBtn=document.getElementById("printBtn"), draftsBox=document.getElementById("draftsBox");
+
+  var all = [], idx = 0;
+  Object.keys(DATA).forEach(function(r){
+    DATA[r].forEach(function(it){ idx++; all.push({r:r,n:it.n,u:it.u,d:it.d}); });
+  });
+  var M = META;
+  function shortTag(r){ return ({ "华北":"华北", "东北":"东北", "华东":"华东", "华中":"华中", "华南":"华南", "西南":"西南", "西北":"西北", "港澳台海外":"港澳", "主题乐园":"乐园" })[r] || r; }
+
+  var dests = [], packs = [];
+
+  /* ---------- 视图切换 ---------- */
+  function showBook(){ main.hidden=true; bookView.hidden=false; window.scrollTo({top:0,behavior:"smooth"}); renderPreview(); }
+  function showNav(){ main.hidden=false; bookView.hidden=true; window.scrollTo({top:0,behavior:"smooth"}); }
+  goBookBtn.addEventListener("click", showBook);
+  backNavBtn.addEventListener("click", showNav);
+
+  /* ---------- 目的地搜索 ---------- */
+  destInput.addEventListener("input", function(){
+    var q=this.value.trim().toLowerCase(); destHits.innerHTML="";
+    if(!q){ return; }
+    var hits=all.filter(function(it){ return (it.n+it.d).toLowerCase().indexOf(q)!==-1; }).slice(0,8);
+    hits.forEach(function(it){
+      var b=document.createElement("button"); b.className="dest-hit"; b.type="button";
+      b.innerHTML='<span class="dh-tag" style="background:'+M[it.r].dot+'">'+shortTag(it.r)+'</span>'+it.n;
+      b.addEventListener("click",function(){
+        if(!dests.some(function(x){return x.u===it.u;})){ dests.push({n:it.n,u:it.u,r:it.r}); }
+        destInput.value=""; destHits.innerHTML=""; renderDests(); renderPreview();
+      });
+      destHits.appendChild(b);
+    });
+  });
+  function renderDests(){
+    destChips.innerHTML="";
+    dests.forEach(function(it,i){
+      var c=document.createElement("span"); c.className="dchip";
+      c.style.borderColor=M[it.r].dot; c.style.color=M[it.r].dot;
+      c.innerHTML=it.n+'<button class="dchip-x" type="button" aria-label="移除">×</button>';
+      c.querySelector(".dchip-x").addEventListener("click",function(){ dests.splice(i,1); renderDests(); renderPreview(); });
+      destChips.appendChild(c);
+    });
+  }
+
+  /* ---------- 天数自动同步 ---------- */
+  function dayCount(){
+    if(fStart.value && fEnd.value && fEnd.value>=fStart.value){
+      var d=(new Date(fEnd.value)-new Date(fStart.value))/86400000+1;
+      return Math.min(15, Math.max(1, Math.round(d)));
+    }
+    return 0;
+  }
+  function syncDays(){
+    var n=dayCount(); if(n<=0) return;
+    var cur=daysWrap.querySelectorAll(".day-card").length;
+    if(n>cur){ for(var i=cur;i<n;i++){ addDay(i); } }
+    else if(n<cur){ var cards=daysWrap.querySelectorAll(".day-card"); for(var i=cur-1;i>=n;i--){ cards[i].remove(); } renderPreview(); }
+  }
+  function addDay(i){
+    var card=document.createElement("div"); card.className="day-card";
+    var num=i+1;
+    card.innerHTML=
+      '<div class="day-head"><span class="day-num">D'+num+'</span>'+
+      '<input class="day-title" type="text" placeholder="Day '+num+' 主题，如：落地开吃">'+
+      '<button class="day-del" type="button" aria-label="删除这天">×</button></div>'+
+      '<div class="day-fields">'+
+      '<label><span>上午</span><textarea class="day-am" placeholder="安排..."></textarea></label>'+
+      '<label><span>下午</span><textarea class="day-pm" placeholder="安排..."></textarea></label>'+
+      '<label><span>晚上</span><textarea class="day-eve" placeholder="安排..."></textarea></label>'+
+      '</div>';
+    card.querySelector(".day-del").addEventListener("click",function(){
+      if(daysWrap.querySelectorAll(".day-card").length<=1){ alert("至少保留一天"); return; }
+      card.remove(); renderPreview();
+    });
+    card.querySelectorAll(".day-title,.day-am,.day-pm,.day-eve").forEach(function(el){ el.addEventListener("input", renderPreview); });
+    daysWrap.appendChild(card);
+    renderPreview();
+  }
+  addDayBtn.addEventListener("click",function(){ addDay(daysWrap.querySelectorAll(".day-card").length); });
+  fStart.addEventListener("change", syncDays);
+  fEnd.addEventListener("change", syncDays);
+
+  /* ---------- 美食 ---------- */
+  function addFood(){
+    var row=document.createElement("div"); row.className="food-row";
+    row.innerHTML='<input type="text" class="f-name" placeholder="店名"><input type="text" class="f-rec" placeholder="推荐菜"><input type="text" class="f-price" placeholder="人均"><button class="food-del" type="button" aria-label="删除">×</button>';
+    row.querySelector(".food-del").addEventListener("click",function(){ row.remove(); renderPreview(); });
+    row.querySelectorAll("input").forEach(function(inp){ inp.addEventListener("input", renderPreview); });
+    foodWrap.appendChild(row); renderPreview();
+  }
+  addFoodBtn.addEventListener("click", addFood);
+
+  /* ---------- 必带清单 ---------- */
+  fPack.addEventListener("keydown",function(e){
+    if(e.key==="Enter"){
+      e.preventDefault();
+      var v=this.value.trim(); if(!v) return;
+      packs.push(v); this.value=""; renderPacks(); renderPreview();
+    }
+  });
+  function renderPacks(){
+    packChips.innerHTML="";
+    packs.forEach(function(p,i){
+      var c=document.createElement("span"); c.className="dchip pack-chip"; c.style.borderColor="var(--focus)"; c.style.color="var(--focus)";
+      c.textContent=p;
+      c.addEventListener("click",function(){ packs.splice(i,1); renderPacks(); renderPreview(); });
+      packChips.appendChild(c);
+    });
+  }
+
+  /* ---------- 实时预览 ---------- */
+  function esc(s){ return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+  function nl(s){ return esc(s).replace(/\n/g,"<br>"); }
+  function renderPreview(){
+    var html="";
+    var title=fTitle.value||"我的旅行路书";
+    var sub=fSub.value||"WorldStip · 旅行小册子";
+    var range="";
+    if(fStart.value&&fEnd.value){ range=fStart.value+" ~ "+fEnd.value; } else if(fStart.value){ range=fStart.value; }
+    var dc=dayCount();
+    html+='<div class="paper-head"><div class="ph-kicker">WorldStip · 路书</div><h1>'+esc(title)+'</h1><p class="ph-sub">'+esc(sub)+'</p><div class="ph-meta">';
+    if(range){ html+='<span>📅 '+esc(range)+'</span>'; }
+    if(dc){ html+='<span>🗓 '+dc+' 天</span>'; }
+    html+='</div><div class="ph-dests">';
+    dests.forEach(function(d){ html+='<span class="ph-dest" style="border-color:'+M[d.r].dot+';color:'+M[d.r].dot+'">'+esc(d.n)+'</span>'; });
+    html+='</div></div>';
+    var cards=daysWrap.querySelectorAll(".day-card");
+    var dayUsed=false;
+    cards.forEach(function(card,idx2){
+      var t=card.querySelector(".day-title").value, am=card.querySelector(".day-am").value, pm=card.querySelector(".day-pm").value, eve=card.querySelector(".day-eve").value;
+      if(!t&&!am&&!pm&&!eve) return;
+      if(!dayUsed){ html+='<div class="paper-sec"><h2>每日行程</h2></div>'; dayUsed=true; }
+      html+='<div class="paper-day"><div class="pd-head"><span class="pd-num">D'+(idx2+1)+'</span><h3>'+esc(t)+'</h3></div>';
+      [["上午",am],["下午",pm],["晚上",eve]].forEach(function(pair){
+        if(pair[1]) html+='<div class="pd-row"><b>'+pair[0]+'</b><p>'+nl(pair[1])+'</p></div>';
+      });
+      html+='</div>';
+    });
+    var fdata=[];
+    foodWrap.querySelectorAll(".food-row").forEach(function(row){
+      var nm=row.querySelector(".f-name").value, rec=row.querySelector(".f-rec").value, pr=row.querySelector(".f-price").value;
+      if(nm||rec||pr) fdata.push([nm,rec,pr]);
+    });
+    if(fdata.length){
+      html+='<div class="paper-sec"><h2>美食清单</h2></div><div class="paper-food"><table><thead><tr><th>店名</th><th>推荐菜</th><th>人均</th></tr></thead><tbody>';
+      fdata.forEach(function(f){ html+='<tr><td>'+esc(f[0])+'</td><td>'+esc(f[1])+'</td><td>'+esc(f[2])+'</td></tr>'; });
+      html+='</tbody></table></div>';
+    }
+    var traffic=fTraffic.value, budget=fBudget.value, notes=fNotes.value;
+    if(traffic||packs.length||budget||notes){
+      html+='<div class="paper-sec"><h2>实用信息</h2></div><div class="paper-info">';
+      if(traffic) html+='<div class="pi"><b>交通</b><p>'+nl(traffic)+'</p></div>';
+      if(packs.length){ html+='<div class="pi"><b>必带</b><div class="ph-dests">'; packs.forEach(function(p){ html+='<span class="ph-dest">'+esc(p)+'</span>'; }); html+='</div></div>'; }
+      if(budget) html+='<div class="pi"><b>预算</b><p>'+esc(budget)+'</p></div>';
+      if(notes) html+='<div class="pi"><b>注意</b><p>'+nl(notes)+'</p></div>';
+      html+='</div>';
+    }
+    html+='<div class="paper-foot">WorldStip · 旅行小册子 | 联系 QQ：1114008 / dengting@qq.com</div>';
+    previewBox.innerHTML=html;
+  }
+  [fTitle,fSub,fTraffic,fBudget,fNotes].forEach(function(inp){ inp.addEventListener("input", renderPreview); });
+
+  /* ---------- 收集数据 / 导出 ---------- */
+  function collectData(){
+    var foods=[]; foodWrap.querySelectorAll(".food-row").forEach(function(row){
+      var nm=row.querySelector(".f-name").value,rec=row.querySelector(".f-rec").value,pr=row.querySelector(".f-price").value;
+      if(nm||rec||pr) foods.push({n:nm,r:rec,p:pr});
+    });
+    var days=[]; daysWrap.querySelectorAll(".day-card").forEach(function(card){
+      days.push({t:card.querySelector(".day-title").value,am:card.querySelector(".day-am").value,pm:card.querySelector(".day-pm").value,eve:card.querySelector(".day-eve").value});
+    });
+    return {title:fTitle.value,sub:fSub.value,start:fStart.value,end:fEnd.value,dests:dests.slice(),days:days,foods:foods,traffic:fTraffic.value,pack:packs.slice(),budget:fBudget.value,notes:fNotes.value};
+  }
+  exportBtn.addEventListener("click",function(){
+    var d=collectData();
+    var html=buildBookHtml(d);
+    var blob=new Blob(["\ufeff"+html],{type:"text/html;charset=utf-8"});
+    var a=document.createElement("a"); a.href=URL.createObjectURL(blob);
+    a.download=(d.title||"我的路书")+".html"; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); }, 2000);
+  });
+  function buildBookHtml(d){
+    var daysHtml="",foodHtml="",infoHtml="",range="";
+    var dc=0;
+    if(d.start&&d.end&&d.end>=d.start){ dc=Math.min(15,Math.max(1,Math.round((new Date(d.end)-new Date(d.start))/86400000+1))); }
+    if(d.start) range=d.start; if(d.end) range+=" ~ "+d.end;
+    var dayUsed=false;
+    d.days.forEach(function(day,idx2){
+      if(!day.t&&!day.am&&!day.pm&&!day.eve) return;
+      if(!dayUsed){ daysHtml+='<div class="paper-sec"><h2>每日行程</h2></div>'; dayUsed=true; }
+      var rows="";
+      [["上午",day.am],["下午",day.pm],["晚上",day.eve]].forEach(function(p){ if(p[1]) rows+='<div class="pd-row"><b>'+p[0]+'</b><p>'+nl(p[1])+'</p></div>'; });
+      daysHtml+='<div class="paper-day"><div class="pd-head"><span class="pd-num">D'+(idx2+1)+'</span><h3>'+esc(day.t)+'</h3></div>'+rows+'</div>';
+    });
+    if(d.foods.length){
+      var tr=""; d.foods.forEach(function(f){ tr+='<tr><td>'+esc(f.n)+'</td><td>'+esc(f.r)+'</td><td>'+esc(f.p)+'</td></tr>'; });
+      foodHtml='<div class="paper-sec"><h2>美食清单</h2></div><div class="paper-food"><table><thead><tr><th>店名</th><th>推荐菜</th><th>人均</th></tr></thead><tbody>'+tr+'</tbody></table></div>';
+    }
+    if(d.traffic||d.pack.length||d.budget||d.notes){
+      infoHtml='<div class="paper-sec"><h2>实用信息</h2></div><div class="paper-info">';
+      if(d.traffic) infoHtml+='<div class="pi"><b>交通</b><p>'+nl(d.traffic)+'</p></div>';
+      if(d.pack.length){ infoHtml+='<div class="pi"><b>必带</b><div class="ph-dests">'; d.pack.forEach(function(p){ infoHtml+='<span class="ph-dest">'+esc(p)+'</span>'; }); infoHtml+='</div></div>'; }
+      if(d.budget) infoHtml+='<div class="pi"><b>预算</b><p>'+esc(d.budget)+'</p></div>';
+      if(d.notes) infoHtml+='<div class="pi"><b>注意</b><p>'+nl(d.notes)+'</p></div>';
+      infoHtml+='</div>';
+    }
+    var destsHtml=""; d.dests.forEach(function(dd){ destsHtml+='<span class="ph-dest">'+esc(dd.n)+'</span>'; });
+    return '<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(d.title||"我的旅行路书")+'</title><style>'+BOOK_CSS+'</style></head><body><div class="page"><div class="paper-head"><div class="ph-kicker">WorldStip · 路书</div><h1>'+esc(d.title||"我的旅行路书")+'</h1><p class="ph-sub">'+esc(d.sub)+'</p><div class="ph-meta">'+(range?'<span>📅 '+esc(range)+'</span>':'')+(dc?'<span>🗓 '+dc+' 天</span>':'')+'</div><div class="ph-dests">'+destsHtml+'</div></div>'+daysHtml+foodHtml+infoHtml+'<div class="paper-foot">WorldStip · 旅行小册子 | 联系 QQ：1114008 / dengting@qq.com</div></div></body></html>';
+  }
+
+  /* ---------- 草稿 ---------- */
+  var DKEY="ws_books_v1";
+  function loadDrafts(){ try{ return JSON.parse(localStorage.getItem(DKEY)||"[]"); }catch(e){ return []; } }
+  function saveDrafts(list){ try{ localStorage.setItem(DKEY,JSON.stringify(list)); }catch(e){} }
+  function renderDrafts(){
+    var list=loadDrafts();
+    draftsBox.innerHTML="";
+    if(!list.length){ draftsBox.innerHTML='<div class="draft-note">暂无草稿 —— 编辑后点「保存草稿」，下次打开可继续。</div>'; return; }
+    list.forEach(function(d,i){
+      var card=document.createElement("div"); card.className="draft-card";
+      card.innerHTML='<b>'+esc(d.title||"未命名路书")+'</b><span>'+esc(d.savedAt)+' · '+d.days.length+' 天</span><div><button class="mini-btn" type="button" data-act="load">载入</button><button class="mini-btn danger" type="button" data-act="del">删除</button></div>';
+      card.querySelector('[data-act="load"]').addEventListener("click",function(){ loadDraft(list,i); });
+      card.querySelector('[data-act="del"]').addEventListener("click",function(){ list.splice(i,1); saveDrafts(list); renderDrafts(); });
+      draftsBox.appendChild(card);
+    });
+  }
+  function fillForm(d){
+    fTitle.value=d.title||""; fSub.value=d.sub||""; fStart.value=d.start||""; fEnd.value=d.end||"";
+    dests=(d.dests||[]).slice(); renderDests();
+    packs=(d.pack||[]).slice(); renderPacks();
+    fTraffic.value=d.traffic||""; fBudget.value=d.budget||""; fNotes.value=d.notes||"";
+    daysWrap.innerHTML="";
+    if((d.days||[]).length){ d.days.forEach(function(day,idx2){ addDay(idx2); var card=daysWrap.querySelectorAll(".day-card")[idx2]; card.querySelector(".day-title").value=day.t||""; card.querySelector(".day-am").value=day.am||""; card.querySelector(".day-pm").value=day.pm||""; card.querySelector(".day-eve").value=day.eve||""; }); }
+    else { addDay(0); }
+    foodWrap.innerHTML="";
+    if((d.foods||[]).length){ d.foods.forEach(function(f){ addFood(); var rows=foodWrap.querySelectorAll(".food-row"); var row=rows[rows.length-1]; row.querySelector(".f-name").value=f.n||""; row.querySelector(".f-rec").value=f.r||""; row.querySelector(".f-price").value=f.p||""; }); }
+    else { addFood(); }
+    renderPreview();
+  }
+  function loadDraft(list,i){ fillForm(list[i]); showBook(); }
+  saveDraftBtn.addEventListener("click",function(){
+    var d=collectData();
+    var list=loadDrafts();
+    d.savedAt=new Date().toLocaleString("zh-CN",{hour12:false});
+    d.id=Date.now();
+    list.unshift(d); if(list.length>20) list.pop();
+    saveDrafts(list); renderDrafts();
+    alert("草稿已保存");
+  });
+  renderDrafts();
+
+  /* ---------- 打印 ---------- */
+  printBtn.addEventListener("click",function(){ window.print(); });
+
+  /* ---------- 初始化 ---------- */
+  addDay(0); addDay(1); addDay(2);
+  addFood();
+  renderPreview();
+})();
+</script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+<a class="aitab" href="https://www.qianwenai.com/hub/skills/@user_gc9bq/worldstip-travel-planner" title="AI 旅行规划师 · 千问技能 · 帮你定制专属行程" aria-label="AI 旅行规划师 · 千问技能" target="_blank" rel="noopener noreferrer">
+  <span class="ai-top"><span class="ai-brand">TRAVEL PLANNER</span><span class="ai-mark">AI<span class="spark">&#9733;</span></span></span>
+  <span class="ai-gold">
+    <span class="ai-bar">AI 规划</span>
+    <span class="ai-full"><span class="g1">AI 旅行规划大师</span><span class="g2">千问技能 · 帮你定制行程</span></span>
+  </span>
+</a>
+
+</body>
+</html>

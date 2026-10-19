@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G348三峡公路 · 宜昌最美江上公路（免费自驾画廊）</title>
+<meta name="description" content="G348三峡公路（G348三峡旅游公路）：湖北宜昌沿西陵峡江岸的39.6公里免费风景廊道，紧贴葛洲坝与三峡大坝之间，串联三峡大坝、西陵峡、三峡人家，沿线9个观景台，自驾/包车"陆上游三峡"的最佳打开方式。含靠近哪里玩顺路推荐、自驾与包车怎么去、观景台打卡清单。">
+<meta name="keywords" content="G348三峡公路,G348三峡旅游公路,宜昌自驾,宜昌最美公路,西陵峡自驾,三峡人家,三峡大坝,宜昌观景台,陆上游三峡,宜昌包车">
+<style>
+:root{
+  --ink:#16202b; --mut:#65737e; --line:#dde5e9; --bg:#f7faf9;
+  --tc1:#1f7a62; --tc2:#3f9a7a; --tc-strong:#155c48; --tc-soft:#e2f1eb;
+  --sand:#c9a46a; --sand-soft:#f4ecdb; --amber:#b97a12; --red:#c0392b;
+  --paper:#ffffff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg);line-height:1.75}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+/* hero */
+.hero{background:linear-gradient(140deg,#123f36,#1f7a62 50%,#2f9a7a);color:#fff;padding:46px 0 42px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-70px;top:-40px;width:300px;height:300px;background:radial-gradient(circle,rgba(255,255,255,.16),transparent 70%)}
+.hero .kicker{letter-spacing:.32em;font-size:12px;opacity:.85}
+.hero h1{font-size:32px;line-height:1.25;margin:8px 0 6px}
+.hero p{font-size:15px;opacity:.95;max-width:720px}
+.hero .badge{display:inline-block;margin-top:14px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:4px 14px;border-radius:20px;font-size:13px;margin-right:8px}
+/* section head */
+.sec{margin:36px 0 14px;display:flex;align-items:center;gap:12px}
+.sec .no{width:34px;height:34px;border-radius:9px;background:var(--tc1);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;flex:none}
+.sec h2{font-size:22px}
+.sec .sub{color:var(--mut);font-size:13px;margin-top:2px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;margin:14px 0;box-shadow:0 2px 10px rgba(30,60,50,.05)}
+.card h3{font-size:17px;margin-bottom:8px;color:var(--tc-strong)}
+.card .lead{color:var(--mut);font-size:13px;margin-bottom:14px}
+/* stat quickfacts */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:6px}
+.fact{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 16px;border-top:3px solid var(--tc1)}
+.fact b{display:block;font-size:20px;color:var(--tc-strong);line-height:1.2}
+.fact span{font-size:12px;color:var(--mut)}
+/* hero image banner */
+.banner{border-radius:16px;overflow:hidden;margin:0 0 6px;position:relative}
+.banner img{width:100%;max-height:360px;object-fit:cover;display:block}
+.banner .cap{position:absolute;left:14px;bottom:12px;color:#fff;font-size:12.5px;background:rgba(0,0,0,.4);padding:4px 11px;border-radius:8px}
+/* near-by */
+.places{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
+.place{background:var(--tc-soft);border-radius:13px;padding:13px 15px;border:1px solid #cde7dd}
+.place b{display:block;color:var(--tc-strong);font-size:15px;margin-bottom:2px}
+.place p{font-size:12.5px;color:var(--ink)}
+.place .km{display:inline-block;margin-top:7px;font-size:11.5px;background:#fff;color:var(--tc-strong);border-radius:6px;padding:2px 8px}
+/* viewpoints */
+.spots{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
+.spots figure{overflow:hidden;border-radius:13px;background:var(--section,#f1f5f3);border:1px solid var(--line)}
+.spots img{width:100%;height:132px;object-fit:cover;display:block}
+.spots figcaption{padding:8px 10px;font-size:12px;background:#fff}
+.spots figcaption b{display:block;font-size:13px;color:var(--ink)}
+/* way / transport */
+.ways{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.way{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;border-left:4px solid var(--tc1)}
+.way.alt{border-left-color:var(--sand)}
+.way h4{font-size:15px;margin-bottom:6px;color:var(--tc-strong)}
+.way.alt h4{color:#8a6a33}
+.way p{font-size:13px;color:var(--mut)}
+.way .tip{display:block;margin-top:8px;font-size:12px;background:var(--sand-soft);padding:6px 10px;border-radius:8px;color:#8a6a33}
+/* day */
+.day{display:flex;gap:16px;border-left:2px solid var(--line);margin:6px 0 0;padding:0 0 20px 20px;position:relative}
+.day::before{content:"";position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--sand);border:2px solid var(--paper)}
+.day .dl{font-weight:700;color:var(--tc-strong);flex:none;width:100px;font-size:15px}
+.day .dc p{margin:2px 0 8px;font-size:14px}
+.tag{display:inline-block;background:var(--tc-soft);color:var(--tc-strong);border-radius:6px;padding:0 7px;font-size:12px;margin:0 4px 4px 0}
+/* tips */
+.tips{background:var(--sand-soft);border:1px solid #e2cfae;border-radius:14px;padding:16px 18px;margin:16px 0;font-size:13.5px}
+.tips h3{color:#8a6a33;font-size:15px;margin-bottom:8px}
+.tips li{margin-left:18px;margin-bottom:4px}
+.foodlist{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
+.foodlist div{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:13.5px}
+.foodlist div b{display:block;color:var(--tc-strong);font-size:14.5px;margin-bottom:2px}
+footer{margin:40px 0 24px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:12.5px;text-align:center;line-height:1.9}
+@media(max-width:760px){.facts,.places,.spots,.foodlist{grid-template-columns:1fr 1fr}.ways{grid-template-columns:1fr}.hero h1{font-size:26px}}
+@media(max-width:520px){.facts{grid-template-columns:1fr 1fr}.day .dl{width:74px}}
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/g348/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="G348三峡公路 · 宜昌最美江上公路（免费自驾画廊）">
+    <meta property="og:description" content="G348三峡公路（G348三峡旅游公路）：湖北宜昌沿西陵峡江岸的39.6公里免费风景廊道，紧贴葛洲坝与三峡大坝之间，串联三峡大坝、西陵峡、三峡人家，沿线9个观景台，自驾/包车">
+    <meta property="og:url" content="https://worldstip.com/map/g348/">
+    <meta property="og:image" content="https://worldstip.com/map/g348/assets/g348-cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="G348三峡公路 · 宜昌最美江上公路（免费自驾画廊）">
+    <meta name="twitter:description" content="G348三峡公路（G348三峡旅游公路）：湖北宜昌沿西陵峡江岸的39.6公里免费风景廊道，紧贴葛洲坝与三峡大坝之间，串联三峡大坝、西陵峡、三峡人家，沿线9个观景台，自驾/包车">
+    <meta name="twitter:image" content="https://worldstip.com/map/g348/assets/g348-cover.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "G348三峡公路 · 宜昌最美江上公路（免费自驾画廊）",
+      "url": "https://worldstip.com/map/g348/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/g348/",
+  "name": "G348三峡公路 · 宜昌最美江上公路（免费自驾画廊）",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">HUBEI · YICHANG</div>
+    <h1>G348 三峡公路 · 宜昌最美江上公路</h1>
+    <p>紧贴西陵峡江岸蜿蜒的 39.6 公里免费风景廊道，位于葛洲坝与三峡大坝之间，是"陆上游三峡"的沿江自驾画廊——车停江边，吹风看峡谷，一路不花钱。</p>
+    <span class="badge">全程免费 · 免门票</span>
+    <span class="badge">入选交通运输部"交旅融合典型案例"</span>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="banner">
+    <picture>
+<source srcset="assets/g348-cover.webp" type="image/webp">
+<img src="assets/g348-cover.jpg" alt="G348三峡公路 西陵峡沿江画廊">
+</picture>
+    <span class="cap">G348 三峡公路 · 沿西陵峡江岸蜿蜒</span>
+  </div>
+
+  <!-- 关键档案 -->
+  <div class="sec"><div class="no">①</div><div><h2>G348 是什么 &amp; 关键档案</h2><div class="sub">先弄清楚这条路到底值不值得专门跑</div></div></div>
+  <div class="facts">
+    <div class="fact"><b>39.6 km</b><span>全程长度，免费开放</span></div>
+    <div class="fact"><b>9 个</b><span>观景台 / 服务区，约每5公里1个</span></div>
+    <div class="fact"><b>0 元</b><span>不收门票、不收费</span></div>
+    <div class="fact"><b>4A→5A</b><span>对应西陵峡 / 三峡人家景区</span></div>
+  </div>
+  <div class="card">
+    <h3>一句话读懂它</h3>
+    <p class="lead">G348 三峡公路（官方名 G348 三峡旅游公路）是宜昌"陆上游三峡"的招牌路段。它不走隧道、不钻山，而是**贴着西陵峡江岸**一路铺开，把过往只能坐船看的三峡江景，变成了开车就能看。路线位于**葛洲坝与三峡大坝之间**，串起三峡大坝、西陵峡、三峡人家，属于"过路即风景"的沿江景观公路。</p>
+    <p class="lead">它的"咖位"：入选交通运输部**第一批"交通运输与旅游融合发展典型案例"**，被自驾圈拿来和新疆独库公路相提并论，社交平台（自驾、露营、机车圈）热度很高，属"此生必走一次"那类美丽公路。</p>
+    <p class="lead">沿线设有 <b>听风谷、山外山、明月台、西陵峡0.618、莲沱畔</b> 等 9 个观景台/服务区，平均每 5 公里一个停靠点。开到哪儿都方便停车，站到江边看峡谷、吹江风、拍公路大片。</p>
+  </div>
+
+  <!-- 靠近哪里玩顺路去 -->
+  <div class="sec"><div class="no">②</div><div><h2>靠近哪里玩，适合顺路去</h2><div class="sub">别为这条路专程飞一趟——它和这些著名景点在一条线上</div></div></div>
+  <p class="lead">G348 本身就在三峡核心游览带里，**最适合"玩三峡顺便开一段"**。以下景点与它同处西陵峡两岸 / 沿线，可组合成一天到两天的自驾串线：</p>
+  <div class="places">
+    <div class="place"><b>三峡人家</b><p>就在 G348 沿线，峡江吊脚楼、土家民俗实景演出，"三峡最美人家景"。<span class="km">公路直达 · 沿线</span></p></div>
+    <div class="place"><b>三峡大坝 / 坛子岭</b><p>五A级，看大国重器、泄洪壮景。G348 江对岸或经摆渡可达，需提前预约。<span class="km">公路沿途可眺望</span></p></div>
+    <div class="place"><b>西陵峡（西陵峡口）</b><p>三峡中最美的峡谷段，来鳩堆、兵书宝剑峡都在沿线，徒步 / 观景皆宜。<span class="km">公路主体所在</span></p></div>
+    <div class="place"><b>宜昌市区（葛洲坝）</b><p>从宜昌市区出发即可上公路，葛洲坝船闸观景台是沿线起点之一。<span class="km">30-60分钟车程</span></p></div>
+    <div class="place"><b>三峡人家码头 / 客运</b><p>如计划"坐船游三峡"，可自驾一段 G348 后在码头换乘游轮，水陆结合。<span class="km">可与游船衔接</span></p></div>
+    <div class="place"><b>屈原故里·秭归</b><p>紧邻三峡大坝上游，屈原故里景区，与 G348 一江之隔，可组合游览。<span class="km">一江之隔</span></p></div>
+  </div>
+  <div class="tips">
+    <h3>💡 推荐组合</h3>
+    <li><b>一日自驾线：</b>宜昌市区 → G348 景观公路（听风谷→山外山→明月台→西陵峡0.618→莲沱畔）→ 三峡人家 → 返回市区。</li>
+    <li><b>两日深度线：</b>Day1 市区 → G348 → 三峡人家/西陵峡 → 宿 G348 沿线（莲沱、乐天溪一带）；Day2 三峡大坝景区 → 屈原故里/秭归 → 返程。</li>
+  </div>
+
+  <!-- 怎么去 -->
+  <div class="sec"><div class="no">③</div><div><h2>怎么去：自驾 / 包车，怎么选</h2><div class="sub">这是本页最想提醒你的部分</div></div></div>
+  <div class="ways">
+    <div class="way">
+      <h4>🚗 自驾（最自由，推荐）</h4>
+      <p><b>导航终点：</b>搜「G348三峡公路」「听风谷」「莲沱」或「西陵峡0.618观景台」任一即可。从宜昌市区（伍家岗/西陵区）出发，走高架或沿江线转 G348，约 30–60 分钟进入景观段。</p>
+      <p><b>适合：</b>会开车、时间自由、想随走随停的人；可自由组合去三峡人家等沿线景点。</p>
+      <p><b>注意：</b>全程为国道/沿江公路，弯道多、临江一侧护栏为主，普通轿车即可，但**雨天、雾天务必慢行**，山路弯多。</p>
+      <span class="tip">🔑 提前在「三峡大坝旅游」「宜昌三峡大坝」等官方渠道预约车辆通行——过坝/进出坝区路段需要预约，未预约可能被拦。</span>
+    </div>
+    <div class="way alt">
+      <h4>🚐 包车 / 租车带司机（省心推荐）</h4>
+      <p><b>适合：</b>不会开车、不想自己开山路、带老人小孩、只想专心看景拍照的人。当地司机熟路况、知道每个观景台的最佳停车点，还能顺路安排三峡人家、大坝行程。</p>
+      <p><b>怎么找：</b>宜昌市区酒店 / 携程·马蜂窝等平台搜「宜昌包车 三峡一日游」；高铁站（宜昌东站）出站口也有正规包车点。</p>
+      <p><b>价格参考：</b>市区出发 G348+三峡人家一日约 ￥500–900/车（视车型、是否含油过路），多人分摊划算。</p>
+      <span class="tip">🔑 环线人多（4~6人）包车性价比最高；人少可拼「三峡一日游」小团，同样走 G348 景观段。</span>
+    </div>
+  </div>
+
+  <!-- 观景台 -->
+  <div class="sec"><div class="no">④</div><div><h2>沿线观景台 · 停车打卡</h2><div class="sub">平均 5 公里一个停靠点，车停江边看峡谷</div></div></div>
+  <div class="spots">
+    <figure><picture>
+<source srcset="assets/g348-view.webp" type="image/webp">
+<img src="assets/g348-view.jpg" alt="G348观景台俯瞰西陵峡" loading="lazy" decoding="async">
+</picture><figcaption><b>沿线观景平台</b><span>听风谷 / 山外山 / 明月台等，扶栏看西陵峡</span></figcaption></figure>
+    <figure><picture>
+<source srcset="assets/g348-dam.webp" type="image/webp">
+<img src="assets/g348-dam.jpg" alt="G348远眺三峡大坝" loading="lazy" decoding="async">
+</picture><figcaption><b>坝区江景</b><span>三峡大坝方向，可眺望大国重器</span></figcaption></figure>
+    <figure><picture>
+<source srcset="assets/g348-0618.webp" type="image/webp">
+<img src="assets/g348-0618.jpg" alt="西陵峡0.618观景台俯瞰公路与江谷" loading="lazy" decoding="async">
+</picture><figcaption><b>西陵峡0.618观景台</b><span>网红打卡点，拍公路+江谷同框</span></figcaption></figure>
+  </div>
+
+  <!-- 小贴士 -->
+  <div class="sec"><div class="no">⑤</div><div><h2>沿路美食 &amp; 避坑提醒</h2></div></div>
+  <div class="foodlist">
+    <div><b>宜昌肥鱼（江团）</b><p>沿线农家乐招牌，清蒸最鲜，沿岸可尝。</p></div>
+    <div><b>萝卜饺子</b><p>宜昌特色小吃，油炸金黄酥脆，观景台附近常有。</p></div>
+    <div><b>凉虾 / 清江鱼</b><p>夏日解暑冰粉状饮品；清江鱼火锅也值得一吃。</p></div>
+  </div>
+  <div class="tips">
+    <h3>⚠️ 避坑提醒</h3>
+    <li><b>大坝要预约：</b>进三峡大坝景区需在官方渠道预约，车辆也要预约通行，别到门口才发现没约。</li>
+    <li><b>雨雾天慎行：</b>沿江弯道多、易起雾，能见度差时别硬开，安全第一。</li>
+    <li><b>停车看地方：</b>只在观景台停车，别在弯道护栏边随意停靠拍照，有安全隐患。</li>
+    <li><b>时间预留：</b>纯开车 G348 约 1–1.5 小时；加上每个观景台停车拍照，建议留 3–4 小时。</li>
+    <li><b>别和独库比强度：</b>独库是翻山越岭，G348 是沿江缓行，新手友好，更适合家庭/休闲。</li>
+  </div>
+
+  <footer>WorldStip · 旅行小册子 · G348三峡公路（宜昌）｜信息供旅行参考，实际以景区当日规定为准<br>建议出行前通过官方渠道确认预约与道路状态</footer>
+
+</div>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>恩施 · 双版组合旅行指南（4天喀斯特 / 5天深度）</title>
+<meta name="description" content="恩施旅行指南：恩施大峡谷、屏山峡谷（仙本那）、土家女儿城、清江画廊、土司城，含自驾/包车/跟团对比、行程、预算、避坑。">
+<meta name="keywords" content="恩施旅游,恩施攻略,恩施大峡谷,屏山峡谷,悬浮船,清江画廊,土家女儿城,土司城">
+<style>
+  :root{
+    --sea:#2f7d38;
+    --sea-deep:#23652c;
+    --sea-soft:#dcf0d9;
+    --sand:#f3f6ee;
+    --sand-line:#dde6d4;
+    --sun:#ea9a2b;
+    --coral:#e07b5a;
+    --leaf:#2f7d32;
+    --ink:#1f3a28;
+    --ink-soft:#5a705e;
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(47,125,56,.32);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(234,154,43,.13), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(47,125,56,.13), transparent 55%),
+      var(--sand);
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--sea-deep)}
+
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--sea) 8%,#1d5a26 55%,var(--sea-deep));
+    padding:40px 36px 34px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-40px;bottom:-60px;width:300px;height:300px;
+    background:radial-gradient(circle, rgba(255,255,255,.16), transparent 62%);
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.92;max-width:640px}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{
+    font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:10px;
+  }
+  .hero .wave{
+    position:absolute;left:0;right:0;bottom:0;height:26px;opacity:.35;
+    background:radial-gradient(110px 26px at 12% 0%, transparent 98%, #cff 99%) ,
+               radial-gradient(110px 26px at 40% 0%, transparent 98%, #cff 99%) ,
+               radial-gradient(110px 26px at 68% 0%, transparent 98%, #cff 99%) ,
+               radial-gradient(110px 26px at 92% 0%, transparent 98%, #cff 99%);
+    background-size:280px 26px;background-repeat:repeat-x;
+  }
+
+  .switch{display:flex;gap:12px;margin:30px 0 6px;flex-wrap:wrap}
+  .switch button{
+    flex:1;min-width:230px;border:2px solid var(--sand-line);
+    background:var(--card);color:var(--ink);cursor:pointer;text-align:left;
+    border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  }
+  .switch button:hover{border-color:var(--sea);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(47,125,56,.4)}
+  .switch button.on{border-color:var(--sea);background:linear-gradient(135deg,#edf8e9,#e6f4e2)}
+  .switch button .t{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800}
+  .switch button .t .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff}
+  .switch button .d{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .b-2d .badge{background:var(--sun)}
+  .b-3d .badge{background:var(--coral)}
+
+  section.panel{margin-top:26px;background:var(--card);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(47,125,56,.08)}
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--sea-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--sea-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--sea-deep);margin-top:20px}
+  .hint b{font-weight:800}
+
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--sea-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;
+    background:var(--sea);border:3px solid var(--sea-soft);box-sizing:content-box;
+  }
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--sea-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--sea-soft);color:var(--sea-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--coral);font-weight:800}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid var(--sand-line);border-radius:14px;padding:14px 16px;background:#fbfdf7;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(47,125,56,.35);box-shadow:0 8px 18px -10px rgba(47,125,56,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--sea-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--sand-line);padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--sea-soft);color:var(--sea-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--coral);font-weight:800;white-space:nowrap}
+
+  .budget{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fbfff9}
+  .budget th,.budget td{padding:10px 14px;text-align:left}
+  .budget thead th{background:var(--sea-deep);color:#fff;font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#f3f9f1}
+  .budget .tot{font-weight:800;color:var(--sea-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--sea-deep)}
+
+  /* 出行方式对比表 */
+  .cmp{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .cmp table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fbfff9}
+  .cmp th,.cmp td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--sand-line)}
+  .cmp thead th{background:var(--sea-deep);color:#fff;font-weight:700}
+  .cmp tbody tr:nth-child(even){background:#f3f9f1}
+  .cmp .hd2{background:var(--sea-soft);color:var(--sea-deep);font-weight:800;border-bottom:1px solid var(--sand-line)}
+  .cmp .good{color:#2f7d32;font-weight:700}
+  .cmp .bad{color:#c0504d;font-weight:700}
+
+  @media print{
+    body{background:#fff}
+    .switch button{display:none}
+    .wrap{max-width:none;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
+    .card,.budget,.cmp{page-break-inside:avoid}
+  }
+  @media (max-width:600px){
+    .hero{padding:30px 22px 26px}
+    .hero h1{font-size:27px}
+    .wrap{padding:18px 14px 48px}
+    section.panel{padding:20px 18px}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/ensi/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="恩施 · 双版组合旅行指南（4天喀斯特 / 5天深度）">
+    <meta property="og:description" content="恩施旅行指南：恩施大峡谷、屏山峡谷（仙本那）、土家女儿城、清江画廊、土司城，含自驾/包车/跟团对比、行程、预算、避坑。">
+    <meta property="og:url" content="https://worldstip.com/map/ensi/">
+    <meta property="og:image" content="https://worldstip.com/assets/images/es_daxiagu.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="恩施 · 双版组合旅行指南（4天喀斯特 / 5天深度）">
+    <meta name="twitter:description" content="恩施旅行指南：恩施大峡谷、屏山峡谷（仙本那）、土家女儿城、清江画廊、土司城，含自驾/包车/跟团对比、行程、预算、避坑。">
+    <meta name="twitter:image" content="https://worldstip.com/assets/images/es_daxiagu.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "恩施 · 双版组合旅行指南（4天喀斯特 / 5天深度）",
+      "url": "https://worldstip.com/map/ensi/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/ensi/",
+  "name": "恩施 · 双版组合旅行指南（4天喀斯特 / 5天深度）",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">🏔️ 恩施 · ENSHI TRAVEL GUIDE</div>
+  <h1>恩施双版组合指南</h1>
+  <p>湖北恩施，世界硒都 + 喀斯特地貌天然博物馆。有<b>震撼的大峡谷绝壁栈道</b>、被誉为「中国仙本那」的<b>屏山峡谷悬浮船</b>、土家族<b>女儿城与土司文化</b>，还有清江画廊的碧水。求稳走 <b>4 天经典版</b>，想玩透走 <b>5 天深度版</b>。1–3 人出行均适用，含行程 / 住宿 / 美食 / 预算 / 交通方式对比。</p>
+  <div class="meta">
+    <span>📍 目的地：恩施（湖北）</span>
+    <span>👥 1–3 人</span>
+    <span>⏱️ 4 天 / 5 天双方案</span>
+    <span>💰 人均预算已附</span>
+  </div>
+  <div class="wave" aria-hidden="true"></div>
+</header>
+
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="b-2d on" role="tab" aria-selected="true" data-plan="plan2" id="tab2">
+    <span class="t"><span class="badge">4天经典</span> 精华版 ✨</span>
+    <div class="d">大峡谷+屏山+女儿城+土司城 / 人均约 1800–2600</div>
+  </button>
+  <button class="b-3d" role="tab" aria-selected="false" data-plan="plan3" id="tab3">
+    <span class="t"><span class="badge">5天深度</span> 玩透版 🌊</span>
+    <div class="d">加清江画廊+宣恩夜景+可选腾龙洞/梭布垭 / 人均约 2500–3500</div>
+  </button>
+</div>
+
+<!-- 4天方案 -->
+<section class="panel" id="plan2" role="tabpanel">
+  <h2><span class="emo">✨</span>4 天经典 · 精华版</h2>
+  <p class="sub">核心策略：D1 女儿城+土司城，D2 恩施大峡谷，D3 屏山（仙本那），D4 返程或收尾。不贪多、体力均衡。</p>
+  <div class="hint">👥 <b>1–3 人适配：</b>恩施景点分散、公私交通时间长，2–3 人 <b>自驾或包车</b>最划算省时；各景区都需换乘。预算按 <b>人均</b> 标注。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 抵达 + 土家文化</div>
+      <div class="seg"><span>✈️/🚄 抵达恩施</span><span>🏯 土司城（九进堂吊脚楼）</span></div>
+      <div class="seg"><span>🌆 傍晚 土家女儿城 + 《赶场相亲》实景剧</span></div>
+      <div class="tip2"><span class="arr">💡</span> 土司城门票约 45 元、看免费民俗歌舞；女儿城免门票，夜景与实景剧是重点。住市区舞阳坝/航空路一带，吃饭去本地餐馆更实惠。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 恩施大峡谷（体力峰值）</div>
+      <div class="seg"><span>🏔️ 上午 云龙地缝</span><span>⛰️ 下午 七星寨（一炷香、绝壁栈道）</span></div>
+      <div class="seg"><span>🚡 索道上山（可选）+ 观光电梯下山</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 门票约 205 元（含景交）；建议早 7 点出发，全程徒步 5–6 小时；体力一般选索道+电梯省劲。自驾到游客中心后需换乘地缆，私家车不能开进核心。</div>
+    </li>
+    <li>
+      <div class="day">DAY 3 · 屏山峡谷（中国仙本那）</div>
+      <div class="seg"><span>🚣 上午 悬浮船 / 一线天游船</span><span>⛰️ 比心崖、翡翠碧水</span></div>
+      <div class="seg"><span>🌆 下午 返回市区或转宣恩</span></div>
+      <div class="tip2"><span class="arr">📷</span> 屏山位于鹤峰，市区出发约 2.5–3 小时；门票+船票约 210 元，悬浮船拍照约 30–80 元/人。晴天才有「果冻蓝」效果，务必提前订票（旺季限流）。</div>
+    </li>
+    <li>
+      <div class="day">DAY 4 · 收尾 + 返程</div>
+      <div class="seg"><span>🛍️ 上午 采购伴手礼（富硒茶、柏杨豆干）</span><span>📦 或补游未去到的点</span></div>
+      <div class="seg"><span>🚄 下午 返程</span></div>
+      <div class="tip2"><span class="arr">💡</span> 时间充裕可把第 4 天换成腾龙洞/梭布垭石林，见 5 天版方案。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 5天方案 -->
+<section class="panel" id="plan3" role="tabpanel" hidden>
+  <h2><span class="emo">🌊</span>5 天深度 · 玩透版</h2>
+  <p class="sub">在经典版基础上加清江画廊游船、宣恩贡水夜景，用一天在腾龙洞或梭布垭石林二选一收尾，节奏更松弛。</p>
+  <div class="hint">👥 <b>1–3 人适配：</b>5 天更适合 <b>自驾或包车</b>的自由度；清江游船、狮子关可拼团。预算按 <b>人均</b> 标注。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 抵达 + 土家文化</div>
+      <div class="seg"><span>✈️/🚄 抵达恩施</span><span>🏯 土司城</span><span>🌆 女儿城夜景 + 实景剧</span></div>
+      <div class="tip2"><span class="arr">💡</span> 住市区舞阳坝/航空路，吃饭去本地餐馆（合渣、腊肉、豆皮）。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 恩施大峡谷全天</div>
+      <div class="seg"><span>⛰️ 云龙地缝 + 七星寨（一炷香、绝壁栈道）</span><span>🚡 索道/电梯可选</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 全天徒步 5–6 小时，穿防滑运动鞋，备雨衣（山区阵雨多）。住景区门口民宿或回市区。</div>
+    </li>
+    <li>
+      <div class="day">DAY 3 · 屏山峡谷 + 宣恩夜景</div>
+      <div class="seg"><span>🚣 上午 屏山悬浮船/游船</span><span>🌆 下午 驱车宣恩（约 1 小时）</span></div>
+      <div class="seg"><span>🌉 晚上 贡水河夜景 + 烤活鱼</span></div>
+      <div class="tip2"><span class="arr">📷</span> 屏山务必提前订票；晴天出片。宣恩贡水河夜景与烤活鱼是口碑之选。</div>
+    </li>
+    <li>
+      <div class="day">DAY 4 · 狮子关 + 清江画廊</div>
+      <div class="seg"><span>🚗 上午 狮子关水上浮桥（免费航拍）</span><span>🛥️ 下午 清江蝴蝶崖游船（约 4.5 小时）</span></div>
+      <div class="tip2"><span class="arr">💡</span> 清江游船赏千瀑峡、蝴蝶崖，全程不累；傍晚回恩施市区采购伴手礼。</div>
+    </li>
+    <li>
+      <div class="day">DAY 5 · 腾龙洞 或 梭布垭 · 返程</div>
+      <div class="seg"><span>🏔️ 方案A 利川腾龙洞（恒温14℃，激光秀+暗河游船）</span><span>🪨 方案B 梭布垭石林（4.6亿年奥陶纪）</span></div>
+      <div class="seg"><span>🚄 下午 返程</span></div>
+      <div class="tip2"><span class="arr">🏔️ 备选：</span>夏季避暑选<b>腾龙洞</b>（洞内恒温），摄影玩石林选<b>梭布垭</b>；二选一即可，别贪多赶路。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 特色景点详览 -->
+<section class="panel" id="spots">
+  <h2><span class="emo">⭐</span>特色景点 · 单独详览</h2>
+  <p class="sub">把恩施最有辨识度的 5 个点单独拎出来看图说清楚——值不值得去、怎么玩、藏在哪。</p>
+
+  <div class="spotlist">
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/es_daxiagu.webp" type="image/webp">
+<img src="../../assets/images/es_daxiagu.jpg" alt="恩施大峡谷七星寨绝壁栈道，悬崖峭壁间悬空步道，远处群峰险峻云雾缭绕" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>恩施大峡谷 · 绝壁栈道 & 一炷香</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e0f2fe;color:#0e7490">5A景区</span><h3>恩施大峡谷 · 喀斯特地貌博物馆</h3></div>
+        <p>恩施旅游的「半壁江山」：云龙地缝幽深清冽，七星寨的「一炷香」石柱直插云霄、绝壁栈道悬挂在峭壁之上，堪称「喀斯特地貌天然博物馆」，观感极为震撼。</p>
+        <p class="spgo">👍 必去理由：恩施必打卡榜首。门票约 205 元（含景交），索道/电梯另计；全程徒步 5–6 小时，建议早出发、索道上山省力。拍照一炷香下午 2–3 点光最佳。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/es_pingshan.webp" type="image/webp">
+<img src="../../assets/images/es_pingshan.jpg" alt="恩施屏山峡谷，碧绿清澈的峡谷溪水上漂浮透明小船，两侧垂立青色绝壁，水质透亮呈翡翠蓝" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>屏山峡谷 · 中国仙本那</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#d2f1ea;color:#0f766e">鹤峰</span><h3>屏山峡谷 · 悬浮船的翡翠秘境</h3></div>
+        <p>藏在大山深处的峡谷秘境，水质清透呈翡翠果冻蓝，透明小船仿佛悬空漂浮在水面之上，两侧垂立青色绝壁，被网友称为「中国的仙本那」，是近年最火的网红打卡点。</p>
+        <p class="spgo">👍 必去理由：必打卡。门票+船票约 210 元，悬浮船拍照约 30–80 元/人；<b>务必晴天去</b>才有果冻水效果，旺季提前订票（约 7 天），早 7:30 入园避开人流。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/es_nvercheng.webp" type="image/webp">
+<img src="../../assets/images/es_nvercheng.jpg" alt="恩施土家女儿城，吊脚楼建筑群大红灯笼高挂，夜幕灯火通明，民俗街市热闹" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>土家女儿城 · 民俗不夜城</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#fde3e8;color:#be3b5a">市区</span><h3>土家女儿城 · 土家族文化聚落</h3></div>
+        <p>免费开放的土家族民俗文化街区，吊脚楼、雕花门窗、大红灯笼，入夜灯火通明、热闹非凡。可看《赶场相亲》实景剧、篝火摆手舞，感受浓厚土家风情。</p>
+        <p class="spgo">👍 必去理由：免门票、氛围好，是感受土家文化最适合的地方。建议傍晚来，看实景剧（约 20:00）+ 逛夜市；街内小吃偏贵，正餐可回市区本地馆子吃。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/es_qingjiang.webp" type="image/webp">
+<img src="../../assets/images/es_qingjiang.jpg" alt="恩施清江画廊蝴蝶崖，碧绿清江水面上一座形似蝴蝶的青绝壁倒映水中，游船穿行青山绿水" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>清江画廊 · 蝴蝶崖碧水游船</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e4edfb;color:#3b5fa8">清江</span><h3>清江画廊 · 八百里清江之美景</h3></div>
+        <p>乘游船穿行于清江之上，两岸青山对峙、碧水如玉，最出名的「蝴蝶崖」形似振翅蝴蝶倒映水中。全程约 4.5 小时，看千瀑峡、蝴蝶崖，轻松不累。</p>
+        <p class="spgo">👍 必去理由：慢节奏放松首选。游船约 150–200 元/人；配合狮子关水上浮桥安排同一天，上午浮桥、下午游船，节奏刚好。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/es_tusicheng.webp" type="image/webp">
+<img src="../../assets/images/es_tusicheng.jpg" alt="恩施土司城九进堂，土家族传统宫廷建筑群，飞檐斗拱雕梁画栋，青瓦木构依山而建" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>土司城 · 九进堂宫廷建筑</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#f0e6d8;color:#8a6d3b">市区</span><h3>土司城 · 土家族宫廷建筑群</h3></div>
+        <p>展示土家族土司文化的景区，核心「九进堂」依山而建、飞檐斗拱、雕梁画栋，是民族传统建筑的集中体现，游客不多时能感受到一份古朴与庄严。</p>
+        <p class="spgo">👍 必去理由：门票约 45 元，看九进堂吊脚楼建筑 + 免费民俗歌舞，两小时足够；和女儿城可安排同一天（土司城白天、女儿城晚上）。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+  </div>
+
+  <style>
+    .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+    .spot{display:flex;gap:18px;background:#fbfdf7;border:1px solid var(--sand-line);border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+    .spot:hover{border-color:rgba(47,125,56,.35);box-shadow:0 10px 22px -12px rgba(47,125,56,.3)}
+    .spimg{flex:0 0 42%;margin:0;min-width:0}
+    .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+    .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+    .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+    .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+    .sptxt h3{margin:0;font-size:19px;color:var(--sea-deep)}
+    .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+    .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#f2f9f0;border-radius:10px;padding:9px 12px;margin-top:10px}
+    .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+    .sptxt .spsrc a{color:var(--sea-deep)}
+    @media (max-width:640px){
+      .spot{flex-direction:column}
+      .spimg{flex:none}
+      .spimg img{height:auto;max-height:220px;object-fit:cover}
+    }
+  </style>
+</section>
+
+<!-- 出行方式对比（用户核心诉求） -->
+<section class="panel">
+  <h2><span class="emo">🚗</span>怎么去：自驾 vs 包车 vs 跟团</h2>
+  <p class="sub">恩施景点分散、山路多，怎么走对体验影响最大。下面把三种方式讲透。</p>
+  <div class="cmp">
+    <table>
+      <caption style="position:absolute;left:-9999px">恩施自驾/包车/跟团三种出行方式对比</caption>
+      <thead><tr><th scope="col">维度</th><th scope="col">🚗 自驾</th><th scope="col">🚙 包车</th><th scope="col">🚌 跟团</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" rowspan="3" class="hd2">核心体验</th>
+            <td>时间自由、想停就停，不受景区直通车班次限制，行程最灵活</td>
+            <td>坐车看风景、司机熟路，同样自由，可点对点安排，免去自己开山路</td>
+            <td>线路固定、省心省力，导游讲解，但节奏偏赶</td>
+        </tr>
+        <tr>
+            <td>适合 <b>有山路驾驶经验</b>、享受开车的游客</td>
+            <td>适合 <b>不想开山路</b>、想保留自由度的 2–3 人团</td>
+            <td>适合 <b>带长辈小孩</b>、图省心、时间紧的游客</td>
+        </tr>
+        <tr>
+            <td class="good">✔ 自由度最高、不用等班车</td>
+            <td class="good">✔ 免去山路驾驶压力、可拼车分摊</td>
+            <td class="good">✔ 全程安排、讲解、不操心</td>
+        </tr>
+        <tr><th scope="row" rowspan="3" class="hd2">费用与成本</th>
+            <td>租车+油费+过路，2–3 人分摊人均更低</td>
+            <td>按天计费（约 400–600 元/天 含司机），人数少时人均偏高</td>
+            <td>人均约 1200–1800 元起，包住宿门票省心</td>
+        </tr>
+        <tr>
+            <td>4 天租车+油费约 1200–1800 元/车</td>
+            <td>包车 4 天约 1600–2400 元/车</td>
+            <td>跟团报价浮动大，注意隐形加点</td>
+        </tr>
+        <tr>
+            <td class="good">✔ 3 人拼车人均最省</td>
+            <td class="bad">✘ 人少时人均过高</td>
+            <td class="bad">✘ 可能有购物/自费项目、节奏赶</td>
+        </tr>
+        <tr><th scope="row" rowspan="3" class="hd2">注意事项</th>
+            <td>恩施山路弯多坡陡，新手谨慎；大峡谷、屏山需到游客中心换乘</td>
+            <td>选正规平台/司机，确认车型与是否含油费过路；司机大多不进景区</td>
+            <td>问清是否含观光车/索道/船票、有无购物点</td>
+        </tr>
+        <tr>
+            <td>屏山距市区 2.5–3 小时，体力消耗大，路况一般</td>
+            <td>包车按天算，跨天/长途加价，提前议好</td>
+            <td>跟团上车点固定，可能早出晚归</td>
+        </tr>
+        <tr>
+            <td class="bad">✘ 需山路驾驶经验、易累</td>
+            <td class="good">✔ 折中推荐：2–3 人包车最平衡</td>
+            <td class="bad">✘ 深度体验略打折</td>
+        </tr>
+        <tr><th scope="row" class="hd2" colspan="4">💡 一句话建议：有山路驾驶经验且 2–3 人 → <b>自驾</b>；不想开山路想自由 → <b>包车（2–3 人拼车最划算）</b>；带老人小孩图省心 → <b>跟团</b>。</th></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">👥 <b>1–3 人怎么选：</b>恩施景点分散，2–3 人强烈推荐 <b>自驾或包车</b>，省时又自由；单人可选拼车/跟团，避免为单点折返。</div>
+</section>
+
+<!-- 住宿 -->
+<section class="panel">
+  <h2><span class="emo">🏨</span>住宿推荐</h2>
+  <p class="sub">三档价位，均为 2 人房计，多人出行请按需调整。</p>
+  <div class="grid">
+    <div class="card">
+      <span class="tag" style="background:#fff3cd;color:#8a6d00">经济型</span>
+      <div class="nm">快捷酒店 / 城区旅馆</div>
+      <div class="pr">约 120–180 元/晚 · 人均 60–90</div>
+      <div class="ds">市区舞阳坝/航空路（施州大道附近），去各景区方便、餐饮商超便利，适合预算紧的组合。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#dcf0d9;color:#2f7d38">中端舒适</span>
+      <div class="nm">中档酒店 / 景区民宿</div>
+      <div class="pr">约 200–320 元/晚 · 人均 100–160</div>
+      <div class="ds">大峡谷景区门口（沐抚镇）或市区高档区，方便次日不折返、看晨雾。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#fdeee2;color:#b2692a">高端体验</span>
+      <div class="nm">度假民宿 / 高档酒店</div>
+      <div class="pr">约 400–800 元/晚 · 人均 200–400</div>
+      <div class="ds">峡谷观景民宿、宣恩沿河民宿，推窗见山见水，适合度假与出片。</div>
+    </div>
+  </div>
+</section>
+
+<!-- 美食 -->
+<section class="panel">
+  <h2><span class="emo">🥘</span>恩施必吃清单</h2>
+  <p class="sub">恩施菜以土家风味为主，口味偏辣、食材富硒，按份点即可。</p>
+  <div class="food">
+    <div class="row"><span class="no">1</span><div class="it"><b>张关合渣</b><div class="w">恩施老字号 · 豆渣配饭一绝</div></div><span class="prx">约 40–80 元/份</span></div>
+    <div class="row"><span class="no">2</span><div class="it"><b>土家腊肉 / 腊蹄子火锅</b><div class="w">熏香浓郁 · 山区暖胃硬菜</div></div><span class="prx">约 80–150 元</span></div>
+    <div class="row"><span class="no">3</span><div class="it"><b>榨广椒炒腊肉</b><div class="w">酸辣下饭 · 本地家常</div></div><span class="prx">约 30–50 元/份</span></div>
+    <div class="row"><span class="no">4</span><div class="it"><b>恩施豆皮 / 油香</b><div class="w">特色主食小吃 · 早餐首选</div></div><span class="prx">约 10–20 元</span></div>
+    <div class="row"><span class="no">5</span><div class="it"><b>宣恩烤活鱼</b><div class="w">贡水河畔宵夜 · 鲜辣入味</div></div><span class="prx">约 80–120 元</span></div>
+    <div class="row"><span class="no">6</span><div class="it"><b>富硒茶 / 柏杨豆干</b><div class="w">伴手礼之选 · 饭后清口</div></div><span class="prx">约 20–60 元</span></div>
+  </div>
+</section>
+
+<!-- 预算 -->
+<section class="panel">
+  <h2><span class="emo">💰</span>预算对比（人均）</h2>
+  <p class="sub">含 1–3 人出行说明；区间为保守–宽松，实际以淡旺季与选择为准。</p>
+  <div class="budget">
+    <table>
+      <caption style="position:absolute;left:-9999px">恩施4天与5天方案人均预算对比</caption>
+      <thead><tr><th scope="col">项目</th><th scope="col" class="sc">4天经典版</th><th scope="col" class="sc">5天深度版</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">大交通（往返）</th><td class="sc">约 300–600</td><td class="sc">约 300–600</td></tr>
+        <tr><th scope="row">住宿</th><td class="sc">3 晚 200–400</td><td class="sc">4 晚 300–550</td></tr>
+        <tr><th scope="row">餐饮</th><td class="sc">约 450–700</td><td class="sc">约 550–800</td></tr>
+        <tr><th scope="row">景点门票（大峡谷+屏山+土司城）</th><td class="sc">约 400–550</td><td class="sc">约 550–800</td></tr>
+        <tr><th scope="row">交通/租车/包车（人均分摊）</th><td class="sc">约 300–500</td><td class="sc">约 450–700</td></tr>
+        <tr><th scope="row">索道/电梯/悬浮船等可选</th><td class="sc">约 150–300</td><td class="sc">约 250–450</td></tr>
+        <tr><th scope="row" class="tot">合计 · 人均</th><td class="sc tot">约 1800–2600</td><td class="sc tot">约 2500–3500</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">💡 <b>1–3 人怎么省：</b>住宿双人房人均分摊最划算（3 人加床或双房次之）；自驾/包车 3 人分摊更省；大峡谷、屏山提前在官方渠道买套票可省几十元；应届中高考生等可享免票/半价（以当年政策为准）。</div>
+</section>
+
+<!-- 避坑建议 -->
+<section class="panel">
+  <h2><span class="emo">🧭</span>避坑 & 实用贴士</h2>
+  <ul class="tips">
+    <li><b>提前订票：</b>大峡谷、屏山旺季限流，至少提前 3–5 天在官方渠道（支付宝/微信小程序）购票，屏山建议更早（约 7 天）。</li>
+    <li><b>悬浮船看晴天：</b>屏山「果冻水」只有晴天可见，阴雨天水色打折；提前看天气预报再定行程。</li>
+    <li><b>穿防滑鞋：</b>大峡谷、屏山台阶多且湿滑，务必运动防滑鞋 + 轻薄外套 + 雨衣（山区阵雨随时下）+ 防晒。</li>
+    <li><b>别在女儿城高价区吃正餐：</b>女儿城小吃偏贵，正餐回市区本地餐馆（合渣、腊肉）更实惠。</li>
+    <li><b>山路驾驶：</b>恩施山区弯多坡陡，新手慎自驾，选包车或跟团。</li>
+    <li><b>时节：</b>夏季约 22℃ 避暑最佳，冬季清冷；旺季（五一、暑假、国庆）价格与排队压力大。</li>
+  </ul>
+  <style>
+    .tips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+    .tips li{font-size:14px;color:var(--ink);background:#f6f9f2;border-left:4px solid var(--sea);border-radius:8px;padding:10px 14px}
+    .tips li b{color:var(--sea-deep)}
+  </style>
+</section>
+
+<footer>
+  恩施 · 双版组合旅行指南 ｜ 适配 1–3 人出行 · 价格为淡旺季区间的参考值<br>
+  山区注意防滑防晒、提前订票；旺季价格会上浮，请以实时为准。 · <a href="../../index.html">← 返回小册子</a>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+  try{
+    var tabs=document.querySelectorAll('.switch button');
+    var plans=document.querySelectorAll('section[role="tabpanel"]');
+    function show(id){
+      tabs.forEach(function(t){
+        var on=t.getAttribute('data-plan')===id;
+        t.classList.toggle('on',on);
+        t.setAttribute('aria-selected',on?'true':'false');
+      });
+      plans.forEach(function(p){ p.hidden = p.id!==id; });
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+    tabs.forEach(function(t){ t.addEventListener('click',function(){ show(t.getAttribute('data-plan')); }); });
+  }catch(e){}
+})();
+</script>
+<footer style="position:relative;margin:44px auto 8px;padding:18px 24px;max-width:1180px;width:calc(100% - 40px);text-align:center;background:rgba(13,17,32,.55);border:1px solid rgba(255,255,255,.12);border-radius:14px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:2">
+  <span style="font-size:13px;color:#dfe3ea;letter-spacing:.03em">Made with care by <b style="color:#fff">WorldStip</b> &nbsp;·&nbsp; <a href="https://worldstip.com" style="color:#9fb6ff;text-decoration:none" target="_blank" rel="noopener noreferrer">worldstip.com</a> &nbsp;·&nbsp; 旅行小册子</span>
+</footer>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

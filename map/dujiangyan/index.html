@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>都江堰 · 青城山全攻略（千年水利工程/道教发源地/天下幽）</title>
+<meta name="description" content="都江堰青城山旅游全攻略：都江堰鱼嘴飞沙堰宝瓶口、安澜索桥、二王庙，青城山前山天师洞上清宫、道教发源地。门票都江堰80/青城山前山80后山20、交通住宿美食预算避坑一篇讲清。">
+<meta name="keywords" content="都江堰,都江堰门票,鱼嘴,飞沙堰,宝瓶口,安澜索桥,青城山,青城山门票,道教发源地,天师洞,上清宫,天下幽">
+<style>
+  :root{
+    --irr:#5b8f4c;
+    --irr-deep:#3f6a34;
+    --irr-soft:#e6f0e0;
+    --sand:#f4f7f2;
+    --sand-line:#dfe8d8;
+    --coral:#d9674a;
+    --cyan:#2b8ea8;
+    --leaf:#3e7d4f;
+    --ink:#243820;
+    --ink-soft:#5f7058;
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(63,106,52,.3);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(91,143,76,.14), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(43,142,168,.12), transparent 55%),
+      var(--sand);
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--irr-deep)}
+
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--irr) 8%,#3d6a33 55%,var(--irr-deep));
+    padding:40px 36px 34px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-40px;bottom:-60px;width:300px;height:300px;
+    background:radial-gradient(circle, rgba(255,255,255,.18), transparent 62%);
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.94;max-width:680px}
+  .hero p b{color:#fff}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{
+    font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:10px;
+  }
+
+  .switch{display:flex;gap:12px;margin:30px 0 6px;flex-wrap:wrap}
+  .switch button{
+    flex:1;min-width:230px;border:2px solid var(--sand-line);
+    background:var(--card);color:var(--ink);cursor:pointer;text-align:left;
+    border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  }
+  .switch button:hover{border-color:var(--irr);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(91,143,76,.4)}
+  .switch button.on{border-color:var(--irr);background:linear-gradient(135deg,#eff6ea,#f4f9ef)}
+  .switch button .t{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800}
+  .switch button .t .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff}
+  .switch button .d{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .b-1d .badge{background:var(--cyan)}
+  .b-2d .badge{background:var(--coral)}
+  .b-3d .badge{background:var(--leaf)}
+
+  section.panel{margin-top:26px;background:var(--card);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(91,143,76,.12)}
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--irr-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--irr-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--irr-deep);margin-top:20px}
+  .hint b{font-weight:800}
+
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--irr-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;
+    background:var(--irr);border:3px solid var(--irr-soft);box-sizing:content-box;
+  }
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--irr-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--irr-soft);color:var(--irr-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--coral);font-weight:800}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid var(--sand-line);border-radius:14px;padding:14px 16px;background:#fbfdf9;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(91,143,76,.35);box-shadow:0 8px 18px -10px rgba(91,143,76,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--irr-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+  .spot{display:flex;gap:18px;background:#fbfdf9;border:1px solid var(--sand-line);border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+  .spot:hover{border-color:rgba(91,143,76,.35);box-shadow:0 10px 22px -12px rgba(91,143,76,.3)}
+  .spimg{flex:0 0 40%;margin:0;min-width:0}
+  .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+  .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+  .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+  .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+  .sptxt h3{margin:0;font-size:19px;color:var(--irr-deep)}
+  .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+  .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#eff6ea;border-radius:10px;padding:9px 12px;margin-top:10px}
+  .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+  @media (max-width:640px){
+    .spot{flex-direction:column}
+    .spimg{flex:none}
+    .spimg img{height:auto;max-height:220px;object-fit:cover}
+  }
+
+  .cmp{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .cmp table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fefdfb}
+  .cmp th,.cmp td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--sand-line)}
+  .cmp thead th{background:var(--irr-deep);color:#fff;font-weight:700}
+  .cmp tbody tr:nth-child(even){background:#f2f7ee}
+  .cmp .hd2{background:var(--irr-soft);color:var(--irr-deep);font-weight:800;border-bottom:1px solid var(--sand-line)}
+  .cmp .good{color:#2f7d32;font-weight:700}
+  .cmp .bad{color:#c0504d;font-weight:700}
+
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--sand-line);padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--irr-soft);color:var(--irr-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--coral);font-weight:800;white-space:nowrap}
+
+  .budget{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fefdfb}
+  .budget th,.budget td{padding:10px 14px;text-align:left}
+  .budget thead th{background:var(--irr-deep);color:#fff;font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#f2f7ee}
+  .budget .tot{font-weight:800;color:var(--irr-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  .tips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .tips li{font-size:14px;color:var(--ink);background:#eff6ea;border-left:4px solid var(--irr);border-radius:8px;padding:10px 14px}
+  .tips li b{color:var(--irr-deep)}
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--irr-deep)}
+
+  @media print{
+    body{background:#fff}
+    .switch button{display:none}
+    .wrap{max-width:none;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
+    .card,.budget,.cmp{page-break-inside:avoid}
+  }
+  @media (max-width:600px){
+    .hero{padding:30px 22px 26px}
+    .hero h1{font-size:27px}
+    .wrap{padding:18px 14px 48px}
+    section.panel{padding:20px 18px}
+  }
+.camtab{position:fixed;top:110px;left:14px;right:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/dujiangyan/">
+    <meta name="theme-color" content="#5b8f4c">
+    <link rel="icon" href="../../favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="都江堰 · 青城山全攻略（千年水利工程/道教发源地/天下幽）">
+    <meta property="og:description" content="都江堰青城山全攻略：都江堰鱼嘴飞沙堰宝瓶口、安澜索桥、二王庙，青城山天师洞上清宫。门票都江堰80/青城山前山80后山20一篇讲清。">
+    <meta property="og:url" content="https://worldstip.com/map/dujiangyan/">
+    <meta property="og:image" content="https://worldstip.com/map/dujiangyan/assets/dujiangyan_cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="都江堰 · 青城山全攻略">
+    <meta name="twitter:description" content="鱼嘴飞沙堰宝瓶口、安澜索桥、二王庙、青城山天师洞上清宫；都江堰80/青城山前山80后山20一篇讲清。">
+    <meta name="twitter:image" content="https://worldstip.com/map/dujiangyan/assets/dujiangyan_cover.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "都江堰 · 青城山全攻略",
+      "url": "https://worldstip.com/map/dujiangyan/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/dujiangyan/",
+  "name": "都江堰 · 青城山全攻略",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "publisher": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "copyrightHolder": { "@type": "Organization", "name": "旅行小册子" },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">🌊 都江堰 · 青城山 · DUJIANGYAN &amp; QINGCHENG</div>
+  <h1>都江堰 · 青城山全攻略</h1>
+  <p>成都一小时朋友圈里的「<b>世界自然与文化双遗产</b>」：都江堰是<b>两千多年前的古代水利工程</b>——<b>鱼嘴、飞沙堰、宝瓶口</b>至今仍在分水治沙，被誉为「世界水利文化鼻祖」；旁边的<b>青城山</b>是<b>道教发源地</b>，素有「青城天下幽」之称，群峰环翠、道观清幽。门票都江堰<b>80元</b>、青城山前山<b>80元/后山20元</b>，离成都 <b>1 小时</b>即可达。本文含水利1日/山水2日双方案、二王庙安澜桥、青城问道、交通住宿、美食预算、避坑全讲清。</p>
+  <div class="meta">
+    <span>📍 目的地：四川成都 · 都江堰市</span>
+    <span>👥 1–6 人自由行</span>
+    <span>⏱️ 1 日 / 2 日 双方案</span>
+    <span>💰 都江堰80 · 青城山前山80</span>
+  </div>
+</header>
+
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="b-1d on" role="tab" aria-selected="true" data-plan="plan1" id="tab1">
+    <span class="t"><span class="badge">水利1日</span> 快充版 ⚡</span>
+    <div class="d">都江堰水利全景一日 / 人均约 350–600</div>
+  </button>
+  <button class="b-2d" role="tab" aria-selected="false" data-plan="plan2" id="tab2">
+    <span class="t"><span class="badge">山水2日</span> 深度版 🌿</span>
+    <div class="d">都江堰+青城山问道 / 人均约 700–1200</div>
+  </button>
+</div>
+
+<!-- 水利1日方案 -->
+<section class="panel" id="plan1" role="tabpanel">
+  <h2><span class="emo">⚡</span>都江堰水利 1 日 · 快充版</h2>
+  <p class="sub">核心策略：从离堆公园进，沿「宝瓶口→飞沙堰→鱼嘴→安澜索桥」路线一路看懂古人治水智慧，清晨出发午后即可返程。</p>
+  <div class="hint">👥 <b>亲子/文史爱好者适配：</b>都江堰园区平坦好走、知识性极强，适合带孩子在「世界水利文化鼻祖」前直观理解古人智慧，建议请讲解或租讲解器。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">上午 · 离堆公园 → 宝瓶口 → 飞沙堰</div>
+      <div class="seg"><span>🏯 离堆公园（伏龙观俯瞰宝瓶口）</span><span>🌊 宝瓶口（内江咽喉）</span></div>
+      <div class="seg"><span>💦 飞沙堰（排沙泄洪）</span></div>
+      <div class="tip2"><span class="arr">💡</span> 伏龙观是俯瞰宝瓶口「内江咽喉」的最佳观景点，涨水期看四江分流非常直观。</div>
+    </li>
+    <li>
+      <div class="day">中午前后 · 鱼嘴 → 安澜索桥 → 二王庙</div>
+      <div class="seg"><span>🐟 鱼嘴（四六分水·二八分沙）</span><span>🌉 安澜索桥（横跨岷江）</span></div>
+      <div class="seg"><span>🙏 二王庙（李冰父子祠堂）</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 安澜索桥旺季人多会晃动，带小孩老人注意扶稳慢走；二王庙在鱼嘴对岸，需过桥游览。</div>
+    </li>
+    <li>
+      <div class="day">下午 · 玉垒山/古镇返程</div>
+      <div class="seg"><span>⛰️ 玉垒山看全景（可选）</span><span>🏘️ 灌县古城逛吃</span></div>
+      <div class="tip2"><span class="arr">💡</span> 时间充裕可到玉垒阁登高看全貌，或进灌县古城尝川西小吃；从高铁站返成都十分方便。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 山水2日方案 -->
+<section class="panel" id="plan2" role="tabpanel" hidden>
+  <h2><span class="emo">🌿</span>山水 2 日 · 深度版</h2>
+  <p class="sub">核心策略：第一天看都江堰水利，第二天上青城山问道，把「治水智慧+道教文化」一次性体验完整，动线顺滑。</p>
+  <div class="hint">👥 <b>深度体验适配：</b>都江堰与青城山相距约30分钟车程，很适合串成 2 日游；青城山前山香火清幽、后山更野趣，可据体力选择。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 都江堰水利一日</div>
+      <div class="seg"><span>🏯 宝瓶口/飞沙堰</span><span>🐟 鱼嘴/安澜索桥/二王庙</span></div>
+      <div class="seg"><span>🌅 玉垒阁日落 + 灌县古城夜游</span></div>
+      <div class="tip2"><span class="arr">💡</span> 住都江堰市区，晚上逛灌县古城、南桥赏夜景，吃正宗川西坝子一绝。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 青城山问道/徒步</div>
+      <div class="seg"><span>🚌 都江堰→青城山（约30min）</span><span>🏯 前山建福宫→天师洞→上清宫</span></div>
+      <div class="seg"><span>⛰️ 或后山龙隐峡/泰安古镇徒步</span></div>
+      <div class="tip2"><span class="arr">🚗</span> 前山道观密集适合问道文化游，后山山水更野、门票仅20元；登山较累乘索道可省体力，晚上返成都。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 核心景点详览 -->
+<section class="panel" id="spots">
+  <h2><span class="emo">⭐</span>都江堰 · 青城山核心景点 · 单独详览</h2>
+  <p class="sub">把都江堰三大水利部件与青城山道教精华单独拎出来说清楚——值不值得去、怎么玩、怎么理解。</p>
+
+  <div class="spotlist">
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/dujiangyan_a.webp" type="image/webp">
+<img src="assets/dujiangyan_a.jpg" alt="都江堰鱼嘴分水堤将岷江一分为二的内江外江，青山江水交相辉映的古代水利工程" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>鱼嘴 · 四六分水</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e6f0e0;color:#3f6a34">水利工程</span><h3>鱼嘴 · 都江堰分水鱼嘴</h3></div>
+        <p>形似鱼嘴的分水堤坝，把奔腾的岷江分为内江、外江。巧妙利用地形与水流「四六分水、二八分沙」：洪水期自动把多余水量排向外江，枯水期把水导向内江，堪称古代无坝引水工程的巅峰之作。</p>
+        <p class="spgo">👍 必去理由：都江堰第一打卡点。站上鱼嘴方能直观理解「治水不等于筑坝」的东方智慧，涨水期气势尤为震撼。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/dujiangyan_b.webp" type="image/webp">
+<img src="assets/dujiangyan_b.jpg" alt="都江堰宝瓶口与飞沙堰拦水弯道，水流在峡谷间奔涌，远山含翠的古代水利枢纽" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>飞沙堰 · 排沙泄洪</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e4edfb;color:#2f5fa8">水利工程</span><h3>飞沙堰 · 千年排沙枢纽</h3></div>
+        <p>位于鱼嘴与宝瓶口之间的低矮溢流堰，涨水时利用「弯道环流」原理将大量泥沙、卵石排入外江，仅少量净水进入宝瓶口。它与鱼嘴、宝瓶口并称都江堰三大主体工程，共同守护成都平原两千多年。</p>
+        <p class="spgo">👍 必去理由：与宝瓶口相邻、肉眼可辨「治水分沙」机制。摄影爱好者可在此拍江水奔涌的动感画面。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/dujiangyan_cover.webp" type="image/webp">
+<img src="assets/dujiangyan_cover.jpg" alt="都江堰安澜索桥横跨奔腾岷江，桥上古树苍翠行人往来，二王庙依山而建的壮阔画面" width="800" height="1067" loading="lazy">
+</picture>
+        <figcaption>安澜索桥 · 天下第一桥</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#fde9e3;color:#c0552e">地标</span><h3>安澜索桥 · 横跨岷江的古桥</h3></div>
+        <p>横跨岷江的古老竹索桥，因当年为方便两岸通称「安澜桥」而闻名，被誉为「中国五大名桥」之一。站在晃动的桥面上俯视江水奔流、远眺二王庙与玉垒山，是都江堰最出片的经典机位。</p>
+        <p class="spgo">👍 必去理由：过桥去往二王庙的必经之路。桥身晃动带来独特体验，傍晚灯光亮起后格外好看。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/dujiangyan_a.webp" type="image/webp">
+<img src="assets/dujiangyan_a.jpg" alt="青城山前山天师洞古刹依山而建掩映苍翠密林，道教发源地的清幽道观" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>青城山 · 青城天下幽</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#f3e8fb;color:#6b3fa8">道教名山</span><h3>青城山前山 · 道教发源地</h3></div>
+        <p>群峰环翠、清幽深邃的「青城天下幽」。山间建福宫、天师洞、上清宫等道观鳞次栉比，相传张道陵在此创立五斗米道，是中国道教发源地之一。拾阶而上，松柏苍翠、道观清静，自有一番问道意境。</p>
+        <p class="spgo">👍 必去理由：问道+徒步双体验。前山道观密集、文化浓度高，适合想感受道教氛围与清幽山景的游客。</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 出行方式对比 -->
+<section class="panel">
+  <h2><span class="emo">🚗</span>怎么去：高铁 vs 自驾 vs 公交 vs 城际</h2>
+  <p class="sub">都江堰青城山距成都仅约60公里，交通十分便捷，成都出发基本1小时内可达。</p>
+  <div class="cmp">
+    <table>
+      <caption style="position:absolute;left:-9999px">都江堰青城山高铁/自驾/公交/城际四种交通方式对比</caption>
+      <thead><tr><th scope="col">方式</th><th scope="col">🚄 城际/高铁</th><th scope="col">🚗 自驾</th><th scope="col">🚌 公交/景区车</th><th scope="col">🚐 旅游直通车</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="hd2">时长/成本</th>
+            <td>成都犀浦→离堆公园/青城山站约 23–30min，票价约 10 元</td>
+            <td>成都→都江堰约 60km、约1h</td>
+            <td>景区观光车衔接各景点/登山口</td>
+            <td>成都市区旅游专线直达，约1.5h</td>
+        </tr>
+        <tr><th scope="row">适合人群</th>
+            <td class="good">✔ 最推荐：快、便宜、直达景区旁</td>
+            <td>自驾党、顺路玩乐山/周边</td>
+            <td>已到景区后的内部接驳（必用）</td>
+            <td>不想折腾换乘的游客</td>
+        </tr>
+        <tr><th scope="row">注意</th>
+            <td>犀浦—离堆公园为城际，出站步行即达都江堰景区</td>
+            <td>节假日景区周边拥堵、停车难</td>
+            <td>青城山到登山口需换乘景区车</td>
+            <td>班次相对固定，需按时刻表</td>
+        </tr>
+        <tr><th scope="row" class="hd2" colspan="5">💡 一句话建议：首选 <b>成都犀浦—离堆公园/青城山城际高铁</b>——20多分钟直达、票价仅约10元，出站即景区/登山口，性价比之王。</th></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">📱 <b>购票与预约：</b>都江堰、青城山门票建议通过官方公众号/OTA 提前购，旺季限流；青城山前山80元、后山20元，学生/老人等按证件优惠；登青城山可乘景区索道省体力。</div>
+</section>
+
+<!-- 住宿 -->
+<section class="panel">
+  <h2><span class="emo">🏨</span>住宿推荐</h2>
+  <p class="sub">住都江堰市区方便两景区往返，住青城山脚下更幽静，三档供参考（2 人房计）。</p>
+  <div class="grid">
+    <div class="card">
+      <span class="tag" style="background:#fff3cd;color:#8a6d00">经济型</span>
+      <div class="nm">都江堰市区客栈</div>
+      <div class="pr">约 100–220 元/晚 · 人均 50–110</div>
+      <div class="ds">离高铁站/灌县古城近，去两景区都方便，性价比高。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#e6f0e0;color:#3f6a34">中端舒适</span>
+      <div class="nm">青城山脚精品民宿</div>
+      <div class="pr">约 250–480 元/晚 · 人均 125–240</div>
+      <div class="ds">临山环境清幽、推窗见绿，方便第二天登山问道。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#fde9e3;color:#c0552e">高端体验</span>
+      <div class="nm">都江堰/青城山度假酒店</div>
+      <div class="pr">约 480–1200 元/晚 · 人均 240–600</div>
+      <div class="ds">含温泉/景观的度假型酒店，适合亲子或休闲度假，旺季需早订。</div>
+    </div>
+  </div>
+</section>
+
+<!-- 美食 -->
+<section class="panel">
+  <h2><span class="emo">🍜</span>都江堰 · 青城山必吃清单</h2>
+  <p class="sub">都江堰集聚川西坝子地道风味，青城山脚的道家素食也别具一格。</p>
+  <div class="food">
+    <div class="row"><span class="no">1</span><div class="it"><b>灌县老串串 / 钵钵鸡</b><div class="w">川西坝子麻辣 · 街巷美食</div></div><span class="prx">约 40–90 元</span></div>
+    <div class="row"><span class="no">2</span><div class="it"><b>青城山老腊肉</b><div class="w">山野腊味 · 下酒一绝</div></div><span class="prx">约 40–80 元</span></div>
+    <div class="row"><span class="no">3</span><div class="it"><b>道家素斋</b><div class="w">青城山寺观素菜 · 清雅</div></div><span class="prx">约 40–90 元</span></div>
+    <div class="row"><span class="no">4</span><div class="it"><b>夫妻肺片 / 川北凉粉</b><div class="w">经典川味 · 开胃</div></div><span class="prx">约 20–50 元</span></div>
+    <div class="row"><span class="no">5</span><div class="it"><b>桂花糕 / 豆花</b><div class="w">当地小吃 · 解腻甜点</div></div><span class="prx">约 8–20 元</span></div>
+  </div>
+</section>
+
+<!-- 预算 -->
+<section class="panel">
+  <h2><span class="emo">💰</span>预算对比（人均）</h2>
+  <p class="sub">含 1–3 人出行说明；区间为保守–宽松，实际以淡旺季与选择为准。</p>
+  <div class="budget">
+    <table>
+      <caption style="position:absolute;left:-9999px">都江堰1日与都青山水2日方案人均预算对比</caption>
+      <thead><tr><th scope="col">项目</th><th scope="col" class="sc">水利1日版</th><th scope="col" class="sc">山水2日版</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">大交通（成都往返人均）</th><td class="sc">约 30–80</td><td class="sc">约 60–120</td></tr>
+        <tr><th scope="row">门票</th><td class="sc">都江堰 80</td><td class="sc">都江堰80+青城山80</td></tr>
+        <tr><th scope="row">观光车/索道</th><td class="sc">约 20–80</td><td class="sc">约 40–160</td></tr>
+        <tr><th scope="row">住宿</th><td class="sc">—（当日往返可选）</td><td class="sc">1 晚 100–480</td></tr>
+        <tr><th scope="row">餐饮</th><td class="sc">约 60–120</td><td class="sc">约 150–300</td></tr>
+        <tr><th scope="row" class="tot">合计 · 人均</th><td class="sc tot">约 200–400</td><td class="sc tot">约 450–1100</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">💡 <b>省法：</b>青城山后山仅 20 元、适合执着徒步的；学生/老人/青少年按证件优惠；成都本地及周边游客当日往返更省住宿费。</div>
+</section>
+
+<!-- 避坑建议 -->
+<section class="panel">
+  <h2><span class="emo">🧭</span>避坑 & 实用贴士</h2>
+  <ul class="tips">
+    <li><b>看懂线路再进园：</b>都江堰园区较大，建议按「宝瓶口→飞沙堰→鱼嘴→安澜桥→二王庙」顺流游览，别走回头路。</li>
+    <li><b>青城山分前/后山：</b>前山道观密集、看人文，门票80；后山山水更野、门票20；体力有限可索道，别盲目「爬全程」。</li>
+    <li><b>安澜索桥防晃：</b>旺季桥上人多晃动明显，带老人小孩抓稳扶手、慢走，穿防滑鞋。</li>
+    <li><b>旺季早到：</b>都江堰、青城山节假日人流大、停车难，建议乘高铁早到、避开午后高峰。</li>
+    <li><b>登山量力而行：</b>青城山台阶多、走完全程较累，穿舒适登山鞋，备水与防晒。</li>
+    <li><b>提前购票：</b>节日限流时现场可能无票，务必提前通过官方渠道线上购票。</li>
+  </ul>
+</section>
+
+<footer>
+  都江堰 · 青城山全攻略 ｜ 适配 1–6 人自由行 · 价格为参考值 · 门票及政策以景区实时公告为准<br>
+  登山注意安全、防滑防晒；出发前关注官方实时公告。 · <a href="../../index.html">← 返回小册子</a>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+  try{
+    var tabs=document.querySelectorAll('.switch button');
+    var plans=document.querySelectorAll('section[role="tabpanel"]');
+    function show(id){
+      tabs.forEach(function(t){
+        var on=t.getAttribute('data-plan')===id;
+        t.classList.toggle('on',on);
+        t.setAttribute('aria-selected',on?'true':'false');
+      });
+      plans.forEach(function(p){ p.hidden = p.id!==id; });
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+    tabs.forEach(function(t){ t.addEventListener('click',function(){ show(t.getAttribute('data-plan')); }); });
+  }catch(e){}
+})();
+</script>
+<footer style="position:relative;margin:44px auto 8px;padding:18px 24px;max-width:1180px;width:calc(100% - 40px);text-align:center;background:rgba(13,17,32,.55);border:1px solid rgba(255,255,255,.12);border-radius:14px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:2">
+  <span style="font-size:13px;color:#dfe3ea;letter-spacing:.03em">Made with care by <b style="color:#fff">WorldStip</b> &nbsp;·&nbsp; <a href="https://worldstip.com" style="color:#9fb6ff;text-decoration:none" target="_blank" rel="noopener noreferrer">worldstip.com</a> &nbsp;·&nbsp; 旅行小册子</span>
+</footer>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

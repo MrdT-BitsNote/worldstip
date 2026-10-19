@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>欧洲自驾 · 全域路书 A5 卡片手册</title>
+<meta name="description" content="欧洲自驾游全域攻略：驾照与国际驾照、租车实操、加油停车、各国限速与交规、高速收费、预算拆解、最佳季节、十大经典路线及路线深潜。">
+<meta name="keywords" content="欧洲自驾,欧洲自驾游,国际驾照IDP,德国浪漫之路,阿马尔菲海岸,冰岛环岛公路,挪威峡湾,北海岸500,vignette,欧洲租车,欧洲自驾攻略">
+<style>
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Roboto,sans-serif;
+    color:#333a44;
+    background:linear-gradient(160deg,#271c2e 0%,#32254a 45%,#1f3052 100%);
+    line-height:1.55;
+    overflow-wrap:break-word;
+    min-height:100vh;
+  }
+  img{max-width:100%;height:auto;display:block;}
+
+  header.masthead{text-align:center;padding:42px 20px 14px;position:relative;color:#fff;}
+  header.masthead .title-emoji{font-size:42px;line-height:1;margin-bottom:8px;}
+  header.masthead h1{
+    margin:0 0 6px;font-size:clamp(1.5rem,4vw,2rem);font-weight:800;letter-spacing:.5px;
+    background:linear-gradient(90deg,#f3c96a,#e8b04a,#f7d98c);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  header.masthead p{color:#c8b9e0;margin:0;font-size:.95rem;}
+
+  .deck-wrap{max-width:1180px;margin:0 auto;padding:8px 18px 40px;}
+  .chips{
+    display:flex;gap:8px;align-items:center;margin:14px auto 26px;max-width:1040px;
+    overflow-x:auto;padding:6px 4px 10px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;flex-wrap:wrap;justify-content:center;
+  }
+  .chips::-webkit-scrollbar{height:6px;}
+  .chips::-webkit-scrollbar-thumb{background:#4a3b66;border-radius:99px;}
+  .chips button{
+    font:inherit;font-size:.84rem;font-weight:600;white-space:nowrap;border:none;cursor:pointer;flex:none;
+    padding:8px 14px;border-radius:999px;background:#fff;color:#5b6372;
+    box-shadow:0 4px 14px rgba(0,0,0,.14);transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+  }
+  .chips button:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.2);}
+  .chips button.active{background:#e8b04a;color:#fff;}
+  .chips .grp-label{flex:none;font-size:.7rem;font-weight:800;letter-spacing:.08em;color:#cbb9e6;padding:0 2px;}
+
+  .deck{display:flex;flex-wrap:wrap;gap:22px;justify-content:center;align-items:flex-start;scroll-behavior:smooth;}
+
+  .card{
+    width:148mm;height:210mm;background:#fff;border-radius:26px;
+    box-shadow:0 18px 44px rgba(10,10,40,.35),0 3px 10px rgba(10,10,40,.2);
+    overflow:hidden;position:relative;display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.8);
+    scroll-margin-top:20px;
+  }
+  .card .topbar{flex:none;height:8px;background:linear-gradient(90deg,var(--tc1),var(--tc2));}
+  .card header.c{padding:16px 20px 6px;display:flex;align-items:center;gap:12px;}
+  .card header.c .ico{
+    flex:none;width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+    font-size:25px;background:var(--tc-soft);box-shadow:0 4px 10px rgba(0,0,0,.08);
+  }
+  .card header.c h2{margin:0;font-size:1.14rem;font-weight:800;line-height:1.25;color:var(--tc-strong);}
+  .card header.c .en{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#b3bac6;margin-top:2px;}
+  .card .body{flex:1;min-height:0;padding:8px 18px 16px;overflow:hidden;display:flex;flex-direction:column;}
+  .card .page-num{position:absolute;bottom:12px;right:16px;font-size:.72rem;font-weight:700;color:#c2c8d4;}
+
+  .pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.66rem;font-weight:700;white-space:nowrap;}
+  .pill.must{background:#ffe9e4;color:#e5533d;}
+  .pill.flex{background:#e4f4e8;color:#2f9e63;}
+  .pill.day{background:#eef0ff;color:#6f6fe8;}
+
+  /* hero 视觉头（路线卡用） */
+  .hero{
+    margin:8px 18px 10px;border-radius:16px;padding:16px 16px 14px;color:#fff;position:relative;overflow:hidden;
+    background:linear-gradient(135deg,var(--tc1) 0%,var(--tc2) 100%);
+    box-shadow:0 8px 18px rgba(0,0,0,.18);
+  }
+  .hero::after{content:"";position:absolute;right:-24px;top:-24px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.14);}
+  .hero .hero-flag{font-size:.74rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#fff;opacity:.92;margin-bottom:6px;}
+  .hero h3{margin:0 0 4px;font-size:1.28rem;font-weight:800;line-height:1.2;}
+  .hero p{margin:0;font-size:.78rem;opacity:.95;max-width:52ch;}
+  .hero .herometa{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+  .hero .herometa span{font-size:.68rem;font-weight:700;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);padding:3px 8px;border-radius:999px;}
+
+  .card.cover{
+    background:
+      linear-gradient(180deg,rgba(20,16,40,.02) 0%,rgba(20,16,40,.25) 38%,rgba(15,12,40,.92) 94%),
+      linear-gradient(160deg,#32205a,#181334);
+    color:#fff;
+  }
+  .cover-hero{
+    position:absolute;top:0;left:0;right:0;height:62%;overflow:hidden;border-radius:26px 26px 0 0;
+  }
+  .cover-hero img{width:100%;height:100%;object-fit:cover;object-position:center 28%;}
+  .route-img{position:relative;min-height:250px;display:flex;align-items:flex-end;margin:2px 2px 16px;border-radius:14px;overflow:hidden;box-shadow:0 12px 28px rgba(0,0,0,.28);}
+  .route-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;}
+  .route-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,8,20,.04) 0%,rgba(12,8,20,.16) 40%,rgba(12,8,20,.92) 100%);}
+  .route-cap{position:relative;z-index:2;width:100%;padding:16px 20px 18px;color:#fff;}
+  .route-cap .rc-flag{font-size:11px;font-weight:800;letter-spacing:.10em;text-transform:uppercase;color:#ffdf9a;opacity:.96;margin-bottom:7px;}
+  .route-cap h3{margin:0 0 6px;font-size:23px;font-weight:900;line-height:1.14;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.5);}
+  .route-cap p{margin:0;font-size:13px;line-height:1.5;color:rgba(255,255,255,.94);text-shadow:0 1px 6px rgba(0,0,0,.45);max-width:56ch;}
+  .route-cap .herometa{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px;}
+  .route-cap .herometa span{font-size:11px;font-weight:700;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.30);color:#fff;padding:3px 10px;border-radius:999px;}
+  .cover-hero::before{
+    content:"";position:absolute;left:0;right:0;top:0;height:34px;
+    background:linear-gradient(180deg,rgba(50,32,90,.4) 0%,rgba(50,32,90,0) 100%);
+  }
+  .cover-hero::after{
+    content:"";position:absolute;left:0;right:0;bottom:0;height:78%;
+    background:linear-gradient(180deg,rgba(20,16,40,0) 0%,rgba(22,17,42,.42) 48%,rgba(18,13,38,.96) 100%);
+  }
+  .card.cover .overlay{color:#fff;flex:1;display:flex;flex-direction:column;padding:24px 22px;justify-content:flex-end;}
+  .card.cover .kick{font-size:.76rem;letter-spacing:.26em;text-transform:uppercase;color:#ffdf9a;font-weight:800;margin-bottom:10px;text-shadow:0 2px 8px rgba(0,0,0,.5);}
+  .card.cover h2{font-size:1.85rem;margin:0 0 10px;line-height:1.14;font-weight:800;text-shadow:0 3px 14px rgba(0,0,0,.55);}
+  .card.cover h2, .card.cover .sub, .card.cover .meta{position:relative;z-index:1;}
+  .card.cover .sub{font-size:.9rem;opacity:.98;margin:0 0 18px;max-width:46ch;text-shadow:0 2px 8px rgba(0,0,0,.5);}
+  .card.cover .meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;}
+  .card.cover .meta span{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);padding:5px 11px;border-radius:999px;font-size:.76rem;}
+  .cover-deco{position:absolute;top:22px;left:22px;font-size:30px;line-height:1;filter:drop-shadow(0 3px 6px rgba(0,0,0,.3));}
+
+  .notes{display:flex;flex-direction:column;gap:8px;}
+  .note{display:flex;gap:9px;align-items:flex-start;border-radius:13px;padding:9px 11px;border:1px solid #e9e4f2;background:#faf9fd;}
+  .note .ni{flex:none;font-size:19px;width:30px;height:30px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.08);}
+  .note .nt{flex:1;min-width:0;}
+  .note .nt b{font-size:.84rem;display:block;color:#3d3f52;}
+  .note .nt p,.note .nt ul{margin:.2rem 0 0;font-size:.76rem;color:#6b7280;}
+  .note .nt li{margin-top:2px;}
+
+  .spots{display:grid;grid-template-columns:1fr 1fr;gap:9px;}
+  .spot-card{border-radius:13px;overflow:hidden;border:1px solid #e9e4f2;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.06);}
+  .spot-card .st{padding:8px 10px;}
+  .spot-card .st b{font-size:.74rem;color:#3d3f52;display:block;line-height:1.3;}
+  .spot-card .st span{font-size:.66rem;color:#8a91a0;display:block;margin-top:1px;}
+  .spot-card .st.rank{display:flex;align-items:center;gap:8px;}
+  .spot-card .rn{flex:none;width:26px;height:26px;border-radius:9px;background:linear-gradient(135deg,var(--tc1),var(--tc2));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.76rem;}
+
+  .day-head{
+    display:flex;align-items:center;gap:11px;background:linear-gradient(90deg,var(--tc-soft),#fff);
+    border-left:5px solid var(--tc-strong);border-radius:13px;padding:9px 12px;margin-bottom:9px;
+  }
+  .day-head .dn{
+    flex:none;width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,var(--tc1),var(--tc2));color:#fff;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.02;font-weight:800;font-size:.78rem;text-align:center;
+  }
+  .day-head .dn small{font-size:.5rem;font-weight:600;opacity:.92;}
+  .day-head .dh{flex:1;min-width:0;}
+  .day-head .dh b{font-size:.94rem;color:var(--tc-strong);display:block;line-height:1.2;}
+  .day-head .dh span{font-size:.72rem;color:#82889a;}
+  .day-route{font-size:.78rem;color:#6b7280;margin:4px 0 9px;background:#f6f3fb;border:1px dashed #d9d2e8;border-radius:11px;padding:8px 11px;}
+  .day-route b{color:#3d3f52;}
+
+  /* 分组栏目 */
+  .day-blocks{display:flex;flex-direction:column;gap:10px;}
+  .dset{border:1px solid #ece6f4;border-radius:15px;background:#fff;overflow:hidden;box-shadow:0 3px 8px rgba(0,0,0,.05);}
+  .dset .dt{
+    display:flex;align-items:center;gap:8px;font-size:.8rem;font-weight:800;color:#fff;padding:8px 12px;
+    background:linear-gradient(90deg,var(--tc1),var(--tc2));
+  }
+  .dset .dt::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.9);}
+  .dset-r{font-size:.74rem;color:#6b7280;padding:9px 12px;background:#faf9fd;border-top:1px dashed #e3dced;line-height:1.5;}
+  .spot{display:flex;gap:9px;align-items:flex-start;padding:8px 12px;border-bottom:1px solid #f2eef8;}
+  .spot:last-child{border-bottom:none;}
+  .spot .p{flex:none;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.74rem;font-weight:800;}
+  .spot .p.m{background:var(--tc-soft);color:var(--tc-strong);}
+  .spot .p.x{border:1px solid #e3dced;color:#a9a6b8;}
+  .spot .nm{flex:1;min-width:0;font-size:.78rem;line-height:1.4;}
+  .spot .nm b{color:#3d3f52;}
+  .spot .nm span{display:block;font-size:.68rem;color:#8a91a0;margin-top:1px;}
+
+  /* 美食列表 */
+  .food{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  .food-item{display:flex;gap:8px;align-items:center;background:#fffaf0;border:1px solid #f0e0bb;border-radius:11px;padding:7px 9px;font-size:.72rem;color:#7a5a16;}
+  .food-item b{color:#9a6e1f;}
+  .food-item .fi-ico{flex:none;font-size:16px;}
+
+  .day-tip{margin-top:9px;font-size:.74rem;background:#f6f1df;border:1px solid #ecdcb2;color:#8a6d1f;border-radius:10px;padding:7px 11px;}
+
+  .flag{display:inline-block;margin-right:2px;}
+
+  .foot-note{text-align:center;color:#c8bce0;font-size:.8rem;padding:6px 18px 44px;max-width:780px;margin:0 auto;}
+  .foot-note a{color:#f3c96a;text-decoration:none;}
+
+  /* ===== 翻页书模式 ===== */
+  .view-toggle{display:flex;gap:8px;justify-content:center;margin:-6px auto 16px;}
+  .view-toggle button{
+    font:inherit;font-size:.8rem;font-weight:700;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);
+    color:#e7def6;padding:7px 16px;border-radius:999px;cursor:pointer;transition:.18s;
+  }
+  .view-toggle button.active{background:#e8b04a;color:#fff;border-color:#e8b04a;}
+
+  .book-wrap{position:relative;}
+  .deck.book-mode{position:relative;height:calc(210mm + 8px);perspective:1700px;align-items:flex-start;justify-content:center;}
+  .deck.book-mode .card{
+    position:absolute;left:50%;top:0;margin-left:-74mm;width:148mm;height:210mm;
+    display:flex;opacity:0;pointer-events:none;transform:rotateY(24deg) translateZ(0) scale(.98);
+    visibility:hidden;
+  }
+  .deck.book-mode .card.on{
+    opacity:1;pointer-events:auto;visibility:visible;transform:rotateY(0) translateZ(0) scale(1);
+    transition:transform .5s cubic-bezier(.35,.1,.25,1),opacity .45s ease,visibility .45s;
+    z-index:5;
+  }
+  .deck.book-mode .card.off-left{
+    opacity:0;visibility:hidden;pointer-events:none;transform:rotateY(-70deg) translateX(-40px) scale(.96);
+    transition:transform .5s cubic-bezier(.4,.1,.3,1),opacity .4s ease,visibility .4s;
+    z-index:3;
+  }
+  .deck.book-mode .card.off-right{
+    opacity:0;visibility:hidden;pointer-events:none;transform:rotateY(70deg) translateX(40px) scale(.96);
+    transition:transform .5s cubic-bezier(.33,.08,.28,1),opacity .4s ease,visibility .4s;
+    z-index:3;
+  }
+  .deck.book-mode .card.hidden{opacity:0;visibility:hidden;pointer-events:none;transform:rotateY(0) scale(.97);z-index:1;}
+
+  .bookbar{display:flex;align-items:center;justify-content:center;gap:16px;margin:20px auto 4px;max-width:600px;flex-wrap:wrap;}
+  .bookbar .bb-btn{
+    width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;font-size:19px;color:#fff;flex:none;
+    background:linear-gradient(135deg,#e8b04a,#d98a2b);box-shadow:0 6px 16px rgba(0,0,0,.3);transition:transform .15s;
+  }
+  .bookbar .bb-btn:hover{transform:scale(1.08);}
+  .bookbar .bb-btn:disabled{background:#6a6480;opacity:.5;cursor:not-allowed;transform:none;}
+  .bookbar .bb-info{display:flex;flex-direction:column;align-items:center;min-width:170px;}
+  .bookbar .bb-pg{font-size:1.02rem;font-weight:800;color:#fff;letter-spacing:.04em;}
+  .bookbar .bb-tt{font-size:.66rem;color:#c4b5e0;font-weight:600;margin-top:2px;max-width:260px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .bookbar .track{position:relative;flex:none;width:150px;height:6px;border-radius:99px;background:rgba(255,255,255,.22);overflow:hidden;margin:0 4px;}
+  .bookbar .fill{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#f3c96a,#e8b04a);border-radius:99px;transition:width .4s ease;}
+
+  @media(max-width:560px){
+    .deck.book-mode .card{left:50%;margin-left:-50mm;width:100mm;}
+  }
+
+  @page{size:A5;margin:0;}
+  @media print{
+    body{background:#fff;}
+    header.masthead,.chips{display:none;}
+    .deck{display:block;}
+    .card{width:148mm;height:210mm;border-radius:0;box-shadow:none;page-break-after:always;margin:0;border:none;}
+    .card:last-child{page-break-after:auto;}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/europe/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="欧洲自驾 · 全域路书 A5 卡片手册">
+    <meta property="og:description" content="欧洲自驾游全域攻略：驾照与国际驾照、租车实操、加油停车、各国限速与交规、高速收费、预算拆解、最佳季节、十大经典路线及路线深潜。">
+    <meta property="og:url" content="https://worldstip.com/map/europe/">
+    <meta property="og:image" content="https://worldstip.com/map/europe/assets/eu-cover-hero.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="欧洲自驾 · 全域路书 A5 卡片手册">
+    <meta name="twitter:description" content="欧洲自驾游全域攻略：驾照与国际驾照、租车实操、加油停车、各国限速与交规、高速收费、预算拆解、最佳季节、十大经典路线及路线深潜。">
+    <meta name="twitter:image" content="https://worldstip.com/map/europe/assets/eu-cover-hero.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "欧洲自驾 · 全域路书 A5 卡片手册",
+      "url": "https://worldstip.com/map/europe/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/europe/",
+  "name": "欧洲自驾 · 全域路书 A5 卡片手册",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="title-emoji">🚗🗺️🧳🪪⛽</div>
+  <h1>欧洲自驾 · 全域路书 A5 卡片手册</h1>
+  <p>从新手浪漫之路到老手的挪威峡湾——先定天数，再选线，把自由握在方向盘上</p>
+</header>
+
+<div class="deck-wrap">
+  <nav class="chips" aria-label="卡片目录">
+    <button data-target="c-cover" class="active">📕 封面</button>
+    <span class="grp-label">—— 先看懂 ——</span>
+    <button data-target="c-plan">🧭 选线心法</button>
+    <button data-target="c-lic">🪪 签证与驾照</button>
+    <button data-target="c-rent">🚗 租车实操</button>
+    <button data-target="c-fill">⛽ 加油·停车</button>
+    <button data-target="c-rule">🚦 交规与限速</button>
+    <button data-target="c-toll">🛣️ 高速收费</button>
+    <button data-target="c-budget">💰 预算拆解</button>
+    <button data-target="c-season">🌦️ 季节策略</button>
+    <span class="grp-label">—— 十大路线 ——</span>
+    <button data-target="c-top">🏆 路线榜</button>
+    <button data-target="c-romantic">🌿 浪漫之路</button>
+    <button data-target="c-amalfi">🌊 阿马尔菲</button>
+    <button data-target="c-iceland">❄️ 冰岛环岛</button>
+    <button data-target="c-norway">⛰️ 挪威峡湾</button>
+    <button data-target="c-nc500">🏴󠁧󠁢󠁳󠁣󠁴󠁿 北海岸500</button>
+    <span class="grp-label">—— 收尾 ——</span>
+    <button data-target="c-safety">🧰 安全与待办</button>
+  </nav>
+
+  <!-- 已去掉翻页书模式，仅保留列表浏览 -->
+
+  <div class="deck" id="deck">
+
+    <!-- 1 · 封面 -->
+    <article class="card cover" id="c-cover">
+      <span class="cover-deco" aria-hidden="true">🚗</span>
+      <figure class="cover-hero" aria-hidden="true"><picture>
+<source srcset="assets/eu-cover-hero.webp" type="image/webp">
+<img src="assets/eu-cover-hero.jpg" alt="">
+</picture></figure>
+      <div class="overlay">
+        <p class="kick">Drive Across Europe · 全域自驾</p>
+        <h2>让方向盘带你<br>看遍欧洲</h2>
+        <p class="sub">城堡、海岸、峡湾、雪山——欧洲不是一条线，而是几十种自驾假期。先想清楚你有几天、想开哪种路，再选那条对得上你节奏的风景路。</p>
+        <div class="meta"><span>🪪 驾照与IDP</span><span>🚗 租车</span><span>💰 预算</span></div>
+        <div class="meta" style="margin-bottom:0"><span>🏆 十大路线</span><span>🛣️ 高速收费</span><span>🔖 红标必背 · 绿标弹性</span></div>
+      </div>
+    </article>
+
+    <!-- 2 · 选线心法 -->
+    <article class="card" id="c-plan" style="--tc1:#6f42c1;--tc2:#b08ce0;--tc-strong:#5a34a0;--tc-soft:#f1ecfa;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🧭</div>
+        <div><h2>选线心法：先看头</h2><div class="en">How to Choose</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><div class="ni">🗓️</div><div class="nt"><b>先定天数，再选线</b>
+            <p>别盯着「穿越多少国家」。<b>7天环线、每站住2晚</b>，远比「匆忙多国行」愉快。途中预留拍照、延迟用餐和天气变化的余地。</p></div></div>
+          <div class="note"><div class="ni">🛣️</div><div class="nt"><b>按驾驶节奏挑路</b>
+            <p>宽阔主干道＋紧凑环线比陡峭窄山路好开。<b>新人→浪漫之路/斯洛文尼亚/葡萄牙</b>；爱风景且时间灵活→冰岛/挪威；老司机想刺激→挪威/罗马尼亚。</p></div></div>
+          <div class="note"><div class="ni">🌦️</div><div class="nt"><b>山路最吃时间</b>
+            <p>高山通道、瀑布、偏远路受<b>雪、风、季节性封闭</b>影响大。选阿尔卑斯/罗马尼亚前务必查当月路况，同步备低海拔替代路线。</p></div></div>
+          <div class="note"><div class="ni">🏡</div><div class="nt"><b>住历史中心外更省心</b>
+            <p>市中心停车难、限入区多、停车费贵。<b>住外围＋步行/公交进城</b>，早晨出发也更简单。</p></div></div>
+          <div class="note"><div class="ni">❌</div><div class="nt"><b>一图避坑</b>
+            <ul><li>别把地图时间当整天计划（山路弯道＋渡轮＋拍照会暴涨）</li>
+            <li>别订历史中心酒店却没确认停车</li>
+            <li>别假设租车能跨境——取车前<b>书面确认</b></li>
+            <li>别想一周跑完整条海岸线</li></ul></div></div>
+        </div>
+        <div class="day-tip">💡 铁律：环形最省钱；每日驾驶 3–4 小时，每 4–5 天安排一个放空日。</div>
+      </div>
+    </article>
+
+    <!-- 3 · 签证与驾照 -->
+    <article class="card" id="c-lic" style="--tc1:#c2453d;--tc2:#e8a0a0;--tc-strong:#a83a30;--tc-soft:#fdeaee;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🪪</div>
+        <div><h2>签证与驾照：硬门槛</h2><div class="en">Visa & Licence</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><div class="ni">🛂</div><div class="nt"><b>申根签证</b><p>多数欧洲国家属<b>申根区（26国）</b>，一签多国免边境检查。签证按<b>停留最长的国家</b>申办。英国/爱尔兰/瑞士等注意非申根/单独政策。</p></div></div>
+          <div class="note"><div class="ni">🪪</div><div class="nt"><b>中国驾照不能直接用</b>
+            <p>需带<b>中国驾照原件 ＋ IDP翻译件/官方认证译文</b>。<b>IDP（国际驾照）约 $24</b>，必须与国内驾照原件<b>同时</b>出示，本身不是独立许可。建议出发前在公证处办「<b>驾照翻译公证＋海牙认证</b>」。</p></div></div>
+          <div class="note"><div class="ni">🚫</div><div class="nt"><b>强制 IDP 的国家</b><p>奥地利、意大利、西班牙、希腊、克罗地亚、波兰、罗马尼亚、斯洛文尼亚、匈牙利、捷克、斯洛伐克等<b>强制要求 IDP</b>。意大利查得最严：需<b>公证＋意语翻译＋附加证明书</b>。</p></div></div>
+          <div class="note"><div class="ni">✅</div><div class="nt"><b>相对宽松的</b><p>德国、法国、荷兰、比利时、卢森堡、瑞士、瑞典、丹麦、挪威、芬兰等：承认<b>中国驾照＋官方认证译文</b>（德国建议做德文翻译公证＋附加证明书）。</p></div></div>
+          <div class="note"><div class="ni">⚠️</div><div class="nt"><b>取车与本国差异</b><p>租车公司一般认 IDP＋中国驾照；但<b>被交警拦查</b>时需 IDP 的法律效力。跨多国提前查各自对非欧盟驾照的正式要求。</p></div></div>
+        </div>
+        <div class="day-tip">💡 最稳妥：按主要自驾国做对应语言的「驾照翻译公证＋海牙认证」，一份通用多数申根国。出发前在租车平台核对目标国要求。</div>
+      </div>
+    </article>
+
+    <!-- 4 · 租车实操 -->
+    <article class="card" id="c-rent" style="--tc1:#2878b5;--tc2:#3a9ee8;--tc-strong:#2a6fb0;--tc-soft:#e6f2fc;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🚗</div>
+        <div><h2>租车实操</h2><div class="en">Rental How-to</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><div class="ni">🏢</div><div class="nt"><b>租车公司与比价</b>
+            <p>平台：<b>Hertz、Avis、Europcar、Sixt</b>（覆盖广）；<b>AutoEurope、RentalCars</b> 比价；国内可用租租车。机场落地取还最方便。</p></div></div>
+          <div class="note"><div class="ni">🚘</div><div class="nt"><b>车型怎么选</b>
+            <ul><li>经济型：城市＋乡村首选，省油好停</li>
+            <li>SUV：冰岛、挪威、阿尔卑斯山区</li>
+            <li>冬季/高山：务必四驱＋雪胎</li>
+            <li>MPV：家庭出行</li></ul></div></div>
+          <div class="note"><div class="ni">🪪</div><div class="nt"><b>证件与押金</b>
+            <p>主驾驶员带齐：中国驾照原件＋IDP/公证译本＋护照。<b>主名下两张国际信用卡</b>（预授权押金约 €200–300，用于可能罚款）。</p></div></div>
+          <div class="note"><div class="ni">➕</div><div class="nt"><b>额外驾驶员必须登记</b>
+            <p>换人/加人开车务必在门店<b>登记</b>，否则出事故<b>保险失效</b>。取车时逐处检查并用<b>验车单标注＋拍照</b>，避免还车扯皮。</p></div></div>
+          <div class="note"><div class="ni">🛡️</div><div class="nt"><b>保险怎么买</b>
+            <p>第三方责任险强制；<b>全险（CDW/碰撞险）强烈建议</b>（约€20–50/天），欧洲修车贵。门店推销额外保险/服务，核对合同金额、<b>不需要可明确拒绝</b>。</p></div></div>
+          <div class="note"><div class="ni">🌍</div><div class="nt"><b>跨境必须申报</b>
+            <p>计划跨境一定<b>取车前说明并书面确认</b>，未申报的跨境可能导致保险失效。部分租车<b>不允许进入东欧/巴尔干</b>，或有跨境费、单程费。</p></div></div>
+        </div>
+        <div class="day-tip">💡 最便宜的报价不一定最省的公路旅行——叠加油费政策、保险免赔额、停车、跨境费/单程费后才是真实成本。</div>
+      </div>
+    </article>
+
+    <!-- 5 · 加油 停车 -->
+    <article class="card" id="c-fill" style="--tc1:#e8815a;--tc2:#f0a85a;--tc-strong:#d9773f;--tc-soft:#fff0e6;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">⛽</div>
+        <div><h2>加油 · 停车</h2><div class="en">Fuel & Park</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><div class="ni">⛽</div><div class="nt"><b>自助加油是主流</b>
+            <p>绿枪=汽油（95号E10 / 98号E5），黑/黄=柴油，油箱盖有标注。缴费：①油枪机先支付/预授权再加油；②先加油→去便利店报<b>机器编号</b>付款。城市/小镇油价比高速服务区便宜。</p></div></div>
+          <div class="note"><div class="ni">💳</div><div class="nt"><b>加油机多用卡</b>
+            <p>准备<b>芯片国际信用卡</b>（带 PIN）；部分自助机只收现金或特定面额。预授权后余额回到卡上需同一支付通道。</p></div></div>
+          <div class="note"><div class="ni">🅿️</div><div class="nt"><b>市区路边停车</b>
+            <p>收费区找<b>停车票机</b>：选时长→缴费→把票放前挡风可见处。免费位常有 1–2 小时限制，需放<b>停车盘（Parking Disc）</b>调好抵达时间。</p></div></div>
+          <div class="note"><div class="ni">🏢</div><div class="nt"><b>停车场与酒店</b>
+            <p>景区/繁华区多<b>自助停车场</b>：进场取票→离场机器缴费。市中心酒店免费车位少，<b>一晚 €10–20</b>常见，历史城区可能车位紧张限入。</p></div></div>
+          <div class="note"><div class="ni">⚠️</div><div class="nt"><b>别乱停</b>
+            <p>违规贴条常见；偏僻海边/山林<b>还有被砸车窗风险</b>。贵重物品别放车内可见处。保护区内只停指定车位，避免阻塞会车点。</p></div></div>
+        </div>
+        <div class="day-tip">💡 欧洲停车贵且位少——出发前确认酒店确切停车地址、是否含车位及限高；市区优先公共交通。</div>
+      </div>
+    </article>
+
+    <!-- 6 · 交规与限速 -->
+    <article class="card" id="c-rule" style="--tc1:#3a9e63;--tc2:#5ac978;--tc-strong:#2f9a5c;--tc-soft:#e6f6ec;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🚦</div>
+        <div><h2>交规与限速</h2><div class="en">Rules & Speed</div></div>
+      </header>
+      <div class="body">
+        <p class="day-route">欧洲统一原则：<b>靠右行驶</b>（英国/爱尔兰靠左）；斑马线前必须停车让行人；环岛内车辆先行、进入让行；超速罚单贵且<b>回国后也会寄到</b>。</p>
+        <div class="spots">
+          <div class="spot-card"><div class="st"><b>🇩🇪 德国</b><span>城内50·乡村100 · <b>高速推荐130</b>（部分无上限）</span></div></div>
+          <div class="spot-card"><div class="st"><b>🇫🇷 法国</b><span>城内50·乡村80/90·高速130（收费）</span></div></div>
+          <div class="spot-card"><div class="st"><b>🇮🇹 意大利</b><span>城内50·乡村90·高速130（收费·查驾照严）</span></div></div>
+          <div class="spot-card"><div class="st"><b>🇦🇹 奥地利</b><span>城内50·乡村100·高速130（需Vignette）</span></div></div>
+          <div class="spot-card"><div class="st"><b>🇨🇭 瑞士</b><span>城内50·乡村80·高速120（需Vignette）</span></div></div>
+          <div class="spot-card"><div class="st"><b>🇪🇸 西班牙</b><span>城内50·乡村90·高速120</span></div></div>
+          <div class="spot-card"><div class="st"><b>🇮🇸 冰岛</b><span>城区50·郊外90；<b>全天开车灯</b>、环岛让左、酒驾0.02</span></div></div>
+          <div class="spot-card"><div class="st"><b>🇳🇴 挪威</b><span>城区50·乡村80·高速110（渡轮多）</span></div></div>
+        </div>
+        <div class="note" style="margin-top:8px"><div class="ni">🧠</div><div class="nt"><b>通用提醒</b><p>系好安全带（全员）；<b>捷克/匈牙利酒驾零容忍</b>；手机仅可免提；雨天/雾限速降低；反光背心＋警示三角牌必备（租车一般提供）。</p></div></div>
+      </div>
+    </article>
+
+    <!-- 7 · 高速收费 -->
+    <article class="card" id="c-toll" style="--tc1:#2a9d8f;--tc2:#5ac9b4;--tc-strong:#1f8a86;--tc-soft:#e6f6f2;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🛣️</div>
+        <div><h2>高速收费：两种模式</h2><div class="en">Tolls & Vignette</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><div class="ni">🏷️</div><div class="nt"><b>贴纸式（Vignette）</b>
+            <p>进高速<b>前</b>必须买并贴好，否则重罚。奥地利10天€12.8/2月€32/年€106.8；瑞士<b>仅年票CHF40</b>；捷克/匈牙利/斯洛伐克/斯洛文尼亚/保加利亚等也有贴纸或电子票。</p></div></div>
+          <div class="note"><div class="ni">📏</div><div class="nt"><b>按里程收费</b>
+            <p>法国（约€9.5/100km）、意大利、西班牙部分、葡萄牙：进高速取卡/ETC、出口缴费，山区隧道另计。避峰/绕普通公路可省钱。</p></div></div>
+          <div class="note"><div class="ni">🚢</div><div class="nt"><b>渡轮</b>
+            <p>含岛屿或被海隔开的路线（挪威、丹麦/瑞典、意大利岛屿）预算<b>每次€30–100</b>；渡轮时刻表决定节奏，提前查。</p></div></div>
+          <div class="note"><div class="ni">🚗</div><div class="nt"><b>低排放区（LEZ）</b>
+            <p>不少历史城市中心（法/德/意等）对排放不达标车辆<b>限入或收费</b>，租车一般合规，但进入前核对目的地城市官网是否需通行标签。</p></div></div>
+          <div class="note"><div class="ni">💡</div><div class="nt"><b>规划时并入预算</b>
+            <p>跨多国把贴纸费＋路费＋渡轮一起算进每日开销，别让收费站杀个措手不及。</p></div></div>
+        </div>
+        <div class="day-tip">💡 奥地利/瑞士等地没贴纸就算「未有效缴费」，罚款远高于票面；边境、加油站、便利店都能买。</div>
+      </div>
+    </article>
+
+    <!-- 8 · 预算拆解 -->
+    <article class="card" id="c-budget" style="--tc1:#c97f2f;--tc2:#e5a24a;--tc-strong:#b06a22;--tc-soft:#fdf5e4;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">💰</div>
+        <div><h2>预算拆解（10–14天按人）</h2><div class="en">Budget</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><div class="ni">💶</div><div class="nt"><b>总预算</b><p>中档 <b>€2,000–4,000/人</b>；勤俭 1 个月约 €2,200–2,800。<b>住宿是最大变量</b>，订价前先想清档次。</p></div></div>
+          <div class="note"><div class="ni">🚗</div><div class="nt"><b>租车</b><p>€30–100/天，<b>10天约 €500–800</b>；经济小车 €50–60/天。取还同城更省。</p></div></div>
+          <div class="note"><div class="ni">⛽</div><div class="nt"><b>燃油</b><p>油价 €1.2–2/L（约 €1.72–1.81），百公里约10升；<b>10天 €300–500</b>。</p></div></div>
+          <div class="note"><div class="ni">🏨</div><div class="nt"><b>住宿/餐饮</b><p>住宿 €80–150/晚（中档，含车位另算）；餐饮 €15–30/餐、<b>€50–100/天</b>；旅社/露营可压到 €30–50/晚。</p></div></div>
+          <div class="note"><div class="ni">🎫</div><div class="nt"><b>景点·路费·杂项</b>
+            <ul><li>景点门票 €400–800；高速/停车 €5–30/天</li>
+            <li>保险 €20–50/天；应急预留 €20–50/天≈总预算10–20%</li>
+            <li>奥地利贴纸10天 €12.8；法国高速约 €9.5/100km</li></ul></div></div>
+          <div class="note"><div class="ni">🧮</div><div class="nt"><b>参考</b><p>两人3周舒适游约 €2,800–4,200/人；一人14天中档约 €2,000–3,000。<b>环线＆每站多住2晚</b>能显著摊薄成本。</p></div></div>
+        </div>
+        <div class="day-tip">💡 提前 2–3 个月订车订酒店可锁定低价；非高峰出行住宿/租车更便宜。</div>
+      </div>
+    </article>
+
+    <!-- 9 · 季节策略 -->
+    <article class="card" id="c-season" style="--tc1:#5560d6;--tc2:#7f8be8;--tc-strong:#4a56c8;--tc-soft:#eef0ff;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🌦️</div>
+        <div><h2>季节策略：何时出发</h2><div class="en">Best Season</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><div class="ni">👌</div><div class="nt"><b>最佳窗口</b><p><b>5–6月、9–10月</b>：天气好、日照适度、游客适中、价格友好——多数路线的一选。</p></div></div>
+          <div class="note"><div class="ni">☀️</div><div class="nt"><b>旺季 7–8月</b><p>日照长、活动多，但<b>人挤、价高、海边停车难</b>；冰岛此时路全通但贵。适合赶暑假。</p></div></div>
+          <div class="note"><div class="ni">❄️</div><div class="nt"><b>淡季 12–2月</b><p>北欧/阿尔卑斯多<b>封路</b>、日照短；仅适合滑雪自驾（需四驱雪胎）或少山路城市线。</p></div></div>
+          <div class="note"><div class="ni">⛰️</div><div class="nt"><b>高山警告（重点）</b>
+            <p>瑞士/奥地利/意大利的高山山口<b>10月–6月常封闭</b>；罗马尼亚特兰斯法加拉、斯洛文尼亚山口随季节限行。<b>选山区路线必须卡对月份＋备低海拔替代线</b>。</p></div></div>
+          <div class="note"><div class="ni">🌊</div><div class="nt"><b>北部/山区要留缓冲</b>
+            <p>冰岛、挪威风大、可临时封路；<b>订可取消住宿、留机动日</b>，比硬排满更稳。</p></div></div>
+        </div>
+        <div class="day-tip">💡 逐条检查：当月可行的沿海线可能不适合高山通道——出发前查国家道路机构的封路与天气警报。</div>
+      </div>
+    </article>
+
+    <!-- 10 · 十大路线榜 -->
+    <article class="card" id="c-top" style="--tc1:#6f42c1;--tc2:#e8b04a;--tc-strong:#5a34a0;--tc-soft:#f4edfb;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🏆</div>
+        <div><h2>十大经典路线 · 一图流</h2><div class="en">Top 10 Routes</div></div>
+      </header>
+      <div class="body">
+        <p class="day-route">排名依「路线连贯、景观多样、实用停靠点、是否天天赶路」综合，<b>非普适优劣</b>——按你的天数与驾驶信心选。</p>
+        <div class="spots" style="grid-template-columns:1fr;">
+          <div class="spot-card"><div class="st rank"><span class="rn">1</span><b>🇮🇸 冰岛环岛公路</b><span>7–10天 · 长距离·天气骤变 · 重风景且时间灵活</span></div></div>
+          <div class="spot-card"><div class="st rank"><span class="rn">2</span><b>🇳🇴 挪威峡湾</b><span>7–14天 · 渡轮·山路·慢节奏风景游</span></div></div>
+          <div class="spot-card"><div class="st rank"><span class="rn">3</span><b>🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰北海岸500</b><span>7–10天 · 窄路·单车道 · 野性海岸与城堡</span></div></div>
+          <div class="spot-card"><div class="st rank"><span class="rn">4</span><b>🇮🇪 爱尔兰野性大西洋之路</b><span>7–10天 · 海岸公路·村庄 · 灵活文化公路行</span></div></div>
+          <div class="spot-card"><div class="st rank"><span class="rn">5</span><b>🇸🇮 斯洛文尼亚阿尔卑斯环线</b><span>5–8天 · 紧凑多山 · 首次阿尔卑斯</span></div></div>
+          <div class="spot-card"><div class="st rank"><span class="rn">6</span><b>🇩🇪 德国浪漫之路</b><span>5–7天 · 轻松城镇间 · 首次欧洲自驾</span></div></div>
+          <div class="spot-card"><div class="st rank"><span class="rn">7</span><b>🇩🇪 德国阿尔卑斯公路</b><span>6–9天 · 湖泊山坡 · 文化与风光结合</span></div></div>
+          <div class="spot-card"><div class="st rank"><span class="rn">8</span><b>🇪🇸 巴斯克环线</b><span>4–7天 · 短距海陆 · 美食主题周末</span></div></div>
+          <div class="spot-card"><div class="st rank"><span class="rn">9</span><b>🇵🇹 葡萄牙大西洋海岸</b><span>7–10天 · 轻松海岸 · 海滨小镇与家庭</span></div></div>
+          <div class="spot-card"><div class="st rank"><span class="rn">10</span><b>🇷🇴 罗马尼亚特兰斯法加拉</b><span>2–4天 · 陡弯季节限 · 老司机专属绕行</span></div></div>
+        </div>
+        <div class="day-tip">💡 先定天数→再按驾驶信心选梯队：新人→浪漫之路/斯洛文尼亚/葡萄牙；爱风景→冰岛/挪威；老司机→挪威/罗马尼亚。</div>
+      </div>
+    </article>
+
+    <!-- 11 · 德国浪漫之路 -->
+    <article class="card" id="c-romantic" style="--tc1:#3a8a3a;--tc2:#6ea85f;--tc-strong:#2e7a2e;--tc-soft:#eaf6e9;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🌿</div>
+        <div><h2>新手首选 · 德国浪漫之路</h2><div class="en">Romantic Road · Germany</div></div>
+      </header>
+      <div class="body">
+        <figure class="route-img"><picture><source srcset="assets/route-romantic.webp" type="image/webp"><img src="assets/route-romantic.jpg" alt="德国浪漫之路" loading="lazy"></picture>
+<figcaption class="route-cap">
+          <div class="rc-flag">🇩🇪 德国南部 · 5–7天 · 轻松好开</div>
+          <h3>童话城堡与中世纪小镇</h3>
+          <p>约 350km，从维尔茨堡一路南下到菲森，串联红陶顶老城、葡萄园与童话城堡，路况极好、节奏从容。</p>
+          <div class="herometa"><span>🛤️ 路况好</span><span>🏰 城堡</span><span>🍺 啤酒镇</span><span>💶 住宿多</span></div>
+        </figcaption>
+        </figure><div class="day-blocks">
+          <div class="dset"><div class="dt">🏔️ 沿途景点与风光</div>
+            <div class="spot"><span class="p m">★</span><div class="nm"><b>新天鹅堡（菲森）</b><span>迪士尼城堡原型，山脚停车后步行/摆渡上山，打卡红顶与山湖同框</span></div></div>
+            <div class="spot"><span class="p m">★</span><div class="nm"><b>罗滕堡</b><span>保存最完好的中世纪老城，满城红陶屋顶，住一晚清晨最出片</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm"><b>维尔茨堡 &amp; 丁克尔斯比尔</b><span>主教城市的巴洛克宫殿＋粉墙木屋小镇，节奏从容</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm"><b>巴伐利亚田园</b><span>起伏麦田、葡萄园与铁皮屋顶村庄，沿线处处是风景</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🏛️ 人文与体验</div>
+            <div class="dset-r">德国最浓的「童话气质」在此：中世纪城墙、木架老屋、圣诞市集与教堂钟声。沿途小镇各有本地市场与手作小店，进酒窖喝一杯弗兰肯白葡萄酒，体验感拉满。</div>
+          </div>
+          <div class="dset"><div class="dt">🍽️ 必吃美食</div>
+            <div class="dset-r" style="padding:4px 10px 8px;">
+              <div class="food">
+                <div class="food-item"><span class="fi-ico">🍖</span><b>猪肘</b> 配烤土豆</div>
+                <div class="food-item"><span class="fi-ico">🍺</span><b>巴伐利亚啤酒</b></div>
+                <div class="food-item"><span class="fi-ico">🌭</span><b>白香肠＋甜芥末</b></div>
+                <div class="food-item"><span class="fi-ico">🍰</span><b>黑森林蛋糕</b></div>
+              </div>
+            </div>
+          </div>
+          <div class="day-tip">💡 新天鹅堡需官网提前买票分时入园；德国高速免费但推荐130，左侧快车道超完回原车道。飞慕尼黑或法兰克福取还车都方便。</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 12 · 意大利阿马尔菲 -->
+    <article class="card" id="c-amalfi" style="--tc1:#2a9d8f;--tc2:#4cc3b0;--tc-strong:#1f8a86;--tc-soft:#e6f6f2;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🌊</div>
+        <div><h2>海岸震撼 · 意大利阿马尔菲</h2><div class="en">Amalfi Coast · Italy</div></div>
+      </header>
+      <div class="body">
+        <figure class="route-img"><picture><source srcset="assets/route-amalfi.webp" type="image/webp"><img src="assets/route-amalfi.jpg" alt="意大利阿马尔菲海岸" loading="lazy"></picture>
+<figcaption class="route-cap">
+          <div class="rc-flag">🇮🇹 南意 · 3–5天 · 技术型海岸</div>
+          <h3>悬崖、彩屋与柠檬海</h3>
+          <p>SS163 海岸盘山公路被誉「世界最美海岸公路」，崖壁与翡翠地中海相夹。⚠️道路狭窄、弯道多，适合有信心者。</p>
+          <div class="herometa"><span>🏞️ 世界最美海岸</span><span>⚡ 技术难度高</span><span>🍋 柠檬海岸</span></div>
+        </figcaption>
+        </figure><div class="day-blocks">
+          <div class="dset"><div class="dt">🏔️ 沿途景点与风光</div>
+            <div class="spot"><span class="p m">★</span><div class="nm"><b>波西塔诺 Positano</b><span>层层叠叠的彩色渔村挂在山坡，被称为「最美小镇」</span></div></div>
+            <div class="spot"><span class="p m">★</span><div class="nm"><b>阿马尔菲 &amp; 拉韦洛</b><span>主镇大教堂与山顶庄园，俯瞰海湾的绝佳机位</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm"><b>索伦托 &amp; 卡普里岛</b><span>海滨基地，搭船去蓝洞与悬崖海景</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm"><b>庞贝古城（可选）</b><span>顺路看被火山灰封存的古罗马城</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🏛️ 人文与体验</div>
+            <div class="dset-r">整片海岸栽满柠檬与橙树，空气中都是柠檬香。「慢食」文化浓厚——在海边露台吃一顿几小时的晚餐是本地生活。沿路手工艺人卖陶瓷、纸张与柠檬酒。</div>
+          </div>
+          <div class="dset"><div class="dt">🍽️ 必吃美食</div>
+            <div class="dset-r" style="padding:4px 10px 8px;">
+              <div class="food">
+                <div class="food-item"><span class="fi-ico">🍋</span><b>柠檬酒 Limoncello</b></div>
+                <div class="food-item"><span class="fi-ico">🍕</span><b>那不勒斯披萨</b></div>
+                <div class="food-item"><span class="fi-ico">🍝</span><b>海鲜意面</b></div>
+                <div class="food-item"><span class="fi-ico">🐟</span><b>烤剑鱼</b></div>
+              </div>
+            </div>
+          </div>
+          <div class="day-tip">💡 窄路急弯会车提前在观景台让行；旺季停车一位难求，提前订带车位的酒店；小号车更好开。新手可选更平缓的葡萄牙大西洋海岸。</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 13 · 冰岛环岛 -->
+    <article class="card" id="c-iceland" style="--tc1:#2f5478;--tc2:#5a8db5;--tc-strong:#274a6b;--tc-soft:#e9f1f8;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">❄️</div>
+        <div><h2>荒野巡礼 · 冰岛环岛公路</h2><div class="en">Ring Road · Iceland</div></div>
+      </header>
+      <div class="body">
+        <figure class="route-img"><picture><source srcset="assets/route-iceland.webp" type="image/webp"><img src="assets/route-iceland.jpg" alt="冰岛环岛公路" loading="lazy"></picture>
+<figcaption class="route-cap">
+          <div class="rc-flag">🇮🇸 一号公路 · 7–10天 · 最佳风景线</div>
+          <h3>瀑布、火山、黑沙滩与冰川</h3>
+          <p>约 1,332km 的国家环线，把冰岛几乎全部旷野奇观连成一圈。景观top级，但天气骤变、封路多。</p>
+          <div class="herometa"><span>🌋 火山</span><span>💦 瀑布</span><span>🖤 黑沙滩</span><span>🧊 冰川</span></div>
+        </figcaption>
+        </figure><div class="day-blocks">
+          <div class="dset"><div class="dt">🏔️ 沿途景点与风光</div>
+            <div class="spot"><span class="p m">★</span><div class="nm"><b>黄金圈</b><span>辛格维利尔裂谷/黄金瀑布/间歇泉三件套，第一站</span></div></div>
+            <div class="spot"><span class="p m">★</span><div class="nm"><b>南岸瀑布线</b><span>斯科加瀑布、塞利亚兰瀑布与维克黑沙滩</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm"><b>杰古沙龙冰河湖</b><span>漂浮冰川块与钻石黑沙滩，最出片机位</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm"><b>东岸峡湾 · 米湖 · 斯奈山</b><span>地热与火山地貌，环岛的中后段</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🏛️ 人文与体验</div>
+            <div class="dset-r">地广人稀有「世界尽头」的孤寂与辽阔。冰岛人以维京后裔自居，首都雷克雅未克小而文艺：下午泡温泉（蓝湖/天空地热）是本地日常，路边小村的羊肉汤和热狗摊很治愈。</div>
+          </div>
+          <div class="dset"><div class="dt">🍽️ 必吃美食</div>
+            <div class="dset-r" style="padding:4px 10px 8px;">
+              <div class="food">
+                <div class="food-item"><span class="fi-ico">🐑</span><b>冰岛羊肉汤</b></div>
+                <div class="food-item"><span class="fi-ico">🌭</span><b>Bæjarins热狗</b></div>
+                <div class="food-item"><span class="fi-ico">🐟</span><b>鳕鱼 &amp; 深海鱼</b></div>
+                <div class="food-item"><span class="fi-ico">🍦</span><b>冰岛风味冰淇淋</b></div>
+              </div>
+            </div>
+          </div>
+          <div class="day-tip">💡 全天开车灯、环岛让左、酒驾0.02；夏季二驱可、冬季强制四驱＋关注 road.is 实时封路；订可取消住宿、留缓冲日。</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 14 · 挪威峡湾 -->
+    <article class="card" id="c-norway" style="--tc1:#2a6f6f;--tc2:#4c8f8f;--tc-strong:#1f5a5a;--tc-soft:#e7f2f2;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">⛰️</div>
+        <div><h2>慢速风景 · 挪威峡湾</h2><div class="en">Fjords · Norway</div></div>
+      </header>
+      <div class="body">
+        <figure class="route-img"><picture><source srcset="assets/route-norway.webp" type="image/webp"><img src="assets/route-norway.jpg" alt="挪威峡湾" loading="lazy"></picture>
+<figcaption class="route-cap">
+          <div class="rc-flag">🇳🇴 西海岸 · 7–14天 · 慢节奏</div>
+          <h3>峡湾、瀑布、渡轮与盘山</h3>
+          <p>不是一条高速，而是渡轮＋隧道＋蜿蜒山路组成的「路途即风景」。别赶，选少而深地停留。</p>
+          <div class="herometa"><span>⛵ 渡轮</span><span>💦 瀑布</span><span>🛣️ 盘山</span><span>🏔️ 峡湾</span></div>
+        </figcaption>
+        </figure><div class="day-blocks">
+          <div class="dset"><div class="dt">🏔️ 沿途景点与风光</div>
+            <div class="spot"><span class="p m">★</span><div class="nm"><b>松恩峡湾</b><span>欧洲最长峡湾，搭一架弗洛姆高山小火车看瀑布</span></div></div>
+            <div class="spot"><span class="p m">★</span><div class="nm"><b>盖朗厄尔峡湾</b><span>联合国教科文世界遗产，海上仙境</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm"><b>老鹰之路 &amp; 精灵之路</b><span>经典盘山发夹弯＋瀑布观景台，夏季开放</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm"><b>卑尔根 — 奥勒松</b><span>彩色木屋峡湾小城，进出节点</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🏛️ 人文与体验</div>
+            <div class="dset-r">峡湾孕育了挪威的「慢旅行」哲学。登山（布道石/恶魔之舌）与海边民宿是核心体验。summer阳光极长，小巷咖啡和海边三文鱼小馆，节奏被拉得很慢。</div>
+          </div>
+          <div class="dset"><div class="dt">🍽️ 必吃美食</div>
+            <div class="dset-r" style="padding:4px 10px 8px;">
+              <div class="food">
+                <div class="food-item"><span class="fi-ico">🐟</span><b>烟熏三文鱼</b></div>
+                <div class="food-item"><span class="fi-ico">🥞</span><b>挪威煎饼 Sveler</b></div>
+                <div class="food-item"><span class="fi-ico">🧀</span><b>棕色山羊奶酪</b></div>
+                <div class="food-item"><span class="fi-ico">🍞</span><b>开放三明治</b></div>
+              </div>
+            </div>
+          </div>
+          <div class="day-tip">💡 渡轮时刻表定节奏、天气多变，别指望一天跑完全部西海岸；出发前查挪威公共道路管理局封路，备低海拔替代路线。</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 15 · 苏格兰北海岸500 -->
+    <article class="card" id="c-nc500" style="--tc1:#7a4a2b;--tc2:#c0834f;--tc-strong:#5e3a22;--tc-soft:#f6ede4;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🏴󠁧󠁢󠁳󠁣󠁴󠁿</div>
+        <div><h2>野性海岸 · 苏格兰北海岸500</h2><div class="en">North Coast 500 · Scotland</div></div>
+      </header>
+      <div class="body">
+        <figure class="route-img"><picture><source srcset="assets/route-nc500.webp" type="image/webp"><img src="assets/route-nc500.jpg" alt="苏格兰北海岸500" loading="lazy"></picture>
+<figcaption class="route-cap">
+          <div class="rc-flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 · 7–10天 · 靠左行驶</div>
+          <h3>海崖、城堡与高地荒原</h3>
+          <p>环绕苏格兰北部高地的滨海环线，约 516 英里，浓缩了海崖、沙滩、古堡与荒原。北段窄路多、单车道会车。</p>
+          <div class="herometa"><span>🌊 海崖</span><span>🏰 城堡</span><span>🥃 威士忌</span><span>🏴󠁧󠁢󠁳󠁣󠁴󠁿 高地</span></div>
+        </figcaption>
+        </figure><div class="day-blocks">
+          <div class="dset"><div class="dt">🏔️ 沿途景点与风光</div>
+            <div class="spot"><span class="p m">★</span><div class="nm"><b>因弗内斯起终点</b><span>尼斯湖与进出苏格兰高地的门户城市</span></div></div>
+            <div class="spot"><span class="p m">★</span><div class="nm"><b>艾琳·多南城堡</b><span>湖心孤立的经典高地城堡机位</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm"><b>西北海岸单车道</b><span>海崖＋荒原，会车点与耐心比速度更重要</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm"><b>斯莫尔群岛 &amp; 白沙滩</b><span>北欧野性的海滨跳岛与沙滩</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🏛️ 人文与体验</div>
+            <div class="dset-r">高地是苏格兰精神的「原乡」——风笛、格子呢、荒原上的城堡废墟。沿路有多家威士忌酒厂，雨后的海湾与古堡像是走进步行史诗。牧羊乡村公路，傍晚的pub最地道。</div>
+          </div>
+          <div class="dset"><div class="dt">🍽️ 必吃美食</div>
+            <div class="dset-r" style="padding:4px 10px 8px;">
+              <div class="food">
+                <div class="food-item"><span class="fi-ico">🥃</span><b>单一麦芽威士忌</b></div>
+                <div class="food-item"><span class="fi-ico">🌭</span><b>苏格兰羊杂 Haggis</b></div>
+                <div class="food-item"><span class="fi-ico">🐟</span><b>炸鱼薯条</b></div>
+                <div class="food-item"><span class="fi-ico">🍰</span><b>高地短裙蛋糕</b></div>
+              </div>
+            </div>
+          </div>
+          <div class="day-tip">💡 靠左行驶，转弯前默念「左转小弯、右转大弯」，环岛让右侧来车；夏季昼长但村舍紧张，春/初秋更安静、需提前订。</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 16 · 安全与待办 -->
+    <article class="card" id="c-safety" style="--tc1:#c2453d;--tc2:#e07a6a;--tc-strong:#a8302a;--tc-soft:#fdeaee;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🧰</div>
+        <div><h2>安全清单 &amp; 出发待办</h2><div class="en">Safety & Checklist</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><div class="ni">🧰</div><div class="nt"><b>车内必备</b>
+            <p>反光背心（每位乘员）、警示三角牌、急救包、手电、手机支架＋车充/数据线、备用充气泵/备胎、<b>离线地图</b>（Google/Here/Maps.me 下载离线包）。</p></div></div>
+          <div class="note"><div class="ni">❄️</div><div class="nt"><b>冬季/高山装备</b>
+            <p>去阿尔卑斯/北欧备<b>雪链＋雪胎</b>（部分国家强制）；山区查封路后<b>带低海拔替代路线</b>。</p></div></div>
+          <div class="note"><div class="ni">📄</div><div class="nt"><b>文件随身</b>
+            <p>护照＋签证、驾照原件＋IDP/公证、租车单、保险单、<b>跨境书面许可</b>、停车票、酒店预订。备纸笔记录报警/救援电话。</p></div></div>
+          <div class="note"><div class="ni">🧘</div><div class="nt"><b>节奏与安全</b>
+            <p>单日驾驶 3–4 小时、每 4–5 天放空；交替驾驶并<b>登记第二驾驶员</b>；长途前查路况/天气/渡轮。</p></div></div>
+          <div class="note"><div class="ni">⚠️</div><div class="nt"><b>出发前核对</b>
+            <p>①租车跨境许可（书面） ②收费与贴纸 ③低排放区 ④酒店确切停车位/限高 ⑤封路与天气 ⑥目标国驾照与原车要求 ⑦应急预留（总预算10–20%）。</p></div></div>
+        </div>
+        <div class="day-tip">💡 放宽心：欧洲交规清晰、路权意识强，准备好这页清单，剩下的交给对路线的期待。</div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- 翻页书上一页/下一页进度条已随翻页模式一并移除 -->
+
+  <p class="foot-note">欧洲自驾 · 驾照 · 租车 · 路线 ｜ A5 卡片手册 · <a href="../../index.html" rel="noopener">← 返回小册子</a></p>
+</div>
+
+<script>
+(function(){
+  var deck=document.getElementById('deck');
+  var toggle=document.getElementById('viewToggle');
+  var bookbar=document.getElementById('bookbar');
+  var cards=[].slice.call(document.querySelectorAll('.card'));
+  var tabs=[].slice.call(document.querySelectorAll('.chips button'));
+  var titles=['封面','选线心法','签证与驾照','租车实操','加油·停车','交规与限速','高速收费','预算拆解','季节策略','十大路线榜','德/浪漫之路','意/阿马尔菲','冰岛环岛','挪威峡湾','北海岸500','安全与待办'];
+  var idx=0, view='book', animating=false;
+
+  function setActive(id){
+    tabs.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-target')===id);});
+  }
+  function titleOfCard(c){
+    var h=c.querySelector('header.c h2');
+    if(h) return h.textContent;
+    var hh=c.querySelector('.hero h3'); if(hh) return hh.textContent;
+    return '封面';
+  }
+  function applyView(v){
+    view=v;
+    if(toggle) toggle.querySelectorAll('button').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-view')===v);});
+    if(view==='book'){
+      deck.classList.add('book-mode');
+      if(bookbar) bookbar.style.display='flex';
+      // stack: all cards absolutely, only current visible
+      cards.forEach(function(c){
+        c.classList.remove('off-left','off-right');
+        c.classList.add('hidden');
+      });
+      go(idx,false,true);
+    } else {
+      deck.classList.remove('book-mode');
+      if(bookbar) bookbar.style.display='none';
+      cards.forEach(function(c){
+        c.classList.remove('on','off-left','off-right','hidden');
+        c.style.cssText='';
+      });
+      setActive(cards[idx].id);
+      if(cards[idx]) cards[idx].scrollIntoView({behavior:'smooth',block:'start'});
+    }
+  }
+  function paint(){
+    var n=cards.length;
+    if(idx<0)idx=0; if(idx>n-1)idx=n-1;
+    document.getElementById('bbPg').textContent=(idx+1)+' / '+n;
+    var pct=Math.round(idx/(n-1)*100);
+    document.getElementById('bbFill').style.width=pct+'%';
+    document.getElementById('bbFillB').style.width=pct+'%';
+    document.getElementById('bbTt').textContent=titleOfCard(cards[idx]);
+    document.getElementById('bbPrev').disabled=(idx===0);
+    document.getElementById('bbNext').disabled=(idx===n-1);
+    setActive(cards[idx].id);
+  }
+  function go(i,direction,silent){
+    if(animating)return;
+    i=Math.max(0,Math.min(cards.length-1,i));
+    if(i===idx && !silent){ paint(); return;}
+    var prev=cards[idx];
+    var next=cards[i];
+    if(prev!==next){
+      animating=true;
+      prev.classList.remove('on');
+      prev.classList.remove('hidden');
+      prev.classList.add(direction>0?'off-left':'off-right');
+      next.classList.remove('hidden');
+      next.classList.remove('off-left','off-right');
+      next.classList.add('on');
+      // reset previous quickly behind current
+      setTimeout(function(){ if(prev!==next){ prev.classList.remove('off-left','off-right'); prev.classList.add('hidden'); } idx=i; paint(); animating=false; },560);
+    } else {
+      idx=i; paint();
+    }
+  }
+  function next(){$n(1);}
+  function prev(){$n(-1);}
+  function $n(d){ if(view!=='book')return; if(animating)return; var target=idx+d; if(target<0||target>cards.length-1)return; go(target,d,false); }
+
+  // 翻页书模式已去掉，仅保留列表浏览
+  // 翻页上一页/下一页按钮事件已随翻页模式一并移除
+  // keyboard
+  document.addEventListener('keydown',function(e){
+    if(view!=='book')return;
+    if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();next();}
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();prev();}
+  });
+  // swipe
+  var sx=null;
+  deck.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
+  deck.addEventListener('touchend',function(e){
+    if(sx===null)return; var dx=e.changedTouches[0].clientX-sx; sx=null;
+    if(view!=='book')return;
+    if(dx<-48)next(); else if(dx>48)prev();
+  },{passive:true});
+  // chips -> go to page
+  tabs.forEach(function(b){
+    b.addEventListener('click',function(){
+      var id=this.getAttribute('data-target');
+      var target=cards.findIndex(function(c){return c.id===id;});
+      if(target<0)return;
+      if(view==='book'){ go(target,target>idx?1:-1,false); }
+      else { setActive(id); cards[target].scrollIntoView({behavior:'smooth',block:'start'}); }
+    });
+  });
+
+  window.BOOK={view:view,next:next,prev:prev,go:go,applyView:applyView};
+  applyView('list');  // 仅列表浏览，翻页书已去掉
+})();
+</script>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>南昌 · 江南昌盛 A5 卡片手册</title>
+<meta name="description" content="南昌市区深度游完整攻略：短程2-3天、长程5天逐日行程，景点、购物、美食、交通避坑、特产伴手礼全覆盖，每天白天玩什么晚上干什么。">
+<meta name="keywords" content="南昌旅游攻略,南昌市区,南昌行程,南昌景点,南昌美食,南昌购物,南昌特产,短程,长程,自由行">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+  color:#2b312e;
+  display:flex;flex-direction:column;align-items:center;
+  padding:40px 20px 76px;
+  background:
+    radial-gradient(52% 40% at 18% 12%, rgba(162,59,46,.20), transparent 60%),
+    radial-gradient(46% 38% at 84% 22%, rgba(47,111,143,.18), transparent 60%),
+    radial-gradient(50% 42% at 72% 92%, rgba(200,120,60,.16), transparent 62%),
+    linear-gradient(160deg,#221613 0%,#120c0a 100%);
+  background-attachment:fixed;
+}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:34px 34px;}
+.deck-wrap{max-width:1180px;width:100%;position:relative;z-index:1}
+.chips{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:0 auto 30px;max-width:1120px}
+.chips button{border:1px solid #ffffff2a;cursor:pointer;padding:10px 17px;border-radius:999px;background:#ffffff14;color:#eae0dc;font-size:13.5px;font-weight:600;backdrop-filter:blur(8px);transition:.18s;letter-spacing:.5px;box-shadow:0 2px 10px #00000030}
+.chips button:hover{background:#a23b2e;color:#fff;border-color:transparent;transform:translateY(-2px);box-shadow:0 8px 22px #a23b2e60}
+.chips button.active{background:linear-gradient(135deg,#a23b2e,#2f6f8f);color:#fff;border-color:transparent;box-shadow:0 8px 24px #a23b2e66}
+.deck{display:flex;flex-wrap:wrap;gap:28px;justify-content:center}
+.card{width:148mm;height:210mm;background:#fff;border-radius:20px;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 26px 70px #00000066,0 0 0 1px #ffffff14}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;z-index:6;background:linear-gradient(90deg,var(--tc1),var(--tc2))}
+.card::after{content:"";position:absolute;top:24px;right:20px;width:56px;height:56px;z-index:0;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--tc-soft),transparent 68%);opacity:.55}
+.topbar{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:18px 26px 0;color:#9aa0ae;font-size:11px;letter-spacing:2px}
+.topbar b{font-weight:800;color:#41261f;letter-spacing:1.5px;display:inline-flex;align-items:center;gap:7px}
+.topbar b::before{content:"";width:8px;height:8px;border-radius:2px;background:linear-gradient(140deg,var(--tc1),var(--tc2))}
+.body{position:relative;z-index:2;flex:1;padding:12px 32px 30px;overflow:hidden;display:flex;flex-direction:column}
+/* 封面 */
+.cover{position:relative;margin:12px 12px 0;border-radius:16px;overflow:hidden;flex:1;background:#0b0e14}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.93}
+.cover::before{content:"";position:absolute;top:14px;left:14px;width:84px;height:84px;z-index:3;border-radius:50%;border:2px dashed rgba(255,255,255,.4);transform:rotate(-12deg)}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,8,6,.02) 0%,rgba(12,8,6,.35) 46%,rgba(12,8,6,.92) 100%),radial-gradient(110% 60% at 85% 0%,rgba(162,59,46,.30),transparent 60%)}
+.cover .cv{position:absolute;inset:auto 0 0 0;padding:0 32px 30px;z-index:4;color:#fff}
+.cover .kick{font-size:12px;letter-spacing:6px;color:#e8c9c1;margin-bottom:14px;font-weight:800}
+.cover .kick::before,.cover .kick::after{content:"—";margin:0 6px;opacity:.6}
+.cover h1{font-size:52px;line-height:1.02;font-weight:900;letter-spacing:1px;background:linear-gradient(120deg,#fff 20%,#f0d6cc 60%,#e8b8a8 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 12px 40px rgba(162,59,46,.35)}
+.cover h1 small{font-size:19px;letter-spacing:6px;display:block;font-weight:700;margin-top:9px;background:linear-gradient(120deg,#f6e6de,#e8b8a8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cover .tags{display:flex;gap:8px;margin-top:20px;flex-wrap:wrap}
+.cover .tags span{font-size:11.5px;font-weight:700;padding:6px 14px;border-radius:999px;letter-spacing:.5px;background:#ffffff1e;border:1px solid #ffffff4d;color:#fff;box-shadow:0 4px 16px #0000002a}
+.cover .meta{margin-top:20px;font-size:11.5px;color:#f4e8e2;letter-spacing:1px;border-top:1px solid #ffffff36;padding-top:12px;display:flex;justify-content:space-between}
+.cover .meta b{color:#e8c9c1}
+/* 标题 + 板块大图 */
+.header.c, .header.b{position:relative;z-index:2;display:flex;align-items:center;gap:14px;margin:6px 0 8px}
+.ico{width:52px;height:52px;border-radius:15px;flex:none;position:relative;background:linear-gradient(140deg,var(--tc1),var(--tc2));display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px var(--tc-soft)}
+.ico::after{content:"";position:absolute;inset:-5px;border-radius:18px;border:2px dashed var(--tc-soft);opacity:.7}
+.ico svg{width:25px;height:25px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.hc h2{font-size:26px;font-weight:900;color:#41261f;letter-spacing:.5px;line-height:1.1}
+.hc h2 b{background:linear-gradient(120deg,var(--tc1),var(--tc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hc .en{font-size:10.5px;color:#a3a9b8;letter-spacing:3px;text-transform:uppercase;margin-top:3px;font-weight:700}
+.hero{border-radius:16px;overflow:hidden;position:relative;margin:6px 0 14px;box-shadow:0 14px 30px #00000026}
+.hero img{width:100%;height:190px;object-fit:cover;display:block}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(10,8,6,.66))}
+.hero .lab{position:absolute;left:14px;bottom:12px;z-index:2;color:#fff;font-size:15px;font-weight:800;letter-spacing:1px;text-shadow:0 2px 10px #00000090}
+.hero .lab small{display:block;font-size:11px;font-weight:500;opacity:.85;letter-spacing:1px;margin-top:2px}
+/* 时间线 */
+.timeline{display:flex;flex-direction:column;margin-top:8px;position:relative}
+.timeline::before{content:"";position:absolute;left:33px;top:12px;bottom:12px;width:2px;background:repeating-linear-gradient(var(--tc-strong),var(--tc-strong) 5px,transparent 5px,transparent 9px);opacity:.35}
+.tl{display:flex;gap:16px;align-items:flex-start;position:relative}
+.tl .d{font-size:11.5px;font-weight:800;color:#fff;position:relative;z-index:2;background:linear-gradient(140deg,var(--tc1),var(--tc2));border-radius:11px;padding:9px 0;width:66px;text-align:center;letter-spacing:.5px;line-height:1.3;box-shadow:0 8px 18px var(--tc-soft)}
+.tl .tt{flex:1;padding:2px 0 16px}
+.tl .tt .t{font-size:15px;font-weight:800;color:#1e2433}
+.tl .tt .t::after{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;margin-left:7px;background:linear-gradient(140deg,var(--tc1),var(--tc2))}
+.tl .tt .s{font-size:12.5px;color:#8990a1;margin-top:4px;line-height:1.5}
+/* 每日 */
+.day-head{display:flex;align-items:center;gap:12px;margin:8px 0 2px}
+.day-head .flag{font-size:14px;font-weight:900;color:#fff;padding:9px 16px;letter-spacing:.5px;border-radius:9px 9px 9px 4px;background:linear-gradient(140deg,var(--tc1),var(--tc2));box-shadow:0 9px 20px var(--tc-soft);transform:skewX(-4deg);flex:none}
+.day-head .flag span{display:inline-block;transform:skewX(4deg)}
+.day-head .cap{font-size:13px;color:#a0a6b6;letter-spacing:1px;font-weight:600}
+.day-route{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin:6px 0 9px;padding:11px 15px;border-radius:12px;background:linear-gradient(120deg,var(--tc1),var(--tc2));color:#fff;font-size:12.5px;line-height:1.55;box-shadow:0 8px 18px var(--tc-soft)}
+.day-route .arrow{color:#fff;font-weight:900;padding:0 2px;opacity:.85}
+.dset{margin:0 0 8px}
+.dt{font-size:13.5px;font-weight:900;color:var(--tc-strong);display:flex;align-items:center;gap:9px;margin-bottom:4px;letter-spacing:.3px}
+.dt::before{content:"";width:5px;align-self:stretch;border-radius:3px;background:linear-gradient(180deg,var(--tc1),var(--tc2))}
+.dset ul{list-style:none}
+.dset li{position:relative;padding:4px 0 4px 24px;font-size:12.5px;line-height:1.55;color:#3a4152;border-bottom:1px dashed #e8e1de}
+.dset li:last-child{border-bottom:none}
+.dset li::before{content:"";position:absolute;left:3px;top:12px;width:8px;height:8px;border-radius:3px;background:linear-gradient(140deg,var(--tc1),var(--tc2));box-shadow:0 0 0 3px var(--tc-soft);opacity:.95}
+.dset li b{color:#4a2a20}
+.dset li em{font-style:normal;color:var(--tc-strong);font-weight:800}
+/* 图条 */
+.thumbs{display:flex;gap:10px;margin:4px 0 10px}
+.th{flex:1;height:118px;border-radius:14px;overflow:hidden;position:relative;box-shadow:0 10px 20px #00000022;border:3px solid #fff;outline:2px solid var(--tc-soft)}
+.th img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.th:hover img{transform:scale(1.07)}
+.th span{position:absolute;left:6px;right:6px;bottom:6px;padding:5px 8px;border-radius:8px;font-size:11px;color:#fff;font-weight:800;letter-spacing:.5px;text-align:center;background:linear-gradient(120deg,var(--tc1),var(--tc2));box-shadow:0 4px 10px #0000004d}
+/* 双图 */
+.pair{display:flex;gap:10px;margin:4px 0 10px}
+.pair .im{flex:1;border-radius:14px;overflow:hidden;position:relative;box-shadow:0 10px 20px #00000022;border:3px solid #fff;outline:2px solid var(--tc-soft)}
+.pair .im img{width:100%;height:150px;object-fit:cover;display:block}
+.pair .im span{position:absolute;left:6px;bottom:6px;padding:4px 9px;border-radius:8px;font-size:11px;color:#fff;font-weight:800;background:linear-gradient(120deg,var(--tc1),var(--tc2));box-shadow:0 4px 10px #0000004d}
+/* 景点网格 */
+.spots{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px}
+.sp{position:relative;border-radius:14px;overflow:hidden;box-shadow:0 10px 20px #00000020;border:3px solid #fff;outline:2px solid #efe6e2;background:#fff}
+.sp img{width:100%;height:96px;object-fit:cover;display:block}
+.sp .nm{position:absolute;top:8px;left:8px;z-index:2;font-size:13px;font-weight:900;color:#fff;text-shadow:0 2px 8px #000000a0}
+.sp .tg{position:absolute;top:8px;right:8px;z-index:2;font-size:10px;font-weight:800;color:#fff;padding:3px 8px;border-radius:999px;background:linear-gradient(120deg,var(--tc1),var(--tc2));box-shadow:0 3px 8px #0000004d}
+.sp .ds{padding:7px 10px;font-size:11.5px;color:#5a6274;line-height:1.5;background:linear-gradient(#fff,#fbf7f5)}
+/* 笔记 */
+.notes{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.note{display:flex;gap:12px;align-items:flex-start;padding:11px 14px;border-radius:13px;background:#f4ece7;border:1px solid #ecddd6;border-left:4px solid var(--tc-strong)}
+.note .ni{font-size:17px;flex:none;width:30px;height:30px;border-radius:9px;background:linear-gradient(140deg,var(--tc-soft),#fff);border:1px solid var(--tc-soft);display:flex;align-items:center;justify-content:center}
+.note .nt b{display:block;font-size:13.5px;color:#4a2a20;margin-bottom:2px}
+.note .nt .x{font-size:12.5px;color:#5a6274;line-height:1.5}
+.note.warn{background:#fff3ec;border-color:#ffd9c2;border-left-color:#ff7a52}
+.note.warn .ni{background:#ffe6d8;border-color:#ffc9ad}
+.day-tip{margin-top:auto;padding:12px 16px;border-radius:14px;position:relative;overflow:hidden;background:linear-gradient(120deg,#fff7d8,#fffdf2);border:1.5px solid #ffd98a;font-size:12.5px;line-height:1.55;color:#8a6a1f}
+.day-tip::before{content:"💡";position:absolute;right:12px;top:-6px;font-size:22px;rotate:-12deg}
+.day-tip b{color:#c7911f}
+.page-num{position:absolute;right:20px;bottom:14px;font-size:12px;color:#b9bfcc;letter-spacing:1px;z-index:6}
+.page-num b{color:#fff;background:linear-gradient(140deg,var(--tc1),var(--tc2));padding:2px 8px;border-radius:7px;box-shadow:0 4px 10px var(--tc-soft)}
+.foot-note{width:100%;text-align:center;color:#e6d6d0;font-size:13px;letter-spacing:1px;padding:34px 0 0;line-height:1.8;position:relative;z-index:1}
+@media print{body{background:#fff;padding:0;display:block}body::before{display:none}.deck-wrap{max-width:none}.chips{display:none}.deck{gap:0;display:block}.card{page-break-after:always;box-shadow:none;border-radius:0;margin:0}.card::before,.card::after{background:none}.foot-note{display:none}}
+@page{size:A5;margin:0}
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/my/bus/1/nanchang/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="南昌 · 江南昌盛 A5 卡片手册">
+    <meta property="og:description" content="南昌市区深度游完整攻略：短程2-3天、长程5天逐日行程，景点、购物、美食、交通避坑、特产伴手礼全覆盖。">
+    <meta property="og:url" content="https://worldstip.com/my/bus/1/nanchang/">
+    <meta property="og:image" content="https://worldstip.com/my/bus/1/nanchang/assets/nc-cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="南昌 · 江南昌盛 A5 卡片手册">
+    <meta name="twitter:description" content="南昌市区深度游完整攻略：景点、购物、美食、交通避坑、特产伴手礼全覆盖。">
+    <meta name="twitter:image" content="https://worldstip.com/my/bus/1/nanchang/assets/nc-cover.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"WorldStip · 旅行小册子","url":"https://worldstip.com/"},
+    {"@type":"ListItem","position":2,"name":"南昌 · 江南昌盛 A5 卡片手册","url":"https://worldstip.com/my/bus/1/nanchang/"}
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/my/bus/1/nanchang/",
+  "name": "南昌 · 江南昌盛 A5 卡片手册",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="deck-wrap">
+  <div class="chips" id="chips">
+    <button data-target="c-cover">封面</button>
+    <button data-target="c-overview">总览</button>
+    <button data-target="c-short">短程介绍</button>
+    <button data-target="c-long">长程介绍</button>
+    <button data-target="c-spot">景点介绍</button>
+    <button data-target="c-shop">购物介绍</button>
+    <button data-target="c-food">美食介绍</button>
+    <button data-target="c-trans">交通避坑</button>
+    <button data-target="c-gift">特产</button>
+  </div>
+  <div class="deck" id="deck">
+
+  <!-- 1 封面 -->
+  <div class="card" id="c-cover" style="--tc1:#a23b2e;--tc2:#2f6f8f;--tc-strong:#8a2f24;--tc-soft:#f0ddd6">
+    <div class="cover">
+      <picture>
+<source srcset="assets/nc-cover.webp" type="image/webp">
+<img src="assets/nc-cover.jpg" alt="南昌滕王阁临赣江" width="800" height="1000" loading="lazy">
+</picture>
+      <div class="cv">
+        <div class="kick">NANCHANG · 南昌</div>
+        <h1>江南昌盛<small>英雄城 · 美食之都 · 市区深度游</small></h1>
+        <div class="tags"><span>滕王阁</span><span>八一起义</span><span>南昌美食</span><span>水岸夜游</span></div>
+        <div class="meta">短程 2-3 天 <b>→</b> 长程 5 天 · 逐日行程</div>
+      </div>
+    </div>
+    <div class="page-num"><b>1</b> / 9</div>
+  </div>
+
+  <!-- 2 总览 -->
+  <div class="card" id="c-overview" style="--tc1:#2f6f8f;--tc2:#4aa0b8;--tc-strong:#285c74;--tc-soft:#e2edf2">
+    <div class="topbar"><b>南昌 · 江南昌盛</b><span>白皮书 · 一览</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14l-4-2-4 2-4-2-4 2z"/><path d="M9 9h6M9 13h6"/></svg></div>
+      <div class="hc"><h2><b>南昌一览</b></h2><div class="en">Overview</div></div>
+    </div>
+    <div class="body">
+      <div class="hero">
+        <picture><source srcset="assets/nc-night.webp" type="image/webp"><img src="assets/nc-night.jpg" alt="南昌一江两岸夜景" loading="lazy"></picture>
+        <div class="lab">一江两岸 · 华灯初上<small>赣江穿城，古今同框</small></div>
+      </div>
+      <div class="dset"><div class="dt">📍 城市印象</div><ul>
+        <li>赣鄱大地省会，<b>一江两岸</b>格局，英雄城 + 美食之都</li>
+        <li>市区松弛好逛，<b>地铁公交打车都方便</b>，省会枢纽</li>
+      </ul></div>
+      <div class="timeline">
+        <div class="tl"><div class="d">短程<br>2-3天</div><div class="tt"><div class="t">主城精华</div><div class="s">滕王阁 + 八一 + 省博 + 一江两岸</div></div></div>
+        <div class="tl"><div class="d">中程<br>4天</div><div class="tt"><div class="t">加老街觅食</div><div class="s">短程 + 珠宝街/羊子巷/绳金塔</div></div></div>
+        <div class="tl"><div class="d">长程<br>5天</div><div class="tt"><div class="t">深度度假</div><div class="s">全部市区 + 购物 + 特产慢慢逛</div></div></div>
+      </div>
+      <div class="note"><div class="ni">🛏</div><div class="nt"><b>住哪</b><div class="x">老城（滕王阁/万寿宫）看古韵，红谷滩新区看江景，夜游都方便</div></div></div>
+    </div>
+    <div class="page-num"><b>2</b> / 9</div>
+  </div>
+
+  <!-- 3 短程介绍 -->
+  <div class="card" id="c-short" style="--tc1:#8f3328;--tc2:#2f6f8f;--tc-strong:#7a2a21;--tc-soft:#f0dcd6">
+    <div class="topbar"><b>南昌 · 江南昌盛</b><span>短程 · 2-3 天</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 3h14v4H5zM5 11h14v4H5zM5 19h6M15 19h2"/></svg></div>
+      <div class="hc"><h2>短程介绍 · <b>2-3 天</b></h2><div class="en">Short Trip · City Loop</div></div>
+    </div>
+    <div class="body">
+      <div class="hero">
+        <picture><source srcset="assets/nc-bayi.webp" type="image/webp"><img src="assets/nc-bayi.jpg" alt="八一起义纪念馆" loading="lazy"></picture>
+        <div class="lab">短程住下就够 · 精华不赶</div>
+      </div>
+      <div class="day-head"><div class="flag"><span>Day·1</span></div><div class="cap">主城文化</div></div>
+      <div class="day-route">滕王阁 <span class="arrow">→</span> 万寿宫 <span class="arrow">→</span> 夜：一江两岸</div>
+      <div class="dset"><div class="dt">☀️ 白天</div><ul><li><b>上午</b>登滕王阁（背《滕王阁序》有机会免票）</li><li><b>下午</b>逛万寿宫历史文化街区，赣派古建+午餐</li></ul></div>
+      <div class="dset"><div class="dt">🌙 晚上</div><ul><li><b>一江两岸夜景</b>：滕王阁夜游 / 南昌之星摩天轮</li></ul></div>
+      <div class="day-head"><div class="flag"><span>Day·2</span></div><div class="cap">红色文博</div></div>
+      <div class="day-route">八一起义馆 <span class="arrow">→</span> 八一广场 <span class="arrow">→</span> 省博 <span class="arrow">→</span> 夜：觅食</div>
+      <div class="dset"><div class="dt">☀️ 白天</div><ul><li>八一起义纪念馆（免费预约）+ 八一广场</li><li>下午<b>省博物馆</b>，海昏侯金器特展</li></ul></div>
+      <div class="dset"><div class="dt">🌙 晚上</div><ul><li>珠宝街 / 羊子巷<b>觅食 citywalk</b></li></ul></div>
+      <div class="day-tip"><b>TIP</b>　第3天可选：上午补逛<b>绳金塔</b>，下午买特产返程，节奏不累。</div>
+    </div>
+    <div class="page-num"><b>3</b> / 9</div>
+  </div>
+
+  <!-- 4 长程介绍 -->
+  <div class="card" id="c-long" style="--tc1:#23496e;--tc2:#3a9ab0;--tc-strong:#1e3d5c;--tc-soft:#e0e9ef">
+    <div class="topbar"><b>南昌 · 江南昌盛</b><span>长程 · 5 天</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 5h18M5 19h14M6 5l2 14M18 5l-2 14M4 12h16"/></svg></div>
+      <div class="hc"><h2>长程介绍 · <b>5 天</b></h2><div class="en">Long Trip · Deep City</div></div>
+    </div>
+    <div class="body">
+      <div class="day-head"><div class="flag"><span>D1</span></div><div class="cap">主城文化</div></div>
+      <div class="day-route">滕王阁 → 万寿宫 → 夜：一江两岸</div>
+      <div class="day-head"><div class="flag"><span>D2</span></div><div class="cap">红色文博</div></div>
+      <div class="day-route">八一馆 → 八一广场 → 省博 → 夜：珠宝街觅食</div>
+      <div class="day-head"><div class="flag"><span>D3</span></div><div class="cap">老街觅食</div></div>
+      <div class="day-route">绳金塔 → 珠宝街/羊子巷 → 699文创 → 夜：蛤蟆街</div>
+      <div class="day-head"><div class="flag"><span>D4</span></div><div class="cap">水岸休闲</div></div>
+      <div class="day-route">南昌舰/艾溪湖 → 红谷滩购物 → 夜：摩天轮+喷泉</div>
+      <div class="day-head"><div class="flag"><span>D5</span></div><div class="cap">购物 · 回味</div></div>
+      <div class="day-route">中山路商圈+买特产 → 咖啡馆 → 夜：最后一顿+夜景</div>
+      <div class="thumbs">
+        <div class="th"><picture><source srcset="assets/nc-wanshougong.webp" type="image/webp"><img src="assets/nc-wanshougong.jpg" alt="万寿宫街区" loading="lazy"></picture><span>万寿宫古街</span></div>
+        <div class="th"><picture><source srcset="assets/nc-shengtajin.webp" type="image/webp"><img src="assets/nc-shengtajin.jpg" alt="绳金塔" loading="lazy"></picture><span>绳金塔</span></div>
+        <div class="th"><picture><source srcset="assets/nc-shopping.webp" type="image/webp"><img src="assets/nc-shopping.jpg" alt="南昌商圈" loading="lazy"></picture><span>商圈购物</span></div>
+      </div>
+      <div class="day-tip"><b>TIP</b>　长程全程都在<b>南昌市区</b>，松弛度假，不走远不赶路。</div>
+    </div>
+    <div class="page-num"><b>4</b> / 9</div>
+  </div>
+
+  <!-- 5 景点介绍 -->
+  <div class="card" id="c-spot" style="--tc1:#a23b2e;--tc2:#c96a2e;--tc-strong:#8a2f24;--tc-soft:#f2e0d8">
+    <div class="topbar"><b>南昌 · 江南昌盛</b><span>市区核心景点</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 5v6l-9 5-9-5V8l9-5z"/><path d="M9 12l2 2 4-4"/></svg></div>
+      <div class="hc"><h2>市区景点</h2><div class="en">City Highlights</div></div>
+    </div>
+    <div class="body">
+      <div class="spots">
+        <div class="sp"><picture><source srcset="assets/nc-cover.webp" type="image/webp"><img src="assets/nc-cover.jpg" alt="滕王阁" loading="lazy"></picture><span class="nm">滕王阁</span><span class="tg">必去</span><div class="ds">登阁望江，《滕王阁序》地标，约50元</div></div>
+        <div class="sp"><picture><source srcset="assets/nc-bayi.webp" type="image/webp"><img src="assets/nc-bayi.jpg" alt="八一起义纪念馆" loading="lazy"></picture><span class="nm">八一起义馆</span><span class="tg">免费</span><div class="ds">英雄城原点，总指挥部旧址，需预约</div></div>
+        <div class="sp"><picture><source srcset="assets/nc-wanshougong.webp" type="image/webp"><img src="assets/nc-wanshougong.jpg" alt="万寿宫街区" loading="lazy"></picture><span class="nm">万寿宫街区</span><span class="tg">免费</span><div class="ds">赣派古建 + 市井美食夜市</div></div>
+        <div class="sp"><picture><source srcset="assets/nc-museum.webp" type="image/webp"><img src="assets/nc-museum.jpg" alt="省博物馆" loading="lazy"></picture><span class="nm">省博物馆</span><span class="tg">免费</span><div class="ds">海昏侯金器特展，需预约</div></div>
+        <div class="sp"><picture><source srcset="assets/nc-shengtajin.webp" type="image/webp"><img src="assets/nc-shengtajin.jpg" alt="绳金塔" loading="lazy"></picture><span class="nm">绳金塔</span><span class="tg">古塔</span><div class="ds">唐代古塔，周边美食街</div></div>
+        <div class="sp"><picture><source srcset="assets/nc-night.webp" type="image/webp"><img src="assets/nc-night.jpg" alt="南昌之星摩天轮" loading="lazy"></picture><span class="nm">南昌之星/秋水</span><span class="tg">夜景</span><div class="ds">世界级摩天轮 + 音乐喷泉灯光秀</div></div>
+      </div>
+      <div class="note"><div class="ni">➕</div><div class="nt"><b>可选</b><div class="x">699文创园（文艺出片）、南昌舰主题园（登舰看江）、艾溪湖/瑶湖（骑行观鸟）</div></div></div>
+      <div class="day-tip"><b>TIP</b>　八一馆、省博<b>周一闭馆</b>，免费但需线上预约。</div>
+    </div>
+    <div class="page-num"><b>5</b> / 9</div>
+  </div>
+
+  <!-- 6 购物介绍 -->
+  <div class="card" id="c-shop" style="--tc1:#5a4a8a;--tc2:#8a6fc0;--tc-strong:#4a3f70;--tc-soft:#ece7f2">
+    <div class="topbar"><b>南昌 · 江南昌盛</b><span>购物指南</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M6 2l14 4-2 6 2 6-14 4 1-10-3-6 2-4z"/></svg></div>
+      <div class="hc"><h2>购物介绍</h2><div class="en">Shopping</div></div>
+    </div>
+    <div class="body">
+      <div class="hero">
+        <picture><source srcset="assets/nc-shopping.webp" type="image/webp"><img src="assets/nc-shopping.jpg" alt="南昌购物商圈" loading="lazy"></picture>
+        <div class="lab">老城烟火 → 新城商圈</div>
+      </div>
+      <div class="dset"><div class="dt">🛍 老城商圈</div><ul>
+        <li><b>中山路</b>：老牌商圈，逛吃一体</li>
+        <li><b>万寿宫街区</b>：文创伴手礼 + 古街氛围</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🏙 新城商圈</div><ul>
+        <li><b>红谷滩万达 / 铜锣湾</b>：现代购物中心</li>
+        <li>品牌、餐饮、影院齐全，夜宿看江景佳</li>
+      </ul></div>
+      <div class="note warn"><div class="ni">⚠️</div><div class="nt"><b>省着点</b><div class="x">景区内纪念品偏贵，伴手礼去万寿宫街区/超市更实惠</div></div></div>
+      <div class="day-tip"><b>TIP</b>　购物建议放<b>行程后段</b>（长程 D4-D5），避免拎着逛景点。</div>
+    </div>
+    <div class="page-num"><b>6</b> / 9</div>
+  </div>
+
+  <!-- 7 美食介绍 -->
+  <div class="card" id="c-food" style="--tc1:#c96a2e;--tc2:#9a3a2a;--tc-strong:#b05828;--tc-soft:#fdebd9">
+    <div class="topbar"><b>南昌 · 江南昌盛</b><span>南昌味道</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M11 3v8a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V3M12 21h0M2 21h4M12 21h4M14 7v14M18 3l3 3-1 1 1 1-3 3"/></svg></div>
+      <div class="hc"><h2>美食介绍</h2><div class="en">Local Flavors</div></div>
+    </div>
+    <div class="body">
+      <div class="pair">
+        <div class="im"><picture><source srcset="assets/nc-food.webp" type="image/webp"><img src="assets/nc-food.jpg" alt="瓦罐汤拌粉" loading="lazy"></picture><span>瓦罐汤 · 拌粉</span></div>
+        <div class="im"><picture><source srcset="assets/nc-cuisine.webp" type="image/webp"><img src="assets/nc-cuisine.jpg" alt="南昌赣菜" loading="lazy"></picture><span>鲜辣赣菜</span></div>
+      </div>
+      <div class="dset"><div class="dt">🍜 必吃招牌</div><ul>
+        <li><b>南昌拌粉 + 瓦罐汤</b>——早餐黄金CP</li>
+        <li><b>藜蒿炒腊肉 / 辣椒炒肉</b>——赣菜鲜辣</li>
+        <li><b>白糖糕 / 水煮 / 炒粉</b>——街头小吃</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🗺 觅食街区</div><ul>
+        <li><b>珠宝街 / 羊子巷 / 蛤蟆街 / 绳金塔美食街</b></li>
+        <li>早餐去<b>大士院</b>喝瓦罐汤最地道</li>
+      </ul></div>
+      <div class="note warn"><div class="ni">🔥</div><div class="nt"><b>吃辣警告</b><div class="x">南昌菜偏辣，不吃辣一定提前跟店家说明</div></div></div>
+      <div class="day-tip"><b>TIP</b>　米粉瓦罐汤满街都是，<b>老巷小店更正宗</b>。</div>
+    </div>
+    <div class="page-num"><b>7</b> / 9</div>
+  </div>
+
+  <!-- 8 交通避坑 -->
+  <div class="card" id="c-trans" style="--tc1:#2f6f8f;--tc2:#a23b2e;--tc-strong:#285c74;--tc-soft:#e2edf2">
+    <div class="topbar"><b>南昌 · 江南昌盛</b><span>出发前</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-9 9c0 5 3 8 9 8s9-3 9-8a9 9 0 0 0-9-9z"/><path d="M12 8v5M12 17h.01"/></svg></div>
+      <div class="hc"><h2>交通避坑</h2><div class="en">Getting Around</div></div>
+    </div>
+    <div class="body">
+      <div class="hero">
+        <picture><source srcset="assets/nc-night.webp" type="image/webp"><img src="assets/nc-night.jpg" alt="南昌夜景交通" loading="lazy"></picture>
+        <div class="lab">出行无忧 · 避坑要点</div>
+      </div>
+      <div class="notes">
+        <div class="note"><div class="ni">🚄</div><div class="nt"><b>怎么来</b><div class="x">高铁 <b>南昌西 / 南昌站</b>；昌北机场有市区大巴/地铁</div></div></div>
+        <div class="note"><div class="ni">🚇</div><div class="nt"><b>市内交通</b><div class="x">地铁 + 公交 + 打车/滴滴，景点间大多地铁直达</div></div></div>
+        <div class="note"><div class="ni">🎫</div><div class="nt"><b>门票预约</b><div class="x">滕王阁约50元；八一馆、省博免费需预约，周一闭馆</div></div></div>
+        <div class="note warn"><div class="ni">🌙</div><div class="nt"><b>夜游</b><div class="x">夜游船、摩天轮、音乐喷泉<b>提前查场次</b></div></div></div>
+        <div class="note warn"><div class="ni">🏺</div><div class="nt"><b>海昏侯</b><div class="x">遗址偏郊、往返半天；时间紧看省博金器特展即可</div></div></div>
+      </div>
+    </div>
+    <div class="page-num"><b>8</b> / 9</div>
+  </div>
+
+  <!-- 9 特产 -->
+  <div class="card" id="c-gift" style="--tc1:#8a6a1f;--tc2:#c9a03a;--tc-strong:#6f5718;--tc-soft:#f7ecd0">
+    <div class="topbar"><b>南昌 · 江南昌盛</b><span>把南昌带回家</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5L12 2z"/><path d="M6 16c1.5 2 3 3 6 3s4.5-1 6-3M6 20h12"/></svg></div>
+      <div class="hc"><h2>特色伴手礼</h2><div class="en">Specialty Souvenirs</div></div>
+    </div>
+    <div class="body">
+      <div class="hero">
+        <picture><source srcset="assets/nc-treats.webp" type="image/webp"><img src="assets/nc-treats.jpg" alt="南昌特产" loading="lazy"></picture>
+        <div class="lab">把这些装进旅行袋</div>
+      </div>
+      <div class="dset"><div class="dt">🎁 必买特产</div><ul>
+        <li><b>南昌米粉 / 切粉</b>——拌粉灵魂原料</li>
+        <li><b>瓦罐汤陶罐 + 汤料组</b>——居家复刻</li>
+        <li><b>煌上煌卤味</b>——江西卤味名片（真空装）</li>
+        <li><b>白糖糕 / 江西茶饼</b>——甜点伴手礼</li>
+        <li><b>藜蒿干 / 泥鳅干</b>——鄱阳湖鲜</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🛒 去哪买</div><ul>
+        <li><b>万寿宫街区</b>文创市集，或大型超市特产区</li>
+        <li>多数可<b>现场邮寄</b>，米粉盯紧保质期</li>
+      </ul></div>
+    </div>
+    <div class="page-num"><b>9</b> / 9</div>
+  </div>
+
+  </div>
+  <p class="foot-note"><span>江西独立卡 · 单独收藏</span></p>
+</div>
+<script>
+(() => {
+  const chips=[...document.querySelectorAll('.chips button')];
+  const cards=[...document.querySelectorAll('.card')];
+  const ob=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){chips.forEach(c=>c.classList.toggle('active',c.dataset.target===e.target.id));}});},{rootMargin:'-45% 0px -50% 0px',threshold:0});
+  cards.forEach(c=>ob.observe(c));
+  chips.forEach(b=>b.addEventListener('click',()=>{const t=document.getElementById(b.dataset.target);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});}));
+})();
+</script>
+
+<footer class="tp-pro" role="contentinfo">
+  <h4 class="tp-pro__h">继续探索</h4>
+  <nav class="tp-pro__links">
+    <a class="tp-pro__pill" href="/map/aizhai/">矮寨</a>
+    <a class="tp-pro__pill" href="/map/changbaishan/">长白山</a>
+    <a class="tp-pro__pill" href="/map/chibi/">赤壁</a>
+    <a class="tp-pro__pill" href="/map/danxiashan/">韶关</a>
+    <a class="tp-pro__pill" href="/map/fangte/">方特</a>
+    <a class="tp-pro__pill" href="/map/gexiancun/">葛仙村</a>
+  </nav>
+  <div class="tp-pro__rule"></div>
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处<br>
+本文地址：<strong>https://worldstip.com/my/bus/1/nanchang/</strong></p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+</body>
+</html>

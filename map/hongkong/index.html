@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="zh-CN" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>香港 · 九龙港片·港岛山海·麦理浩（章节体深度玩法）</title>
+<meta name="description" content="参考行影香港攻略重写：第一次去香港（区域+交通）、九龙油尖旺港片文艺、港岛山海相逢、半小时逃离城市的麦理浩径/长洲/大澳，附美食与行前提示。">
+<meta name="keywords" content="香港旅游,油尖旺,旺角,庙街,太平山,坚尼地城,叮叮车,麦理浩径,长洲岛,大澳,行影攻略">
+<style>
+:root{
+  --ink:#1f1a28; --mut:#7c7286; --line:#e6deef; --bg:#fcfaf7;
+  --hong:#b33a4a; --hong-deep:#87293a; --gold:#d9a441; --gold-soft:#f6ecd4;
+  --paper:#ffffff; --sea:#0f7f8f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg);line-height:1.8}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.hero{background:linear-gradient(140deg,#87293a,#b33a4a 55%,#d16372);color:#fff;padding:52px 0 46px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-70px;top:-50px;width:300px;height:300px;background:radial-gradient(circle,rgba(255,255,255,.16),transparent 70%)}
+.hero .kicker{letter-spacing:.4em;font-size:12px;opacity:.85}
+.hero h1{font-size:34px;line-height:1.28;margin:10px 0 8px}
+.hero p{max-width:720px;font-size:15px;opacity:.96}
+.hero .quote{margin-top:16px;font-size:13.5px;opacity:.9;border-left:3px solid rgba(255,255,255,.5);padding-left:12px}
+nav.chapters{display:flex;flex-wrap:wrap;gap:10px;margin:-24px 0 22px;position:relative;z-index:2}
+nav.chapters a{flex:1;min-width:210px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--ink);box-shadow:0 6px 18px rgba(0,0,0,.05)}
+nav.chapters a b{display:block;font-size:14px;color:var(--hong-deep)}
+nav.chapters a span{font-size:12px;color:var(--mut)}
+.sec{margin:40px 0 8px;display:flex;align-items:baseline;gap:12px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.sec .ch{font-size:13px;letter-spacing:.2em;color:var(--hong);font-weight:700;flex:none;width:164px}
+.sec h2{font-size:23px}
+.sec .sub{color:var(--mut);font-size:13px;margin-left:auto}
+.lead-p{color:var(--mut);font-size:13.5px;max-width:860px;margin:6px 0 18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.station{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:14px;padding:16px;font-size:13px}
+.station h3{font-size:16px;margin-bottom:4px}
+.station h3 small{color:var(--sea);font-weight:600;font-size:12px;margin-left:6px}
+.station .sceneTxt{color:var(--ink);font-size:13px;margin:4px 0 8px;line-height:1.7}
+.station .meta{background:var(--section, #f4f1ee);border-radius:8px;padding:8px 10px;font-size:12px;color:var(--mut)}
+.station .meta b{color:var(--ink)}
+.spots{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.spots figure{overflow:hidden;border-radius:14px;background:#eee9f2;border:1px solid var(--line)}
+.spots img{width:100%;height:168px;object-fit:cover;display:block}
+.spots figcaption{padding:8px 10px;font-size:12.5px;background:#fff}
+.spots figcaption b{display:block;font-size:13.5px}
+.photo-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.photo-row figure{overflow:hidden;border-radius:14px;background:#eee9f2;border:1px solid var(--line)}
+.photo-row img{width:100%;height:200px;object-fit:cover;display:block}
+.photo-row figcaption{padding:8px 10px;font-size:12.5px;background:#fff}
+.photo-row figcaption b{display:block;font-size:13.5px}
+.foodlist{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
+.foodlist div{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:13px}
+.foodlist div b{display:block;color:var(--hong-deep);font-size:14.5px;margin-bottom:2px}
+.tips{background:var(--gold-soft);border:1px solid #ece0be;border-radius:14px;padding:16px 20px;margin-top:16px;font-size:13.5px}
+.tips h3{color:#8a6f2a;font-size:15px;margin-bottom:8px}
+.tips li{margin-left:18px;margin-bottom:5px}
+.bonus{background:linear-gradient(135deg,#103a4e,#0f7f8f);color:#fff;border-radius:16px;padding:22px;margin-top:20px}
+.bonus h3{font-size:17px;margin-bottom:6px}
+.bonus p{font-size:13.5px;opacity:.95;max-width:820px}
+.bonus img{width:100%;max-height:220px;object-fit:cover;border-radius:12px;margin-top:12px}
+footer{margin:40px 0 24px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:12.5px;text-align:center;line-height:1.9}
+@media(max-width:760px){.grid,.spots,.photo-row,.foodlist{grid-template-columns:1fr 1fr}.hero h1{font-size:27px}.sec{display:block}.sec .ch{width:auto;margin-bottom:4px}}
+@media(max-width:520px){.grid,.spots,.photo-row,.foodlist{grid-template-columns:1fr}}
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/hongkong/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="香港 · 九龙港片·港岛山海·麦理浩（章节体深度玩法）">
+    <meta property="og:description" content="参考行影香港攻略重写：第一次去香港（区域+交通）、九龙油尖旺港片文艺、港岛山海相逢、半小时逃离城市的麦理浩径/长洲/大澳，附美食与行前提示。">
+    <meta property="og:url" content="https://worldstip.com/map/hongkong/">
+    <meta property="og:image" content="https://worldstip.com/assets/images/hk_victoria.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="香港 · 九龙港片·港岛山海·麦理浩（章节体深度玩法）">
+    <meta name="twitter:description" content="参考行影香港攻略重写：第一次去香港（区域+交通）、九龙油尖旺港片文艺、港岛山海相逢、半小时逃离城市的麦理浩径/长洲/大澳，附美食与行前提示。">
+    <meta name="twitter:image" content="https://worldstip.com/assets/images/hk_victoria.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "香港 · 行影式深度玩法（章节体）九龙港片·港岛山海·半小时逃离城市",
+      "url": "https://worldstip.com/map/hongkong/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/hongkong/",
+  "name": "香港 · 九龙港片·港岛山海·麦理浩（章节体深度玩法）",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">HONG KONG · 香港</div>
+    <h1>香港 · 行影式深度玩法</h1>
+    <p>拔地而起的摩天大楼、复古红的出租车、高低交错的街道、赛博朋克般的港风霓虹。这里有TVB港剧、粤语歌、港式美食，每个转角都像王家卫电影里的纸醉金迷——香港处处给你意想不到的惊喜。</p>
+    <div class="quote">参考"行影·香港攻略"重写 · 用不同的方式与角度，感受香港的 A 面与 B 面</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="chapters">
+    <a href="#ch1"><b>章一 · 第一次去香港</b><span>区域 + 交通 + 签证</span></a>
+    <a href="#ch2"><b>章二 · 港片复兴文艺</b><span>九龙·尖沙咀旺角油麻地</span></a>
+    <a href="#ch3"><b>章三 · 山海相逢</b><span>港岛·坚尼地城中环山顶</span></a>
+    <a href="#ch4"><b>章四 · 半小时逃离城市</b><span>麦理浩径·长洲·大澳</span></a>
+    <a href="#ch5"><b>章五 · 上榜必玩清单</b><span>天际100 · 龙脊 · 帆船 · 海滩</span></a>
+    <a href="#ch6"><b>章六 · 一日游路线 + 行前必知</b><span>最佳季节 · 伴手礼 · FAQ</span></a>
+  </nav>
+
+  <!-- ===== 章一 ===== -->
+  <section id="ch1">
+    <div class="sec"><span class="ch">CHAPTER 01</span><h2>第一次去香港</h2><span class="sub">先弄清"从哪儿玩"和"怎么走"</span></div>
+    <p class="lead-p">香港分<b>香港岛、九龙半岛、新界和离岛</b>四块，高楼、老城、山海紧密拼接，不同区域的玩法风格截然不同。第一次来，主力覆盖<b>九龙半岛 + 香港岛</b>，再抽半天去离岛拥抱山海。</p>
+    <div class="grid">
+      <div class="station"><h3>怎么进香港</h3><p class="sceneTxt">签证方便，全国可<b>直飞香港国际机场</b>；<b>京港高铁</b>直达市区的<b>西九龙站</b>，大湾区坐高铁或大巴即达。也适合出境转机时停留。</p></div>
+      <div class="station"><h3>怎么逛市区</h3><p class="sceneTxt">地铁、叮叮车、天星小轮、缆车、落日飞车——用不同的交通工具换不同角度，感受港九 AB 面，一部八达通/旅客全日通搞定。</p></div>
+      <div class="station"><h3>怎么玩节奏</h3><p class="sceneTxt">完全可以<b>周末 Citywalk + 户外徒步</b>，24 小时沉浸式走遍香港：白天山海、夜晚霓虹，热门地标集中，动线很好排。</p></div>
+    </div>
+  </section>
+
+  <!-- ===== 章二 ===== -->
+  <section id="ch2">
+    <div class="sec"><span class="ch">CHAPTER 02</span><h2>港片里的复古文艺 · 九龙油尖旺</h2><span class="sub">香港的不夜城 · 街角处处是惊喜</span></div>
+    <div class="grid">
+      <div class="station"><h3>旺角<small>港片里的香港记忆</small></h3>
+        <p class="sceneTxt">电影里从不缺江湖情仇的地方，烟火气十足、保留许多老旧建筑。女人街、波鞋街、金鱼街、弥敦道物美价廉，走在街头像置身 TVB 港剧。</p>
+        <div class="meta"><b>交通：</b>旺角地铁站 ｜ <b>必去：</b>女人街 · 金鱼街 · 弥敦道</div></div>
+      <div class="station"><h3>油麻地<small>老香港的市井腔调</small></h3>
+        <p class="sceneTxt">吵闹拥挤却热闹繁华、充满人间烟火的宝藏社区。油麻地警署是半数港剧的取景地，散步到佐敦或旺角，庙街是最负盛名的夜市，帐篷下藏着港式大排档。</p>
+        <div class="meta"><b>交通：</b>油麻地站 C 出口 ｜ <b>必去：</b>庙街 · 油麻地警署 · 众坊街</div></div>
+      <div class="station"><h3>尖沙咀<small>摩登现代的聚集地</small></h3>
+        <p class="sceneTxt">维港浓缩了这里的精华：360° 无敌海景、两岸高耸楼宇、没有杂质的湛蓝海水。日落时分看一场日落，摩天轮与星光大道打卡，坐天星小轮穿梭港九。</p>
+        <div class="meta"><b>交通：</b>尖沙咀站 J 出口 ｜ <b>必去：</b>维多利亚港 · 星光大道 · 天星小轮</div></div>
+    </div>
+    <div class="spots">
+      <figure><picture>
+<source srcset="../../assets/images/hk_victoria.webp" type="image/webp">
+<img loading="lazy" src="../../assets/images/hk_victoria.jpg" alt="维多利亚港夜景" width="600" height="338">
+</picture><figcaption><b>维多利亚港</b><span>尖沙咀海滨 · 日落与夜灯</span></figcaption></figure>
+      <figure><picture>
+<source srcset="../../assets/images/hk_mongkok.webp" type="image/webp">
+<img loading="lazy" src="../../assets/images/hk_mongkok.jpg" alt="旺角霓虹" width="600" height="338">
+</picture><figcaption><b>旺角霓虹街市</b><span>女人街 · 金鱼街 · 弥敦道</span></figcaption></figure>
+      <figure><picture>
+<source srcset="../../assets/images/hk_starferry.webp" type="image/webp">
+<img loading="lazy" src="../../assets/images/hk_starferry.jpg" alt="天星小轮" width="600" height="338">
+</picture><figcaption><b>天星小轮</b><span>穿梭九龙与港岛 · 最便宜的过海</span></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ===== 章三 ===== -->
+  <section id="ch3">
+    <div class="sec"><span class="ch">CHAPTER 03</span><h2>城市里的山海相逢 · 港岛东岸</h2><span class="sub">爬山看城景 · 沿廊看海景</span></div>
+    <div class="grid">
+      <div class="station"><h3>坚尼地城<small>路的尽头是海</small></h3>
+        <p class="sceneTxt">面朝大海的篮球场围栏是最佳机位，收获一张"海 + 叮叮车 + 游人"的电影画面。上山下山体验媲美重庆的 8D 空间感，再到滨海长廊等一场海岸线日落。</p>
+        <div class="meta"><b>交通：</b>坚尼地城站 C 出口 ｜ <b>必去：</b>篮球场 · 士美菲路 · 卑路乍湾</div></div>
+      <div class="station"><h3>叮叮车<small>复古又时髦的百年电车</small></h3>
+        <p class="sceneTxt">花三块钱就能漫游港岛：从西环穿过繁华中环，再到湾仔、铜锣湾。坐上二层透过车窗，怪兽大厦、西营盘、军器厂街，看不同角度的香港。</p>
+        <div class="meta"><b>交通：</b>柏架山道站 ｜ <b>必去：</b>怪兽大厦 · 军器厂街 · 西营盘</div></div>
+      <div class="station"><h3>中环<small>港片的经典时刻</small></h3>
+        <p class="sceneTxt">金融商业中心，东西文化交融，官邸教堂法院古迹遍布街巷。穿梭古早后巷与摩登酒吧间，咖啡厅和茶餐厅藏在巷角，累了来杯冻柠乐、一个菠萝油。</p>
+        <div class="meta"><b>交通：</b>中环站 ｜ <b>必去：</b>艺穗会 · 中环摩天轮 · 石板街</div></div>
+      <div class="station"><h3>太平山顶<small>港岛的城市天际线</small></h3>
+        <p class="sceneTxt">香港最高点拥有壮丽天际线。山顶缆车 30 度斜坡攀升，山林往后倒退；登顶遥望山下繁华与海，吹着风望向维港，等一场落日、看香港的灯火。</p>
+        <div class="meta"><b>交通：</b>中环站 J2 出口 ｜ <b>必去：</b>山顶广场 · 狮子亭 · 白加道</div></div>
+    </div>
+    <div class="photo-row">
+      <figure><picture>
+<source srcset="../../assets/images/hk_taipeaks.webp" type="image/webp">
+<img loading="lazy" src="../../assets/images/hk_taipeaks.jpg" alt="太平山顶俯瞰" width="600" height="400">
+</picture><figcaption><b>太平山顶</b><span>缆车登顶 · 俯瞰港岛与维港</span></figcaption></figure>
+      <figure><picture>
+<source srcset="../../assets/images/hk_dimsum.webp" type="image/webp">
+<img loading="lazy" src="../../assets/images/hk_dimsum.jpg" alt="港式点心" width="600" height="400">
+</picture><figcaption><b>港式味道</b><span>茶餐厅 · 点心 · 冻柠乐菠萝油</span></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ===== 章四 ===== -->
+  <section id="ch4">
+    <div class="sec"><span class="ch">CHAPTER 04</span><h2>半小时逃离城市 · 山海与渔村</h2><span class="sub">从繁华市井，到群山沧海</span></div>
+    <p class="lead-p">寸金寸土的香港有 3/4 是山地绿野、200 多个海岛，只要短短半小时，就能从市井到马尔代夫一样蓝的海。</p>
+    <div class="grid">
+      <div class="station"><h3>麦理浩径<small>全球最美徒步路径</small></h3>
+        <p class="sceneTxt">全长 100 公里、全程十段，穿山跨海，从山的尽头绵延至海的开端。《二段》是公认最美的山海径，只有徒步才看得见的惊喜。</p>
+        <div class="meta"><b>交通：</b>西贡码头打车到西湾亭 ｜ <b>必走：</b>麦径二段 · 山与海</div></div>
+      <div class="station"><h3>长洲岛<small>港版小镰仓</small></h3>
+        <p class="sceneTxt">人情味的大街小巷、色彩斑斓的怀旧建筑和渔船。吃一块冰冻西瓜喝口汽水，街巷尽头是整片海滩；沿西堤骑行环岛追风，上山看海日落。</p>
+        <div class="meta"><b>交通：</b>中环 5 号码头轮渡直达 ｜ <b>必去：</b>长洲码头 · 北眺亭 · 爱情锁墙</div></div>
+      <div class="station"><h3>大澳渔村<small>港版济州岛 · 最后的渔村</small></h3>
+        <p class="sceneTxt">香港最后一个水上渔村，沿水道而建的水上棚屋、纵横交错的水道。傍晚出海看被染成橘色的大海，逛逛海味摊、逗逗路边的猫。</p>
+        <div class="meta"><b>交通：</b>东涌站转巴士到大澳 ｜ <b>必去：</b>昂坪市集 · 水上棚屋 · 虎山</div></div>
+    </div>
+    <div class="photo-row">
+      <figure><picture>
+<source srcset="../../assets/images/hk_cheungchau.webp" type="image/webp">
+<img loading="lazy" src="../../assets/images/hk_cheungchau.jpg" alt="长洲岛" width="600" height="400">
+</picture><figcaption><b>长洲岛</b><span>海滩 · 渔港 · 环岛骑行</span></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ===== 章五 上榜必玩清单 ===== -->
+  <section id="ch5">
+    <div class="sec"><span class="ch">CHAPTER 05</span><h2>上榜必玩清单</h2><span class="sub">整合另一辑推荐 · 一次列全</span></div>
+    <p class="lead-p">把游客最爱的"必做清单"一起收进来：从山上海边到地标观景、从出海帆船到市集淘货，香港值得的一站站全在这。</p>
+    <div class="grid">
+      <div class="station"><h3>龙脊徒步<small>香港径 · 维多利亚山顶到大浪湾</small></h3>
+        <p class="sceneTxt">香港径中景观最开阔的一段，山海一览、绿意满坡，爱爬山就别错过，属于"几分钟就能从城市走到山海"的代表。</p>
+        <div class="meta"><b>看点：</b>山脊海景 · 徒步约2-3小时</div></div>
+      <div class="station"><h3>天际100<small>360°看全城</small></h3>
+        <p class="sceneTxt">全香港视野最好的观景台之一，360°俯瞰维港与城市天际线。网上提前订票，成人约 <b>151 港币</b>。</p>
+        <div class="meta"><b>提示：</b>提前线上订更划算</div></div>
+      <div class="station"><h3>junk boat 传统帆船出海<small>历史的帆</small></h3>
+        <p class="sceneTxt">源自中国的历史性帆船，特有的帆与船身相映成趣，是难得的水上体验，适合包船或跟团夜航看维港。</p>
+        <div class="meta"><b>玩法：</b>出海 · 维港日落/夜航</div></div>
+      <div class="station"><h3>香港海滩合集<small>阳光与大海出乎意料</small></h3>
+        <p class="sceneTxt">别以为香港只有高楼——附近藏着不少漂亮海滩：<b>石澳村海滩、大浪湾海滩、长沙海滩</b>，冲浪踏浪都合适。</p>
+        <div class="meta"><b>推荐：</b>石澳 · 大浪湾 · 长沙</div></div>
+      <div class="station"><h3>杜莎夫人蜡像馆<small>与"名人"合影</small></h3>
+        <p class="sceneTxt">和世界各地明星的蜡像"见面"拍照，老少皆宜、气氛轻松，家人朋友都适合的一站。</p>
+        <div class="meta"><b>地点：</b>山顶凌霄阁一带</div></div>
+      <div class="station"><h3>南莲园 & 志林庵<small>闹市中的一片绿洲</small></h3>
+        <p class="sceneTxt">混凝土森林里的一座古典中式园林，湖水亭台、白荷盆景，一旁<b>志林庵</b>是新界佛教中心，安静养眼。</p>
+        <div class="meta"><b>看点：</b>古典园林 · 白荷 · 盆景</div></div>
+      <div class="station"><h3>香港历史博物馆<small>读懂香港的来路</small></h3>
+        <p class="sceneTxt">规划清晰的大馆，穿过不同展区就能经历塑造香港与港人的各个时代，想懂文化历史很值得走一趟。</p>
+        <div class="meta"><b>提示：</b>周一闭馆 · 免费需预约</div></div>
+      <div class="station"><h3>漫步当地市场<small>淘货"包罗万象"</small></h3>
+        <p class="sceneTxt">旺角<b>波鞋街</b>买运动鞋，<b>庙街 / 女人街 / 猫街(荷李活道)</b>淘货，另有<b>赤柱市场、湾仔街市、服装市场</b>——专精市集各有便宜好物。</p>
+        <div class="meta"><b>顺路：</b>尖沙咀长廊 · 太空馆 · 文化中心</div></div>
+    </div>
+  </section>
+
+  <!-- ===== 章六 一日游路线 + 行前必知 ===== -->
+  <section id="ch6">
+    <div class="sec"><span class="ch">CHAPTER 06</span><h2>一日游路线 + 行前必知</h2><span class="sub">参考 gofunit · 3天2夜自由行框架</span></div>
+    <div class="grid">
+      <div class="station"><h3>维港一日游<small>摩天轮 → K11 → 星光大道</small></h3>
+        <p class="sceneTxt">香港摩天轮 → <b>K11 MUSEA</b> 逛街 → <b>星光大道</b> → 傍晚 <b>幻彩咏香江</b>，一天把维港精华串完。</p></div>
+      <div class="station"><h3>大屿山一日游<small>昂坪 → 大佛 → 大澳</small></h3>
+        <p class="sceneTxt"><b>昂坪360缆车</b>（世界十大缆车）→ 昂坪市集 → <b>天坛大佛</b>（34米）→ <b>大澳渔村</b>，山海与渔村一次看。</p></div>
+      <div class="station"><h3>太平山一日游<small>缆车 → 蜡像馆 → 夜景</small></h3>
+        <p class="sceneTxt">山顶缆车登山 → <b>杜莎夫人蜡像馆</b> → 山上吃下午茶，等 <b>太平山夜景</b> 华灯初上。</p></div>
+      <div class="station"><h3>九龙 / 沙田亲子线<small>M+ · 西九 · 史诺比</small></h3>
+        <p class="sceneTxt">九龙：<b>M+博物馆 → 西九文化区</b>；沙田带孩子走 <b>史诺比开心世界 / Kiztopia</b> 室内游乐场。</p></div>
+    </div>
+    <div class="grid" style="margin-top:14px">
+      <div class="station"><h3>黄大仙庙<small>打小人 · 求个好兆头</small></h3><p class="sceneTxt">本地香火最旺的道观，解签打小人很出名，地铁黄大仙站即到，体验港式信仰文化。</p></div>
+      <div class="station"><h3>兰桂坊<small>霓虹夜生活</small></h3><p class="sceneTxt">酒吧与夜店聚集地，入夜后最热闹，中环站出口几步路，想感受香港夜生活来这里。</p></div>
+      <div class="station"><h3>香港海洋公园<small>看海 + 游乐</small></h3><p class="sceneTxt">临海而建的主题乐园，海洋馆、过山车与海滨缆车，亲子进阶之选。</p></div>
+    </div>
+    <div class="tips" style="margin-top:16px">
+      <h3>🧳 行前必知小抄</h3>
+      <ul>
+        <li><b>最佳季节：</b>每年<b>10-12月秋季</b>最舒适（20-26°C）；夏(6-8月)炎热潮湿多台风、冬(1-2月)偏冷雾多，购物节庆多在冬。</li>
+        <li><b>插头：</b>香港为<b>220V、英式三孔</b>插座，带转换头；一般3C自带变压基本可直接用。</li>
+        <li><b>货币：</b>官方货币港币 HKD，建议换 <b>100 / 500 面额</b>纸钞最实用。</li>
+        <li><b>上网：</b>可提前买<b>香港 eSim/上网卡</b>，落地即用；香港与内地<b>无时差</b>。</li>
+        <li><b>伴手礼：</b>珍妮曲奇、柠檬王、帝苑酒店蝴蝶酥、黄道益活络油、邹记平安膏。</li>
+        <li><b>港澳串玩：</b>可从香港坐船/金巴过澳门（见册中澳门篇），交通衔接方便。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 味道 -->
+  <section id="taste">
+    <div class="sec"><span class="ch">HONG KONG TASTE</span><h2>顺路尝尝香港味</h2><span class="sub">词里那句"菠萝油与冻柠乐"</span></div>
+    <div class="foodlist">
+      <div><b>街头小吃</b>长洲的糯米糍、弹牙鱼蛋、香酥蛋挞，边走边吃。</div>
+      <div><b>茶餐厅</b>冻柠乐、菠萝油、丝袜奶茶、捞丁，港人日常。</div>
+      <div><b>老字号码</b>烧腊、云吞面、煲仔饭、杨枝甘露，收尾甜品。</div>
+    </div>
+  </section>
+
+  <div class="tips">
+    <h3>💡 行前小抄</h3>
+    <ul>
+      <li>需<b>港澳通行证 + 有效香港签注</b>；最新要求以出入境部门为准。</li>
+      <li>交通买<b>八达通或旅客全日通</b>；机场—市区走<b>机场快线</b>最快。</li>
+      <li>维港"幻彩咏香江"约每晚 8 点；太平山顶傍晚去，城景+夜景一次看。</li>
+      <li>离岛轮渡班次多但末班较早，晚上要回市区留意末班船时间。</li>
+      <li>麦理浩径二段部分路段无补给，带足水、穿防滑鞋，量力而行。</li>
+      <li>旺角、庙街人多注意随身财物；夏天闷热，备防晒与饮水。</li>
+    </ul>
+  </div>
+
+  <div class="bonus">
+    <h3>🎡 附带 · 带娃可选（参考文未展开）</h3>
+    <p>若同行有小朋友，可在九龙之后加一天 <b>香港迪士尼</b>（离岛/乐园二选一），梦幻城堡、巡游与烟花，亲子氛围直接拉满，行程更完整。</p>
+    <picture>
+<source srcset="../../assets/images/hk_disney.webp" type="image/webp">
+<img loading="lazy" src="../../assets/images/hk_disney.jpg" alt="香港迪士尼" width="600" height="338">
+</picture>
+  </div>
+
+  <footer>
+    香港 · 行影式深度玩法 ｜ 票价/班次为参考值，请以实时为准<br>
+    参考行影香港攻略整理重写 · 配图均为原创生成<br>
+    Made with care by <b>MrdT</b> &middot; <a href="https://worldstip.com" target="_blank" rel="noopener noreferrer">worldstip.com</a> &middot; 旅行小册子
+  </footer>
+</main>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

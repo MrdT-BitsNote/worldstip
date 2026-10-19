@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>岳阳 ⇄ 南昌 ⇄ 上饶 · 葛仙村 往返交通全览卡</title>
+<style>
+:root{
+  --canvas:#fff9f2;
+  --surface:#ffffff;
+  --ink:#2b2333;
+  --muted:#7a6f85;
+  --line:#eee3d8;
+  --coral:#ff6b6b;
+  --yellow:#ffd23f;
+  --mint:#3fcf9a;
+  --blue:#4aa8ff;
+  --purple:#9b6bff;
+  --radius:22px;
+  --shadow:0 12px 34px rgba(90,60,40,.10);
+  --font:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--canvas);color:var(--ink);font-family:var(--font);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 18px 60px}
+/* header */
+.hero{position:relative;overflow:hidden;border-radius:22px;padding:36px 30px 30px;margin-bottom:28px;background:linear-gradient(120deg,#ffd23f 0%,#ff8fb5 48%,#9b6bff 100%);box-shadow:var(--shadow)}
+.hero h1{margin:0 0 8px;font-size:clamp(24px,4vw,38px);line-height:1.2;letter-spacing:-.5px}
+.hero p{margin:0;color:#fff;max-width:680px;font-size:clamp(14px,2vw,17px)}
+.hero .badge{display:inline-block;background:rgba(255,255,255,.3);color:#fff;padding:3px 12px;border-radius:999px;font-size:12px;font-weight:700;margin-bottom:12px;letter-spacing:1px}
+.hero .route{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:18px;font-weight:800}
+.hero .route .stop{background:#fff;padding:6px 14px;border-radius:999px;color:#2b2333;box-shadow:0 3px 10px rgba(0,0,0,.12)}
+.hero .route .arrow{color:#fff}
+/* section framework */
+.sec{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:30px}
+/* ---- per-card themes ---- */
+.theme-orange{--th:#ff6b4a;--th-soft:#fff0eb;--th-line:#ffd6c6;--th-ink:#c13f1f}
+.theme-green{--th:#21a366;--th-soft:#ecfaf3;--th-line:#c6ecd8;--th-ink:#137a4c}
+.theme-blue{--th:#2f7bff;--th-soft:#ecf2ff;--th-line:#c9dcff;--th-ink:#1d56ae}
+.sec.theme{background:var(--th-soft);border-top:8px solid var(--th)}
+.sec.theme .sec-head{border-bottom-color:var(--th-line)}
+.sec.theme .sec-head h2{color:var(--th-ink)}
+.sec.theme .sec-body h3 .ic{background:var(--th)}
+.sec.theme .sec-body h3{color:var(--th-ink)}
+.sec.theme .tbl-scroll th{background:rgba(255,255,255,.85);color:var(--th-ink);border-bottom-color:var(--th-line)}
+.sec.theme .tbl-scroll td{border-bottom-color:var(--th-line)}
+.sec.theme .note{background:rgba(255,255,255,.75);border-left-color:var(--th)}
+.sec.theme .hl{background:rgba(255,255,255,.72)}
+.sec-head{padding:22px 26px 14px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px}
+.sec-head h2{margin:0;font-size:clamp(20px,3vw,26px);letter-spacing:-.4px}
+.sec-head .desc{color:var(--muted);font-size:13px;flex-basis:100%}
+.sec-body{padding:6px 26px 24px}
+.sec-body h3{font-size:15px;margin:20px 0 10px;display:flex;align-items:center;gap:8px}
+.sec-body h3 .ic{width:9px;height:9px;border-radius:3px;display:inline-block}
+.m-h3-b{background:var(--coral)}
+.m-h3-p{background:var(--mint)}
+.m-h3-g{background:var(--yellow)}
+/* table */
+.tbl-scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:680px;font-size:14px}
+th{text-align:left;font-size:12px;color:var(--muted);font-weight:700;padding:8px 10px;border-bottom:2px solid var(--line);letter-spacing:.4px;background:#fbf7f2;white-space:nowrap}
+td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td .num{font-family:var(--mono);font-weight:800}
+td .n{color:var(--muted);font-size:12px}
+.time{font-family:var(--mono);font-weight:700}
+.price{font-family:var(--mono);font-weight:800}
+.hl{background:#fff6df}
+.note{margin-top:16px;font-size:13px;color:var(--muted);background:#fbf7f2;border-left:4px solid var(--yellow);padding:10px 14px;border-radius:0 10px 10px 0}
+.note strong{color:var(--ink)}
+.badge-mini{display:inline-block;font-size:11px;font-weight:700;padding:1px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+.b-high{background:#e8f7ef;color:#1c7a50}
+.b-pu{background:#fff3d6;color:#8a6200}
+/* footer summary */
+.summaries{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:26px}
+.sum{background:var(--surface);border-radius:18px;padding:20px;box-shadow:var(--shadow)}
+.sum .k{font-size:12px;color:var(--muted);letter-spacing:.4px}
+.sum .v{font-size:clamp(20px,3vw,30px);font-weight:800;margin-top:4px}
+.sum .s{font-size:12px;color:#a89ab8;margin-top:2px}
+.notes{background:var(--surface);border-radius:var(--radius);padding:24px 28px;box-shadow:var(--shadow)}
+.notes h3{margin:0 0 12px;font-size:17px}
+.notes ol{margin:0;padding-left:20px}
+.notes li{margin-bottom:9px;font-size:14px}
+.notes li::marker{color:#ff6f9e;font-weight:800;font-size:16px}
+.notes a{color:#8a4bff;text-decoration:underline;text-underline-offset:2px}
+footer{text-align:center;color:var(--muted);font-size:12px;margin-top:36px;line-height:1.8}
+footer a{color:var(--muted);text-decoration:underline}
+/* ---- mobile responsiveness ---- */
+@media (max-width:720px){
+  .wrap{padding:14px 12px 44px}
+  .hero{padding:24px 20px 22px;border-radius:18px;margin-bottom:20px}
+  .hero h1{font-size:clamp(22px,6.5vw,30px)}
+  .hero .route{gap:6px;margin-top:14px}
+  .hero .route .stop{padding:5px 11px;font-size:14px}
+  .hero .route .arrow{font-size:14px}
+  .sec{border-radius:18px;margin-bottom:20px}
+  .sec-head{padding:16px 16px 12px;gap:8px}
+  .sec-head h2{font-size:clamp(19px,5.2vw,24px)}
+  .sec-head .desc{font-size:12.5px;line-height:1.55}
+  .sec-body{padding:4px 16px 20px}
+  .sec-body h3{font-size:14px;margin:18px 0 9px}
+  .note{margin-top:14px;font-size:12.5px;padding:9px 13px;line-height:1.55}
+  .summaries{grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:20px}
+  .sum{padding:16px}
+  .sum .v{font-size:clamp(19px,5.5vw,26px)}
+  .notes{padding:20px 18px}
+  .notes h3{font-size:16px}
+  .notes li{font-size:13.5px;line-height:1.6}
+  .tbl-scroll{-webkit-overflow-scrolling:touch;-ms-overflow-style:-ms-autohiding-scrollbar}
+}
+@media (max-width:420px){
+  .wrap{padding:10px 8px 40px}
+  .hero{padding:20px 16px 20px}
+  .sec-head{padding:15px 12px 11px}
+  .sec-head .desc{font-size:12px}
+  .sec-body{padding:4px 12px 18px}
+  table{min-width:600px;font-size:13px}
+  th,td{padding:8px}
+  .summaries{grid-template-columns:1fr 1fr;gap:10px}
+  .sum{padding:14px}
+}
+/* slim scrollbars for tables on touch */
+.tbl-scroll{scrollbar-width:thin;scrollbar-color:rgba(120,100,140,.45) transparent}
+.tbl-scroll::-webkit-scrollbar{height:7px}
+.tbl-scroll::-webkit-scrollbar-thumb{background:rgba(120,100,140,.35);border-radius:999px}
+.tbl-scroll::-webkit-scrollbar-track{background:transparent}
+/* destination buttons */
+.dest{background:var(--surface);border-radius:var(--radius);padding:22px 26px 26px;box-shadow:var(--shadow);margin-bottom:26px}
+.dest-title{margin:0 0 16px;font-size:17px;letter-spacing:.4px}
+.dest-btns{display:flex;flex-wrap:wrap;gap:14px}
+.dbtn{display:inline-flex;align-items:center;justify-content:center;min-width:130px;padding:15px 28px;border-radius:14px;font-size:17px;font-weight:800;color:#fff;text-decoration:none;transition:transform .15s ease,box-shadow .2s ease,filter .2s ease;box-shadow:0 6px 18px rgba(0,0,0,.14)}
+.dbtn:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(0,0,0,.22);filter:brightness(1.06)}
+.dbtn:active{transform:translateY(0)}
+.dbtn:focus-visible{outline:3px solid rgba(139,75,255,.5);outline-offset:2px}
+.d-nc{background:linear-gradient(135deg,#ff6b4a,#ff8a5c)}
+.d-sqs{background:linear-gradient(135deg,#21a366,#4cc79a)}
+.d-gxc{background:linear-gradient(135deg,#2f7bff,#5b9bff)}
+@media (max-width:720px){
+  .dest{padding:18px 16px 20px}
+  .dest-btns{flex-direction:column;gap:11px}
+  .dbtn{width:100%;padding:14px 20px}
+}
+@media print{
+  body{background:#fff}
+  .wrap{max-width:none;padding:0}
+  .sec,.sum{box-shadow:none}
+  .hero{background:#f5b500 !important;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  .badge-mini{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+}
+</style>
+<meta name="description" content="岳阳往返南昌、上饶葛仙村的交通全览卡：上下车站点、班次时刻、票价与衔接建议一张图看懂，搭配葛仙村 1-3 天行程使用。">
+<meta name="keywords" content="岳阳到南昌,南昌到葛仙村,岳阳到上饶,葛仙村交通,南昌交通,班车时刻,往返交通,旅行攻略">
+<link rel="canonical" href="https://worldstip.com/my/bus/1/">
+<meta name="theme-color" content="#ffb6e4">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="WorldStip · 旅行小册子">
+<meta property="og:title" content="岳阳 ⇄ 南昌 ⇄ 上饶 · 葛仙村 往返交通全览卡">
+<meta property="og:description" content="岳阳往返南昌、上饶葛仙村的交通全览卡：上下车站点、班次时刻、票价与衔接建议一张图看懂，搭配葛仙村 1-3 天行程使用。">
+<meta property="og:url" content="https://worldstip.com/my/bus/1/">
+<meta property="og:image" content="https://worldstip.com/assets/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="岳阳 ⇄ 南昌 ⇄ 上饶 · 葛仙村 往返交通全览卡">
+<meta name="twitter:description" content="岳阳往返南昌、上饶葛仙村的交通全览卡：上下车站点、班次时刻、票价与衔接建议一张图看懂，搭配葛仙村 1-3 天行程使用。">
+<meta name="twitter:image" content="https://worldstip.com/assets/og-cover.png">
+
+    <!-- SEO 补齐 -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "岳阳 ⇄ 南昌 ⇄ 上饶 · 葛仙村 往返交通全览卡",
+      "url": "https://worldstip.com/my/bus/1/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO 补齐 --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/my/bus/1/",
+  "name": "岳阳 ⇄ 南昌 ⇄ 上饶 · 葛仙村 往返交通全览卡",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <span class="badge">README 旅行小册子 · 外篇 — 大卡片版</span>
+  <h1>岳阳 ⇄ 南昌 ⇄ 上饶 · 葛仙村<br>往返交通·全车次卡片</h1>
+  <p>旅程不连续、随心停：先去南昌玩，玩够了再去上饶，最后赶到上饶再进葛仙村即可。每段都给了全天各时段车次、耗时、各席别票价与到发站，高铁为主、普铁作备选，方便按自己节奏拼。”最后一公里“上饶→葛仙村无铁路，接景区直通班车。</p>
+  <div class="route">
+    <span class="stop">岳阳</span><span class="arrow">→</span>
+    <span class="stop">南昌（玩）</span><span class="arrow">→</span>
+    <span class="stop">上饶</span><span class="arrow">→</span>
+    <span class="stop">葛仙村</span>
+  </div>
+</header>
+
+<div class="summaries">
+  <div class="sum"><div class="k">卡1 高铁 · 岳阳→南昌</div><div class="v">约2小时</div><div class="s">G265 / G233 / G3837</div></div>
+  <div class="sum"><div class="k">卡2 高铁 · 南昌→上饶</div><div class="v">约1小时</div><div class="s">每天 70+ 趟</div></div>
+  <div class="sum"><div class="k">上饶→葛仙村</div><div class="v">¥30</div><div class="s">无铁路 · 景区班车约1.5h</div></div>
+  <div class="sum"><div class="k">卡3 高铁 · 南昌西→岳阳东</div><div class="v">约2-2.5h</div><div class="s">G3835 / G231</div></div>
+</div>
+
+<!-- ============ 卡1 ============ -->
+<section class="sec theme theme-orange">
+  <div class="sec-head">
+    <h2>🚄 卡 1 · 岳阳 → 南昌</h2>
+    <div class="desc">高铁从<strong>岳阳东</strong>出发、到<strong>南昌西</strong>；普铁从<strong>岳阳（老站）</strong>发、到<strong>南昌</strong>。岳阳东在城东高铁站，市区往返记得预留打车时间。</div>
+  </div>
+  <div class="sec-body">
+
+    <h3><span class="ic m-h3-b"></span> 高铁方案（约 2 小时，推荐）</h3>
+    <div class="tbl-scroll">
+      <table>
+        <tr><th>车次</th><th>始发→终到</th><th>发车→到达</th><th>耗时</th><th>二等座</th><th>一等座</th><th>商务座</th></tr>
+        <tr><td class="num">G265</td><td>岳阳东→宁波</td><td class="time">07:12 → 09:22</td><td>2h10m</td><td class="price">¥242</td><td>¥387</td><td>¥847</td></tr>
+        <tr><td class="num">G233</td><td>岳阳东→上海虹桥</td><td class="time">08:28 → 10:30</td><td>2h02m</td><td class="price">¥242</td><td>¥387</td><td>¥752</td></tr>
+        <tr><td class="num">G3837</td><td>岳阳东→南昌</td><td class="time">14:03 → 16:38</td><td>2h35m</td><td class="price">¥257</td><td>¥411</td><td>¥833</td></tr>
+      </table>
+    </div>
+    <div class="note">上午出发选 <strong>G265 / G233</strong>（最早 07:12 起），午后可用 <strong>G3837</strong>。其余时段还有经长沙南的中转高铁可选，具体以当天余票为准。</div>
+
+    <h3><span class="ic m-h3-p"></span> 普铁方案（慢车，仅作备选）</h3>
+    <div class="tbl-scroll">
+      <table>
+        <tr><th>车次</th><th>始发→终到</th><th>发车→到达</th><th>耗时</th><th>硬座</th><th>硬卧</th><th>软卧</th></tr>
+        <tr><td class="num">K1109</td><td>岳阳→南昌</td><td class="time">次日到</td><td>约16h</td><td class="price">¥156.5</td><td>¥268.5</td><td>¥422.5</td></tr>
+      </table>
+    </div>
+    <div class="note">岳阳↔南昌的普铁极少且绕行武昌，耗时长达十多个小时、票价还不划算，<strong>基本只用于“过夜省住宿”的特例</strong>，正常出行强烈建议高铁。</div>
+  </div>
+</section>
+
+<!-- ============ 卡2 ============ -->
+<section class="sec theme theme-green">
+  <div class="sec-head">
+    <h2>🚄 卡 2 · 南昌 → 上饶 → 葛仙村</h2>
+    <div class="desc">这一段拆成“南昌→上饶”高铁/普铁，再加“上饶→葛仙村”最后一程班车。南昌到上饶每天 <strong>70+ 趟高铁</strong>，随到随走；南昌有<strong>南昌西 / 南昌东 / 南昌</strong>三个站，上饶统一到<strong>上饶站</strong>。</div>
+  </div>
+  <div class="sec-body">
+
+    <h3><span class="ic m-h3-b"></span> 高铁方案（约 1 小时，全天密集）<span class="badge-mini b-high">推荐</span></h3>
+    <div class="tbl-scroll">
+      <table>
+        <tr><th>车次</th><th>出发站→到达</th><th>发车→到达</th><th>耗时</th><th>二等座</th><th>一等座</th></tr>
+        <tr><td class="num">G1460</td><td>南昌西→上饶</td><td class="time">07:38 → 08:57</td><td>1h19m</td><td class="price">¥111</td><td>¥174</td></tr>
+        <tr><td class="num">G1344</td><td>南昌西→上饶</td><td class="time">08:52 → 09:47</td><td>0h55m</td><td class="price">¥120</td><td>¥191</td></tr>
+        <tr><td class="num">G2358</td><td>南昌西→上饶</td><td class="time">09:07 → 10:28</td><td>1h21m</td><td class="price">¥113</td><td>¥180</td></tr>
+        <tr><td class="num">G1352</td><td>南昌西→上饶</td><td class="time">10:49 → 11:58</td><td>1h09m</td><td class="price">¥113</td><td>¥180</td></tr>
+        <tr><td class="num">G2348</td><td>南昌西→上饶</td><td class="time">11:21 → 12:33</td><td>1h12m</td><td class="price">¥120</td><td>¥191</td></tr>
+        <tr><td class="num">G2334</td><td>南昌西→上饶</td><td class="time">14:21 → 15:23</td><td>1h02m</td><td class="price">¥122</td><td>¥—</td></tr>
+        <tr><td class="num">G1302</td><td>南昌西→上饶</td><td class="time">17:50 → 18:52</td><td>1h02m</td><td class="price">¥120</td><td>¥—</td></tr>
+        <tr><td class="num">G1372</td><td>南昌西→上饶</td><td class="time">18:12 → 19:14</td><td>1h02m</td><td class="price">¥113</td><td>¥—</td></tr>
+        <tr><td class="num">G236</td><td>南昌西→上饶</td><td class="time">20:04 → 20:53</td><td>0h49m</td><td class="price">¥113</td><td>¥—</td></tr>
+      </table>
+    </div>
+    <div class="note">南昌西是主力站，<strong>每小时几乎都有车</strong>，还可能开进南昌东。上表只列常见班次，实际每天 70+ 趟，按自己游玩节奏<a href="https://www.12306.cn" target="_blank" rel="noopener noreferrer">12306</a>现查现走即可。</div>
+
+    <h3><span class="ic m-h3-p"></span> 普铁方案（约 3 小时，省钱备选）</h3>
+    <div class="tbl-scroll">
+      <table>
+        <tr><th>车次</th><th>出发站→到达</th><th>发车→到达</th><th>耗时</th><th>硬座</th><th>硬卧</th></tr>
+        <tr><td class="num">T375</td><td>南昌→上饶</td><td class="time">01:56 → 04:37</td><td>2h41m</td><td class="price">¥40.5</td><td>¥86.5</td></tr>
+        <tr><td class="num">K8722</td><td>南昌→上饶</td><td class="time">07:20 → 10:58</td><td>3h38m</td><td class="price">¥40.5</td><td>—</td></tr>
+        <tr><td class="num">K1255</td><td>南昌→上饶</td><td class="time">11:35 → 15:02</td><td>3h27m</td><td class="price">¥40.5</td><td>¥86.5</td></tr>
+        <tr><td class="num">K8714</td><td>南昌→上饶</td><td class="time">17:00 → 20:40</td><td>3h40m</td><td class="price">¥40.5</td><td>—</td></tr>
+        <tr><td class="num">K1187</td><td>南昌→上饶</td><td class="time">19:07 → 22:41</td><td>3h29m</td><td class="price">¥40.5</td><td>¥86.5</td></tr>
+        <tr><td class="num">K1669</td><td>南昌→上饶</td><td class="time">20:18 → 23:38</td><td>3h20m</td><td class="price">¥40.5</td><td>¥86.5</td></tr>
+        <tr><td class="num">K288</td><td>南昌→上饶</td><td class="time">20:57 → 23:56</td><td>2h59m</td><td class="price">¥40.5</td><td>¥86.5</td></tr>
+      </table>
+    </div>
+    <div class="note">普铁从<strong>南昌站</strong>发、约 ¥40.5 硬座，比高铁便宜约一半但慢 2 小时。图便宜、又不赶时间可以用。</div>
+
+    <h3><span class="ic m-h3-p"></span> 顺路另一站 · 上饶站 / 玉山南 → 三清山</h3>
+    <div class="tbl-scroll">
+      <table>
+        <tr><th>方式</th><th>上车点 / 说明</th><th>发车→到达</th><th>耗时</th><th>价格</th></tr>
+        <tr><td class="num">旅游班车（南门）</td><td>上饶东站 → 三清山外双溪索道</td><td class="time">7:25 / 8:25 / 9:25 / 10:55 / 12:25 / 13:25 / 14:25 / 15:55</td><td>约2h</td><td class="price">¥27</td></tr>
+        <tr><td class="num">定制专线</td><td>上饶站 → 南部/东部双入口</td><td class="time">6:48 起约每小时一班（6:48~16:18）</td><td>南约1.5h / 东约2h</td><td class="price">¥38~45</td></tr>
+        <tr><td class="num">玉山南站更快</td><td>玉山南（高铁站）→ 金沙索道</td><td class="time">景区巴士 约1h 直达</td><td>约1h</td><td class="price">¥25~30</td></tr>
+        <tr><td class="num">打车 / 拼车</td><td>上饶站或玉山南 → 景区</td><td class="time">约40~90min</td><td>—</td><td class="price">¥100~150/车</td></tr>
+      </table>
+    </div>
+    <div class="note">三清山与葛仙村是上饶两个 <strong>不同方向</strong> 的景区：三清山在 <strong>玉山县（东/东北向）</strong>，葛仙村在 <strong>铅山县（南部）</strong>。从上饶站分别有直达班车。<strong>门票 ¥120 + 索道往返 ¥125 = 套票 ¥245</strong>，想省时优先在 <strong>玉山南站</strong> 下车（离景区最近的高铁站）。上一段（南昌→上饶）车次同样适用于此，可在上饶站下车转三清山方向。</div>
+
+    <h3><span class="ic m-h3-g"></span> 最后一程 · 上饶站 → 葛仙村（无铁路，景区班车）</h3>
+    <div class="tbl-scroll">
+      <table>
+        <tr><th>方式</th><th>发车点/说明</th><th>发车→到达</th><th>耗时</th><th>价格</th></tr>
+        <tr><td class="num">景区直通班车</td><td>上饶高铁站（东广场游客中心）</td><td class="time">7:00 / 10:20 / 11:00 / 12:40 / 15:30 / 16:40 → 约1.5h后到</td><td>约1.5h</td><td class="price">¥30</td></tr>
+        <tr><td class="num">拼车 / 网约车</td><td>高铁站拼车或网约车直达</td><td class="time">随到随走</td><td>约1h</td><td class="price">¥100~150/车</td></tr>
+      </table>
+    </div>
+    <div class="note">葛仙村在铅山县山区，离上饶站约 77km、无铁路。官方直通班车 <strong>¥30/人</strong>，从高铁站东广场出发；赶末班同乐游可用拼车。想控制在白天到葛仙村过夜，建议坐当天 <strong>13:00 前</strong>到上饶的高铁接上午班车。</div>
+  </div>
+</section>
+
+<!-- ============ 卡3 ============ -->
+<section class="sec theme theme-blue">
+  <div class="sec-head">
+    <h2>🚄 卡 3 · 葛仙村 → 岳阳（返程）</h2>
+    <div class="desc">返程逆向三段：葛仙村班车回上饶站 → 上饶高铁到南昌 → 南昌西高铁/普铁回岳阳。<strong>最后一班高铁 G231 20:02 从南昌西发、22:05 到岳阳东</strong>，配合白天在南昌玩一晚都没问题。</div>
+  </div>
+  <div class="sec-body">
+
+    <h3><span class="ic m-h3-g"></span> 第1段 · 葛仙村 → 上饶站（景区班车）</h3>
+    <div class="tbl-scroll">
+      <table>
+        <tr><th>方向</th><th>发车时间</th><th>价格</th></tr>
+        <tr><td rowspan="2">葛仙村→上饶高铁站</td><td class="time">7:50 / 9:20 / 10:00 / 12:40 / 13:30 / 14:20 / 15:40 / 16:20 / 20:30 发车</td><td class="price">¥30</td></tr>
+        <tr><td class="n">约 1.5h 后到上饶高铁站</td><td>—</td></tr>
+      </table>
+    </div>
+    <div class="note">夜游葛仙村（灯光秀/水幕）在晚上，若当晚返程务必赶上 <strong>20:30 末班班车</strong>，再由上饶高铁回；否则建议住景区或县城，第二天早上再走。</div>
+
+    <h3><span class="ic m-h3-b"></span> 第2段 · 上饶 → 南昌（高铁）</h3>
+    <div class="tbl-scroll">
+      <table>
+        <tr><th>车次</th><th>上饶→出发到</th><th>发车→到达</th><th>耗时</th><th>二等座</th></tr>
+        <tr><td class="num">G3373</td><td>上饶→南昌西</td><td class="time">11:27 → 12:33</td><td>1h06m</td><td class="price">约¥113</td></tr>
+        <tr><td class="num">G1336</td><td>上饶→南昌西</td><td class="time">14:29 → 15:36</td><td>1h07m</td><td class="price">约¥122</td></tr>
+      </table>
+    </div>
+    <div class="note">上饶→南昌西高铁也很多，上表中两趟只是用于衔接返程的常见组合，窗口期不够可任换其它车次。</div>
+
+    <h3><span class="ic m-h3-p"></span> 第3段 · 南昌 → 岳阳（返岳阳，高铁/普铁）</h3>
+    <div class="tbl-scroll">
+      <table>
+        <tr><th>类型</th><th>车次</th><th>出发→到达</th><th>耗时</th><th>二等座/硬座</th><th>备注</th></tr>
+        <tr><td class="hl">高铁</td><td class="num hl">G3835</td><td class="time hl">南昌西 12:24 → 岳阳东 15:06</td><td class="hl">2h42m</td><td class="price hl">¥257</td><td class="hl">下午车</td></tr>
+        <tr><td class="hl">高铁</td><td class="num hl">G231</td><td class="time hl">南昌西 20:02 → 岳阳东 22:05</td><td class="hl">2h03m</td><td class="price hl">¥242</td><td class="hl">傍晚/夜车</td></tr>
+        <tr><td>普铁</td><td class="num">T147</td><td class="time">南昌 11:41 → 岳阳 18:34</td><td>6h53m</td><td class="price">硬座¥78</td><td>慢但便宜</td></tr>
+      </table>
+    </div>
+    <div class="note">南昌西→岳阳东<strong>只有这两趟直达高铁</strong>，早走的赶 <strong>G3835（12:24</strong>，但需前一晚/凌晨从南昌出发），玩到晚上再走用 <strong>G231（20:02→22:05）</strong>最顺；其它时段可经长沙南中转。普铁 T147 硬座 ¥78、约7h，是省钱备选。</div>
+  </div>
+</section>
+
+<!-- 总账 -->
+<section class="sec">
+  <div class="sec-head">
+    <h2>💰 费用总账（单人）</h2>
+    <div class="desc">按“全部高铁 + 班车”的标准走法估算。</div>
+  </div>
+  <div class="sec-body">
+    <div class="summaries" style="margin-bottom:0">
+      <div class="sum"><div class="k">卡1 岳阳→南昌（高铁）</div><div class="v">¥242</div><div class="s">G265/G233 二等座</div></div>
+      <div class="sum"><div class="k">卡2 南昌→上饶（高铁）</div><div class="v">¥113~120</div><div class="s">G1352 等二等座</div></div>
+      <div class="sum"><div class="k">上饶→葛仙村（班车）</div><div class="v">¥30</div><div class="s">单程</div></div>
+      <div class="sum"><div class="k">卡3 南昌西→岳阳东（高铁）</div><div class="v">¥242~257</div><div class="s">G3835/G231 二等座</div></div>
+    </div>
+    <div class="note" style="font-size:15px">👉 去程高铁合计 约 <strong>¥355~362</strong>（岳阳→南昌→上饶）+ 班车 ¥30；返程高铁约 <strong>¥355~379</strong>（上饶→南昌西→岳阳东）+ 班车 ¥30。<br><strong>全程“高铁+班车”往返总计约 ¥770~801/人</strong>；若上饶↔葛仙村改用拼车，每程约 +¥40~120。</div>
+  </div>
+</section>
+
+<!-- 注意 -->
+<section class="notes">
+  <h3>⚠️ 行程前必读</h3>
+  <ol>
+    <li><strong>三个南昌站别搞混</strong>：高铁主力是<strong>南昌西</strong>，另有<strong>南昌东</strong>（新站）与<strong>南昌（老站/普铁）</strong>。跨站换乘要预留 1 小时以上接驳时间。</li>
+    <li>岳阳也是两站：高铁走<strong>岳阳东</strong>、普铁走<strong>岳阳（老站）</strong>，两地相隔较远，出发前看清票面车站。</li>
+    <li>去程南昌西→上饶的车非常多，可<strong>先在南昌玩，玩够再买最近一班</strong>；回程想当晚回岳阳，务必在 <strong>20:30 前</strong>从葛仙村出发赶班车，再接 G231。</li>
+    <li>葛仙村夜游精彩，强烈建议<strong>住一晚</strong>；白天登山走索道、晚上看灯光秀，往返时间更从容。</li>
+    <li><strong>所有车次/时刻/票价为查询参考</strong>，具体运行可能逐日调整，购票前以<a href="https://www.12306.cn" target="_blank" rel="noopener noreferrer">铁路12306</a>当日实时信息为准。</li>
+  </ol>
+</section>
+
+<!-- 目的地入口 -->
+<section class="dest">
+  <h3 class="dest-title">📍 目的地攻略入口</h3>
+  <div class="dest-btns">
+    <a class="dbtn d-nc" href="nanchang/index.html">南昌</a>
+    <a class="dbtn d-sqs" href="sanqingshan/index.html">三清山</a>
+    <a class="dbtn d-gxc" href="gexiancun/index.html">葛仙村</a>
+  </div>
+</section>
+
+<footer>
+  <div>数据整理 2026-09-25 · README 旅行小册子外篇 — 大卡片全览版</div>
+  <div>车次来源：<a href="https://trains.ctrip.com/trainbooking/yueyang-nanchang" target="_blank" rel="noopener noreferrer">携程·岳阳南昌</a> · <a href="https://trains.ctrip.com/trainbooking/nanchangxi-shangrao" target="_blank" rel="noopener noreferrer">携程·南昌上饶</a> · <a href="https://train.qunar.com/train/tickets/nanchang-to-yueyang" target="_blank" rel="noopener noreferrer">去哪儿·南昌岳阳</a> · <a href="https://www.ly.com/scenery/BookSceneryTicket_245849.html" target="_blank" rel="noopener noreferrer">同程·葛仙村交通</a> · <a href="https://www.12306.cn" target="_blank" rel="noopener noreferrer">铁路12306</a></div>
+</footer>
+
+</div>
+
+<footer class="tp-pro" role="contentinfo">
+  <h4 class="tp-pro__h">继续探索</h4>
+  <nav class="tp-pro__links">
+    <a class="tp-pro__pill" href="/map/beijing/">北京</a>
+    <a class="tp-pro__pill" href="/map/chengdu/">成都</a>
+    <a class="tp-pro__pill" href="/map/dandong/">丹东</a>
+    <a class="tp-pro__pill" href="/map/ezhou/">鄂州</a>
+    <a class="tp-pro__pill" href="/map/gannan/">甘南</a>
+    <a class="tp-pro__pill" href="/map/happyvalley/">欢乐谷</a>
+  </nav>
+  <div class="tp-pro__rule"></div>
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处<br>
+本文地址：<strong>https://worldstip.com/my/bus/1/</strong></p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+</body>
+</html>

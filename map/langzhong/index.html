@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>阆中古城全攻略（张飞庙/清代贡院/中天楼/嘉陵江）</title>
+<meta name="description" content="阆中古城旅游全攻略：中国四大古城之一、嘉陵江环抱的阆苑仙境。张飞庙、清代四川贡院、川北道署、中天楼、华光楼。街巷免费、110元一票通3天有效、高铁直达、美食醋泡脚避坑一篇讲清。">
+<meta name="keywords" content="阆中古城,阆中古城门票,张飞庙,汉桓侯祠,清代贡院,四川贡院,川北道署,中天楼,华光楼,保宁醋,张飞牛肉,嘉陵江,四大古城">
+<style>
+  :root{
+    --wall:#66737f;
+    --wall-deep:#434f59;
+    --wall-soft:#e6eaee;
+    --sand:#f6f7f5;
+    --sand-line:#e2e6e0;
+    --coral:#b0552e;
+    --cyan:#2b7f8e;
+    --leaf:#3e7d4f;
+    --ink:#2b3238;
+    --ink-soft:#63707c;
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(67,79,89,.3);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(102,115,127,.14), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(43,127,142,.10), transparent 55%),
+      var(--sand);
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--wall-deep)}
+
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--wall) 8%,#4a5662 55%,var(--wall-deep));
+    padding:40px 36px 34px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-40px;bottom:-60px;width:300px;height:300px;
+    background:radial-gradient(circle, rgba(255,255,255,.18), transparent 62%);
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.94;max-width:680px}
+  .hero p b{color:#fff}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{
+    font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:10px;
+  }
+
+  .switch{display:flex;gap:12px;margin:30px 0 6px;flex-wrap:wrap}
+  .switch button{
+    flex:1;min-width:230px;border:2px solid var(--sand-line);
+    background:var(--card);color:var(--ink);cursor:pointer;text-align:left;
+    border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  }
+  .switch button:hover{border-color:var(--wall);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(102,115,127,.4)}
+  .switch button.on{border-color:var(--wall);background:linear-gradient(135deg,#eef1f3,#f4f6f6)}
+  .switch button .t{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800}
+  .switch button .t .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff}
+  .switch button .d{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .b-1d .badge{background:var(--cyan)}
+  .b-2d .badge{background:var(--coral)}
+  .b-3d .badge{background:var(--leaf)}
+
+  section.panel{margin-top:26px;background:var(--card);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(102,115,127,.12)}
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--wall-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--wall-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--wall-deep);margin-top:20px}
+  .hint b{font-weight:800}
+
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--wall-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;
+    background:var(--wall);border:3px solid var(--wall-soft);box-sizing:content-box;
+  }
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--wall-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--wall-soft);color:var(--wall-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--coral);font-weight:800}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid var(--sand-line);border-radius:14px;padding:14px 16px;background:#fbfcfb;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(102,115,127,.35);box-shadow:0 8px 18px -10px rgba(102,115,127,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--wall-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+  .spot{display:flex;gap:18px;background:#fbfcfb;border:1px solid var(--sand-line);border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+  .spot:hover{border-color:rgba(102,115,127,.35);box-shadow:0 10px 22px -12px rgba(102,115,127,.3)}
+  .spimg{flex:0 0 40%;margin:0;min-width:0}
+  .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+  .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+  .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+  .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+  .sptxt h3{margin:0;font-size:19px;color:var(--wall-deep)}
+  .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+  .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#eef1f3;border-radius:10px;padding:9px 12px;margin-top:10px}
+  .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+  @media (max-width:640px){
+    .spot{flex-direction:column}
+    .spimg{flex:none}
+    .spimg img{height:auto;max-height:220px;object-fit:cover}
+  }
+
+  .cmp{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .cmp table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fefdfb}
+  .cmp th,.cmp td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--sand-line)}
+  .cmp thead th{background:var(--wall-deep);color:#fff;font-weight:700}
+  .cmp tbody tr:nth-child(even){background:#f4f6f5}
+  .cmp .hd2{background:var(--wall-soft);color:var(--wall-deep);font-weight:800;border-bottom:1px solid var(--sand-line)}
+  .cmp .good{color:#2f7d32;font-weight:700}
+  .cmp .bad{color:#c0504d;font-weight:700}
+
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--sand-line);padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--wall-soft);color:var(--wall-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--coral);font-weight:800;white-space:nowrap}
+
+  .budget{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fefdfb}
+  .budget th,.budget td{padding:10px 14px;text-align:left}
+  .budget thead th{background:var(--wall-deep);color:#fff;font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#f4f6f5}
+  .budget .tot{font-weight:800;color:var(--wall-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  .tips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .tips li{font-size:14px;color:var(--ink);background:#eef1f3;border-left:4px solid var(--wall);border-radius:8px;padding:10px 14px}
+  .tips li b{color:var(--wall-deep)}
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--wall-deep)}
+
+  @media print{
+    body{background:#fff}
+    .switch button{display:none}
+    .wrap{max-width:none;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
+    .card,.budget,.cmp{page-break-inside:avoid}
+  }
+  @media (max-width:600px){
+    .hero{padding:30px 22px 26px}
+    .hero h1{font-size:27px}
+    .wrap{padding:18px 14px 48px}
+    section.panel{padding:20px 18px}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/langzhong/">
+    <meta name="theme-color" content="#66737f">
+    <link rel="icon" href="../../favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="阆中古城全攻略（张飞庙/清代贡院/中天楼/嘉陵江）">
+    <meta property="og:description" content="阆中古城全攻略：中国四大古城之一、阆苑仙境。张飞庙、清代四川贡院、川北道署、中天楼、华光楼。街巷免费、110元一票通、高铁直达一篇讲清。">
+    <meta property="og:url" content="https://worldstip.com/map/langzhong/">
+    <meta property="og:image" content="https://worldstip.com/map/langzhong/assets/langzhong_cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="阆中古城全攻略">
+    <meta name="twitter:description" content="张飞庙、清代贡院、川北道署、中天楼、华光楼；街巷免费、110元一票通、高铁直达一篇讲清。">
+    <meta name="twitter:image" content="https://worldstip.com/map/langzhong/assets/langzhong_cover.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "阆中古城全攻略",
+      "url": "https://worldstip.com/map/langzhong/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/langzhong/",
+  "name": "阆中古城全攻略",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "publisher": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "copyrightHolder": { "@type": "Organization", "name": "旅行小册子" },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">🏮 阆中古城 · LANGZHONG ANCIENT CITY</div>
+  <h1>阆中古城全攻略</h1>
+  <p>与丽江、平遥、徽州并列的<b>中国四大古城</b>，被《国家地理》盖章「<b>阆苑仙境</b>」。嘉陵江 U 形环抱、三面环水，城中 1.5 平方公里青瓦灰墙的川北民居仍保留着以中天楼为中心的「天心十道」棋盘布局。三国文化（<b>张飞</b>在此镇守七年）、科举文化（<b>清代四川贡院</b>全国保存最完整开考处）在此交叠。<b>古城街巷免费</b>、110 元一票通 3 天有效超划算，<b>高铁直达</b>。本文含 1 日/2 日双方案、张飞庙贡院、交通住宿、美食醋泡脚、预算避坑全讲清。</p>
+  <div class="meta">
+    <span>📍 目的地：四川南充 · 阆中市</span>
+    <span>👥 1–6 人自由行</span>
+    <span>⏱️ 1 日 / 2 日 双方案</span>
+    <span>💰 街巷免费 · 一票通110</span>
+  </div>
+</header>
+
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="b-1d on" role="tab" aria-selected="true" data-plan="plan1" id="tab1">
+    <span class="t"><span class="badge">古城1日</span> 精华版 🏮</span>
+    <div class="d">中天楼-张飞庙-贡院 / 人均约 300–550</div>
+  </button>
+  <button class="b-2d" role="tab" aria-selected="false" data-plan="plan2" id="tab2">
+    <span class="t"><span class="badge">古城2日</span> 慢游版 🌙</span>
+    <div class="d">三国科举+锦屏山+嘉陵江夜景 / 人均约 600–1000</div>
+  </button>
+</div>
+
+<!-- 古城1日方案 -->
+<section class="panel" id="plan1" role="tabpanel">
+  <h2><span class="emo">🏮</span>古城 1 日 · 精华版</h2>
+  <p class="sub">核心策略：从中天楼登高俯瞰「天心十道」棋盘街巷，再依次打卡张飞庙、贡院、川北道署，把三国与科举的一口气看完。</p>
+  <div class="hint">👥 <b>1–3 人适配：</b>古城不大、全靠步行，1 日精华能把核心小景点+街巷逛吃都拿下；买 110 元一票通比单买划算得多。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">上午 · 中天楼 → 华光楼登高</div>
+      <div class="seg"><span>🏯 中天楼（古城几何中心）</span><span>🌉 华光楼（顶层木窗拍古城招牌机位）</span></div>
+      <div class="tip2"><span class="arr">💡</span> 站在中天楼顶向下看棋盘街巷、远眺三面环绕的嘉陵江，是理解阆中「阆苑仙境」布局的最佳角度。</div>
+    </li>
+    <li>
+      <div class="day">中午 · 汉桓侯祠（张飞庙）</div>
+      <div class="seg"><span>🈴 张飞镇守七年的祠堂+古柏</span></div>
+      <div class="tip2"><span class="arr">💡</span> 民间说法「头葬云阳、身葬阆中」；蹭个讲解会知道张飞并非莽汉，其书法造诣也很高。</div>
+    </li>
+    <li>
+      <div class="day">下午 · 清代四川贡院 + 川北道署</div>
+      <div class="seg"><span>📚 贡院（全国保存最完整的科举考棚之一）</span><span>🏛️ 川北道署（古代官署）</span></div>
+      <div class="tip2"><span class="arr">💡</span> 坐在清代考棚里感受「熬人的安静」是阆中贡院最妙的体验；两个点相距不远，步行顺路。</div>
+    </li>
+    <li>
+      <div class="day">傍晚 · 华光楼码头看日落江景</div>
+      <div class="seg"><span>🌅 嘉陵江畔等天黑亮灯</span></div>
+      <div class="tip2"><span class="arr">💡</span> 傍晚一层江面亮灯、城楼灯火相映，是阆中最浪漫的时刻；泡个保宁醋脚再返程，舒服收尾。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 古城2日方案 -->
+<section class="panel" id="plan2" role="tabpanel" hidden>
+  <h2><span class="emo">🌙</span>古城 2 日 · 慢游版</h2>
+  <p class="sub">核心策略：第一天逛透古城核心，第二天上锦屏山看全景+嘉陵江细赏，节奏更松弛的「慢逛」版。</p>
+  <div class="hint">👥 <b>深度体验适配：</b>愿意在古城里住一晚，看清晨无人的街巷·傍晚亮灯的江景，才能完整捕捉「阆苑仙境」的氛围。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 古城核心一整天</div>
+      <div class="seg"><span>🏯 中天楼/华光楼登高</span><span>🈴 张飞庙</span></div>
+      <div class="seg"><span>📚 贡院+川北道署</span><span>🏘️ 街巷漫游（保宁醋/张飞牛肉）</span></div>
+      <div class="tip2"><span class="arr">💡</span> 住古城内老宅改造的院落民宿，晚上逛南街夜市、看张飞巡城表演（免费），体验本地夜生活。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 锦屏山 → 嘉陵江 → 返程</div>
+      <div class="seg"><span>⛰️ 锦屏山看古城与嘉陵江全景</span><span>🌉 乘船/沿江漫步</span></div>
+      <div class="seg"><span>🍜 吃牛肉面/醋泡脚后返程</span></div>
+      <div class="tip2"><span class="arr">💡</span> 锦屏山门票约10元、是俯瞰古城与U形江弯的最佳高度；下午从高铁站返成都不到 2 小时。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 核心景点详览 -->
+<section class="panel" id="spots">
+  <h2><span class="emo">⭐</span>阆中古城核心景点 · 单独详览</h2>
+  <p class="sub">把最具辨识度的几个点单独拎出来说清楚——值不值得去、怎么玩、联票怎么买。</p>
+
+  <div class="spotlist">
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/langzhong_a.webp" type="image/webp">
+<img src="assets/langzhong_a.jpg" alt="阆中古城中天楼俯瞰层层叠叠的青瓦屋脊与棋盘状街巷，古色古香的中国古城全景" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>中天楼 · 古城中心</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e6eaee;color:#434f59">地标</span><h3>中天楼 · 俯瞰天心十道</h3></div>
+        <p>雄踞古城几何中心的三层古楼，四条主街从中天楼向四角辐射，构成「天心十道」经典棋盘布局。登楼可俯瞰整片青瓦灰墙的川北民居与蜿蜒嘉陵江，是理解阆中风水格局的最高点。</p>
+        <p class="spgo">👍 必去理由：古城第一登高点，也是认路坐标——「迷路就找中天楼」。旺季可错峰早到，顶层开阔出片好。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/langzhong_b.webp" type="image/webp">
+<img src="assets/langzhong_b.jpg" alt="阆中汉桓侯祠张飞庙红墙黛瓦的古建筑群，三国名将镇守之地庄严肃穆" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>张飞庙 · 三国文化地标</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#fde9e3;color:#c0552e">三国</span><h3>汉桓侯祠（张飞庙）· 张飞镇守七年</h3></div>
+        <p>为纪念在阆中镇守七年的蜀汉名将张飞而建的祠堂，庙内保存张飞墓与清代建筑，庄严肃穆。民间传说「头葬云阳、身葬阆中」，这里的古柏与塑像承载着浓厚三国文化。</p>
+        <p class="spgo">👍 必去理由：三国迷必打卡。祠内古柏清幽，蹭团听讲解能了解张飞守城治水的另一面，还可看民俗表演。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/langzhong_cover.webp" type="image/webp">
+<img src="assets/langzhong_cover.jpg" alt="清代四川贡院古色古香考棚，科举考场的青灯石板，全国保存最完整的科考遗址" width="800" height="1067" loading="lazy">
+</picture>
+        <figcaption>清代贡院 · 科举圣地</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e4edfb;color:#2f5fa8">科举</span><h3>清代四川贡院 · 全国保存最完整考棚</h3></div>
+        <p>清代四川省级科举考场遗址，整个贡院建筑与布局保存完好，是今天中国唯一可完整看见科举考棚布局的地方。曾在此举行四次四川乡试，走出过 116 名进士、4 名状元、17 名武状元。</p>
+        <p class="spgo">👍 必去理由：阆中最具仪式感的景点。坐进古色考棚、透过窄窗漏进的光线，想象古人连考三日的「熬人安静」。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/langzhong_a.webp" type="image/webp">
+<img src="assets/langzhong_a.jpg" alt="阆中华光楼临江而立，夕阳与嘉陵江相映成辉的中国古城楼" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>华光楼 · 临江古楼</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e4f2ec;color:#3e7d4f">地标</span><h3>华光楼 · 拍嘉陵江最佳机位</h3></div>
+        <p>临江而立的古老城楼，登上顶层木窗可俯瞰嘉陵江 U 形弯道与古城全景，是拍阆中江景与城貌的最佳机位之一。傍晚亮灯后，江面与楼影相映，格外动人。</p>
+        <p class="spgo">👍 必去理由：摄影打卡必上。傍晚时分到华光楼码头，看日落、等江面亮灯，是阆中「阆苑仙境」氛围感最强的瞬间。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/langzhong_b.webp" type="image/webp">
+<img src="assets/langzhong_b.jpg" alt="阆中锦屏山远眺嘉陵江与古城，群山环抱江面如带的阆苑仙境全貌" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>锦屏山 · 阆苑仙境全貌</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#f3e8fb;color:#6b3fa8">观景</span><h3>锦屏山 · 俯瞰古城的后花园</h3></div>
+        <p>位于嘉陵江南岸的山峦，是俯瞰阆中古城与「U 形江弯」的最佳高度。山顶可完整看到三面环水的阆中城呈半岛状卧于江心，配合对岸青瓦屋脊，就是「阆苑仙境」的具体形象。</p>
+        <p class="spgo">👍 必去理由：想看清古城全貌必上。门票约10元，步道清幽，适合2日游第二天上午登高收尾。</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 出行方式对比 -->
+<section class="panel">
+  <h2><span class="emo">🚗</span>怎么去：高铁 vs 自驾 vs 大巴 vs 飞机</h2>
+  <p class="sub">阆中距成都约280公里，高铁开通后进古城已相当便捷。</p>
+  <div class="cmp">
+    <table>
+      <caption style="position:absolute;left:-9999px">阆中古城高铁/自驾/大巴/飞机四种交通方式对比</caption>
+      <thead><tr><th scope="col">方式</th><th scope="col">🚄 高铁</th><th scope="col">🚗 自驾</th><th scope="col">🚌 大巴</th><th scope="col">✈️ 飞机</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="hd2">时长/成本</th>
+            <td>成都东/南至阆中站约 1.5–2h，出站公交/打车约 10–15 分钟进古城</td>
+            <td>成都经成巴高速至阆中约 280km、3.5–4h</td>
+            <td>成都茶店子等车站直达，约 4–5h</td>
+            <td>就近南充/绵阳机场转高铁或租车</td>
+        </tr>
+        <tr><th scope="row">适合人群</th>
+            <td class="good">✔ 2026 年最推荐：快、直达、进城方便</td>
+            <td>自驾党、顺路游光雾山/剑门关</td>
+            <td>预算型长途，时间充裕</td>
+            <td>远距离直达，转乘较多</td>
+        </tr>
+        <tr><th scope="row">注意</th>
+            <td>出站乘 10 路公交 2 元/打车约15元 直达古城</td>
+            <td>停「状元坊停车场」约 10 元/天，别停路边私人车位易溢价</td>
+            <td>班次相对固定，需按时刻表</td>
+            <td>南充机场离古城较远，转乘耗时</td>
+        </tr>
+        <tr><th scope="row" class="hd2" colspan="5">💡 一句话建议：首选 <b>高铁</b>——成都出发不到 2 小时直达阆中站，出站公交/短途打车几分钟就到古城，省心省力。</th></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">🎫 <b>联票：</b>一票通 <b>110 元（线上 100）</b>，3 天有效，含张飞庙、贡院、川北道署、文庙+中天楼/华光楼，比单买省约 70 元；学生/老人半价；穿正规汉服进古城一票通有折扣。注意：<b>古城街巷本身免费</b>，别在入口被拉着买「古城门票」。</div>
+</section>
+
+<!-- 住宿 -->
+<section class="panel">
+  <h2><span class="emo">🏨</span>住宿推荐</h2>
+  <p class="sub">古城内老宅院落民宿最具氛围、古城区口江景酒店进出方便，三档供参考（2 人房计）。</p>
+  <div class="grid">
+    <div class="card">
+      <span class="tag" style="background:#fff3cd;color:#8a6d00">经济型</span>
+      <div class="nm">古城内经济客栈</div>
+      <div class="pr">约 100–220 元/晚 · 人均 50–110</div>
+      <div class="ds">木结构老宅改造、青瓦院落，性价比高、逛吃方便。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#e6eaee;color:#434f59">中端舒适</span>
+      <div class="nm">院落主题民宿</div>
+      <div class="pr">约 250–480 元/晚 · 人均 125–240</div>
+      <div class="ds">庭院天井、布置雅致，适合喜欢沉浸式古城生活的情侣与家庭。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#fde9e3;color:#c0552e">江景高端</span>
+      <div class="nm">嘉陵江景酒店</div>
+      <div class="pr">约 400–1000 元/晚 · 人均 200–500</div>
+      <div class="ds">推窗见江、设施更现代，旺季/节假日涨幅大，建议提前一周以上订。</div>
+    </div>
+  </div>
+</section>
+
+<!-- 美食 -->
+<section class="panel">
+  <h2><span class="emo">🍜</span>阆中古城必吃清单</h2>
+  <p class="sub">阆中是蜀中美食重镇，张飞牛肉、保宁醋全国有名，街巷小吃也非常地道。</p>
+  <div class="food">
+    <div class="row"><span class="no">1</span><div class="it"><b>阆中牛肉面（热臊子凉面）</b><div class="w">别处少见的组合 · 招牌早餐</div></div><span class="prx">约 8–15 元</span></div>
+    <div class="row"><span class="no">2</span><div class="it"><b>张飞牛肉 / 酱牛肉</b><div class="w">川中名产 · 当伴手礼</div></div><span class="prx">约 30–60 元/袋</span></div>
+    <div class="row"><span class="no">3</span><div class="it"><b>保宁醋 / 醋泡脚</b><div class="w">本地人习惯 · 解乏放松</div></div><span class="prx">泡脚约 10–30 元</span></div>
+    <div class="row"><span class="no">4</span><div class="it"><b>油茶馓子 / 锅盔灌凉粉</b><div class="w">川北特色小吃 · 早餐/午点</div></div><span class="prx">约 8–20 元</span></div>
+    <div class="row"><span class="no">5</span><div class="it"><b>阆中三绝/蒸馍</b><div class="w">地方糕点伴手礼</div></div><span class="prx">约 20–50 元</span></div>
+  </div>
+</section>
+
+<!-- 预算 -->
+<section class="panel">
+  <h2><span class="emo">💰</span>预算对比（人均）</h2>
+  <p class="sub">含 1–3 人出行说明；区间为保守–宽松，实际以淡旺季与选择为准。</p>
+  <div class="budget">
+    <table>
+      <caption style="position:absolute;left:-9999px">阆中古城1日与2日方案人均预算对比</caption>
+      <thead><tr><th scope="col">项目</th><th scope="col" class="sc">古城1日版</th><th scope="col" class="sc">古城2日慢游</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">大交通（成都往返人均）</th><td class="sc">约 120–200</td><td class="sc">约 120–200</td></tr>
+        <tr><th scope="row">一票通</th><td class="sc">110</td><td class="sc">110（+锦屏山约10）</td></tr>
+        <tr><th scope="row">住宿</th><td class="sc">—（当日往返可选）</td><td class="sc">1 晚 100–480</td></tr>
+        <tr><th scope="row">餐饮</th><td class="sc">约 60–120</td><td class="sc">约 120–240</td></tr>
+        <tr><th scope="row">城内交通/杂费</th><td class="sc">约 20–50</td><td class="sc">约 30–80</td></tr>
+        <tr><th scope="row" class="tot">合计 · 人均</th><td class="sc tot">约 310–480</td><td class="sc tot">约 500–900</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">💡 <b>省法：</b>只逛街巷则完全免费；一票通比单买省约70元；学生/老人半价；穿汉服一票通另有折扣；古城内小吃比城中心贵 2–3 元，久住可去桑公街/1227 广场吃实惠餐。</div>
+</section>
+
+<!-- 避坑建议 -->
+<section class="panel">
+  <h2><span class="emo">🧭</span>避坑 & 实用贴士</h2>
+  <ul class="tips">
+    <li><b>别在入口乱买票：</b>古城街巷免费，入口喊「买古城门票」的是让你买内部小景点票；要买就买官方「一票通」，别买重。</li>
+    <li><b>联票3天有效：</b>一票通 110 元（线上100）含张飞庙+贡院+川北道署+文庙+中天/华光楼，3天有效，不必一天赶完。</li>
+    <li><b>暑期延时闭园：</b>每年7–8月高温季核心景点常延时开放至20:00（见当年公告），建议19:30前入园；非暑期各景点17:30–18:30陆续关门。</li>
+    <li><b>旺季提前订房：</b>古城民宿节假日价格常上浮50%，建议提前一周以上订，早点到挑院景房。</li>
+    <li><b>停车别图便宜：</b>自驾停「状元坊停车场」约10元/天，别停路边私人车位，易溢价。</li>
+    <li><b>穿汉服/运动鞋：</b>古城青石板路适合汉服拍照，但穿双舒服的鞋，走一天不累脚。</li>
+  </ul>
+</section>
+
+<footer>
+  阆中古城全攻略 ｜ 适配 1–6 人自由行 · 价格为参考值 · 门票/延时政策以景区实时公告为准<br>
+  古城街巷免费、文明游览；出发前关注官方实时公告。 · <a href="../../index.html">← 返回小册子</a>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+  try{
+    var tabs=document.querySelectorAll('.switch button');
+    var plans=document.querySelectorAll('section[role="tabpanel"]');
+    function show(id){
+      tabs.forEach(function(t){
+        var on=t.getAttribute('data-plan')===id;
+        t.classList.toggle('on',on);
+        t.setAttribute('aria-selected',on?'true':'false');
+      });
+      plans.forEach(function(p){ p.hidden = p.id!==id; });
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+    tabs.forEach(function(t){ t.addEventListener('click',function(){ show(t.getAttribute('data-plan')); }); });
+  }catch(e){}
+})();
+</script>
+<footer style="position:relative;margin:44px auto 8px;padding:18px 24px;max-width:1180px;width:calc(100% - 40px);text-align:center;background:rgba(13,17,32,.55);border:1px solid rgba(255,255,255,.12);border-radius:14px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:2">
+  <span style="font-size:13px;color:#dfe3ea;letter-spacing:.03em">Made with care by <b style="color:#fff">WorldStip</b> &nbsp;·&nbsp; <a href="https://worldstip.com" style="color:#9fb6ff;text-decoration:none" target="_blank" rel="noopener noreferrer">worldstip.com</a> &nbsp;·&nbsp; 旅行小册子</span>
+</footer>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

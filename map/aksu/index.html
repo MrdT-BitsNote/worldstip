@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>阿克苏·西域绿洲 · 南疆苹果之乡 | Travel Guide</title>
+<style>
+:root{--page:#d9d3c8;--paper:#faf7f0;--ink:#23211c;--muted:#6b675c;--line:#e3ddcf;--gold:#c9a24b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--page);font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;color:var(--ink);padding:24px 0;scroll-behavior:smooth}
+.deck-wrap{max-width:1240px;margin:0 auto}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:4px 8px 20px;position:sticky;top:0;z-index:50;background:var(--page)}
+.chips button{font-size:13px;padding:6px 13px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;transition:.2s}
+.chips button:hover{background:var(--gold);color:#fff;border-color:var(--gold)}
+.chips button.active{background:var(--gold);color:#fff;border-color:var(--gold)}
+.deck{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;align-items:flex-start}
+.card{width:148mm;height:210mm;overflow:hidden;background:var(--paper);border-radius:16px;box-shadow:0 6px 22px rgba(0,0,0,.14);position:relative;flex:none;display:flex;flex-direction:column;--tc1:#5a6a3a;--tc2:#7a8d56;--tc-strong:#43512c;--tc-soft:#eef1e5}
+
+.topbar{display:flex;justify-content:space-between;align-items:center;margin:0;color:var(--tc2);font-size:11px;letter-spacing:1px;font-weight:600}
+.topbar .logo{color:var(--tc1)}
+.note-strip{background:var(--tc-soft);border-left:4px solid var(--tc1);padding:8px 12px;border-radius:0 8px 8px 0;font-size:12px;color:var(--ink);margin-bottom:10px;line-height:1.5}
+.hero{width:100%;height:150px;object-fit:cover;border-radius:12px;margin-bottom:12px;flex:none}
+.cover{position:relative;flex:1;border-radius:16px;overflow:hidden;display:flex;align-items:flex-end}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover .cov-grad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.75))}
+.cover .cov-tx{position:relative;z-index:3;padding:22px;color:#fff}
+.cover .tag{display:inline-block;background:var(--gold);color:#fff;font-size:11px;padding:3px 10px;border-radius:999px;margin-bottom:8px}
+.cover h1{font-size:30px;margin:4px 0}
+.cover .en{letter-spacing:2px;color:#ffe9b0;font-size:12px}
+.hd{margin-bottom:8px}
+.hd .k{font-size:11px;color:var(--tc2);letter-spacing:2px;font-weight:700}
+.hd h2{font-size:20px;color:var(--tc-strong);line-height:1.3}
+.mod{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px;font-size:13px;line-height:1.7}
+.mod h3{color:var(--tc1);font-size:14px;margin-bottom:6px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}
+.pair img{width:100%;height:92px;object-fit:cover;border-radius:10px}
+.thumbs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin:8px 0}
+.thumbs img{width:100%;height:64px;object-fit:cover;border-radius:8px}
+.pill{display:inline-block;font-size:10px;padding:2px 8px;border-radius:999px;margin-right:4px;margin-bottom:4px}
+.pill.must{background:var(--tc-soft);color:var(--tc-strong)}
+.pill.flex{background:#f3efe3;color:#8a7b4e}
+.pill.day{background:#e8ecf2;color:#4a6287}
+.day-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.day-head .d{background:var(--tc1);color:#fff;width:42px;height:42px;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:none}
+.day-head .d b{font-size:16px}
+.day-head .d span{font-size:9px}
+.day-head .t h3{font-size:16px;color:var(--tc-strong)}
+.day-head .t p{font-size:11px;color:var(--muted)}
+.route-steps{border-left:2px solid var(--tc-soft);padding-left:12px;margin:8px 0}
+.route-steps li{list-style:none;position:relative;padding:4px 0 6px 14px;font-size:13px;color:var(--ink)}
+.route-steps li::before{content:"";position:absolute;left:-17px;top:9px;width:8px;height:8px;border-radius:50%;background:var(--tc1)}
+.spot-card{background:var(--tc-soft);border-radius:12px;padding:10px;margin:8px 0}
+.spot-card h4{color:var(--tc-strong);font-size:13px;margin-bottom:4px}
+.spot-card p{font-size:12px;color:var(--ink);line-height:1.6}
+.tips li{list-style:none;position:relative;padding:7px 0 7px 22px;font-size:13px;border-bottom:1px dashed var(--line);line-height:1.55}
+.tips li:last-child{border:none}
+.tips li::before{content:"◆";color:var(--tc1);position:absolute;left:2px;font-size:10px;top:9px}
+.tips.danger li::before{content:"⚠";color:#c0392b}
+.page-num{position:absolute;bottom:14px;right:16px;font-size:11px;color:#c9c2b2;letter-spacing:1px}
+.pp{padding-bottom:44px}
+@media print{body{padding:0;background:#fff}.card{box-shadow:none;display:block!important;page-break-after:always}.chips{display:none}}
+
+.card .body{flex:1;min-height:0;overflow:hidden;display:flex;flex-direction:column;padding:15mm;padding-top:8mm}
+.card .topbar{flex:none;margin:0;padding:10mm 15mm 5mm}
+.camtab{position:fixed;top:110px;left:14px;right:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/aksu/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="阿克苏·西域绿洲 · 南疆苹果之乡 | Travel Guide">
+    <meta property="og:description" content="阿克苏·西域绿洲 · 南疆苹果之乡 | Travel Guide">
+    <meta property="og:url" content="https://worldstip.com/map/aksu/">
+    <meta property="og:image" content="https://worldstip.com/map/aksu/assets/aksu_cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="阿克苏·西域绿洲 · 南疆苹果之乡 | Travel Guide">
+    <meta name="twitter:description" content="阿克苏·西域绿洲 · 南疆苹果之乡 | Travel Guide">
+    <meta name="twitter:image" content="https://worldstip.com/map/aksu/assets/aksu_cover.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "阿克苏·西域绿洲 · 南疆苹果之乡 | Travel Guide",
+      "url": "https://worldstip.com/map/aksu/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="deck-wrap">
+
+<nav class="chips">
+  <button data-target="c-cover">封面</button>
+  <button data-target="c-transport">怎么去</button>
+  <button data-target="c-driving">自驾方案</button>
+  <button data-target="c-season">四季风光</button>
+  <button data-target="c-day1">Day1 绿洲果园</button>
+  <button data-target="c-day2">Day2 温宿峡谷</button>
+  <button data-target="c-day3">Day3 天山雪峰</button>
+  <button data-target="c-spots">热门看点</button>
+  <button data-target="c-food">地方美食</button>
+  <button data-target="c-stay">住宿推荐</button>
+  <button data-target="c-tips">实用贴士</button>
+  <button data-target="c-safety">安全提示</button>
+</nav>
+
+<div class="deck">
+
+<!-- 封面 -->
+<div class="card open" id="c-cover" style="--tc1:#5a6a3a;--tc2:#8aa86a;--tc-strong:#43512c;--tc-soft:#eef1e5;display:flex;padding:0">
+  <div class="cover">
+    <picture>
+<source srcset="assets/aksu_cover.webp" type="image/webp">
+<img src="assets/aksu_cover.jpg" alt="阿克苏绿洲">
+</picture>
+    <div class="cov-grad"></div>
+    <div class="cov-tx">
+      <span class="tag">WorldStip · 南疆名城</span>
+      <h1>阿克苏</h1>
+      <div class="en">AKSU · 西域绿洲 · 苹果之乡</div>
+      <p style="font-size:12px;margin-top:8px;opacity:.9">塔里木河滋养的绿洲，天山脚下的苹果故乡，温宿大峡谷赤色如燃烧</p>
+      <p style="font-size:11px;margin-top:6px;color:#ffe9b0">适合天数 3-5天 · 最佳季 秋 · 自驾+民俗</p>
+    </div>
+  </div>
+  <span class="page-num">01 / AKSU</span>
+</div>
+
+<!-- 怎么去 -->
+<div class="card" id="c-transport" style="--tc1:#5a6a3a;--tc2:#8aa86a;--tc-strong:#43512c;--tc-soft:#eef1e5">
+  <div class="topbar"><span class="logo">AKSU · 交通攻略</span><span>WorldStip</span></div>
+  <div class="body">
+  <picture>
+<source srcset="assets/aksu_inner.webp" type="image/webp">
+<img class="hero" src="assets/aksu_inner.jpg" alt="阿克苏市区" loading="lazy" decoding="async">
+</picture>
+  <div class="hd"><div class="k">HOW TO GET THERE</div><h2>怎么去阿克苏</h2></div>
+  <div class="mod"><h3>✈️ 飞机</h3>阿克苏红旗坡机场直飞乌鲁木齐、成都、西安、郑州等地；机场距市区约16公里，打车约15分钟。出疆首选。</div>
+  <div class="mod"><h3>🚄 火车</h3>南疆铁路经过，喀什→阿克苏约5小时，库尔勒→阿克苏约3.5小时。火车站距市区8公里，公交1路/2路直达。</div>
+  <div class="mod"><h3>🚗 公路</h3>连霍高速(G30)与吐和高速(G3012)交汇，自驾从库尔勒约450公里、从喀什约460公里，全程柏油路况良好。</div>
+  <span class="page-num">02 / AKSU</span></div>
+</div>
+
+<!-- 自驾方案 -->
+<div class="card" id="c-driving" style="--tc1:#5a6a3a;--tc2:#8aa86a;--tc-strong:#43512c;--tc-soft:#eef1e5">
+  <div class="topbar"><span>AKSU · 自驾方案</span><span>WorldStip</span></div>
+  <div class="body">
+  <div class="hd"><div class="k">SELF-DRIVING</div><h2>阿克苏自驾环线</h2></div>
+  <div class="pair"><picture>
+<source srcset="assets/ak_dxiagu.webp" type="image/webp">
+<img src="assets/ak_dxiagu.jpg" alt="温宿大峡谷" loading="lazy" decoding="async">
+</picture><picture>
+<source srcset="assets/ak_tomur.webp" type="image/webp">
+<img src="assets/ak_tomur.jpg" alt="天山托木尔峰" loading="lazy" decoding="async">
+</picture></div>
+  <ul class="route-steps">
+    <li><b>Day1</b> 阿克苏市区 → 神木园（约70km）→ 苹果园采摘，宿市区</li>
+    <li><b>Day2</b> 市区 → 温宿托木尔大峡谷（约60km）越野车进谷，宿峡谷营地</li>
+    <li><b>Day3</b> 峡谷 → 天山托木尔峰观景台 → 塔格拉克草原，返市区</li>
+  </ul>
+  <div class="note-strip"><b>⚠ 自驾提示：</b>峡谷内为砂石土路，需四驱SUV且随车勿单人；南疆夏季高温、秋季偶有沙尘，备足饮用水。</div>
+  <span class="page-num">03 / AKSU</span></div>
+</div>
+
+<!-- 四季 -->
+<div class="card" id="c-season" style="--tc1:#5a6a3a;--tc2:#8aa86a;--tc-strong:#43512c;--tc-soft:#eef1e5">
+  <div class="topbar"><span>AKSU · 四季风光</span><span>WorldStip</span></div>
+  <div class="body">
+  <div class="hd"><div class="k">FOUR SEASONS</div><h2>不同季节的阿克苏</h2></div>
+  <ul class="route-steps">
+    <li><b>🌸 春（3-5月）</b>杏花、梨花漫山遍野，绿洲春意盎然，气温回暖但风沙渐起，看花首选。</li>
+    <li><b>☀️ 夏（6-8月）</b>白天炎热（40℃+）干燥少雨，绿洲果园枝繁叶茂，峡谷峡谷最雄浑，宜早晚出行。</li>
+    <li><b>🍂 秋（9-10月）· 最佳</b>冰糖心苹果成熟，胡杨金黄，温宿峡谷红褐如燃，色彩最丰富。</li>
+    <li><b>❄️ 冬（11-2月）</b>干冷少雪，天山雪线低垂、雪峰壮丽，游客稀少、景致清冷。</li>
+  </ul>
+  <div class="pair"><picture>
+<source srcset="assets/aksu_c.webp" type="image/webp">
+<img src="assets/aksu_c.jpg" alt="神木园" loading="lazy" decoding="async">
+</picture><picture>
+<source srcset="assets/aksu_d.webp" type="image/webp">
+<img src="assets/aksu_d.jpg" alt="苹果园" loading="lazy" decoding="async">
+</picture></div>
+  <span class="page-num">04 / AKSU</span></div>
+</div>
+
+<!-- Day1 -->
+<div class="card" id="c-day1" style="--tc1:#5a6a3a;--tc2:#8aa86a;--tc-strong:#43512c;--tc-soft:#eef1e5">
+  <div class="topbar"><span>AKSU · DAY 1</span><span>WorldStip</span></div>
+  <div class="body">
+  <div class="day-head"><div class="d"><b>1</b><span>DAY</span></div><div class="t"><h3>绿洲果园 · 千年神木</h3><p>苹果之乡到神木古园</p></div></div>
+  <div class="pair"><picture>
+<source srcset="assets/aksu_d.webp" type="image/webp">
+<img src="assets/aksu_d.jpg" alt="冰糖心苹果" loading="lazy" decoding="async">
+</picture><picture>
+<source srcset="assets/aksu_c.webp" type="image/webp">
+<img src="assets/aksu_c.jpg" alt="神木园" loading="lazy" decoding="async">
+</picture></div>
+  <div class="mod"><b>上午 · 神木园（天山大峡谷外围）</b>千年古树奇观，怪木虬枝历经风沙仍苍翠，是沙漠绿洲的生命象征。</div>
+  <div class="mod"><b>下午 · 冰糖心苹果园</b>亲手采摘闻名全国的冰糖心苹果，咬一口汁水四溢、清甜回甘。</div>
+  <div class="note-strip">🍎 阿克苏冰糖心苹果口感极佳，秋季采摘正当季，也是必带的伴手礼。</div>
+  <span class="page-num">05 / AKSU</span></div>
+</div>
+
+<!-- Day2 -->
+<div class="card" id="c-day2" style="--tc1:#5a6a3a;--tc2:#8aa86a;--tc-strong:#43512c;--tc-soft:#eef1e5">
+  <div class="topbar"><span>AKSU · DAY 2</span><span>WorldStip</span></div>
+  <div class="body">
+  <div class="day-head"><div class="d"><b>2</b><span>DAY</span></div><div class="t"><h3>温宿大峡谷</h3><p>赤色峡谷如燃烧</p></div></div>
+  <picture>
+<source srcset="assets/ak_dxiagu.webp" type="image/webp">
+<img class="hero" src="assets/ak_dxiagu.jpg" alt="温宿托木尔大峡谷" loading="lazy" decoding="async">
+</picture>
+  <div class="mod"><b>托木尔大峡谷</b>红色砂岩经亿万年风蚀水蚀形成的壮丽峡谷，谷壁层层叠叠、纹理分明，被称"万山之都"。需乘景区越野车进入，全程约3小时。</div>
+  <div class="note-strip"><b>⚠ 安全：</b>峡谷内易迷路、有落石，务必跟车游览、按景区路线，勿偏离徒步进入谷底深处。</div>
+  <span class="page-num">06 / AKSU</span></div>
+</div>
+
+<!-- Day3 -->
+<div class="card" id="c-day3" style="--tc1:#5a6a3a;--tc2:#8aa86a;--tc-strong:#43512c;--tc-soft:#eef1e5">
+  <div class="topbar"><span>AKSU · DAY 3</span><span>WorldStip</span></div>
+  <div class="body">
+  <div class="day-head"><div class="d"><b>3</b><span>DAY</span></div><div class="t"><h3>天山托木尔峰</h3><p>南天山最高雪峰</p></div></div>
+  <picture>
+<source srcset="assets/ak_tomur.webp" type="image/webp">
+<img class="hero" src="assets/ak_tomur.jpg" alt="天山托木尔峰" loading="lazy" decoding="async">
+</picture>
+  <div class="mod"><b>天山托木尔峰</b>海拔7443米，天山最高峰，终年积雪。在托木尔峰自然保护区内远眺雪峰矗立、云海翻涌，雪山与绿洲同框，震撼无比。</div>
+  <div class="mod"><b>塔格拉克草原</b>雪山脚下的高山草原，夏季牛羊成群、野花遍地，可体验哈萨克族牧家生活。</div>
+  <span class="page-num">07 / AKSU</span></div>
+</div>
+
+<!-- 热门看点 -->
+<div class="card" id="c-spots" style="--tc1:#5a6a3a;--tc2:#8aa86a;--tc-strong:#43512c;--tc-soft:#eef1e5">
+  <div class="topbar"><span>AKSU · 热门看点</span><span>WorldStip</span></div>
+  <div class="body">
+  <div class="hd"><div class="k">MUST SEE</div><h2>阿克苏必游之地</h2></div>
+  <div class="pair"><picture>
+<source srcset="assets/ak_dxiagu.webp" type="image/webp">
+<img src="assets/ak_dxiagu.jpg" alt="温宿大峡谷" loading="lazy" decoding="async">
+</picture><picture>
+<source srcset="assets/aksu_e.webp" type="image/webp">
+<img src="assets/aksu_e.jpg" alt="绿洲田园" loading="lazy" decoding="async">
+</picture></div>
+  <div class="spot-card"><h4>温宿托木尔大峡谷</h4><p>南疆最佳地质景观，红色峡谷壮丽雄奇，摄影与探险必去。</p></div>
+  <div class="spot-card"><h4>天山神木园</h4><p>千年古树林立，风沙中不屈的生命奇观，绿洲灵魂所在。</p></div>
+  <div class="spot-card"><h4>天鹅湖/多浪河公园</h4><p>市区休闲湿地，碧水芦苇、野鸭天鹅，傍晚散步好去处。</p></div>
+  <span class="page-num">08 / AKSU</span></div>
+</div>
+
+<!-- 美食 -->
+<div class="card" id="c-food" style="--tc1:#c96a2e;--tc2:#8aa86a;--tc-strong:#8a4a1a;--tc-soft:#fbeee2">
+  <div class="topbar"><span>AKSU · 美食</span><span>WorldStip</span></div>
+  <div class="body">
+  <div class="hd"><div class="k">TASTE</div><h2>阿克苏必吃清单</h2></div>
+  <div class="pair"><picture>
+<source srcset="assets/aksu_d.webp" type="image/webp">
+<img src="assets/aksu_d.jpg" alt="苹果" loading="lazy" decoding="async">
+</picture><picture>
+<source srcset="assets/aksu_e.webp" type="image/webp">
+<img src="assets/aksu_e.jpg" alt="绿洲" loading="lazy" decoding="async">
+</picture></div>
+  <ul class="tips">
+    <li><b>冰糖心苹果</b> 南疆瑰宝，脆甜多汁，秋季现摘最正宗</li>
+    <li><b>烤包子（萨木萨）</b> 酥皮羊肉馅，炭火烤出的焦香</li>
+    <li><b>手抓饭</b> 黄萝卜羊肉焖饭，油润喷香</li>
+    <li><b>大盘鸡</b> 浓郁的椒麻鸡块配皮带面</li>
+    <li><b>抓肉/馕坑肉</b> 大块羊肉配馕，豪爽地道</li>
+  </ul>
+  <span class="page-num">09 / AKSU</span></div>
+</div>
+
+<!-- 住宿 -->
+<div class="card" id="c-stay" style="--tc1:#5a6a3a;--tc2:#8aa86a;--tc-strong:#43512c;--tc-soft:#eef1e5">
+  <div class="topbar"><span>AKSU · 住宿</span><span>WorldStip</span></div>
+  <div class="body">
+  <div class="hd"><div class="k">STAY</div><h2>住哪里</h2></div>
+  <picture>
+<source srcset="assets/aksu_inner.webp" type="image/webp">
+<img class="hero" src="assets/aksu_inner.jpg" alt="阿克苏市区" loading="lazy" decoding="async">
+</picture>
+  <ul class="tips">
+    <li><b>市区（推荐）</b> 多浪河景区周边酒店云集，餐饮方便、打车便利，是住宿首选</li>
+    <li><b>温宿县城</b> 前往峡谷的近便住宿地，价格实惠，次日可早出发</li>
+    <li><b>峡谷营地</b> 特色露营/星空房，亲历大漠之夜，旺季需提前预订</li>
+    <li><b>民宿院落</b> 绿洲农家果院，尝家常菜、摘鲜果，体验田园慢生活</li>
+  </ul>
+  <span class="page-num">10 / AKSU</span></div>
+</div>
+
+<!-- 实用贴士 -->
+<div class="card" id="c-tips" style="--tc1:#5a6a3a;--tc2:#8aa86a;--tc-strong:#43512c;--tc-soft:#eef1e5">
+  <div class="topbar"><span>AKSU · 实用贴士</span><span>WorldStip</span></div>
+  <div class="body">
+  <div class="hd"><div class="k">TIPS</div><h2>出行贴士</h2></div>
+  <ul class="tips">
+    <li>⏰ 新疆使用乌鲁木齐时间，与北京时间有约2小时"时差"，白昼特别长</li>
+    <li>🌞 夏季烈日高温，防晒霜、墨镜、遮阳帽必备；空气干燥注意补水</li>
+    <li>🍈 秋季前往遇苹果、葡萄、红枣季，可现场采摘品尝</li>
+    <li>🕌 尊重当地民族风俗与宗教信仰，进入清真场所注意着装</li>
+    <li>💳 市区移动支付普及，但峡谷、乡间建议备少量现金</li>
+    <li>🚿 自驾长途备水与零食，加油站间隔较远提前规划</li>
+  </ul>
+  <span class="page-num">11 / AKSU</span></div>
+</div>
+
+<!-- 安全 -->
+<div class="card" id="c-safety" style="--tc1:#c0392b;--tc2:#8aa86a;--tc-strong:#8a1f15;--tc-soft:#fbece9">
+  <div class="topbar"><span>AKSU · 安全提示</span><span>WorldStip</span></div>
+  <div class="body">
+  <div class="hd"><div class="k">SAFETY</div><h2>务必注意</h2></div>
+  <ul class="tips danger">
+    <li><b>峡谷安全</b> 温宿大峡谷谷底易迷路、有落石，务必乘景区越野车、按路线游览，勿独自徒步深入</li>
+    <li><b>自驾安全</b> 南疆路宽但乡村多电动车与牲畜，沙尘天气能见度低，减速慢行、系好安全带</li>
+    <li><b>高原反应</b> 天山区域海拔3000米左右，部分游客会有轻微不适，勿剧烈运动、备红景天</li>
+    <li><b>夏季酷暑</b> 白天40℃高温，正午避免长时间户外暴晒，防中暑</li>
+    <li><b>沙尘天气</b> 大风时节沙尘弥漫，外出戴口罩护目镜，关好门窗</li>
+    <li><b>夜间行车</b> 城乡接合部夜间能见差、道路照明不足，尽量不在夜间长途驾车</li>
+  </ul>
+  <span class="page-num">12 / AKSU</span></div>
+</div>
+
+</div>
+</div>
+
+<script>
+(function(){
+  var btns=document.querySelectorAll('.chips button');
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.getAttribute('data-target');
+      if(t&&t.charAt(0)==='#')t=t.slice(1);
+      var el=document.getElementById(t);
+      btns.forEach(function(x){x.classList.remove('active')});
+      b.classList.add('active');
+      if(el){el.scrollIntoView({behavior:'smooth',block:'start'});}
+    });
+  });
+  if(btns.length)btns[0].classList.add('active');
+})();
+</script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

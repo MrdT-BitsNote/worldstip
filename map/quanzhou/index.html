@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>泉州 3 日 · A5 卡片手册｜世遗之城·刺桐港</title>
+<meta name="description" content="泉州3日古城漫游手册：开元寺东西塔、西街、清源山老君岩、洛阳桥、蟳埔簪花，尝面线糊、姜母鸭、四果汤——世界遗产之城玩法与避坑全收录。">
+<meta name="keywords" content="泉州旅游,泉州旅行,开元寺,泉州西街,清源山,洛阳桥,蟳埔,泉州美食">
+<style>
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Roboto,sans-serif;
+    color:#333a44;
+    background:linear-gradient(160deg,#fbf3ea 0%,#f6efe8 45%,#efeff2 100%);
+    line-height:1.55;
+    overflow-wrap:break-word;
+    min-height:100vh;
+  }
+  img{max-width:100%;height:auto;display:block;}
+
+  /* ===== 顶部标题 ===== */
+  header.masthead{
+    text-align:center;
+    padding:42px 20px 14px;
+    position:relative;
+  }
+  header.masthead .title-emoji{font-size:42px;line-height:1;margin-bottom:8px;}
+  header.masthead h1{
+    margin:0 0 6px;
+    font-size:clamp(1.5rem,4vw,2rem);
+    font-weight:800;
+    letter-spacing:.5px;
+    background:linear-gradient(90deg,#c07a3c,#a0522d,#7a4a3b);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  header.masthead p{color:#9a8678;margin:0;font-size:.95rem;}
+
+  /* ===== 卡片册舞台 ===== */
+  .deck-wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:8px 18px 40px;
+  }
+
+  /* 目录导航 chip（横向滚动） */
+  .chips{
+    display:flex;gap:8px;align-items:center;
+    margin:14px auto 26px;max-width:940px;
+    overflow-x:auto;padding:6px 4px 10px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+  }
+  .chips::-webkit-scrollbar{height:6px;}
+  .chips::-webkit-scrollbar-thumb{background:#e0cdbb;border-radius:99px;}
+  .chips button{
+    font:inherit;font-size:.85rem;font-weight:600;white-space:nowrap;
+    border:none;cursor:pointer;flex:none;
+    padding:8px 15px;border-radius:999px;
+    background:#fff;color:#5b6372;
+    box-shadow:0 4px 14px rgba(140,100,60,.10);
+    transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+  }
+  .chips button:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(140,100,60,.16);}
+  .chips button.active{background:#c07a3c;color:#fff;}
+  .chips .grp-label{
+    flex:none;font-size:.72rem;font-weight:800;letter-spacing:.08em;color:#bea691;
+    padding:0 2px;
+  }
+
+  /* 卡片网格 */
+  .deck{
+    display:flex;flex-wrap:wrap;gap:22px;
+    justify-content:center;align-items:flex-start;
+    scroll-behavior:smooth;
+  }
+
+  /* ===== A5 卡片本体 ===== */
+  .card{
+    width:148mm;height:210mm;
+    background:#fff;border-radius:26px;
+    box-shadow:0 18px 44px rgba(130,95,55,.15),0 3px 10px rgba(130,95,55,.08);
+    overflow:hidden;position:relative;
+    display:flex;flex-direction:column;
+    border:1px solid rgba(255,255,255,.7);
+    scroll-margin-top:20px;
+  }
+  .card .topbar{flex:none;height:7px;background:linear-gradient(90deg,var(--tc1),var(--tc2));}
+  .card header.c{
+    padding:15px 20px 5px;display:flex;align-items:center;gap:12px;
+  }
+  .card header.c .ico{
+    flex:none;width:44px;height:44px;border-radius:14px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:24px;background:var(--tc-soft);
+    box-shadow:0 4px 10px rgba(0,0,0,.06);
+  }
+  .card header.c h2{margin:0;font-size:1.16rem;font-weight:800;line-height:1.25;color:var(--tc-strong);}
+  .card header.c .en{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#b3bac6;margin-top:2px;}
+  .card .body{flex:1;min-height:0;padding:8px 18px 16px;overflow:hidden;display:flex;flex-direction:column;}
+  .card .page-num{position:absolute;bottom:12px;right:16px;font-size:.72rem;font-weight:700;color:#c2c8d4;}
+
+  .pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.66rem;font-weight:700;white-space:nowrap;}
+  .pill.must{background:#ffe9e4;color:#e5533d;}
+  .pill.flex{background:#f0eadf;color:#a0522d;}
+  .pill.day{background:#e8f0ff;color:#4f7fd6;}
+
+  /* 封面卡片 */
+  .card.cover{
+    background:
+      linear-gradient(180deg,rgba(90,55,25,.16) 0%,rgba(55,32,15,.78) 92%),
+      url('assets/towers.jpg') center/cover no-repeat #3a2417;
+    background-image:
+        linear-gradient(180deg,rgba(90,55,25,.16) 0%,rgba(55,32,15,.78) 92%),
+        url('assets/towers.jpg');
+    background-size:cover;background-position:center;
+  }
+  .card.cover .overlay{color:#fff;flex:1;display:flex;flex-direction:column;padding:24px 22px;justify-content:flex-end;}
+  .card.cover .kick{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:#ffd39a;font-weight:700;margin-bottom:10px;}
+  .card.cover h2{font-size:2rem;margin:0 0 10px;line-height:1.14;font-weight:800;}
+  .card.cover .sub{font-size:.94rem;opacity:.95;margin:0 0 20px;max-width:40ch;}
+  .card.cover .meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;}
+  .card.cover .meta span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.26);padding:5px 11px;border-radius:999px;font-size:.8rem;}
+  .cover-deco{position:absolute;top:22px;left:22px;font-size:30px;line-height:1;filter:drop-shadow(0 3px 6px rgba(0,0,0,.35));}
+
+  /* ===== 动线总览 ===== */
+  .timeline{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;}
+  .timeline li{display:flex;gap:10px;align-items:flex-start;background:#fbf6f0;border:1px solid #f0e4d6;border-radius:13px;padding:8px 11px;}
+  .timeline li .d{flex:none;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#d1803f,#a0522d);color:#fff;font-weight:800;font-size:.82rem;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.05;}
+  .timeline li .d small{font-size:.55rem;font-weight:600;opacity:.9;}
+  .timeline li .tt{flex:1;min-width:0;}
+  .timeline li .tt b{font-size:.85rem;color:#3d3f52;}
+  .timeline li .tt span{display:block;font-size:.76rem;color:#8a8a94;margin-top:1px;}
+  .timeline .tag-row{margin-top:2px;}
+
+  /* ===== 逐日行程卡片 ===== */
+  .day-head{
+    display:flex;align-items:center;gap:11px;
+    background:linear-gradient(90deg,var(--tc-soft),#fff);
+    border-left:5px solid var(--tc-strong);
+    border-radius:13px;padding:9px 12px;margin-bottom:9px;
+  }
+  .day-head .dn{
+    flex:none;width:40px;height:40px;border-radius:13px;
+    background:linear-gradient(135deg,var(--tc1),var(--tc2));color:#fff;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    line-height:1.02;font-weight:800;font-size:.9rem;
+  }
+  .day-head .dn small{font-size:.56rem;font-weight:600;opacity:.92;}
+  .day-head .dh{flex:1;min-width:0;}
+  .day-head .dh b{font-size:.98rem;color:var(--tc-strong);display:block;line-height:1.2;}
+  .day-head .dh span{font-size:.74rem;color:#8a8a94;}
+  .day-route{font-size:.78rem;color:#6b7280;margin:-2px 0 8px;background:#fbf6f0;border:1px dashed #eadbca;border-radius:10px;padding:7px 11px;}
+  .day-route b{color:#3d3f52;}
+  .day-blocks{display:flex;flex-direction:column;gap:8px;}
+  .dset{border-radius:13px;border:1px solid #f0e4d6;background:#fdfbf8;padding:8px 11px;}
+  .dset .dt{font-size:.72rem;font-weight:800;color:#a0522d;letter-spacing:.04em;margin-bottom:4px;}
+  .dset .dset-r{font-size:.76rem;color:#5f6674;margin:3px 0;}
+  .spot{display:flex;gap:8px;align-items:flex-start;margin:5px 0;}
+  .spot .p{flex:none;width:19px;height:19px;border-radius:50%;text-align:center;line-height:19px;font-size:.7rem;color:#fff;background:#c07a3c;margin-top:1px;}
+  .spot .p.m{background:#e5533d;}
+  .spot .p.x{background:#4fa3c9;}
+  .spot .nm{font-size:.79rem;font-weight:600;color:#3d3f52;}
+  .spot .nm span{font-size:.68rem;color:#8a8a94;font-weight:500;display:block;margin-top:1px;}
+  .day-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;}
+  .day-thumbs .th{border-radius:12px;overflow:hidden;border:1px solid #f0e4d6;background:#fff;}
+  .day-thumbs .th .ph{aspect-ratio:16/9;overflow:hidden;background:#f0efef;}
+  .day-thumbs .th .ph img{width:100%;height:100%;object-fit:cover;}
+  .day-thumbs .th figcaption{padding:5px 8px 7px;font-size:.68rem;color:#8a8a94;}
+  .day-tip{margin-top:8px;font-size:.74rem;background:#fff3dc;border:1px solid #f0dfae;color:#8a6210;border-radius:10px;padding:7px 11px;}
+
+  /* ===== 交通攻略卡 ===== */
+  .rail-a{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;}
+  .rail-a .ra{display:flex;gap:8px;align-items:center;border-radius:12px;border:1px solid #f0e4d6;background:#fdfbf8;padding:8px 10px;}
+  .rail-a .ri{flex:none;font-size:19px;}
+  .rail-a .ra b{font-size:.78rem;color:#3d3f52;display:block;}
+  .rail-a .ra span{font-size:.68rem;color:#8a8a94;}
+  .rail-a .ra.hot{border:1.5px solid #e5533d;background:#fff4f2;}
+  .rail-a .ra.hot b{color:#e5533d;}
+  .rail-a .ra.hot span{color:#c96a57;}
+
+  /* ===== 注意事项 / 贴士 ===== */
+  .notes{display:flex;flex-direction:column;gap:8px;}
+  .note{display:flex;gap:9px;align-items:flex-start;border-radius:13px;padding:9px 11px;border:1px solid #eee;background:#fbfbfd;}
+  .note .ni{flex:none;font-size:19px;width:30px;height:30px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.06);}
+  .note .nt{flex:1;min-width:0;}
+  .note .nt b{font-size:.84rem;display:block;color:#3d3f52;}
+  .note .nt p,.note .nt ul{margin:.2rem 0 0;font-size:.76rem;color:#6b7280;}
+  .note .nt li{margin-top:2px;}
+
+  /* ===== 热门景点 / 美食网格 ===== */
+  .spots{display:grid;grid-template-columns:1fr 1fr;gap:9px;}
+  .spot-card{border-radius:13px;overflow:hidden;border:1px solid #f0e4d6;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.05);}
+  .spot-card .ph{aspect-ratio:16/10;overflow:hidden;background:#f0efef;}
+  .spot-card .ph img{width:100%;height:100%;object-fit:cover;}
+  .spot-card .st{padding:6px 9px 8px;}
+  .spot-card .st b{font-size:.76rem;color:#3d3f52;display:block;line-height:1.3;}
+  .spot-card .st span{font-size:.68rem;color:#8a8a94;display:block;margin-top:1px;}
+
+  /* ===== 游客中心 / 车站 ===== */
+  .res{display:flex;flex-direction:column;gap:9px;}
+  .res-box{border-radius:15px;border:1px solid #eee;overflow:hidden;background:#fff;}
+  .res-box .rp{aspect-ratio:16/7;overflow:hidden;background:#f0efef;}
+  .res-box .rp img{width:100%;height:100%;object-fit:cover;}
+  .res-box .res-c{padding:11px 13px 12px;}
+.res-box .res-c h3{margin:0 0 6px;font-size:.9rem;display:flex;align-items:center;gap:6px;color:#3d3f52;}
+.res-box .res-c h3 .kind{padding:1px 8px;border-radius:999px;font-size:.64rem;background:#f0eadf;color:#a0522d;font-weight:700;}
+.res-box .res-c p{margin:.3rem 0;font-size:.76rem;line-height:1.5;color:#4c5563;}
+.res-box .res-c p.tip{margin-top:.55rem;padding:7px 10px;border-radius:10px;background:#f6f0e6;color:#a0522d;font-weight:600;}
+.res-box .res-c ul{margin:.45rem 0 0;padding-left:1.05rem;font-size:.75rem;line-height:1.55;color:#505b6b;}
+.res-box .res-c li{margin-top:3px;}
+.res-box .res-c a{color:#a0522d;text-decoration:none;font-weight:600;word-break:break-all;}
+
+  .foot-note{text-align:center;color:#9a8a7c;font-size:.8rem;padding:6px 18px 44px;max-width:720px;margin:0 auto;}
+  .foot-note a{color:#a0522d;text-decoration:none;}
+
+  /* 打印：每卡独立一页 A5 */
+  @page{size:A5;margin:0;}
+  @media print{
+    body{background:#fff;}
+    header.masthead,.chips{display:none;}
+    .deck{display:block;}
+    .card{
+      width:148mm;height:210mm;border-radius:0;box-shadow:none;
+      page-break-after:always;margin:0;border:none;
+    }
+    .card:last-child{page-break-after:auto;}
+  }
+.camtab{position:fixed;top:110px;left:14px;right:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/quanzhou/">
+    <meta name="theme-color" content="#c07a3c">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="泉州 3 日 · A5 卡片手册｜世遗之城·刺桐港">
+    <meta property="og:description" content="泉州3日古城漫游手册：开元寺东西塔、西街、清源山老君岩、洛阳桥、蟳埔簪花，尝面线糊、姜母鸭、四果汤。">
+    <meta property="og:url" content="https://worldstip.com/map/quanzhou/">
+    <meta property="og:image" content="https://worldstip.com/map/quanzhou/assets/towers.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="泉州 3 日 · A5 卡片手册｜世遗之城·刺桐港">
+    <meta name="twitter:description" content="泉州3日古城漫游手册：开元寺、西街、清源山、洛阳桥、蟳埔簪花，闽南美食全收录。">
+    <meta name="twitter:image" content="https://worldstip.com/map/quanzhou/assets/towers.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "泉州 3 日 · A5 卡片手册",
+      "url": "https://worldstip.com/map/quanzhou/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "泉州 3 日 · A5 卡片手册",
+  "description": "世界遗产之城泉州3日古城漫游：开元寺东西塔、西街、清源山老君岩、洛阳桥、蟳埔簪花与闽南美食。"
+}
+</script>
+<link rel="stylesheet" href="https://worldstip.com/assets/css/pro-guard.css">
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="title-emoji">🏮</div>
+  <h1>泉州 3 日 · 世遗之城漫游</h1>
+  <p>开元寺东西塔 · 西街 · 清源山 · 洛阳桥 · 蟳埔簪花</p>
+</header>
+
+<div class="deck-wrap">
+  <div class="chips" id="chips">
+    <button data-go="#c-cover">封面</button>
+    <button data-go="#c-overview">动线总览</button>
+    <button data-go="#c-d1">Day 1</button>
+    <button data-go="#c-d2">Day 2</button>
+    <button data-go="#c-d3">Day 3</button>
+    <button data-go="#c-spot">热门景点</button>
+    <button data-go="#c-food">闽南美食</button>
+    <button data-go="#c-tip">出行贴士</button>
+    <button data-go="#c-res">交通住宿</button>
+  </div>
+
+  <div class="deck">
+
+    <!-- 封面 -->
+    <article class="card cover" id="c-cover" style="--tc1:#c07a3c;--tc2:#d1803f;--tc-strong:#7a4a3b;--tc-soft:#f6ead9;">
+      <span class="cover-deco">🏮世遗泉州</span>
+      <div class="overlay">
+        <div class="kick">QUANZHOU · FUJIAN · CN</div>
+        <h2>泉州 3 日<br>刺桐花下 · 千年商港</h2>
+        <p class="sub">宋元东方第一大港，多元宗教在此交汇。漫步开元寺东西塔、西街老巷与洛阳古桥，做一回「半城烟火半城仙」的过客。</p>
+        <div class="meta">
+          <span>📍 福建泉州</span>
+          <span>🗓 建议 2–3 天</span>
+          <span>🧭 古城mini漫步</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 动线总览 -->
+    <article class="card" id="c-overview" style="--tc1:#c07a3c;--tc2:#d1803f;--tc-strong:#7a4a3b;--tc-soft:#f6ead9;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🗺️</div>
+        <div><h2>动线总览</h2><div class="en">OVERVIEW · 3 DAYS</div></div>
+      </header>
+      <div class="body">
+        <ul class="timeline">
+          <li><div class="d">D1<small>老城</small></div><div class="tt"><b>开元寺—西街—钟楼</b><span>东西塔下的宋代古刹，西街小摊一路吃到钟楼夜景</span></div></li>
+          <li><div class="d">D2<small>山海</small></div><div class="tt"><b>清源山—洛阳桥—蟳埔</b><span>老君岩老子造像、千年跨海石桥、簪花的渔村</span></div></li>
+          <li><div class="d">D3<small>纵深</small></div><div class="tt"><b>涂门街—关帝庙—清净寺</b><span>府文庙、天后宫与多元宗教庙宇的「宗教博物馆」</span></div></li>
+        </ul>
+        <div class="day-tip">🎯 时间紧张就把 D2 的 蟳埔 和 D3 合一天，老城精华仍可一天逛完。</div>
+      </div>
+    </article>
+
+    <!-- Day1 -->
+    <article class="card" id="c-d1" style="--tc1:#c07a3c;--tc2:#d1803f;--tc-strong:#7a4a3b;--tc-soft:#f6ead9;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🌅</div>
+        <div><h2>Day 1 · 古城漫步</h2><div class="en">OLD TOWN WALK</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <div class="dn">1<small>DAY</small></div>
+          <div class="dh"><b>开元寺 → 东西塔 → 西街 → 钟楼</b><span>步行为主，全程松弛</span></div>
+        </div>
+        <div class="day-route"><b>路线：</b>开元寺（东西塔/甘露戒坛/古船陈列）→ 西街（小吃一路）→ 钟楼 → 傍晚钟楼与西街夜拍</div>
+        <div class="day-blocks">
+          <div class="dset">
+            <div class="dt">必看 · 开元寺</div>
+            <div class="spot"><span class="p">1</span><div class="nm">镇国塔（东塔）<span>宋代花岗岩五层楼阁式古塔，泉州城市地标</span></div></div>
+            <div class="spot"><span class="p m">2</span><div class="nm">仁寿塔（西塔）<span>与东塔并肩，是泉州「双塔」标志画面</span></div></div>
+          </div>
+          <div class="dset">
+            <div class="dt">西街 · 边走边吃</div>
+            <div class="spot"><span class="p x">3</span><div class="nm">泉州面线糊<span>清晨一碗，配油条/大肠/醋肉最地道</span></div></div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="assets/towers.webp" type="image/webp">
+<img src="assets/towers.jpg" alt="开元寺东西塔">
+</picture></div><figcaption>各东西塔 · 千年不变的城市天际线</figcaption></figure>
+          <figure class="th"><div class="ph"><picture>
+<source srcset="assets/xijie.webp" type="image/webp">
+<img src="assets/xijie.jpg" alt="悬西街古街">
+</picture></div><figcaption>西街 · 红灯笼下的老城烟火</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 开元寺早晨人少最好拍；西街晚上灯笼亮起更有味道。</div>
+      </div>
+    </article>
+
+    <!-- Day2 -->
+    <article class="card" id="c-d2" style="--tc1:#5aa05a;--tc2:#3f8f6f;--tc-strong:#2f6f4e;--tc-soft:#e9f3ea;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">⛰️</div>
+        <div><h2>Day 2 · 山海之间</h2><div class="en">MOUNTAIN & BRIDGE</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <div class="dn">2<small>DAY</small></div>
+          <div class="dh"><b>清源山 → 洛阳桥 → 蟳埔</b><span>上午山、午后古桥、傍晚渔村</span></div>
+        </div>
+        <div class="day-route"><b>路线：</b>清源山老君岩 →（车约40min）洛阳桥 → 蟳埔渔村（簪花体验）</div>
+        <div class="day-blocks">
+          <div class="dset">
+            <div class="dt">必看 · 清源山老君岩</div>
+            <div class="spot"><span class="p">1</span><div class="nm">老君岩造像<span>宋代整石雕成的老子坐像，全国最大道教石雕</span></div></div>
+          </div>
+          <div class="dset">
+            <div class="dt">必看 · 洛阳桥</div>
+            <div class="spot"><span class="p m">2</span><div class="nm">万安桥（洛阳桥）<span>宋代跨海梁式石桥，牡蛎固基的造桥智慧里程碑</span></div></div>
+            <div class="spot"><span class="p x">3</span><div class="nm">蟳埔簪花<span>渔村阿婆头戴簪花，去那里做一次簪花造型</span></div></div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="assets/laojun.webp" type="image/webp">
+<img src="assets/laojun.jpg" alt="清源山老君岩">
+</picture></div><figcaption>老君岩 · 老子坐像千年微笑</figcaption></figure>
+          <figure class="th"><div class="ph"><picture>
+<source srcset="assets/luoyang.webp" type="image/webp">
+<img src="assets/luoyang.jpg" alt="洛阳桥">
+</picture></div><figcaption>洛阳桥 · 跨海古桥的红树林湿地</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 簪花提前预约或早到，旺季排队；帽子/发饰都是「一朵一朵」攒成的。</div>
+      </div>
+    </article>
+
+    <!-- Day3 -->
+    <article class="card" id="c-d3" style="--tc1:#4f7fd6;--tc2:#6c8fd8;--tc-strong:#38599f;--tc-soft:#e9effa;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🕌</div>
+        <div><h2>Day 3 · 宗教博物馆</h2><div class="en">MULTI-FAITH</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <div class="dn">3<small>DAY</small></div>
+          <div class="dh"><b>涂门街 → 清净寺 → 关帝庙</b><span>几分钟步程，看宗教交汇</span></div>
+        </div>
+        <div class="day-route"><b>路线：</b>府文庙华夏孔庙 → 清净寺（中国现存最早清真寺之一）→ 关帝庙香火 → 天后宫妈祖</div>
+        <div class="day-blocks">
+          <div class="dset">
+            <div class="dt">宗教建筑巡礼</div>
+            <div class="spot"><span class="p">1</span><div class="nm">清净寺<span>始建于北宋，中国现存最早的古清真寺之一</span></div></div>
+            <div class="spot"><span class="p m">2</span><div class="nm">关帝庙 · 天后宫<span>香火极旺，妈祖与关帝在泉州「比邻而居」</span></div></div>
+            <div class="spot"><span class="p x">3</span><div class="nm">府文庙<span>感受中华文脉在闽南的延续</span></div></div>
+          </div>
+        </div>
+        <div class="note" style="font-size:.74rem;color:#8a8a94;margin-top:6px;">泉州自古「商贾辐辏、五教并存」，一条街上佛教、伊斯兰、妈祖、关帝庙共存——这是世界宗教博物馆的日常。</div>
+        <div class="day-tip">💡 D3 节奏轻松，傍晚可回西街再吃一顿，或去晋江五店市传统街区。</div>
+      </div>
+    </article>
+
+    <!-- 热门景点 -->
+    <article class="card" id="c-spot" style="--tc1:#c07a3c;--tc2:#d1803f;--tc-strong:#7a4a3b;--tc-soft:#f6ead9;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🎒</div>
+        <div><h2>热门景点清单</h2><div class="en">MUST-SEE</div></div>
+      </header>
+      <div class="body">
+        <div class="spots">
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="assets/towers.webp" type="image/webp">
+<img src="assets/towers.jpg" alt="开元寺东西塔">
+</picture></div><div class="st"><b>开元寺·东西塔</b><span>宋元泉州地标，必逛</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="assets/laojun.webp" type="image/webp">
+<img src="assets/laojun.jpg" alt="清源山老君岩">
+</picture></div><div class="st"><b>清源山·老君岩</b><span>宋代老子造像</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="assets/luoyang.webp" type="image/webp">
+<img src="assets/luoyang.jpg" alt="洛阳桥">
+</picture></div><div class="st"><b>洛阳桥</b><span>千年跨海古桥</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="assets/xunpu.webp" type="image/webp">
+<img src="assets/xunpu.jpg" alt="蟳埔簪花">
+</picture></div><div class="st"><b>蟳埔簪花</b><span>渔村簪花照</span></div></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 闽南美食 -->
+    <article class="card" id="c-food" style="--tc1:#e5533d;--tc2:#ef8a4d;--tc-strong:#c03a28;--tc-soft:#fdeae4;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🍜</div>
+        <div><h2>闽南美食</h2><div class="en">FOOD</div></div>
+      </header>
+      <div class="body">
+        <div class="spots">
+          <div class="spot-card"><div class="st"><b>面线糊</b><span>早餐首选，加醋肉/大肠/油条</span></div></div>
+          <div class="spot-card"><div class="st"><b>姜母鸭</b><span>沙茶姜香，驱寒下饭</span></div></div>
+          <div class="spot-card"><div class="st"><b>四果汤</b><span>石花膏+各色配料，午后消暑</span></div></div>
+          <div class="spot-card"><div class="st"><b>浮粿/醋肉/海蛎煎</b><span>闽南街头小食，边走边买</span></div></div>
+        </div>
+        <div class="day-tip">🍲 西街聚集了大部分小吃；夜宵去 东兴牛肉馆/侯阿婆烧肉粽 这类老字号体验更地道。</div>
+      </div>
+    </article>
+
+    <!-- 出行贴士 -->
+    <article class="card" id="c-tip" style="--tc1:#2f9e63;--tc2:#4fa3c9;--tc-strong:#1f7a4a;--tc-soft:#e9f7ef;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">💡</div>
+        <div><h2>出行贴士</h2><div class="en">TIPS</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><div class="ni">🌤️</div><div class="nt"><b>最佳时间</b><p>全年皆宜；春秋（3-5月、9-11月）最舒服，避开端午竞渡与夏季台风。</p></div></div>
+          <div class="note"><div class="ni">🚇</div><div class="nt"><b>市内交通</b><p>老城景点集中，步行+公交+摩的最方便；去洛阳桥/蟳埔打车或公交皆可。</p></div></div>
+          <div class="note"><div class="ni">🎫</div><div class="nt"><b>门票规例</b><p>开元寺、西街免费；清源山收门票（老君岩为其中一景）。各点现场/线上购票即可。</p></div></div>
+          <div class="note"><div class="ni">🧭</div><div class="nt"><b>别太赶</b><p>泉州的魅力在巷子里的烟火气，留些随意闲逛的缝隙比塞满行程更「对味」。</p></div></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 交通住宿 -->
+    <article class="card" id="c-res" style="--tc1:#c07a3c;--tc2:#d1803f;--tc-strong:#7a4a3b;--tc-soft:#f6ead9;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🏨</div>
+        <div><h2>交通 & 住宿</h2><div class="en">STAY & GO</div></div>
+      </header>
+      <div class="body">
+        <div class="rail-a">
+          <div class="ra"><span class="ri">🚄</span><div><b>高铁到泉州站</b><span>泉州站/晋江站，市区有公交接驳</span></div></div>
+          <div class="ra"><span class="ri">✈️</span><div><b>晋江机场</b><span>距老城约20km，打车约30min</span></div></div>
+        </div>
+        <div class="res">
+          <div class="res-box">
+            <div class="res-c">
+              <h3><span class="kind">住哪</span>老城西街/钟楼附近</h3>
+              <p>住这里步行就能逛开元寺与西街夜景，是泉州的first-choice。</p>
+              <p class="tip">💡 泉州不大，住老城 3 晚可能略多，2 晚足矣——把第 3 晚留给周边晋江或放慢节奏。</p>
+            </div>
+          </div>
+          <div class="res-box">
+            <div class="res-c">
+              <h3><span class="kind">线路</span>2 日精简版</h3>
+              <ul>
+                <li>D1：开元寺–西街–钟楼（老城一日）</li>
+                <li>D2：清源山–洛阳桥–蟳埔（山海一日）</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="page-num pin">9/9</div>
+  </div>
+
+  <p class="foot-note">WorldStip 旅行小册子 · 泉州 3 日 · WEAR A STAMP · QUANZHOU 2026</p>
+</div>
+
+<script>
+  (function(){
+    var btns=document.querySelectorAll('#chips button');
+    btns.forEach(function(b){
+      b.addEventListener('click',function(){
+        document.querySelector(b.getAttribute('data-go')).scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+  })();
+</script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

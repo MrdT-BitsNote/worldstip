@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>成都 · 巴适慢活 A5 卡片手册</title>
+<meta name="description" content="成都市区深度游完整攻略：短程2-3天、长程4-5天逐日行程（白天玩什么晚上干什么），熊猫基地、宽窄巷子、锦里武侯祠、都江堰、购物、麻辣美食、交通避坑、特产伴手礼全覆盖。">
+<meta name="keywords" content="成都旅游攻略,成都市区,成都行程,大熊猫基地,宽窄巷子,锦里武侯祠,都江堰,成都美食,太古里,成都特产,短程,长程,自由行">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+  color:#2b312e;
+  display:flex;flex-direction:column;align-items:center;
+  padding:40px 20px 76px;
+  background:
+    radial-gradient(52% 40% at 18% 12%, rgba(181,70,42,.22), transparent 60%),
+    radial-gradient(46% 38% at 84% 22%, rgba(91,138,92,.18), transparent 60%),
+    radial-gradient(50% 42% at 72% 92%, rgba(210,140,40,.16), transparent 62%),
+    linear-gradient(160deg,#241309 0%,#12100c 100%);
+  background-attachment:fixed;
+}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:34px 34px;}
+.deck-wrap{max-width:1180px;width:100%;position:relative;z-index:1}
+.chips{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:0 auto 30px;max-width:1120px}
+.chips button{border:1px solid #ffffff2a;cursor:pointer;padding:10px 17px;border-radius:999px;background:#ffffff14;color:#eae0dc;font-size:13.5px;font-weight:600;backdrop-filter:blur(8px);transition:.18s;letter-spacing:.5px;box-shadow:0 2px 10px #00000030}
+.chips button:hover{background:#b5462a;color:#fff;border-color:transparent;transform:translateY(-2px);box-shadow:0 8px 22px #b5462a60}
+.chips button.active{background:linear-gradient(135deg,#b5462a,#5b8a5c);color:#fff;border-color:transparent;box-shadow:0 8px 24px #b5462a66}
+.deck{display:flex;flex-wrap:wrap;gap:28px;justify-content:center}
+.card{width:148mm;height:210mm;background:#fff;border-radius:20px;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 26px 70px #00000066,0 0 0 1px #ffffff14}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;z-index:6;background:linear-gradient(90deg,var(--tc1),var(--tc2))}
+.card::after{content:"";position:absolute;top:24px;right:20px;width:56px;height:56px;z-index:0;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--tc-soft),transparent 68%);opacity:.55}
+.topbar{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:18px 26px 0;color:#9aa0ae;font-size:11px;letter-spacing:2px}
+.topbar b{font-weight:800;color:#4a2a20;letter-spacing:1.5px;display:inline-flex;align-items:center;gap:7px}
+.topbar b::before{content:"";width:8px;height:8px;border-radius:2px;background:linear-gradient(140deg,var(--tc1),var(--tc2))}
+.body{position:relative;z-index:2;flex:1;padding:12px 32px 30px;overflow:hidden;display:flex;flex-direction:column}
+.cover{position:relative;margin:12px 12px 0;border-radius:16px;overflow:hidden;flex:1;background:#0b0e14}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.93}
+.cover::before{content:"";position:absolute;top:14px;left:14px;width:84px;height:84px;z-index:3;border-radius:50%;border:2px dashed rgba(255,255,255,.4);transform:rotate(-12deg)}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,8,6,.02) 0%,rgba(12,8,6,.35) 46%,rgba(12,8,6,.92) 100%),radial-gradient(110% 60% at 85% 0%,rgba(181,70,42,.30),transparent 60%)}
+.cover .cv{position:absolute;inset:auto 0 0 0;padding:0 32px 30px;z-index:4;color:#fff}
+.cover .kick{font-size:12px;letter-spacing:6px;color:#f2d9c1;margin-bottom:14px;font-weight:800}
+.cover .kick::before,.cover .kick::after{content:"—";margin:0 6px;opacity:.6}
+.cover h1{font-size:52px;line-height:1.02;font-weight:900;letter-spacing:1px;background:linear-gradient(120deg,#fff 20%,#f5dcc8 60%,#eab892 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 12px 40px rgba(181,70,42,.35)}
+.cover h1 small{font-size:19px;letter-spacing:6px;display:block;font-weight:700;margin-top:9px;background:linear-gradient(120deg,#f6e8da,#eab892);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cover .tags{display:flex;gap:8px;margin-top:20px;flex-wrap:wrap}
+.cover .tags span{font-size:11.5px;font-weight:700;padding:6px 14px;border-radius:999px;letter-spacing:.5px;background:#ffffff1e;border:1px solid #ffffff4d;color:#fff;box-shadow:0 4px 16px #0000002a}
+.cover .meta{margin-top:20px;font-size:11.5px;color:#f4e8e2;letter-spacing:1px;border-top:1px solid #ffffff36;padding-top:12px;display:flex;justify-content:space-between}
+.cover .meta b{color:#f2d9c1}
+.header.c, .header.b{position:relative;z-index:2;display:flex;align-items:center;gap:14px;margin:6px 0 8px}
+.ico{width:52px;height:52px;border-radius:15px;flex:none;position:relative;background:linear-gradient(140deg,var(--tc1),var(--tc2));display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px var(--tc-soft)}
+.ico::after{content:"";position:absolute;inset:-5px;border-radius:18px;border:2px dashed var(--tc-soft);opacity:.7}
+.ico svg{width:25px;height:25px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.hc h2{font-size:26px;font-weight:900;color:#41261f;letter-spacing:.5px;line-height:1.1}
+.hc h2 b{background:linear-gradient(120deg,var(--tc1),var(--tc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hc .en{font-size:10.5px;color:#a3a9b8;letter-spacing:3px;text-transform:uppercase;margin-top:3px;font-weight:700}
+.hero{border-radius:16px;overflow:hidden;position:relative;margin:6px 0 14px;box-shadow:0 14px 30px #00000026}
+.hero img{width:100%;height:190px;object-fit:cover;display:block}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(10,8,6,.66))}
+.hero .lab{position:absolute;left:14px;bottom:12px;z-index:2;color:#fff;font-size:15px;font-weight:800;letter-spacing:1px;text-shadow:0 2px 10px #00000090}
+.hero .lab small{display:block;font-size:11px;font-weight:500;opacity:.85;letter-spacing:1px;margin-top:2px}
+.timeline{display:flex;flex-direction:column;margin-top:8px;position:relative}
+.timeline::before{content:"";position:absolute;left:33px;top:12px;bottom:12px;width:2px;background:repeating-linear-gradient(var(--tc-strong),var(--tc-strong) 5px,transparent 5px,transparent 9px);opacity:.35}
+.tl{display:flex;gap:16px;align-items:flex-start;position:relative}
+.tl .d{font-size:11.5px;font-weight:800;color:#fff;position:relative;z-index:2;background:linear-gradient(140deg,var(--tc1),var(--tc2));border-radius:11px;padding:9px 0;width:66px;text-align:center;letter-spacing:.5px;line-height:1.3;box-shadow:0 8px 18px var(--tc-soft)}
+.tl .tt{flex:1;padding:2px 0 16px}
+.tl .tt .t{font-size:15px;font-weight:800;color:#1e2433}
+.tl .tt .t::after{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;margin-left:7px;background:linear-gradient(140deg,var(--tc1),var(--tc2))}
+.tl .tt .s{font-size:12.5px;color:#8990a1;margin-top:4px;line-height:1.5}
+.day-head{display:flex;align-items:center;gap:12px;margin:8px 0 2px}
+.day-head .flag{font-size:14px;font-weight:900;color:#fff;padding:9px 16px;letter-spacing:.5px;border-radius:9px 9px 9px 4px;background:linear-gradient(140deg,var(--tc1),var(--tc2));box-shadow:0 9px 20px var(--tc-soft);transform:skewX(-4deg);flex:none}
+.day-head .flag span{display:inline-block;transform:skewX(4deg)}
+.day-head .cap{font-size:13px;color:#a0a6b6;letter-spacing:1px;font-weight:600}
+.day-route{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin:6px 0 9px;padding:11px 15px;border-radius:12px;background:linear-gradient(120deg,var(--tc1),var(--tc2));color:#fff;font-size:12.5px;line-height:1.55;box-shadow:0 8px 18px var(--tc-soft)}
+.day-route .arrow{color:#fff;font-weight:900;padding:0 2px;opacity:.85}
+.dset{margin:0 0 8px}
+.dt{font-size:13.5px;font-weight:900;color:var(--tc-strong);display:flex;align-items:center;gap:9px;margin-bottom:4px;letter-spacing:.3px}
+.dt::before{content:"";width:5px;align-self:stretch;border-radius:3px;background:linear-gradient(180deg,var(--tc1),var(--tc2))}
+.dset ul{list-style:none}
+.dset li{position:relative;padding:4px 0 4px 24px;font-size:12.5px;line-height:1.5;color:#3a4152;border-bottom:1px dashed #e8e1de}
+.dset li:last-child{border-bottom:none}
+.dset li::before{content:"";position:absolute;left:3px;top:12px;width:8px;height:8px;border-radius:3px;background:linear-gradient(140deg,var(--tc1),var(--tc2));box-shadow:0 0 0 3px var(--tc-soft);opacity:.95}
+.dset li b{color:#4a2a20}
+.dset li em{font-style:normal;color:var(--tc-strong);font-weight:800}
+.thumbs{display:flex;gap:10px;margin:4px 0 10px}
+.th{flex:1;height:118px;border-radius:14px;overflow:hidden;position:relative;box-shadow:0 10px 20px #00000022;border:3px solid #fff;outline:2px solid var(--tc-soft)}
+.th img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.th:hover img{transform:scale(1.07)}
+.th span{position:absolute;left:6px;right:6px;bottom:6px;padding:5px 8px;border-radius:8px;font-size:11px;color:#fff;font-weight:800;letter-spacing:.5px;text-align:center;background:linear-gradient(120deg,var(--tc1),var(--tc2));box-shadow:0 4px 10px #0000004d}
+.pair{display:flex;gap:10px;margin:4px 0 10px}
+.pair .im{flex:1;border-radius:14px;overflow:hidden;position:relative;box-shadow:0 10px 20px #00000022;border:3px solid #fff;outline:2px solid var(--tc-soft)}
+.pair .im img{width:100%;height:150px;object-fit:cover;display:block}
+.pair .im span{position:absolute;left:6px;bottom:6px;padding:4px 9px;border-radius:8px;font-size:11px;color:#fff;font-weight:800;background:linear-gradient(120deg,var(--tc1),var(--tc2));box-shadow:0 4px 10px #0000004d}
+.spots{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px}
+.sp{position:relative;border-radius:14px;overflow:hidden;box-shadow:0 10px 20px #00000020;border:3px solid #fff;outline:2px solid #efe6e2;background:#fff}
+.sp img{width:100%;height:96px;object-fit:cover;display:block}
+.sp .nm{position:absolute;top:8px;left:8px;z-index:2;font-size:13px;font-weight:900;color:#fff;text-shadow:0 2px 8px #000000a0}
+.sp .tg{position:absolute;top:8px;right:8px;z-index:2;font-size:10px;font-weight:800;color:#fff;padding:3px 8px;border-radius:999px;background:linear-gradient(120deg,var(--tc1),var(--tc2));box-shadow:0 3px 8px #0000004d}
+.sp .ds{padding:7px 10px;font-size:11.5px;color:#5a6274;line-height:1.5;background:linear-gradient(#fff,#fbf9f7)}
+.notes{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.note{display:flex;gap:12px;align-items:flex-start;padding:11px 14px;border-radius:13px;background:#f4ece7;border:1px solid #ecddd6;border-left:4px solid var(--tc-strong)}
+.note .ni{font-size:17px;flex:none;width:30px;height:30px;border-radius:9px;background:linear-gradient(140deg,var(--tc-soft),#fff);border:1px solid var(--tc-soft);display:flex;align-items:center;justify-content:center}
+.note .nt b{display:block;font-size:13.5px;color:#4a2a20;margin-bottom:2px}
+.note .nt .x{font-size:12.5px;color:#5a6274;line-height:1.5}
+.note.warn{background:#fff3ec;border-color:#ffd9c2;border-left-color:#ff7a52}
+.note.warn .ni{background:#ffe6d8;border-color:#ffc9ad}
+.day-tip{margin-top:auto;padding:12px 16px;border-radius:14px;position:relative;overflow:hidden;background:linear-gradient(120deg,#fff7d8,#fffdf2);border:1.5px solid #ffd98a;font-size:12.5px;line-height:1.55;color:#8a6a1f}
+.day-tip::before{content:"💡";position:absolute;right:12px;top:-6px;font-size:22px;rotate:-12deg}
+.day-tip b{color:#c7911f}
+.page-num{position:absolute;right:20px;bottom:14px;font-size:12px;color:#b9bfcc;letter-spacing:1px;z-index:6}
+.page-num b{color:#fff;background:linear-gradient(140deg,var(--tc1),var(--tc2));padding:2px 8px;border-radius:7px;box-shadow:0 4px 10px var(--tc-soft)}
+.foot-note{width:100%;text-align:center;color:#e6d6d0;font-size:13px;letter-spacing:1px;padding:34px 0 0;line-height:1.8;position:relative;z-index:1}
+@media print{body{background:#fff;padding:0;display:block}body::before{display:none}.deck-wrap{max-width:none}.chips{display:none}.deck{gap:0;display:block}.card{page-break-after:always;box-shadow:none;border-radius:0;margin:0}.card::before,.card::after{background:none}.foot-note{display:none}}
+@page{size:A5;margin:0}
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/chengdu/">
+    <meta name="theme-color" content="#b5462a">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="成都 · 巴适慢活 A5 卡片手册">
+    <meta property="og:description" content="成都市区深度游完整攻略：短程2-3天、长程4-5天逐日行程（白天玩什么晚上干什么），熊猫基地、宽窄巷子、锦里武侯祠、都江堰、购物、麻辣美食、交通避坑、特产全覆盖。">
+    <meta property="og:url" content="https://worldstip.com/map/chengdu/">
+    <meta property="og:image" content="https://worldstip.com/map/chengdu/assets/cd_cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="成都 · 巴适慢活 A5 卡片手册">
+    <meta name="twitter:description" content="成都市区深度游攻略：熊猫、古街、三国、都江堰、麻辣美食，短程长程逐日行程全覆盖。">
+    <meta name="twitter:image" content="https://worldstip.com/map/chengdu/assets/cd_cover.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"WorldStip · 旅行小册子","url":"https://worldstip.com/"},
+    {"@type":"ListItem","position":2,"name":"成都 · 巴适慢活 A5 卡片手册","url":"https://worldstip.com/map/chengdu/"}
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/chengdu/",
+  "name": "成都 · 巴适慢活 A5 卡片手册",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="deck-wrap">
+  <div class="chips" id="chips">
+    <button data-target="c-cover">封面</button>
+    <button data-target="c-overview">总览</button>
+    <button data-target="c-short">短程介绍</button>
+    <button data-target="c-long">长程介绍</button>
+    <button data-target="c-spot">景点介绍</button>
+    <button data-target="c-shop">购物介绍</button>
+    <button data-target="c-food">美食介绍</button>
+    <button data-target="c-trans">交通避坑</button>
+    <button data-target="c-gift">特产</button>
+  </div>
+  <div class="deck" id="deck">
+
+  <!-- 1 封面 -->
+  <div class="card" id="c-cover" style="--tc1:#b5462a;--tc2:#5b8a5c;--tc-strong:#96381d;--tc-soft:#f3e0d3">
+    <div class="cover">
+      <picture><source srcset="assets/cd_cover.webp" type="image/webp"><img src="assets/cd_cover.jpg" alt="成都大熊猫繁育研究基地" width="800" height="1000" loading="lazy"></picture>
+      <div class="cv">
+        <div class="kick">CHENGDU · 成都</div>
+        <h1>巴适成都<small>熊猫 · 慢生活 · 麻辣之都</small></h1>
+        <div class="tags"><span>大熊猫</span><span>宽窄巷子</span><span>三国</span><span>世界遗产</span></div>
+        <div class="meta">短程 2-3 天 <b>→</b> 长程 4-5 天 · 逐日行程</div>
+      </div>
+    </div>
+    <div class="page-num"><b>1</b> / 9</div>
+  </div>
+
+  <!-- 2 总览 -->
+  <div class="card" id="c-overview" style="--tc1:#5b8a5c;--tc2:#6aa06b;--tc-strong:#4c724e;--tc-soft:#e6efe6">
+    <div class="topbar"><b>成都 · 巴适慢活</b><span>白皮书 · 一览</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14l-4-2-4 2-4-2-4 2z"/><path d="M9 9h6M9 13h6"/></svg></div>
+      <div class="hc"><h2><b>成都一览</b></h2><div class="en">Overview</div></div>
+    </div>
+    <div class="body">
+      <div class="hero">
+        <picture><source srcset="assets/cd_night.webp" type="image/webp"><img src="assets/cd_night.jpg" alt="成都宽窄巷子夜色" loading="lazy"></picture>
+        <div class="lab">天府之国 · 泡着玩<small>老巷灯火，慢到什么都是风景</small></div>
+      </div>
+      <div class="dset"><div class="dt">📍 城市印象</div><ul>
+        <li>蜀地闲适之城，<b>熊猫 + 三国 + 世界遗产</b>三张名片</li>
+        <li>市区松弛好逛，<b>地铁+共享单车</b>足以覆盖，节奏慢</li>
+        <li>麻辣川味是灵魂，也是一天三顿的日常</li>
+      </ul></div>
+      <div class="timeline">
+        <div class="tl"><div class="d">短程<br>2-3天</div><div class="tt"><div class="t">熊猫 + 老城精华</div><div class="s">熊猫基地 + 宽窄巷子 + 锦里武侯祠</div></div></div>
+        <div class="tl"><div class="d">中程<br>3-4天</div><div class="tt"><div class="t">加世界遗产</div><div class="s">短程 + 都江堰（+青城山）一日</div></div></div>
+        <div class="tl"><div class="d">长程<br>4-5天</div><div class="tt"><div class="t">深度慢游</div><div class="s">全部精华 + 文创 + 美食泡够</div></div></div>
+      </div>
+      <div class="note"><div class="ni">🛏</div><div class="nt"><b>住哪</b><div class="x">春熙路/太古里商圈最方便，宽窄巷子一带更有烟火气，地铁沿线皆宜</div></div></div>
+    </div>
+    <div class="page-num"><b>2</b> / 9</div>
+  </div>
+
+  <!-- 3 短程介绍 -->
+  <div class="card" id="c-short" style="--tc1:#8f3328;--tc2:#5b8a5c;--tc-strong:#7a2a21;--tc-soft:#f2e0d8">
+    <div class="topbar"><b>成都 · 巴适慢活</b><span>短程 · 2-3 天</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 3h14v4H5zM5 11h14v4H5zM5 19h6M15 19h2"/></svg></div>
+      <div class="hc"><h2>短程介绍 · <b>2-3 天</b></h2><div class="en">Short Trip · Old Town Loop</div></div>
+    </div>
+    <div class="body">
+      <div class="hero">
+        <picture><source srcset="assets/cd_kuanzhai.webp" type="image/webp"><img src="assets/cd_kuanzhai.jpg" alt="成都宽窄巷子" loading="lazy"></picture>
+        <div class="lab">短程住下就够 · 悠闲不赶</div>
+      </div>
+      <div class="day-head"><div class="flag"><span>Day·1</span></div><div class="cap">熊猫 + 老城</div></div>
+      <div class="day-route">熊猫基地 <span class="arrow">→</span> 宽窄巷子 <span class="arrow">→</span> 夜：太古里</div>
+      <div class="dset"><div class="dt">☀️ 白天</div><ul><li><b>上午</b>大熊猫繁育研究基地（7:30前到，看滚滚吃饭最活跃）</li><li><b>下午</b>宽窄巷子慢逛、喝盖碗茶</li></ul></div>
+      <div class="dset"><div class="dt">🌙 晚上</div><ul><li><b>春熙路·太古里</b>：熊猫爬墙雕塑打卡 + IFS商圈夜景</li></ul></div>
+      <div class="day-head"><div class="flag"><span>Day·2</span></div><div class="cap">三国 + 市井</div></div>
+      <div class="day-route">锦里武侯祠 <span class="arrow">→</span> 人民公园 <span class="arrow">→</span> 夜：火锅</div>
+      <div class="dset"><div class="dt">☀️ 白天</div><ul><li><b>上午</b>武侯祠红墙竹影 + 紧邻锦里古街</li><li><b>下午</b>人民公园盖碗茶、掏耳朵，成都市井慢生活</li></ul></div>
+      <div class="dset"><div class="dt">🌙 晚上</div><ul><li>来一顿<b>麻辣火锅</b>收尾</li></ul></div>
+      <div class="day-tip"><b>TIP</b>　第3天可选：<b>都江堰一日</b>（高铁约1小时），或补杜甫草堂/大慈寺，节奏不累。</div>
+    </div>
+    <div class="page-num"><b>3</b> / 9</div>
+  </div>
+
+  <!-- 4 长程介绍 -->
+  <div class="card" id="c-long" style="--tc1:#23496e;--tc2:#3a9ab0;--tc-strong:#1e3d5c;--tc-soft:#e0e9ef">
+    <div class="topbar"><b>成都 · 巴适慢活</b><span>长程 · 4-5 天</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 5h18M5 19h14M6 5l2 14M18 5l-2 14M4 12h16"/></svg></div>
+      <div class="hc"><h2>长程介绍 · <b>4-5 天</b></h2><div class="en">Long Trip · Deep City</div></div>
+    </div>
+    <div class="body">
+      <div class="day-head"><div class="flag"><span>D1</span></div><div class="cap">熊猫 + 老城</div></div>
+      <div class="day-route">熊猫基地 → 宽窄巷子 → 夜：太古里</div>
+      <div class="day-head"><div class="flag"><span>D2</span></div><div class="cap">三国 + 市井</div></div>
+      <div class="day-route">锦里武侯祠 → 人民公园 → 夜：火锅</div>
+      <div class="day-head"><div class="flag"><span>D3</span></div><div class="cap">世界遗产</div></div>
+      <div class="day-route">都江堰 → 青城山前山（一日往返）</div>
+      <div class="day-head"><div class="flag"><span>D4</span></div><div class="cap">慢生活</div></div>
+      <div class="day-route">杜甫草堂/大慈寺 → 东郊记忆 → 夜：建设路小吃</div>
+      <div class="day-head"><div class="flag"><span>D5</span></div><div class="cap">购物 · 回味</div></div>
+      <div class="day-route">春熙路买特产 → 咖啡馆 → 夜：最后一顿 + 夜景</div>
+      <div class="thumbs">
+        <div class="th"><picture><source srcset="assets/cd_dujiangyan.webp" type="image/webp"><img src="assets/cd_dujiangyan.jpg" alt="都江堰" loading="lazy"></picture><span>都江堰</span></div>
+        <div class="th"><picture><source srcset="assets/cd_taiguli.webp" type="image/webp"><img src="assets/cd_taiguli.jpg" alt="春熙路太古里" loading="lazy"></picture><span>太古里商圈</span></div>
+        <div class="th"><picture><source srcset="assets/cd_jinli.webp" type="image/webp"><img src="assets/cd_jinli.jpg" alt="锦里武侯祠" loading="lazy"></picture><span>锦里古街</span></div>
+      </div>
+      <div class="day-tip"><b>TIP</b>　长程更松弛，把熊猫、都江堰、古街摊开，多留时间给<b>吃</b>。</div>
+    </div>
+    <div class="page-num"><b>4</b> / 9</div>
+  </div>
+
+  <!-- 5 景点介绍 -->
+  <div class="card" id="c-spot" style="--tc1:#b5462a;--tc2:#c98a2e;--tc-strong:#96381d;--tc-soft:#f3e2d2">
+    <div class="topbar"><b>成都 · 巴适慢活</b><span>市区核心景点</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 5v6l-9 5-9-5V8l9-5z"/><path d="M9 12l2 2 4-4"/></svg></div>
+      <div class="hc"><h2>市区景点</h2><div class="en">City Highlights</div></div>
+    </div>
+    <div class="body">
+      <div class="spots">
+        <div class="sp"><picture><source srcset="assets/cd_cover.webp" type="image/webp"><img src="assets/cd_cover.jpg" alt="大熊猫基地" loading="lazy"></picture><span class="nm">熊猫基地</span><span class="tg">必去</span><div class="ds">看滚滚吃饭爬树，全价55元·学生27，需提前线上约(现场无售票)，早到最佳</div></div>
+        <div class="sp"><picture><source srcset="assets/cd_kuanzhai.webp" type="image/webp"><img src="assets/cd_kuanzhai.jpg" alt="宽窄巷子" loading="lazy"></picture><span class="nm">宽窄巷子</span><span class="tg">免费</span><div class="ds">川西老巷三条并行，喝茶小吃文创</div></div>
+        <div class="sp"><picture><source srcset="assets/cd_jinli.webp" type="image/webp"><img src="assets/cd_jinli.jpg" alt="锦里武侯祠" loading="lazy"></picture><span class="nm">锦里 + 武侯祠</span><span class="tg">三国</span><div class="ds">武侯祠50元·学生25；锦里免费，三国+川西古街组合</div></div>
+        <div class="sp"><picture><source srcset="assets/cd_dujiangyan.webp" type="image/webp"><img src="assets/cd_dujiangyan.jpg" alt="都江堰青城山" loading="lazy"></picture><span class="nm">都江堰/青城山</span><span class="tg">世界遗产</span><div class="ds">世界灌溉工程 + 道教名山，可一日联游</div></div>
+        <div class="sp"><picture><source srcset="assets/cd_taiguli.webp" type="image/webp"><img src="assets/cd_taiguli.jpg" alt="春熙路太古里" loading="lazy"></picture><span class="nm">春熙路 · 太古里</span><span class="tg">潮流</span><div class="ds">最潮商圈，熊猫爬墙地标，夜最美</div></div>
+        <div class="sp"><picture><source srcset="assets/cd_night.webp" type="image/webp"><img src="assets/cd_night.jpg" alt="成都夜景" loading="lazy"></picture><span class="nm">人民公园/夜游</span><span class="tg">市井</span><div class="ds">盖碗茶掏耳朵，夜晚老街灯火</div></div>
+      </div>
+      <div class="note"><div class="ni">➕</div><div class="nt"><b>可选</b><div class="x">杜甫草堂、文殊院（禅意）、金沙遗址博物馆、东郊记忆（工业文创出片）</div></div></div>
+      <div class="day-tip"><b>TIP</b>　熊猫基地、都江堰<b>网上提前订票</b>；景区逢周一周一闭馆的以官网为准。</div>
+    </div>
+    <div class="page-num"><b>5</b> / 9</div>
+  </div>
+
+  <!-- 6 购物介绍 -->
+  <div class="card" id="c-shop" style="--tc1:#5a4a8a;--tc2:#8a6fc0;--tc-strong:#4a3f70;--tc-soft:#ece7f2">
+    <div class="topbar"><b>成都 · 巴适慢活</b><span>购物指南</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M6 2l14 4-2 6 2 6-14 4 1-10-3-6 2-4z"/></svg></div>
+      <div class="hc"><h2>购物介绍</h2><div class="en">Shopping</div></div>
+    </div>
+    <div class="body">
+      <div class="hero">
+        <picture><source srcset="assets/cd_taiguli.webp" type="image/webp"><img src="assets/cd_taiguli.jpg" alt="春熙路太古里商圈" loading="lazy"></picture>
+        <div class="lab">老城烟火 → 现代商圈</div>
+      </div>
+      <div class="dset"><div class="dt">🛍 老城商圈</div><ul>
+        <li><b>宽窄巷子 / 锦里</b>：文创伴手礼 + 古街氛围</li>
+        <li><b>建设路 / 奎星楼</b>：小吃 + 年轻潮店</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🏙 新城商圈</div><ul>
+        <li><b>春熙路 · IFS · 太古里</b>：一线大牌 + 川西院子商业</li>
+        <li>品牌、餐饮、影院齐全，夜晚灯光出片</li>
+      </ul></div>
+      <div class="note warn"><div class="ni">⚠️</div><div class="nt"><b>省着点</b><div class="x">景区内手信偏贵，伴手礼去太古里商圈店铺/大超市更实惠</div></div></div>
+      <div class="day-tip"><b>TIP</b>　购物放<b>行程后段</b>（长程 D5），避免拎着逛景点。</div>
+    </div>
+    <div class="page-num"><b>6</b> / 9</div>
+  </div>
+
+  <!-- 7 美食介绍 -->
+  <div class="card" id="c-food" style="--tc1:#c96a2e;--tc2:#b5362a;--tc-strong:#b05828;--tc-soft:#fdebd9">
+    <div class="topbar"><b>成都 · 巴适慢活</b><span>成都味道</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M11 3v8a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V3M12 21h0M2 21h4M12 21h4M14 7v14M18 3l3 3-1 1 1 1-3 3"/></svg></div>
+      <div class="hc"><h2>美食介绍</h2><div class="en">Local Flavors</div></div>
+    </div>
+    <div class="body">
+      <div class="pair">
+        <div class="im"><picture><source srcset="assets/cd_hotpot.webp" type="image/webp"><img src="assets/cd_hotpot.jpg" alt="成都麻辣火锅" loading="lazy"></picture><span>麻辣火锅</span></div>
+        <div class="im"><picture><source srcset="assets/cd_cuisine.webp" type="image/webp"><img src="assets/cd_cuisine.jpg" alt="成都川菜小吃" loading="lazy"></picture><span>川菜 · 小吃</span></div>
+      </div>
+      <div class="dset"><div class="dt">🍜 必吃招牌</div><ul>
+        <li><b>麻辣火锅 / 串串香</b>——毛肚、黄喉、鸭肠走起</li>
+        <li><b>甜水面 / 担担面 / 钵钵鸡</b>——街头小吃名片</li>
+        <li><b>蛋烘糕 / 冒菜 / 夫妻肺片</b>——本地人日常</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🗺 觅食街区</div><ul>
+        <li><b>建设路夜市 / 奎星楼街 / 玉林路</b></li>
+        <li>锦里、太古里大慈寺一带也有不少老字号</li>
+      </ul></div>
+      <div class="note warn"><div class="ni">🔥</div><div class="nt"><b>吃辣警告</b><div class="x">川辣后劲足，怕辣选<b>鸳鸯锅</b>，说"微辣"也可能很辣</div></div></div>
+      <div class="day-tip"><b>TIP</b>　成都人吃辣审美极高，认准<b>本地人排队的店</b>更不踩雷。</div>
+    </div>
+    <div class="page-num"><b>7</b> / 9</div>
+  </div>
+
+  <!-- 8 交通避坑 -->
+  <div class="card" id="c-trans" style="--tc1:#2f6f8f;--tc2:#4aa0b8;--tc-strong:#285c74;--tc-soft:#e2edf2">
+    <div class="topbar"><b>成都 · 巴适慢活</b><span>怎么去 &amp; 避坑</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+      <div class="hc"><h2>交通 · 避坑</h2><div class="en">Getting Around</div></div>
+    </div>
+    <div class="body">
+      <div class="dset"><div class="dt">✈️ / 🚄 怎么到</div><ul>
+        <li><b>飞机</b>：双流机场（近南三环，进城快）；<em>天府机场（远，城东40km+）</em></li>
+        <li><b>高铁</b>：成都东站/南站，成渝、成贵等枢纽，站内地铁直连</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🚇 市内</div><ul>
+        <li>地铁网络发达 + <b>共享单车</b>，市区景点基本覆盖</li>
+        <li>熊猫基地有地铁3号线熊猫大道站 + 接驳；都江堰高铁/大巴约1小时</li>
+      </ul></div>
+      <div class="notes">
+        <div class="note warn"><div class="ni">⚠️</div><div class="nt"><b>两个机场别走错</b><div class="x">天府机场远、航司分布不同，出发前确认自己航班在哪个机场</div></div></div>
+        <div class="note warn"><div class="ni">🎫</div><div class="nt"><b>门票预约</b><div class="x">熊猫基地、都江堰、武侯祠等热门**网上提前订**，旺季会限流</div></div></div>
+      </div>
+      <div class="day-tip"><b>TIP</b>　看熊猫<b>7:30-8:30</b>到；火锅店晚餐高峰等位久，可错峰或线上排号。</div>
+    </div>
+    <div class="page-num"><b>8</b> / 9</div>
+  </div>
+
+  <!-- 9 特产 -->
+  <div class="card" id="c-gift" style="--tc1:#b58a2e;--tc2:#c96a2e;--tc-strong:#96701f;--tc-soft:#f4ead2">
+    <div class="topbar"><b>成都 · 巴适慢活</b><span>伴手礼 · 特色</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M20 12v10H4V12M2 7h20v5H2zM12 7s-2-4 0-4 3-1 1-3M12 7s2-4 0-4-3-1-1-3"/></svg></div>
+      <div class="hc"><h2>成都特产</h2><div class="en">Local Souvenirs</div></div>
+    </div>
+    <div class="body">
+      <div class="hero">
+        <picture><source srcset="assets/cd_treats.webp" type="image/webp"><img src="assets/cd_treats.jpg" alt="成都特产伴手礼" loading="lazy"></picture>
+        <div class="lab">把天府带回家</div>
+      </div>
+      <div class="dset"><div class="dt">🎁 必买清单</div><ul>
+        <li><b>郫县豆瓣酱</b>——川菜之魂</li>
+        <li><b>火锅底料</b>——牛油麻辣，回家续火锅</li>
+        <li><b>蜀锦 / 蜀绣</b>——非遗织造文创</li>
+        <li><b>大熊猫周边</b>——基地官方文创超可爱</li>
+        <li><b>竹编 / 茉莉花茶</b>——川西手作与茶礼</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🗺 去哪买</div><ul>
+        <li>太古里商圈品牌店、熊猫基地官方文创店</li>
+        <li>郫县豆瓣去当地大超市/特产店更保真实惠</li>
+      </ul></div>
+      <div class="day-tip"><b>TIP</b>　酱料、底料注意<b>托运/安检</b>规定，液体与膏状提前分装。</div>
+    </div>
+    <div class="page-num"><b>9</b> / 9</div>
+  </div>
+
+  </div>
+  <div class="foot-note">WorldStip · 旅行小册子 · 成都 A5 卡片手册 ｜ 门票/价格为参考，以景区官网与当日实际为准 ｜ 图片均为原创生成，无版权风险</div>
+</div>
+<script>
+(function(){
+  var chips=document.querySelectorAll('.chips button');
+  var cards=document.querySelectorAll('.card');
+  function strip(id){return id.replace('c-','');}
+  function scrollToCard(id){
+    var el=document.getElementById(id);
+    if(el){el.scrollIntoView({behavior:'smooth',block:'start'});}
+    chips.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-target')===id);});
+  }
+  chips.forEach(function(b){b.addEventListener('click',function(){scrollToCard(b.getAttribute('data-target'));});});
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        var id=e.target.id;
+        chips.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-target')===id);});
+      }
+    });
+  },{rootMargin:'-40% 0px -50% 0px'});
+  cards.forEach(function(c){io.observe(c);});
+})();
+</script>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

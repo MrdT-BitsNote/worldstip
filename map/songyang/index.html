@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>松阳 · 最后的江南秘境古村全攻略（陈家铺/杨家堂/云海梯田）</title>
+<meta name="description" content="松阳旅游全攻略：最后的江南秘境·陈家铺悬崖村（飞茑集民宿+悬崖先锋书店）、杨家堂金色布达拉、云海梯田、古村山居。交通住宿美食预算避坑一篇讲清。">
+<style>
+  :root{
+    --hui:#3f6b57;
+    --hui-deep:#2c4a3c;
+    --hui-soft:#e3ece6;
+    --sand:#f4f6f6;
+    --sand-line:#d9e0e4;
+    --coral:#a85f4a;
+    --cyan:#4a8d7c;
+    --leaf:#3f8a5f;
+    --ink:#2b3942;
+    --ink-soft:#5f6d76;
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(58,80,95,.32);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(74,93,107,.16), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(63,127,140,.13), transparent 55%),
+      var(--sand);
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--hui-deep)}
+
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--hui) 8%,#3d5260 55%,var(--hui-deep));
+    padding:40px 36px 34px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-40px;bottom:-60px;width:300px;height:300px;
+    background:radial-gradient(circle, rgba(255,255,255,.18), transparent 62%);
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.94;max-width:680px}
+  .hero p b{color:#fff}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{
+    font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:10px;
+  }
+
+  .switch{display:flex;gap:12px;margin:30px 0 6px;flex-wrap:wrap}
+  .switch button{
+    flex:1;min-width:230px;border:2px solid var(--sand-line);
+    background:var(--card);color:var(--ink);cursor:pointer;text-align:left;
+    border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  }
+  .switch button:hover{border-color:var(--hui);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(74,93,107,.4)}
+  .switch button.on{border-color:var(--hui);background:linear-gradient(135deg,#e9eef1,#eff3ee)}
+  .switch button .t{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800}
+  .switch button .t .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff}
+  .switch button .d{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .b-1d .badge{background:var(--cyan)}
+  .b-2d .badge{background:var(--coral)}
+  .b-3d .badge{background:var(--leaf)}
+
+  section.panel{margin-top:26px;background:var(--card);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(74,93,107,.10)}
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--hui-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--hui-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--hui-deep);margin-top:20px}
+  .hint b{font-weight:800}
+
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--hui-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;
+    background:var(--hui);border:3px solid var(--hui-soft);box-sizing:content-box;
+  }
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--hui-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--hui-soft);color:var(--hui-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--coral);font-weight:800}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid var(--sand-line);border-radius:14px;padding:14px 16px;background:#fbfcfc;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(74,93,107,.35);box-shadow:0 8px 18px -10px rgba(74,93,107,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--hui-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+  .spot{display:flex;gap:18px;background:#fbfcfc;border:1px solid var(--sand-line);border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+  .spot:hover{border-color:rgba(74,93,107,.35);box-shadow:0 10px 22px -12px rgba(74,93,107,.3)}
+  .spimg{flex:0 0 40%;margin:0;min-width:0}
+  .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+  .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+  .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+  .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+  .sptxt h3{margin:0;font-size:19px;color:var(--hui-deep)}
+  .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+  .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#e9eef1;border-radius:10px;padding:9px 12px;margin-top:10px}
+  .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+  @media (max-width:640px){
+    .spot{flex-direction:column}
+    .spimg{flex:none}
+    .spimg img{height:auto;max-height:220px;object-fit:cover}
+  }
+
+  .cmp{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .cmp table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fefdfb}
+  .cmp th,.cmp td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--sand-line)}
+  .cmp thead th{background:var(--hui-deep);color:#fff;font-weight:700}
+  .cmp tbody tr:nth-child(even){background:#eef1f3}
+  .cmp .hd2{background:var(--hui-soft);color:var(--hui-deep);font-weight:800;border-bottom:1px solid var(--sand-line)}
+  .cmp .good{color:#2f7d32;font-weight:700}
+  .cmp .bad{color:#c0504d;font-weight:700}
+
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--sand-line);padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--hui-soft);color:var(--hui-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--coral);font-weight:800;white-space:nowrap}
+
+  .budget{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fefdfb}
+  .budget th,.budget td{padding:10px 14px;text-align:left}
+  .budget thead th{background:var(--hui-deep);color:#fff;font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#eef1f3}
+  .budget .tot{font-weight:800;color:var(--hui-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  .tips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .tips li{font-size:14px;color:var(--ink);background:#e9eef1;border-left:4px solid var(--hui);border-radius:8px;padding:10px 14px}
+  .tips li b{color:var(--hui-deep)}
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--hui-deep)}
+
+  @media print{
+    body{background:#fff}
+    .switch button{display:none}
+    .wrap{max-width:none;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
+    .card,.budget,.cmp{page-break-inside:avoid}
+  }
+  @media (max-width:600px){
+    .hero{padding:30px 22px 26px}
+    .hero h1{font-size:27px}
+    .wrap{padding:18px 14px 48px}
+    section.panel{padding:20px 18px}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style></style>
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/songyang/">
+    <meta name="theme-color" content="#3f6b57">
+    <link rel="icon" href="../../favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="松阳 · 最后的江南秘境古村全攻略（陈家铺/杨家堂/云海梯田）">
+    <meta property="og:description" content="松阳·最后的江南秘境：陈家铺悬崖村+飞茑集+悬崖先锋书店、杨家堂金色布达拉、云海梯田古村山居；交通住宿美食一篇讲清。">
+    <meta property="og:url" content="https://worldstip.com/map/songyang/">
+    <meta property="og:image" content="https://worldstip.com/map/songyang/assets/songyang_cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="松阳 · 最后的江南秘境古村全攻略">
+    <meta name="twitter:description" content="陈家铺悬崖村+飞茑集+悬崖先锋书店、杨家堂金色布达拉、云海梯田；交通住宿预算一篇讲清。">
+    <meta name="twitter:image" content="https://worldstip.com/map/songyang/assets/songyang_cover.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "WorldStip · 旅行小册子", "url": "https://worldstip.com/"},
+    {"@type": "ListItem", "position": 2, "name": "松阳 · 最后的江南秘境古村全攻略", "url": "https://worldstip.com/map/songyang/"}
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/songyang/",
+  "name": "松阳 · 最后的江南秘境古村全攻略",
+  "inLanguage": "zh-CN",
+  "isPartOf": { "@type": "WebSite", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "author": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "publisher": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "copyrightHolder": { "@type": "Organization", "name": "旅行小册子" },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">🌿 松阳 · LAST SECRET JIANGNAN (SONGYANG)</div>
+  <h1>松阳 · 最后的江南秘境古村全攻略</h1>
+  <p>被《中国国家地理》誉为<b>「最后的江南秘境」</b>的浙西南山区，藏着 <b>70+ 座风貌完整的传统古村</b>。这里没有观光索道，只有建在<b>悬崖上的夯土村落</b>、漫到窗前的<b>云海</b>、层层叠叠的<b>梯田</b>和能住进去的<b>山居民宿老屋</b>。核心玩法：<b>陈家铺悬崖村</b>（飞茑集民宿+悬崖上的先锋书店）、<b>杨家堂金色布达拉</b>、四都/三都<b>云海梯田</b>。本攻略含 1 日/2 日双方案、古村交通、民宿选择、美食、预算避坑全讲清，教你「住进秘境」而非走马观花。</p>
+  <div class="meta">
+    <span>📍 目的地：浙江丽水 · 松阳（四都乡/三都乡）</span>
+    <span>👥 1–6 人自由行/自驾</span>
+    <span>⏱️ 1–2 日 山居微住</span>
+    <span>💰 古村免费 · 民宿 300–1200</span>
+  </div>
+</header>
+
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="b-1d on" role="tab" aria-selected="true" data-plan="plan1" id="tab1">
+    <span class="t"><span class="badge">1日精华</span> 快充版 ⚡</span>
+    <div class="d">陈家铺+杨家堂双村速览 / 人均约 200–350</div>
+  </button>
+  <button class="b-2d" role="tab" aria-selected="false" data-plan="plan2" id="tab2">
+    <span class="t"><span class="badge">2日深住</span> 秘境界 🌿</span>
+    <div class="d">夜宿崖居民宿·云海日出尽收 / 人均约 600–1500</div>
+  </button>
+</div>
+
+<!-- 1日方案 -->
+<section class="panel" id="plan1" role="tabpanel">
+  <h2><span class="emo">⚡</span>1 日精华 · 快充版</h2>
+  <p class="sub">松阳县城出发，一早登四都乡（云海最盛），下午逛三都乡（金色布达拉），一晚一白把「秘境」双村看透。</p>
+  <div class="hint">👥 <b>适配：</b>古村均免费、蜿蜒山路多，建议自驾或包车；纯公共交通当天往返较紧，最好至少住一晚。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">上午 · 四都乡·陈家铺村（悬崖古村 + 先锋书店）</div>
+      <div class="seg"><span>🚗 松阳县城→四都乡陈家铺（山路约40min）</span></div>
+      <div class="seg"><span>🏘️ 建在崖壁上的600年夯土村</span><span>📚 悬崖先锋书店（270°落地窗看云海）</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 早晨 8–10 点云海最盛，趁人少先拍空镜；书店9点后可入内。</div>
+    </li>
+    <li>
+      <div class="day">中午 · 陈家铺村内午餐</div>
+      <div class="seg"><span>🍚 农家菜：土灶烧鸡/高山蔬菜炒腊肉/灰汁糕</span></div>
+      <div class="seg"><span>🏡 逛逛飞茑集民宿外观、手作体验</span></div>
+      <div class="tip2"><span class="arr">💡</span> 想做古法扎染/手作，周六下午村落有体验活动。</div>
+    </li>
+    <li>
+      <div class="day">下午 · 三都乡·杨家堂村（金色布达拉）+ 返程</div>
+      <div class="seg"><span>🚗 陈家铺→杨家堂（跨乡镇约40min）</span></div>
+      <div class="seg"><span>🌅 檐角相连的黄泥屋群·「金色布达拉宫」</span><span>🌾 日落时分金光镀满全村</span></div>
+      <div class="tip2"><span class="arr">💡</span> 下午 4–6 点看夕阳把黄泥墙照成金色；想拍云海建议日出前到四都乡。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 2日方案 -->
+<section class="panel" id="plan2" role="tabpanel" hidden>
+  <h2><span class="emo">🌿</span>2 日深住 · 秘境界</h2>
+  <p class="sub">「住进秘境」——夜宿陈家铺崖居民宿（飞茑集等），一晚看云海日出、围炉煮茶、梯田徒步，白天再串联杨家堂/松阳老街。</p>
+  <div class="hint">☁️ <b>这版才是松阳精髓：</b>住一晚才能真正等到云海日出与星空，民宿半山即可远眺梯田村落。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">D1 午后 · 登四都·入住崖居</div>
+      <div class="seg"><span>🚗 到陈家铺·入住飞茑集/今有光等崖居</span></div>
+      <div class="seg"><span>☕ 围炉煮茶（红薯/板栗/松阳香茶）</span><span>🏞️ 梯田徒步小径·傍晚看日落</span></div>
+      <div class="tip2"><span class="arr">💡</span> 想看日落，16:00 前到民宿安顿；冬日云海最盛。</div>
+    </li>
+    <li>
+      <div class="day">D2 清晨 · 云海日出 + 先锋书店</div>
+      <div class="seg"><span>🌅 6点起·落地窗/观景台看云海日出</span></div>
+      <div class="seg"><span>📚 悬崖先锋书店·窗边发呆</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 日出受天气影响大，出发前看预报选晴天或多云。</div>
+    </li>
+    <li>
+      <div class="day">D2 白天 · 杨家堂/松阳老街 + 返程</div>
+      <div class="seg"><span>🚗 前往三都杨家堂（金色布达拉）</span></div>
+      <div class="seg"><span>🏘️ 松阳老街·炖盐鸡配麦豆饭（本地素朴小吃）</span></div>
+      <div class="tip2"><span class="arr">💡</span> 时间充裕可加平田村/松庄村（艺术乡建古村群）。</div>
+    </li>
+  </ul>
+</section>
+
+<section class="panel" id="spots">
+  <h2><span class="emo">🏘️</span>核心看点 · 秘境怎么玩</h2>
+  <div class="spotlist">
+    <div class="spot"><span class="no">1</span><span class="it"><b>陈家铺悬崖村</b><div class="w">海拔800m「崖居」古村，600年夯土屋嵌在崖壁上，先锋书店玻璃窗正对云海峡谷</div></span></div>
+    <div class="spot"><span class="no">2</span><span class="it"><b>飞茑集民宿</b><div class="w">「凿」进崖壁的白楼民宿，大落地窗看云海漫到窗前，冬日围炉煮茶+古法扎染</div></span></div>
+    <div class="spot"><span class="no">3</span><span class="it"><b>杨家堂「金色布达拉」</b><div class="w">檐角相连的黄泥屋群沿坡而建，日落金光镀满全村，摄影名场景</div></span></div>
+    <div class="spot"><span class="no">4</span><span class="it"><b>四都/三都云海梯田</b><div class="w">清晨云海漫过层叠梯田与村落，是「江南秘境」最美影像的主体</div></span></div>
+    <div class="spot"><span class="no">5</span><span class="it"><b>悬崖先锋书店</b><div class="w">2018年开业即火，270°落地窗下午看云海翻涌，书与山野气息交融</div></span></div>
+    <div class="spot"><span class="no">6</span><span class="it"><b>松阳老街/平田松庄</b><div class="w">松阳县城老街烟火气；平田、松庄等「艺术乡建」古村更小众安静</div></span></div>
+  </div>
+  <img src="assets/songyang_a.jpg" alt="陈家铺飞茑集悬崖民宿" loading="lazy" style="width:100%;border-radius:14px;margin-top:16px">
+  <img src="assets/songyang_b.jpg" alt="松阳梯田云海" loading="lazy" style="width:100%;border-radius:14px;margin-top:10px">
+</section>
+
+<section class="panel" id="how">
+  <h2><span class="emo">🚗</span>怎么去</h2>
+  <div class="cmp">
+    <div class="row"><div class="mode">🚄 高铁+本地</div><div class="p">高铁至<b>丽水站</b>，转大巴/打车至松阳县城（约1.5h），再包车或租车上山。<div class="tag">适合无车党</div></div></div>
+    <div class="row"><div class="mode">🚗 自驾（推荐）</div><div class="p">G25长深高速→溧宁高速至松阳出口，县城出发盘山至四都/三都乡，古村免费停车。<div class="tag">最自由，山路弯多</div></div></div>
+  </div>
+</section>
+
+<section class="panel" id="stay">
+  <h2><span class="emo">🏡</span>住哪里</h2>
+  <div class="grid">
+    <div class="card"><b>飞茑集·陈家铺</b><div class="w">文青首选，崖壁玻璃房看云海，15间房需提前预订，600–1200元</div></div>
+    <div class="card"><b>今有光/其他崖居</b><div class="w">陈家铺村内精品民宿群，300–800元</div></div>
+    <div class="card"><b>松阳县城民宿</b><div class="w">价格亲民100–300元，适合作为进山跳板</div></div>
+  </div>
+</section>
+
+<section class="panel" id="food">
+  <h2><span class="emo">🍚</span>吃什么</h2>
+  <div class="food">
+    <div class="row"><span class="no">1</span><span class="it"><b>土灶烧鸡/高山腊肉</b><div class="w">高山放养土鸡+本地蔬菜，农家风味</div></span><span class="prx">人均50</span></div>
+    <div class="row"><span class="no">2</span><span class="it"><b>灰汁糕</b><div class="w">松阳特色小吃，蘸桂花蜜，软糯香甜</div></span><span class="prx">8元</span></div>
+    <div class="row"><span class="no">3</span><span class="it"><b>炖盐鸡配麦豆饭</b><div class="w">山里人家待客菜（松阳老街可吃）</div></span><span class="prx">人均30</span></div>
+    <div class="row"><span class="no">4</span><span class="it"><b>笋干/溪鱼</b><div class="w">当季山珍，清蒸溪鱼做招牌</div></span><span class="prx">时价</span></div>
+  </div>
+</section>
+
+<section class="panel" id="budget">
+  <h2><span class="emo">💰</span>预算参考</h2>
+  <div class="budget"><table><thead><tr><th>项目</th><th>1日快充</th><th>2日深住</th></tr></thead><tbody>
+    <tr><th>交通（丽水进出+包车分摊）</th><td>80–160</td><td>120–260</td></tr>
+    <tr><th>门票</th><td>0（古村免费）</td><td>0</td></tr>
+    <tr><th>餐饮</th><td>50–80</td><td>150–300</td></tr>
+    <tr><th>住宿</th><td>—</td><td>300–1200</td></tr>
+    <tr class="tot"><th>人均合计</th><td>130–240</td><td>570–1760</td></tr>
+  </tbody></table></div>
+  <p class="tiny">💰 独家提示：民宿是松阳花销大头，追求性价比可住城内次日早进山碰运气看云海。</p>
+</section>
+
+<section class="panel" id="tips">
+  <h2><span class="emo">💡</span>避坑与贴士</h2>
+  <ul class="tips">
+    <li><b>云海看天气：</b>出门前查预报，晴天/多云清晨（6–9点）四都乡云海概率最高；雨天进山雾大路滑。</li>
+    <li><b>山路驾驶：</b>四都/三都乡盘山弯多且窄，会车注意鸣笛，新手慎自驾。</li>
+    <li><b>提前订房：</b>陈家住铺精品民宿仅十余间，节假日需提前1–2周预订。</li>
+    <li><b>拍照黄金窗：</b>陈家铺清晨云海、杨家堂日落（16–18点）是两大名场面，错峰人少更出片。</li>
+    <li><b>信号：</b>深山部分路段信号弱，离线地图+结伴出行更稳妥。</li>
+  </ul>
+</section>
+
+<footer>
+  松阳 · 最后的江南秘境古村全攻略 ｜ 适配 1–6 人自由行 · 门票及价格为参考值，以景区实时公告为准<br>
+  古村石板路注意防滑，尊重村民生活不扰民；文明游览、随手带走垃圾。 · <a href="../../index.html">← 返回小册子</a>
+</footer>
+</div>
+<script>
+(function(){var b=document.querySelectorAll('.switch button');b.forEach(function(x){x.addEventListener('click',function(){b.forEach(function(y){y.classList.remove('on');y.setAttribute('aria-selected','false')});x.classList.add('on');x.setAttribute('aria-selected','true');var p=x.getAttribute('data-plan');document.querySelectorAll('.panel').forEach(function(s){if(s.id===p){s.removeAttribute('hidden');s.setAttribute('role','tabpanel')}else{s.setAttribute('hidden','');s.removeAttribute('role')}})})})})();
+</script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>西昌 · 火把节月城 三档指南（2天 / 3天 / 5天）</title>
+<meta name="description" content="西昌成都凉山旅行指南：彝族火把节狂欢、邛海泸山、泸沽湖女儿国、卫星发射中心，2/3/5天三档行程，含本地特色、火把节专章、住宿、美食、预算、避坑。">
+<meta name="keywords" content="西昌旅游,火把节,凉山彝族,邛海,泸山,泸沽湖,卫星发射中心,西昌美食">
+<style>
+  :root{
+    --sea:#e2571b;          /* 火把红 */
+    --sea-deep:#b83a10;
+    --sea-soft:#fdeee6;
+    --sand:#fdf6ee;
+    --sand-line:#f0e0d0;
+    --sun:#e9a13b;          /* 火把金 */
+    --coral:#c0392b;        /* 彝纹深红 */
+    --lake:#2f8fb5;         /* 邛海湖蓝 */
+    --ink:#3b2a1f;
+    --ink-soft:#8a6f5a;
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(226,87,27,.35);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--font);color:var(--ink);line-height:1.65;
+    background:radial-gradient(1200px 500px at 85% -5%, rgba(233,161,59,.15), transparent 60%),radial-gradient(900px 480px at -5% 8%, rgba(47,143,181,.12), transparent 55%),var(--sand);}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--sea-deep)}
+  .hero{position:relative;border-radius:28px;overflow:hidden;color:#fff;background:linear-gradient(135deg,#ff7b2e 5%,var(--sea) 48%,var(--sea-deep));padding:40px 36px 34px;box-shadow:var(--shadow)}
+  .hero::after{content:"";position:absolute;right:-40px;bottom:-60px;width:300px;height:300px;background:radial-gradient(circle, rgba(255,255,255,.18), transparent 62%)}
+  .hero .kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;background:rgba(255,255,255,.18);padding:6px 14px;border-radius:999px;margin-bottom:14px}
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.94;max-width:680px}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{font-size:13px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.28);padding:6px 12px;border-radius:10px}
+  .hero .wave{position:absolute;left:0;right:0;bottom:0;height:26px;opacity:.3;background:radial-gradient(110px 26px at 12% 0%, transparent 98%, #ffe0c0 99%),radial-gradient(110px 26px at 40% 0%, transparent 98%, #ffe0c0 99%),radial-gradient(110px 26px at 68% 0%, transparent 98%, #ffe0c0 99%),radial-gradient(110px 26px at 92% 0%, transparent 98%, #ffe0c0 99%);background-size:280px 26px;background-repeat:repeat-x}
+  .switch{display:flex;gap:12px;margin:30px 0 6px;flex-wrap:wrap}
+  .switch button{flex:1;min-width:230px;border:2px solid var(--sand-line);background:var(--card);color:var(--ink);cursor:pointer;text-align:left;border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+  .switch button:hover{border-color:var(--sea);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(226,87,27,.4)}
+  .switch button.on{border-color:var(--sea);background:linear-gradient(135deg,#fdf0e8,#fbe6da)}
+  .switch button .t{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800}
+  .switch button .t .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff}
+  .switch button .d{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .b-2d .badge{background:var(--sun)}.b-3d .badge{background:var(--coral)}.b-4d .badge{background:var(--sea-deep)}
+  section.panel{margin-top:26px;background:var(--card);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(226,87,27,.08)}
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--sea-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--sea-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--sea-deep);margin-top:20px}
+  .hint b{font-weight:800}
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--sea-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;background:var(--sea);border:3px solid var(--sea-soft);box-sizing:content-box}
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--sea-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--sea-soft);color:var(--sea-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--coral);font-weight:800}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid var(--sand-line);border-radius:14px;padding:14px 16px;background:#fdfdfc;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(226,87,27,.35);box-shadow:0 8px 18px -10px rgba(226,87,27,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--sea-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--sand-line);padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--sea-soft);color:var(--sea-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--coral);font-weight:800;white-space:nowrap}
+  .budget{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fffcf8}
+  .budget th,.budget td{padding:10px 14px;text-align:left}
+  .budget thead th{background:var(--sea-deep);color:#fff;font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#fbf1e8}
+  .budget .tot{font-weight:800;color:var(--sea-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .cmp{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .cmp table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fffcf8}
+  .cmp th,.cmp td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--sand-line)}
+  .cmp thead th{background:var(--sea-deep);color:#fff;font-weight:700}
+  .cmp tbody tr:nth-child(even){background:#fbf1e8}
+  .cmp .hd2{background:var(--sea-soft);color:var(--sea-deep);font-weight:800;border-bottom:1px solid var(--sand-line)}
+  .cmp .good{color:#2f7d32;font-weight:700}.cmp .bad{color:#c0504d;font-weight:700}
+  .tips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .tips li{font-size:14px;color:var(--ink);background:var(--sea-soft);border-left:4px solid var(--sea);border-radius:8px;padding:10px 14px}
+  .tips li b{color:var(--sea-deep)}
+  .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+  .spot{display:flex;gap:18px;background:#fffcf8;border:1px solid var(--sand-line);border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+  .spot:hover{border-color:rgba(226,87,27,.35);box-shadow:0 10px 22px -12px rgba(226,87,27,.3)}
+  .spimg{flex:0 0 42%;margin:0;min-width:0}
+  .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+  .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+  .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+  .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+  .sptxt h3{margin:0;font-size:19px;color:var(--sea-deep)}
+  .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+  .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#fdefe7;border-radius:10px;padding:9px 12px;margin-top:10px}
+  .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+  /* 火把节专章 */
+  .fest{border:1.5px solid var(--sun);background:linear-gradient(160deg,#fff7ea,#fde9d4);border-radius:var(--radius);padding:24px 26px;margin-top:26px;box-shadow:var(--shadow)}
+  .fest h2{margin:0 0 6px;font-size:22px;color:#b83a10;display:flex;align-items:center;gap:10px}
+  .fest .fetime{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:800;color:#fff;background:linear-gradient(135deg,#ff8a3c,#d9480f);padding:6px 14px;border-radius:999px;margin-bottom:14px}
+  .fest .fegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  .fest .feitem{background:rgba(255,255,255,.75);border:1px solid #f0d8b8;border-radius:14px;padding:14px 16px}
+  .fest .feitem b{display:block;color:#b83a10;margin-bottom:5px;font-size:15px}
+  .fest .feitem span{font-size:13px;color:var(--ink-soft)}
+  .fest .fehint{margin-top:14px;font-size:13.5px;color:#8a5a20;background:#fff;border:1px dashed #e8c87a;border-radius:12px;padding:12px 16px}
+  .fest .fehint b{color:#b83a10}
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.9}
+  footer .back{display:inline-block;margin-top:10px;text-decoration:none;color:#fff;background:var(--sea-deep);padding:9px 18px;border-radius:999px;font-size:13px;font-weight:700}
+  footer .back:hover{background:var(--sea)}
+  @media print{body{background:#fff}.switch button,.fest .fetime{display:none}.wrap{max-width:none;padding:0}.hero{box-shadow:none;border-radius:0}section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}.card,.budget,.cmp,.fest{page-break-inside:avoid}}
+  @media (max-width:600px){.hero{padding:30px 22px 26px}.hero h1{font-size:27px}.wrap{padding:18px 14px 48px}section.panel{padding:20px 18px}.spot{flex-direction:column}.spimg{flex:none}.spimg img{height:auto;max-height:220px;object-fit:cover}}
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/xichang/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="西昌 · 火把节月城 三档指南（2天 / 3天 / 5天）">
+    <meta property="og:description" content="西昌旅行指南：彝族火把节狂欢、邛海泸山、泸沽湖女儿国、卫星发射中心，2/3/5天三档行程，含本地特色、住宿、美食、预算、避坑。">
+    <meta property="og:url" content="https://worldstip.com/map/xichang/">
+    <meta property="og:image" content="https://worldstip.com/assets/images/xichang_huobajie.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="西昌 · 火把节月城 三档指南（2天 / 3天 / 5天）">
+    <meta name="twitter:description" content="西昌旅行指南：彝族火把节狂欢、邛海泸山、泸沽湖女儿国、卫星发射中心，2/3/5天三档行程。">
+    <meta name="twitter:image" content="https://worldstip.com/assets/images/xichang_huobajie.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "西昌 · 火把节月城 三档指南",
+      "url": "https://worldstip.com/map/xichang/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/xichang/",
+  "name": "西昌 · 火把节月城 三档指南（2天 / 3天 / 5天）",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">🔥 西昌 · 凉山 Liangshan · Fire Torch Festival</div>
+  <h1>西昌火把节月城指南</h1>
+  <p>凉山彝族自治州首府，一半是"月城"的静谧邛海，一半是彝族火把节的烈焰狂欢。核心看点：<b>彝族火把节、邛海邛泸、泸沽湖女儿国、西昌卫星发射中心</b>。想轻松周末走 <b>2 天版</b>，恰逢节庆赶火把节走 <b>3 天版</b>，深度入凉山走 <b>5 天版</b>。适合 1–4 人，含行程 / 火把节专章 / 住宿 / 美食 / 预算 / 出行方式对比。</p>
+  <div class="meta"><span>📍 凉山彝族自治州西昌市（四川）</span><span>👥 1–4 人</span><span>⏱️ 2 / 3 / 5 天三方案</span><span>⏰ 火把节约 7–8 月</span><span>💰 人均预算已附</span></div>
+  <div class="wave" aria-hidden="true"></div>
+</header>
+
+<!-- 火把节专章：本地最独特的民族文化招牌 -->
+<div class="fest">
+  <h2>🕯️ 彝族火把节 · 凉山最亮的一夜</h2>
+  <span class="fetime">⏰ 农历六月二十四 · 公历约 7 月中下旬（为期 3 天）</span>
+  <div class="fegrid">
+    <div class="feitem"><b>🔥 点火仪式 & 万人火把游街</b><span>夜幕降临，护火人点燃巨型火把，成千上万支火把汇成"火河"绕城游街，是名副实的"火的狂欢"。西昌主会场在火把广场与城区主干道。</span></div>
+    <div class="feitem"><b>🎭 彝族选美 &《朵洛荷》</b><span>彝族传统选美（朵洛荷）盛装巡游，姑娘身着彝绣百褶裙、银饰叮当作响；还有赛马、斗牛、斗羊、摔跤等彝族传统竞技。</span></div>
+    <div class="feitem"><b>🥘 彝餐长街宴</b><span>节日期间有彝族长街宴/坨坨肉流水席，配荞麦饼、酸菜汤、燕麦酒，穿插《火把节之夜》歌舞篝火晚会，边吃边看。</span></div>
+    <div class="feitem"><b>🛍️ 火把集市</b><span>广场周边搭起彝族文化市集：漆器、银饰、彝绣、披毡、火把工艺品；可买一支小号火把参与点火，沉浸式融入。</span></div>
+  </div>
+  <div class="fehint"><b>📌 火把节玩法：</b>火把节分 3 天，一般天天有火把与歌舞；主会场西昌之外，普格、会理、布拖、昭觉等也有分会场。西昌参与最方便，规模最盛大。若假期落在公历 7–8 月，务必专程赶一趟，这是全中国最独特、最具民族风情的节庆之一。</div>
+</div>
+
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="b-2d on" role="tab" aria-selected="true" data-plan="plan2" id="tab2">
+    <span class="t"><span class="badge">2天轻松</span> 打卡版 ☕</span>
+    <div class="d">邛海+泸山+市区 / 人均约 700–1200</div>
+  </button>
+  <button class="b-3d" role="tab" aria-selected="false" data-plan="plan3" id="tab3">
+    <span class="t"><span class="badge">3天火把节</span> 专场版 🔥</span>
+    <div class="d">万人火把狂欢+邛海 / 人均约 1200–2200</div>
+  </button>
+  <button class="b-4d" role="tab" aria-selected="false" data-plan="plan4" id="tab4">
+    <span class="t"><span class="badge">5天深度</span> 入凉山版 🌿</span>
+    <div class="d">火把节+泸沽湖+卫星城 / 人均约 2500–4800</div>
+  </button>
+</div>
+
+<!-- 2天方案 -->
+<section class="panel" id="plan2" role="tabpanel">
+  <h2><span class="emo">☕</span>2 天轻松 · 打卡版</h2>
+  <p class="sub">核心策略：D1 邛海环湖+泸山登顶看全景，D2 市区火把广场+彝族文化+卫星城，轻松不赶路。</p>
+  <div class="hint">👥 <b>1–4 人适配：</b>2 天节奏轻松，市区+邛海都在西昌城区半小时圈，打车/公交方便；预算按 <b>人均</b> 标注。</div>
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li><div class="day">DAY 1 · 邛海 + 泸山</div>
+      <div class="seg"><span>🚄 高铁/飞机抵达西昌</span><span>🌊 邛海湿地公园 环湖骑行（免费）</span></div>
+      <div class="seg"><span>⛰️ 泸山登顶 俯瞰邛海全景</span><span>🍢 晚饭 火盆烧烤</span></div>
+      <div class="tip2"><span class="arr">💡</span> 邛海免费、湿地绿道环湖约30km，租单车或乘观光车；泸山可步行/缆车，山顶视野看邛海+城区日落一绝。火盆烧烤是西昌名片，必吃。</div>
+    </li>
+    <li><div class="day">DAY 2 · 彝族文化 + 卫星城</div>
+      <div class="seg"><span>🏯 火把广场 / 彝族奴隶社会博物馆</span><span>🚀 西昌卫星发射中心（开放日预约）</span></div>
+      <div class="seg"><span>🥔 市区吃凉山土豆/米粉 返程</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 卫星发射中心只在开放日接待、需提前实名预约；若约不上可改游火把广场与彝族博物馆。市区小吃街集中在建昌古城一带。</div>
+    </li>
+  </ul>
+
+  <h3 style="margin-top:28px">🏡 住宿建议</h3>
+  <div class="grid">
+    <div class="card"><span class="tag" style="background:var(--sea-soft);color:var(--sea-deep)">经济</span><div class="nm">市区商务酒店</div><div class="pr">约 120–220 元/晚</div><div class="ds">交通吃饭方便，适合周末快闪，性价比高。</div></div>
+    <div class="card"><span class="tag" style="background:var(--sun);color:#fff">湖景</span><div class="nm">邛海湖畔民宿</div><div class="pr">约 280–600 元/晚</div><div class="ds">推窗见邛海、晨起看湖面薄雾，度假感强。</div></div>
+    <div class="card"><span class="tag" style="background:var(--coral);color:#fff">特色</span><div class="nm">彝族风情客栈</div><div class="pr">约 200–400 元/晚</div><div class="ds">彝绣软装+火把主题，建昌古城一带聚集。</div></div>
+  </div>
+</section>
+
+<!-- 3天火把节专场 -->
+<section class="panel" id="plan3" role="tabpanel" hidden>
+  <h2><span class="emo">🔥</span>3 天火把节 · 专场版</h2>
+  <p class="sub">专程赶凉山最红火的民族节庆：白天逛市集看选美赛马，夜晚万人火把点燃全城，再留一天给邛海放松。</p>
+  <div class="hint">👥 <b>火把节人极多，</b>住宿必须至少提前一个月预订；行程留足机动时间，主会场周边交通管制、建议步行或公交。日均消费约 300–600 元/人。</div>
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li><div class="day">DAY 1 · 抵达 + 火把节开幕预热</div>
+      <div class="seg"><span>🚄 抵达西昌 入住（火把节期间务必提前订房）</span><span>🛍️ 火把广场 逛彝族市集买火把/漆器</span></div>
+      <div class="seg"><span>🏯 彝族奴隶社会博物馆 了解火把节由来</span></div>
+      <div class="tip2"><span class="arr">💡</span> 到的第一天先摸清主会场路线，买好小号火把（约10-30元），为明晚点火做准备；城里已能感受到节日气氛。</div>
+    </li>
+    <li><div class="day">DAY 2 · 火把节正日：选美+赛马+万人点火</div>
+      <div class="seg"><span>🌞 白天 彝族选美《朵洛荷》+ 赛马斗牛斗羊</span><span>🥘 彝餐长街宴 吃坨坨肉</span></div>
+      <div class="seg"><span>🌆 黄昏 点火仪式 · 万人火把游街 · 篝火晚会</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 这是全行程高潮！天黑后全城火光冲天，跟着火把队伍游行参与最沉浸。人极拥挤：保管财物、穿防滑鞋、与他人保持距离，火堆旁勿穿宽松易燃衣物。手机留足电，录下漫天火把的震撼画面。</div>
+    </li>
+    <li><div class="day">DAY 3 · 邛海放松 + 返程</div>
+      <div class="seg"><span>🌊 早起邛海湿地看日出/环湖骑行</span><span>⛰️ 或 泸山俯瞰全景</span></div>
+      <div class="seg"><span>🍢 狮子山/建昌古城收尾 返程</span></div>
+      <div class="tip2"><span class="arr">💡</span> 宿醉一日后走轻松安排，邛海免费、晨光绝美；返程前带一份火把节纪念品或凉山特产。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 5天深度方案 -->
+<section class="panel" id="plan4" role="tabpanel" hidden>
+  <h2><span class="emo">🌿</span>5 天深度 · 入凉山版</h2>
+  <p class="sub">西昌为支点深入凉山：火把节狂欢 + 邛海泸山 + 泸沽湖摩梭女儿国 + 卫星城，一次看遍"火与湖"的凉山大风景。</p>
+  <div class="hint">👥 <b>泸沽湖跨云川两省，</b>从西昌包车/班车约 5–6 小时、山路为主，建议往返各留一整天；日均消费约 400–800 元/人。</div>
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li><div class="day">DAY 1 · 抵达 + 邛海邛泸</div>
+      <div class="seg"><span>🚄 抵达西昌</span><span>🌊 邛海湿地环湖骑行（约半日）</span></div>
+      <div class="seg"><span>⛰️ 泸山登顶看全景 日落</span></div>
+      <div class="tip2"><span class="arr">💡</span> 首日适应海拔（西昌约1500m，泸沽湖约2700m），邛海骑行+泸山看日落是最佳开场。</div>
+    </li>
+    <li><div class="day">DAY 2 · 火把节或彝族文化日</div>
+      <div class="seg"><span>🏯 火把广场 + 彝族奴隶社会博物馆 + 建昌古城</span><span>🛍️ 彝族服饰/漆器集市</span></div>
+      <div class="seg"><span>🔥（若逢火把节）白天看选美赛马 · 夜晚万人火把</span></div>
+      <div class="tip2"><span class="arr">💡</span> 不是火把节的月份，这一天深度体验彝族文化；是火把节则按"3天专场版 DAY2"的玩法走。</div>
+    </li>
+    <li><div class="day">DAY 3 · 泸沽湖（摩梭女儿国）</div>
+      <div class="seg"><span>🚗 西昌→泸沽湖（包车约5-6小时）</span><span>🌊 里格半岛/大落水 环湖公路看日落</span></div>
+      <div class="seg"><span>🔥 摩梭篝火晚会 跳锅庄</span></div>
+      <div class="tip2"><span class="arr">💡</span> 泸沽湖有四川/云南两个环，沿线村落民宿可选里格（云南侧）或大落水；傍晚女儿国的摩梭篝火晚会很具风情。住宿提前订。</div>
+    </li>
+    <li><div class="day">DAY 4 · 泸沽湖深入 + 返西昌</div>
+      <div class="seg"><span>🚣 猪槽船游湖 · 草海走婚桥</span><span>🏔️ 格姆女神山 / 里色岛</span></div>
+      <div class="seg"><span>🚗 下午 泸沽湖→西昌 返程</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 猪槽船要看水性杨花（7-9月）；泸沽湖海拔约2700m、紫外线强注意防晒；返程山路预留时间、天黑前到西昌。</div>
+    </li>
+    <li><div class="day">DAY 5 · 卫星城 + 收尾返程</div>
+      <div class="seg"><span>🚀 西昌卫星发射中心参观（提前预约）</span><span>🍢 西昌火盆烧烤 收官</span></div>
+      <div class="seg"><span>🛍️ 带火把/凉山特产 返程</span></div>
+      <div class="tip2"><span class="arr">💡</span> 卫星发射中心开放日看真塔架最震撼；返程前吃顿地道的火盆烧烤给旅程添把火。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 特色景点详览（三版共用） -->
+<section class="panel" role="tabpanel">
+  <h2><span class="emo">🏞️</span>必去特色景点</h2>
+  <p class="sub">西昌的灵魂在"邛海之月"与"火把之焰"之间，五个招牌点值得为它们安排时间。</p>
+  <div class="spotlist">
+    <div class="spot">
+      <figure class="spimg"><picture>
+<source srcset="../../assets/images/xichang_qionghai.webp" type="image/webp">
+<img src="../../assets/images/xichang_qionghai.jpg" alt="西昌邛海 夕阳湖景与泸山">
+</picture><figcaption>配图：原创生成 · 无版权风险</figcaption></figure>
+      <div class="sptxt">
+        <div class="sphd"><h3>邛海 · 月城之湖</h3><span class="sptag" style="background:var(--lake);color:#fff">自然</span></div>
+        <p>四川第二大淡水湖，因"月出邛池水"得名月城。湖面四季澄澈，环湖湿地绿道全程免费，可骑行、徒步、划船。清晨湖上薄雾、傍晚倒映泸山，是西昌最静美的一张名片，配着湖边的火盆烧烤一起体验最地道。</p>
+        <div class="spgo">🎫 湿地公园免费　🚴 环湖骑行约30km · 租车约30-60元　🛶 游船约80-120元</div>
+        <div class="spsrc">数据来源：西昌文旅 · 2026年实测攻略</div>
+      </div>
+    </div>
+    <div class="spot">
+      <figure class="spimg"><picture>
+<source srcset="../../assets/images/xichang_huobajie.webp" type="image/webp">
+<img src="../../assets/images/xichang_huobajie.jpg" alt="凉山彝族火把节 万人火把狂欢" loading="lazy" decoding="async">
+</picture><figcaption>配图：原创生成 · 无版权风险</figcaption></figure>
+      <div class="sptxt">
+        <div class="sphd"><h3>火把节 · 彝族的东方狂欢夜</h3><span class="sptag" style="background:var(--coral);color:#fff">节庆</span></div>
+        <p>凉山彝族最盛大的传统节日（农历六月二十四），西昌是主会场。白天彝族选美、《朵洛荷》歌舞、赛马斗牛斗羊，夜晚点火仪式后万人举着火把绕城游街，火光映红整座城。被誉为"东方的狂欢节"，全中国最独特的节日体验。</p>
+        <div class="spgo">⏰ 约每年7–8月　🎪 主会场：西昌火把广场　🔥 参与免费，火把约10-30元</div>
+        <div class="spsrc">数据来源：凉山文旅 · 实测推荐</div>
+      </div>
+    </div>
+    <div class="spot">
+      <figure class="spimg"><picture>
+<source srcset="../../assets/images/xichang_luguhu.webp" type="image/webp">
+<img src="../../assets/images/xichang_luguhu.jpg" alt="泸沽湖 摩梭女儿国晨曦" loading="lazy" decoding="async">
+</picture><figcaption>配图：原创生成 · 无版权风险</figcaption></figure>
+      <div class="sptxt">
+        <div class="sphd"><h3>泸沽湖 · 摩梭女儿国</h3><span class="sptag" style="background:var(--lake);color:#fff">自然</span></div>
+        <p>跨云川两省的"东方女儿国"，摩梭人保留母系大家庭与走婚文化。湖水湛蓝如镜，格姆女神山倒映其间，猪槽船穿行草海，走婚桥横跨芦苇。晨雾中如诗如画，是凉山行值得专程前往的秘境。</p>
+        <div class="spgo">🎫 泸沽湖门票约100元　🚣 猪槽船约50-100元　🚗 西昌包车约5-6小时</div>
+        <div class="spsrc">数据来源：泸沽湖景区 · 云南/四川两侧</div>
+      </div>
+    </div>
+    <div class="spot">
+      <figure class="spimg"><picture>
+<source srcset="../../assets/images/xichang_satellite.webp" type="image/webp">
+<img src="../../assets/images/xichang_satellite.jpg" alt="西昌卫星发射中心 发射塔架" loading="lazy" decoding="async">
+</picture><figcaption>配图：原创生成 · 无版权风险</figcaption></figure>
+      <div class="sptxt">
+        <div class="sphd"><h3>西昌卫星发射中心 · 航天之城</h3><span class="sptag" style="background:var(--sea-deep);color:#fff">科技</span></div>
+        <p>中国三大卫星发射中心之一，多次执行北斗、嫦娥等重大发射。"嫦娥奔月地、中国航天城"就在西昌。可在开放日近距离参观发射塔架、长征火箭实物，感受航天科技与凉山热土的奇妙结合。</p>
+        <div class="spgo">🎫 开放日参观需提前实名预约　🚀 有发射任务日开放名额更紧俏</div>
+        <div class="spsrc">数据来源：西昌卫星发射中心参观预约</div>
+      </div>
+    </div>
+    <div class="spot">
+      <figure class="spimg"><picture>
+<source srcset="../../assets/images/xichang_food.webp" type="image/webp">
+<img src="../../assets/images/xichang_food.jpg" alt="西昌彝族火盆烧烤 彝餐" loading="lazy" decoding="async">
+</picture><figcaption>配图：原创生成 · 无版权风险</figcaption></figure>
+      <div class="sptxt">
+        <div class="sphd"><h3>火盆烧烤 · 火与肉的乡愁</h3><span class="sptag" style="background:var(--sun);color:#fff">美食</span></div>
+        <p>西昌"火盆烧烤"是当地灵魂美食：炭火烤架上滋滋冒油的坨坨肉、烤土豆、烤乳猪，配彝族蘸水。还有邛海醉虾、烤鱼、连渣捞、荞麦饼。一顿大快朵颐之后，才算真正到过西昌。</p>
+        <div class="spgo">🍢 火盆烧烤人均约60-100元　🥔 凉山土豆/西昌米粉街边也地道</div>
+        <div class="spsrc">数据来源：西昌本地美食 · 实测推荐</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 出行方式对比 -->
+<section class="panel" role="tabpanel">
+  <h2><span class="emo">🚗</span>出行方式对比·怎么选</h2>
+  <p class="sub">西昌是一座"火盆之城"，交通方式直接影响你的体验节奏；按目的地选。</p>
+  <div class="cmp">
+    <table>
+      <thead><tr><th style="width:140px">方式</th><th>适合人群</th><th>参考耗时/费用</th><th>小结</th></tr></thead>
+      <tbody>
+        <tr><th>✈️ 飞西昌青山机场</th><td>外省/远距离</td><td>1.5–3小时 / 视航线</td><td>落地即进市区，快；旺季/火把节机票紧张。</td></tr>
+        <tr><th>🚄 高铁（成都→西昌约3h）</th><td>省内/中转</td><td>约3小时 / 二等座约130元</td><td class="good">性价比高，成都中转最方便。</td></tr>
+        <tr><th>🚶+🚌 市区/邛海公交</th><td>市区1日游</td><td>邛海直达车约2–5元</td><td>邛海/火把广场都在城区圈，公交可达。</td></tr>
+        <tr><th>🚴 邛海环湖骑行</th><td>热爱户外</td><td>30km / 租车30-60元</td><td class="good">环湖最美体验，晴天必做。</td></tr>
+        <tr class="hd2"><td colspan="4">泸沽湖方向（往返各留一整天）</td></tr>
+        <tr><th>🚐 包车/拼车</th><td>3–4人结伴</td><td>约5–6小时 / 往返</td><td class="good">灵活、边走边停，人多划算。</td></tr>
+        <tr><th>🚌 长途班车</th><td>独行/省钱</td><td>约6–7小时</td><td>班次少、山路耗时，预算有限可选。</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">📍 <b>火把节出行提醒：</b>节庆期间主会场周边交通管制，傍晚起车辆限行，建议住在步行可达或公交直达的位置，夜晚靠双脚跟着火把队伍走。</div>
+</section>
+
+<!-- 美食清单 -->
+<section class="panel" role="tabpanel">
+  <h2><span class="emo">🍢</span>必吃美食</h2>
+  <p class="sub">西昌人的一天从"火"开始——火盆烧烤配邛海鱼虾，凉山味道浓烈直接。</p>
+  <div class="food">
+    <div class="row"><span class="no">1</span><div class="it"><b>火盆烧烤 / 坨坨肉</b><div class="w">炭火烤架现烤，坨坨肉肥瘦相间蘸彝香蘸水，西昌名片</div></div><span class="prx">约60-100元</span></div>
+    <div class="row"><span class="no">2</span><div class="it"><b>邛海醉虾 / 烤鱼</b><div class="w">湖鲜现捞，醉虾鲜甜、烤鱼配豆豉香麻辣</div></div><span class="prx">约40-80元</span></div>
+    <div class="row"><span class="no">3</span><div class="it"><b>彝族餐</b><div class="w">荞麦饼、酸菜汤、燕麦酒、连渣捞、腊肉荞粑，彝家待客满桌</div></div><span class="prx">人均约50-100元</span></div>
+    <div class="row"><span class="no">4</span><div class="it"><b>凉山土豆 & 西昌米粉</b><div class="w">高山土豆香糯，街坊米粉配红烧牛肉/酸菜</div></div><span class="prx">约8-20元</span></div>
+    <div class="row"><span class="no">5</span><div class="it"><b>蒸菜 & 邛海鱼头</b><div class="w">泸山脚下农家乐蒸菜，一鱼多吃是本地人的最爱</div></div><span class="prx">约40-70元</span></div>
+  </div>
+</section>
+
+<!-- 预算 -->
+<section class="panel" role="tabpanel">
+  <h2><span class="emo">💰</span>预算参考（人均）</h2>
+  <p class="sub">按 2 / 3 / 5 天三档整理，淡季常规价位，火把节旺季部分项目上浮。</p>
+  <div class="budget">
+    <table>
+      <thead><tr><th>项目</th><th class="sc">2天轻松</th><th class="sc">3天火把节</th><th class="sc">5天深度</th></tr></thead>
+      <tbody>
+        <tr><th>往返大交通</th><td class="sc">约300–600</td><td class="sc">约300–600</td><td class="sc">约300–600</td></tr>
+        <tr><th>住宿</th><td class="sc">约200–400</td><td class="sc">约500–1200（旺季暴涨）</td><td class="sc">约900–2000</td></tr>
+        <tr><th>门票/体验</th><td class="sc">约50–200</td><td class="sc">约80–300</td><td class="sc">约300–800（含泸沽湖/猪槽船）</td></tr>
+        <tr><th>餐饮</th><td class="sc">约150–300</td><td class="sc">约250–500</td><td class="sc">约450–900</td></tr>
+        <tr><th>当地交通</th><td class="sc">约80–150</td><td class="sc">约100–200</td><td class="sc">约400–900（泸沽湖包车）</td></tr>
+        <tr><th class="tot">合计</th><td class="sc tot">约700–1200</td><td class="sc tot">约1200–2200</td><td class="sc tot">约2500–4800</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">🔥 <b>火把节特别提示：</b>7–8月火把节期间西昌住宿价格通常翻倍甚至更高，机票也紧张，务必<b>提前一个月以上</b>预订，并优先选步行可达主会场的位置。</div>
+</section>
+
+<!-- 避坑 -->
+<section class="panel" role="tabpanel">
+  <h2><span class="emo">🛡️</span>避坑 & 实用贴士</h2>
+  <ul class="tips">
+    <li><b>🎫 火把节抢先订：</b>主会场火把广场周边住宿与机票临期几乎订不到，行程定下立刻下单。</li>
+    <li><b>🚀 卫星中心预约：</b>只在开放日接待、实名预约限量，出发前先确认当天是否开放，约不上改游博物馆。</li>
+    <li><b>🌊 泸沽湖海拔：</b>约2700m，轻缓起身别剧烈运动，紫外线极强需 SPF50+ 防晒+墨镜。</li>
+    <li><b>🧯 火把安全：</b>万人点火时很拥挤，穿防滑鞋、别穿宽松易燃衣物，火堆保持距离、看管好手机钱包。</li>
+    <li><b>🏳️ 尊重民族习俗：</b>彝区请对火把、毕摩、图腾等礼仪保持尊重，拍照前先征求同意。</li>
+    <li><b>🌦️ 昼夜温差大：</b>西昌海拔约1500m、日照强，"早穿棉袄午穿纱"，备件薄外套随身。</li>
+    <li><b>🚗 山路驾驶：</b>往返泸沽湖多山路弯多，新手慎自驾；包车选正规平台并确认司机资质。</li>
+  </ul>
+</section>
+
+<footer>
+  <div>MADE WITH CARE BY <b>MrdT</b> · 旅行小册子 · 西昌篇</div>
+  <div>火把节时间以当年凉山文旅公告为准 · 价格仅供参考</div>
+  <a class="back" href="../../index.html">← 返回小册子</a>
+</footer>
+</div>
+
+<script>
+function show(id){
+  var tabs=document.querySelectorAll('.switch button');
+  tabs.forEach(function(t){var on=t.getAttribute('data-plan')===id;t.classList.toggle('on',on);t.setAttribute('aria-selected',on?'true':'false');});
+  document.querySelectorAll('section.panel[id^="plan"]').forEach(function(p){ p.hidden=(p.id!==id); });
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+document.querySelectorAll('.switch button').forEach(function(b){b.addEventListener('click',function(){show(this.getAttribute('data-plan'));});});
+</script>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

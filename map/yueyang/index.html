@@ -1,0 +1,696 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>岳阳 1 日 · A5 卡片手册</title>
+<meta name="description" content="岳阳一日游深度指南：岳阳楼、洞庭湖、岳阳中华大熊猫苑、汴河街、飘尾日落、岳阳烧烤，含岳阳飘尾与岳阳汴河街，附交通住宿与避坑。">
+<meta name="keywords" content="岳阳旅游,岳阳一日游,岳阳楼,洞庭湖,飘尾,岳阳中华大熊猫苑,岳阳美食">
+<style>
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Roboto,sans-serif;
+    color:#333a44;
+    background:linear-gradient(160deg,#fff6ef 0%,#ffeffb 45%,#f0f7ff 100%);
+    line-height:1.55;
+    overflow-wrap:break-word;
+    min-height:100vh;
+  }
+  img{max-width:100%;height:auto;display:block;}
+
+  /* ===== 顶部标题 ===== */
+  header.masthead{
+    text-align:center;
+    padding:42px 20px 14px;
+    position:relative;
+  }
+  header.masthead .title-emoji{font-size:42px;line-height:1;margin-bottom:8px;}
+  header.masthead h1{
+    margin:0 0 6px;
+    font-size:clamp(1.5rem,4vw,2rem);
+    font-weight:800;
+    letter-spacing:.5px;
+    background:linear-gradient(90deg,#ff8a5c,#f06ba4,#5aa0e8);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  header.masthead p{color:#7c8291;margin:0;font-size:.95rem;}
+
+  /* ===== 卡片册舞台 ===== */
+  .deck-wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:8px 18px 40px;
+  }
+  .chips{
+    display:flex;gap:8px;align-items:center;
+    margin:14px auto 26px;max-width:940px;
+    overflow-x:auto;padding:6px 4px 10px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+  }
+  .chips::-webkit-scrollbar{height:6px;}
+  .chips::-webkit-scrollbar-thumb{background:#e8c9bf;border-radius:99px;}
+  .chips button{
+    font:inherit;font-size:.85rem;font-weight:600;white-space:nowrap;
+    border:none;cursor:pointer;flex:none;
+    padding:8px 15px;border-radius:999px;
+    background:#fff;color:#5b6372;
+    box-shadow:0 4px 14px rgba(160,110,70,.10);
+    transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+  }
+  .chips button:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(160,110,70,.16);}
+  .chips button.active{background:#e8815a;color:#fff;}
+  .chips .grp-label{
+    flex:none;font-size:.72rem;font-weight:800;letter-spacing:.08em;color:#c0a898;
+    padding:0 2px;
+  }
+  .deck{
+    display:flex;flex-wrap:wrap;gap:22px;
+    justify-content:center;align-items:flex-start;
+    scroll-behavior:smooth;
+  }
+
+  /* ===== A5 卡片本体 ===== */
+  .card{
+    width:148mm;height:210mm;
+    background:#fff;border-radius:26px;
+    box-shadow:0 18px 44px rgba(140,90,60,.16),0 3px 10px rgba(140,90,60,.08);
+    overflow:hidden;position:relative;
+    display:flex;flex-direction:column;
+    border:1px solid rgba(255,255,255,.7);
+    scroll-margin-top:20px;
+  }
+  .card .topbar{flex:none;height:7px;background:linear-gradient(90deg,var(--tc1),var(--tc2));}
+  .card header.c{
+    padding:15px 20px 5px;display:flex;align-items:center;gap:12px;
+  }
+  .card header.c .ico{
+    flex:none;width:44px;height:44px;border-radius:14px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:24px;background:var(--tc-soft);
+    box-shadow:0 4px 10px rgba(0,0,0,.06);
+  }
+  .card header.c h2{margin:0;font-size:1.16rem;font-weight:800;line-height:1.25;color:var(--tc-strong);}
+  .card header.c .en{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#b3bac6;margin-top:2px;}
+  .card .body{flex:1;min-height:0;padding:8px 18px 16px;overflow:hidden;display:flex;flex-direction:column;}
+  .card .page-num{position:absolute;bottom:12px;right:16px;font-size:.72rem;font-weight:700;color:#c2c8d4;}
+
+  .pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.66rem;font-weight:700;white-space:nowrap;}
+  .pill.must{background:#ffe9e4;color:#e5533d;}
+  .pill.flex{background:#e4f4e8;color:#2f9e63;}
+  .pill.day{background:#eef0ff;color:#6f6fe8;}
+
+  /* 封面卡片 */
+  .card.cover{
+    background:
+      linear-gradient(180deg,rgba(40,20,40,.18) 0%,rgba(40,20,40,.08) 40%,rgba(30,15,35,.72) 96%),
+      url('../../assets/images/yy_cover.jpg') center/cover no-repeat #1c1220;
+    /* WebP 优先，不支持则回落上面的 JPEG（渐进增强） */
+    background-image:
+        linear-gradient(180deg,rgba(40,20,40,.18) 0%,rgba(40,20,40,.08) 40%,rgba(30,15,35,.72) 96%),
+        image-set(url('../../assets/images/yy_cover.webp') type('image/webp'), url('../../assets/images/yy_cover.jpg') type('image/jpeg'));
+
+  }
+  .card.cover .overlay{color:#fff;flex:1;display:flex;flex-direction:column;padding:24px 22px;justify-content:flex-end;}
+  .card.cover .kick{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:#ffdb8a;font-weight:700;margin-bottom:10px;}
+  .card.cover h2{font-size:2rem;margin:0 0 10px;line-height:1.14;font-weight:800;}
+  .card.cover .sub{font-size:.94rem;opacity:.95;margin:0 0 20px;max-width:42ch;}
+  .card.cover .meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;}
+  .card.cover .meta span{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);padding:5px 11px;border-radius:999px;font-size:.8rem;}
+  .cover-deco{position:absolute;top:22px;left:22px;font-size:30px;line-height:1;filter:drop-shadow(0 3px 6px rgba(0,0,0,.3));}
+
+  /* ===== 动线总览 ===== */
+  .timeline{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;}
+  .timeline li{display:flex;gap:10px;align-items:flex-start;background:#fef8f5;border:1px solid #f6e7de;border-radius:13px;padding:8px 11px;}
+  .timeline li .d{flex:none;width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,#f0926f,#e56a3a);color:#fff;font-weight:800;font-size:.78rem;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.05;}
+  .timeline li .d small{font-size:.54rem;font-weight:600;opacity:.9;}
+  .timeline li .tt{flex:1;min-width:0;}
+  .timeline li .tt b{font-size:.85rem;color:#3d3f52;}
+  .timeline li .tt span{display:block;font-size:.76rem;color:#82889a;margin-top:1px;}
+  .timeline .tag-row{margin-top:2px;}
+
+  /* ===== 逐段行程卡片 ===== */
+  .day-head{
+    display:flex;align-items:center;gap:11px;
+    background:linear-gradient(90deg,var(--tc-soft),#fff);
+    border-left:5px solid var(--tc-strong);
+    border-radius:13px;padding:9px 12px;margin-bottom:9px;
+  }
+  .day-head .dn{
+    flex:none;width:44px;height:44px;border-radius:13px;
+    background:linear-gradient(135deg,var(--tc1),var(--tc2));color:#fff;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    line-height:1.02;font-weight:800;font-size:.82rem;
+  }
+  .day-head .dn small{font-size:.54rem;font-weight:600;opacity:.92;}
+  .day-head .dh{flex:1;min-width:0;}
+  .day-head .dh b{font-size:.98rem;color:var(--tc-strong);display:block;line-height:1.2;}
+  .day-head .dh span{font-size:.74rem;color:#82889a;}
+  .day-route{font-size:.78rem;color:#6b7280;margin:-2px 0 8px;background:#fef8f5;border:1px dashed #f0d8c8;border-radius:10px;padding:7px 11px;}
+  .day-route b{color:#3d3f52;}
+  .day-blocks{display:flex;flex-direction:column;gap:8px;}
+  .dset{border-radius:13px;border:1px solid #ececf1;background:#fbfbfd;padding:8px 11px;}
+  .dset .dt{font-size:.72rem;font-weight:800;color:#c0673a;letter-spacing:.04em;margin-bottom:4px;}
+  .dset .dset-r{font-size:.76rem;color:#5f6674;margin:3px 0;}
+  .spot{display:flex;gap:8px;align-items:flex-start;margin:5px 0;}
+  .spot .p{flex:none;width:19px;height:19px;border-radius:50%;text-align:center;line-height:19px;font-size:.7rem;color:#fff;background:#c9a06f;margin-top:1px;}
+  .spot .p.m{background:#e5533d;}
+  .spot .p.x{background:#2f9e63;}
+  .spot .nm{font-size:.79rem;font-weight:600;color:#3d3f52;}
+  .spot .nm span{font-size:.68rem;color:#8a91a0;font-weight:500;display:block;margin-top:1px;}
+  .day-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;}
+  .day-thumbs .th{border-radius:12px;overflow:hidden;border:1px solid #ececf1;background:#fff;}
+  .day-thumbs .th .ph{aspect-ratio:16/9;overflow:hidden;background:#eef0f4;}
+  .day-thumbs .th .ph img{width:100%;height:100%;object-fit:cover;}
+  .day-thumbs .th figcaption{padding:5px 8px 7px;font-size:.68rem;color:#8a91a0;}
+  .day-tip{margin-top:8px;font-size:.74rem;background:#fff3dc;border:1px solid #f0dfae;color:#8a6210;border-radius:10px;padding:7px 11px;}
+
+  /* ===== 注意事项 / 贴士 ===== */
+  .notes{display:flex;flex-direction:column;gap:8px;}
+  .note{display:flex;gap:9px;align-items:flex-start;border-radius:13px;padding:9px 11px;border:1px solid #eee;background:#fbfbfd;}
+  .note .ni{flex:none;font-size:19px;width:30px;height:30px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.06);}
+  .note .nt{flex:1;min-width:0;}
+  .note .nt b{font-size:.84rem;display:block;color:#3d3f52;}
+  .note .nt p,.note .nt ul{margin:.2rem 0 0;font-size:.76rem;color:#6b7280;}
+  .note .nt li{margin-top:2px;}
+
+  /* ===== 热门景点 / 美食网格 ===== */
+  .spots{display:grid;grid-template-columns:1fr 1fr;gap:9px;}
+  .spot-card{border-radius:13px;overflow:hidden;border:1px solid #ececf1;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.05);}
+  .spot-card .ph{aspect-ratio:16/10;overflow:hidden;background:#eef0f4;}
+  .spot-card .ph img{width:100%;height:100%;object-fit:cover;}
+  .spot-card .st{padding:6px 9px 8px;}
+  .spot-card .st b{font-size:.76rem;color:#3d3f52;display:block;line-height:1.3;}
+  .spot-card .st span{font-size:.68rem;color:#8a91a0;display:block;margin-top:1px;}
+
+  .foot-note{text-align:center;color:#8b909c;font-size:.8rem;padding:6px 18px 44px;max-width:720px;margin:0 auto;}
+  .foot-note a{color:#e8815a;text-decoration:none;}
+
+  /* ===== 定制纪念页 ===== */
+  .end-mark{display:flex;flex-direction:column;align-items:center;gap:6px;}
+  .end-g{width:76px;height:76px;border-radius:22px;background:linear-gradient(135deg,var(--tc1),var(--tc2));box-shadow:0 8px 22px rgba(212,120,72,.28);margin-bottom:6px;display:flex;align-items:center;justify-content:center;font-size:36px;}
+  .end-s{font-size:.98rem;color:#e8815a;font-weight:600;margin:10px 0 0;}
+  .end-h2{margin:4px 0 0;font-size:2rem;color:#3d3f52;letter-spacing:.5px;}
+  .end-t{margin:10px 0 0;font-size:.92rem;color:#8a91a0;}
+
+  /* ===== 打印：每卡独立一页 A5 ===== */
+  @page{size:A5;margin:0;}
+  @media print{
+    body{background:#fff;}
+    header.masthead,.chips{display:none;}
+    .deck{display:block;}
+    .card{
+      width:148mm;height:210mm;border-radius:0;box-shadow:none;
+      page-break-after:always;margin:0;border:none;
+    }
+    .card:last-child{page-break-after:auto;}
+  }
+.camtab{position:fixed;top:110px;left:14px;right:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/yueyang/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="岳阳 1 日 · A5 卡片手册">
+    <meta property="og:description" content="岳阳一日游深度指南：岳阳楼、洞庭湖、岳阳中华大熊猫苑、汴河街、飘尾日落、岳阳烧烤，含岳阳飘尾与岳阳汴河街，附交通住宿与避坑。">
+    <meta property="og:url" content="https://worldstip.com/map/yueyang/">
+    <meta property="og:image" content="https://worldstip.com/assets/images/yy_panda.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="岳阳 1 日 · A5 卡片手册">
+    <meta name="twitter:description" content="岳阳一日游深度指南：岳阳楼、洞庭湖、岳阳中华大熊猫苑、汴河街、飘尾日落、岳阳烧烤，含岳阳飘尾与岳阳汴河街，附交通住宿与避坑。">
+    <meta name="twitter:image" content="https://worldstip.com/assets/images/yy_panda.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "岳阳 1 日 · A5 卡片手册",
+      "url": "https://worldstip.com/map/yueyang/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/yueyang/",
+  "name": "岳阳 1 日 · A5 卡片手册",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="title-emoji">🏯🐼🌅🍢</div>
+  <h1>岳阳 · 1 日旅程 A5 卡片手册</h1>
+  <p>2026 随时出发 ｜ 洞庭天下水 · 岳阳天下楼，一册在手边走边看</p>
+</header>
+
+<div class="deck-wrap">
+  <nav class="chips" aria-label="卡片目录" style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;">
+    <button data-target="c-cover" class="active">📕 封面</button>
+    <span class="grp-label">── 1天动线 ──</span>
+    <button data-target="c-overview">🗺️ 总览</button>
+    <button data-target="c-m">🐼 上午</button>
+    <button data-target="c-a">🏯 午后</button>
+    <button data-target="c-e">🌅 傍晚</button>
+    <button data-target="c-n">🌃 夜晚</button>
+    <span class="grp-label">── 2-3日扩展 ──</span>
+    <button data-target="c-camp">⛺ 江湖露营</button>
+    <button data-target="c-mufu">⛰️ 平江山岳</button>
+    <span class="grp-label">── 更多 ──</span>
+    <button data-target="c-spot">🏞️ 景点补充</button>
+    <button data-target="c-food">🍽️ 美食</button>
+    <button data-target="c-tip">🧭 交通贴士</button>
+  </nav>
+
+  <div class="deck" id="deck">
+
+    <!-- 1 · 封面 -->
+    <article class="card cover" id="c-cover" style="--tc1:#f0926f;--tc2:#5aa0e8;--tc-strong:#e56a3a;--tc-soft:#ffece4;">
+      <span class="cover-deco" aria-hidden="true">🏯</span>
+      <div class="overlay">
+        <p class="kick">Yueyang · 洞庭名楼</p>
+        <h2>1–3 日旅程<br>路书手册</h2>
+        <p class="sub">一天串名楼与国宝，再多几日，可赴江豚湾湿地露营、登平江幕阜山看云海日出——岳阳江湖与山岳，一册玩尽。</p>
+        <div class="meta"><span>📅 1–3 日</span><span>🐼 熊猫苑</span><span>🏯 岳阳楼</span><span>🌅 飘尾日落</span><span>⛺ 江湖露营</span><span>⛰️ 幕阜山</span></div>
+        <div class="meta" style="margin-bottom:0"><span>🔖 红标必去 · 绿标弹性</span></div>
+      </div>
+      <span class="page-num" style="color:rgba(255,255,255,.7)">1 / 11</span>
+    </article>
+
+    <!-- 2 · 动线总览 -->
+    <article class="card" id="c-overview" style="--tc1:#f0926f;--tc2:#f0b35a;--tc-strong:#d9773f;--tc-soft:#fff0e6;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🗺️</div>
+        <div><h2>1 日旅程 · 动线总览</h2><div class="en">One-Day Route Map</div></div>
+      </header>
+      <div class="body">
+        <ul class="timeline">
+          <li><span class="d"><small>上午</small>🐼</span><div class="tt"><b>岳阳中华大熊猫苑看国宝</b><span>华中最大熊猫基地 · 10 只滚滚（8:30 开园）</span></div></li>
+          <li><span class="d"><small>中午</small>🍜</span><div class="tt"><b>汴河街逛吃</b><span>仿古美食街 · 茶颜悦色 · 顶糕 · 岳阳烧烤</span></div></li>
+          <li><span class="d"><small>午后</small>🏯</span><div class="tt"><b>岳阳楼登楼</b><span>江南三大名楼 · 背《岳阳楼记》可免票</span></div></li>
+          <li><span class="d"><small>傍晚</small>🌅</span><div class="tt"><b>飘尾追绝美日落</b><span>「湖南阿勒泰」· 芦苇灯塔浮桥 · 江豚</span></div></li>
+          <li><span class="d"><small>夜晚</small>🍢</span><div class="tt"><b>炮台山夜市烧烤收尾</b><span>央视认证「南方烧烤界标杆」</span></div></li>
+        </ul>
+        <div class="day-tip">💡 一天串完名楼 + 熊猫 + 网红日落，节奏松弛不赶路；想加君山岛/圣安寺，看「景点补充」卡。</div>
+      </div>
+      <span class="page-num">2 / 11</span>
+    </article>
+
+    <!-- 3 · 上午：熊猫苑 -->
+    <article class="card" id="c-m" style="--tc1:#5ea888;--tc2:#4a9e5a;--tc-strong:#2f8f63;--tc-soft:#e7f5ee;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🐼</div>
+        <div><h2>上午 · 熊猫苑看国宝</h2><div class="en">08:30 · 岳阳中华大熊猫苑</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>上午</small>🐼</span>
+          <div class="dh"><b>岳阳中华大熊猫苑</b><span>8:30–11:00 · 南湖龙山</span></div>
+        </div>
+        <p class="day-route">华中首座大型熊猫基地，占地 367 亩、入驻 <b>10 只</b>国宝，竹林山水间的生态园区。<b>建议 8:30 一开园就进</b>，熊猫最活跃。</p>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">🐾 亮点</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">围观滚滚卖萌<span>9 个圈舍遍布景区，双胞胎深深·漫漫、顶流「皓月」都在这</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">熊猫科普馆 &amp; 餐厅\冰雪馆<span>看科普涨知识，园区内用餐/买熊猫周边</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🎫 门票 · 交通</div>
+            <div class="dset-r"><b>门票</b> 约 ¥60–70 起（熊猫+两栖动物城 ¥78，含往返摆渡车）；儿童1.2m以下·老人65+免票。</div>
+            <div class="dset-r"><b>交通</b> 市区乘 59/18/3/60/7 路到赶山路口站，步行至游客中心换乘摆渡车。</div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/yy_panda.webp" type="image/webp">
+<img src="../../assets/images/yy_panda.jpg" alt="岳阳中华大熊猫苑大熊猫" loading="lazy" width="800" height="600">
+</picture></div><figcaption>竹林里的国宝</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 尽量早上前往，熊猫午后多睡午觉；如遇熊猫懒洋洋别失望，这是常态～</div>
+      </div>
+      <span class="page-num">3 / 11</span>
+    </article>
+
+    <!-- 4 · 午后：岳阳楼 -->
+    <article class="card" id="c-a" style="--tc1:#d9a05a;--tc2:#c96b3a;--tc-strong:#b8653a;--tc-soft:#fdf3e4;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🏯</div>
+        <div><h2>午后 · 岳阳楼登楼</h2><div class="en">14:00 · 江南三大名楼</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>午后</small>🏯</span>
+          <div class="dh"><b>岳阳楼</b><span>矗立洞庭湖畔，誉满天下的名楼</span></div>
+        </div>
+        <p class="day-route">凭栏远眺「气蒸云梦泽」的八百里洞庭，登三楼看范仲淹笔下的山水。<b>5A 景区</b>，江南三大名楼中唯一清代原构。</p>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">🐉 必看</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">岳阳楼主楼登顶<span>纯木盔顶建筑，三楼俯瞰洞庭君山，二楼有清代《岳阳楼记》雕屏</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">五朝楼观 · 小乔墓 · 三醉亭<span>楼区古建群，三国遗韵与吕洞宾传说齐飞</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🎫 门票 · 贴士</div>
+            <div class="dset-r"><b>门票</b> 约 ¥70 / 学生 ¥35；景区入口旁<b>背记亭</b>背出《岳阳楼记》整篇可免票。</div>
+            <div class="dset-r"><b>时间</b> 约 7:30–18:00，夜场另开；建议下午 2–4 点入园看白天实景。</div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/yy_tower.webp" type="image/webp">
+<img src="../../assets/images/yy_tower.jpg" alt="岳阳楼" loading="lazy" width="800" height="600">
+</picture></div><figcaption>岳阳楼 · 洞庭名楼</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 岳阳楼+汴河街+巴陵广场同片区，逛完顺路走到巴陵广场看后羿射巴蛇地标。</div>
+      </div>
+      <span class="page-num">4 / 11</span>
+    </article>
+
+    <!-- 5 · 傍晚：飘尾日落 -->
+    <article class="card" id="c-e" style="--tc1:#e8738a;--tc2:#7c6fe8;--tc-strong:#d4526b;--tc-soft:#ffe8ee;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🌅</div>
+        <div><h2>傍晚 · 飘尾看日落</h2><div class="en">17:00 · 湖南阿勒泰</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>傍晚</small>🌅</span>
+          <div class="dh"><b>飘尾（飘尾港）</b><span>全天最期待的收官时刻</span></div>
+        </div>
+        <p class="day-route">洞庭湖东岸向湖延伸 20 多公里的湖床湿地，落日落向远岸、霞光铺满湖面，被誉为<b>「岳阳最美日落」「湖南的阿勒泰」</b>。</p>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">📸 看点</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">浮桥 / 灯塔 / 芦苇夕阳<span>栈道弯进湖里，配灯塔芦苇剪影，出片机位</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">偶遇江豚 · 湖心扁山<span>芦苇岸露营野炊、寻找跃出水面的一线江豚</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🚌 怎么去 · 时间</div>
+            <div class="dset-r"><b>交通</b> 市区坐 <b>21路/游21路</b> 到飘尾公交站，沿主路走到湖边；自驾更方便。</div>
+            <div class="dset-r"><b>最佳时间</b> 春夏约 18:30 后、秋冬约 17:00 后；日落最盛在傍晚一段时间。</div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/yy_sunset.webp" type="image/webp">
+<img src="../../assets/images/yy_sunset.jpg" alt="岳阳飘尾日落" loading="lazy" width="800" height="600">
+</picture></div><figcaption>飘尾 · 橘色洞庭</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 选晴天前往、提前看好日落时刻；带天幕/野餐可顺便芦苇岸露营。</div>
+      </div>
+      <span class="page-num">5 / 11</span>
+    </article>
+
+    <!-- 5b · 扩展：江湖露营 · 微笑绿洲 -->
+    <article class="card" id="c-camp" style="--tc1:#2f8f8f;--tc2:#3a89c9;--tc-strong:#23706e;--tc-soft:#e5f4f4;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">⛺</div>
+        <div><h2>扩展 · 江湖露营</h2><div class="en">Day 2 · 东洞庭 · 江豚湾</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>第2日</small>⛺</span>
+          <div class="dh"><b>微笑绿洲 · 江豚湾露营地</b><span>君山 · 长江边 · 候鸟与江豚</span></div>
+        </div>
+        <p class="day-route">从市区跨洞庭湖大桥到<b>君山</b>，一天能串起<b>江豚湾微笑绿洲露营 → 东洞庭湖观鸟 → 麋鹿苑 → 洞庭湖博物馆</b>，把「江豚的微笑、麋鹿的倩影、候鸟的欢歌」一次看全。</p>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">🏕️ 露营 &amp; 生态</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">微笑绿洲湿地露营基地<span>全国首个江豚IP露营基地，天幕/BBQ/篝火，长江边过夜看星空</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">东洞庭湖观鸟 · 麋鹿苑<span>君山采桑湖观鸟、洞庭湖麋鹿苑看野生麋鹿群</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">洞庭湖博物馆 · 江豚湾生态体育公园<span>5D《洞庭幻境》+最美江湖岸线骑行/徒步</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🚌 行程建议</div>
+            <div class="dset-r"><b>路线</b> 早上月亮湾/江豚湾骑行 → 下午东洞庭湖博物馆或麋鹿苑 → 傍晚微笑绿洲扎营，看长江日落。</div>
+            <div class="dset-r"><b>提示</b> 露营需提前预约基地营位；春季全马赛道、夏季荷花、冬季候鸟，四季各有看头。</div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/yy_camp.webp" type="image/webp">
+<img src="../../assets/images/yy_camp.jpg" alt="岳阳江豚湾微笑绿洲露营" loading="lazy" width="1400" height="787">
+</picture></div><figcaption>江豚湾 · 湿地露营</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 想看江豚去林阁老巡护观测点，清晨/傍晚跃出水面概率最高；芦苇季摄影超美。</div>
+      </div>
+      <span class="page-num">6 / 11</span>
+    </article>
+
+    <!-- 5c · 扩展：平江山岳 · 天岳幕阜山 -->
+    <article class="card" id="c-mufu" style="--tc1:#5a7a3a;--tc2:#4a9e5a;--tc-strong:#3f6a2c;--tc-soft:#edf5e4;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">⛰️</div>
+        <div><h2>扩展 · 平江山岳</h2><div class="en">Day 3 · 天岳幕阜山</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>第3日</small>⛰️</span>
+          <div class="dh"><b>天岳幕阜山 + 石牛寨</b><span>平江 · 湘鄂赣三省交界</span></div>
+        </div>
+        <p class="day-route">岳阳南下<b>平江县</b>，藏着「五岳之外有天岳」的<b>天岳幕阜山</b>（道教第二十五洞天、1596m 三省第一峰）与<b>石牛寨</b>白色丹霞，高山避暑、云海日出、湖南海拔最高露营基地都在这。</p>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">🏔️ 山岳看点</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">天岳幕阜山 · 一峰尖 / 老龙沟<span>索道上山，云海日出、沸沙池、溯溪探险；97% 森林覆盖率，夏均温约 21℃</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">天岳云端露营基地<span>海拔 1596m 湖南最高露营基地，星空帐篷看星河日出</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">石牛寨 · 白玉丹霞<span>国内规模最大白玉丹霞群，玻璃桥/悬崖栈道，通体灰白奇山</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🚌 怎么去</div>
+            <div class="dset-r"><b>交通</b> 岳阳东乘高铁到平江/自驾约 1.5–2h 到南江镇；幕阜山与石牛寨相隔约 30–40 分钟车程，可串成一线。</div>
+            <div class="dset-r"><b>小贴士</b> 山上海拔高、早晚温差大带外套；住山下民宿/山顶露营看日出。</div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/yy_mufu.webp" type="image/webp">
+<img src="../../assets/images/yy_mufu.jpg" alt="平江天岳幕阜山云海" loading="lazy" width="1400" height="787">
+</picture></div><figcaption>天岳幕阜山 · 云海仙山</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 清晨山顶云海/日出最震撼，建议前一晚住山脚，次日索道登顶；秋季银杏金黄。</div>
+      </div>
+      <span class="page-num">7 / 11</span>
+    </article>
+
+    <!-- 6 · 夜晚：汴河街 & 烧烤 -->
+    <article class="card" id="c-n" style="--tc1:#e8815a;--tc2:#f0b35a;--tc-strong:#d65f2f;--tc-soft:#ffefe7;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🌃</div>
+        <div><h2>夜晚 · 汴河街 &amp; 烧烤</h2><div class="en">19:30 · 烟火岳阳</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>夜晚</small>🌃</span>
+          <div class="dh"><b>汴河街 + 炮台山夜市</b><span>老街夜市与烧烤的烟火夜</span></div>
+        </div>
+        <p class="day-route">看完日落回市区，挑一条美食街把夜色吃到撑。<b>汴河街</b>仿明清古街，<b>炮台山美食街</b>是吃烧烤的首选。</p>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">🍢 夜食推荐</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">岳阳烧烤 · 口味虾 · 虾尾<span>炮台山美食街，被央视认证「南方烧烤界标杆」</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">汴河街小吃<span>顶糕 · 平江香干 · 兰花萝卜 · 遇见的本地小铺</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🌉 顺路夜景</div>
+            <div class="dset-r"><b>洞庭南路历史街区</b>沿湖老街、慈氏塔、老码头；<b>巴陵广场</b>傍晚看洞庭湖华灯初上。</div>
+            <div class="dset-r">可选夜演：岳阳楼《今上岳阳楼》／洞庭湖博物馆《洞庭幻境》（票价场次以当天为准）。</div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/yy_bianhe.webp" type="image/webp">
+<img src="../../assets/images/yy_bianhe.jpg" alt="岳阳汴河街" loading="lazy" width="800" height="600">
+</picture></div><figcaption>汴河街 · 红灯笼古街</figcaption></figure>
+          <figure class="th"><div class="ph"><picture>
+<source srcset="../../assets/images/yy_food.webp" type="image/webp">
+<img src="../../assets/images/yy_food.jpg" alt="岳阳美食" loading="lazy" width="800" height="600">
+</picture></div><figcaption>洞庭湖鲜 · 岳阳烧烤</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 想轻松点，也可看完夕阳直接回市区，汴河街和炮台山选一处即可。</div>
+      </div>
+      <span class="page-num">8 / 11</span>
+    </article>
+
+    <!-- 7 · 景点补充 -->
+    <article class="card" id="c-spot" style="--tc1:#5aa0e8;--tc2:#3a89c9;--tc-strong:#3981c9;--tc-soft:#e6f2fc;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🏞️</div>
+        <div><h2>岳阳 · 景点补充</h2><div class="en">More to Explore</div></div>
+      </header>
+      <div class="body">
+        <div class="spots">
+          <div class="spot-card"><div class="st"><b>洞庭湖游船 / 南湖</b><span>泛舟湖上，近距离赏「白银盘里一青螺」山水</span></div></div>
+          <div class="spot-card"><div class="st"><b>君山岛 · 5A</b><span>湖中「爱情岛」，二妃墓·柳毅井·君山银针茶园</span></div></div>
+          <div class="spot-card"><div class="st"><b>圣安寺</b><span>岳阳标志性古寺，登塔俯瞰洞庭与全城</span></div></div>
+          <div class="spot-card"><div class="st"><b>洞庭南路历史街区</b><span>千年古街 + 老码头 + 慈氏塔，citywalk 绝佳</span></div></div>
+          <div class="spot-card"><div class="st"><b>岳阳博物馆</b><span>免费，了解岳阳历史与民俗（周一闭馆）</span></div></div>
+          <div class="spot-card"><div class="st"><b>洞庭湖博物馆</b><span>5D 生态剧场《洞庭幻境》，沉浸式看荷境渔村</span></div></div>
+          <div class="spot-card"><div class="st"><b>☀️ 夏季东洞庭湖 · 湿地</b><span>6–9 月绣水荷塘连片、芦苇青纱帐，乘船入湖腹地看「接天莲叶」，鱼跃鸟翔、渔帆点点，是东部湖区的夏日招牌风景</span></div></div>
+        </div>
+        <div class="day-tip">💡 时间充裕可加：君山岛半天、洞庭湖小镇亲子星球乐园、金鹗书院非遗体验。</div>
+      </div>
+      <span class="page-num">9 / 11</span>
+    </article>
+
+    <!-- 8 · 美食 -->
+    <article class="card" id="c-food" style="--tc1:#e5a24a;--tc2:#e57a3a;--tc-strong:#c97f2f;--tc-soft:#fdf5e4;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🍽️</div>
+        <div><h2>岳阳 · 吃什么</h2><div class="en">Local Flavors</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><div class="ni">🐟</div><div class="nt"><b>洞庭湖鲜</b><p>翘嘴鱼、银鱼、清蒸江鲢、铁山翘嘴——最鲜的湖里味道。</p></div></div>
+          <div class="note"><div class="ni">🍢</div><div class="nt"><b>岳阳烧烤</b><p>炮台山美食街，炭火炙烤，被央视认证「南方烧烤界标杆」。</p></div></div>
+          <div class="note"><div class="ni">🦐</div><div class="nt"><b>口味虾 · 唆螺 · 虾尾</b><p>夜市宵夜三件套，麻辣鲜香停不下来。</p></div></div>
+          <div class="note"><div class="ni">🥣</div><div class="nt"><b>特色小吃</b><p>顶糕、平江香干、兰花萝卜、糖油粑粑、猪脚粉/米粉。</p></div></div>
+          <div class="note"><div class="ni">🥤</div><div class="nt"><b>茶颜悦色 · 冰粉</b><p>老街/洞庭南路来一杯，飘尾日落配冰粉更惬意。</p></div></div>
+          <div class="note"><div class="ni">🍵</div><div class="nt"><b>君山银针</b><p>中国十大名茶之一，出自洞庭湖君山。「金镶玉」之誉。</p></div></div>
+        </div>
+        <div class="day-tip">💡 吃烧烤、口味虾赶夜市高峰前到；银鱼/翘嘴鱼选正规湖鲜餐厅更放心。</div>
+      </div>
+      <span class="page-num">10 / 11</span>
+    </article>
+
+    <!-- 9 · 交通贴士 -->
+    <article class="card" id="c-tip" style="--tc1:#7c9ee8;--tc2:#6f6fe8;--tc-strong:#5a63d6;--tc-soft:#eef0ff;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🧭</div>
+        <div><h2>交通 · 贴士</h2><div class="en">Getting Around</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><div class="ni">🚄</div><div class="nt"><b>怎么到岳阳</b><ul><li>高铁：岳阳东站，长沙出发约 30–40 分钟，武汉/南昌约 1–1.5h。</li><li>普速/自驾经京港澳、许广高速，靠近长沙顺路一日可当天往返。</li></ul></div></div>
+          <div class="note"><div class="ni">🚌</div><div class="nt"><b>市内交通</b><ul><li>熊猫苑：59/18/3/60/7 路到赶山路口站。</li><li>飘尾：21路/游21路到飘尾站。</li><li>岳阳楼—汴河街—巴陵广场同片区步行可达。</li></ul></div></div>
+          <div class="note"><div class="ni">🎫</div><div class="nt"><b>门票预约</b><ul><li>岳阳楼约 ¥70、学生 ¥35，背《岳阳楼记》可免票；节假日建议提前购票。</li><li>熊猫苑约 ¥60–70 起，关注官方公众号/平台提前订。</li></ul></div></div>
+          <div class="note"><div class="ni">☁️</div><div class="nt"><b>天气 &amp; 时间</b><p>想看飘尾日落务必选晴天、提前查日落时刻；洞庭湖区早晚温差大，备件薄外套。</p></div></div>
+          <div class="note"><div class="ni">📅</div><div class="nt"><b>弹性加项</b><p>想更丰富可加君山岛、圣安寺、洞庭湖小镇或一台夜间实景演出，视体力和时间取舍。</p></div></div>
+        </div>
+        <div class="day-tip">💡 一日游建议早上熊猫 + 午后名楼 + 傍晚飘尾，把夕阳留给最浪漫的时刻。</div>
+      </div>
+      <span class="page-num">11 / 11</span>
+    </article>
+
+  </div>
+
+  <p class="foot-note">岳阳 · 洞庭湖 · 湘北秘境 · 岳阳楼、熊猫苑、江豚湾露营、平江幕阜山与湘味美食 · A5 便携片 · <a href="../../index.html" rel="noopener">返回旅行小册子</a></p>
+</div>
+
+<script>
+/* 目录导航：点击滚动定位对应卡片 */
+(function(){
+  var tabs=document.querySelectorAll('.chips button');
+  var cards={};
+  document.querySelectorAll('.card').forEach(function(c){cards[c.id]=c});
+  function setActive(id){
+    tabs.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-target')===id)});
+  }
+  tabs.forEach(function(b){
+    b.addEventListener('click',function(){
+      setActive(this.getAttribute('data-target'));
+      var el=cards[this.getAttribute('data-target')];
+      if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+  /* 滚动时高亮当前卡片对应目录 */
+  var order=[];
+  document.querySelectorAll('.card').forEach(function(c){order.push(c.id)});
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting) setActive(e.target.id);
+    });
+  },{rootMargin:'-40% 0px -52% 0px'});
+  order.forEach(function(id){if(cards[id])io.observe(cards[id])});
+})();
+</script>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

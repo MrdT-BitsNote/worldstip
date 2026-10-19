@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>茨中村 · 澜沧江畔教堂葡萄园全攻略（德钦/葡萄园/葡萄酒）</title>
+<meta name="description" content="茨中村旅游全攻略：云南德钦澜沧江河谷的高山村落，白墙哥特式茨中天主教堂、周围葡萄园环绕自酿葡萄酒，是滇西深处的一颗明珠；交通住宿美食避坑一篇讲清。">
+<style>
+  :root{
+    --hui:#5a4d6b;
+    --hui-deep:#423a52;
+    --hui-soft:#e4eaee;
+    --sand:#f4f6f6;
+    --sand-line:#d9e0e4;
+    --coral:#8c5a6b;
+    --cyan:#7a5a8c;
+    --leaf:#6b5a7d;
+    --ink:#2b3942;
+    --ink-soft:#5f6d76;
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(58,80,95,.32);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(74,93,107,.16), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(63,127,140,.13), transparent 55%),
+      var(--sand);
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--hui-deep)}
+
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--hui) 8%,#3d5260 55%,var(--hui-deep));
+    padding:40px 36px 34px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-40px;bottom:-60px;width:300px;height:300px;
+    background:radial-gradient(circle, rgba(255,255,255,.18), transparent 62%);
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.94;max-width:680px}
+  .hero p b{color:#fff}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{
+    font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:10px;
+  }
+
+  .switch{display:flex;gap:12px;margin:30px 0 6px;flex-wrap:wrap}
+  .switch button{
+    flex:1;min-width:230px;border:2px solid var(--sand-line);
+    background:var(--card);color:var(--ink);cursor:pointer;text-align:left;
+    border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  }
+  .switch button:hover{border-color:var(--hui);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(74,93,107,.4)}
+  .switch button.on{border-color:var(--hui);background:linear-gradient(135deg,#e9eef1,#eff3ee)}
+  .switch button .t{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800}
+  .switch button .t .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff}
+  .switch button .d{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .b-1d .badge{background:var(--cyan)}
+  .b-2d .badge{background:var(--coral)}
+  .b-3d .badge{background:var(--leaf)}
+
+  section.panel{margin-top:26px;background:var(--card);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(74,93,107,.10)}
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--hui-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--hui-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--hui-deep);margin-top:20px}
+  .hint b{font-weight:800}
+
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--hui-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;
+    background:var(--hui);border:3px solid var(--hui-soft);box-sizing:content-box;
+  }
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--hui-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--hui-soft);color:var(--hui-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--coral);font-weight:800}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid var(--sand-line);border-radius:14px;padding:14px 16px;background:#fbfcfc;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(74,93,107,.35);box-shadow:0 8px 18px -10px rgba(74,93,107,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--hui-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+  .spot{display:flex;gap:18px;background:#fbfcfc;border:1px solid var(--sand-line);border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+  .spot:hover{border-color:rgba(74,93,107,.35);box-shadow:0 10px 22px -12px rgba(74,93,107,.3)}
+  .spimg{flex:0 0 40%;margin:0;min-width:0}
+  .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+  .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+  .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+  .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+  .sptxt h3{margin:0;font-size:19px;color:var(--hui-deep)}
+  .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+  .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#e9eef1;border-radius:10px;padding:9px 12px;margin-top:10px}
+  .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+  @media (max-width:640px){
+    .spot{flex-direction:column}
+    .spimg{flex:none}
+    .spimg img{height:auto;max-height:220px;object-fit:cover}
+  }
+
+  .cmp{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .cmp table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fefdfb}
+  .cmp th,.cmp td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--sand-line)}
+  .cmp thead th{background:var(--hui-deep);color:#fff;font-weight:700}
+  .cmp tbody tr:nth-child(even){background:#eef1f3}
+  .cmp .hd2{background:var(--hui-soft);color:var(--hui-deep);font-weight:800;border-bottom:1px solid var(--sand-line)}
+  .cmp .good{color:#2f7d32;font-weight:700}
+  .cmp .bad{color:#c0504d;font-weight:700}
+
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--sand-line);padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--hui-soft);color:var(--hui-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--coral);font-weight:800;white-space:nowrap}
+
+  .budget{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fefdfb}
+  .budget th,.budget td{padding:10px 14px;text-align:left}
+  .budget thead th{background:var(--hui-deep);color:#fff;font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#eef1f3}
+  .budget .tot{font-weight:800;color:var(--hui-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  .tips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .tips li{font-size:14px;color:var(--ink);background:#e9eef1;border-left:4px solid var(--hui);border-radius:8px;padding:10px 14px}
+  .tips li b{color:var(--hui-deep)}
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--hui-deep)}
+
+  @media print{
+    body{background:#fff}
+    .switch button{display:none}
+    .wrap{max-width:none;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
+    .card,.budget,.cmp{page-break-inside:avoid}
+  }
+  @media (max-width:600px){
+    .hero{padding:30px 22px 26px}
+    .hero h1{font-size:27px}
+    .wrap{padding:18px 14px 48px}
+    section.panel{padding:20px 18px}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style></style>
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/cizhong/">
+    <meta name="theme-color" content="#5a4d6b">
+    <link rel="icon" href="../../favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="茨中村 · 澜沧江畔教堂葡萄园全攻略（德钦/葡萄园/葡萄酒）">
+    <meta property="og:description" content="云南德钦澜沧江河谷的高山村落，白墙哥特式茨中天主教堂+自酿葡萄酒；交通住宿一篇讲清。">
+    <meta property="og:url" content="https://worldstip.com/map/cizhong/">
+    <meta property="og:image" content="https://worldstip.com/map/cizhong/assets/cizhong_cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="茨中村 · 澜沧江畔教堂葡萄园全攻略">
+    <meta name="twitter:description" content="澜沧江河谷高山村落，茨中天主教堂+自酿葡萄酒；交通住宿预算一篇讲清。">
+    <meta name="twitter:image" content="https://worldstip.com/map/cizhong/assets/cizhong_cover.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "WorldStip · 旅行小册子", "url": "https://worldstip.com/"},
+    {"@type": "ListItem", "position": 2, "name": "茨中村 · 澜沧江畔教堂葡萄园全攻略", "url": "https://worldstip.com/map/cizhong/"}
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/cizhong/",
+  "name": "茨中村 · 澜沧江畔教堂葡萄园全攻略",
+  "inLanguage": "zh-CN",
+  "isPartOf": { "@type": "WebSite", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "author": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "publisher": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "copyrightHolder": { "@type": "Organization", "name": "旅行小册子" },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">🍇 茨中村 · CHURCH & VINEYARD ON LANCANG (CIZHONG)</div>
+  <h1>茨中村 · 澜沧江畔教堂葡萄园全攻略</h1>
+  <p>在<b>德钦澜沧江河谷</b>深处，有一座静谧的<b>茨中村</b>——白墙尖顶的<b>哥特式天主教堂</b>矗立村中，四周爬满<b>葡萄园</b>，山民延续着<b>上百年自酿葡萄酒</b>的传统。这里像是一次意外的文化邂逅：东方的雪山峡谷里，藏着一段西方传教士留下的葡萄与信仰记忆。本攻略含 1 日/2 日双方案、教堂参观、葡萄园与品酒、交通、住宿、美食避坑全讲清，带你「在小村里喝一杯雪山酿的酒」。</p>
+  <div class="meta">
+    <span>📍 目的地：云南迪庆 · 德钦（茨中村）</span>
+    <span>👥 1–6 人自由行/自驾</span>
+    <span>⏱️ 1–2 日 河谷微住</span>
+    <span>💰 教堂免费 · 住宿 100–500</span>
+  </div>
+</header>
+
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="b-1d on" role="tab" aria-selected="true" data-plan="plan1" id="tab1">
+    <span class="t"><span class="badge">1日精华</span> 快充版 ⚡</span>
+    <div class="d">教堂+葡萄园+品酒速览 / 人均约 120–220</div>
+  </button>
+  <button class="b-2d" role="tab" aria-selected="false" data-plan="plan2" id="tab2">
+    <span class="t"><span class="badge">2日深住</span> 河谷版 🍇</span>
+    <div class="d">夜宿村内·葡萄园晨昏细品 / 人均约 350–900</div>
+  </button>
+</div>
+
+<!-- 1日方案 -->
+<section class="panel" id="plan1" role="tabpanel">
+  <h2><span class="emo">⚡</span>1 日精华 · 快充版</h2>
+  <p class="sub">从飞来寺/奔子栏方向进村，上午参观茨中天主教堂与葡萄园，中午村内农家用餐并尝自酿葡萄酒，下午沿澜沧江散步看河谷雪山，一天看透这颗河谷明珠。</p>
+  <div class="hint">🍇 <b>适配：</b>村内景点集中，自驾最方便；教堂与葡萄园均在步行范围，无需交通工具。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">上午 · 茨中天主教堂 + 葡萄园</div>
+      <div class="seg"><span>🚗 直奔茨中村（德钦/奔子栏方向）</span></div>
+      <div class="seg"><span>⛪ 白墙哥特式茨中教堂·彩窗与钟楼</span><span>🍇 沿教堂周边葡萄园漫步</span></div>
+      <div class="tip2"><span class="arr">💡</span> 教堂安静可入内参观，尊重宗教礼仪、勿大声喧哗。</div>
+    </li>
+    <li>
+      <div class="day">中午 · 村内农家午餐 + 品酒</div>
+      <div class="seg"><span>🍚 农家菜配本地自酿葡萄酒</span></div>
+      <div class="seg"><span>🏡 看村民酿酒的土陶罐与葡萄架</span></div>
+      <div class="tip2"><span class="arr">💡</span> 想了解葡萄酒文化，可请农家讲解葡萄种植与酿酒传统。</div>
+    </li>
+    <li>
+      <div class="day">下午 · 澜沧江河谷 + 返程</div>
+      <div class="seg"><span>🌊 沿江边小径看峡谷与雪山</span></div>
+      <div class="seg"><span>🏘️ 逛村内街巷·感受河谷烟火</span></div>
+      <div class="tip2"><span class="arr">💡</span> 日落时教堂塔尖在金色光里很美，时间宽裕可等到黄昏。</div>
+    </li>
+  </ul>
+</section>
+
+<footer>
+<!-- 2日方案 -->
+<section class="panel" id="plan2" role="tabpanel" hidden>
+  <h2><span class="emo">🍇</span>2 日深住 · 河谷版</h2>
+  <p class="sub">「住进河谷」——夜宿茨中村，一晚在葡萄园与教堂间散步、喝自酿葡萄酒看星河，白天再串德钦飞来寺/梅里雪山。</p>
+  <div class="hint">☀️ <b>这版更有味道：</b>村内住一晚，清晨听见教堂钟声、黄昏葡萄架被染金，是澜沧江边最慢的日子。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">D1 午后 · 进村 · 入住看葡萄园</div>
+      <div class="seg"><span>🚗 到茨中村·入住村内民宿</span></div>
+      <div class="seg"><span>🍇 葡萄园散步·黄昏看教堂剪影</span></div>
+      <div class="tip2"><span class="arr">💡</span> 村里民宿多由农家改造，朴实安静，需提前联系。</div>
+    </li>
+    <li>
+      <div class="day">D2 清晨 · 钟声 + 河谷日出</div>
+      <div class="seg"><span>⛪ 清晨教堂钟声·霞光染河谷</span></div>
+      <div class="seg"><span>🍷 村长家/农家喝一杯自酿酒</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 高海拔清晨冷，注意保暖；教堂活动日避开太早。</div>
+    </li>
+    <li>
+      <div class="day">D2 白天 · 飞来寺/梅里 + 返程</div>
+      <div class="seg"><span>🚗 前往德钦飞来寺或梅里观景台</span></div>
+      <div class="seg"><span>🏔️ 天气好可远眺卡瓦格博</span></div>
+      <div class="tip2"><span class="arr">💡</span> 梅里日照金山需看天气，春秋冬季晴天概率更高。</div>
+    </li>
+  </ul>
+</section>
+
+<section class="panel" id="spots">
+  <h2><span class="emo">🍇</span>核心看点 · 河谷怎么玩</h2>
+  <div class="spotlist">
+    <div class="spot"><span class="no">1</span><span class="it"><b>茨中天主教堂</b><div class="w">建于20世纪初的哥特式白墙教堂，双塔钟楼与彩窗在雪山峡谷里格外醒目</div></span></div>
+    <div class="spot"><span class="no">2</span><span class="it"><b>百年葡萄园</b><div class="w">传教士带来的法国葡萄品种，山坡葡萄架层层，是高原河谷的特殊风景</div></span></div>
+    <div class="spot"><span class="no">3</span><span class="it"><b>自酿葡萄酒</b><div class="w">村民延续上百年的土法酿酒，土陶罐发酵，果香浓郁，可尝可带</div></span></div>
+    <div class="spot"><span class="no">4</span><span class="it"><b>澜沧江河谷</b><div class="w">碧蓝江水切出的深邃峡谷，江对岸雪山与梯田层层叠叠</div></span></div>
+    <div class="spot"><span class="no">5</span><span class="it"><b>藏汉民俗交融</b><div class="w">村民多民族聚居，教堂白塔与藏式民居并立，文化很有层次</div></span></div>
+    <div class="spot"><span class="no">6</span><span class="it"><b>德钦飞来寺/梅里</b><div class="w">顺路可达的经典雪山观景地，卡瓦格博日照金山是梅里标志</div></span></div>
+  </div>
+  <img src="assets/cizhong_a.jpg" alt="茨中教堂葡萄园" loading="lazy" style="width:100%;border-radius:14px;margin-top:16px">
+</section>
+
+<section class="panel" id="how">
+  <h2><span class="emo">🚗</span>怎么去</h2>
+  <div class="cmp">
+    <div class="row"><div class="mode">✈️ 飞机+自驾</div><div class="p">飞至<b>香格里拉/丽江</b>，自驾或包车经德钦至茨中村（香格里拉约4h，丽江约5h）。<div class="tag">自驾最自由</div></div></div>
+    <div class="row"><div class="mode">🚌 长途+当地</div><div class="p">丽江/香格里拉有车至德钦，转车至燕门·茨中村，村内步行可达教堂。<div class="tag">适合无车党</div></div></div>
+  </div>
+</section>
+
+<section class="panel" id="stay">
+  <h2><span class="emo">🏡</span>住哪里</h2>
+  <div class="grid">
+    <div class="card"><b>茨中村农家民宿</b><div class="w">朴实安静、可喝自酿酒，100–400元</div></div>
+    <div class="card"><b>德钦县城酒店</b><div class="w">设施更全，200–500元，作为跳板</div></div>
+    <div class="card"><b>飞来寺观景民宿</b><div class="w">看梅里雪山方便，150–600元，晴夜可观星</div></div>
+  </div>
+</section>
+
+<section class="panel" id="food">
+  <h2><span class="emo">🍚</span>吃什么</h2>
+  <div class="food">
+    <div class="row"><span class="no">1</span><span class="it"><b>自酿葡萄酒</b><div class="w">茨中村的招牌，果香醇厚，可佐餐</div></span><span class="prx">尝杯/带走</span></div>
+    <div class="row"><span class="no">2</span><span class="it"><b>牦牛肉/土鸡锅</b><div class="w">高原食材炖汤，暖身</div></span><span class="prx">人均50</span></div>
+    <div class="row"><span class="no">3</span><span class="it"><b>青稞饼/酥油茶</b><div class="w">藏族家常主食饮品</div></span><span class="prx">人均20</span></div>
+    <div class="row"><span class="no">4</span><span class="it"><b>山野菜/菌子</b><div class="w">当季采摘，清炒鲜美</div></span><span class="prx">时价</span></div>
+  </div>
+</section>
+
+<section class="panel" id="budget">
+  <h2><span class="emo">💰</span>预算参考</h2>
+  <div class="budget"><table><thead><tr><th>项目</th><th>1日快充</th><th>2日深住</th></tr></thead><tbody>
+    <tr><th>交通（德钦进出+包车分摊）</th><td>70–160</td><td>120–280</td></tr>
+    <tr><th>门票</th><td>0（教堂免费）</td><td>0</td></tr>
+    <tr><th>餐饮</th><td>60–100</td><td>150–300</td></tr>
+    <tr><th>住宿</th><td>—</td><td>100–500</td></tr>
+    <tr class="tot"><th>人均合计</th><td>130–260</td><td>370–1080</td></tr>
+  </tbody></table></div>
+  <p class="tiny">💰 独家提示：葡萄酒可按瓶带走，村里价格实、品质不错，是很有意义的伴手礼。</p>
+</section>
+
+<section class="panel" id="tips">
+  <h2><span class="emo">💡</span>避坑与贴士</h2>
+  <ul class="tips">
+    <li><b>峡谷路况：</b>澜沧江河谷多弯临江，雨后易落石，谨慎驾驶、避开夜行。</li>
+    <li><b>高海拔：</b>海拔约2000–3000m，初到注意节奏，备保暖与氧气备用。</li>
+    <li><b>宗教尊重：</b>教堂内勿喧哗、拍照先征询，尊重当地信仰与习俗。</li>
+    <li><b>旺季住宿：</b>国庆/五一村内民宿紧张，建议至少提前一周预订。</li>
+    <li><b>品酒适度：</b>自酿葡萄酒度数较高，量力而行，自驾勿多饮。</li>
+  </ul>
+</section>
+
+茨中村 · 澜沧江畔教堂葡萄园全攻略 ｜ 适配 1–6 人自由行 · 门票及价格为参考值，以景区实时公告为准<br>澜沧江峡谷道路多弯临江，谨慎驾驶；尊重当地宗教与文化，文明游览。 · <a href="../../index.html">← 返回小册子</a>
+</footer>
+</div>
+<script>
+(function(){var b=document.querySelectorAll('.switch button');b.forEach(function(x){x.addEventListener('click',function(){b.forEach(function(y){y.classList.remove('on');y.setAttribute('aria-selected','false')});x.classList.add('on');x.setAttribute('aria-selected','true');var p=x.getAttribute('data-plan');document.querySelectorAll('.panel').forEach(function(s){if(s.id===p){s.removeAttribute('hidden');s.setAttribute('role','tabpanel')}else{s.setAttribute('hidden','');s.removeAttribute('role')}})})})})();
+</script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

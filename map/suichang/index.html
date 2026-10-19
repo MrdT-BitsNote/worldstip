@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>遂昌 · 南尖岩云海梯田瀑布全攻略（观云亭/九级飞瀑/高山古村）</title>
+<meta name="description" content="遂昌南尖岩旅游全攻略：云海梯田倒影、观云亭日出、九级飞瀑、玻璃栈道、高山避暑民宿；遂昌金矿、神龙谷、高坪乡加密。交通住宿美食预算一篇讲清。">
+<style>
+  :root{
+    --hui:#40655c;
+    --hui-deep:#2b4740;
+    --hui-soft:#e2eae7;
+    --sand:#f4f6f6;
+    --sand-line:#d9e0e4;
+    --coral:#a85f4a;
+    --cyan:#3a7d75;
+    --leaf:#2f7d5f;
+    --ink:#2b3942;
+    --ink-soft:#5f6d76;
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(58,80,95,.32);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(74,93,107,.16), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(63,127,140,.13), transparent 55%),
+      var(--sand);
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--hui-deep)}
+
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--hui) 8%,#3d5260 55%,var(--hui-deep));
+    padding:40px 36px 34px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-40px;bottom:-60px;width:300px;height:300px;
+    background:radial-gradient(circle, rgba(255,255,255,.18), transparent 62%);
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.94;max-width:680px}
+  .hero p b{color:#fff}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{
+    font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:10px;
+  }
+
+  .switch{display:flex;gap:12px;margin:30px 0 6px;flex-wrap:wrap}
+  .switch button{
+    flex:1;min-width:230px;border:2px solid var(--sand-line);
+    background:var(--card);color:var(--ink);cursor:pointer;text-align:left;
+    border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  }
+  .switch button:hover{border-color:var(--hui);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(74,93,107,.4)}
+  .switch button.on{border-color:var(--hui);background:linear-gradient(135deg,#e9eef1,#eff3ee)}
+  .switch button .t{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800}
+  .switch button .t .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff}
+  .switch button .d{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .b-1d .badge{background:var(--cyan)}
+  .b-2d .badge{background:var(--coral)}
+  .b-3d .badge{background:var(--leaf)}
+
+  section.panel{margin-top:26px;background:var(--card);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(74,93,107,.10)}
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--hui-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--hui-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--hui-deep);margin-top:20px}
+  .hint b{font-weight:800}
+
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--hui-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;
+    background:var(--hui);border:3px solid var(--hui-soft);box-sizing:content-box;
+  }
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--hui-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--hui-soft);color:var(--hui-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--coral);font-weight:800}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid var(--sand-line);border-radius:14px;padding:14px 16px;background:#fbfcfc;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(74,93,107,.35);box-shadow:0 8px 18px -10px rgba(74,93,107,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--hui-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+  .spot{display:flex;gap:18px;background:#fbfcfc;border:1px solid var(--sand-line);border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+  .spot:hover{border-color:rgba(74,93,107,.35);box-shadow:0 10px 22px -12px rgba(74,93,107,.3)}
+  .spimg{flex:0 0 40%;margin:0;min-width:0}
+  .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+  .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+  .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+  .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+  .sptxt h3{margin:0;font-size:19px;color:var(--hui-deep)}
+  .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+  .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#e9eef1;border-radius:10px;padding:9px 12px;margin-top:10px}
+  .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+  @media (max-width:640px){
+    .spot{flex-direction:column}
+    .spimg{flex:none}
+    .spimg img{height:auto;max-height:220px;object-fit:cover}
+  }
+
+  .cmp{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .cmp table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fefdfb}
+  .cmp th,.cmp td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--sand-line)}
+  .cmp thead th{background:var(--hui-deep);color:#fff;font-weight:700}
+  .cmp tbody tr:nth-child(even){background:#eef1f3}
+  .cmp .hd2{background:var(--hui-soft);color:var(--hui-deep);font-weight:800;border-bottom:1px solid var(--sand-line)}
+  .cmp .good{color:#2f7d32;font-weight:700}
+  .cmp .bad{color:#c0504d;font-weight:700}
+
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--sand-line);padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--hui-soft);color:var(--hui-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--coral);font-weight:800;white-space:nowrap}
+
+  .budget{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fefdfb}
+  .budget th,.budget td{padding:10px 14px;text-align:left}
+  .budget thead th{background:var(--hui-deep);color:#fff;font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#eef1f3}
+  .budget .tot{font-weight:800;color:var(--hui-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  .tips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .tips li{font-size:14px;color:var(--ink);background:#e9eef1;border-left:4px solid var(--hui);border-radius:8px;padding:10px 14px}
+  .tips li b{color:var(--hui-deep)}
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--hui-deep)}
+
+  @media print{
+    body{background:#fff}
+    .switch button{display:none}
+    .wrap{max-width:none;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
+    .card,.budget,.cmp{page-break-inside:avoid}
+  }
+  @media (max-width:600px){
+    .hero{padding:30px 22px 26px}
+    .hero h1{font-size:27px}
+    .wrap{padding:18px 14px 48px}
+    section.panel{padding:20px 18px}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style></style>
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/suichang/">
+    <meta name="theme-color" content="#40655c">
+    <link rel="icon" href="../../favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="遂昌 · 南尖岩云海梯田瀑布全攻略">
+    <meta property="og:description" content="遂昌南尖岩：云海梯田倒影、观云亭日出、九级飞瀑、玻璃栈道、高山避暑民宿；交通住宿美食预算一篇讲清。">
+    <meta property="og:url" content="https://worldstip.com/map/suichang/">
+    <meta property="og:image" content="https://worldstip.com/map/suichang/assets/suichang_cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="遂昌 · 南尖岩云海梯田瀑布全攻略">
+    <meta name="twitter:description" content="南尖岩云海梯田+九级飞瀑+玻璃栈道+高山避暑；交通住宿预算一篇讲清。">
+    <meta name="twitter:image" content="https://worldstip.com/map/suichang/assets/suichang_cover.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "WorldStip · 旅行小册子", "url": "https://worldstip.com/"},
+    {"@type": "ListItem", "position": 2, "name": "遂昌 · 南尖岩云海梯田瀑布全攻略", "url": "https://worldstip.com/map/suichang/"}
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/suichang/",
+  "name": "遂昌 · 南尖岩云海梯田瀑布全攻略",
+  "inLanguage": "zh-CN",
+  "isPartOf": { "@type": "WebSite", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "author": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "publisher": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "copyrightHolder": { "@type": "Organization", "name": "旅行小册子" },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">⛰️ 遂昌 · NANJIANYAN CLOUD & WATERFALL (SUICHANG)</div>
+  <h1>遂昌 · 南尖岩云海梯田瀑布全攻略</h1>
+  <p>藏在浙西南的「<b>中国天然氧吧</b>」，森林覆盖率 83.7%。核心打卡点 <b>南尖岩</b>集<b>千层云海梯田、观云亭日出、九级飞瀑、玻璃栈道</b>于一身，被《国家地理》誉为「<b>云上梯田</b>」；往更深走，还有千年淘金的<b>遂昌金矿</b>。盛夏山风微凉、冬日云海壮阔，是<b>避暑+摄影</b>的高山秘境。本攻略含 1 日/2 日双方案、交通住宿、美食预算、避坑全讲清，教你「住山上、等云海」。</p>
+  <div class="meta">
+    <span>📍 目的地：浙江丽水 · 遂昌（南尖岩/高坪乡）</span>
+    <span>👥 1–6 人自由行/自驾</span>
+    <span>⏱️ 1–2 日 高山避暑</span>
+    <span>💰 南尖岩70 · 民宿300–800</span>
+  </div>
+</header>
+
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="b-1d on" role="tab" aria-selected="true" data-plan="plan1" id="tab1">
+    <span class="t"><span class="badge">1日精华</span> 快充版 ⚡</span>
+    <div class="d">南尖岩核心景区·云海瀑布 / 人均约 250–400</div>
+  </button>
+  <button class="b-2d" role="tab" aria-selected="false" data-plan="plan2" id="tab2">
+    <span class="t"><span class="badge">2日深住</span> 避暑版 🌿</span>
+    <div class="d">宿高山民宿·日出云海+金矿 / 人均约 600–1400</div>
+  </button>
+</div>
+
+<!-- 1日方案 -->
+<section class="panel" id="plan1" role="tabpanel">
+  <h2><span class="emo">⚡</span>1 日精华 · 快充版</h2>
+  <p class="sub">清晨上南尖岩，看云海烟波中的千层梯田；白天沿步道走瀑、过玻璃栈道；傍晚回县城或民宿。</p>
+  <div class="hint">☁️ <b>看云海黄金时段：</b>6:00–7:30 观云亭，9 点后云雾基本散、梯田仍美但仙气减半。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">清晨 · 观云亭 + 千层梯田</div>
+      <div class="seg"><span>🌅 6点前到观云亭，看梯田灌水倒映天光云影</span></div>
+      <div class="seg"><span>🌾 千层梯田如画，人少可走近拍</span></div>
+      <div class="tip2"><span class="arr">📷</span> 带偏振镜压水面反光，日出梯田大片随手出；睡懒觉会错过王牌。</div>
+    </li>
+    <li>
+      <div class="day">上午 · 九级飞瀑步道 + 玻璃栈道/一线天</div>
+      <div class="seg"><span>💦 九级瀑布形态各异，第三级水雾扑面降18℃</span></div>
+      <div class="seg"><span>🌉 悬崖玻璃栈道·一线天窄道（恐高量力）</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 景区内竹筒饭性价比低（30元几口糯米），建议自备干粮或下山吃。</div>
+    </li>
+    <li>
+      <div class="day">下午 · 返程 / 县城</div>
+      <div class="seg"><span>🚗 下山回遂昌县城/丽水</span></div>
+      <div class="seg"><span>🍵 遂昌风炉宴·焦滩鱼头·长粽（本地招牌）</span></div>
+      <div class="tip2"><span class="arr">💡</span> 赶时间可选 2 日版沉浸；景区门口「野生蜂蜜」多为批发货，土蜂蜜找民宿老板直聊。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 2日方案 -->
+<section class="panel" id="plan2" role="tabpanel" hidden>
+  <h2><span class="emo">🌿</span>2 日深住 · 避暑版</h2>
+  <p class="sub">夜宿南尖岩高山民宿（海拔千米、均温低、看星空），一晚一白把云海日出+金矿+神龙谷走透，真正「住在天山」。</p>
+  <div class="hint">🌡️ <b>避暑利器：</b>山上夏季 20–25℃，早晚温差大，薄冲锋衣必备；是「金色遂昌」的周末度假主选。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">D1 午后 · 上山入住南尖岩民宿</div>
+      <div class="seg"><span>🚗 遂昌县城→南尖岩（约1h山路）</span></div>
+      <div class="seg"><span>🏡 入住高山民宿·窗外即云海/玻璃桥</span><span>🌇 傍晚山上看日落晚霞·观星空</span></div>
+      <div class="tip2"><span class="arr">💡</span> 民宿老板可订私人路线+地道土鸡土菜，提前电话沟通更省心。</div>
+    </li>
+    <li>
+      <div class="day">D2 清晨 · 观云亭日出 + 景区深度</div>
+      <div class="seg"><span>🌅 5点半起走10分钟到观云亭等日出</span></div>
+      <div class="seg"><span>🌾 九级飞瀑+玻璃栈道+梯田徒步</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 山上湿滑阶梯陡，穿防滑徒步鞋+速干裤，别穿裙子和平底凉鞋。</div>
+    </li>
+    <li>
+      <div class="day">D2 下午 · 遂昌金矿 / 神龙谷 + 返程</div>
+      <div class="seg"><span>⛏️ 金矿小火车深入矿洞·千年采矿史（可选）</span><span>💧 神龙谷300米九龙飞瀑（华东第一高瀑）</span></div>
+      <div class="seg"><span>🍚 长粽带走·焦滩鱼头晚餐</span></div>
+      <div class="tip2"><span class="arr">💡</span> 金矿、神龙谷为加项，时间紧可只留南尖岩沉浸；高坪乡民宿包吃住一人百元上下性价比高。</div>
+    </li>
+  </ul>
+</section>
+
+<section class="panel" id="spots">
+  <h2><span class="emo">⛰️</span>核心看点 · 怎么玩</h2>
+  <div class="spotlist">
+    <div class="spot"><span class="no">1</span><span class="it"><b>南尖岩云海梯田</b><div class="w">千层梯田灌水倒映天光云影，被《国家地理》誉为「云上梯田」，人少可走近拍</div></span></div>
+    <div class="spot"><span class="no">2</span><span class="it"><b>观云亭日出</b><div class="w">清晨站在山巅观云亭，看云海烟波中梯田村落若隐若现</div></span></div>
+    <div class="spot"><span class="no">3</span><span class="it"><b>九级飞瀑步道</b><div class="w">竹林覆盖的清凉步道，多级瀑布各异，第三级水雾扑面体感骤降</div></span></div>
+    <div class="spot"><span class="no">4</span><span class="it"><b>悬崖玻璃栈道/一线天</b><div class="w">脚下万丈深渊的玻璃栈道+仅容两人侧身的一线天窄道</div></span></div>
+    <div class="spot"><span class="no">5</span><span class="it"><b>遂昌金矿（加项）</b><div class="w">世界少有的"活着"千年金矿，坐小火车入矿洞探千年采矿史</div></span></div>
+    <div class="spot"><span class="no">6</span><span class="it"><b>神龙谷·九龙飞瀑（加项）</b><div class="w">落差300米华东第一高瀑，溪谷负氧离子爆表，还有瀑降体验</div></span></div>
+  </div>
+  <img src="assets/suichang_a.jpg" alt="南尖岩九级飞瀑" loading="lazy" style="width:100%;border-radius:14px;margin-top:16px">
+  <img src="assets/suichang_b.jpg" alt="遂昌高山古村云海" loading="lazy" style="width:100%;border-radius:14px;margin-top:10px">
+</section>
+
+<section class="panel" id="how">
+  <h2><span class="emo">🚗</span>怎么去</h2>
+  <div class="cmp">
+    <div class="row"><div class="mode">🚄 高铁+本地</div><div class="p">高铁至<b>丽水站</b>，转大巴/打车至遂昌县城（约1.5h），再包车上山。<div class="tag">适合无车党</div></div></div>
+    <div class="row"><div class="mode">🚗 自驾（推荐）</div><div class="p">G25长深高速→溧宁高速至遂昌出口；县城→南尖岩约1h山路，弯多路面尚可。<div class="tag">最自由，看云海需早起</div></div></div>
+  </div>
+</section>
+
+<section class="panel" id="stay">
+  <h2><span class="emo">🏡</span>住哪里</h2>
+  <div class="grid">
+    <div class="card"><b>南尖岩高山民宿</b><div class="w">海拔千米、窗外即云海/玻璃桥，土鸡土菜地道，300–800元（云中秋舍/朝夕/一束等口碑佳）</div></div>
+    <div class="card"><b>遂昌县城</b><div class="w">150–300元，作为进山跳板，次晨早班车/自驾上山</div></div>
+  </div>
+</section>
+
+<section class="panel" id="food">
+  <h2><span class="emo">🍚</span>吃什么</h2>
+  <div class="food">
+    <div class="row"><span class="no">1</span><span class="it"><b>遂昌风炉宴</b><div class="w">山里人家待客大菜，陶土炉炭火慢炖越炖越香</div></span><span class="prx">人均50–80</span></div>
+    <div class="row"><span class="no">2</span><span class="it"><b>焦滩鱼头</b><div class="w">本地招牌菜，鲜辣入味</div></span><span class="prx">时价</span></div>
+    <div class="row"><span class="no">3</span><span class="it"><b>遂昌长粽</b><div class="w">浙江十大农家特色小吃，当伴手礼很合适</div></span><span class="prx">8–15元/个</span></div>
+    <div class="row"><span class="no">4</span><span class="it"><b>高山土鸡/野菜</b><div class="w">田间现拔蔬菜+现杀土鸡，民宿一绝</div></span><span class="prx">人均50</span></div>
+  </div>
+</section>
+
+<section class="panel" id="budget">
+  <h2><span class="emo">💰</span>预算参考</h2>
+  <div class="budget"><table><thead><tr><th>项目</th><th>1日快充</th><th>2日深住</th></tr></thead><tbody>
+    <tr><th>交通（丽水进出+包车分摊）</th><td>90–160</td><td>130–280</td></tr>
+    <tr><th>门票</th><td>70（南尖岩）</td><td>70–130（+金矿/神龙谷）</td></tr>
+    <tr><th>餐饮</th><td>60–100</td><td>180–300</td></tr>
+    <tr><th>住宿</th><td>—</td><td>300–700</td></tr>
+    <tr class="tot"><th>人均合计</th><td>220–330</td><td>680–1410</td></tr>
+  </tbody></table></div>
+  <p class="tiny">💰 独家提示：门票南尖岩70元（含玻璃栈道）；神龙谷约60元；景区内购物（蜂蜜/竹筒饭）性价比低，量力而行。</p>
+</section>
+
+<section class="panel" id="tips">
+  <h2><span class="emo">💡</span>避坑与贴士</h2>
+  <ul class="tips">
+    <li><b>云海看天气：</b>6–9点观云亭看云海概率最高，9点后云雾散；雨天进山大雾，出行看预报。</li>
+    <li><b>装备：</b>玻璃栈道+陡峭阶梯，穿防滑徒步鞋+速干裤；7月山上也要薄冲锋衣防温差。</li>
+    <li><b>景区购物：</b>门口「野生蜂蜜」多是批发，刺激小贩推销慎信；土货找民宿老板直聊更靠谱。</li>
+    <li><b>民宿预订：</b>暑假避暑人多，热门民宿（望辰等仅9间房）需提前2-3周抢。</li>
+    <li><b>信号：</b>深山部分路段与一线天会断信号几分钟，离线地图+结伴出行。</li>
+  </ul>
+</section>
+
+<footer>
+  遂昌 · 南尖岩云海梯田全攻略 ｜ 适配 1–6 人自由行 · 门票及价格为参考值，以景区实时公告为准<br>
+  古村石板路注意防滑，尊重村民生活不扰民；文明游览、随手带走垃圾。 · <a href="../../index.html">← 返回小册子</a>
+</footer>
+</div>
+<script>
+(function(){var b=document.querySelectorAll('.switch button');b.forEach(function(x){x.addEventListener('click',function(){b.forEach(function(y){y.classList.remove('on');y.setAttribute('aria-selected','false')});x.classList.add('on');x.setAttribute('aria-selected','true');var p=x.getAttribute('data-plan');document.querySelectorAll('.panel').forEach(function(s){if(s.id===p){s.removeAttribute('hidden');s.setAttribute('role','tabpanel')}else{s.setAttribute('hidden','');s.removeAttribute('role')}})})})})();
+</script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

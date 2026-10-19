@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>成都 → 川西大环线 · 旅行报告</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --canvas:#fdf8f3;--surface:#fff;--ink:#2b2333;--muted:#7a6f85;
+  --line:#eee3d8;--radius:18px;
+  --font:system-ui,-apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+body{font-family:var(--font);background:var(--canvas);color:var(--ink);
+  line-height:1.75;-webkit-font-smoothing:antialiased}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px 80px}
+
+.hero{background:linear-gradient(135deg,var(--a),var(--b));color:#fff;
+  padding:44px 20px 38px;margin-bottom:28px}
+.hero-in{max-width:960px;margin:0 auto}
+.kicker{font-size:12px;letter-spacing:.22em;opacity:.85;text-transform:uppercase}
+.hero h1{font-size:30px;font-weight:600;margin:10px 0 6px;line-height:1.3}
+.route{font-size:15px;opacity:.95;display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px}
+.tag{display:inline-block;background:rgba(255,255,255,.22);padding:4px 12px;
+  border-radius:999px;font-size:12.5px;border:1px solid rgba(255,255,255,.3)}
+.meta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;font-size:13px;opacity:.94}
+.meta-row b{font-weight:600}
+
+section{background:var(--surface);border-radius:var(--radius);padding:26px 28px;
+  margin-bottom:20px;border:1px solid var(--line)}
+h2{font-size:19px;font-weight:600;margin-bottom:6px;display:flex;
+  align-items:center;gap:9px}
+h2 .ico{font-size:20px}
+.sub{color:var(--muted);font-size:13.5px;margin-bottom:18px}
+h3{font-size:15.5px;font-weight:600;margin:20px 0 10px;
+  padding-left:10px;border-left:3px solid var(--a)}
+
+/* 概览网格 */
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(132px,1fr))}
+.stat{background:linear-gradient(180deg,#fffdfb,#faf5ee);border:1px solid var(--line);
+  border-radius:13px;padding:14px 16px}
+.stat .k{font-size:11.5px;color:var(--muted);letter-spacing:.05em}
+.stat .v{font-size:21px;font-weight:600;margin-top:3px;line-height:1.25}
+.stat .u{font-size:12px;color:var(--muted);font-weight:400}
+
+/* 逐日卡片 */
+.day{background:linear-gradient(180deg,#fffdfb,#faf6f0);border:1px solid var(--line);
+  border-radius:15px;padding:20px 22px;margin-bottom:15px;
+  break-inside:avoid;page-break-inside:avoid}
+.day-h{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap;
+  padding-bottom:12px;border-bottom:1px dashed var(--line);margin-bottom:14px}
+.dnum{font-size:15px;font-weight:600;color:var(--a);font-family:var(--mono)}
+.dtag{font-size:11.5px;background:var(--a);color:#fff;padding:2.5px 9px;border-radius:6px}
+.dcity{font-size:15px;font-weight:600}
+.dinfo{margin-left:auto;font-size:12.5px;color:var(--muted)}
+.dinfo b{color:var(--ink);font-weight:600}
+
+.slot{display:grid;grid-template-columns:62px 52px 1fr;gap:12px;
+  padding:9px 0;border-bottom:1px solid #f5efe6;font-size:13.5px}
+.slot:last-child{border-bottom:none}
+.stime{font-family:var(--mono);font-size:12.5px;color:var(--a);font-weight:600}
+.spart{font-size:12.5px;color:var(--muted)}
+.snote{color:#4a4256}
+.dnote{margin-top:12px;padding:9px 13px;background:#fff;border-radius:9px;
+  font-size:13px;color:#5a5266;border-left:3px solid var(--b)}
+.active{margin-top:10px;padding:10px 13px;background:var(--b);color:#2b2333;
+  border-radius:9px;font-size:13px;font-weight:500}
+
+/* 表格 */
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:6px 0}
+th{background:#faf5ee;text-align:left;padding:9px 11px;font-weight:600;
+  font-size:12.5px;color:#5a5266;border-bottom:2px solid var(--line);white-space:nowrap}
+td{padding:9px 11px;border-bottom:1px solid #f5efe6;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#fffdf9}
+.num{text-align:right;font-family:var(--mono);white-space:nowrap}
+.tot{background:var(--a)!important;color:#fff;font-weight:600}
+.tot td{border-bottom:none}
+
+/* 清单 */
+.gear{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.gbox{background:#fffdfb;border:1px solid var(--line);border-radius:12px;padding:15px 17px}
+.gcat{font-size:13px;font-weight:600;margin-bottom:9px;color:var(--a);
+  display:flex;align-items:center;gap:6px}
+.gitem{display:flex;gap:8px;align-items:flex-start;font-size:13px;
+  padding:3.5px 0;color:#4a4256;line-height:1.6}
+.gitem::before{content:"";width:13px;height:13px;flex:0 0 13px;margin-top:4px;
+  border:1.5px solid var(--b);border-radius:3.5px;background:#fff}
+
+/* 调研板块 */
+.blk{margin-bottom:18px}
+.blk:last-child{margin-bottom:0}
+.btitle{font-size:14.5px;font-weight:600;margin-bottom:8px;
+  display:flex;align-items:center;gap:8px}
+.blk p{font-size:13.5px;color:#4a4256;margin-bottom:7px}
+.blk ul{margin:0 0 8px 18px;font-size:13.5px;color:#4a4256}
+.blk li{margin-bottom:4.5px;padding-left:2px}
+.blk strong{color:var(--ink);font-weight:600}
+
+.warn{background:#fff8f6;border:1px solid #F7C1C1;border-left:4px solid #E24B4A;
+  border-radius:10px;padding:13px 16px;margin:10px 0;font-size:13.5px;color:#5a2b2b}
+.warn b{color:#A32D2D}
+.tip{background:#f4f9f2;border:1px solid #C0DD97;border-left:4px solid #639922;
+  border-radius:10px;padding:13px 16px;margin:10px 0;font-size:13.5px;color:#3a4a2a}
+.tip b{color:#3B6D11}
+.note{background:#f7f5f2;border-radius:10px;padding:12px 15px;margin:10px 0;
+  font-size:12.5px;color:var(--muted);line-height:1.7}
+
+/* 交通段 */
+.leg{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;
+  padding:14px 0;border-bottom:1px solid #f5efe6}
+.leg:last-child{border-bottom:none}
+.leg-badge{background:var(--a);color:#fff;border-radius:11px;padding:9px 13px;
+  text-align:center;font-size:12px;font-weight:600;min-width:76px;line-height:1.4}
+.leg-badge .big{font-size:15px;display:block}
+.leg-body{font-size:13.5px}
+.leg-title{font-weight:600;margin-bottom:4px}
+.leg-note{color:var(--muted);font-size:12.5px;margin-top:5px}
+
+footer{text-align:center;color:var(--muted);font-size:12.5px;padding:26px 20px 0;
+  border-top:1px solid var(--line);margin-top:10px}
+footer a{color:var(--a);text-decoration:none}
+
+@media print{
+  body{background:#fff}
+  .wrap{max-width:100%;padding:0 12px}
+  .hero{padding:26px 12px;margin-bottom:16px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  section{padding:16px 18px;margin-bottom:12px;box-shadow:none;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .day{box-shadow:none;padding:14px 16px}
+  .stat,.gbox,.active,.warn,.tip{
+    -webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h2{font-size:16px}h3{font-size:14px}
+  .no-print{display:none}
+}
+@media (max-width:640px){
+  .hero h1{font-size:23px}
+  .dinfo{margin-left:0;width:100%}
+  .slot{grid-template-columns:56px 46px 1fr;gap:8px;font-size:12.5px}
+  section{padding:18px 16px}
+}
+</style></head>
+<body style="--a:#BA7517;--b:#FAC775">
+<div class="hero"><div class="hero-in">
+<div class="kicker">WorldsTip · 旅行规划报告</div>
+<h1>成都 → 川西大环线</h1>
+<div class="route">
+<span class="tag">自驾节奏</span>
+<span class="tag">7 天</span>
+<span class="tag">2 人</span>
+<span class="tag">强度 4/5</span>
+</div>
+<div class="meta-row">
+<span>语气 <b>美景 · 沿途 · 风景 · 服务区</b></span>
+</div>
+</div></div>
+<div class="wrap">
+<section>
+<h2><span class="ico">📋</span>行程概览</h2>
+<div class="sub">这张表是整份报告的骨架：节奏、强度、花费一目了然，细节在下方各板块展开。</div>
+<div class="grid">
+<div class="stat"><div class="k">总天数</div><div class="v">7 <span class="u">天</span></div></div>
+<div class="stat"><div class="k">节奏画像</div><div class="v" style="font-size:17px">自驾</div></div>
+<div class="stat"><div class="k">累计活动</div><div class="v">52 <span class="u">小时</span></div></div>
+<div class="stat"><div class="k">累计里程</div><div class="v">1740 <span class="u">km</span></div></div>
+<div class="stat"><div class="k">人均预算</div><div class="v" style="color:#BA7517">¥4,562</div></div>
+<div class="stat"><div class="k">全团预算</div><div class="v">¥9,124</div></div>
+</div>
+</section>
+<section><h2><span class="ico">🗺️</span>逐日动线</h2>
+<div class="sub">按「上午 / 下午 / 晚上」三段切分，每日景点数与停留时长已按节奏画像配平。首末日自动减量，留出交通与缓冲。</div>
+<div class="day">
+<div class="day-h">
+<span class="dnum">DAY 1</span>
+<span class="dtag">抵达日</span>
+<span class="dcity">川西大环线</span>
+<span class="dinfo">3 个点 · <b>7.5h</b></span>
+</div>
+<div class="slot">
+<div class="stime">08:30</div>
+<div class="spart">上午 2点</div>
+<div class="snote">早出发, 沿途风景优先, 服务区补给（约 5.0h，单点 2.5h）</div>
+</div><div class="slot">
+<div class="stime">13:30</div>
+<div class="spart">下午 1点</div>
+<div class="snote">留白时间, 咖啡馆/民宿发呆/周边散步（约 2.5h，单点 2.5h）</div>
+</div>
+<div class="active">🚴 驾驶里程 约 145km — 含服务区补给与沿途停留, 连续驾驶不超过 2 小时</div>
+<div class="dnote">💡 抵达后先安顿，轻活动开胃；别急着连打两个点</div>
+</div>
+<div class="day">
+<div class="day-h">
+<span class="dnum">DAY 2</span>
+<span class="dtag">游玩日</span>
+<span class="dcity">川西大环线</span>
+<span class="dinfo">5 个点 · <b>7.5h</b></span>
+</div>
+<div class="slot">
+<div class="stime">08:30</div>
+<div class="spart">上午 3点</div>
+<div class="snote">早出发, 沿途风景优先, 服务区补给（约 4.5h，单点 1.5h）</div>
+</div><div class="slot">
+<div class="stime">13:30</div>
+<div class="spart">下午 1点</div>
+<div class="snote">留白时间, 咖啡馆/民宿发呆/周边散步（约 1.5h，单点 1.5h）</div>
+</div><div class="slot">
+<div class="stime">18:30</div>
+<div class="spart">晚上 1点</div>
+<div class="snote">早点休息或附近夜逛（约 1.5h，单点 1.5h）</div>
+</div>
+<div class="active">🚴 驾驶里程 约 290km — 含服务区补给与沿途停留, 连续驾驶不超过 2 小时</div>
+<div class="dnote">💡 边开边停，服务区补给；日落前到观景点</div>
+</div>
+<div class="day">
+<div class="day-h">
+<span class="dnum">DAY 3</span>
+<span class="dtag">游玩日</span>
+<span class="dcity">川西大环线</span>
+<span class="dinfo">5 个点 · <b>7.5h</b></span>
+</div>
+<div class="slot">
+<div class="stime">08:30</div>
+<div class="spart">上午 3点</div>
+<div class="snote">早出发, 沿途风景优先, 服务区补给（约 4.5h，单点 1.5h）</div>
+</div><div class="slot">
+<div class="stime">13:30</div>
+<div class="spart">下午 1点</div>
+<div class="snote">留白时间, 咖啡馆/民宿发呆/周边散步（约 1.5h，单点 1.5h）</div>
+</div><div class="slot">
+<div class="stime">18:30</div>
+<div class="spart">晚上 1点</div>
+<div class="snote">早点休息或附近夜逛（约 1.5h，单点 1.5h）</div>
+</div>
+<div class="active">🚴 驾驶里程 约 290km — 含服务区补给与沿途停留, 连续驾驶不超过 2 小时</div>
+<div class="dnote">💡 边开边停，服务区补给；日落前到观景点</div>
+</div>
+<div class="day">
+<div class="day-h">
+<span class="dnum">DAY 4</span>
+<span class="dtag">游玩日</span>
+<span class="dcity">川西大环线</span>
+<span class="dinfo">5 个点 · <b>7.5h</b></span>
+</div>
+<div class="slot">
+<div class="stime">08:30</div>
+<div class="spart">上午 3点</div>
+<div class="snote">早出发, 沿途风景优先, 服务区补给（约 4.5h，单点 1.5h）</div>
+</div><div class="slot">
+<div class="stime">13:30</div>
+<div class="spart">下午 1点</div>
+<div class="snote">留白时间, 咖啡馆/民宿发呆/周边散步（约 1.5h，单点 1.5h）</div>
+</div><div class="slot">
+<div class="stime">18:30</div>
+<div class="spart">晚上 1点</div>
+<div class="snote">早点休息或附近夜逛（约 1.5h，单点 1.5h）</div>
+</div>
+<div class="active">🚴 驾驶里程 约 290km — 含服务区补给与沿途停留, 连续驾驶不超过 2 小时</div>
+<div class="dnote">💡 边开边停，服务区补给；日落前到观景点</div>
+</div>
+<div class="day">
+<div class="day-h">
+<span class="dnum">DAY 5</span>
+<span class="dtag">游玩日</span>
+<span class="dcity">川西大环线</span>
+<span class="dinfo">5 个点 · <b>7.5h</b></span>
+</div>
+<div class="slot">
+<div class="stime">08:30</div>
+<div class="spart">上午 3点</div>
+<div class="snote">早出发, 沿途风景优先, 服务区补给（约 4.5h，单点 1.5h）</div>
+</div><div class="slot">
+<div class="stime">13:30</div>
+<div class="spart">下午 1点</div>
+<div class="snote">留白时间, 咖啡馆/民宿发呆/周边散步（约 1.5h，单点 1.5h）</div>
+</div><div class="slot">
+<div class="stime">18:30</div>
+<div class="spart">晚上 1点</div>
+<div class="snote">早点休息或附近夜逛（约 1.5h，单点 1.5h）</div>
+</div>
+<div class="active">🚴 驾驶里程 约 290km — 含服务区补给与沿途停留, 连续驾驶不超过 2 小时</div>
+<div class="dnote">💡 边开边停，服务区补给；日落前到观景点</div>
+</div>
+<div class="day">
+<div class="day-h">
+<span class="dnum">DAY 6</span>
+<span class="dtag">游玩日</span>
+<span class="dcity">川西大环线</span>
+<span class="dinfo">5 个点 · <b>7.5h</b></span>
+</div>
+<div class="slot">
+<div class="stime">08:30</div>
+<div class="spart">上午 3点</div>
+<div class="snote">早出发, 沿途风景优先, 服务区补给（约 4.5h，单点 1.5h）</div>
+</div><div class="slot">
+<div class="stime">13:30</div>
+<div class="spart">下午 1点</div>
+<div class="snote">留白时间, 咖啡馆/民宿发呆/周边散步（约 1.5h，单点 1.5h）</div>
+</div><div class="slot">
+<div class="stime">18:30</div>
+<div class="spart">晚上 1点</div>
+<div class="snote">早点休息或附近夜逛（约 1.5h，单点 1.5h）</div>
+</div>
+<div class="active">🚴 驾驶里程 约 290km — 含服务区补给与沿途停留, 连续驾驶不超过 2 小时</div>
+<div class="dnote">💡 边开边停，服务区补给；日落前到观景点</div>
+</div>
+<div class="day">
+<div class="day-h">
+<span class="dnum">DAY 7</span>
+<span class="dtag">返程日</span>
+<span class="dcity">川西大环线</span>
+<span class="dinfo">3 个点 · <b>7.5h</b></span>
+</div>
+<div class="slot">
+<div class="stime">08:30</div>
+<div class="spart">上午 2点</div>
+<div class="snote">早出发, 沿途风景优先, 服务区补给（约 5.0h，单点 2.5h）</div>
+</div><div class="slot">
+<div class="stime">13:30</div>
+<div class="spart">下午 1点</div>
+<div class="snote">留白时间, 咖啡馆/民宿发呆/周边散步（约 2.5h，单点 2.5h）</div>
+</div>
+<div class="active">🚴 驾驶里程 约 145km — 含服务区补给与沿途停留, 连续驾驶不超过 2 小时</div>
+<div class="dnote">💡 留足缓冲，别安排需要预约的项目；优先返程</div>
+</div>
+</section>
+<section><h2><span class="ico">💰</span>预算安排</h2>
+<div class="sub">住宿「舒适」、餐饮「舒适」档位估算，按 2 人计。机票/火车票实时价格需自行查 12306 或购票平台。</div>
+<table><thead><tr><th>项目</th><th class="num">人均</th><th class="num">全团(×2)</th></tr></thead>
+<tbody><tr><td>交通</td><td class="num">¥2,277</td><td class="num">¥4,554</td></tr><tr><td>住宿</td><td class="num">¥801</td><td class="num">¥1,602</td></tr><tr><td>餐饮</td><td class="num">¥616</td><td class="num">¥1,232</td></tr><tr><td>门票</td><td class="num">¥560</td><td class="num">¥1,120</td></tr><tr><td>其他</td><td class="num">¥308</td><td class="num">¥616</td></tr>
+<tr class="tot"><td>合计</td><td class="num">¥4,562</td>
+<td class="num">¥9,124</td></tr>
+</tbody></table>
+<div class="note">⚠️ 票价说明：火车票与机票的实时价格、折扣与余票无法自动获取，请以 12306 App/官网、航司官网或购票平台为准。上表交通项为经验估算，实际费用随出发地、日期、席别变化很大。</div>
+</section>
+<section><h2><span class="ico">🎒</span>装备与物资清单</h2>
+<div class="sub">按「自驾」画像与防晒霜SPF50+、墨镜、遮阳帽、驱蚊液、速干衣、便携小风扇 天气生成。打印后可逐项勾选。</div>
+<div class="gear"><div class="gbox"><div class="gcat">📦 证件</div><div class="gitem">身份证</div><div class="gitem">现金/银行卡</div><div class="gitem">手机+充电器</div></div><div class="gbox"><div class="gcat">📦 衣物</div><div class="gitem">换洗衣物</div><div class="gitem">舒适鞋</div><div class="gitem">外套(昼夜温差)</div></div><div class="gbox"><div class="gcat">📦 防护</div><div class="gitem">防晒霜</div><div class="gitem">墨镜</div><div class="gitem">帽子</div><div class="gitem">雨伞/雨衣</div></div><div class="gbox"><div class="gcat">📦 健康</div><div class="gitem">常用药</div><div class="gitem">创可贴</div><div class="gitem">晕车药(自驾)</div></div><div class="gbox"><div class="gcat">📦 电子</div><div class="gitem">充电宝</div><div class="gitem">数据线</div><div class="gitem">耳机</div></div><div class="gbox"><div class="gcat">📦 画像重点</div><div class="gitem">行车记录仪</div><div class="gitem">充气泵</div><div class="gitem">拖车绳</div><div class="gitem">三角警示牌</div><div class="gitem">车载急救包</div><div class="gitem">保温箱</div><div class="gitem">颈枕</div></div><div class="gbox"><div class="gcat">📦 季节性</div><div class="gitem">防晒霜SPF50+</div><div class="gitem">墨镜</div><div class="gitem">遮阳帽</div><div class="gitem">驱蚊液</div><div class="gitem">速干衣</div><div class="gitem">便携小风扇</div></div></div>
+</section>
+<footer>
+由 <b>WorldsTip旅行规划</b> skill 生成 · 创作者 MrdT·WorldsTip.COM<br>
+数据来源 worldstip.com 整站导航（234 个国内目的地）· 天气 Open-Meteo · 车站 12306<br>
+<span class="no-print">本报告的票价、天气、开放时间为生成时状态，出行前请再次核实。</span>
+</footer>
+</div></body></html>

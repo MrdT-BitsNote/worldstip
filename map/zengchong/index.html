@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>增冲侗寨 · 黔东南增冲鼓楼侗寨全攻略（鼓楼/风雨桥/侗族风情）</title>
+<meta name="description" content="增冲侗寨旅游全攻略：贵州从江深山的古老侗寨，全国重点文保的增冲鼓楼、风雨桥与吊脚楼群，侗族风情与梯田溪流；交通住宿美食避坑一篇讲清。">
+<style>
+  :root{
+    --hui:#6b5a3d;
+    --hui-deep:#4a3f28;
+    --hui-soft:#e4eaee;
+    --sand:#f4f6f6;
+    --sand-line:#d9e0e4;
+    --coral:#a86b3a;
+    --cyan:#8c7a3a;
+    --leaf:#7a6a3a;
+    --ink:#2b3942;
+    --ink-soft:#5f6d76;
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(58,80,95,.32);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(74,93,107,.16), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(63,127,140,.13), transparent 55%),
+      var(--sand);
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--hui-deep)}
+
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--hui) 8%,#3d5260 55%,var(--hui-deep));
+    padding:40px 36px 34px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-40px;bottom:-60px;width:300px;height:300px;
+    background:radial-gradient(circle, rgba(255,255,255,.18), transparent 62%);
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.94;max-width:680px}
+  .hero p b{color:#fff}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{
+    font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:10px;
+  }
+
+  .switch{display:flex;gap:12px;margin:30px 0 6px;flex-wrap:wrap}
+  .switch button{
+    flex:1;min-width:230px;border:2px solid var(--sand-line);
+    background:var(--card);color:var(--ink);cursor:pointer;text-align:left;
+    border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  }
+  .switch button:hover{border-color:var(--hui);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(74,93,107,.4)}
+  .switch button.on{border-color:var(--hui);background:linear-gradient(135deg,#e9eef1,#eff3ee)}
+  .switch button .t{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800}
+  .switch button .t .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff}
+  .switch button .d{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .b-1d .badge{background:var(--cyan)}
+  .b-2d .badge{background:var(--coral)}
+  .b-3d .badge{background:var(--leaf)}
+
+  section.panel{margin-top:26px;background:var(--card);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(74,93,107,.10)}
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--hui-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--hui-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--hui-deep);margin-top:20px}
+  .hint b{font-weight:800}
+
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--hui-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;
+    background:var(--hui);border:3px solid var(--hui-soft);box-sizing:content-box;
+  }
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--hui-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--hui-soft);color:var(--hui-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--coral);font-weight:800}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid var(--sand-line);border-radius:14px;padding:14px 16px;background:#fbfcfc;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(74,93,107,.35);box-shadow:0 8px 18px -10px rgba(74,93,107,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--hui-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+  .spot{display:flex;gap:18px;background:#fbfcfc;border:1px solid var(--sand-line);border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+  .spot:hover{border-color:rgba(74,93,107,.35);box-shadow:0 10px 22px -12px rgba(74,93,107,.3)}
+  .spimg{flex:0 0 40%;margin:0;min-width:0}
+  .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+  .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+  .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+  .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+  .sptxt h3{margin:0;font-size:19px;color:var(--hui-deep)}
+  .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+  .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#e9eef1;border-radius:10px;padding:9px 12px;margin-top:10px}
+  .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+  @media (max-width:640px){
+    .spot{flex-direction:column}
+    .spimg{flex:none}
+    .spimg img{height:auto;max-height:220px;object-fit:cover}
+  }
+
+  .cmp{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .cmp table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fefdfb}
+  .cmp th,.cmp td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--sand-line)}
+  .cmp thead th{background:var(--hui-deep);color:#fff;font-weight:700}
+  .cmp tbody tr:nth-child(even){background:#eef1f3}
+  .cmp .hd2{background:var(--hui-soft);color:var(--hui-deep);font-weight:800;border-bottom:1px solid var(--sand-line)}
+  .cmp .good{color:#2f7d32;font-weight:700}
+  .cmp .bad{color:#c0504d;font-weight:700}
+
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--sand-line);padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--hui-soft);color:var(--hui-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--coral);font-weight:800;white-space:nowrap}
+
+  .budget{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fefdfb}
+  .budget th,.budget td{padding:10px 14px;text-align:left}
+  .budget thead th{background:var(--hui-deep);color:#fff;font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#eef1f3}
+  .budget .tot{font-weight:800;color:var(--hui-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  .tips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .tips li{font-size:14px;color:var(--ink);background:#e9eef1;border-left:4px solid var(--hui);border-radius:8px;padding:10px 14px}
+  .tips li b{color:var(--hui-deep)}
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--hui-deep)}
+
+  @media print{
+    body{background:#fff}
+    .switch button{display:none}
+    .wrap{max-width:none;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
+    .card,.budget,.cmp{page-break-inside:avoid}
+  }
+  @media (max-width:600px){
+    .hero{padding:30px 22px 26px}
+    .hero h1{font-size:27px}
+    .wrap{padding:18px 14px 48px}
+    section.panel{padding:20px 18px}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style></style>
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/zengchong/">
+    <meta name="theme-color" content="#6b5a3d">
+    <link rel="icon" href="../../favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="增冲侗寨 · 黔东南增冲鼓楼侗寨全攻略（鼓楼/风雨桥/侗族风情）">
+    <meta property="og:description" content="贵州从江深山的古老侗寨，增冲鼓楼+风雨桥+吊脚楼；交通住宿一篇讲清。">
+    <meta property="og:url" content="https://worldstip.com/map/zengchong/">
+    <meta property="og:image" content="https://worldstip.com/map/zengchong/assets/zengchong_cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="增冲侗寨 · 黔东南增冲鼓楼侗寨全攻略">
+    <meta name="twitter:description" content="从江深山古老侗寨，增冲鼓楼+风雨桥+吊脚楼；交通住宿预算一篇讲清。">
+    <meta name="twitter:image" content="https://worldstip.com/map/zengchong/assets/zengchong_cover.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "WorldStip · 旅行小册子", "url": "https://worldstip.com/"},
+    {"@type": "ListItem", "position": 2, "name": "增冲侗寨 · 黔东南增冲鼓楼侗寨全攻略", "url": "https://worldstip.com/map/zengchong/"}
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/zengchong/",
+  "name": "增冲侗寨 · 黔东南增冲鼓楼侗寨全攻略",
+  "inLanguage": "zh-CN",
+  "isPartOf": { "@type": "WebSite", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "author": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "publisher": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "copyrightHolder": { "@type": "Organization", "name": "旅行小册子" },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">🏮 增冲侗寨 · ANCIENT DONG VILLAGE (ZENGCHONG)</div>
+  <h1>增冲侗寨 · 黔东南增冲鼓楼侗寨全攻略</h1>
+  <p>在<b>贵州从江</b>深山的云雾里，藏着全国重点文保的<b>增冲鼓楼</b>所在的<b>增冲侗寨</b>——高耸的<b>鼓楼</b>是侗寨的心脏，<b>风雨桥</b>跨溪而卧，<b>吊脚楼</b>沿山有序铺展，直到现在还延续着纯朴的侗族生活。这里远离热闹景区，是体验<b>原生侗族风情</b>的安静所在。本攻略含 1 日/2 日双方案、鼓楼与风雨桥参观、侗族文化体验、交通、住宿、美食避坑全讲清。</p>
+  <div class="meta">
+    <span>📍 目的地：贵州黔东南 · 从江（增冲侗寨）</span>
+    <span>👥 1–6 人自由行/自驾</span>
+    <span>⏱️ 1–2 日 侗寨微住</span>
+    <span>💰 古寨免费 · 住宿 80–400</span>
+  </div>
+</header>
+
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="b-1d on" role="tab" aria-selected="true" data-plan="plan1" id="tab1">
+    <span class="t"><span class="badge">1日精华</span> 快充版 ⚡</span>
+    <div class="d">鼓楼+风雨桥+侗寨街巷速览 / 人均约 100–180</div>
+  </button>
+  <button class="b-2d" role="tab" aria-selected="false" data-plan="plan2" id="tab2">
+    <span class="t"><span class="badge">2日深住</span> 侗家版 🏮</span>
+    <div class="d">夜宿吊脚楼·鼓楼坪听芦笙 / 人均约 300–800</div>
+  </button>
+</div>
+
+<!-- 1日方案 -->
+<section class="panel" id="plan1" role="tabpanel">
+  <h2><span class="emo">⚡</span>1 日精华 · 快充版</h2>
+  <p class="sub">从从江县城出发，上午抵达增冲侗寨看鼓楼与风雨桥，中午侗家尝糯米酸汤，下午沿寨子与溪流散步看吊脚楼，一天把原生侗寨看透。</p>
+  <div class="hint">👣 <b>适配：</b>寨子不大、景点步行可达，自驾最方便；村内道路窄，可把车停寨口步行。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">上午 · 增冲鼓楼 + 风雨桥</div>
+      <div class="seg"><span>🚗 从江县城→增冲（山路约1.5h）</span></div>
+      <div class="seg"><span>🏮 全国文保鼓楼·飞檐斗拱</span><span>🌉 跨溪风雨桥·连廊木构</span></div>
+      <div class="tip2"><span class="arr">💡</span> 清晨人少、光线好，是拍鼓楼的好时段。</div>
+    </li>
+    <li>
+      <div class="day">中午 · 侗家午餐</div>
+      <div class="seg"><span>🍚 糯米/酸汤鱼/腌肉</span></div>
+      <div class="seg"><span>🏡 看吊脚楼与火塘生活</span></div>
+      <div class="tip2"><span class="arr">💡</span> 可请村民讲讲鼓楼与侗歌故事，寨里多有好客人家。</div>
+    </li>
+    <li>
+      <div class="day">下午 · 寨巷溪流 + 返程</div>
+      <div class="seg"><span>👣 沿寨子石板路·溪边散步</span></div>
+      <div class="seg"><span>🌾 山坡梯田点缀寨落</span></div>
+      <div class="tip2"><span class="arr">💡</span> 傍晚鼓楼坪常有村民活动，遇节日可看芦笙踩堂。</div>
+    </li>
+  </ul>
+</section>
+
+<footer>
+<!-- 2日方案 -->
+<section class="panel" id="plan2" role="tabpanel" hidden>
+  <h2><span class="emo">🏮</span>2 日深住 · 侗家版</h2>
+  <p class="sub">「住进侗乡」——夜宿增冲吊脚楼，一晚听风声喝侗茶、清晨看鼓楼烟雾，白天再串从江/小黄侗歌或加榜梯田。</p>
+  <div class="hint">🌙 <b>这版更有味道：</b>住一晚才能赶上鼓楼晨昏与侗族日常，是理解侗乡生活的最好方式。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">D1 午后 · 到寨 · 入住吊脚楼</div>
+      <div class="seg"><span>🚗 抵达增冲·入住农家木楼</span></div>
+      <div class="seg"><span>🌉 风雨桥边看溪流·傍晚鼓楼坪散步</span></div>
+      <div class="tip2"><span class="arr">💡</span> 农家乐多为木屋，隔音一般，备耳塞更安睡。</div>
+    </li>
+    <li>
+      <div class="day">D2 清晨 · 鼓楼晨烟·侗家生活</div>
+      <div class="seg"><span>🏮 清晨鼓楼与炊烟相映</span></div>
+      <div class="seg"><span>🍚 侗家早餐糯米·看寨里劳作</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 木楼注意用火安全，遵循村民安排。</div>
+    </li>
+    <li>
+      <div class="day">D2 白天 · 小黄侗歌/加榜梯田 + 返程</div>
+      <div class="seg"><span>🚗 前往小黄或加榜看梯田</span></div>
+      <div class="seg"><span>🎵 小黄侗族大歌·加榜层层梯田</span></div>
+      <div class="tip2"><span class="arr">💡</span> 加榜梯田秋季金黄时最美，时间够值得绕行。</div>
+    </li>
+  </ul>
+</section>
+
+<section class="panel" id="spots">
+  <h2><span class="emo">🏮</span>核心看点 · 侗寨怎么玩</h2>
+  <div class="spotlist">
+    <div class="spot"><span class="no">1</span><span class="it"><b>增冲鼓楼</b><div class="w">全国重点文保，侗乡鼓楼中的代表作，飞檐斗拱层叠、内部木构精巧，是侗寨心脏</div></span></div>
+    <div class="spot"><span class="no">2</span><span class="it"><b>风雨桥</b><div class="w">跨溪而卧的连廊木桥，侗族建筑智慧，桥下溪流鹅卵石滩很有画面感</div></span></div>
+    <div class="spot"><span class="no">3</span><span class="it"><b>吊脚楼群</b><div class="w">沿山而建的苗族侗族吊脚楼，木构错落，层叠有韵律</div></span></div>
+    <div class="spot"><span class="no">4</span><span class="it"><b>侗族生活</b><div class="w">村民仍延续农作、织染、侗歌传统，日常烟火很治愈</div></span></div>
+    <div class="spot"><span class="no">5</span><span class="it"><b>溪流与梯田</b><div class="w">寨边溪流潺潺，山坡梯田随四季变色，秋季金黄最美</div></span></div>
+    <div class="spot"><span class="no">6</span><span class="it"><b>小黄侗歌/加榜梯田</b><div class="w">顺路可去的侗族大歌之乡与层层梯田，深入黔东南更完整</div></span></div>
+  </div>
+  <img src="assets/zengchong_a.jpg" alt="增冲鼓楼风雨桥" loading="lazy" style="width:100%;border-radius:14px;margin-top:16px">
+</section>
+
+<section class="panel" id="how">
+  <h2><span class="emo">🚗</span>怎么去</h2>
+  <div class="cmp">
+    <div class="row"><div class="mode">🚄 高铁+当地</div><div class="p">高铁至<b>从江站</b>，包车或拼车至增冲侗寨（约1.5h山路）。<div class="tag">适合无车党</div></div></div>
+    <div class="row"><div class="mode">🚗 自驾（推荐）</div><div class="p">从江县沿雷榕/从江段公路进山，寨口停车步行入寨。<div class="tag">最自由，山路多弯</div></div></div>
+  </div>
+</section>
+
+<section class="panel" id="stay">
+  <h2><span class="emo">🏡</span>住哪里</h2>
+  <div class="grid">
+    <div class="card"><b>寨内农家木楼</b><div class="w">住吊脚楼亲体验，80–300元，需提前联系</div></div>
+    <div class="card"><b>从江县城酒店</b><div class="w">设施全、选择多，150–400元，作跳板</div></div>
+    <div class="card"><b>小黄/加榜民宿</b><div class="w">侗歌梯田周边，体验佳，需早订</div></div>
+  </div>
+</section>
+
+<section class="panel" id="food">
+  <h2><span class="emo">🍚</span>吃什么</h2>
+  <div class="food">
+    <div class="row"><span class="no">1</span><span class="it"><b>酸汤鱼</b><div class="w">黔东南酸汤发酵，配江鱼鲜香</div></span><span class="prx">人均50</span></div>
+    <div class="row"><span class="no">2</span><span class="it"><b>糯米饭/腌鱼腌肉</b><div class="w">侗家待客主食，软糯咸香</div></span><span class="prx">人均20</span></div>
+    <div class="row"><span class="no">3</span><span class="it"><b>牛瘪/羊瘪（可选）</b><div class="w">侗苗特色，口味独特可尝鲜</div></span><span class="prx">人均60</span></div>
+    <div class="row"><span class="no">4</span><span class="it"><b>山野菜/菌子</b><div class="w">当季采摘，清炒或煮汤</div></span><span class="prx">时价</span></div>
+  </div>
+</section>
+
+<section class="panel" id="budget">
+  <h2><span class="emo">💰</span>预算参考</h2>
+  <div class="budget"><table><thead><tr><th>项目</th><th>1日快充</th><th>2日深住</th></tr></thead><tbody>
+    <tr><th>交通（从江进出+包车分摊）</th><td>80–160</td><td>120–260</td></tr>
+    <tr><th>门票</th><td>0（古寨免费）</td><td>0</td></tr>
+    <tr><th>餐饮</th><td>40–80</td><td>120–240</td></tr>
+    <tr><th>住宿</th><td>—</td><td>80–400</td></tr>
+    <tr class="tot"><th>人均合计</th><td>120–240</td><td>320–900</td></tr>
+  </tbody></table></div>
+  <p class="tiny">💰 独家提示：乡下村寨消费低，想住原生态选寨内木楼，价格实惠但条件简朴。</p>
+</section>
+
+<section class="panel" id="tips">
+  <h2><span class="emo">💡</span>避坑与贴士</h2>
+  <ul class="tips">
+    <li><b>山路驾驶：</b>进出增冲多盘山弯道且窄，会车减速鸣笛，新手慎自驾。</li>
+    <li><b>尊重文化：</b>参观鼓楼、风雨桥保持安静，拍村民先征询，尊重宗教信仰与习俗。</li>
+    <li><b>木楼防火：</b>吊脚楼多为木质，注意用火用电安全，不在室内吸烟。</li>
+    <li><b>旺季住宿：</b>节假日黔东南热，寨内民宿少需早订，或住从江县城。</li>
+    <li><b>信号：</b>深山部分路段信号弱，下载离线地图与重要资料。</li>
+  </ul>
+</section>
+
+增冲侗寨 · 黔东南增冲鼓楼侗寨全攻略 ｜ 适配 1–6 人自由行 · 门票及价格为参考值，以景区实时公告为准<br>侗寨木楼密集注意防火烟，山区道路多弯谨慎驾驶；尊重少数民族文化、文明游览。 · <a href="../../index.html">← 返回小册子</a>
+</footer>
+</div>
+<script>
+(function(){var b=document.querySelectorAll('.switch button');b.forEach(function(x){x.addEventListener('click',function(){b.forEach(function(y){y.classList.remove('on');y.setAttribute('aria-selected','false')});x.classList.add('on');x.setAttribute('aria-selected','true');var p=x.getAttribute('data-plan');document.querySelectorAll('.panel').forEach(function(s){if(s.id===p){s.removeAttribute('hidden');s.setAttribute('role','tabpanel')}else{s.setAttribute('hidden','');s.removeAttribute('role')}})})})})();
+</script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>武汉好友周末行 A5 卡片手册</title>
+<meta name="description" content="武汉两日游与周末行程攻略：黄鹤楼、长江大桥、江汉路、东湖骑行、热干面，含黄鹤楼与长江大桥、武汉长江与楚河汉街，附交通住宿与避坑。">
+<meta name="keywords" content="武汉旅游,武汉两日游,武汉周末,黄鹤楼,东湖,热干面">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--pg:15mm}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+  background:linear-gradient(160deg,#232a3a 0%,#151a26 55%,#1d2434 100%);
+  color:#2b2f3a;
+  display:flex;flex-direction:column;align-items:center;
+  padding:34px 20px 70px;
+}
+.deck-wrap{max-width:1180px;width:100%}
+.chips{
+  display:flex;flex-wrap:wrap;gap:8px;justify-content:center;
+  margin:0 auto 26px;max-width:1120px;
+}
+.chips button{
+  border:none;cursor:pointer;padding:10px 16px;border-radius:999px;
+  background:#ffffff18;color:#dfe4ee;font-size:14px;
+  border:1px solid #ffffff22;transition:.18s;letter-spacing:.5px;
+}
+.chips button:hover{background:#ff8fb2;color:#fff;border-color:transparent;transform:translateY(-1px)}
+.chips button.active{background:linear-gradient(135deg,#ff4f89,#ff7fae);color:#fff;border-color:transparent;box-shadow:0 6px 18px #ff4f8960}
+.deck{display:flex;flex-wrap:wrap;gap:26px;justify-content:center}
+.card{
+  width:148mm;height:210mm;background:#fff;border-radius:18px;
+  overflow:hidden;position:relative;
+  box-shadow:0 22px 60px #00000055;
+  display:flex;flex-direction:column;
+}
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:16px 22px 0;color:#9aa0ae;font-size:11.5px;letter-spacing:1.5px;
+}
+.topbar b{font-weight:700;color:#343a4a}
+.body{position:relative;flex:1;padding:8px 30px 28px;overflow:hidden;display:flex;flex-direction:column}
+
+/* ---------- 封面 ---------- */
+.cover{position:relative;flex:1;border-radius:18px;overflow:hidden;margin:0;background:#0b0e14}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,10,18,.05) 0%,rgba(8,10,18,.45) 55%,rgba(8,10,18,.88) 100%)}
+.cover .cv{position:absolute;inset:auto 0 0 0;padding:0 30px 34px;z-index:2;color:#fff}
+.cover .kick{font-size:13px;letter-spacing:5px;color:#ffd9e6;margin-bottom:12px;font-weight:600}
+.cover h1{font-size:56px;line-height:1.08;font-weight:800;letter-spacing:2px;background:linear-gradient(120deg,#fff,#ffd7e6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cover h1 small{font-size:24px;letter-spacing:6px;display:block;font-weight:600;background:linear-gradient(120deg,#ffe9f2,#ffb8d2);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:6px}
+.cover .tags{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+.cover .tags span{font-size:12px;padding:6px 13px;border-radius:999px;background:#ffffff1f;border:1px solid #ffffff40;color:#ffeef4;letter-spacing:1px}
+.cover .meta{margin-top:20px;font-size:12.5px;color:#e6edf7;letter-spacing:1px;border-top:1px solid #ffffff2e;padding-top:12px}
+
+/* ---------- 标题区 ---------- */
+.header.c{display:flex;align-items:center;gap:14px;margin:4px 0 6px}
+.ico{width:46px;height:46px;border-radius:14px;flex:none;background:linear-gradient(140deg,var(--tc1),var(--tc2));display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px var(--tc-soft)}
+.ico svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.hc h2{font-size:26px;font-weight:800;color:#232838;letter-spacing:.5px;line-height:1.15}
+.hc h2 b{color:var(--tc-strong)}
+.hc .en{font-size:11.5px;color:#a3a9b8;letter-spacing:2.5px;text-transform:uppercase;margin-top:2px}
+
+/* ---------- 动线 ---------- */
+.timeline{display:flex;flex-direction:column;gap:0;margin-top:14px}
+.tl{display:flex;gap:14px;align-items:flex-start}
+.tl .d{font-size:12px;font-weight:800;color:#fff;background:linear-gradient(140deg,var(--tc1),var(--tc2));border-radius:10px;padding:8px 0;width:66px;text-align:center;flex:none;letter-spacing:.5px;line-height:1.2}
+.tl .tt{flex:1;padding:0 0 16px 0;position:relative}
+.tl .tt .t{font-size:15.5px;font-weight:700;color:#2a3040}
+.tl .tt .s{font-size:12.5px;color:#8b91a0;margin-top:3px;line-height:1.5}
+.tl + .tl .tt{border-left:2px dashed #e3e7f0;padding-left:0}
+
+/* ---------- 行程 ---------- */
+.day-head{display:flex;align-items:center;gap:12px;margin:6px 0 4px}
+.day-head .flag{font-size:15px;font-weight:800;color:#fff;padding:9px 16px;border-radius:12px;background:linear-gradient(140deg,var(--tc1),var(--tc2));box-shadow:0 8px 18px var(--tc-soft)}
+.day-head .cap{font-size:14px;color:#9aa0ae;letter-spacing:1px}
+.day-route{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  margin:10px 0 12px;padding:12px 16px;border-radius:14px;
+  background:linear-gradient(120deg,var(--tc-soft),#ffffff);border:1px solid var(--tc-soft);
+  font-size:13.5px;color:#4a5164;line-height:1.7;
+}
+.day-route .arrow{color:var(--tc-strong);font-weight:800}
+.dset{margin:0 0 10px}
+.dt{font-size:14.5px;font-weight:800;color:var(--tc-strong);display:flex;align-items:center;gap:8px;margin-bottom:6px;letter-spacing:.5px}
+.dt::before{content:"";width:6px;height:6px;border-radius:50%;background:linear-gradient(140deg,var(--tc1),var(--tc2))}
+.dset ul{list-style:none}
+.dset li{position:relative;padding:6px 0 6px 26px;font-size:13.5px;line-height:1.65;color:#3a4152;border-bottom:1px dashed #eef0f5}
+.dset li:last-child{border-bottom:none}
+.dset li::before{content:"";position:absolute;left:4px;top:15px;width:9px;height:9px;border-radius:3px;background:var(--tc-soft)}
+.dset li b{color:#232838}
+.dset li em{font-style:normal;color:var(--tc-strong)}
+.day-tip{
+  margin-top:auto;padding:13px 16px;border-radius:14px;
+  background:linear-gradient(120deg,#fff5d6,#fffbee);border:1px solid #ffe29a;
+  font-size:13px;line-height:1.6;color:#8a6a1f;
+}
+.day-tip b{color:#c99a2e}
+.day-thumbs{display:flex;gap:12px;margin:12px 0 4px;margin-top:auto}
+.th{flex:1;height:128px;border-radius:14px;overflow:hidden;position:relative;box-shadow:0 8px 20px #00000022}
+.th img{width:100%;height:100%;object-fit:cover}
+.th span{position:absolute;left:0;right:0;bottom:0;padding:22px 10px 7px;font-size:12px;color:#fff;font-weight:700;background:linear-gradient(180deg,transparent,#000000a0)}
+.thonere{flex:1;height:150px}
+.th-tall{flex:1;height:150px}
+
+/* ---------- 图卡网格 ---------- */
+.spot-label{font-size:13px;color:#9aa0ae;letter-spacing:1px;margin:2px 0 10px}
+.spots{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.spot-card{border-radius:14px;overflow:hidden;background:#fff;border:1px solid #eceff5;display:flex;flex-direction:column;box-shadow:0 6px 16px #0000000d}
+.spot-card .ph{height:106px;overflow:hidden;position:relative;background:#080b10}
+.spot-card .ph img{width:100%;height:100%;object-fit:cover}
+.spot-card .st{padding:9px 12px}
+.spot-card .st .t{font-size:14px;font-weight:800;color:#232838;display:flex;align-items:center;gap:6px}
+.spot-card .st .t i{font-style:normal;font-size:15px}
+.spot-card .st .d{font-size:11.5px;color:#8b91a0;margin-top:3px;line-height:1.5}
+.spot-card .st .tag{margin-top:6px;display:inline-block;font-size:10.5px;color:var(--tc-strong);background:var(--tc-soft);padding:3px 9px;border-radius:999px;font-weight:700;letter-spacing:.5px}
+
+/* ---------- 贴士 notes ---------- */
+.notes{display:flex;flex-direction:column;gap:9px;margin-top:10px}
+.note{display:flex;gap:12px;align-items:flex-start;padding:11px 14px;border-radius:13px;background:#f7f9fd;border:1px solid #eceff5}
+.note .ni{font-size:17px;flex:none;width:26px;height:26px;border-radius:8px;background:var(--tc-soft);display:flex;align-items:center;justify-content:center}
+.note .nt b{display:block;font-size:14px;color:#232838;margin-bottom:2px}
+.note .nt .x{font-size:12.5px;color:#5a6274;line-height:1.55}
+.note.warn{background:#fff3ec;border-color:#ffd9c2}
+.note.warn .ni{background:#ffe1d0}
+
+/* 页脚页码 */
+.page-num{position:absolute;right:22px;bottom:16px;font-size:12px;color:#b6bcc9;letter-spacing:1px;z-index:3}
+.page-num b{color:#6a7184}
+.badge{position:absolute;top:14px;right:20px;z-index:3;font-size:11px;font-weight:800;color:var(--tc-strong);background:var(--tc-soft);padding:5px 11px;border-radius:999px;letter-spacing:.5px}
+
+/* foot */
+.foot-note{width:100%;text-align:center;color:#8b93a4;font-size:13px;letter-spacing:1px;padding:30px 0 0;line-height:1.8}
+
+@media print{
+  body{background:#fff;padding:0;display:block}
+  .deck-wrap{max-width:none}
+  .chips{display:none}
+  .deck{gap:0;display:block}
+  .card{page-break-after:always;box-shadow:none;border-radius:0;margin:0}
+  .foot-note{display:none}
+}
+@page{size:A5;margin:0}
+.camtab{position:fixed;top:110px;left:14px;right:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/wuhan/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="武汉好友周末行 A5 卡片手册">
+    <meta property="og:description" content="武汉两日游与周末行程攻略：黄鹤楼、长江大桥、江汉路、东湖骑行、热干面，含黄鹤楼与长江大桥、武汉长江与楚河汉街，附交通住宿与避坑。">
+    <meta property="og:url" content="https://worldstip.com/map/wuhan/">
+    <meta property="og:image" content="https://worldstip.com/assets/images/ugLqvjSiQRU.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="武汉好友周末行 A5 卡片手册">
+    <meta name="twitter:description" content="武汉两日游与周末行程攻略：黄鹤楼、长江大桥、江汉路、东湖骑行、热干面，含黄鹤楼与长江大桥、武汉长江与楚河汉街，附交通住宿与避坑。">
+    <meta name="twitter:image" content="https://worldstip.com/assets/images/ugLqvjSiQRU.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "武汉好友周末行 A5 卡片手册",
+      "url": "https://worldstip.com/map/wuhan/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/wuhan/",
+  "name": "武汉好友周末行 A5 卡片手册",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="deck-wrap">
+  <div class="chips" id="chips">
+    <button data-target="c-cover">封面</button>
+    <button data-target="c-overview">总览</button>
+    <button data-target="c-prep">行前交通住宿</button>
+    <button data-target="c-fri">周五晚</button>
+    <button data-target="c-sat-am">周六·早</button>
+    <button data-target="c-sat-pm">周六·午</button>
+    <button data-target="c-sat-night">周六·夜</button>
+    <button data-target="c-sun">周日</button>
+    <button data-target="c-shop">逛街地图</button>
+    <button data-target="c-park">乐园游玩</button>
+    <button data-target="c-bar">酒吧夜生活</button>
+    <button data-target="c-food">美食清单</button>
+    <button data-target="c-safety">安全提示</button>
+  </div>
+  <div class="deck" id="deck">
+
+  <!-- 1 封面 -->
+  <div class="card" id="c-cover" style="--tc1:#7f8cff;--tc2:#c86bff;--tc-strong:#7f5cff;--tc-soft:#ece6ff">
+    <div class="cover">
+      <picture>
+<source srcset="../../assets/images/ugLqvjSiQRU.webp" type="image/webp">
+<img src="../../assets/images/ugLqvjSiQRU.jpg" alt="黄鹤楼与长江大桥夜景" width="800" height="600" loading="lazy">
+</picture>
+      <div class="cv">
+        <div class="kick">WUHAN · 武汉</div>
+        <h1>好友 · 周末行<small>武汉 · 逛街 · 美食 · 酒吧</small></h1>
+        <div class="tags">
+          <span>纯逛街</span><span>文艺出片</span><span>微醺小酌</span><span>乐园可选</span><span>省心安全</span>
+        </div>
+        <div class="meta">周五晚 — 周日下午 · A5 口袋卡 · 轻装带手机</div>
+      </div>
+    </div>
+    <div class="page-num"><b>1</b> / 13</div>
+  </div>
+
+  <!-- 2 总览 -->
+  <div class="card" id="c-overview" style="--tc1:#4aa8e0;--tc2:#7f8cff;--tc-strong:#3f7fe0;--tc-soft:#e3f0fc">
+    <div class="topbar"><b>武汉 · 好友周末行</b><span>动线总览</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14l-4-2-4 2-4-2-4 2z"/><path d="M9 9h6M9 13h6"/></svg></div>
+      <div class="hc"><h2>3 天怎么玩</h2><div class="en">Route Overview</div></div>
+    </div>
+    <div class="body">
+      <div class="timeline">
+        <div class="tl"><div class="d">周五<br>晚</div><div class="tt"><div class="t">抵达 · 入住</div><div class="s">高铁/机场 → 地铁 2 · 4 号线 → 楚河汉街商圈入住 → 汉街夜景散步</div></div></div>
+        <div class="tl"><div class="d">周六<br>上午</div><div class="tt"><div class="t">过早 · 文艺拍照</div><div class="s">粮道街过早 → 昙华林老街拍照 → 午餐湖北菜</div></div></div>
+        <div class="tl"><div class="d">周六<br>下午</div><div class="tt"><div class="t">逛街主战场</div><div class="s">楚河汉街 → 武商梦时代（爱玩派可改去武汉欢乐谷）</div></div></div>
+        <div class="tl"><div class="d">周六<br>夜</div><div class="tt"><div class="t">过江 · 微醺</div><div class="s">过江 → 江汉路 → 黎黄陂路 → 酒吧小酌 → 江滩夜景</div></div></div>
+        <div class="tl"><div class="d">周日上午</div><div class="tt"><div class="t">收尾 · 返程</div><div class="s">自然醒早餐 → 补逛街或可选动物园半日 → 提前预留返程</div></div></div>
+      </div>
+      <div class="day-tip"><b>TIP</b>　逛街为主，留一天弹性。两个「可选」都写在后面：<b>乐园</b>卡（欢乐谷／极地/动物园）与<b>酒吧</b>卡，时间不够就精剪。</div>
+      <div class="day-tip"><b>TIP</b>　🎫 门票速查：东湖绿道（磨山/听涛）<b>免费</b>，湖北省博物馆<b>免费</b>但需提前实名预约（周一闭馆）；黄鹤楼<b>70</b>元。逛街顺路去免费点最划算。</div>
+    </div>
+    <div class="page-num"><b>2</b> / 13</div>
+  </div>
+
+  <!-- 3 行前 -->
+  <div class="card" id="c-prep" style="--tc1:#46b98a;--tc2:#55d4a8;--tc-strong:#2ca27a;--tc-soft:#e2f6ee">
+    <div class="topbar"><b>武汉 · 好友周末行</b><span>行前准备</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.8 6.4 17.6 3.6a2 2 0 0 1 2.8 2.8l-2.8 2.8M10 20a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/></svg><div class="hc"></div></div>
+      <div class="hc"><h2>出发前，记住这 3 点</h2><div class="en">Before You Go</div></div>
+    </div>
+    <div class="body">
+      <div class="dset"><div class="dt">🏨 住哪最顺</div><ul>
+        <li><b>武昌·楚河汉街商圈</b>：地铁 2·4 号线交汇，逛街、过早都顺，<em>首推</em></li>
+        <li><b>汉口·江汉路商圈</b>：老城区氛围浓，近江滩酒吧街</li>
+        <li>闺蜜同住选<b>双床房</b>，提前订周六晚，退房早备行李寄存</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🚇 怎么走</div><ul>
+        <li><b>机场</b>：天河机场 → 地铁 2 号线直达市区</li>
+        <li><b>高铁</b>：武汉站/汉口站/武昌站 — 看买到哪站，就近安排</li>
+        <li>市内以<b>地铁+打车</b>为主，2 号线可过江</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🎒 必带</div><ul>
+        <li>充电宝（逛街耗电）、晴雨伞、舒适的鞋</li>
+        <li>身份证、少量现金；晚上外出两人一双</li>
+      </ul></div>
+      <div class="th th-tall" style="margin-top:auto"><picture>
+<source srcset="../../assets/images/XEavy68RKBU.webp" type="image/webp">
+<img src="../../assets/images/XEavy68RKBU.jpg" alt="武汉长江夜景" width="800" height="600" loading="lazy">
+</picture><span>武汉 · 两江夜景</span></div>
+    </div>
+    <div class="page-num"><b>3</b> / 13</div>
+  </div>
+
+  <!-- 4 周五晚 -->
+  <div class="card" id="c-fri" style="--tc1:#9a7ef0;--tc2:#f06ba4;--tc-strong:#8f5ce0;--tc-soft:#efe8ff">
+    <div class="topbar"><b>武汉 · 好友周末行</b><span>周五晚 · 抵达</span></div>
+    <div class="day-head"><div class="flag">周五晚</div><div class="cap">Day 1 · 安顿下来</div></div>
+    <div class="body">
+      <div class="day-route">高铁 / 机场 <span class="arrow">→</span> 地铁 2·4 号线 <span class="arrow">→</span> 入住汉街商圈 <span class="arrow">→</span> 汉街夜景</div>
+      <div class="dset"><div class="dt">🌃 首夜怎么过</div><ul>
+        <li>放好行李，去<b>楚河汉街</b>夜逛——水岸步行街灯光很美</li>
+        <li>饿了在<b>水塔街</b>（江汉路）或汉街吃点宵夜</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🛏 入住提醒</div><ul>
+        <li>周五晚到，早点休息，给周六存体力</li>
+        <li>确认房型与退房时间，行李先寄存</li>
+      </ul></div>
+      <div class="day-tip"><b>TIP</b>　若想先小小放松，汉街沿街就有清吧，<b>微醺即止</b>，别贪杯误了明天。</div>
+      <div class="th thonere" style="margin-top:auto"><picture>
+<source srcset="../../assets/images/_rXKqfpHxUY.webp" type="image/webp">
+<img src="../../assets/images/_rXKqfpHxUY.jpg" alt="楚河汉街夜景" width="800" height="600" loading="lazy">
+</picture><span>楚河汉街 · 夜色</span></div>
+    </div>
+    <div class="page-num"><b>4</b> / 13</div>
+  </div>
+
+  <!-- 5 周六早 -->
+  <div class="card" id="c-sat-am" style="--tc1:#ff9a5c;--tc2:#ffb469;--tc-strong:#f08b3a;--tc-soft:#ffe9d6">
+    <div class="topbar"><b>武汉 · 好友周末行</b><span>周六上午 · 过早与拍照</span></div>
+    <div class="day-head"><div class="flag">周六·上午</div><div class="cap">过早一份，元气一天</div></div>
+    <div class="body">
+      <div class="day-route">粮道街过早 <span class="arrow">→</span> 昙华林拍照 <span class="arrow">→</span> 午餐湖北菜</div>
+      <div class="dset"><div class="dt">🍜 过早吃什么</div><ul>
+        <li><b>热干面</b>、<b>三鲜豆皮</b>、<b>蛋酒</b>——武汉早餐三件套</li>
+        <li>粮道街老字号多，路边小店最地道，避开高峰排长队</li>
+      </ul></div>
+      <div class="dset"><div class="dt">📷 昙华林拍照</div><ul>
+        <li>红瓦老城 + 文艺咖啡店背景墙，轻松出片</li>
+        <li>顺带在咖啡店歇个脚、补补电</li>
+      </ul></div>
+      <div class="day-tip"><b>TIP</b>　上午别排太满，<b>留点腿力给下午逛街</b>。</div>
+      <div class="day-thumbs">
+        <div class="th"><picture>
+<source srcset="../../assets/images/NXpwYyvHOAA.webp" type="image/webp">
+<img src="../../assets/images/NXpwYyvHOAA.jpg" alt="热干面和豆皮" width="800" height="600" loading="lazy">
+</picture><span>过早 · 热干面豆皮</span></div>
+        <div class="th"><picture>
+<source srcset="../../assets/images/9pqQRFWjrJ4.webp" type="image/webp">
+<img src="../../assets/images/9pqQRFWjrJ4.jpg" alt="昙华林老街" width="800" height="600" loading="lazy">
+</picture><span>昙华林 · 文艺老街</span></div>
+      </div>
+    </div>
+    <div class="page-num"><b>5</b> / 13</div>
+  </div>
+
+  <!-- 6 周六午 逛街主战场 -->
+  <div class="card" id="c-sat-pm" style="--tc1:#f06ba4;--tc2:#ff7fae;--tc-strong:#e2508c;--tc-soft:#ffe3f0">
+    <div class="topbar"><b>武汉 · 好友周末行</b><span>周六下午 · 逛街主场</span></div>
+    <div class="day-head"><div class="flag">周六·下午</div><div class="cap">逛到走不动为止</div></div>
+    <div class="body">
+      <div class="day-route">楚河汉街 <span class="arrow">→</span> 武商梦时代 <span class="arrow">→</span>（可选）武汉欢乐谷</div>
+      <div class="dset"><div class="dt">🛍 楚河汉街</div><ul>
+        <li>中国最长的水岸步行街，品牌、美食、影院一站式</li>
+        <li>沿街逛，累了找家店坐下来喝一杯</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🏬 武商梦时代</div><ul>
+        <li>巨型室内购物中心，逛街、拍照、吃饭全覆盖，不怕下雨</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🔄 爱玩派二选一</div><ul>
+        <li>想玩项目可全下午改去<b>武汉欢乐谷</b>（过山车等，见乐园卡）</li>
+        <li>逛街与乐园二选一，<b>别硬塞</b>，省着腿力逛到晚上</li>
+      </ul></div>
+      <div class="day-thumbs">
+        <div class="th"><picture>
+<source srcset="../../assets/images/2fJsF30UqCc.webp" type="image/webp">
+<img src="../../assets/images/2fJsF30UqCc.jpg" alt="武商梦时代" width="800" height="600" loading="lazy">
+</picture><span>武商梦时代</span></div>
+        <div class="th"><picture>
+<source srcset="../../assets/images/ucUfOUmj8pA.webp" type="image/webp">
+<img src="../../assets/images/ucUfOUmj8pA.jpg" alt="东湖绿道骑行" width="800" height="600" loading="lazy">
+</picture><span>东湖绿道 · 可选</span></div>
+      </div>
+    </div>
+    <div class="page-num"><b>6</b> / 13</div>
+  </div>
+
+  <!-- 7 周六夜 -->
+  <div class="card" id="c-sat-night" style="--tc1:#7f8cff;--tc2:#9a7ef0;--tc-strong:#6a5ee0;--tc-soft:#e6e6ff">
+    <div class="topbar"><b>武汉 · 好友周末行</b><span>周六夜 · 过江微醺</span></div>
+    <div class="day-head"><div class="flag">周六·夜</div><div class="cap">江汉路 · 黎黄陂路 · 酒吧</div></div>
+    <div class="body">
+      <div class="day-route">2 号线过江 <span class="arrow">→</span> 江汉路 <span class="arrow">→</span> 黎黄陂路 <span class="arrow">→</span> 酒吧 <span class="arrow">→</span> 江滩</div>
+      <div class="dset"><div class="dt">🌃 江汉路步行街</div><ul>
+        <li>「天下第一街」，欧式老建筑 + 繁华店铺，夜景灯带很出片</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🏛 黎黄陂路</div><ul>
+        <li>老洋房街区，咖啡与<em>胡同小酒馆</em>扎堆，最文艺的夜</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🍸 今晚这样选</div><ul>
+        <li>想安稳聊天 → <b>黎黄陂路清吧</b>（见酒吧卡）</li>
+        <li>想热闹音乐 → <b>楚河汉街音乐酒吧</b>（RE-MIX 等）</li>
+      </ul></div>
+      <div class="day-tip"><b>TIP</b>　<em>结伴打车回酒店</em>，别单独走夜路；第二天不赶时间可多留一会。</div>
+      <div class="day-thumbs">
+        <div class="th"><picture>
+<source srcset="../../assets/images/z4aq8TNLTq4.webp" type="image/webp">
+<img src="../../assets/images/z4aq8TNLTq4.jpg" alt="江汉路夜景" width="800" height="600" loading="lazy">
+</picture><span>江汉路 · 夜景</span></div>
+        <div class="th"><picture>
+<source srcset="../../assets/images/tvE9z8B59co.webp" type="image/webp">
+<img src="../../assets/images/tvE9z8B59co.jpg" alt="黎黄陂路老洋房" width="800" height="600" loading="lazy">
+</picture><span>黎黄陂路 · 老洋房</span></div>
+      </div>
+    </div>
+    <div class="page-num"><b>7</b> / 13</div>
+  </div>
+
+  <!-- 8 周日 -->
+  <div class="card" id="c-sun" style="--tc1:#46b98a;--tc2:#6fd3a8;--tc-strong:#2ca27a;--tc-soft:#e2f6ee">
+    <div class="topbar"><b>武汉 · 好友周末行</b><span>周日上午 · 收尾</span></div>
+    <div class="day-head"><div class="flag">周日上午</div><div class="cap">从容返程</div></div>
+    <div class="body">
+      <div class="day-route">自然醒早餐 <span class="arrow">→</span> 补逛街（可选） <span class="arrow">→</span> 返程</div>
+      <div class="dset"><div class="dt">☀️ 从容安排</div><ul>
+        <li>睡到自然醒，<b>就近过早</b>，回血再出发</li>
+        <li>想再玩半天，可去<b>武汉动物园</b>（汉阳，看完直接返程）</li>
+      </ul></div>
+      <div class="dset"><div class="dt">🚄 返程小抄</div><ul>
+        <li>看返程站在哪：<b>武汉站</b>(青山) / <b>汉口站</b> / <b>武昌站</b></li>
+        <li>周末易堵，<b>提前 1.5–2 小时</b>出发去车站</li>
+      </ul></div>
+      <div class="day-tip"><b>TIP</b>　行李多就先寄存，手上轻装逛街；留 10 分钟在车站便利店补给。</div>
+      <div class="th thonere" style="margin-top:auto"><picture>
+<source srcset="../../assets/images/Xm40RHHMgdI.webp" type="image/webp">
+<img src="../../assets/images/Xm40RHHMgdI.jpg" alt="湖北省博物馆编钟" width="800" height="600" loading="lazy">
+</picture><span>可顺路看 · 省博编钟</span></div>
+    </div>
+    <div class="page-num"><b>8</b> / 13</div>
+  </div>
+
+  <!-- 9 逛街地图 -->
+  <div class="card" id="c-shop" style="--tc1:#ef5b7f;--tc2:#ff7fae;--tc-strong:#e04a74;--tc-soft:#ffe3ea">
+    <div class="topbar"><b>武汉 · 好友周末行</b><span>逛街购物地图</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v3a3 3 0 0 1-6 0V7m-4 3a3 3 0 0 1-6 0V7M4 10v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8"/></svg><div class="hc"></div></div>
+      <div class="hc"><h2>四大商圈怎么连逛</h2><div class="en">Shopping Map</div></div>
+    </div>
+    <div class="body">
+      <div class="spot-label">按「武昌 → 汉口」的顺序顺路连逛，一次逛到爽</div>
+      <div class="spots">
+        <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/_rXKqfpHxUY.webp" type="image/webp">
+<img src="../../assets/images/_rXKqfpHxUY.jpg" alt="楚河汉街" width="800" height="600" loading="lazy">
+</picture></div><div class="st"><div class="t">楚河汉街</div><div class="d">水岸步行街 · 品牌美食一站式</div><div class="tag">武昌 · 周六午</div></div></div>
+        <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/2fJsF30UqCc.webp" type="image/webp">
+<img src="../../assets/images/2fJsF30UqCc.jpg" alt="武商梦时代" width="800" height="600" loading="lazy">
+</picture></div><div class="st"><div class="t">武商梦时代</div><div class="d">巨型室内商场 · 不怕雨</div><div class="tag">武昌 · 周六午</div></div></div>
+        <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/QfrboKSbqxA.webp" type="image/webp">
+<img src="../../assets/images/QfrboKSbqxA.jpg" alt="江汉路步行街" width="800" height="600" loading="lazy">
+</picture></div><div class="st"><div class="t">江汉路</div><div class="d">天下第一街 · 欧式老建筑</div><div class="tag">汉口 · 周六晚</div></div></div>
+        <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/tvE9z8B59co.webp" type="image/webp">
+<img src="../../assets/images/tvE9z8B59co.jpg" alt="黎黄陂路" width="800" height="600" loading="lazy">
+</picture></div><div class="st"><div class="t">黎黄陂路</div><div class="d">老洋房 · 咖啡小酒馆</div><div class="tag">汉口 · 周六夜</div></div></div>
+      </div>
+      <div class="day-tip"><b>TIP</b>　武昌两站逛完，搭 2 号线过江到汉口，正好无缝接上夜生活。</div>
+    </div>
+    <div class="page-num"><b>9</b> / 13</div>
+  </div>
+
+  <!-- 10 乐园 -->
+  <div class="card" id="c-park" style="--tc1:#5ac8fa;--tc2:#4aa8e0;--tc-strong:#3498d8;--tc-soft:#e2f3ff">
+    <div class="topbar"><b>武汉 · 好友周末行</b><span>乐园 · 主题公园</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 3.6L18 7.6l-3 3 .7 4.1-3.7-2-3.7 2 .7-4.1-3-3 4.2-1z"/><path d="M5 19h14M7 22h10"/></svg><div class="hc"></div></div>
+      <div class="hc"><h2>想玩去这几家</h2><div class="en">Theme Park & Zoo</div></div>
+    </div>
+    <div class="body">
+      <div class="spot-label">逛街累了想放飞？挑一个当「可选半天」，别硬塞两处</div>
+      <div class="spots">
+        <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/JfIo3Jmz4PM.webp" type="image/webp">
+<img src="../../assets/images/JfIo3Jmz4PM.jpg" alt="武汉欢乐谷" width="800" height="600" loading="lazy">
+</picture></div><div class="st"><div class="t">🎢 武汉欢乐谷</div><div class="d">过山车·跳楼机·旋转木马，刺激与少女心都有</div><div class="tag">武昌近东湖 · 爱刺激</div></div></div>
+        <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/RnzsIrYP6jc.webp" type="image/webp">
+<img src="../../assets/images/RnzsIrYP6jc.jpg" alt="武汉极地海洋世界" width="800" height="600" loading="lazy">
+</picture></div><div class="st"><div class="t">🐧 极地海洋世界</div><div class="d">企鹅白鲸·海洋馆，梦幻又好拍</div><div class="tag">汉阳 · 爱萌宠</div></div></div>
+        <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/klTt_iI_h_c.webp" type="image/webp">
+<img src="../../assets/images/klTt_iI_h_c.jpg" alt="武汉动物园" width="800" height="600" loading="lazy">
+</picture></div><div class="st"><div class="t">🐼 武汉动物园</div><div class="d">2023 新开园，票价亲民，半日轻松逛</div><div class="tag">汉阳 · 时间紧选它</div></div></div>
+        <div class="spot-card"><div class="ph"><picture>
+<source srcset="../../assets/images/ucUfOUmj8pA.webp" type="image/webp">
+<img src="../../assets/images/ucUfOUmj8pA.jpg" alt="东湖绿道" width="800" height="600" loading="lazy">
+</picture></div><div class="st"><div class="t">🌊 东湖绿道</div><div class="d">湖边骑行散步，免费又松弛，顺路可玩</div><div class="tag">不花钱 · 休闲</div></div></div>
+      </div>
+      <div class="day-tip"><b>TIP</b>　怎么选：爱刺激去<b>欢乐谷</b>｜爱萌宠去<b>极地海洋</b>｜时间紧选<b>动物园</b>。现场购票价以窗口为准，提前在大众点评/官方看套票更省。</div>
+    </div>
+    <div class="page-num"><b>10</b> / 13</div>
+  </div>
+
+  <!-- 11 酒吧 -->
+  <div class="card" id="c-bar" style="--tc1:#8e6bff;--tc2:#a78bfa;--tc-strong:#7b55ea;--tc-soft:#ece6ff">
+    <div class="topbar"><b>武汉 · 好友周末行</b><span>酒吧 · 夜生活</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v3a6 6 0 0 1-12 0zM8 14a4 4 0 1 0 8 0M8 14V6h8"/><path d="M12 21v-3"/></svg><div class="hc"></div></div>
+      <div class="hc"><h2>今晚去哪微醺</h2><div class="en">Bars & Night</div></div>
+    </div>
+    <div class="body">
+      <div class="notes">
+        <div class="note"><div class="ni">🏛</div><div class="nt"><b>黎黄陂路·喜德堂</b><div class="x">汉口老洋房里的顶流清吧，环境雅、调酒稳，适合闺蜜聊天小酌</div></div></div>
+        <div class="note"><div class="ni">☕</div><div class="nt"><b>Passing By 咖啡酒馆</b><div class="x">白天咖啡晚上酒，三楼窗台很出片，一条龙下午到夜晚</div></div></div>
+        <div class="note"><div class="ni">🎶</div><div class="nt"><b>楚河汉街·RE-MIX / One&amp;Night A+</b><div class="x">逛街就近的音乐酒吧，有驻唱有氛围，营业到凌晨</div></div></div>
+        <div class="note"><div class="ni">🌉</div><div class="nt"><b>两江游船夜游</b><div class="x">想看江景可选卧龙号/两江游船，露天甲板吹风看灯，更安全的夜</div></div></div>
+      </div>
+      <div class="day-tip"><b>安全</b>　只去正规营业场所，<b>不接陌生人递的酒</b>，饮品不离开视线，微醺即止，<b>结伴打车回酒店</b>。</div>
+      <div class="th thonere" style="margin-top:auto"><picture>
+<source srcset="../../assets/images/y6kdT8bXCS8.webp" type="image/webp">
+<img src="../../assets/images/y6kdT8bXCS8.jpg" alt="沿江酒吧夜景" width="800" height="600" loading="lazy">
+</picture><span>两江夜色 · 小酌</span></div>
+    </div>
+    <div class="page-num"><b>11</b> / 13</div>
+  </div>
+
+  <!-- 12 美食 -->
+  <div class="card" id="c-food" style="--tc1:#ff9a5c;--tc2:#ffb469;--tc-strong:#f08b3a;--tc-soft:#ffe9d6">
+    <div class="topbar"><b>武汉 · 好友周末行</b><span>美食清单</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v7m0 0v11M6 10c-2 0-3-1.5-3-3.5S4 3 6 3s3 1.5 3 3.5S8 10 6 10z"/><path d="M18 3c1 3 1 6-1 8l-1 1h4l-1 9"/></svg><div class="hc"></div></div>
+      <div class="hc"><h2>一路吃到回家的味</h2><div class="en">Wuhan Eats</div></div>
+    </div>
+    <div class="body">
+      <div class="notes">
+        <div class="note"><div class="ni">☀️</div><div class="nt"><b>过早（早餐）</b><div class="x">热干面 · 三鲜豆皮 · 蛋酒 · 油饼包烧麦 —— 粮道街老字号</div></div></div>
+        <div class="note"><div class="ni">🥘</div><div class="nt"><b>正餐（湖北菜）</b><div class="x">莲藕排骨汤 · 清蒸/红烧武昌鱼 · 恩施小土豆 —— 汉街附近选一家<b>排队短</b>的</div></div></div>
+        <div class="note"><div class="ni">🦞</div><div class="nt"><b>宵夜 / 加餐</b><div class="x">水塔街夜市、万松园雪松路——小龙虾、烧烤、甜品齐活</div></div></div>
+        <div class="note"><div class="ni">☕</div><div class="nt"><b>下午茶</b><div class="x">昙华林咖啡店、汉街甜点铺——逛街中场休息补给</div></div></div>
+      </div>
+      <div class="day-tip"><b>TIP</b>　热门店饭点排长队，<b>错峰或提前取号</b>；路边摊选<em>本地人多</em>的那家更地道。</div>
+    </div>
+    <div class="page-num"><b>12</b> / 13</div>
+  </div>
+
+  <!-- 13 安全 -->
+  <div class="card" id="c-safety" style="--tc1:#e5533d;--tc2:#ff6b5a;--tc-strong:#d8432c;--tc-soft:#ffe6df">
+    <div class="topbar"><b>武汉 · 好友周末行</b><span>安全提示</span></div>
+    <div class="header c">
+      <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z"/><path d="M12 8v5M12 15.5v.5"/></svg><div class="hc"></div></div>
+      <div class="hc"><h2>看清这些，玩得更安心</h2><div class="en">Stay Safe</div></div>
+    </div>
+    <div class="body">
+      <div class="notes">
+        <div class="note warn"><div class="ni">🎒</div><div class="nt"><b>防扒</b><div class="x">人多的步行街、地铁里，双肩包背前面，手机不随手放口袋</div></div></div>
+        <div class="note warn"><div class="ni">🚕</div><div class="nt"><b>打车</b><div class="x">用正规平台，上车核车牌，深夜实时分享行程给好友</div></div></div>
+        <div class="note warn"><div class="ni">🍸</div><div class="nt"><b>酒吧</b><div class="x">只去正规店，不接陌生人递的酒，饮品不离视线，微醺即止</div></div></div>
+        <div class="note warn"><div class="ni">👭</div><div class="nt"><b>结伴</b><div class="x">夜间两人同行、少走暗巷，回酒店报平安</div></div></div>
+        <div class="note"><div class="ni">🚇</div><div class="nt"><b>过江方向</b><div class="x">2 号线过江，看准往汉口/往佛祖岭，别坐反</div></div></div>
+        <div class="note warn"><div class="ni">⚠️</div><div class="nt"><b>防套路 + 紧急</b><div class="x">拒绝低价拉客、付款看清价；紧急拨 110 / 120 / 12345</div></div></div>
+        <div class="note"><div class="ni">🚄</div><div class="nt"><b>返程</b><div class="x">周末易堵，提前 1.5–2 小时去车站</div></div></div>
+      </div>
+      <div style="text-align:center;margin-top:16px;padding-top:14px;border-top:1px dashed #f1dbd4;font-size:14.5px;color:#c96a52;letter-spacing:1px;font-weight:600;">美好周末「WorldStip」祝你开心 🌸</div>
+    </div>
+    <div class="page-num"><b>13</b> / 13</div>
+  </div>
+
+  </div>
+  <div class="foot-note">武汉 · 好友周末行 A5 卡片手册 · 由 WorldStip 定制</div>
+</div>
+<script>
+(function(){
+  var btns=document.querySelectorAll('#chips button');
+  var map={};
+  btns.forEach(function(b){map[b.dataset.target]=b;});
+  function setActive(id){
+    btns.forEach(function(b){b.classList.toggle('active', b.dataset.target===id);});
+  }
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      var el=document.getElementById(b.dataset.target);
+      if(!el)return;
+      setActive(b.dataset.target);
+      el.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+  // 高亮可视卡片
+  var deck=document.getElementById('deck');
+  var cards=deck.querySelectorAll('.card');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting) setActive(e.target.id); });
+    },{threshold:0.4});
+    cards.forEach(function(c){io.observe(c);});
+  }
+})();
+</script>
+<footer style="position:relative;margin:44px auto 8px;padding:18px 24px;max-width:1180px;width:calc(100% - 40px);text-align:center;background:rgba(13,17,32,.55);border:1px solid rgba(255,255,255,.12);border-radius:14px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:2">
+  <span style="font-size:13px;color:#dfe3ea;letter-spacing:.03em">Made with care by <b style="color:#fff">WorldStip</b> &nbsp;·&nbsp; <a href="https://worldstip.com" style="color:#9fb6ff;text-decoration:none" target="_blank" rel="noopener noreferrer">worldstip.com</a> &nbsp;·&nbsp; 旅行小册子</span>
+</footer>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>丹江口 · 双版组合旅行指南（环库2天 / 加武当3天）</title>
+<meta name="description" content="丹江口2天/3天双版旅行指南：环库公路、千岛画廊、丹江口大坝、百喜岛、武当山、静乐宫，含自驾/包车/跟团对比、行程、预算。">
+<meta name="keywords" content="丹江口旅游,丹江口攻略,环库公路,千岛画廊,丹江口大坝,武当山,亚洲天池,自驾">
+<style>
+  :root{
+    --sea:#0f766e;
+    --sea-deep:#115e59;
+    --sea-soft:#d2f1ea;
+    --sand:#f2f4ec;
+    --sand-line:#dde4d2;
+    --sun:#ea9a2b;
+    --coral:#e07b5a;
+    --leaf:#2f7d32;
+    --ink:#1e3a34;
+    --ink-soft:#56716b;
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(15,118,110,.32);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(234,154,43,.14), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(15,118,110,.13), transparent 55%),
+      var(--sand);
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--sea-deep)}
+
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--sea) 8%,#0b5d5a 55%,var(--sea-deep));
+    padding:40px 36px 34px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-40px;bottom:-60px;width:300px;height:300px;
+    background:radial-gradient(circle, rgba(255,255,255,.16), transparent 62%);
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.92;max-width:640px}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{
+    font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:10px;
+  }
+  .hero .wave{
+    position:absolute;left:0;right:0;bottom:0;height:26px;opacity:.35;
+    background:radial-gradient(110px 26px at 12% 0%, transparent 98%, #cff 99%) ,
+               radial-gradient(110px 26px at 40% 0%, transparent 98%, #cff 99%) ,
+               radial-gradient(110px 26px at 68% 0%, transparent 98%, #cff 99%) ,
+               radial-gradient(110px 26px at 92% 0%, transparent 98%, #cff 99%);
+    background-size:280px 26px;background-repeat:repeat-x;
+  }
+
+  .switch{display:flex;gap:12px;margin:30px 0 6px;flex-wrap:wrap}
+  .switch button{
+    flex:1;min-width:230px;border:2px solid var(--sand-line);
+    background:var(--card);color:var(--ink);cursor:pointer;text-align:left;
+    border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  }
+  .switch button:hover{border-color:var(--sea);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(15,118,110,.4)}
+  .switch button.on{border-color:var(--sea);background:linear-gradient(135deg,#e8f8f4,#e2f3ee)}
+  .switch button .t{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800}
+  .switch button .t .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff}
+  .switch button .d{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .b-2d .badge{background:var(--sun)}
+  .b-3d .badge{background:var(--coral)}
+
+  section.panel{margin-top:26px;background:var(--card);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(15,118,110,.08)}
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--sea-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--sea-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--sea-deep);margin-top:20px}
+  .hint b{font-weight:800}
+
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--sea-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;
+    background:var(--sea);border:3px solid var(--sea-soft);box-sizing:content-box;
+  }
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--sea-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--sea-soft);color:var(--sea-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--coral);font-weight:800}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid var(--sand-line);border-radius:14px;padding:14px 16px;background:#fcfdf6;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(15,118,110,.35);box-shadow:0 8px 18px -10px rgba(15,118,110,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--sea-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--sand-line);padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--sea-soft);color:var(--sea-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--coral);font-weight:800;white-space:nowrap}
+
+  .budget{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fbfff9}
+  .budget th,.budget td{padding:10px 14px;text-align:left}
+  .budget thead th{background:var(--sea-deep);color:#fff;font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#f3f9f1}
+  .budget .tot{font-weight:800;color:var(--sea-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--sea-deep)}
+
+  /* 出行方式对比表 */
+  .cmp{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .cmp table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fbfff9}
+  .cmp th,.cmp td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--sand-line)}
+  .cmp thead th{background:var(--sea-deep);color:#fff;font-weight:700}
+  .cmp tbody tr:nth-child(even){background:#f3f9f1}
+  .cmp .hd2{background:var(--sea-soft);color:var(--sea-deep);font-weight:800;border-bottom:1px solid var(--sand-line)}
+  .cmp .good{color:#2f7d32;font-weight:700}
+  .cmp .bad{color:#c0504d;font-weight:700}
+
+  @media print{
+    body{background:#fff}
+    .switch button{display:none}
+    .wrap{max-width:none;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
+    .card,.budget,.cmp{page-break-inside:avoid}
+  }
+  @media (max-width:600px){
+    .hero{padding:30px 22px 26px}
+    .hero h1{font-size:27px}
+    .wrap{padding:18px 14px 48px}
+    section.panel{padding:20px 18px}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/danjiangkou/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="丹江口 · 双版组合旅行指南（环库2天 / 加武当3天）">
+    <meta property="og:description" content="丹江口2天/3天双版旅行指南：环库公路、千岛画廊、丹江口大坝、百喜岛、武当山、静乐宫，含自驾/包车/跟团对比、行程、预算。">
+    <meta property="og:url" content="https://worldstip.com/map/danjiangkou/">
+    <meta property="og:image" content="https://worldstip.com/assets/images/djk_qiandao.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="丹江口 · 双版组合旅行指南（环库2天 / 加武当3天）">
+    <meta name="twitter:description" content="丹江口2天/3天双版旅行指南：环库公路、千岛画廊、丹江口大坝、百喜岛、武当山、静乐宫，含自驾/包车/跟团对比、行程、预算。">
+    <meta name="twitter:image" content="https://worldstip.com/assets/images/djk_qiandao.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "丹江口 · 双版组合旅行指南（环库2天 / 加武当3天）",
+      "url": "https://worldstip.com/map/danjiangkou/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/danjiangkou/",
+  "name": "丹江口 · 双版组合旅行指南（环库2天 / 加武当3天）",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">🌊 丹江口 · DANJIANGKOU TRAVEL GUIDE</div>
+  <h1>丹江口双版组合指南</h1>
+  <p>一座被<b>「亚洲天池」丹江口水库</b>环抱的水都，429 公里<b>环库公路</b>被称为「中国最美山水公路」，把<b>千岛画廊、百喜岛、大坝、静乐宫</b>串成翡翠项链，还能顺路直上<b>武当山</b>。求快走 <b>2 天环库版</b>，加一天上 <b>3 天武当版</b>。1–3 人出行均适用，含行程 / 住宿 / 美食 / 预算 / 交通方式对比。</p>
+  <div class="meta">
+    <span>📍 目的地：丹江口（湖北十堰）</span>
+    <span>👥 1–3 人</span>
+    <span>⏱️ 2 天 / 3 天双方案</span>
+    <span>💰 人均预算已附</span>
+  </div>
+  <div class="wave" aria-hidden="true"></div>
+</header>
+
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="b-2d on" role="tab" aria-selected="true" data-plan="plan2" id="tab2">
+    <span class="t"><span class="badge">2天环库</span> 快充版 ⚡</span>
+    <div class="d">核心环库公路+千岛画廊+大坝 / 人均约 600–1000</div>
+  </button>
+  <button class="b-3d" role="tab" aria-selected="false" data-plan="plan3" id="tab3">
+    <span class="t"><span class="badge">3天武当</span> 深度版 🏔️</span>
+    <div class="d">加武当山日/静乐宫 / 人均约 1100–1700</div>
+  </button>
+</div>
+
+<!-- 2天方案 -->
+<section class="panel" id="plan2" role="tabpanel">
+  <h2><span class="emo">⚡</span>2 天环库 · 快充版</h2>
+  <p class="sub">核心策略：D1 大坝+千岛画廊+碧水连天，D2 百喜岛+静乐宫，自驾沿环库公路边走边停。</p>
+  <div class="hint">👥 <b>1–3 人适配：</b>环库公路景点均适合开车直达，2–3 人自驾或包车最划算；住宿按 2 人房人均分摊计价。下方预算按 <b>人均</b> 标注。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 大坝 + 千岛画廊 + 碧水连天</div>
+      <div class="seg"><span>🌉 上午 丹江口大坝观景台</span><span>🏞️ 南水北调中线工程纪念园</span></div>
+      <div class="seg"><span>🏝️ 下午 环库公路 → 千岛画廊（免费）</span><span>🌄 碧水连天观景台看日落</span></div>
+      <div class="seg"><span>🌃 晚上 城区晚餐 + 水都花月夜</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 大坝观景需付费/预约（约 20–30 元），千岛画廊免费；环库公路限速慢行，观景平台可随时停车。傍晚的碧水连天是全程最出片的日落点位。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 百喜岛 + 静乐宫</div>
+      <div class="seg"><span>🚢 上午 沧浪海旅游港 → 百喜岛（乘船）</span><span>🏝️ 观鸟+栈道+露营感</span></div>
+      <div class="seg"><span>🏯 下午 静乐宫（武当九宫之首）</span><span>🌆 傍晚 城区返程</span></div>
+      <div class="tip2"><span class="arr">💡</span> 百喜岛需乘船，可自驾到码头再坐船（含船票约 80–120）；若不想上岛，可直接去静乐宫+均州老街，节奏更轻松。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 3天方案 -->
+<section class="panel" id="plan3" role="tabpanel" hidden>
+  <h2><span class="emo">🏔️</span>3 天武当 · 深度版</h2>
+  <p class="sub">环库两天齐全，再加一整天给武当山「天下第一仙山」，看金顶云海与太和宫。</p>
+  <div class="hint">👥 <b>1–3 人适配：</b>武当山可自驾到山门再换乘观光车，或选 2–3 人拼车；体力一般可索道+观光车。预算按 <b>人均</b> 标注。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 大坝 + 千岛画廊</div>
+      <div class="seg"><span>🌉 上午 丹江口大坝 + 纪念园</span><span>🏝️ 下午 环库公路 → 千岛画廊 → 碧水连天日落</span></div>
+      <div class="seg"><span>🌃 晚上 城区晚餐</span><span>🏨 住丹江口市区/大坝附近</span></div>
+      <div class="tip2"><span class="arr">💡</span> 第一天沿环库公路北段边走边停，把精华的湖光山色先看完。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 静乐宫 + 百喜岛</div>
+      <div class="seg"><span>🏯 上午 静乐宫 + 均州老街</span><span>🚢 下午 沧浪海游船 → 百喜岛</span></div>
+      <div class="seg"><span>🏨 傍晚 前往武当山/山脚民宿入住</span></div>
+      <div class="tip2"><span class="arr">💡</span> 为第二天武当山做准备，建议住武当山景区口或山脚民宿，次日一早进山。</div>
+    </li>
+    <li>
+      <div class="day">DAY 3 · 武当山一日</div>
+      <div class="seg"><span>🏔️ 全天 武当山：太和宫/金顶 + 太子坡/紫霄宫</span><span>🚡 索道上山（可选）</span></div>
+      <div class="seg"><span>🚄 傍晚 下山返程</span></div>
+      <div class="tip2"><span class="arr">🏔️ 精华线路：</span>自驾到山门→换乘观光车→琼台/索道或徒步上金顶，再转太子坡、紫霄宫、南岩。门票约 140 + 观光车 100 = 240 元，索道另计；想轻松可只选金顶+一个代表性宫观，避免赶路。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 特色景点详览 -->
+<section class="panel" id="spots">
+  <h2><span class="emo">⭐</span>特色景点 · 单独详览</h2>
+  <p class="sub">把丹江口最有辨识度的 5 个点单独拎出来说清楚——值不值得去、怎么玩、藏在哪。</p>
+
+  <div class="spotlist">
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/djk_qiandao.webp" type="image/webp">
+<img src="../../assets/images/djk_qiandao.jpg" alt="航拍丹江口千岛画廊，碧绿水库湖面上散落上百座翠绿岛屿，环库公路如丝带蜿蜒湖岸，水天一色" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>千岛画廊 · 翡翠群岛铺满湖面</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#d2f1ea;color:#0f766e">丹江口水库</span><h3>千岛画廊 · 环库公路的明珠</h3></div>
+        <p>沿环库公路行驶约 15 公里，抵牛河林区一带的观景平台，登高俯瞰，上百座翠绿小岛如翡翠般散落在碧蓝的丹江口水库上，山水相连、「十米有景观，百米现画廊」，被网友称为「湖北的小千岛湖」。</p>
+        <p class="spgo">👍 必去理由：免费开放，自驾直达观景台，360° 俯瞰群岛，是环库公路最出片的点位。清晨薄雾、晴天都好看，建议早去人少光线好。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/djk_daba.webp" type="image/webp">
+<img src="../../assets/images/djk_daba.jpg" alt="宏伟的丹江口大坝混凝土重力坝横跨汉江，坝下是碧蓝辽阔的水库，青山环抱蓝天白云" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>丹江口大坝 · 南水北调中线源头</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#f3fbe3;color:#5a7d2a">南水北调源头</span><h3>丹江口大坝 · 亚洲天池的闸门</h3></div>
+        <p>巍巍大坝锁住汉江丹江激流，化作「亚洲天池」的万顷碧波，是南水北调中线的核心水源工程。坝顶观景台可鸟瞰辽阔水库与丹江口城区，感受「一库清水向北流」的分量。</p>
+        <p class="spgo">👍 必去理由：了解南水北调、致敬水利史诗的地标。观景需付费/预约；旁边南水北调中线工程纪念园可顺游，了解工程与库区移民故事。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/djk_baixidao.webp" type="image/webp">
+<img src="../../assets/images/djk_baixidao.jpg" alt="丹江口水库中的百喜岛，翠绿小岛浮在碧蓝水面，岛上有观景楼台和木栈道，森林茂密，白鹭飞翔" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>百喜岛 · 湖心观鸟秘境</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#fdeee2;color:#b2692a">沧浪海</span><h3>百喜岛 · 湖心观鸟小岛</h3></div>
+        <p>镶嵌在丹江口「小太平洋」上的湖心岛，森林覆盖率高、栈道蜿蜒，白鹭、鸬鹚等百余种鸟类在此栖息，是观鸟与露营感十足的小岛。登岛漫步、吹风听潮，特别出片。</p>
+        <p class="spgo">👍 必去理由：需在沧浪海旅游港乘船上岛（含船票约 80–120 元/人），小岛不大、20 分钟可逛完，但坐在岸边吹风、拍湖景很惬意；适合慢节奏。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/djk_bishui.webp" type="image/webp">
+<img src="../../assets/images/djk_bishui.jpg" alt="丹江口环库公路碧水连天观景台，柏油路蜿蜒在碧湖与青山之间，木质观景平台延伸入水，夕阳染红天际" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>碧水连天 · 环库公路最美日落</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e4edfb;color:#3b5fa8">环库公路</span><h3>碧水连天观景台 · 环库公路上最出片</h3></div>
+        <p>沿环库公路行驶时不容错过的观景平台：水面如镜、碧波无浪，傍晚夕阳将湖面、群岛与晚霞染成一片赤红，被称赞为「夕阳无限好」的经典机位。</p>
+        <p class="spgo">👍 必去理由：免费，自驾直达。建议傍晚 4–6 点抵达，看晚霞洒满湖面；也是骑行环库绿道的歇脚点。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/djk_wudang.webp" type="image/webp">
+<img src="../../assets/images/djk_wudang.jpg" alt="武当山金顶，险峻山峰之巅矗立铜铸鎏金殿宇，云雾缭绕恍如仙境，道观庄严古朴" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>武当山 · 天下第一仙山</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#f0e6d8;color:#8a6d3b">世界文化遗产</span><h3>武当山 · 道教仙山与世界遗产</h3></div>
+        <p>距丹江口不远的世界文化遗产、道教名山。金顶铜铸鎏金殿立于峰巅，云雾缭绕间确有「天下第一仙山」的气势；太和宫、太子坡、紫霄宫、南岩宫等古建庄严大气。</p>
+        <p class="spgo">👍 必去理由：3 天版强烈推荐加一天。门票约 140 + 观光车 100 = 240 元，索道另计；建议晴天早上去金顶看云海，体力一般可选索道上山。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+  </div>
+
+  <style>
+    .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+    .spot{display:flex;gap:18px;background:#fcfdf6;border:1px solid var(--sand-line);border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+    .spot:hover{border-color:rgba(15,118,110,.35);box-shadow:0 10px 22px -12px rgba(15,118,110,.3)}
+    .spimg{flex:0 0 42%;margin:0;min-width:0}
+    .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+    .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+    .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+    .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+    .sptxt h3{margin:0;font-size:19px;color:var(--sea-deep)}
+    .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+    .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#f2f9f0;border-radius:10px;padding:9px 12px;margin-top:10px}
+    .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+    .sptxt .spsrc a{color:var(--sea-deep)}
+    @media (max-width:640px){
+      .spot{flex-direction:column}
+      .spimg{flex:none}
+      .spimg img{height:auto;max-height:220px;object-fit:cover}
+    }
+  </style>
+</section>
+
+<!-- 出行方式对比（用户核心诉求） -->
+<section class="panel">
+  <h2><span class="emo">🚗</span>怎么去：自驾 vs 包车 vs 跟团</h2>
+  <p class="sub">丹江口景点分散、环库公路是玩法核心，怎么走差异很大。下面把三种方式讲透，帮你做选择。</p>
+  <div class="cmp">
+    <table>
+      <caption style="position:absolute;left:-9999px">丹江口自驾/包车/跟团三种出行方式对比</caption>
+      <thead><tr><th scope="col">维度</th><th scope="col">🚗 自驾</th><th scope="col">🚙 包车</th><th scope="col">🚌 跟团</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" rowspan="3" class="hd2">核心体验</th>
+            <td>环库公路<b>想停就停</b>，追日落、寻小众观景台最自由，自驾本身就是玩法</td>
+            <td>坐车看风景、司机熟路，同样灵活，可点对点安排各景点</td>
+            <td>线路固定、省心省力，但环库精华段的「边走边停」会被压缩</td>
+        </tr>
+        <tr>
+            <td>适合 <b>喜欢开车、享受驾驶乐趣</b>的游客</td>
+            <td>适合 <b>不想开车</b>、但想保留自由度的 2–3 人团</td>
+            <td>适合 <b>带长辈小孩</b>、图省心、时间紧的游客</td>
+        </tr>
+        <tr>
+            <td class="good">✔ 灵活度高、无等待、成本可控</td>
+            <td class="good">✔ 不用自己开山路、可拼车分摊</td>
+            <td class="good">✔ 全程有人安排、讲解、不操心</td>
+        </tr>
+        <tr><th scope="row" rowspan="3" class="hd2">费用与成本</th>
+            <td>租车+油费+过路，2–3 人分摊人均更低</td>
+            <td>按天计费（约 300–500 元/天 含司机），人数少时人均偏高</td>
+            <td>人均约 500–900 元起，包住宿门票省心</td>
+        </tr>
+        <tr>
+            <td>自驾 2 天油费+租金约 400–800 元/车</td>
+            <td>包车 2 天约 600–1000 元/车</td>
+            <td>跟团报价浮动大，注意隐形加点</td>
+        </tr>
+        <tr>
+            <td class="good">✔ 3 人拼车人均最省</td>
+            <td class="bad">✘ 人少时人均过高</td>
+            <td class="bad">✘ 可能有购物/自费项目</td>
+        </tr>
+        <tr><th scope="row" rowspan="3" class="hd2">注意事项</th>
+            <td>环库公路弯多限速，新手谨慎；部分观景台停车位少</td>
+            <td>选正规平台/司机，确认车型与是否含油费过路</td>
+            <td>问清是否含观光车/索道、有无购物点</td>
+        </tr>
+        <tr>
+            <td>武当山上山需换乘观光车，自驾只能到山门</td>
+            <td>包车司机大多不进景区，核心游玩仍靠自己</td>
+            <td>跟团上山同样换乘，行程节奏偏赶</td>
+        </tr>
+        <tr>
+            <td class="bad">✘ 需驾驶经验、累</td>
+            <td class="good">✔ 折中推荐：2–3 人包车最平衡</td>
+            <td class="bad">✘ 深度体验略打折</td>
+        </tr>
+        <tr><th scope="row" class="hd2" colspan="4">💡 一句话建议：2–3 人且享受开车 → <b>自驾</b>；不想开车想自由 → <b>包车（2–3 人拼车最划算）</b>；带老人小孩图省心 → <b>跟团</b>。</th></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">👥 <b>1–3 人怎么选：</b>2–3 人强烈推荐 <b>自驾或包车</b>——环库公路边走边停是丹江口灵魂玩法，跟团会错过。单人可选拼车/跟团或租车自驾。</div>
+</section>
+
+<!-- 住宿 -->
+<section class="panel">
+  <h2><span class="emo">🏨</span>住宿推荐</h2>
+  <p class="sub">三档价位，均为 2 人房计，多人出行请按需调整。</p>
+  <div class="grid">
+    <div class="card">
+      <span class="tag" style="background:#fff3cd;color:#8a6d00">经济型</span>
+      <div class="nm">快捷酒店 / 城区旅馆</div>
+      <div class="pr">约 100–160 元/晚 · 人均 50–80</div>
+      <div class="ds">丹江口城区或大坝附近，吃饭、去环库公路方便，适合预算紧的年轻组合。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#d2f1ea;color:#0f766e">中端舒适</span>
+      <div class="nm">景区民宿 / 中档酒店</div>
+      <div class="pr">约 200–350 元/晚 · 人均 100–175</div>
+      <div class="ds">沧浪海码头/环库公路沿线或武当山脚民宿，早起看晨雾、方便次日进山。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#fdeee2;color:#b2692a">高端体验</span>
+      <div class="nm">湖景度假 / 大坝景观酒店</div>
+      <div class="pr">约 500–900 元/晚 · 人均 250–450</div>
+      <div class="ds">近水库推窗见湖，适合度假放松；武当山景区高档酒店便于深度游玩。</div>
+    </div>
+  </div>
+</section>
+
+<!-- 美食 -->
+<section class="panel">
+  <h2><span class="emo">🐟</span>丹江口必吃清单</h2>
+  <p class="sub">丹江口水库盛产鲜鱼，口味以辣为主，按份点即可。</p>
+  <div class="food">
+    <div class="row"><span class="no">1</span><div class="it"><b>清蒸翘嘴鲌 / 库区鲜鱼</b><div class="w">丹江口水库原生鱼 · 鲜嫩无腥</div></div><span class="prx">约 60–120 元/份</span></div>
+    <div class="row"><span class="no">2</span><div class="it"><b>太和青龙鱼 / 全鱼宴</b><div class="w">特色鱼类大菜 · 请客必点</div></div><span class="prx">约 100 元起</span></div>
+    <div class="row"><span class="no">3</span><div class="it"><b>武当山珍菌 / 山野菜</b><div class="w">土特产山珍 · 鲜香下饭</div></div><span class="prx">约 30–50 元/份</span></div>
+    <div class="row"><span class="no">4</span><div class="it"><b>锅贴 / 郧阳三合汤</b><div class="w">本地小吃 · 暖胃实在</div></div><span class="prx">约 15–35 元</span></div>
+    <div class="row"><span class="no">5</span><div class="it"><b>均州酱牛肉 / 丹江口凉皮</b><div class="w">特色卤味与小吃 · 边走边吃</div></div><span class="prx">约 10–30 元</span></div>
+    <div class="row"><span class="no">6</span><div class="it"><b>武当山茶 / 木瓜酒</b><div class="w">地方饮品 · 饭后清口</div></div><span class="prx">约 15–40 元</span></div>
+  </div>
+</section>
+
+<!-- 预算 -->
+<section class="panel">
+  <h2><span class="emo">💰</span>预算对比（人均）</h2>
+  <p class="sub">含 1–3 人出行说明；区间为保守–宽松，实际以淡旺季与选择为准。</p>
+  <div class="budget">
+    <table>
+      <caption style="position:absolute;left:-9999px">丹江口2天与3天方案人均预算对比</caption>
+      <thead><tr><th scope="col">项目</th><th scope="col" class="sc">2天环库版</th><th scope="col" class="sc">3天武当版</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">大交通（往返，省内/邻省）</th><td class="sc">约 100–300</td><td class="sc">约 100–300</td></tr>
+        <tr><th scope="row">住宿</th><td class="sc">1 晚 50–160</td><td class="sc">2 晚 150–350</td></tr>
+        <tr><th scope="row">餐饮</th><td class="sc">约 150–250</td><td class="sc">约 250–400</td></tr>
+        <tr><th scope="row">景点门票（大坝/百喜岛船/静乐宫）</th><td class="sc">约 120–220</td><td class="sc">约 150–260</td></tr>
+        <tr><th scope="row">交通/租车/包车（人均分摊）</th><td class="sc">约 150–300</td><td class="sc">约 200–350</td></tr>
+        <tr><th scope="row">可选（武当山）</th><td class="sc">—</td><td class="sc">约 240–400</td></tr>
+        <tr><th scope="row" class="tot">合计 · 人均</th><td class="sc tot">约 600–1000</td><td class="sc tot">约 1100–1700</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">💡 <b>1–3 人怎么省：</b>住宿双人房人均分摊最划算（3 人加床或双房次之）；自驾/包车 3 人分摊比单人便宜；千岛画廊、碧水连天免费；避开旺季可显著降低房费。</div>
+</section>
+
+<!-- 避坑建议 -->
+<section class="panel">
+  <h2><span class="emo">🧭</span>避坑 & 实用贴士</h2>
+  <ul class="tips">
+    <li><b>环库公路驾驶：</b>弯多、临水、限速，新手慢行；观景平台停车位少，勿随意路边停。</li>
+    <li><b>武当山上山：</b>自驾只能到山门，需换乘景区观光车；门票与观光车、索道分开计费，提前网上订可省排队。</li>
+    <li><b>大坝观景：</b>部分点位需付费/预约，出发前确认开放与预约要求。</li>
+    <li><b>百喜岛：</b>需在码头乘船，旺季班次早，建议上午班次登岛。</li>
+    <li><b>餐饮：</b>城区吃饭比景区更实惠，库区鲜鱼是招牌，别错过。</li>
+    <li><b>时节：</b>春秋最宜，湖水最碧；夏季可玩水避暑，冬季水清但偏冷，看情况带厚衣。</li>
+  </ul>
+  <style>
+    .tips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+    .tips li{font-size:14px;color:var(--ink);background:#f6f9f2;border-left:4px solid var(--sea);border-radius:8px;padding:10px 14px}
+    .tips li b{color:var(--sea-deep)}
+  </style>
+</section>
+
+<footer>
+  丹江口 · 双版组合旅行指南 ｜ 适配 1–3 人出行 · 价格为淡旺季区间的参考值<br>
+  环库公路请谨慎驾驶；武当山注意防滑防晒；旺季价格会上浮，请以实时为准。 · <a href="../../index.html">← 返回小册子</a>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+  try{
+    var tabs=document.querySelectorAll('.switch button');
+    var plans=document.querySelectorAll('section[role="tabpanel"]');
+    function show(id){
+      tabs.forEach(function(t){
+        var on=t.getAttribute('data-plan')===id;
+        t.classList.toggle('on',on);
+        t.setAttribute('aria-selected',on?'true':'false');
+      });
+      plans.forEach(function(p){ p.hidden = p.id!==id; });
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+    tabs.forEach(function(t){ t.addEventListener('click',function(){ show(t.getAttribute('data-plan')); }); });
+  }catch(e){}
+})();
+</script>
+<footer style="position:relative;margin:44px auto 8px;padding:18px 24px;max-width:1180px;width:calc(100% - 40px);text-align:center;background:rgba(13,17,32,.55);border:1px solid rgba(255,255,255,.12);border-radius:14px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:2">
+  <span style="font-size:13px;color:#dfe3ea;letter-spacing:.03em">Made with care by <b style="color:#fff">WorldStip</b> &nbsp;·&nbsp; <a href="https://worldstip.com" style="color:#9fb6ff;text-decoration:none" target="_blank" rel="noopener noreferrer">worldstip.com</a> &nbsp;·&nbsp; 旅行小册子</span>
+</footer>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

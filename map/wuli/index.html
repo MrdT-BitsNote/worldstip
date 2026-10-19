@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雾里村 · 怒江茶马古道云端村落全攻略（丙中洛/徒步进村/木楞房）</title>
+<meta name="description" content="雾里村旅游全攻略：怒江丙中洛的云端木屋村落，茶马古道徒步进村看晨雾与雪山、怒江第一湾、石板古村木楞房；交通住宿美食避坑一篇讲清。">
+<style>
+  :root{
+    --hui:#4a5d6b;
+    --hui-deep:#33454f;
+    --hui-soft:#e4eaee;
+    --sand:#f4f6f6;
+    --sand-line:#d9e0e4;
+    --coral:#a85f4a;
+    --cyan:#3e7d8a;
+    --leaf:#4a7a63;
+    --ink:#2b3942;
+    --ink-soft:#5f6d76;
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(58,80,95,.32);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(74,93,107,.16), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(63,127,140,.13), transparent 55%),
+      var(--sand);
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--hui-deep)}
+
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--hui) 8%,#3d5260 55%,var(--hui-deep));
+    padding:40px 36px 34px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-40px;bottom:-60px;width:300px;height:300px;
+    background:radial-gradient(circle, rgba(255,255,255,.18), transparent 62%);
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.94;max-width:680px}
+  .hero p b{color:#fff}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{
+    font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:10px;
+  }
+
+  .switch{display:flex;gap:12px;margin:30px 0 6px;flex-wrap:wrap}
+  .switch button{
+    flex:1;min-width:230px;border:2px solid var(--sand-line);
+    background:var(--card);color:var(--ink);cursor:pointer;text-align:left;
+    border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  }
+  .switch button:hover{border-color:var(--hui);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(74,93,107,.4)}
+  .switch button.on{border-color:var(--hui);background:linear-gradient(135deg,#e9eef1,#eff3ee)}
+  .switch button .t{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800}
+  .switch button .t .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff}
+  .switch button .d{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .b-1d .badge{background:var(--cyan)}
+  .b-2d .badge{background:var(--coral)}
+  .b-3d .badge{background:var(--leaf)}
+
+  section.panel{margin-top:26px;background:var(--card);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(74,93,107,.10)}
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--hui-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--hui-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--hui-deep);margin-top:20px}
+  .hint b{font-weight:800}
+
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--hui-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;
+    background:var(--hui);border:3px solid var(--hui-soft);box-sizing:content-box;
+  }
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--hui-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--hui-soft);color:var(--hui-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--coral);font-weight:800}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid var(--sand-line);border-radius:14px;padding:14px 16px;background:#fbfcfc;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(74,93,107,.35);box-shadow:0 8px 18px -10px rgba(74,93,107,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--hui-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+  .spot{display:flex;gap:18px;background:#fbfcfc;border:1px solid var(--sand-line);border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+  .spot:hover{border-color:rgba(74,93,107,.35);box-shadow:0 10px 22px -12px rgba(74,93,107,.3)}
+  .spimg{flex:0 0 40%;margin:0;min-width:0}
+  .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+  .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+  .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+  .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+  .sptxt h3{margin:0;font-size:19px;color:var(--hui-deep)}
+  .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+  .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#e9eef1;border-radius:10px;padding:9px 12px;margin-top:10px}
+  .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+  @media (max-width:640px){
+    .spot{flex-direction:column}
+    .spimg{flex:none}
+    .spimg img{height:auto;max-height:220px;object-fit:cover}
+  }
+
+  .cmp{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .cmp table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fefdfb}
+  .cmp th,.cmp td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--sand-line)}
+  .cmp thead th{background:var(--hui-deep);color:#fff;font-weight:700}
+  .cmp tbody tr:nth-child(even){background:#eef1f3}
+  .cmp .hd2{background:var(--hui-soft);color:var(--hui-deep);font-weight:800;border-bottom:1px solid var(--sand-line)}
+  .cmp .good{color:#2f7d32;font-weight:700}
+  .cmp .bad{color:#c0504d;font-weight:700}
+
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--sand-line);padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--hui-soft);color:var(--hui-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--coral);font-weight:800;white-space:nowrap}
+
+  .budget{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fefdfb}
+  .budget th,.budget td{padding:10px 14px;text-align:left}
+  .budget thead th{background:var(--hui-deep);color:#fff;font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#eef1f3}
+  .budget .tot{font-weight:800;color:var(--hui-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  .tips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .tips li{font-size:14px;color:var(--ink);background:#e9eef1;border-left:4px solid var(--hui);border-radius:8px;padding:10px 14px}
+  .tips li b{color:var(--hui-deep)}
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--hui-deep)}
+
+  @media print{
+    body{background:#fff}
+    .switch button{display:none}
+    .wrap{max-width:none;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
+    .card,.budget,.cmp{page-break-inside:avoid}
+  }
+  @media (max-width:600px){
+    .hero{padding:30px 22px 26px}
+    .hero h1{font-size:27px}
+    .wrap{padding:18px 14px 48px}
+    section.panel{padding:20px 18px}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style></style>
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/wuli/">
+    <meta name="theme-color" content="#4a5d6b">
+    <link rel="icon" href="../../favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="雾里村 · 怒江茶马古道云端村落全攻略（丙中洛/徒步进村/木楞房）">
+    <meta property="og:description" content="怒江丙中洛的云端木屋村落，茶马古道徒步进村看晨雾与雪山；交通住宿美食一篇讲清。">
+    <meta property="og:url" content="https://worldstip.com/map/wuli/">
+    <meta property="og:image" content="https://worldstip.com/map/wuli/assets/wuli_cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="雾里村 · 怒江茶马古道云端村落全攻略">
+    <meta name="twitter:description" content="云端木屋村落，茶马古道徒步进村看晨雾与雪山；交通住宿预算一篇讲清。">
+    <meta name="twitter:image" content="https://worldstip.com/map/wuli/assets/wuli_cover.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "WorldStip · 旅行小册子", "url": "https://worldstip.com/"},
+    {"@type": "ListItem", "position": 2, "name": "雾里村 · 怒江茶马古道云端村落全攻略", "url": "https://worldstip.com/map/wuli/"}
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/wuli/",
+  "name": "雾里村 · 怒江茶马古道云端村落全攻略",
+  "inLanguage": "zh-CN",
+  "isPartOf": { "@type": "WebSite", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "author": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "publisher": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "copyrightHolder": { "@type": "Organization", "name": "旅行小册子" },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">🏔️ 雾里村 · CLOUD VILLAGE ON TEA HORSE ROAD (WULI)</div>
+  <h1>雾里村 · 怒江茶马古道云端村落全攻略</h1>
+  <p>藏在<b>怒江大峡谷</b>深处的<b>雾里村</b>，是丙中洛段仿佛<b>从画里走出来的云端小村</b>——清晨浓雾漫过木楞屋，雪山隔着怒江相望，脚下就是用了数百年的<b>茶马古道石板路</b>。许多怒江环线的旅人只在大道上远望一眼就走，<b>真正徒步进村</b>才见其全貌。本攻略含 1 日/2 日双方案、徒步进村路线、交通、住宿、美食与避坑，教你「穿过古道住进云里」。</p>
+  <div class="meta">
+    <span>📍 目的地：云南怒江 · 贡山丙中洛（雾里村）</span>
+    <span>👥 1–6 人自由行/自驾</span>
+    <span>⏱️ 1–2 日 云端微住</span>
+    <span>💰 古村免费 · 住宿 100–600</span>
+  </div>
+</header>
+
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="b-1d on" role="tab" aria-selected="true" data-plan="plan1" id="tab1">
+    <span class="t"><span class="badge">1日精华</span> 快充版 ⚡</span>
+    <div class="d">徒步茶马古道进村+怒江第一湾速览 / 人均约 150–250</div>
+  </button>
+  <button class="b-2d" role="tab" aria-selected="false" data-plan="plan2" id="tab2">
+    <span class="t"><span class="badge">2日深住</span> 云上版 🏔️</span>
+    <div class="d">夜宿古村木屋·晨雾雪山日出尽收 / 人均约 400–1000</div>
+  </button>
+</div>
+
+<!-- 1日方案 -->
+<section class="panel" id="plan1" role="tabpanel">
+  <h2><span class="emo">⚡</span>1 日精华 · 快充版</h2>
+  <p class="sub">丙中洛镇出发，上午徒步穿越茶马古道进雾里村，中午在村里农家用餐，下午溯江看怒江第一湾与石门关，一天把「云端村落」看透。</p>
+  <div class="hint">👟 <b>适配：</b>进村主要为徒步，建议穿防滑徒步鞋；想省力的也可从对岸走江桥进村，但体验不到古道。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">上午 · 徒步茶马古道 → 进雾里村</div>
+      <div class="seg"><span>🚗 丙中洛镇→古道入口（约20min）</span></div>
+      <div class="seg"><span>🥾 沿崖壁茶马古道步行约40min进村</span><span>🌫️ 晨雾中的木楞房与怒江峡谷</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 古道临江有落石路段，遇雨改走江桥，勿雨天勉强徒步。</div>
+    </li>
+    <li>
+      <div class="day">中午 · 村内农家午餐</div>
+      <div class="seg"><span>🍚 怒族/傈僳家菜：砣砣肉/手抓饭/酸笋</span></div>
+      <div class="seg"><span>🏡 逛石板路、看木楞房结构与火塘</span></div>
+      <div class="tip2"><span class="arr">💡</span> 可请村民当向导走村里的田间小径，别进陌生小路。</div>
+    </li>
+    <li>
+      <div class="day">下午 · 怒江第一湾/石门关 + 返程</div>
+      <div class="seg"><span>🚗 出村沿江公路看第一湾观景台</span></div>
+      <div class="seg"><span>🌊 第一湾大回环·石门关峡谷双峰</span></div>
+      <div class="tip2"><span class="arr">💡</span> 日落时分江水泛金，丙中洛镇停一晚次早看云海最舒服。</div>
+    </li>
+  </ul>
+</section>
+
+<footer>
+<!-- 2日方案 -->
+<section class="panel" id="plan2" role="tabpanel" hidden>
+  <h2><span class="emo">🏔️</span>2 日深住 · 云上版</h2>
+  <p class="sub">「住进云里」——夜宿雾里村民宿木屋，一晚等晨雾、看雪山日照金山，白天走茶马古道并串联丙中洛/秋那桶。</p>
+  <div class="hint">☁️ <b>这版才叫雾里：</b>清晨浓雾把整个村子吞进云里，日出后雾散露出雪山峡谷，是怒江最静的一刻。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">D1 午后 · 徒步进村 · 入住木屋</div>
+      <div class="seg"><span>🥾 茶马古道徒步进村·入住村内民宿</span></div>
+      <div class="seg"><span>🌄 江边日落·村里散步听怒江</span></div>
+      <div class="tip2"><span class="arr">💡</span> 村内民宿少且朴素，需提前联系；看重舒适可选丙中洛镇住。</div>
+    </li>
+    <li>
+      <div class="day">D2 清晨 · 晨雾日出 + 古道晨走</div>
+      <div class="seg"><span>🌅 6点起·看雾锁村庄与雪山金山</span></div>
+      <div class="seg"><span>🥾 沿古道走到对岸观景台回望村庄</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 日出受天气影响大，出发前看预报选晴天或多云。</div>
+    </li>
+    <li>
+      <div class="day">D2 白天 · 秋那桶/丙中洛 + 返程</div>
+      <div class="seg"><span>🚗 前往丙中洛镇或秋那桶村</span></div>
+      <div class="seg"><span>🏘️ 丙中洛「人神共居」小镇·重丁教堂</span></div>
+      <div class="tip2"><span class="arr">💡</span> 秋那桶更深处、游人更少，时间充裕值得一环。</div>
+    </li>
+  </ul>
+</section>
+
+<section class="panel" id="spots">
+  <h2><span class="emo">🏔️</span>核心看点 · 云村怎么玩</h2>
+  <div class="spotlist">
+    <div class="spot"><span class="no">1</span><span class="it"><b>雾里村云端村落</b><div class="w">怒江对岸山腰的木楞房村落，晨雾中云雾缭绕，如世外仙村般静谧</div></span></div>
+    <div class="spot"><span class="no">2</span><span class="it"><b>茶马古道徒步</b><div class="w">沿崖壁开凿的古道已有数百年，脚下是马帮踏出的石板路，落差与江声在侧</div></span></div>
+    <div class="spot"><span class="no">3</span><span class="it"><b>晨雾与雪山</b><div class="w">清晨浓雾漫过村庄、背后雪山隔着怒江，日照金山偶现，是怒江最静镜头</div></span></div>
+    <div class="spot"><span class="no">4</span><span class="it"><b>怒江第一湾</b><div class="w">怒江在丙中洛附近切出的大U形弯，观景台可俯瞰碧蓝江水环抱半岛</div></span></div>
+    <div class="spot"><span class="no">5</span><span class="it"><b>石门关峡谷</b><div class="w">两山夹峙的峡谷关口，江水奔涌，是丙中洛段最险峻的一景</div></span></div>
+    <div class="spot"><span class="no">6</span><span class="it"><b>丙中洛镇·人神共居</b><div class="w">多民族多宗教共处的小镇，重丁教堂与白塔并立，市井烟火温暖</div></span></div>
+  </div>
+  <img src="assets/wuli_a.jpg" alt="雾里村茶马古道木楞房" loading="lazy" style="width:100%;border-radius:14px;margin-top:16px">
+</section>
+
+<section class="panel" id="how">
+  <h2><span class="emo">🚗</span>怎么去</h2>
+  <div class="cmp">
+    <div class="row"><div class="mode">🚄 飞机+自驾</div><div class="p">飞至<b>保山/大理</b>，自驾或包车沿怒江北上至丙中洛（保山约5h，大理约6h），雾里村在对岸。<div class="tag">自驾最自由</div></div></div>
+    <div class="row"><div class="mode">🚌 长途+当地</div><div class="p">昆明/大理/保山有长途车至贡山，转车至丙中洛镇，再徒步或打车至古道入口。<div class="tag">适合无车党，耗时久</div></div></div>
+  </div>
+</section>
+
+<section class="panel" id="stay">
+  <h2><span class="emo">🏡</span>住哪里</h2>
+  <div class="grid">
+    <div class="card"><b>雾里村村内民宿</b><div class="w">住木楞房亲体验，极简朴素，100–300元，需提前联系</div></div>
+    <div class="card"><b>丙中洛镇民宿</b><div class="w">选择多、舒适些，150–600元，清晨进村看雾也方便</div></div>
+    <div class="card"><b>秋那桶村客栈</b><div class="w">更深处小众村落，旺季一房难求，建议早订</div></div>
+  </div>
+</section>
+
+<section class="panel" id="food">
+  <h2><span class="emo">🍚</span>吃什么</h2>
+  <div class="food">
+    <div class="row"><span class="no">1</span><span class="it"><b>砣砣肉</b><div class="w">怒江沿岸赶集时的大块炖肉，香而不腻</div></span><span class="prx">时价</span></div>
+    <div class="row"><span class="no">2</span><span class="it"><b>手抓饭/傈僳饭</b><div class="w">米饭配山珍腊肉，蘸水是灵魂</div></span><span class="prx">人均40</span></div>
+    <div class="row"><span class="no">3</span><span class="it"><b>酸笋/蕨菜山珍</b><div class="w">江畔当季山野菜，酸辣开胃</div></span><span class="prx">时价</span></div>
+    <div class="row"><span class="no">4</span><span class="it"><b>怒江生态鱼</b><div class="w">江鱼清炖做汤，鲜甜</div></span><span class="prx">人均50</span></div>
+  </div>
+</section>
+
+<section class="panel" id="budget">
+  <h2><span class="emo">💰</span>预算参考</h2>
+  <div class="budget"><table><thead><tr><th>项目</th><th>1日快充</th><th>2日深住</th></tr></thead><tbody>
+    <tr><th>交通（丙中洛进出+包车分摊）</th><td>60–150</td><td>100–260</td></tr>
+    <tr><th>门票</th><td>0（古村免费）</td><td>0</td></tr>
+    <tr><th>餐饮</th><td>50–90</td><td>120–260</td></tr>
+    <tr><th>住宿</th><td>—</td><td>200–600</td></tr>
+    <tr class="tot"><th>人均合计</th><td>110–240</td><td>420–1120</td></tr>
+  </tbody></table></div>
+  <p class="tiny">💰 独家提示：怒江环线通常住宿量不大，节假日需早订；村内资源有限，建议带充备饮用水。</p>
+</section>
+
+<section class="panel" id="tips">
+  <h2><span class="emo">💡</span>避坑与贴士</h2>
+  <ul class="tips">
+    <li><b>古道徒步安全：</b>临江崖壁段无护栏，雨后湿滑有落石，遇雨天改走对岸江桥更稳妥。</li>
+    <li><b>最佳时段：</b>11月–次年4月少雨、江水碧蓝、雪山可见；5–9月雨季路况差、江易涨。</li>
+    <li><b>高海拔注意：</b>进入峡谷较深，昼夜温差大，备保暖衣物与充电宝。</li>
+    <li><b>尊重村寨：</b>进村不打扰村民生活，拍照先征询，随手带走垃圾。</li>
+    <li><b>信号：</b>村内部分区域信号弱，下载离线地图与重要资料。</li>
+  </ul>
+</section>
+
+雾里村 · 怒江茶马古道云端村落全攻略 ｜ 适配 1–6 人自由行 · 交通及价格为参考值，以实时公告为准<br>山区道路临江弯多，落石路段谨慎驾驶；文明游览、随手带走垃圾。 · <a href="../../index.html">← 返回小册子</a>
+</footer>
+</div>
+<script>
+(function(){var b=document.querySelectorAll('.switch button');b.forEach(function(x){x.addEventListener('click',function(){b.forEach(function(y){y.classList.remove('on');y.setAttribute('aria-selected','false')});x.classList.add('on');x.setAttribute('aria-selected','true');var p=x.getAttribute('data-plan');document.querySelectorAll('.panel').forEach(function(s){if(s.id===p){s.removeAttribute('hidden');s.setAttribute('role','tabpanel')}else{s.setAttribute('hidden','');s.removeAttribute('role')}})})})})();
+</script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

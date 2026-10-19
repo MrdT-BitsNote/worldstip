@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>珠海 · 情侣路·渔女·东澳岛（2/3/4天三方案）</title>
+<meta name="description" content="珠海2/3/4天海滨攻略：情侣路、珠海渔女、港珠澳大桥、东澳岛外伶仃岛、粤式美食。">
+<meta name="keywords" content="珠海旅游,珠海攻略,情侣路,珠海渔女,港珠澳大桥,东澳岛,外伶仃岛">
+<style>
+  :root{
+    --sea:#1f8fd0;        /* 湾海蓝 */
+    --sea-deep:#12649c;   /* 深海蓝 */
+    --sea-soft:#e3f1fa;   /* 浅海 */
+    --sun:#e8b23a;        /* 澳葡明黄 */
+    --coral:#ff7555;      /* 珊瑚 */
+    --ink:#1c3444;        /* 正文 */
+    --ink-soft:#5f7c8f;
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(31,143,208,.3);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(232,178,58,.16), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(31,143,208,.12), transparent 55%),
+      #f4fafd;
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--sea-deep)}
+
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--sea-deep) 8%,#1f8fd0 55%,#36a6e0);
+    padding:40px 36px 38px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-40px;bottom:-100px;width:340px;height:280px;
+    background:
+      radial-gradient(60px 10px at 20% 40%, rgba(255,255,255,.35), transparent 70%),
+      radial-gradient(60px 10px at 55% 20%, rgba(255,255,255,.3), transparent 70%),
+      radial-gradient(60px 10px at 80% 55%, rgba(255,255,255,.32), transparent 70%);
+    background-size:80px 40px;
+  }
+  .hero .kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px}
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.94;max-width:680px}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:10px}
+
+  .switch{display:flex;gap:12px;margin:28px 0 6px;flex-wrap:wrap}
+  .switch button{flex:1;min-width:250px;border:2px solid #d6e7f2;background:var(--card);color:var(--ink);cursor:pointer;text-align:left;border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+  .switch button:hover{border-color:var(--sea);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(31,143,208,.4)}
+  .switch button.on{border-color:var(--sea);background:linear-gradient(135deg,#e9f4fb,#e3f1fa)}
+  .switch .t{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:800}
+  .switch .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff;background:var(--sea-deep)}
+  .switch .d{font-size:13px;color:var(--ink-soft);margin-top:5px}
+
+  section.panel{margin-top:26px;background:var(--card);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(31,143,208,.08)}
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--sea-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--sea-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--sea-deep);margin-top:20px}
+  .hint b{font-weight:800}
+
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--sea-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;background:var(--sea);border:3px solid var(--sea-soft);box-sizing:content-box}
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--sea-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--sea-soft);color:var(--sea-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--sun);font-weight:800}
+
+  .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+  .spot{display:flex;gap:18px;background:#f6fbfe;border:1px solid #d6e7f2;border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+  .spot:hover{border-color:rgba(31,143,208,.35);box-shadow:0 10px 22px -12px rgba(31,143,208,.3)}
+  .spimg{flex:0 0 42%;margin:0;min-width:0}
+  .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+  .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+  .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+  .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+  .sptxt h3{margin:0;font-size:19px;color:var(--sea-deep)}
+  .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0}
+  .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#eaf4fb;border-radius:10px;padding:9px 12px;margin-top:10px}
+  .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+  @media (max-width:640px){.spot{flex-direction:column}.spimg{flex:none}.spimg img{height:auto;max-height:220px;object-fit:cover}}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid #d6e7f2;border-radius:14px;padding:14px 16px;background:#f6fbfe;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(31,143,208,.35);box-shadow:0 8px 18px -10px rgba(31,143,208,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--sea-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed #d6e7f2;padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--sea-soft);color:var(--sea-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--sun);font-weight:800;white-space:nowrap}
+
+  .budget{border:1px solid #d6e7f2;border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#f6fbfe}
+  .budget caption{background:var(--sea-deep);color:#fff;font-weight:800;font-size:14px;padding:10px 14px;text-align:left}
+  .budget th,.budget td{padding:9px 14px;text-align:left}
+  .budget thead th{background:var(--sea-soft);color:var(--sea-deep);font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#eaf4fb}
+  .budget .tot{font-weight:800;color:var(--sea-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--sea-deep)}
+
+  @media print{body{background:#fff}.switch button{display:none}.wrap{max-width:none;padding:0}.hero{box-shadow:none;border-radius:0}section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}.card,.budget,.spot{page-break-inside:avoid}}
+  @media (max-width:600px){.hero{padding:30px 22px 28px}.hero h1{font-size:27px}.wrap{padding:18px 14px 48px}section.panel{padding:20px 18px}}
+.camtab{position:fixed;top:110px;left:14px;right:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/zhuhai/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="珠海 · 情侣路·渔女·东澳岛（2/3/4天三方案）">
+    <meta property="og:description" content="珠海2/3/4天海滨攻略：情侣路、珠海渔女、港珠澳大桥、东澳岛外伶仃岛、粤式美食。">
+    <meta property="og:url" content="https://worldstip.com/map/zhuhai/">
+    <meta property="og:image" content="https://worldstip.com/assets/images/tpkjwoH59FQ.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="珠海 · 情侣路·渔女·东澳岛（2/3/4天三方案）">
+    <meta name="twitter:description" content="珠海2/3/4天海滨攻略：情侣路、珠海渔女、港珠澳大桥、东澳岛外伶仃岛、粤式美食。">
+    <meta name="twitter:image" content="https://worldstip.com/assets/images/tpkjwoH59FQ.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "珠海 · 三模式组合旅行指南（2天经典 · 3天加长 · 4天深度）",
+      "url": "https://worldstip.com/map/zhuhai/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/zhuhai/",
+  "name": "珠海 · 情侣路·渔女·东澳岛（2/3/4天三方案）",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">🏙️ 珠海 · ZHUHAI TRAVEL GUIDE</div>
+  <h1>珠海三模式组合指南</h1>
+  <p>一座浪漫的湾区海滨城：<b>2 天经典</b> 情侣路+渔女+市区；<b>3 天加长</b> 加一趟近海海岛或港澳珠大桥；<b>4 天深度</b> 玩转长隆海洋王国或东澳岛&外伶仃岛双海岛，还能顺路衔接澳门与香港。适合情侣、朋友与亲子。</p>
+  <div class="meta">
+    <span>📍 目的地：珠海</span>
+    <span>👥 情侣 / 朋友 / 亲子</span>
+    <span>⏱️ 经典2天 · 加长3天 · 深度4天</span>
+    <span>💰 人均预算已附</span>
+  </div>
+</header>
+
+<!-- 方案切换 -->
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="on" role="tab" aria-selected="true" data-plan="planA" id="tabA">
+    <span class="t"><span class="badge">2天</span> 经典版 🏙️</span>
+    <div class="d">情侣路+渔女+市区 / 人均约 300–550</div>
+  </button>
+  <button role="tab" aria-selected="false" data-plan="planB" id="tabB">
+    <span class="t"><span class="badge">3天</span> 加长版 🏖️</span>
+    <div class="d">经典 + 近海海岛/港澳珠 / 人均约 500–900</div>
+  </button>
+  <button role="tab" aria-selected="false" data-plan="planC" id="tabC">
+    <span class="t"><span class="badge">4天</span> 深度版 🐳</span>
+    <div class="d">长隆海洋王国 / 双海岛 / 人均约 900–1600</div>
+  </button>
+</div>
+
+<!-- ============ 方案A：2天经典 ============ -->
+<section class="panel" id="planA" role="tabpanel">
+  <h2><span class="emo">🏙️</span>2 天 · 经典版（情侣路 + 渔女 + 市区）</h2>
+  <p class="sub">珠海是一座「沿海而居、慢慢生活」的城市：两天走浪漫海滨长廊、打卡渔女与当地生活，节奏松弛不赶。</p>
+  <div class="hint">👥 <b>情侣/朋友 1–2 人适配：</b>市区景点集中在香洲，公交/骑行/打车便利；预算按 <b>人均</b>。</div>
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 情侣路海滨 + 渔女</div>
+      <div class="seg"><span>🍃 上午 情侣路骑行/漫步（看海）</span><span>🧜 中午 珠海渔女广场打卡</span></div>
+      <div class="seg"><span>🏖️ 下午 海滨泳场/城市阳台看海</span><span>🌃 晚上 香洲夜宵/海景晚餐</span></div>
+      <div class="tip2"><span class="arr">💡</span> 情侣路沿海而建、view 极好，建议傍晚骑行看日落；渔女是珠海地标雕塑，合影必到。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 本地生活 + 收尾</div>
+      <div class="seg"><span>🏛️ 上午 逛北山/会同古村 或 圆明新园</span><span>🛍️ 中午 市区觅食</span></div>
+      <div class="seg"><span>☕ 下午 咖啡/海滨咖啡 或 免税逛买 → 返程</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 时间紧可选其一；想看中西建筑建议北山古村（近长隆），想复古园林去圆明新园。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ 方案B：3天加长 ============ -->
+<section class="panel" id="planB" role="tabpanel" hidden>
+  <h2><span class="emo">🏖️</span>3 天 · 加长版（经典 + 近海海岛 / 港澳珠大桥）</h2>
+  <p class="sub">在两天经典的基础上多留一天：清爽找一个近海岛屿（东澳岛/外伶仃岛）或登高看一眼港澳珠大桥的壮阔。</p>
+  <div class="hint">👥 <b>适配：</b>东澳岛、外伶仃岛是珠海热门近海岛，船程短、岛上海滩干净；看港澳珠大桥可走观光或海上看。预算按 <b>人均</b>，含往返船票。</div>
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 情侣路 + 渔女</div>
+      <div class="seg"><span>🍃 上午 情侣路骑行 → 🧜 中午 渔女 → 晚上 市区夜宵</span></div>
+      <div class="tip2"><span class="arr">📌</span> 同经典版 DAY1，先走完海滨精华。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 近海海岛（东澳岛 / 外伶仃岛）</div>
+      <div class="seg"><span>⛴️ 上午 客船登岛（约1h）</span><span>🏖️ 下午 岛上海滩游泳/环岛</span></div>
+      <div class="seg"><span>🌇 傍晚 岛上日落 → 傍晚/次日一早返程</span></div>
+      <div class="tip2"><span class="arr">💡</span> 东澳岛沙滩+灯塔，外伶仃岛更原生态；快船可从香洲/九洲码头出发，旺季提前订往返船票。</div>
+    </li>
+    <li>
+      <div class="day">DAY 3 · 收尾（港澳珠大桥观光 或 古村）</div>
+      <div class="seg"><span>🌉 上午 看港澳珠大桥（岸边/观光）</span><span>🏛️ 下午 北山/会同古村 或 圆明新园 → 返程</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 港澳珠大桥观光可走港珠澳大桥珠海口岸周边或乘海上观光；行程紧可二选一。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ 方案C：4天深度 ============ -->
+<section class="panel" id="planC" role="tabpanel" hidden>
+  <h2><span class="emo">🐳</span>4 天 · 深度版（长隆海洋王国 或 双海岛）</h2>
+  <p class="sub">珠海玩得更有分量：可选一整天神游「长隆海洋王国」，或把东澳岛+外伶仃岛两个近海小岛都走一遍。</p>
+  <div class="hint">👥 <b>深度适配：</b>长隆海洋王国在横琴（世界级海洋主题乐园，含鲸鲨馆/剧场/烟花夜秀），亲子或海洋控首选；双海岛适合想看透海洋与慢生活的人。预算含门票或往返船票，按 <b>人均</b>。</div>
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 情侣路 + 渔女</div>
+      <div class="seg"><span>🍃 情侣路 → 🧜 渔女 → 市区</span></div>
+      <div class="tip2"><span class="arr">📌</span> 先走海滨经典开场。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 长隆海洋王国（横琴）一整天</div>
+      <div class="seg"><span>🐋 上午 鲸鲨馆+剧场</span><span>🎢 下午 过山车+海洋大巡游</span></div>
+      <div class="seg"><span>🌃 晚上 烟花/海洋夜秀</span></div>
+      <div class="tip2"><span class="arr">🏡</span> 想看透建议住横琴：长隆企鹅酒店离园区最近、可提前入园；不想住可住横琴周边，打车十几分钟到。详见《珠海长隆全攻略》。</div>
+    </li>
+    <li>
+      <div class="day">DAY 3 · 近海海岛（东澳岛 / 外伶仃岛）</div>
+      <div class="seg"><span>⛴️ 上午 客船登岛</span><span>🏖️ 下午 环岛/海滩/游泳</span></div>
+      <div class="seg"><span>🏡 晚上 岛上民宿或当晚返市区（不紧凑可选）</span></div>
+      <div class="tip2"><span class="arr">💡</span> 走双海岛版：DAY3 登东澳岛住1晚、DAY4 上午外伶仃岛傍晚返程；请提前订往返船票与岛上住所。</div>
+    </li>
+    <li>
+      <div class="day">DAY 4 · 收尾 · 可选衔接澳门</div>
+      <div class="seg"><span>🏛️ 上午 北山/圆明新园 或 港澳珠大桥观光</span><span>🛍️ 下午 市区买毕 → 返程 / 顺路过澳门</span></div>
+      <div class="tip2"><span class="arr">🎫</span> 珠海市区离澳门拱北/青茂口岸近，若想顺路，可安排半天到澳门打卡大三巴（见《澳门一日玩法》）。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ 特色亮点 ============ -->
+<section class="panel" id="spots">
+  <h2><span class="emo">⭐</span>特色亮点 · 单独详览</h2>
+  <p class="sub">把珠海最有辨识度的几个点单独拎出来看图讲清楚。</p>
+  <div class="spotlist">
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/tpkjwoH59FQ.webp" type="image/webp">
+<img src="../../assets/images/tpkjwoH59FQ.jpg" alt="珠海渔女雕像：矗立在海边的珠海市标志性雕塑，传说中手捧珍珠的渔女像，面朝碧蓝海湾，远处城市天际线" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>珠海渔女 · 城市象征</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e3f1fa;color:#12649c">市区 · 地标</span><h3>珠海渔女 · 捧珠而立的城市象征</h3></div>
+        <p>矗立于海滨的雕塑「珠海渔女」，手捧珍珠面向海湾，是珠海最具代表性的城市地标，寄托着这座滨海城市「渔歌与希望」的意象。</p>
+        <p class="spgo">👍 必去理由：珠海打卡第一名。广场免费、可近距离合影，和情侣路顺路，清晨/傍晚人少光线好。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/ZvvgBBQsxcE.webp" type="image/webp">
+<img src="../../assets/images/ZvvgBBQsxcE.jpg" alt="珠海情侣路：沿弯曲海岸线的浪漫海滨步道，椰树与草坪，一边是碧海一边是城市，市民游人在步道骑行散步" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>情侣路 · 沿海浪漫步道</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e3f1fa;color:#12649c">市区 · 观海</span><h3>情侣路 · 环海而行的浪漫长廊</h3></div>
+        <p>沿珠海海岸线延伸的海滨步道，一侧碧海、一侧城景，沿途椰树草坪。骑行或漫步，能一路看海、看跨海大桥、看日落。</p>
+        <p class="spgo">👍 必去理由：看珠海海岸线最舒服的方式。免费可骑行，建议傍晚走一段看日落；可从渔女一路骑到城市阳台/珠海大剧院（日月贝）。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/5BZEHtPTtN4.webp" type="image/webp">
+<img src="../../assets/images/5BZEHtPTtN4.jpg" alt="港珠澳大桥：横跨伶仃洋的跨海大桥，白色曲线桥身在碧蓝海面蜿蜒，桥塔与跨海段宏伟壮观" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>港珠澳大桥 · 伶仃洋巨龙</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#fdecdd;color:#c0701a">湾区 · 超级工程</span><h3>港珠澳大桥 · 世界级跨海工程</h3></div>
+        <p>连接珠海、香港与澳门的跨海大桥，白色桥身在珠海的伶仃洋上蜿蜒，是世界级的桥梁奇迹，也是大湾区的地标。</p>
+        <p class="spgo">👍 必去理由：看「一国、三地、一桥」的壮阔。可走珠澳口岸周边岸边远眺，或选海上观光/乘车过桥体验；天气通透时最壮观。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/tOwzFyWb41s.webp" type="image/webp">
+<img src="../../assets/images/tOwzFyWb41s.jpg" alt="珠海东澳岛/外伶仃岛：清澈的热带海岛海湾，细沙滩与碧蓝海水，礁石与海上小艇，远离市区的度假海岛" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>近海海岛 · 东澳/外伶仃</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e2f5f3;color:#12818c">海岛 · 度假</span><h3>东澳岛 · 外伶仃岛 · 近海小岛</h3></div>
+        <p>搭船一两小时就能到的两座近海小岛：东澳岛有细腻沙滩与灯塔，外伶仃岛更新原生态。海清滩净，能游泳、环岛、看日出。</p>
+        <p class="spgo">👍 必去理由：不想跑远也想踏进海岛就来。往返船票+岛上简单用餐，一日或住一晚都行；旺季船票与民宿要提前订。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/VGEG8xI2crQ.webp" type="image/webp">
+<img src="../../assets/images/VGEG8xI2crQ.jpg" alt="珠海圆明新园：仿建的皇家园林建筑，中式宫殿楼阁、琉璃瓦与高台，园林水榭，复古皇家园林景观" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>圆明新园 · 皇家园林</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#f2ecdd;color:#7a5a1a">市区 · 复古园林</span><h3>圆明新园 · 仿皇家园林</h3></div>
+        <p>按圆明园部分景致仿建的园林，中式宫阙、琉璃瓦与楼阁水榭，适合拍复古皇家feel的照片，也适合本地人散心。</p>
+        <p class="spgo">👍 必去理由：想逛中式园林/拍古风照可选。园林面积不小，含门票，适合慢慢逛；对园林无感可略过或换北山古村。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/iUd0Z-i2_DA.webp" type="image/webp">
+<img src="../../assets/images/iUd0Z-i2_DA.jpg" alt="珠海北山村/会同村：岭南碉楼与古村落民居，青砖灰瓦、碉楼高耸，传统岭南乡村与绿地田野" width="800" height="533" loading="lazy">
+</picture>
+        <figcaption>北山/会同 · 岭南古村</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e7f2e7;color:#3c6e3c">乡野 · 古村</span><h3>北山 / 会同 · 岭南古村与碉楼</h3></div>
+        <p>保存完好的岭南古村落，青砖灰瓦与高耸碉楼交织，是珠海少有的人文静地。近年老屋改造成咖啡馆与艺术空间，适合慢逛拍照。</p>
+        <p class="spgo">👍 必去理由：想看不拥堵的岭南生活就逛古村。免费、可走半日；北山村离市区/长隆近，会同村更乡野，二选一即可。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ 住宿 ============ -->
+<section class="panel">
+  <h2><span class="emo">🏨</span>住宿推荐</h2>
+  <p class="sub">市区+横琴+海岛三处覆盖，2 人房计，多人按需调整。</p>
+  <div class="grid">
+    <div class="card">
+      <span class="tag" style="background:#e3f1fa;color:#12649c">市区经济</span>
+      <div class="nm">香洲/拱北酒店或民宿</div>
+      <div class="pr">约 150–350 元/晚 · 人均 75–175</div>
+      <div class="ds">离情侣路与拱北口岸近，2 天经典性价比之选。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#f2ecdd;color:#7a5a1a">市区/海边中端</span>
+      <div class="nm">海景酒店 / 度假公寓</div>
+      <div class="pr">约 300–700 元/晚 · 人均 150–350</div>
+      <div class="ds">一线海景看日落；3 天加长版住着舒服。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#fdecdd;color:#c0701a">横琴（长隆）</span>
+      <div class="nm">长隆主题酒店 / 横琴周边</div>
+      <div class="pr">企鹅酒店约 800+；横琴周边 300–600</div>
+      <div class="ds">长隆海洋王国首选住横琴：主题酒店近可提前入园，周边民宿更省，打车十几分钟。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#e2f5f3;color:#12818c">海岛</span>
+      <div class="nm">东澳岛/外伶仃岛民宿</div>
+      <div class="pr">约 150–400 元/晚 · 人均 75–200</div>
+      <div class="ds">登岛住1晚看日出、听海浪；旺季船票+民宿需提前订。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 美食 ============ -->
+<section class="panel">
+  <h2><span class="emo">🍜</span>珠海必吃清单</h2>
+  <p class="sub">生猛海鲜 + 粤式茶点 + 湾区融合味，丰俭由人。</p>
+  <div class="food">
+    <div class="row"><span class="no">1</span><div class="it"><b>海鲜排档</b><div class="w">加工现点 · 生猛海产（濑尿虾/闸一螺/虾）</div></div><span class="prx">人均 60–120</span></div>
+    <div class="row"><span class="no">2</span><div class="it"><b>广式早茶（一盅两件）</b><div class="w">虾饺/肠粉/蒸凤爪 · 地人茶楼</div></div><span class="prx">人均 40–80</span></div>
+    <div class="row"><span class="no">3</span><div class="it"><b>珠海甜品 / 糖水</b><div class="w">双皮奶/杨枝甘露 · 解腻</div></div><span class="prx">约 15–30 元/碗</span></div>
+    <div class="row"><span class="no">4</span><div class="it"><b>粤式烧腊</b><div class="w">烧鹅/叉烧 · 店头斩料</div></div><span class="prx">份 30–60</span></div>
+    <div class="row"><span class="no">5</span><div class="it"><b>湾仔/拱北夜市小吃</b><div class="w">烤物/糖水/小炒 · 烟火夜宵</div></div><span class="prx">人均 30–60</span></div>
+  </div>
+  <div class="hint">🍜 想探粤式手工，可抽空去<b>北山/会同古村</b>的cafe与糖水铺；或<b>澳门</b>一日游玩到地道葡式与澳味（见 bonus 页）。</div>
+</section>
+
+<!-- ============ 预算 ============ -->
+<section class="panel">
+  <h2><span class="emo">💰</span>预算对比（人均）</h2>
+  <p class="sub">区间为保守–宽松参考，长隆门票与海岛船票浮动明显。</p>
+  <div class="budget">
+    <table>
+      <caption>人均预算（含大交通参考）</caption>
+      <thead><tr><th scope="col">项目</th><th scope="col" class="sc">2天经典</th><th scope="col" class="sc">3天加长</th><th scope="col" class="sc">4天深度</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">大交通（往返）</th><td class="sc">100–300</td><td class="sc">100–300</td><td class="sc">150–350</td></tr>
+        <tr><th scope="row">住宿</th><td class="sc">1 晚 75–175</td><td class="sc">2 晚 150–450</td><td class="sc">3 晚 250–800</td></tr>
+        <tr><th scope="row">餐饮</th><td class="sc">80–140</td><td class="sc">130–230</td><td class="sc">220–380</td></tr>
+        <tr><th scope="row">长隆门票 / 海岛船票</th><td class="sc">—</td><td class="sc">200–380（海岛）</td><td class="sc">400–700（长隆）</td></tr>
+        <tr><th scope="row">景点/市内</th><td class="sc">20–60</td><td class="sc">40–90</td><td class="sc">80–160</td></tr>
+        <tr><th scope="row" class="tot">合计 · 人均</th><td class="sc tot">约 300–550</td><td class="sc tot">约 500–900</td><td class="sc tot">约 900–1600</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">💡 <b>省钱建议：</b>珠海物价亲民；长隆门票建议提前网上订，旺季与海岛船票务必提前；市区骑行/公交+少量打车；住横琴周边比长隆主题酒店省很多。</div>
+</section>
+
+<footer>
+  珠海 · 三模式组合旅行指南（1–3 人及亲子适配）｜ 价格为参考值<br>
+  港珠澳大桥观光/近海海岛船票随季节客流浮动，请以实时为准。
+<br>Made with care by <b>MrdT</b> &middot; <a href="https://worldstip.com" target="_blank" rel="noopener noreferrer">worldstip.com</a> &middot; 旅行小册子</footer>
+
+</div>
+
+<script>
+(function(){ "use strict"; try{
+  var tabs=document.querySelectorAll('.switch button');
+  var plans=document.querySelectorAll('section[role="tabpanel"]');
+  function show(id){
+    tabs.forEach(function(t){var on=t.getAttribute('data-plan')===id;t.classList.toggle('on',on);t.setAttribute('aria-selected',on?'true':'false');});
+    plans.forEach(function(p){p.hidden=p.id!==id;});
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){show(t.getAttribute('data-plan'));});});
+}catch(e){} })();
+</script>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

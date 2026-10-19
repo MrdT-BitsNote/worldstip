@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>黄山 · 天下第一奇山全攻略（迎客松/光明顶/西海大峡谷）</title>
+<meta name="description" content="黄山旅游全攻略：迎客松、光明顶、始信峰、西海大峡谷、飞来石。门票190元三日多次入园、每日限流3万预约、云谷/玉屏/太平索道价格、交通住宿美食预算避坑一篇讲清。">
+<meta name="keywords" content="黄山,黄山门票,黄山攻略,迎客松,光明顶,西海大峡谷,飞来石,始信峰,天都峰,黄山北站">
+<style>
+  :root{
+    --pine:#2f7d6b;
+    --pine-deep:#1f5c4e;
+    --pine-soft:#d9eee8;
+    --sand:#f4f7f5;
+    --sand-line:#d8e6e1;
+    --coral:#d9674a;
+    --cyan:#2fa8b8;
+    --leaf:#5b7555;
+    --ink:#22342f;
+    --ink-soft:#5d6e68;
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(35,110,95,.32);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(47,125,107,.16), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(47,168,184,.14), transparent 55%),
+      var(--sand);
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--pine-deep)}
+
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--pine) 8%,#2d6f66 55%,var(--pine-deep));
+    padding:40px 36px 34px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-40px;bottom:-60px;width:300px;height:300px;
+    background:radial-gradient(circle, rgba(255,255,255,.18), transparent 62%);
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.94;max-width:680px}
+  .hero p b{color:#fff}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{
+    font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:10px;
+  }
+
+  .switch{display:flex;gap:12px;margin:30px 0 6px;flex-wrap:wrap}
+  .switch button{
+    flex:1;min-width:230px;border:2px solid var(--sand-line);
+    background:var(--card);color:var(--ink);cursor:pointer;text-align:left;
+    border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  }
+  .switch button:hover{border-color:var(--pine);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(47,125,107,.4)}
+  .switch button.on{border-color:var(--pine);background:linear-gradient(135deg,#e5f5f0,#eef7f0)}
+  .switch button .t{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800}
+  .switch button .t .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff}
+  .switch button .d{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .b-1d .badge{background:var(--cyan)}
+  .b-2d .badge{background:var(--coral)}
+  .b-3d .badge{background:var(--leaf)}
+
+  section.panel{margin-top:26px;background:var(--card);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(47,125,107,.10)}
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--pine-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--pine-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--pine-deep);margin-top:20px}
+  .hint b{font-weight:800}
+
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--pine-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;
+    background:var(--pine);border:3px solid var(--pine-soft);box-sizing:content-box;
+  }
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--pine-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--pine-soft);color:var(--pine-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--coral);font-weight:800}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid var(--sand-line);border-radius:14px;padding:14px 16px;background:#fbfdfb;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(47,125,107,.35);box-shadow:0 8px 18px -10px rgba(47,125,107,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--pine-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+  .spot{display:flex;gap:18px;background:#fbfdfb;border:1px solid var(--sand-line);border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+  .spot:hover{border-color:rgba(47,125,107,.35);box-shadow:0 10px 22px -12px rgba(47,125,107,.3)}
+  .spimg{flex:0 0 40%;margin:0;min-width:0}
+  .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+  .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+  .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+  .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+  .sptxt h3{margin:0;font-size:19px;color:var(--pine-deep)}
+  .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+  .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#e5f5f0;border-radius:10px;padding:9px 12px;margin-top:10px}
+  .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+  @media (max-width:640px){
+    .spot{flex-direction:column}
+    .spimg{flex:none}
+    .spimg img{height:auto;max-height:220px;object-fit:cover}
+  }
+
+  .cmp{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .cmp table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fefdfb}
+  .cmp th,.cmp td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--sand-line)}
+  .cmp thead th{background:var(--pine-deep);color:#fff;font-weight:700}
+  .cmp tbody tr:nth-child(even){background:#eff7f4}
+  .cmp .hd2{background:var(--pine-soft);color:var(--pine-deep);font-weight:800;border-bottom:1px solid var(--sand-line)}
+  .cmp .good{color:#2f7d32;font-weight:700}
+  .cmp .bad{color:#c0504d;font-weight:700}
+
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--sand-line);padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--pine-soft);color:var(--pine-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--coral);font-weight:800;white-space:nowrap}
+
+  .budget{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fefdfb}
+  .budget th,.budget td{padding:10px 14px;text-align:left}
+  .budget thead th{background:var(--pine-deep);color:#fff;font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#eff7f4}
+  .budget .tot{font-weight:800;color:var(--pine-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  .tips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .tips li{font-size:14px;color:var(--ink);background:#e5f5f0;border-left:4px solid var(--pine);border-radius:8px;padding:10px 14px}
+  .tips li b{color:var(--pine-deep)}
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--pine-deep)}
+
+  @media print{
+    body{background:#fff}
+    .switch button{display:none}
+    .wrap{max-width:none;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
+    .card,.budget,.cmp{page-break-inside:avoid}
+  }
+  @media (max-width:600px){
+    .hero{padding:30px 22px 26px}
+    .hero h1{font-size:27px}
+    .wrap{padding:18px 14px 48px}
+    section.panel{padding:20px 18px}
+  }
+.camtab{position:fixed;top:110px;left:14px;right:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/huangshan/">
+    <meta name="theme-color" content="#2f7d6b">
+    <link rel="icon" href="../../favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="黄山 · 天下第一奇山全攻略（迎客松/光明顶/西海大峡谷）">
+    <meta property="og:description" content="黄山旅游全攻略：迎客松、光明顶、始信峰、西海大峡谷、飞来石。门票190元三日多次入园、每日限流3万预约、索道价格、交通住宿美食预算避坑一篇讲清。">
+    <meta property="og:url" content="https://worldstip.com/map/huangshan/">
+    <meta property="og:image" content="https://worldstip.com/map/huangshan/assets/huangshan_cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="黄山 · 天下第一奇山全攻略">
+    <meta name="twitter:description" content="迎客松、光明顶、西海大峡谷、飞来石；门票190元三日入园、限流3万预约、索道价格一篇讲清。">
+    <meta name="twitter:image" content="https://worldstip.com/map/huangshan/assets/huangshan_cover.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "黄山 · 天下第一奇山全攻略",
+      "url": "https://worldstip.com/map/huangshan/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/huangshan/",
+  "name": "黄山 · 天下第一奇山全攻略",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "publisher": { "@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/" },
+  "copyrightHolder": { "@type": "Organization", "name": "旅行小册子" },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">⛰️ 黄山 · MT. HUANGSHAN</div>
+  <h1>黄山 · 天下第一奇山全攻略</h1>
+  <p>「五岳归来不看山，黄山归来不看岳」——<b>迎客松、光明顶、始信峰、西海大峡谷、飞来石</b>，云海奇松怪石温泉四绝俱全，是世界自然与文化双遗产。门票 <b>190 元三日多次入园</b>，每日<b>限流 3 万人必须预约</b>，云谷/玉屏/太平三条索道+西海地轨帮你把奇山走透。高铁直达黄山北，一天或两天都能玩出彩。本文含 1 日/2 日双方案、门票预约、索道价格、交通住宿、美食预算、避坑全讲清。</p>
+  <div class="meta">
+    <span>📍 目的地：安徽黄山市 · 黄山风景区</span>
+    <span>👥 1–6 人自由行</span>
+    <span>⏱️ 1 日 / 2 日 双方案</span>
+    <span>💰 平旺季190 · 冬游150</span>
+  </div>
+</header>
+
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="b-1d on" role="tab" aria-selected="true" data-plan="plan1" id="tab1">
+    <span class="t"><span class="badge">1日精华</span> 快充版 ⚡</span>
+    <div class="d">后山上·前山下：始信峰/光明顶/迎客松 / 人均约 400–680</div>
+  </button>
+  <button class="b-2d" role="tab" aria-selected="false" data-plan="plan2" id="tab2">
+    <span class="t"><span class="badge">2日深度</span> 松弛版 🌿</span>
+    <div class="d">西海大峡谷+山上观日出+山下宏村 / 人均约 750–1300</div>
+  </button>
+</div>
+
+<!-- 1日方案 -->
+<section class="panel" id="plan1" role="tabpanel">
+  <h2><span class="emo">⚡</span>1 日精华 · 快充版</h2>
+  <p class="sub">经典「后山上、前山下」路线：云谷索道上山，走始信峰、光明顶，玉屏索道下行顺路看迎客松，一天把黄山核心一网打尽。</p>
+  <div class="hint">👥 <b>1–3 人适配：</b>换乘大巴往返 38 元必购（私家车禁入），云谷上行 80 元+玉屏下行 80 元是省力经典组合。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">上午 · 后山云谷索道上山</div>
+      <div class="seg"><span>🚌 黄山北站→汤口换乘中心（约1h）</span><span>🚎 换乘大巴→云谷寺（约30min）</span></div>
+      <div class="seg"><span>🚡 云谷索道（上行80元，约10min）</span><span>🌲 始信峰、北海（黄山精华松石）</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 门票需提前 3–7 天预约抢购，现场无售票；首日检票后 3 天内可多次入园。</div>
+    </li>
+    <li>
+      <div class="day">中午 · 光明顶 + 岩峰环线</div>
+      <div class="seg"><span>⛰️ 光明顶（黄山第二高峰，登顶看云海）</span><span>🪨 飞来石（红楼梦片头石）</span></div>
+      <div class="tip2"><span class="arr">💡</span> 把干粮带山顶吃，光明顶/北海多人餐约 40–60 元；天气通透时飞来石顺光最好拍。</div>
+    </li>
+    <li>
+      <div class="day">下午 · 前山玉屏索道下行 + 迎客松</div>
+      <div class="seg"><span>🌲 莲花峰/天都峰远眺（轮休开放）</span><span>🌲 迎客松（黄山名片，必打卡）</span></div>
+      <div class="seg"><span>🚡 玉屏索道（下行80元）</span><span>🚎 换乘大巴返回汤口</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 若天都峰轮休开放且已预约（实名预约 6:30–15:00），可把天都峰加进前山段；15:00 后徒步检票口只出不进。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 2日方案 -->
+<section class="panel" id="plan2" role="tabpanel" hidden>
+  <h2><span class="emo">🌿</span>2 日深度 · 松弛版</h2>
+  <p class="sub">第一天进山住山上酒店看日出云海，第二天补西海大峡谷自然奇观，山下再顺路逛宏村西递，把皖南一次玩透。</p>
+  <div class="hint">👥 <b>1–3 人适配：</b>想追日出云海务必住山上，白云宾馆/光明顶山庄等需提前很久抢订；山下宏村距汤口约 1 小时。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 后山进山 + 光明顶看日落</div>
+      <div class="seg"><span>🚡 云谷索道上山</span><span>🌲 始信峰/北海</span><span>🪨 飞来石</span></div>
+      <div class="seg"><span>⛰️ 光明顶等日落云海</span><span>🏨 住白云宾馆/光明顶山庄</span></div>
+      <div class="tip2"><span class="arr">💡</span> 山上住宿稀缺，提前 2 周以上抢；清晨是云海高发时段，相机充好电。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 西海大峡谷 + 迎客松 + 山下宏村</div>
+      <div class="seg"><span>🌊 清晨光明顶看日出云海</span><span>⛰️ 西海大峡谷（地轨100元/徒步）</span></div>
+      <div class="seg"><span>🌲 玉屏·迎客松 → 玉屏索道下行</span><span>🚌 下午→宏村西递古村</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 西海大峡谷体力消耗大，可坐地轨往返保留体力；下山早可选宏村或西递任一逛半天。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 核心景点详览 -->
+<section class="panel" id="spots">
+  <h2><span class="emo">⭐</span>黄山核心景点 · 单独详览</h2>
+  <p class="sub">把黄山最有辨识度的 5 个点单独拎出来说清楚——值不值得去、怎么玩、藏在哪个片区。</p>
+
+  <div class="spotlist">
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/huangshan_cover.webp" type="image/webp">
+<img src="assets/huangshan_cover.jpg" alt="黄山西海大峡谷云海翻涌奇松怪石耸立，日出金光穿透云层，写实摄影旅行图册质感" width="800" height="1067" loading="lazy">
+</picture>
+        <figcaption>云海奇松 · 黄山之魂</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#d9eee8;color:#1f5c4e">全域</span><h3>云海 · 黄山四绝之首</h3></div>
+        <p>黄山云海一年约 200 天可见，尤其雨后天晴的清晨，云海在山谷间翻涌成海，奇松怪石在云上若隐若现，是黄山最震撼的自然奇观。迎客松、光明顶、始信峰都是绝佳观景位。</p>
+        <p class="spgo">👍 必去理由：追云海住山上最值。光明顶日出是经典机位；冬季与初春云海出现概率更高。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/huangshan_a.webp" type="image/webp">
+<img src="assets/huangshan_a.jpg" alt="黄山迎客松前云海日出霞光映照奇峰，写实摄影旅行图册质感" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>迎客松 · 黄山名片</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e5f5f0;color:#2f7d6b">玉屏景区</span><h3>迎客松 · 黄山第一品牌</h3></div>
+        <p>生长于玉屏楼前崖壁上的千年奇松，一侧枝干如人臂伸出迎客，被誉为「黄山第一奇松」，也是黄山的形象标志。就长在玉屏索道出口附近，顺路即达，无需绕远。</p>
+        <p class="spgo">👍 必去理由：黄山最出名的打卡位，几乎人人必拍；清晨人少、光线侧打最美。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/huangshan_b.webp" type="image/webp">
+<img src="assets/huangshan_b.jpg" alt="黄山光明顶与天都峰对望层叠群山云雾，写实摄影旅行图册质感" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>光明顶 · 观日出制高点</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e4edfb;color:#2f5fa8">北海景区</span><h3>光明顶 · 黄山第二高峰观景台</h3></div>
+        <p>海拔 1860 米，黄山第二高峰，因地势高旷、日光充足得名，是观日出、云海的最佳点之一。山顶建有光明顶山庄，可住山顶守日出；天气晴好时能远眺莲花峰、天都峰、始信峰群峰。</p>
+        <p class="spgo">👍 必去理由：后山前山的天然分界点，几乎必经；住这里看日出最方便。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/huangshan_a.webp" type="image/webp">
+<img src="assets/huangshan_a.jpg" alt="黄山西海大峡谷云雾中的峡谷栈道与奇峰，写实摄影旅行图册质感" width="800" height="600" loading="lazy">
+</picture>
+        <figcaption>西海大峡谷 · 奇险秘境</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#d9eee8;color:#1f5c4e">西海景区</span><h3>西海大峡谷 · 黄山新开辟的秘境</h3></div>
+        <p>黄山近年最惊艳的峡谷风光区，峰壁陡峭、栈道如悬空，云雾缭绕时如入仙境。可徒步沿绝壁栈道深入，或乘西海地轨（单程 100 元）省力往返，是摄影与探险爱好者的心头好。</p>
+        <p class="spgo">👍 必去理由：自然奇观最集中处，地轨+徒步组合最省力；雨后放晴出片率极高。</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="assets/huangshan_cover.webp" type="image/webp">
+<img src="assets/huangshan_cover.jpg" alt="黄山始信峰松石奇特云海之上的峰峦，写实摄影旅行图册质感" width="800" height="1067" loading="lazy">
+</picture>
+        <figcaption>始信峰 · 奇松荟萃</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e5f5f0;color:#2f7d6b">北海景区</span><h3>始信峰 · 观黄山奇松怪石最集中</h3></div>
+        <p>「始信黄山天下奇」由此峰得名，是观黄山奇松怪石最集中的地方——接引松、黑虎松、连理松等名松汇集，峰顶俯瞰群峰如画。步行难度不大，是后山路线的高光一段。</p>
+        <p class="spgo">👍 必去理由：黄山松的精华全在这，离云谷索道上站近，必走。</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 出行方式对比 -->
+<section class="panel">
+  <h2><span class="emo">🚗</span>怎么去：高铁 vs 飞机 vs 自驾</h2>
+  <p class="sub">黄山交通便利，高铁直达黄山北站，机场落地屯溪，山脚汤口是进山枢纽。</p>
+  <div class="cmp">
+    <table>
+      <caption style="position:absolute;left:-9999px">黄山高铁/飞机/自驾三种交通方式对比</caption>
+      <thead><tr><th scope="col">方式</th><th scope="col">🚄 高铁</th><th scope="col">✈️ 飞机</th><th scope="col">🚗 自驾</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="hd2">时长/成本</th>
+            <td>黄山北站→汤口客运大巴约 20 元/1h；杭州约1.5h、上海约3h、北京约5h可达</td>
+            <td>屯溪机场（黄山屯溪国际机场）→汤口约 1h 车程</td>
+            <td>沪渝/G3 京台高速至汤口，江浙沪 3–5h 可达</td>
+        </tr>
+        <tr><th scope="row">适合人群</th>
+            <td class="good">✔ 最推荐：高铁网发达、准时省心</td>
+            <td>远距离直达、赶时间</td>
+            <td>自驾游、带娃方便、周边出发</td>
+        </tr>
+        <tr><th scope="row">注意</th>
+            <td>进山必换乘景区大巴，私家车停山下</td>
+            <td>班次有限，需搭配高铁上山</td>
+            <td>节假日汤口停车紧张，提前停车</td>
+        </tr>
+        <tr><th scope="row" class="hd2" colspan="4">💡 一句话建议：高铁黄山北站最方便，出站坐旅游专线大巴约 1 小时到汤口换乘中心；进山需另乘景区换乘大巴（往返 38 元），私家车禁入山门。</th></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">📱 <b>预约与限流：</b>通过「黄山旅游官方平台」微信小程序强实名分时预约，现场不设售票窗口；每日限流 3 万人、系统每日 10:00 更新放票，热门时段提前 3–7 天预约，免票半票人群同样需要预约对应票种。</div>
+</section>
+
+<!-- 住宿 -->
+<section class="panel">
+  <h2><span class="emo">🏨</span>住宿推荐</h2>
+  <p class="sub">山下住汤口是主流，追日出云海则务必住山上（稀缺需抢订）。三档价位供参考。</p>
+  <div class="grid">
+    <div class="card">
+      <span class="tag" style="background:#fff3cd;color:#8a6d00">经济型</span>
+      <div class="nm">汤口经济民宿</div>
+      <div class="pr">约 100–260 元/晚 · 人均 50–130</div>
+      <div class="ds">离换乘中心近，很多提供行李寄存与登山包租借，适合预算型一日徒步。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#d9eee8;color:#1f5c4e">中端舒适</span>
+      <div class="nm">汤口精品酒店</div>
+      <div class="pr">约 260–500 元/晚 · 人均 130–250</div>
+      <div class="ds">近游客中心、含早餐，入住舒适度更高；非节假日性价比突出。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#fde9e3;color:#c0552e">山上观景</span>
+      <div class="nm">光明顶/白云宾馆</div>
+      <div class="pr">约 600–1500 元/晚 · 人均 300–750</div>
+      <div class="ds">黄山唯一能看日出的选择，床位与标间类型多样，必须极早抢订。</div>
+    </div>
+  </div>
+</section>
+
+<!-- 美食 -->
+<section class="panel">
+  <h2><span class="emo">🍜</span>黄山必吃清单</h2>
+  <p class="sub">屯溪老街与汤口聚集正宗徽菜，徽州臭鳜鱼、毛豆腐是招牌。</p>
+  <div class="food">
+    <div class="row"><span class="no">1</span><div class="it"><b>徽州臭鳜鱼</b><div class="w">徽菜头牌 · 闻臭吃香</div></div><span class="prx">约 88–168 元</span></div>
+    <div class="row"><span class="no">2</span><div class="it"><b>毛豆腐</b><div class="w">徽州小吃 · 煎香外脆内嫩</div></div><span class="prx">约 15–30 元</span></div>
+    <div class="row"><span class="no">3</span><div class="it"><b>黄山烧饼（蟹壳黄）</b><div class="w">酥脆伴手礼 · 梅干菜肉馅</div></div><span class="prx">约 10–30 元/盒</span></div>
+    <div class="row"><span class="no">4</span><div class="it"><b>徽州笋干烧肉 / 石耳炖鸡</b><div class="w">山珍徽味 · 鲜香浓郁</div></div><span class="prx">约 60–120 元</span></div>
+    <div class="row"><span class="no">5</span><div class="it"><b>一品锅 / 屯溪小炒</b><div class="w">聚宝盆菜 · 多人聚餐</div></div><span class="prx">约 80–160 元</span></div>
+    <div class="row"><span class="no">6</span><div class="it"><b>黄山毛峰 / 祁门红茶</b><div class="w">徽茶名片 · 伴手礼首选</div></div><span class="prx">约 30–120 元/罐</span></div>
+  </div>
+</section>
+
+<!-- 预算 -->
+<section class="panel">
+  <h2><span class="emo">💰</span>预算对比（人均）</h2>
+  <p class="sub">含 1–3 人出行说明；区间为保守–宽松，实际以淡旺季与选择为准。</p>
+  <div class="budget">
+    <table>
+      <caption style="position:absolute;left:-9999px">黄山1日与2日方案人均预算对比</caption>
+      <thead><tr><th scope="col">项目</th><th scope="col" class="sc">1日精华版</th><th scope="col" class="sc">2日深度版</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">大交通（江浙沪往返人均）</th><td class="sc">约 150–400</td><td class="sc">约 150–500</td></tr>
+        <tr><th scope="row">门票（平旺季，三日入园）</th><td class="sc">190</td><td class="sc">190</td></tr>
+        <tr><th scope="row">换乘大巴往返</th><td class="sc">38</td><td class="sc">38</td></tr>
+        <tr><th scope="row">索道（云谷+玉屏往返）</th><td class="sc">约 150–160</td><td class="sc">约 160（+西海地轨100可选）</td></tr>
+        <tr><th scope="row">住宿</th><td class="sc">—（当日往返）</td><td class="sc">1 晚 100–1500</td></tr>
+        <tr><th scope="row">餐饮</th><td class="sc">约 70–130</td><td class="sc">约 150–300</td></tr>
+        <tr><th scope="row" class="tot">合计 · 人均</th><td class="sc tot">约 580–900</td><td class="sc tot">约 750–2800</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">💡 <b>省法：</b>冬游季（12.20–次年1.20）门票仅 150 元较平旺季省 40 元；学生/60–64 半票 95/75 元，65 岁以上免门票；只买上行索道、下行徒步可再压预算。</div>
+</section>
+
+<!-- 避坑建议 -->
+<section class="panel">
+  <h2><span class="emo">🧭</span>避坑 & 实用贴士</h2>
+  <ul class="tips">
+    <li><b>必须预约：</b>黄山现场不设售票窗口，每日限流 3 万人，务必提前 3–7 天通过「黄山旅游官方平台」实名分时预约抢票；免票半票人群同样要预约，旺季提前更久。</li>
+    <li><b>三日入园记得二次预约：</b>门票首次检票后 3 天有效，但多次进山需在官方平台再次分时预约（每日限量），线下一律不办。</li>
+    <li><b>私家车禁入山门：</b>换乘大巴往返 38 元必购，自驾车停汤口或游客中心周边，别硬往山口开。</li>
+    <li><b>天都峰要单独约：</b>天都峰坡陡路险、承载有限，且多实行轮休，开放期间需实名预约（6:30–15:00），无预约不登峰。</li>
+    <li><b>15:00 后徒步「只出不进」：</b>各登山步道门票检票口 15:00 后不再安排徒步游客检票入园，晚到只能坐索道或改期。</li>
+    <li><b>追云海住山上 & 备厚外套：</b>山顶温差大、风大，夏季也要带外套；想拍日出云海务必住山上并提前抢房。</li>
+  </ul>
+</section>
+
+<footer>
+  黄山 · 天下第一奇山全攻略 ｜ 适配 1–6 人自由行 · 价格为淡旺季区间的参考值 · 门票及索道价格以景区实时公告为准<br>
+  山岳旅行注意天气变化与体力管理；非预约不出行，出发前关注官方实时公告。 · <a href="../../index.html">← 返回小册子</a>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+  try{
+    var tabs=document.querySelectorAll('.switch button');
+    var plans=document.querySelectorAll('section[role="tabpanel"]');
+    function show(id){
+      tabs.forEach(function(t){
+        var on=t.getAttribute('data-plan')===id;
+        t.classList.toggle('on',on);
+        t.setAttribute('aria-selected',on?'true':'false');
+      });
+      plans.forEach(function(p){ p.hidden = p.id!==id; });
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+    tabs.forEach(function(t){ t.addEventListener('click',function(){ show(t.getAttribute('data-plan')); }); });
+  }catch(e){}
+})();
+</script>
+<footer style="position:relative;margin:44px auto 8px;padding:18px 24px;max-width:1180px;width:calc(100% - 40px);text-align:center;background:rgba(13,17,32,.55);border:1px solid rgba(255,255,255,.12);border-radius:14px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:2">
+  <span style="font-size:13px;color:#dfe3ea;letter-spacing:.03em">Made with care by <b style="color:#fff">WorldStip</b> &nbsp;·&nbsp; <a href="https://worldstip.com" style="color:#9fb6ff;text-decoration:none" target="_blank" rel="noopener noreferrer">worldstip.com</a> &nbsp;·&nbsp; 旅行小册子</span>
+</footer>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

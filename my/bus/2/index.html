@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第比利斯入境 A5 速查卡册 · 安全小册子 | 如何去远行</title>
+<meta name="description" content="第比利斯机场入境落地 A5 口袋卡片册：免签规则、强制保险、下机动线、交通价格、红黑榜、紧急速拨。A5 圆角卡片，打印即用。">
+<style>
+:root{
+  --night:#0f172a; --navy:#1e3a8a; --blue:#2563eb; --sky:#0ea5e9;
+  --orange:#ea580c; --amber:#f59e0b; --green:#16a34a; --red:#dc2626;
+  --ink:#111827; --muted:#64748b; --bg:#eef2f7; --card:#fff;
+  --grad:linear-gradient(90deg,#1e3a8a,#2563eb,#0ea5e9);
+  --grad-cover:linear-gradient(160deg,#0f172a 0%,#1e3a8a 62%,#7c2d12 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.58;-webkit-font-smoothing:antialiased;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+img{max-width:100%;display:block}
+
+/* ===== deck ===== */
+.deck{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:22px;padding:28px 14px}
+.sheet{width:148mm;height:210mm;background:var(--card);border-radius:20px;overflow:hidden;box-shadow:0 10px 40px rgba(15,23,42,.14);page-break-after:always;display:flex;flex-direction:column;padding:9mm 8mm 10mm;position:relative}
+.topbar{position:absolute;top:0;left:0;right:0;height:3.5mm;background:var(--grad)}
+
+.phead{display:flex;align-items:center;gap:8px;margin-bottom:7px;padding-top:1mm}
+.pnum{width:26px;height:26px;flex:0 0 26px;border-radius:8px;background:var(--grad);color:#fff;font-size:12.5px;font-weight:800;display:flex;align-items:center;justify-content:center;letter-spacing:.2px;box-shadow:0 2px 8px rgba(37,99,235,.35)}
+.ptitle{font-size:18px;font-weight:800;letter-spacing:-.3px;line-height:1.2;color:var(--night)}
+.ptag{margin-left:auto;font-size:8.5px;font-weight:700;color:var(--muted);letter-spacing:1.2px;text-transform:uppercase;background:#f1f5f9;border-radius:999px;padding:2.5px 8px}
+.divider{height:3px;border-radius:2px;background:var(--grad);margin:0 0 8px}
+
+.sec{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:800;letter-spacing:.3px;color:#fff;background:var(--grad);border-radius:999px;padding:3.5px 12px;margin:10px 0 5px}
+.sec.red{background:linear-gradient(90deg,#b91c1c,#dc2626)}
+.sec.green{background:linear-gradient(90deg,#15803d,#16a34a)}
+
+/* generic */
+ul.tight{list-style:none;display:grid;gap:4px}
+ul.tight li{font-size:12px;padding-left:14px;position:relative}
+ul.tight li::before{content:"•";position:absolute;left:2px;color:var(--blue);font-weight:900}
+ul.tight li b{color:var(--night);font-weight:800}
+.hl{color:var(--orange);font-weight:800}
+
+.tbl{width:100%;border-collapse:collapse;font-size:11px;margin-top:2px;border-radius:10px;overflow:hidden}
+.tbl th{background:var(--grad);color:#fff;text-align:left;padding:5.5px 8px;font-size:10.5px;font-weight:800;letter-spacing:.3px}
+.tbl td{padding:5.5px 8px;border-top:1px solid #e2e8f0;vertical-align:top;line-height:1.5;background:#fff}
+.tbl tr:nth-child(even) td{background:#f8fafc}
+.tbl td b{color:var(--navy);font-weight:800}
+.tbl .price{color:var(--orange);font-weight:800}
+.tbl .row-bad td{background:#fef2f2}
+.tbl .row-bad td b{color:#b91c1c}
+.good{color:var(--green);font-weight:800}.bad{color:var(--red);font-weight:800}
+
+/* cover */
+.cover{background:var(--grad-cover);color:#fff;justify-content:space-between}
+.cover .badge{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:1px;padding:3.5px 10px;border-radius:999px;background:rgba(249,115,22,.9);border:none;margin-right:4px;color:#fff;box-shadow:0 2px 8px rgba(249,115,22,.4)}
+.cover .badge.b2{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3)}
+.cover h1{font-size:32px;font-weight:800;letter-spacing:-.8px;line-height:1.18;margin:10px 0 6px}
+.cover .cv-sub{font-size:11.5px;color:#cbd5e1;line-height:1.8}
+.cover .cv-sub b{color:#fbbf24;font-weight:800}
+.qc-grid{display:grid;gap:7px;margin-top:11px}
+.qc{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:10px 12px;text-decoration:none;backdrop-filter:blur(6px)}
+.qc .el{font-size:9px;color:#cbd5e1;letter-spacing:.4px;flex:0 0 96px}
+.qc .en{font-size:16px;font-weight:800;color:#fbbf24;letter-spacing:.2px}
+.qc .en.red{color:#f87171}
+.cv-foot{font-size:8.5px;color:#94a3b8;border-top:1px solid rgba(255,255,255,.16);padding-top:6px}
+.cv-foot b{color:#f1f5f9}
+.cv-img{width:100%;height:50mm;object-fit:cover;border-radius:14px;margin-top:10px;border:1px solid rgba(255,255,255,.25)}
+
+/* photo fill */
+.ph{width:100%;object-fit:cover;border-radius:14px;margin-top:8px;display:block}
+
+/* kv blocks */
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:4px}
+.kv .kvx{background:#fff;border-left:4px solid var(--blue);border-radius:10px;padding:8px 10px;box-shadow:0 1px 4px rgba(15,23,42,.08)}
+.kv .kvx b{font-size:12.5px;display:block;color:var(--navy);font-weight:800;margin-bottom:2px}
+.kv .kvx span{font-size:10.5px;color:#374151;line-height:1.55}
+
+/* steps */
+.steps{display:grid;gap:5px;margin-top:3px}
+.stp{display:flex;gap:7px;align-items:flex-start;font-size:11.5px;padding:6px 8px;background:#fff;border-left:4px solid var(--sky);border-radius:10px;line-height:1.55;box-shadow:0 1px 4px rgba(15,23,42,.08)}
+.stp b{flex:0 0 74px;color:var(--navy);font-weight:800;font-size:11.5px}
+.stp .s{color:var(--sky);flex:0 0 10px;font-weight:900}
+
+/* dual column lists */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:3px}
+.duo .col{border-radius:12px;padding:8px 10px}
+.duo .col ul{list-style:none;display:grid;gap:6px}
+.duo .col li{font-size:11.5px;padding-left:13px;position:relative;line-height:1.55;color:#374151}
+.duo .col li::before{content:"•";position:absolute;left:1px;font-weight:900}
+.duo .col.kbad{background:#fff1f2;border:1px solid #fecdd3}
+.duo .col.kbad li::before{color:var(--red)}
+.duo .col.kgood{background:#f0fdf4;border:1px solid #bbf7d0}
+.duo .col.kgood li::before{color:var(--green)}
+.duo .col li b{color:var(--ink);font-weight:800}
+
+.pfoot{position:absolute;bottom:5mm;left:8mm;right:8mm;display:flex;justify-content:space-between;font-size:8.5px;color:var(--muted);border-top:1px dashed #cbd5e1;padding-top:3px}
+.pfoot b{color:var(--navy)}
+.warn{background:#fef2f2;border:2px solid var(--red);border-radius:12px;padding:9px 12px;text-align:center;margin-top:9px}
+.warn b{color:var(--red);font-size:16px;font-weight:900;letter-spacing:.5px}
+.warn span{display:block;font-size:10px;color:#b91c1c;margin-top:2px}
+
+/* print */
+@page{size:A5;margin:0}
+@media print{
+  body{background:#fff}
+  .deck{display:block;padding:0;gap:0}
+  .sheet{margin:0;box-shadow:none;border-radius:0;page-break-after:always}
+  .sheet:last-child{page-break-after:auto}
+  .no-print{display:none!important}
+}
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/my/bus/2/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="第比利斯入境 A5 速查卡册 · 安全小册子 | 如何去远行">
+    <meta property="og:description" content="第比利斯机场入境落地 A5 口袋卡片册：免签规则、强制保险、下机动线、交通价格、红黑榜、紧急速拨。A5 圆角卡片，打印即用。">
+    <meta property="og:url" content="https://worldstip.com/my/bus/2/">
+    <meta property="og:image" content="https://worldstip.com/my/bus/2/assets/images/hero-tbilisi-night.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="第比利斯入境 A5 速查卡册 · 安全小册子 | 如何去远行">
+    <meta name="twitter:description" content="第比利斯机场入境落地 A5 口袋卡片册：免签规则、强制保险、下机动线、交通价格、红黑榜、紧急速拨。A5 圆角卡片，打印即用。">
+    <meta name="twitter:image" content="https://worldstip.com/my/bus/2/assets/images/hero-tbilisi-night.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "第比利斯入境 A5 速查卡册 · 安全小册子 | 如何去远行",
+      "url": "https://worldstip.com/my/bus/2/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+
+<div class="no-print" style="text-align:center;padding:14px;background:#0f172a;color:#fff">
+  <b style="font-size:14px">第比利斯入境 A5 速查卡册 · 共 8 张</b>
+  <span style="font-size:12px;margin-left:10px;opacity:.8">宽屏两卡并排 · 窄屏单卡 · 点「打印」选 A5 纸张每张一页</span>
+  <button onclick="window.print()" style="margin-left:12px;background:#f97316;border:none;color:#fff;border-radius:999px;padding:8px 18px;font-size:13px;font-weight:800;cursor:pointer">打印 / PDF</button>
+</div>
+
+<div class="deck">
+
+<!-- P1 封面 -->
+<section class="sheet cover">
+  <div>
+    <div><span class="badge">安全小册子</span><span class="badge b2">2026 核验版</span><span class="badge b2">中格免签</span></div>
+    <h1>第比利斯机场<br>入境速查卡</h1>
+    <p class="cv-sub">格鲁吉亚 TBS 机场 · 距市区 17-20 km<br>本册覆盖：<b>免签</b> / <b>保险</b> / <b>下机动线</b> / <b>交通</b> / <b>红黑榜</b> / <b>紧急速拨</b></p>
+    <picture>
+<source srcset="assets/images/hero-tbilisi-night.webp" type="image/webp">
+<img class="cv-img" src="assets/images/hero-tbilisi-night.jpg" alt="第比利斯夜景">
+</picture>
+    <div class="qc-grid">
+      <a class="qc" href="tel:112"><span class="el">紧急求救 警/消/医</span><span class="en red">112</span></a>
+      <a class="qc" href="tel:+995599650585"><span class="el">使馆领保 24h</span><span class="en">+995 599 650 585</span></a>
+      <a class="qc" href="tel:+861012308"><span class="el">外交部领保热线</span><span class="en">12308</span></a>
+    </div>
+  </div>
+  <div class="cv-foot"><b>WorldStip · 如何去远行</b> · 配图 Pexels 免费授权 · 政策以官方最新发布为准</div>
+</section>
+
+<!-- P2 入境规则 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">1</div><div class="ptitle">入境规则 · 签证与保险</div><div class="ptag">VISA</div></div>
+  <div class="divider"></div>
+  <div class="sec">免签资格</div>
+  <ul class="tight">
+    <li><b>中格互免</b>：2024-05-28 生效，普通护照免签；单次 ≤ <span class="hl">30 天</span>，180 天内累计 ≤ <span class="hl">90 天</span>，不可延期、不可境内转工作签</li>
+    <li><b>超期罚款新规</b>（2025-10-01 起）：≤3 个月罚 <span class="hl">1000 拉里</span>、≤1 年罚 <span class="hl">2000 拉里</span>、超 1 年罚 <span class="hl">3000 拉里</span>，另加 6 个月至 3 年入境禁令（旧「每日 10 拉里」已废止）</li>
+    <li><b>须办签证</b>：工作 D1 / 学习 D3 / 家庭 D4 / 投资 D5 及新闻、科研、医疗目的；电子签 evisa.gov.ge</li>
+    <li><b>禁区</b>：阿布哈兹、南奥塞梯免签不适用，有法律风险勿前往；出发前用格外交部免签检查器 geoconsul.gov.ge 自查</li>
+  </ul>
+  <div class="sec">强制旅游医疗意外险（2026-01-01 起）</div>
+  <ul class="tight">
+    <li>依据格鲁吉亚《旅游法》第 602 号决议；保额 ≥ <span class="hl">30000 拉里</span>（非 3 万美元），保单英文或格文，覆盖入境到离境全程；<b>口径以中国驻格使馆官方通知为准</b></li>
+    <li>纸质或手机 PDF 均可；<b>边检可能抽查，无保单可能被拒入境</b></li>
+  </ul>
+  <div class="sec">保险在哪买（便捷通道）</div>
+  <div class="kv">
+    <div class="kvx"><b>① 国内出发前买 ★首选</b><span>支付宝 / 微信 / 携程搜「境外旅行险」，选平安、安联、美亚等，医疗保额 ≥ 30 万人民币（远超 3 万拉里）；向客服索取英文保单</span></div>
+    <div class="kvx"><b>② 格鲁吉亚本地 ARDI</b><span>ardi.ge 官网 24h 在线，2 分钟出单；Welcomer 产品保额恰为 <span class="hl">3 万拉里</span>完全合规，约 <span class="hl">2 拉里/天</span>起；App 及 We Insure / Geotrust 亦可购</span></div>
+    <div class="kvx"><b>③ 保单要求</b><span>英文或格文，须含保障人、险种、期限、保额、保费信息；电子或纸质均可</span></div>
+    <div class="kvx"><b>④ 提示</b><span>出发前买好并打印 + 手机存 PDF；部分产品须出发前 12h 购买才生效；落地再买易慌乱，且边检即可能查验</span></div>
+  </div>
+  <div class="sec">海关</div>
+  <ul class="tight">
+    <li><b>禁带</b>：肉制品、动植物标本；精神类药物（处方药附医生证明）；携带现金超 1 万美元须申报</li>
+  </ul>
+  <div class="pfoot"><span>WorldStip · 第比利斯入境 A5 速查卡册</span><span>01 / 08</span></div>
+</section>
+
+<!-- P3 行前准备 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">2</div><div class="ptitle">行前准备 · 清单与 App</div><div class="ptag">PRE-DEPARTURE</div></div>
+  <div class="divider"></div>
+  <div class="kv">
+    <div class="kvx"><b>① 核对免签</b><span>30 天/次、180 天累计 90 天；拿不准用 geoconsul.gov.ge 自查</span></div>
+    <div class="kvx"><b>② 买保险</b><span>保额 ≥ <span class="hl">30000 拉里</span>、英文/格文；打印纸质 + 手机存 PDF</span></div>
+    <div class="kvx"><b>③ 打印文件</b><span>机票、酒店、保险、护照复印件，放随身包</span></div>
+    <div class="kvx"><b>④ 换新版美元</b><span>2006 年前旧版在格常被拒收或压价</span></div>
+    <div class="kvx"><b>⑤ 装好 App</b><span>Bolt、Yandex Go 国内装好注册——机场 WiFi 屏蔽应用商店</span></div>
+    <div class="kvx"><b>⑥ 离线地图</b><span>Google Maps / Maps.me 提前下载第比利斯离线包</span></div>
+    <div class="kvx"><b>⑦ 存紧急号</b><span>112、+995 599 650585、12308 存入通讯录</span></div>
+    <div class="kvx"><b>⑧ 资金</b><span>流水 ≥ <span class="hl">500 美元</span>；Visa/Mastercard 可 ATM 取现</span></div>
+  </div>
+  <div class="sec">必备 App（出国前装好）</div>
+  <table class="tbl">
+    <tr><th style="width:19%">App</th><th style="width:19%">用途</th><th>关键提示</th></tr>
+    <tr><td><b>Bolt</b></td><td>打车主力</td><td>机场→市区约 <span class="price">20-25 拉里</span>，比官方出租便宜约 50%</td></tr>
+    <tr><td><b>Yandex Go</b></td><td>打车备用</td><td>与 Bolt 同开比价；Maxim 价格最低作深夜兜底</td></tr>
+    <tr><td><b>Google Maps</b></td><td>导航/找店</td><td>提前下离线包；Maps.me 老城小巷、山区更好用</td></tr>
+    <tr><td><b>WhatsApp</b></td><td>联系民宿/司机</td><td>当地普遍使用；Google Translate 下格语离线包拍照翻译</td></tr>
+  </table>
+  <picture>
+<source srcset="assets/images/trinity-cathedral.webp" type="image/webp">
+<img class="ph" src="assets/images/trinity-cathedral.jpg" alt="圣三一大教堂" style="height:30mm" loading="lazy" decoding="async">
+</picture>
+  <div class="pfoot"><span>WorldStip · 第比利斯入境 A5 速查卡册</span><span>02 / 08</span></div>
+</section>
+
+<!-- P4 下机动线 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">3</div><div class="ptitle">下机动线 · 机场分布</div><div class="ptag">ARRIVAL</div></div>
+  <div class="divider"></div>
+  <div class="sec">5 步流程</div>
+  <div class="steps">
+    <div class="stp"><span class="s">1</span><b>下机</b>沿 Arrivals 指示走，单航站楼步行 3-5 分钟</div>
+    <div class="stp"><span class="s">2</span><b>边检</b>护照直接盖章，无入境卡、无指纹；下午高峰排队可达 1.5h，建议早班航班（早班 10-20 分钟过关）</div>
+    <div class="stp"><span class="s">3</span><b>行李</b>边检后到转盘，通常 15-30 分钟，推车免费</div>
+    <div class="stp"><span class="s">4</span><b>海关</b>无申报走绿色通道直接放行</div>
+    <div class="stp"><span class="s">5</span><b>到达大厅</b>在一层，按顺序：电话卡 → 换汇 → 交通</div>
+  </div>
+  <div class="sec">机场分布（单航站楼三层）</div>
+  <div class="kv">
+    <div class="kvx"><b>二层 · 出发</b><span>值机、安检、出境边检、免税店、登机口</span></div>
+    <div class="kvx"><b>一层 · 到达 ★</b><span>边检→行李→海关；大厅有换汇（Bank of Georgia 橙柜）、SIM 柜台、问讯台、租车；出门即 37 路公交站与 Bolt 候车区</span></div>
+    <div class="kvx"><b>夹层 · 行政</b><span>航空公司办公室，不对旅客开放</span></div>
+    <div class="kvx"><b>问讯台</b><span>大厅中部；电话 +995 32 2 310 265</span></div>
+  </div>
+  <div class="sec">大厅内位置</div>
+  <ul class="tight">
+    <li><b>SIM 柜台与换汇柜台相邻</b>，认准 Bank of Georgia 橙色柜台；租车 Hertz / Avis / Enterprise 设点，提前预订更便宜</li>
+    <li>打车在大厅内直接叫 Bolt，<b>出站口拉客一律不理</b></li>
+  </ul>
+  <picture>
+<source srcset="assets/images/airport-runway.webp" type="image/webp">
+<img class="ph" src="assets/images/airport-runway.jpg" alt="机场跑道" style="height:26mm" loading="lazy" decoding="async">
+</picture>
+  <div class="pfoot"><span>WorldStip · 第比利斯入境 A5 速查卡册</span><span>03 / 08</span></div>
+</section>
+
+<!-- P5 落地三件事+交通 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">4</div><div class="ptitle">落地三件事 · 交通</div><div class="ptag">FIRST 3</div></div>
+  <div class="divider"></div>
+  <div class="sec">顺序：电话卡 → 换汇 → 交通</div>
+  <div class="kv">
+    <div class="kvx"><b>① 电话卡</b><span>Magti / Geocell / Beeline 柜台；正常 <span class="hl">15-20 拉里</span>，开价 <span class="hl">40-60 拉里</span>是坑，当场测网再付；带护照购买</span></div>
+    <div class="kvx"><b>② 换汇</b><span>Bank of Georgia 橙柜；先换 50-100 拉里够用，大额到市区银行换（汇率更优）；只收新版美元，当面点清</span></div>
+  </div>
+  <div class="sec">机场进城对比</div>
+  <table class="tbl">
+    <tr><th style="width:25%">方式</th><th style="width:14%">价格</th><th style="width:14%">时长</th><th>提示</th></tr>
+    <tr><td><b>Bolt / Yandex Go</b></td><td class="price">20-25 拉里</td><td>20-30 分</td><td>首选，核对车牌车型</td></tr>
+    <tr><td><b>37 路公交</b></td><td class="price">0.5-1 拉里</td><td>40-50 分</td><td>经典线路，运营至深夜，备零钱</td></tr>
+    <tr><td><b>机场快线火车</b></td><td class="price">约 0.5 拉里</td><td>25-30 分</td><td>直达 Station Square，班次稀疏</td></tr>
+    <tr><td><b>官方出租柜台</b></td><td class="price">25-40 拉里</td><td>20-30 分</td><td>一口价，比黑车靠谱但贵于 Bolt</td></tr>
+    <tr class="row-bad"><td><b>黑车（拉客）</b></td><td class="price">100-150 拉里</td><td>—</td><td>拒绝，有冒充官方高价拉客</td></tr>
+  </table>
+  <div class="sec">市内出行</div>
+  <ul class="tight">
+    <li><b>MetroMoney 卡</b>：工本 <span class="hl">2 拉里</span>，地铁公交 <span class="hl">0.5-1 拉里/次</span>（现金 1.5 拉里），1 小时内换乘免费；地铁 6:00-24:00</li>
+    <li>市内打车 Bolt 一般 5-15 拉里；公交/地铁口小亭卖卡，可充值可退；住老城步行最省事</li>
+  </ul>
+  <picture>
+<source srcset="assets/images/airport-aircraft.webp" type="image/webp">
+<img class="ph" src="assets/images/airport-aircraft.jpg" alt="机场飞机" style="height:30mm" loading="lazy" decoding="async">
+</picture>
+  <div class="pfoot"><span>WorldStip · 第比利斯入境 A5 速查卡册</span><span>04 / 08</span></div>
+</section>
+
+<!-- P6 红黑榜 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">5</div><div class="ptitle">避坑红黑榜</div><div class="ptag">DOs &amp; DON'Ts</div></div>
+  <div class="divider"></div>
+  <div class="duo">
+    <div class="col kbad">
+      <div class="sec red">坑 · 必避</div>
+      <ul>
+        <li><b>冒充官方拉客</b>：出口高价拉客 <span class="hl">100-150 拉里</span>，直奔 Bolt 候车区</li>
+        <li><b>SIM 高溢价</b>：开价 <span class="hl">40-60 拉里</span>属宰客，正常 15-20 拉里</li>
+        <li><b>旧版美元</b>：2006 年前旧版普遍拒收或压价</li>
+        <li><b>落地才下 App</b>：机场 WiFi 屏蔽应用商店，只能被宰</li>
+        <li><b>无保险闯关</b>：保额 ≥ <span class="hl">30000 拉里</span>，无保单可能被拒入境</li>
+        <li><b>"高汇率"搭讪</b>：换汇套路，只进正规柜台</li>
+        <li><b>火车站附近换汇</b>：汇率差，市区银行更划算</li>
+        <li><b>深夜独走小巷</b>：Rustaveli 大道至 Station Square 段警惕扒手，背包前置</li>
+      </ul>
+    </div>
+    <div class="col kgood">
+      <div class="sec green">正 · 照做</div>
+      <ul>
+        <li><b>选早班航班</b>：边检下午高峰 1.5h，早班 10-20 分钟过关</li>
+        <li><b>37 路公交进城</b>：<span class="hl">0.5-1 拉里</span>直达市区，性价比最高</li>
+        <li><b>橙柜换汇</b>：Bank of Georgia 汇率透明，大额去市区银行</li>
+        <li><b>Bolt 比价 + 记车牌</b>：与 Yandex Go 同开比价，深夜行程分享家人</li>
+        <li><b>证件三重备份</b>：原件随身 + 复印件 + 云盘/邮箱留档</li>
+        <li><b>现金少量多次</b>：只放当日所需，大额锁保险箱</li>
+        <li><b>MetroMoney 出行</b>：<span class="hl">0.5 拉里</span> vs 现金 1.5 拉里，换乘免费</li>
+        <li><b>离线地图提前下</b>：防止落地没网迷路</li>
+      </ul>
+    </div>
+  </div>
+  <picture>
+<source srcset="assets/images/old-town-street.webp" type="image/webp">
+<img class="ph" src="assets/images/old-town-street.jpg" alt="老城街道" style="height:30mm" loading="lazy" decoding="async">
+</picture>
+  <div class="pfoot"><span>WorldStip · 第比利斯入境 A5 速查卡册</span><span>05 / 08</span></div>
+</section>
+
+<!-- P7 自我保护+紧急 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">6</div><div class="ptitle">自我保护 · 紧急速拨</div><div class="ptag">SAFETY</div></div>
+  <div class="divider"></div>
+  <div class="sec">自我保护要点</div>
+  <ul class="tight">
+    <li><b>证件三重备份</b>：原件贴身，复印件放包，拍照存云盘 + 邮箱</li>
+    <li><b>现金少量多次</b>：只放当日所需，大额锁保险箱，换汇当面点清</li>
+    <li><b>防扒手</b>：Rustaveli 大道至 Station Square 段警惕扒手，背包前置</li>
+    <li><b>不理会搭讪</b>："高汇率"换汇、带路党一律不理；陌生 WiFi 不碰网银</li>
+    <li><b>深夜不独走小巷</b>：打车直达，行程分享家人；第比利斯开车较野，过马路看两向</li>
+    <li><b>报警必拿回执</b>：证件挂失与保险理赔都要用</li>
+    <li><b>护照丢失</b>：① 报警拿回执 → ② 联系使馆领保 → ③ 办旅行证回国</li>
+  </ul>
+  <div class="sec">紧急联系（存入手机 + 打印本卡放钱包）</div>
+  <table class="tbl">
+    <tr><th style="width:36%">事项</th><th>号码 / 信息</th></tr>
+    <tr><td><b>统一紧急（警/消/医）</b></td><td class="good">112（24h，可转英语）</td></tr>
+    <tr><td><b>中国驻格使馆 · 领保</b></td><td class="good">+995 599 650 585（24h）</td></tr>
+    <tr><td><b>使馆 · 证件咨询</b></td><td>+995 32 225 9000（工作时间）</td></tr>
+    <tr><td><b>外交部领保热线</b></td><td class="good">12308（境外 +86-10-12308）</td></tr>
+    <tr><td><b>使馆地址 / 机场问讯</b></td><td>Barnov St. 52 / +995 32 2 310 265</td></tr>
+  </table>
+  <div class="sec">随身材料</div>
+  <ul class="tight">
+    <li><b>护照</b>（≥6 个月有效期）+ 复印件 2 份；<b>往返机票单</b>（部分航司值机要求）；<b>住宿证明</b>（酒店订单或邀请函）</li>
+    <li><b>资金</b>：流水余额 ≥ <span class="hl">500 美元</span>（抽查按每日 50 美元预算）；Visa/Mastercard 可 ATM 取现；<b>未成年人</b>：出生证明原件 + 英文翻译，单方随行需公证同意函</li>
+  </ul>
+  <div class="pfoot"><span>WorldStip · 第比利斯入境 A5 速查卡册</span><span>06 / 08</span></div>
+</section>
+
+<!-- P8 24h+来源 -->
+<section class="sheet">
+  <div class="topbar"></div>
+  <div class="phead"><div class="pnum">7</div><div class="ptitle">落地 24h · 官方来源</div><div class="ptag">24H + SOURCES</div></div>
+  <div class="divider"></div>
+  <div class="sec">24 小时行动路线</div>
+  <ul class="tight">
+    <li><b>出关 30 分钟内</b>：电话卡（<span class="hl">15-20 拉里</span>）→ 橙柜换 50-100 拉里 → Bolt 或 37 路公交</li>
+    <li><b>入住</b>：确认手机可用，护照复印件放房间，大额现金锁保险箱</li>
+    <li><b>当天下午</b>：办 MetroMoney 卡（工本 <span class="hl">2 拉里</span>），试乘地铁熟悉线路，认使馆方向</li>
+    <li><b>晚上</b>：Narikala 缆车看夜景（<span class="hl">2.5 拉里</span>，11:00-24:00，Rike Park 出发）；回程 Bolt 并分享行程</li>
+  </ul>
+  <div class="sec">出发前自查</div>
+  <ul class="tight">
+    <li>免签资格用 geoconsul.gov.ge 核验；保险保单备好英文/格文；紧急号码存入通讯录并打印本册</li>
+  </ul>
+  <div class="sec">官方渠道（可核验）</div>
+  <ul class="tight">
+    <li><b>中国驻格使馆</b>：ge.china-embassy.gov.cn（保险通知）；<b>格外交部领事门户</b>：geoconsul.gov.ge（免签检查器）</li>
+    <li><b>格移民局</b>：immigration.gov.ge；<b>中国领事服务网</b>：cs.mfa.gov.cn；<b>机场官网</b>：tbilisiairport.com</li>
+    <li><b>保险口径</b>：以中国驻格使馆通知为准（ge.china-embassy.gov.cn，2025-12-29 发布）；<b>法规细则</b>：gov.pl/web/georgia（第 602 号决议）</li>
+  </ul>
+  <div class="warn"><b>没有保险会被拒绝入境</b><span>出发前务必买好并打印 + 手机存 PDF，购买通道见 P2 卡</span></div>
+  <picture>
+<source srcset="assets/images/old-town-cafe.webp" type="image/webp">
+<img class="ph" src="assets/images/old-town-cafe.jpg" alt="老城咖啡馆" style="height:32mm" loading="lazy" decoding="async">
+</picture>
+  <div class="pfoot"><span>WorldStip · 第比利斯入境 A5 速查卡册 · 2026-09 核验</span><span>07 / 08</span></div>
+</section>
+
+</div>
+
+</body>
+</html>

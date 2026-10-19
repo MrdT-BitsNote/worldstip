@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>贵阳 3 日 · A5 卡片手册｜避暑之都·林城</title>
+<meta name="description" content="贵阳3日城市漫游手册：甲秀楼夜景、黔灵山、青岩古镇、天河潭、花溪与观山湖，含黔味美食（肠旺面、丝娃娃、酸汤鱼）与避暑穿搭、交通避坑。">
+<meta name="keywords" content="贵阳旅游,贵阳旅行,甲秀楼,青岩古镇,黔灵山,贵阳美食">
+<style>
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Roboto,sans-serif;
+    color:#333a44;
+    background:linear-gradient(160deg,#f2fbf5 0%,#eef4ff 45%,#e8f6f3 100%);
+    line-height:1.55;
+    overflow-wrap:break-word;
+    min-height:100vh;
+  }
+  img{max-width:100%;height:auto;display:block;}
+
+  /* ===== 顶部标题 ===== */
+  header.masthead{
+    text-align:center;
+    padding:42px 20px 14px;
+    position:relative;
+  }
+  header.masthead .title-emoji{font-size:42px;line-height:1;margin-bottom:8px;}
+  header.masthead h1{
+    margin:0 0 6px;
+    font-size:clamp(1.5rem,4vw,2rem);
+    font-weight:800;
+    letter-spacing:.5px;
+    background:linear-gradient(90deg,#2f9e63,#4fa3c9,#7f8cff);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  header.masthead p{color:#7c8291;margin:0;font-size:.95rem;}
+
+  /* ===== 卡片册舞台 ===== */
+  .deck-wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:8px 18px 40px;
+  }
+
+  /* 目录导航 chip（横向滚动） */
+  .chips{
+    display:flex;gap:8px;align-items:center;
+    margin:14px auto 26px;max-width:940px;
+    overflow-x:auto;padding:6px 4px 10px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+  }
+  .chips::-webkit-scrollbar{height:6px;}
+  .chips::-webkit-scrollbar-thumb{background:#bcdcc9;border-radius:99px;}
+  .chips button{
+    font:inherit;font-size:.85rem;font-weight:600;white-space:nowrap;
+    border:none;cursor:pointer;flex:none;
+    padding:8px 15px;border-radius:999px;
+    background:#fff;color:#5b6372;
+    box-shadow:0 4px 14px rgba(90,140,110,.10);
+    transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+  }
+  .chips button:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(90,140,110,.16);}
+  .chips button.active{background:#2f9e63;color:#fff;}
+  .chips .grp-label{
+    flex:none;font-size:.72rem;font-weight:800;letter-spacing:.08em;color:#92a89e;
+    padding:0 2px;
+  }
+
+  /* 卡片网格 */
+  .deck{
+    display:flex;flex-wrap:wrap;gap:22px;
+    justify-content:center;align-items:flex-start;
+    scroll-behavior:smooth;
+  }
+
+  /* ===== A5 卡片本体 ===== */
+  .card{
+    width:148mm;height:210mm;
+    background:#fff;border-radius:26px;
+    box-shadow:0 18px 44px rgba(40,110,80,.15),0 3px 10px rgba(40,110,80,.08);
+    overflow:hidden;position:relative;
+    display:flex;flex-direction:column;
+    border:1px solid rgba(255,255,255,.7);
+    scroll-margin-top:20px;
+  }
+  .card .topbar{flex:none;height:7px;background:linear-gradient(90deg,var(--tc1),var(--tc2));}
+  .card header.c{
+    padding:15px 20px 5px;display:flex;align-items:center;gap:12px;
+  }
+  .card header.c .ico{
+    flex:none;width:44px;height:44px;border-radius:14px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:24px;background:var(--tc-soft);
+    box-shadow:0 4px 10px rgba(0,0,0,.06);
+  }
+  .card header.c h2{margin:0;font-size:1.16rem;font-weight:800;line-height:1.25;color:var(--tc-strong);}
+  .card header.c .en{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#b3bac6;margin-top:2px;}
+  .card .body{flex:1;min-height:0;padding:8px 18px 16px;overflow:hidden;display:flex;flex-direction:column;}
+  .card .page-num{position:absolute;bottom:12px;right:16px;font-size:.72rem;font-weight:700;color:#c2c8d4;}
+
+  .pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.66rem;font-weight:700;white-space:nowrap;}
+  .pill.must{background:#ffe9e4;color:#e5533d;}
+  .pill.flex{background:#e4f4e8;color:#2f9e63;}
+  .pill.day{background:#e8f0ff;color:#4f7fd6;}
+
+  /* 封面卡片 */
+  .card.cover{
+    background:
+      linear-gradient(180deg,rgba(30,80,60,.12) 0%,rgba(20,55,45,.72) 92%),
+      url('assets/jiaxioolou.jpg') center/cover no-repeat #17352b;
+    background-image:
+        linear-gradient(180deg,rgba(30,80,60,.12) 0%,rgba(20,55,45,.72) 92%),
+        url('assets/jiaxioolou.jpg');
+    background-size:cover;background-position:center;
+  }
+  .card.cover .overlay{color:#fff;flex:1;display:flex;flex-direction:column;padding:24px 22px;justify-content:flex-end;}
+  .card.cover .kick{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:#ffe08a;font-weight:700;margin-bottom:10px;}
+  .card.cover h2{font-size:2rem;margin:0 0 10px;line-height:1.14;font-weight:800;}
+  .card.cover .sub{font-size:.94rem;opacity:.95;margin:0 0 20px;max-width:40ch;}
+  .card.cover .meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;}
+  .card.cover .meta span{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);padding:5px 11px;border-radius:999px;font-size:.8rem;}
+  .cover-deco{position:absolute;top:22px;left:22px;font-size:30px;line-height:1;filter:drop-shadow(0 3px 6px rgba(0,0,0,.3));}
+
+  /* ===== 动线总览 ===== */
+  .timeline{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;}
+  .timeline li{display:flex;gap:10px;align-items:flex-start;background:#f4faf6;border:1px solid #e3efe7;border-radius:13px;padding:8px 11px;}
+  .timeline li .d{flex:none;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#4fa3c9,#2f9e63);color:#fff;font-weight:800;font-size:.82rem;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.05;}
+  .timeline li .d small{font-size:.55rem;font-weight:600;opacity:.9;}
+  .timeline li .tt{flex:1;min-width:0;}
+  .timeline li .tt b{font-size:.85rem;color:#3d3f52;}
+  .timeline li .tt span{display:block;font-size:.76rem;color:#82889a;margin-top:1px;}
+  .timeline .tag-row{margin-top:2px;}
+
+  /* ===== 逐日行程卡片 ===== */
+  .day-head{
+    display:flex;align-items:center;gap:11px;
+    background:linear-gradient(90deg,var(--tc-soft),#fff);
+    border-left:5px solid var(--tc-strong);
+    border-radius:13px;padding:9px 12px;margin-bottom:9px;
+  }
+  .day-head .dn{
+    flex:none;width:40px;height:40px;border-radius:13px;
+    background:linear-gradient(135deg,var(--tc1),var(--tc2));color:#fff;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    line-height:1.02;font-weight:800;font-size:.9rem;
+  }
+  .day-head .dn small{font-size:.56rem;font-weight:600;opacity:.92;}
+  .day-head .dh{flex:1;min-width:0;}
+  .day-head .dh b{font-size:.98rem;color:var(--tc-strong);display:block;line-height:1.2;}
+  .day-head .dh span{font-size:.74rem;color:#82889a;}
+  .day-route{font-size:.78rem;color:#6b7280;margin:-2px 0 8px;background:#f4faf6;border:1px dashed #cfe3d5;border-radius:10px;padding:7px 11px;}
+  .day-route b{color:#3d3f52;}
+  .day-blocks{display:flex;flex-direction:column;gap:8px;}
+  .dset{border-radius:13px;border:1px solid #ececf1;background:#fbfbfd;padding:8px 11px;}
+  .dset .dt{font-size:.72rem;font-weight:800;color:#2f9e63;letter-spacing:.04em;margin-bottom:4px;}
+  .dset .dset-r{font-size:.76rem;color:#5f6674;margin:3px 0;}
+  .spot{display:flex;gap:8px;align-items:flex-start;margin:5px 0;}
+  .spot .p{flex:none;width:19px;height:19px;border-radius:50%;text-align:center;line-height:19px;font-size:.7rem;color:#fff;background:#4fa3c9;margin-top:1px;}
+  .spot .p.m{background:#e5533d;}
+  .spot .p.x{background:#2f9e63;}
+  .spot .nm{font-size:.79rem;font-weight:600;color:#3d3f52;}
+  .spot .nm span{font-size:.68rem;color:#8a91a0;font-weight:500;display:block;margin-top:1px;}
+  .day-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;}
+  .day-thumbs .th{border-radius:12px;overflow:hidden;border:1px solid #ececf1;background:#fff;}
+  .day-thumbs .th .ph{aspect-ratio:16/9;overflow:hidden;background:#eef0f4;}
+  .day-thumbs .th .ph img{width:100%;height:100%;object-fit:cover;}
+  .day-thumbs .th figcaption{padding:5px 8px 7px;font-size:.68rem;color:#8a91a0;}
+  .day-tip{margin-top:8px;font-size:.74rem;background:#fff3dc;border:1px solid #f0dfae;color:#8a6210;border-radius:10px;padding:7px 11px;}
+
+  /* ===== 交通攻略卡 ===== */
+  .rail-a{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;}
+  .rail-a .ra{display:flex;gap:8px;align-items:center;border-radius:12px;border:1px solid #ececf1;background:#fbfbfd;padding:8px 10px;}
+  .rail-a .ri{flex:none;font-size:19px;}
+  .rail-a .ra b{font-size:.78rem;color:#3d3f52;display:block;}
+  .rail-a .ra span{font-size:.68rem;color:#8a91a0;}
+  .rail-a .ra.hot{border:1.5px solid #e5533d;background:#fff4f2;}
+  .rail-a .ra.hot b{color:#e5533d;}
+  .rail-a .ra.hot span{color:#c96a57;}
+
+  /* ===== 注意事项 / 贴士 ===== */
+  .notes{display:flex;flex-direction:column;gap:8px;}
+  .note{display:flex;gap:9px;align-items:flex-start;border-radius:13px;padding:9px 11px;border:1px solid #eee;background:#fbfbfd;}
+  .note .ni{flex:none;font-size:19px;width:30px;height:30px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.06);}
+  .note .nt{flex:1;min-width:0;}
+  .note .nt b{font-size:.84rem;display:block;color:#3d3f52;}
+  .note .nt p,.note .nt ul{margin:.2rem 0 0;font-size:.76rem;color:#6b7280;}
+  .note .nt li{margin-top:2px;}
+
+  /* ===== 热门景点 / 美食网格 ===== */
+  .spots{display:grid;grid-template-columns:1fr 1fr;gap:9px;}
+  .spot-card{border-radius:13px;overflow:hidden;border:1px solid #ececf1;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.05);}
+  .spot-card .ph{aspect-ratio:16/10;overflow:hidden;background:#eef0f4;}
+  .spot-card .ph img{width:100%;height:100%;object-fit:cover;}
+  .spot-card .st{padding:6px 9px 8px;}
+  .spot-card .st b{font-size:.76rem;color:#3d3f52;display:block;line-height:1.3;}
+  .spot-card .st span{font-size:.68rem;color:#8a91a0;display:block;margin-top:1px;}
+
+  /* ===== 游客中心 / 车站 ===== */
+  .res{display:flex;flex-direction:column;gap:9px;}
+  .res-box{border-radius:15px;border:1px solid #eee;overflow:hidden;background:#fff;}
+  .res-box .rp{aspect-ratio:16/7;overflow:hidden;background:#eef0f4;}
+  .res-box .rp img{width:100%;height:100%;object-fit:cover;}
+  .res-box .res-c{padding:11px 13px 12px;}
+.res-box .res-c h3{margin:0 0 6px;font-size:.9rem;display:flex;align-items:center;gap:6px;color:#3d3f52;}
+.res-box .res-c h3 .kind{padding:1px 8px;border-radius:999px;font-size:.64rem;background:#e8f6ee;color:#2f9e63;font-weight:700;}
+.res-box .res-c p{margin:.3rem 0;font-size:.76rem;line-height:1.5;color:#4c5563;}
+.res-box .res-c p.tip{margin-top:.55rem;padding:7px 10px;border-radius:10px;background:#eefaf3;color:#2f9e63;font-weight:600;}
+.res-box .res-c ul{margin:.45rem 0 0;padding-left:1.05rem;font-size:.75rem;line-height:1.55;color:#505b6b;}
+.res-box .res-c li{margin-top:3px;}
+.res-box .res-c a{color:#2f9e63;text-decoration:none;font-weight:600;word-break:break-all;}
+
+  .foot-note{text-align:center;color:#8b909c;font-size:.8rem;padding:6px 18px 44px;max-width:720px;margin:0 auto;}
+  .foot-note a{color:#2f9e63;text-decoration:none;}
+
+  /* 打印：每卡独立一页 A5 */
+  @page{size:A5;margin:0;}
+  @media print{
+    body{background:#fff;}
+    header.masthead,.chips{display:none;}
+    .deck{display:block;}
+    .card{
+      width:148mm;height:210mm;border-radius:0;box-shadow:none;
+      page-break-after:always;margin:0;border:none;
+    }
+    .card:last-child{page-break-after:auto;}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/guiyang/">
+    <meta name="theme-color" content="#2f9e63">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="贵阳 3 日 · A5 卡片手册｜避暑之都·林城">
+    <meta property="og:description" content="贵阳3日城市漫游手册：甲秀楼夜景、黔灵山、青岩古镇、天河潭、花溪与观山湖，含黔味美食与避暑穿搭、交通避坑。">
+    <meta property="og:url" content="https://worldstip.com/map/guiyang/">
+    <meta property="og:image" content="https://worldstip.com/assets/images/guiyang_jiaxioolou.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="贵阳 3 日 · A5 卡片手册｜避暑之都·林城">
+    <meta name="twitter:description" content="贵阳3日城市漫游手册：甲秀楼、黔灵山、青岩古镇、天河潭、花溪与观山湖，含黔味美食与避暑穿搭。">
+    <meta name="twitter:image" content="https://worldstip.com/assets/images/guiyang_jiaxioolou.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "贵阳 3 日 · A5 卡片手册",
+      "url": "https://worldstip.com/map/guiyang/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/guiyang/",
+  "name": "贵阳 3 日 · A5 卡片手册",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {"@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/"},
+  "publisher": {"@type": "Organization", "name": "旅行小册子", "url": "https://worldstip.com/"},
+  "copyrightHolder": {"@type": "Organization", "name": "旅行小册子"},
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="title-emoji">🌿🏮🍜</div>
+  <h1>贵阳 · 3 日城市漫游 A5 卡片手册</h1>
+  <p>避暑之都 · 林城 ｜ 一册在手，边走边看</p>
+</header>
+
+<div class="deck-wrap">
+  <nav class="chips" aria-label="卡片目录" style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;">
+    <button data-target="c-cover" class="active">📕 封面</button>
+    <span class="grp-label">── 3天旅程 ──</span>
+    <button data-target="c-overview">🗺️ 总览</button>
+    <button data-target="c-d1">Day1</button>
+    <button data-target="c-d2">Day2</button>
+    <button data-target="c-d3">Day3</button>
+    <span class="grp-label">── 更多 ──</span>
+    <button data-target="c-spot">🏞️ 景点</button>
+    <button data-target="c-food">🍽️ 美食</button>
+    <button data-target="c-tip">💡 贴士</button>
+    <button data-target="c-res">🚉 交通·住宿</button>
+  </nav>
+
+  <div class="deck" id="deck">
+
+    <!-- 1 · 封面 -->
+    <article class="card cover" id="c-cover" style="--tc1:#2f9e63;--tc2:#4fa3c9;--tc-strong:#237a4b;--tc-soft:#e5f6ee;">
+      <span class="cover-deco" aria-hidden="true">🌿</span>
+      <div class="overlay">
+        <p class="kick">Guiyang · 避暑之都</p>
+        <h2>3 日城市漫游<br>路书手册</h2>
+        <p class="sub">甲秀楼的老城灯光、黔灵山上的猕猴与弘福寺、青岩古镇的卤猪脚——林城慢生活的清爽 3 天。</p>
+        <div class="meta"><span>📅 夏季避暑首选</span><span>🏮 甲秀楼夜景</span><span>🍜 黔味三餐</span></div>
+        <div class="meta" style="margin-bottom:0"><span>🔖 红标必去 · 绿标弹性</span></div>
+      </div>
+      <span class="page-num" style="color:rgba(255,255,255,.7)">1 / 9</span>
+    </article>
+
+    <!-- 2 · 动线总览 -->
+    <article class="card" id="c-overview" style="--tc1:#4fa3c9;--tc2:#2f9e63;--tc-strong:#2f7fa0;--tc-soft:#e8f3fb;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🗺️</div>
+        <div><h2>3 天城市漫游 · 动线总览</h2><div class="en">Guiyang 3-Day Route</div></div>
+      </header>
+      <div class="body">
+        <ul class="timeline">
+          <li><span class="d"><small>Day</small>1</span><div class="tt"><b>老城经典 · 避暑首日</b><span>黔灵山看猴 → 弘福寺 → 甲秀楼夜景</span></div></li>
+          <li><span class="d"><small>Day</small>2</span><div class="tt"><b>古镇山水 · 郊外一日</b><span>青岩古镇卤猪脚 → 天河潭瀑布溶洞</span><span class="tag-row"><span class="pill day">🚗 郊外</span></span></div></li>
+          <li><span class="d"><small>Day</small>3</span><div class="tt"><b>城市漫步 · 慢活收尾</b><span>花溪十里河滩 → 观山湖 → 夜市宵夜</span><span class="tag-row"><span class="pill day">🚇 地铁</span></span></div></li>
+        </ul>
+      </div>
+      <span class="page-num">2 / 9</span>
+    </article>
+
+    <!-- 3 · Day 1 -->
+    <article class="card" id="c-d1" style="--tc1:#ff9a5c;--tc2:#e5533d;--tc-strong:#d34a32;--tc-soft:#ffece4;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🐒</div>
+        <div><h2>第 1 天 · 老城经典</h2><div class="en">黔灵山 → 甲秀楼</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>Day</small>1</span>
+          <div class="dh"><b>避暑首日 · 猴山与夜景</b><span>登高看猴 → 山下古寺 → 夜游甲秀楼</span></div>
+        </div>
+        <p class="day-route">把森林搬进城市的黔灵山，与南明河上 400 年的甲秀楼，串成老城清爽一天。<b>上午登山，傍晚河边</b></p>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">☀️ 上午 · 黔灵山公园</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">黔灵山猕猴<span>山上野生猕猴众多，投喂要小心，保管好零食与手机</span></div></div>
+            <div class="spot"><span class="p m">★</span><div class="nm">弘福寺<span>贵州最大佛教丛林，登高可俯瞰贵阳全城</span></div></div>
+            <div class="dset-r"><b>门票 5 元</b>，缆车上山 20 元，山间有黔灵湖可划船。</div>
+          </div>
+          <div class="dset"><div class="dt">🌆 傍晚 · 甲秀楼夜景</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">甲秀楼<span>明万历始建的三层三重檐攒尖顶，贵阳地标，免费开放</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">南明河畔漫步<span>逛翠微园、看两岸灯光，老南昌虾吃夜宵</span></div></div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="assets/qianlingshan.webp" type="image/webp">
+<img src="assets/qianlingshan.jpg" alt="黔灵山公园湖光山色" loading="lazy" width="800" height="600">
+</picture></div><figcaption>黔灵山 · 城市里的森林</figcaption></figure>
+          <figure class="th"><div class="ph"><picture>
+<source srcset="assets/jiaxioolou.webp" type="image/webp">
+<img src="assets/jiaxioolou.jpg" alt="甲秀楼夜景" loading="lazy" width="800" height="600">
+</picture></div><figcaption>甲秀楼 · 南明河夜景</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 黔灵山电梯/缆车只到半山，登顶需走一段台阶；备好防滑鞋。</div>
+      </div>
+      <span class="page-num">3 / 9</span>
+    </article>
+
+    <!-- 4 · Day 2 -->
+    <article class="card" id="c-d2" style="--tc1:#2f9e63;--tc2:#e5a63c;--tc-strong:#2a8354;--tc-soft:#e9f7ef;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🏮</div>
+        <div><h2>第 2 天 · 古镇山水</h2><div class="en">青岩古镇 → 天河潭</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>Day</small>2</span>
+          <div class="dh"><b>郊外一日 · 古城与喀斯特</b><span>青岩卤猪脚 → 天河潭瀑布溶洞</span></div>
+        </div>
+        <p class="day-route">往南出城，上午走千年军镇青岩，下午钻天河潭的瀑布与溶洞。🚗 <b>拼车/包车约 1-1.5h</b><br>两景点可同条路线串游，回到市区吃酸汤鱼。</p>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">☀️ 上午 · 青岩古镇</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">定广门 · 600 年石城<span>明代军事重镇，青岩卤猪脚、糕粑稀饭必尝</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">万寿宫 &amp; 道观寺庙群<span>儒释道并存的古镇格局，街巷青石板磨得发亮</span></div></div>
+            <div class="dset-r"><b>门票约 10 元</b>，镇内沿定广门—百岁坊—状元府—万寿宫一条主线逛最省力。</div>
+          </div>
+          <div class="dset"><div class="dt">🌊 下午 · 天河潭</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">天河潭 · 山水一绝<span>瀑布群+旱溶洞+水溶洞，喀斯特山水浓缩标本</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">山水洞瀑整体景区<span>乘船穿水洞、走旱洞看钟乳石，半天行程充实</span></div></div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="assets/qingyan.webp" type="image/webp">
+<img src="assets/qingyan.jpg" alt="青岩古镇定广门" loading="lazy" width="800" height="600">
+</picture></div><figcaption>青岩古镇 · 定广门</figcaption></figure>
+          <figure class="th"><div class="ph"><picture>
+<source srcset="assets/tianhetan.webp" type="image/webp">
+<img src="assets/tianhetan.jpg" alt="天河潭水岸风光" loading="lazy" width="800" height="600">
+</picture></div><figcaption>天河潭 · 山水洞瀑</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 青岩卤猪脚是招牌，真空袋装适合当伴手礼带回。</div>
+      </div>
+      <span class="page-num">4 / 9</span>
+    </article>
+
+    <!-- 5 · Day 3 -->
+    <article class="card" id="c-d3" style="--tc1:#7f8cff;--tc2:#4fa3c9;--tc-strong:#5a6fd6;--tc-soft:#eef0ff;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🌇</div>
+        <div><h2>第 3 天 · 城市慢活</h2><div class="en">花溪 → 观山湖</div></div>
+      </header>
+      <div class="body">
+        <div class="day-head">
+          <span class="dn"><small>Day</small>3</span>
+          <div class="dh"><b>收尾一天 · 绿意与夜色</b><span>花溪十里河滩 → 观山湖 → 夜市</span></div>
+        </div>
+        <p class="day-route">不走累人的打卡节奏，去花溪吹河谷的风，到观山湖看城市天际线，夜宵摊收尾。<b>松弛慢活</b></p>
+        <div class="day-blocks">
+          <div class="dset"><div class="dt">🌿 上午 · 花溪十里河滩</div>
+            <div class="spot"><span class="p m">★</span><div class="nm">花溪公园 &amp; 十里河滩<span>「高原明珠」，湿地栈道骑行野餐皆宜，免费</span></div></div>
+          </div>
+          <div class="dset"><div class="dt">🌆 下午/夜 · 城市绿核</div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">观山湖公园<span>城市中央公园，湖畔看 CBD 天际线黄昏</span></div></div>
+            <div class="spot"><span class="p x">◇</span><div class="nm">青云市集 / 二七路夜市<span>丝娃娃、烤脑花、啤酒宵夜，烟火气拉满</span></div></div>
+          </div>
+        </div>
+        <div class="day-thumbs">
+          <figure class="th"><div class="ph"><picture>
+<source srcset="assets/guanshanhu.webp" type="image/webp">
+<img src="assets/guanshanhu.jpg" alt="观山湖城市天际线" loading="lazy" width="800" height="600">
+</picture></div><figcaption>观山湖 · 都市绿核</figcaption></figure>
+          <figure class="th"><div class="ph"><picture>
+<source srcset="assets/tianhetan.webp" type="image/webp">
+<img src="assets/tianhetan.jpg" alt="花溪河谷碧水" loading="lazy" width="800" height="600">
+</picture></div><figcaption>花溪 · 十里河滩</figcaption></figure>
+        </div>
+        <div class="day-tip">💡 夏季傍晚的观山湖畔最舒服，可顺带逛金融城商圈。</div>
+      </div>
+      <span class="page-num">5 / 9</span>
+    </article>
+
+    <!-- 6 · 热门景点 -->
+    <article class="card" id="c-spot" style="--tc1:#2f9e63;--tc2:#e5a63c;--tc-strong:#237a4b;--tc-soft:#e9f7ef;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🏞️</div>
+        <div><h2>热门景点选</h2><div class="en">Top Spots</div></div>
+      </header>
+      <div class="body">
+        <div class="spots">
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="assets/jiaxioolou.webp" type="image/webp">
+<img src="assets/jiaxioolou.jpg" alt="甲秀楼" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>甲秀楼 · 免费</b><span>南明河上 400 年地标，夜景灯光美到出片</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="assets/qianlingshan.webp" type="image/webp">
+<img src="assets/qianlingshan.jpg" alt="黔灵山" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>黔灵山公园 · 5 元</b><span>看猴登山访古寺，城市里的天然氧吧</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="assets/qingyan.webp" type="image/webp">
+<img src="assets/qingyan.jpg" alt="青岩古镇" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>青岩古镇 · 约 10 元</b><span>600 年军镇，卤猪脚与石板街巷</span></div></div>
+          <div class="spot-card"><div class="ph"><picture>
+<source srcset="assets/tianhetan.webp" type="image/webp">
+<img src="assets/tianhetan.jpg" alt="天河潭" loading="lazy" width="800" height="600">
+</picture></div><div class="st"><b>天河潭 · 喀斯特山水</b><span>瀑布、旱溶洞+水溶洞值得一整天</span></div></div>
+        </div>
+      </div>
+      <span class="page-num">6 / 9</span>
+    </article>
+
+    <!-- 7 · 美食 -->
+    <article class="card" id="c-food" style="--tc1:#e5533d;--tc2:#ff9a5c;--tc-strong:#d34a32;--tc-soft:#ffece4;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🍽️</div>
+        <div><h2>黔味美食备忘录</h2><div class="en">Guiyang Flavors</div></div>
+      </header>
+      <div class="body">
+        <div class="spots">
+          <div class="spot-card"><div class="st"><b>肠旺面</b><span>肥肠+血旺+脆臊，贵阳早餐灵魂，记得加辣</span></div></div>
+          <div class="spot-card"><div class="st"><b>丝娃娃</b><span>薄饼卷十几样小菜蘸酸汤，清爽开胃</span></div></div>
+          <div class="spot-card"><div class="st"><b>酸汤鱼</b><span>红酸汤煮鱼，酸辣鲜香，配糯米饭绝佳</span></div></div>
+          <div class="spot-card"><div class="st"><b>花溪牛肉粉</b><span>清汤牛肉粉配现熬牛骨汤，嗦一口满足</span></div></div>
+          <div class="spot-card"><div class="st"><b>青岩卤猪脚</b><span>古镇招牌，卤香软糯，可真空带走</span></div></div>
+          <div class="spot-card"><div class="st"><b>恋爱豆腐果/豆腐圆子</b><span>街头小吃，油炸豆腐外焦里嫩蘸辣椒</span></div></div>
+        </div>
+        <p class="day-tip" style="margin-top:8px">💡 辣度分级点单，礼貌跟店家说「微辣」通常更友好。</p>
+      </div>
+      <span class="page-num">7 / 9</span>
+    </article>
+
+    <!-- 8 · 贴士 -->
+    <article class="card" id="c-tip" style="--tc1:#4fa3c9;--tc2:#2f9e63;--tc-strong:#2f7fa0;--tc-soft:#e8f3fb;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">💡</div>
+        <div><h2>出行贴士</h2><div class="en">Notes &amp; Tips</div></div>
+      </header>
+      <div class="body">
+        <div class="notes">
+          <div class="note"><div class="ni">🌦️</div><div class="nt"><b>避暑名片，也别轻敌</b><p>贵州「天无三日晴」，即便盛夏也有阵雨，随身伞+轻薄外套。</p></div></div>
+          <div class="note"><div class="ni">🐒</div><div class="nt"><b>黔灵山遇猴勿逗</b><p>猴子会抢零食和手机，拿好随身物，勿主动投喂。</p></div></div>
+          <div class="note"><div class="ni">🚇</div><div class="nt"><b>市区交通方便</b><p>地铁 1/2/3 号线覆盖老城与机场方向；青岩、天河潭建议拼车或一日游包车。</p></div></div>
+          <div class="note"><div class="ni">🎫</div><div class="nt"><b>门票信息核对</b><p>部分景区票价随淡旺季浮动，出发前以官方小程序为准。</p></div></div>
+        </div>
+      </div>
+      <span class="page-num">8 / 9</span>
+    </article>
+
+    <!-- 9 · 交通住宿 -->
+    <article class="card" id="c-res" style="--tc1:#7f8cff;--tc2:#e5a63c;--tc-strong:#5a6fd6;--tc-soft:#eef0ff;">
+      <div class="topbar"></div>
+      <header class="c">
+        <div class="ico">🚉</div>
+        <div><h2>交通 · 住宿</h2><div class="en">Getting Around</div></div>
+      </header>
+      <div class="body">
+        <div class="rail-a">
+          <div class="ra"><div class="ri">✈️</div><div><b>龙洞堡机场</b><span>地铁/机场大巴直达市区，约 30-40 分钟</span></div></div>
+          <div class="ra hot"><div class="ri">🚄</div><div><b>贵阳北站 · 高铁枢纽</b><span>成贵/沪昆高铁，接驳成渝、昆明、广州很顺</span></div></div>
+          <div class="ra"><div class="ri">🚇</div><div><b>地铁 1/2/3 号线</b><span>市内主力，下载 APP 扫码进站</span></div></div>
+          <div class="ra"><div class="ri">🏨</div><div><b>住宿老城/观山湖</b><span>老城近甲秀楼步行吃货多，观山湖新且近机场</span></div></div>
+        </div>
+        <div class="res-box" style="margin-top:6px"><div class="res-c">
+          <h3><span class="kind">周边 · 串游</span>黄果树 / 荔波 / 梵净山</h3>
+          <p>以贵阳为集散中心，高铁 1-2h 可直达安顺黄果树、荔波小七孔、铜仁梵净山，是很棒的黔程中转站。</p>
+        </div></div>
+      </div>
+      <span class="page-num">9 / 9</span>
+    </article>
+
+  </div>
+</div>
+
+<footer class="foot-note">
+  <a href="https://worldstip.com/">WorldStip · 旅行小册子</a> ｜ 数据可能有变，出发前请复核开放时间与票价。Made with care.
+  <br>回到 <a href="https://worldstip.com/">首页</a>
+</footer>
+
+<script>
+(function(){
+  var btns=document.querySelectorAll('.chips button');
+  function scrollTo(id){
+    var el=document.getElementById(id);
+    if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      btns.forEach(function(x){x.classList.remove('active');});
+      b.classList.add('active');
+      var t=b.getAttribute('data-target'); if(t) scrollTo(t);
+    });
+  });
+})();
+</script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>

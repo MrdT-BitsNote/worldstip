@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>皖南川藏线 · 双版组合自驾指南（2天精华 / 3天慢玩）</title>
+<meta name="description" content="皖南川藏线2天/3天自驾指南：储家滩、青龙湾、落羽杉、桃岭六道弯、水墨汀溪、月亮湾，含自驾/包车/跟团对比、秋色最佳时机、预算、避坑。">
+<meta name="keywords" content="皖南川藏线,皖南318,江南天路,桃岭公路,桃岭六道弯,落羽杉,青龙湾,月亮湾,自驾路线">
+<style>
+  :root{
+    --sea:#b4532a;
+    --sea-deep:#8f3f1d;
+    --sea-soft:#fbe3d2;
+    --sand:#f6f0e6;
+    --sand-line:#e7dcc7;
+    --sun:#d97706;
+    --coral:#c0562e;
+    --leaf:#2f7d32;
+    --ink:#3b2a1e;
+    --ink-soft:#7a6150;
+    --card:#ffffff;
+    --shadow:0 16px 40px -18px rgba(180,83,42,.32);
+    --radius:20px;
+    --font:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:var(--font);color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 85% -5%, rgba(217,119,6,.13), transparent 60%),
+      radial-gradient(900px 480px at -5% 8%, rgba(180,83,42,.12), transparent 55%),
+      var(--sand);
+    line-height:1.65;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  a{color:var(--sea-deep)}
+
+  .hero{
+    position:relative;border-radius:28px;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,var(--sea) 8%,#7a3418 55%,var(--sea-deep));
+    padding:40px 36px 34px;
+    box-shadow:var(--shadow);
+  }
+  .hero::after{
+    content:"";position:absolute;right:-40px;bottom:-60px;width:300px;height:300px;
+    background:radial-gradient(circle, rgba(255,255,255,.16), transparent 62%);
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;margin:0 0 8px;font-weight:800}
+  .hero p{margin:0;font-size:15px;opacity:.92;max-width:640px}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .hero .meta span{
+    font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:10px;
+  }
+  .hero .wave{
+    position:absolute;left:0;right:0;bottom:0;height:26px;opacity:.35;
+    background:radial-gradient(110px 26px at 12% 0%, transparent 98%, #cff 99%) ,
+               radial-gradient(110px 26px at 40% 0%, transparent 98%, #cff 99%) ,
+               radial-gradient(110px 26px at 68% 0%, transparent 98%, #cff 99%) ,
+               radial-gradient(110px 26px at 92% 0%, transparent 98%, #cff 99%);
+    background-size:280px 26px;background-repeat:repeat-x;
+  }
+
+  .switch{display:flex;gap:12px;margin:30px 0 6px;flex-wrap:wrap}
+  .switch button{
+    flex:1;min-width:230px;border:2px solid var(--sand-line);
+    background:var(--card);color:var(--ink);cursor:pointer;text-align:left;
+    border-radius:16px;padding:14px 18px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  }
+  .switch button:hover{border-color:var(--sea);transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(180,83,42,.4)}
+  .switch button.on{border-color:var(--sea);background:linear-gradient(135deg,#fdf3ea,#fbf0e4)}
+  .switch button .t{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800}
+  .switch button .t .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff}
+  .switch button .d{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .b-2d .badge{background:var(--sun)}
+  .b-3d .badge{background:var(--coral)}
+
+  section.panel{margin-top:26px;background:var(--card);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(180,83,42,.08)}
+  .panel h2{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:21px;color:var(--sea-deep)}
+  .panel h2 .emo{font-size:22px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+  .hint{background:var(--sea-soft);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--sea-deep);margin-top:20px}
+  .hint b{font-weight:800}
+
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--sea-soft);margin-left:8px}
+  .timeline li{position:relative;padding:0 0 22px 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:3px;width:13px;height:13px;border-radius:50%;
+    background:var(--sea);border:3px solid var(--sea-soft);box-sizing:content-box;
+  }
+  .timeline .day{font-size:13px;letter-spacing:1px;color:var(--sea-deep);font-weight:800}
+  .timeline .seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .timeline .seg span{background:var(--sea-soft);color:var(--sea-deep);font-size:13px;padding:4px 10px;border-radius:8px}
+  .timeline .tip2{font-size:13px;color:var(--ink-soft);margin-top:7px}
+  .timeline .tip2 .arr{color:var(--coral);font-weight:800}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:4px}
+  .card{border:1px solid var(--sand-line);border-radius:14px;padding:14px 16px;background:#fdfbf6;transition:box-shadow .18s ease,border-color .18s ease}
+  .card:hover{border-color:rgba(180,83,42,.35);box-shadow:0 8px 18px -10px rgba(180,83,42,.3)}
+  .card .nm{font-weight:800;font-size:15px;color:var(--ink)}
+  .card .pr{font-size:12.5px;color:var(--sea-deep);font-weight:700;margin-top:2px}
+  .card .ds{font-size:13px;color:var(--ink-soft);margin-top:6px}
+  .card .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:6px}
+
+  .food{display:flex;flex-direction:column;gap:10px}
+  .food .row{display:flex;gap:12px;align-items:baseline;border-bottom:1px dashed var(--sand-line);padding-bottom:10px}
+  .food .row:last-child{border-bottom:none;padding-bottom:0}
+  .food .row .no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--sea-soft);color:var(--sea-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;transform:translateY(6px)}
+  .food .row .it{flex:1}
+  .food .row .it b{font-size:15px}
+  .food .row .it .w{font-size:13px;color:var(--ink-soft)}
+  .food .row .prx{font-size:13px;color:var(--coral);font-weight:800;white-space:nowrap}
+
+  .budget{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .budget table{width:100%;border-collapse:collapse;font-size:14px;background:#fefcf8}
+  .budget th,.budget td{padding:10px 14px;text-align:left}
+  .budget thead th{background:var(--sea-deep);color:#fff;font-weight:700}
+  .budget tbody th{font-weight:700;color:var(--ink)}
+  .budget tbody tr:nth-child(even){background:#f9f3ea}
+  .budget .tot{font-weight:800;color:var(--sea-deep)}
+  .budget .sc{text-align:right;vertical-align:top}
+  .tiny{font-size:12px;color:var(--ink-soft)}
+
+  footer{margin-top:34px;font-size:12.5px;color:var(--ink-soft);text-align:center;line-height:1.8}
+  footer a{color:var(--sea-deep)}
+
+  .cmp{border:1px solid var(--sand-line);border-radius:14px;overflow:hidden;margin-top:6px}
+  .cmp table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fefcf8}
+  .cmp th,.cmp td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--sand-line)}
+  .cmp thead th{background:var(--sea-deep);color:#fff;font-weight:700}
+  .cmp tbody tr:nth-child(even){background:#f9f3ea}
+  .cmp .hd2{background:var(--sea-soft);color:var(--sea-deep);font-weight:800;border-bottom:1px solid var(--sand-line)}
+  .cmp .good{color:#2f7d32;font-weight:700}
+  .cmp .bad{color:#c0504d;font-weight:700}
+
+  @media print{
+    body{background:#fff}
+    .switch button{display:none}
+    .wrap{max-width:none;padding:0}
+    .hero{box-shadow:none;border-radius:0}
+    section.panel{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
+    .card,.budget,.cmp{page-break-inside:avoid}
+  }
+  @media (max-width:600px){
+    .hero{padding:30px 22px 26px}
+    .hero h1{font-size:27px}
+    .wrap{padding:18px 14px 48px}
+    section.panel{padding:20px 18px}
+  }
+.camtab{position:fixed;top:110px;right:14px;left:auto;z-index:70;display:block;
+  width:72px;height:96px;border-radius:10px;cursor:pointer;overflow:hidden;
+  background:#191919;color:#fff;text-decoration:none;
+  box-shadow:-6px 10px 20px rgba(20,20,25,.34),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:width .42s cubic-bezier(.34,1.2,.4,1),box-shadow .3s ease}
+.camtab:hover{width:154px;box-shadow:-8px 13px 24px rgba(20,20,25,.46)}
+.camtab .ct-black{position:relative;height:50px;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px),
+    linear-gradient(180deg,#262626,#131313);
+  border-bottom:3px solid #e0242d}
+.camtab .ct-brand{position:absolute;top:4px;left:8px;font-size:6.2px;font-weight:700;
+  letter-spacing:.12em;color:#fff;opacity:.92}
+.camtab .ct-lens{position:relative;width:32px;height:32px;margin-top:5px}
+.camtab .ct-lens .l-ring{position:absolute;inset:0;border-radius:50%;
+  border:2.2px solid #3a3a3a;
+  box-shadow:inset 0 0 0 1.4px #6b6b6b,inset 0 0 9px #000,0 0 0 1px rgba(255,255,255,.3)}
+.camtab .ct-lens .l-glass{position:absolute;inset:6px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,#5a86a8 0%,#0d1620 54%,#05090d 100%);
+  box-shadow:inset 0 0 5px #000,inset -2px -3px 4px rgba(80,140,200,.55)}
+.camtab .ct-red{position:relative;height:43px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#f2282d 0%,#d0121f 55%,#b30d1a 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.camtab .ct-bar{font-size:11.5px;font-weight:800;letter-spacing:1.4px;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.34,1.2,.4,1),opacity .28s ease}
+.camtab .ct-full{position:absolute;white-space:nowrap;display:flex;flex-direction:column;
+  align-items:center;opacity:0;transform:translateX(26px);
+  transition:opacity .3s ease .06s,transform .4s cubic-bezier(.34,1.2,.4,1) .06s}
+.camtab .ct-full .f1{font-size:11.5px;font-weight:800;letter-spacing:.7px;line-height:1.1}
+.camtab .ct-full .f2{font-size:6.8px;font-weight:600;letter-spacing:.14em;color:#ffe2df;margin-top:2px}
+.camtab:hover .ct-bar{transform:translateX(-26px);opacity:0}
+.camtab:hover .ct-full{transform:translateX(0);opacity:1}
+@media(max-width:900px){.camtab{display:none}}
+
+</style>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://worldstip.com/map/wannan/">
+    <meta name="theme-color" content="#ffb6e4">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="WorldStip · 旅行小册子">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="皖南川藏线 · 双版组合自驾指南（2天精华 / 3天慢玩）">
+    <meta property="og:description" content="皖南川藏线2天/3天自驾指南：储家滩、青龙湾、落羽杉、桃岭六道弯、水墨汀溪、月亮湾，含自驾/包车/跟团对比、秋色最佳时机、预算、避坑。">
+    <meta property="og:url" content="https://worldstip.com/map/wannan/">
+    <meta property="og:image" content="https://worldstip.com/assets/images/wn_taoling.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="皖南川藏线 · 双版组合自驾指南（2天精华 / 3天慢玩）">
+    <meta name="twitter:description" content="皖南川藏线2天/3天自驾指南：储家滩、青龙湾、落羽杉、桃岭六道弯、水墨汀溪、月亮湾，含自驾/包车/跟团对比、秋色最佳时机、预算、避坑。">
+    <meta name="twitter:image" content="https://worldstip.com/assets/images/wn_taoling.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WorldStip · 旅行小册子",
+      "url": "https://worldstip.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "皖南川藏线 · 双版组合自驾指南（2天精华 / 3天慢玩）",
+      "url": "https://worldstip.com/map/wannan/"
+    }
+  ]
+}
+    </script>
+    <!-- /SEO --><!-- tp-pro-guard-v1 -->
+<link rel="stylesheet" href="/assets/css/pro-guard.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://worldstip.com/map/wannan/",
+  "name": "皖南川藏线 · 双版组合自驾指南（2天精华 / 3天慢玩）",
+  "inLanguage": "zh-CN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "旅行小册子",
+    "url": "https://worldstip.com/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "旅行小册子"
+  },
+  "copyrightYear": 2026,
+  "license": "https://worldstip.com/about.html#tp-license"
+}
+</script>
+<script data-goatcounter="https://stats.worldstip.com/count" async src="https://stats.worldstip.com/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">🛣️ 皖南川藏线 · WANNAN HIGHWAY GUIDE</div>
+  <h1>皖南川藏线双版自驾指南</h1>
+  <p>安徽宁国到泾县的一段约 <b>120 公里</b>山水公路，被誉为「江南天路 / 皖南318」。串联<b>储家滩、青龙湾、落羽杉、桃岭六道弯、水墨汀溪、月亮湾</b>，一半竹海一半云端天路。求快走 <b>2 天精华版</b>，想惬意走 <b>3 天慢玩版</b>。适合 1–3 人自由行，含路线 / 住宿 / 美食 / 预算 / 出行方式对比。</p>
+  <div class="meta">
+    <span>📍 目的地：安徽宁国 → 泾县</span>
+    <span>👥 1–3 人</span>
+    <span>⏱️ 2 天 / 3 天双方案</span>
+    <span>💰 人均预算已附</span>
+  </div>
+  <div class="wave" aria-hidden="true"></div>
+</header>
+
+<div class="switch" role="tablist" aria-label="选择行程方案">
+  <button class="b-2d on" role="tab" aria-selected="true" data-plan="plan2" id="tab2">
+    <span class="t"><span class="badge">2天精华</span> 快充版 ⚡</span>
+    <div class="d">储家滩+青龙湾+桃岭六道弯+月亮湾 / 人均约 500–900</div>
+  </button>
+  <button class="b-3d" role="tab" aria-selected="false" data-plan="plan3" id="tab3">
+    <span class="t"><span class="badge">3天慢玩</span> 松弛版 🌾</span>
+    <div class="d">加落羽杉+水墨汀溪+青龙潭 / 人均约 800–1300</div>
+  </button>
+</div>
+
+<!-- 2天方案 -->
+<section class="panel" id="plan2" role="tabpanel">
+  <h2><span class="emo">⚡</span>2 天精华 · 快充版</h2>
+  <p class="sub">核心策略：东进西出，D1 湖光（储家滩+青龙湾+桃岭），D2 玩水（月亮湾），节奏紧张但不赶。</p>
+  <div class="hint">👥 <b>1–3 人适配：</b>皖南川藏线本质是<b>自驾线</b>，标配自驾；不想开车可选包车/拼团。人均预算按 <b>2 人分摊</b>、双人房计价。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 宁国东入口 → 青龙湾 → 桃岭六道弯</div>
+      <div class="seg"><span>🏞️ 上午 东入口 → 储家滩（晨雾倒影）</span><span>🚤 青龙湾游船/观景</span></div>
+      <div class="seg"><span>⛰️ 下午 桃岭六道弯（连续盘山发卡弯）</span><span>🌄 山顶观景台俯瞰群山</span></div>
+      <div class="seg"><span>🏨 晚上 宿板桥村/方塘乡民宿</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 桃岭六道弯弯急路窄，新手慎入，建议请同车有经验的朋友代驾；节假日七座以上禁入、易堵。储家滩晨雾最美，越早到越好。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 落羽杉 → 月亮湾 → 返程</div>
+      <div class="seg"><span>🌲 上午 落羽杉湿地（竹筏穿行红杉）</span><span>🌊 中午 月亮湾玩水/鱼鳞坝</span></div>
+      <div class="seg"><span>🚗 下午 泾县蔡村镇 → 返程</span></div>
+      <div class="tip2"><span class="arr">💡</span> 落羽杉 11 月中下旬–12 月上旬最红；月亮湾可开车趟水、竹筏漂流，是全程欢乐收尾。回程前在蔡村镇补给返程。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 3天方案 -->
+<section class="panel" id="plan3" role="tabpanel" hidden>
+  <h2><span class="emo">🌾</span>3 天慢玩 · 松弛版</h2>
+  <p class="sub">把 2 天版拆开慢游，每天只做一个湖光+一个玩水，补充水墨汀溪与青龙潭，节奏宽松惬意。</p>
+  <div class="hint">👥 <b>1–3 人适配：</b>3 天更推荐自驾，可停可宿；每天驾驶 40–60 公里、控制在 1–2 小时，留有充足拍照和游玩时间。</div>
+
+  <h3 style="margin-top:24px">🗺️ 行程安排</h3>
+  <ul class="timeline">
+    <li>
+      <div class="day">DAY 1 · 储家滩 + 青龙湾</div>
+      <div class="seg"><span>🏞️ 上午 东入口 → 储家滩晨雾/竹筏</span><span>🚤 青龙湾游船 + 惠云禅寺俯瞰</span></div>
+      <div class="seg"><span>🌇 傍晚 落羽杉光影</span><span>🏨 宿板桥村</span></div>
+      <div class="tip2"><span class="arr">💡</span> 板桥村有板桥原始森林可逛（甜槠林），民宿配套齐全。</div>
+    </li>
+    <li>
+      <div class="day">DAY 2 · 桃岭六道弯 + 水墨汀溪</div>
+      <div class="seg"><span>⛰️ 上午 桃岭六道弯（清晨人少车少）</span><span>🌊 下午 水墨汀溪（溪水戏水/玻璃滑道）</span></div>
+      <div class="seg"><span>🏨 宿水墨汀溪周边民宿</span></div>
+      <div class="tip2"><span class="arr">⚠️</span> 趁清晨精神好挑战六道弯；水墨汀溪是「皖南最后的原生态净土」，溪水清凉。</div>
+    </li>
+    <li>
+      <div class="day">DAY 3 · 青龙潭 + 月亮湾 → 返程</div>
+      <div class="seg"><span>🌊 上午 青龙潭（滑水玻璃栈道）</span><span>🎡 中午 月亮湾（鱼鳞坝趟水/竹筏）</span></div>
+      <div class="seg"><span>🚗 下午 泾县蔡村镇返程</span></div>
+      <div class="tip2"><span class="arr">💡</span> 月亮湾是全程欢乐收尾，玩水多备换洗衣物和拖鞋。</div>
+    </li>
+  </ul>
+</section>
+
+<!-- 特色景点详览 -->
+<section class="panel" id="spots">
+  <h2><span class="emo">⭐</span>沿途景点 · 单独详览</h2>
+  <p class="sub">把皖南川藏线上最有辨识度的 5 个点单独拎出来说清楚——值不值得去、怎么玩、藏在哪。</p>
+
+  <div class="spotlist">
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/wn_taoling.webp" type="image/webp">
+<img src="../../assets/images/wn_taoling.jpg" alt="皖南川藏线桃岭六道弯盘山公路，柏油路在山岭间蜿蜒成Z型回头弯，两侧青翠竹林绿色山峦，俯瞰群山连绵" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>桃岭六道弯 · 江南天路之魂</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#fbe3d2;color:#b4532a">桃岭</span><h3>桃岭六道弯 · 皖南川藏线灵魂路段</h3></div>
+        <p>皖南川藏线的「西夏之魂」：上下坡各 10 公里，连续发卡弯盘山而上，最高点海拔 800 米以上，弯道角度极大，被称为华东地区驾驶体验最接近川藏线「怒江72拐」的路段。</p>
+        <p class="spgo">👍 必去理由：自驾者的挑战圣地。山顶观景台可停车拍弯道与群山；行弯道前鸣笛减速、弯前绝不超车。新手慎入，建议老司机代驾。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/wn_qinglong.webp" type="image/webp">
+<img src="../../assets/images/wn_qinglong.jpg" alt="皖南川藏线青龙湾，碧蓝湖面上散布小岛，湖面如镜倒映青山蓝天，晨雾缭绕岸边竹林" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>青龙湾 · 一级空气一级水</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#d2f1ea;color:#0f766e">宁国</span><h3>青龙湾 · 水库之上的湖光</h3></div>
+        <p>集山景、水景、人文于一体的生态湖区，森林覆盖率 78%，被誉为「一级空气一级水」。湖面延绵 34 平方公里、散布 38 个岛屿，可坐游船或登高俯瞰，晨雾中宛如水墨。</p>
+        <p class="spgo">👍 必去理由：全程湖光代表性景点。可乘游船或登惠云禅寺俯瞰；与储家滩同在东段，适合安排同一天。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/wn_luoyu.webp" type="image/webp">
+<img src="../../assets/images/wn_luoyu.jpg" alt="皖南落羽杉湿地公园，秋冬季节成片红色水杉林立浅水上，倒映水面如油画，可乘竹筏穿行色彩绚丽" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>落羽杉湿地 · 皖南秋色天花板</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#fde3e8;color:#be3b5a">青龙湾腹地</span><h3>落羽杉湿地 · 红杉倒影如油画</h3></div>
+        <p>位于青龙湾水库腹地，千亩水杉密集整齐地立在浅水之上。秋冬时节（11 月中下旬–12 月上旬）水杉渐红，倒映水面如幅油画，可乘竹筏穿行其间，航拍视角更震撼。</p>
+        <p class="spgo">👍 必去理由：皖南春秋线最重要的「当季打卡点」，最佳观赏期 11 月中下旬–12 月上旬；可乘竹筏，出片率高。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/wn_chuji.webp" type="image/webp">
+<img src="../../assets/images/wn_chuji.jpg" alt="皖南储家滩，湖面宽阔清澈如镜，晨雾中白墙灰瓦徽派村落倒映水面，远处青山，水墨画意境白鹭低飞" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>储家滩 · 摄影基地的晨雾</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e4edfb;color:#3b5fa8">宁国</span><h3>储家滩 · 晨雾倒影摄影基地</h3></div>
+        <p>青龙湾下游的大型水面，摄影基地。清晨薄雾笼罩时，白墙灰瓦的徽派村落倒映湖面，如一幅宁静的水墨画，时而有白鹭低空飞翔，烟雨时节意境最佳。</p>
+        <p class="spgo">👍 必去理由：晨雾出片点。东入口进线首站，越早到越好（清晨 6–7 点最佳）；可从东入口直接看指示牌进入。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+
+    <article class="spot">
+      <figure class="spimg">
+        <picture>
+<source srcset="../../assets/images/wn_yueliang.webp" type="image/webp">
+<img src="../../assets/images/wn_yueliang.jpg" alt="皖南川藏线月亮湾风景区，清澈溪水与鱼鳞坝，游客在浅水区玩水竹筏漂流，两岸青山竹林清新" width="800" height="450" loading="lazy">
+</picture>
+        <figcaption>月亮湾 · 全程玩水收尾</figcaption>
+      </figure>
+      <div class="sptxt">
+        <div class="sphd"><span class="sptag" style="background:#e8f5e9;color:#33691e">泾县</span><h3>月亮湾 · 竹筏与趟水乐园</h3></div>
+        <p>皖南川藏线西段的玩水胜地：网红鱼鳞坝可开车趟水、竹筏漂流，溪水清凉见底，两岸青山竹林，是整条线最轻松的欢乐收尾点，亲子家庭尤其喜欢。</p>
+        <p class="spgo">👍 必去理由：全程最放松的玩水点。适合夏季戏水；玩水记得备换洗衣物、拖鞋和驱蚊用品。</p>
+        <p class="spsrc">配图：原创生成 · 无版权风险</p>
+      </div>
+    </article>
+  </div>
+
+  <style>
+    .spotlist{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+    .spot{display:flex;gap:18px;background:#fdfbf6;border:1px solid var(--sand-line);border-radius:16px;padding:16px;align-items:stretch;transition:box-shadow .18s ease,border-color .18s ease}
+    .spot:hover{border-color:rgba(180,83,42,.35);box-shadow:0 10px 22px -12px rgba(180,83,42,.3)}
+    .spimg{flex:0 0 42%;margin:0;min-width:0}
+    .spimg img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+    .spimg figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center}
+    .sptxt{flex:1;min-width:0;display:flex;flex-direction:column}
+    .sphd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .sptag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px}
+    .sptxt h3{margin:0;font-size:19px;color:var(--sea-deep)}
+    .sptxt p{font-size:14px;color:var(--ink);margin:9px 0 0;line-height:1.7}
+    .sptxt .spgo{font-size:13px;color:var(--ink-soft);background:#faf5ec;border-radius:10px;padding:9px 12px;margin-top:10px}
+    .sptxt .spsrc{font-size:12px;color:var(--ink-soft);margin-top:auto;padding-top:10px;opacity:.85}
+    .sptxt .spsrc a{color:var(--sea-deep)}
+    @media (max-width:640px){
+      .spot{flex-direction:column}
+      .spimg{flex:none}
+      .spimg img{height:auto;max-height:220px;object-fit:cover}
+    }
+  </style>
+</section>
+
+<!-- 出行方式对比（用户核心诉求） -->
+<section class="panel">
+  <h2><span class="emo">🚗</span>怎么去：自驾 vs 包车 vs 跟团</h2>
+  <p class="sub">皖南川藏线是自驾线，但不同方式体验差异很大。下面把三种方式讲透。</p>
+  <div class="cmp">
+    <table>
+      <caption style="position:absolute;left:-9999px">皖南川藏线自驾/包车/跟团三种出行方式对比</caption>
+      <thead><tr><th scope="col">维度</th><th scope="col">🚗 自驾</th><th scope="col">🚙 包车</th><th scope="col">🚌 跟团</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" rowspan="3" class="hd2">核心体验</th>
+            <td><b>自驾是主线玩法</b>，桃岭六道弯只有自己开才有「征服」感，想停就停、追晨雾最自由</td>
+            <td>包车含司机，可点对点带玩，同样能走完沿线精华，不用自己开山路弯道</td>
+            <td>线路固定观光车/大巴，桃岭驾驶体验几乎无法体会，只做「顺路打卡」</td>
+        </tr>
+        <tr>
+            <td>适合 <b>享受驾驶、想在六道弯挑战</b>的司机</td>
+            <td>适合 <b>不想开弯道山路的 2–3 人团</b>、想省心又能到点游玩</td>
+            <td>适合 <b>带长辈小孩</b>、图省心、对「驾驶体验」无要求的游客</td>
+        </tr>
+        <tr>
+            <td class="good">✔ 自驾灵魂、自由度最高</td>
+            <td class="good">✔ 免山路驾驶压力、可拼车分摊</td>
+            <td class="good">✔ 省心安全、有人安排</td>
+        </tr>
+        <tr><th scope="row" rowspan="3" class="hd2">费用与成本</th>
+            <td>租车+油费+过路，2–3 人分摊人均更低</td>
+            <td>按天计费（约 500–800 元/天 含司机），人少时人均偏高</td>
+            <td>人均约 600–1000 元起，包住宿省心</td>
+        </tr>
+        <tr>
+            <td>2 天租车+油费约 500–900 元/车</td>
+            <td>包车 2 天约 1000–1600 元/车</td>
+            <td>跟团报价浮动大，注意自费项目</td>
+        </tr>
+        <tr>
+            <td class="good">✔ 3 人拼车人均最省</td>
+            <td class="bad">✘ 人少时人均过高</td>
+            <td class="bad">✘ 桃岭驾驶体验损失、节奏固定</td>
+        </tr>
+        <tr><th scope="row" rowspan="3" class="hd2">注意事项</th>
+            <td>桃岭六道弯弯急路窄，新手谨慎，建议老司机代驾</td>
+            <td>选正规平台/司机，确认是否含油费过路；司机不进景区但驾驶没问题</td>
+            <td>问清是否含竹筏/游船等自费，上车点固定</td>
+        </tr>
+        <tr>
+            <td>节假日七座以上禁入、易堵，带宠物可自驾</td>
+            <td>包车按天算，跨天/长途加价，提前议好</td>
+            <td>跟团大多不能真正体验六道弯驾驶</td>
+        </tr>
+        <tr>
+            <td class="bad">✘ 需山路驾驶经验、累</td>
+            <td class="good">✔ 折中推荐：2–3 人包车第二选择</td>
+            <td class="bad">✘ 深度/驾驶体验打折</td>
+        </tr>
+        <tr><th scope="row" class="hd2" colspan="4">💡 一句话建议：能自驾就 <b>自驾</b>——这条线的灵魂就在桃岭六道弯的驾驶；不想开山路又想省心 → <b>包车</b>；带老人小孩图安全省心 → <b>跟团</b>。</th></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">👥 <b>1–3 人怎么选：</b>1 人自驾也自由（可沿途搭伴）；2–3 人自驾最优；新手或不想开车强烈建议 <b>包车</b>，而不是勉强自己开六道弯。</div>
+</section>
+
+<!-- 住宿 -->
+<section class="panel">
+  <h2><span class="emo">🏨</span>住宿推荐</h2>
+  <p class="sub">皖南川藏线沿线民宿为主，三档价位供参考（2 人房计）。</p>
+  <div class="grid">
+    <div class="card">
+      <span class="tag" style="background:#fff3cd;color:#8a6d00">经济型</span>
+      <div class="nm">农家乐 / 经济民宿</div>
+      <div class="pr">约 120–200 元/晚 · 人均 60–100</div>
+      <div class="ds">板桥村/方塘乡一带，吃饭方便、近核心路段，适合预算紧的组合。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#fbe3d2;color:#b4532a">中端舒适</span>
+      <div class="nm">中档民宿 / 精品客栈</div>
+      <div class="pr">约 200–350 元/晚 · 人均 100–175</div>
+      <div class="ds">储家滩/水墨汀溪周边，早起拍晨雾、慢享山野；非节假日超值。</div>
+    </div>
+    <div class="card">
+      <span class="tag" style="background:#fde3e8;color:#be3b5a">高端体验</span>
+      <div class="nm">度假民宿 / 景观客栈</div>
+      <div class="pr">约 400–700 元/晚 · 人均 200–350</div>
+      <div class="ds">青龙湾湖景或桃岭观景民宿，推窗见山水；旺季需提前抢订。</div>
+    </div>
+  </div>
+</section>
+
+<!-- 美食 -->
+<section class="panel">
+  <h2><span class="emo">🍜</span>皖南必吃清单</h2>
+  <p class="sub">徽菜风味为主，沿路农家乐/县城都可尝到，按份点即可。</p>
+  <div class="food">
+    <div class="row"><span class="no">1</span><div class="it"><b>臭鳜鱼</b><div class="w">徽菜代表 · 闻臭吃香</div></div><span class="prx">约 80–120 元/份</span></div>
+    <div class="row"><span class="no">2</span><div class="it"><b>绩溪炒粉丝 / 一品锅</b><div class="w">山家风味 · 暖胃搭配</div></div><span class="prx">约 30–80 元</span></div>
+    <div class="row"><span class="no">3</span><div class="it"><b>农家土鸡汤</b><div class="w">现杀土鸡 · 鲜香浓郁</div></div><span class="prx">约 60–100 元</span></div>
+    <div class="row"><span class="no">4</span><div class="it"><b>宁国核桃 / 山核桃</b><div class="w">地方特产 · 伴手礼</div></div><span class="prx">约 20–40 元/份</span></div>
+    <div class="row"><span class="no">5</span><div class="it"><b>毛豆腐 / 徽州菜</b><div class="w">发酵豆制品 · 特色小吃</div></div><span class="prx">约 15–30 元</span></div>
+    <div class="row"><span class="no">6</span><div class="it"><b>太平猴魁 / 黄山毛峰</b><div class="w">皖南名茶 · 饭后清口</div></div><span class="prx">约 30–100 元</span></div>
+  </div>
+</section>
+
+<!-- 预算 -->
+<section class="panel">
+  <h2><span class="emo">💰</span>预算对比（人均）</h2>
+  <p class="sub">含 1–3 人出行说明；区间为保守–宽松，实际以淡旺季与选择为准。</p>
+  <div class="budget">
+    <table>
+      <caption style="position:absolute;left:-9999px">皖南川藏线2天与3天方案人均预算对比</caption>
+      <thead><tr><th scope="col">项目</th><th scope="col" class="sc">2天精华版</th><th scope="col" class="sc">3天慢玩版</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">大交通（往返，江浙沪/省内）</th><td class="sc">约 100–300</td><td class="sc">约 100–300</td></tr>
+        <tr><th scope="row">住宿</th><td class="sc">1 晚 60–175</td><td class="sc">2 晚 180–350</td></tr>
+        <tr><th scope="row">餐饮</th><td class="sc">约 120–220</td><td class="sc">约 200–330</td></tr>
+        <tr><th scope="row">景点/游船/竹筏</th><td class="sc">约 60–140</td><td class="sc">约 120–220</td></tr>
+        <tr><th scope="row">租车油费（人均分摊）</th><td class="sc">约 150–300</td><td class="sc">约 250–450</td></tr>
+        <tr><th scope="row" class="tot">合计 · 人均</th><td class="sc tot">约 500–900</td><td class="sc tot">约 800–1300</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="hint">💡 <b>1–3 人怎么省：</b>自驾 2–3 人分摊最划算；民宿双人房人均分摊；非节假日（周一至周三）民宿价格更便宜；观景台免费开放，核心花销在游船/竹筏。</div>
+</section>
+
+<!-- 避坑建议 -->
+<section class="panel">
+  <h2><span class="emo">🧭</span>避坑 & 实用贴士</h2>
+  <ul class="tips">
+    <li><b>桃岭六道弯：</b>弯急路窄、上下坡各 10 公里，新手慎入，建议老司机代驾；节假日七座以上禁入、易堵。</li>
+    <li><b>土特产骗局：</b>六道弯休息平台有推销贝母等草药，标价「5 元」实为「5 元/克」，遇到直接拒绝，去正规药店买。</li>
+    <li><b>加满油：</b>进山前加满油，沿途加油站较少；新能源车沿线有充电点在乡镇，提前做好补能规划。</li>
+    <li><b>玩水备换洗：</b>月亮湾、水墨汀溪玩水项目多，多备换洗衣物、拖鞋和驱蚊用品。</li>
+    <li><b>落羽杉当季：</b>红杉最佳观赏期 11 月中下旬–12 月上旬，其他季节是绿色，看时节判断是否调整线路。</li>
+    <li><b>避峰出行：</b>非节假日（周一至周三）体验最佳、民宿便宜；十一/周末易堵车排队。</li>
+  </ul>
+  <style>
+    .tips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+    .tips li{font-size:14px;color:var(--ink);background:#f9f2e8;border-left:4px solid var(--sea);border-radius:8px;padding:10px 14px}
+    .tips li b{color:var(--sea-deep)}
+  </style>
+</section>
+
+<footer>
+  皖南川藏线 · 双版组合自驾指南 ｜ 适配 1–3 人出行 · 价格为淡旺季区间的参考值<br>
+  山路谨慎驾驶、弯道减速鸣笛；旺季价格会上浮，请以实时为准。 · <a href="../../index.html">← 返回小册子</a>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+  try{
+    var tabs=document.querySelectorAll('.switch button');
+    var plans=document.querySelectorAll('section[role="tabpanel"]');
+    function show(id){
+      tabs.forEach(function(t){
+        var on=t.getAttribute('data-plan')===id;
+        t.classList.toggle('on',on);
+        t.setAttribute('aria-selected',on?'true':'false');
+      });
+      plans.forEach(function(p){ p.hidden = p.id!==id; });
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+    tabs.forEach(function(t){ t.addEventListener('click',function(){ show(t.getAttribute('data-plan')); }); });
+  }catch(e){}
+})();
+</script>
+<footer style="position:relative;margin:44px auto 8px;padding:18px 24px;max-width:1180px;width:calc(100% - 40px);text-align:center;background:rgba(13,17,32,.55);border:1px solid rgba(255,255,255,.12);border-radius:14px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:2">
+  <span style="font-size:13px;color:#dfe3ea;letter-spacing:.03em">Made with care by <b style="color:#fff">WorldStip</b> &nbsp;·&nbsp; <a href="https://worldstip.com" style="color:#9fb6ff;text-decoration:none" target="_blank" rel="noopener noreferrer">worldstip.com</a> &nbsp;·&nbsp; 旅行小册子</span>
+</footer>
+
+<footer class="tp-pro" role="contentinfo">
+  <p class="tp-pro__meta">© 2026 旅行小册子 · <a href="https://worldstip.com/">worldstip.com</a>　原创内容，转载请注明出处</p>
+</footer>
+<script src="/assets/js/pro-guard.js" defer></script>
+
+<a class="camtab" href="https://insta360.worldstip.com/" title="记录美好生活 · 影石 Insta360 相机选购指南" aria-label="记录美好生活 · Insta360 相机指南" target="_blank" rel="noopener noreferrer">
+        <span class="ct-black"><span class="ct-brand">Insta360</span><span class="ct-lens"><i class="l-ring"></i><i class="l-glass"></i></span></span>
+        <span class="ct-red">
+          <span class="ct-bar">记录美好</span>
+          <span class="ct-full"><span class="f1">记录美好生活</span><span class="f2">相机指南 · CAMERA GUIDE</span></span>
+        </span>
+      </a>
+
+</body>
+</html>
