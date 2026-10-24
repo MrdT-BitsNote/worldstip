@@ -134,3 +134,39 @@ document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
   2. headless Edge 截图三态验证（真实实时 / 强制白天 / 强制夜晚），无破版；
   3. 若有 SEO 影响（URL 集不变则无需动 sitemap），保持 OG/canonical/JSON-LD 一致。
 - **严禁**：改回双重转义 DATA；恢复更新日志区块或导航锚点；恢复右侧 TOC 或目的地索引区块；改回跟随系统深浅色；恢复页脚辅助文案；恢复顶部"目的地索引"入口。
+---
+
+## 十、2026-10-24 结构调整：全站矩阵 + 紧凑化（覆盖上文冲突条款）
+
+> 本节为**最新有效结构**，与上文第三节旧骨架冲突处，以本节为准。其余设计语言（时间驱动深浅色、CSS 变量、毛玻璃、圆角、字体栈）**保持不变**。
+
+### 1. 变更内容
+| 项 | 变更前 | 变更后 |
+|---|---|---|
+| `#dir` 章节 | 巨型横幅（84px "Dir" 大字，约 400px 高） | **已移除** |
+| `#ai` 章节 | 金黑大卡（84px 图标 + 大标题 + 标签组，约 500px 高） | **改为单行条** `.ai-strip`（约 70px 高） |
+| 新增 `#sites` | — | **全站矩阵**：四张紧凑卡片 `moto / agent / fun / dir` |
+| 页面顺序 | hero → ai → dir → values → glance → inside → since → cta | hero → **sites** → ai → values → glance → inside → since → cta |
+| 导航锚点 | AI 规划 / 理念 / 站点一览 / 站点构成 | **全站矩阵 / AI 规划 / 理念 / 站点一览 / 站点构成** |
+
+### 2. 四站矩阵数据（唯一来源：各子站 title/description）
+| 卡片 | 名称 | 副标 | 链接 | 指标 |
+|---|---|---|---|---|
+| 🏍️ | 摩托行 | MOTO | `https://moto.worldstip.com/` | 31 省区 · 1658 条实测路线 |
+| 🤖 | Agent | AI PLANNER | `https://agent.worldstip.com/` | 千问技能 · 技能主页与更新 |
+| 🍜 | Fun | FOOD & CITY | `https://fun.worldstip.com/` | 389 城 · 32.9 万 POI |
+| 🧭 | Dir | DIRECTORY | `https://dir.worldstip.com/` | 9 个站点 · 一个入口 |
+
+### 3. 组件与紧凑化参数
+- `.site-grid`：4 列（≤900px 2 列，≤640px 1 列）；`.site-card` 用 `--ac`（强调色）与 `--ac-soft`（图标底色）自定义属性。
+- 垂直节奏压缩：`.hero` 上内距 64→44px；`.sec-head` 52/26→34/18px；`.v-row` 20/22→15/17px；`.stat` 26/18→19/12px；`.ins-card` 22/20→16/16px；`.cta` 34/30→26/24px。
+- 移动端 `.stats` 改 **2×2**（原单列，过长）。
+- 防溢出：网格子项 `min-width:0`；`.site-desc/.site-meta/.ins-sub/.v-row p/.cat` 加 `overflow-wrap:anywhere`。
+
+### 4. 校验基线（本次）
+- 标签闭合：0 未闭合、0 错误；区块 `#sites/#ai/#values/#glance/#inside/#since` 齐全；四站外链各 1 处。
+- 桌面 1440px、平板 820px、移动 500px 三态截图无破版；`body.scrollWidth` 在 390px 约束下 = 390，无横向溢出。
+- 文件体积 35.1KB → 31.6KB。
+
+### 5. 备份
+- 改前版本：`about_pre_sites_20261024.html`（仅归档，勿再引用）。
