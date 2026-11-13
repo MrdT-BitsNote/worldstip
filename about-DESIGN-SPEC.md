@@ -145,17 +145,19 @@ document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
 |---|---|---|
 | `#dir` 章节 | 巨型横幅（84px "Dir" 大字，约 400px 高） | **已移除** |
 | `#ai` 章节 | 金黑大卡（84px 图标 + 大标题 + 标签组，约 500px 高） | **改为单行条** `.ai-strip`（约 70px 高） |
-| 新增 `#sites` | — | **全站矩阵**：四张紧凑卡片 `moto / agent / fun / dir` |
+| 新增 `#sites` | — | **全站矩阵**：四张紧凑卡片 `play / fun / moto / wc`（agent、dir 移出四卡，见第十一节） |
 | 页面顺序 | hero → ai → dir → values → glance → inside → since → cta | hero → **sites** → ai → values → glance → inside → since → cta |
 | 导航锚点 | AI 规划 / 理念 / 站点一览 / 站点构成 | **全站矩阵 / AI 规划 / 理念 / 站点一览 / 站点构成** |
 
-### 2. 四站矩阵数据（唯一来源：各子站 title/description）
+### 2. 四站矩阵数据（唯一来源：各子站定位，2026-11-13 更新）
 | 卡片 | 名称 | 副标 | 链接 | 指标 |
 |---|---|---|---|---|
-| 🏍️ | 摩托行 | MOTO | `https://moto.worldstip.com/` | 31 省区 · 1658 条实测路线 |
-| 🤖 | Agent | AI PLANNER | `https://agent.worldstip.com/` | 千问技能 · 技能主页与更新 |
+| 🎡 | 去哪玩 | PLAY | `https://play.worldstip.com/` | 每个城市的景点和评分 |
 | 🍜 | Fun | FOOD & CITY | `https://fun.worldstip.com/` | 389 城 · 32.9 万 POI |
-| 🧭 | Dir | DIRECTORY | `https://dir.worldstip.com/` | 9 个站点 · 一个入口 |
+| 🏍️ | 摩托行 | MOTO | `https://moto.worldstip.com/` | 31 省区 · 1658 条实测路线 |
+| 🚻 | 去哪拉 | WC | `https://wc.worldstip.com/` | 就近如厕 · 实时指引（指标待运营确认） |
+
+> 说明：Agent（`agent.worldstip.com`）与 Dir（`dir.worldstip.com`）自 2026-11-13 起移出四卡矩阵；Agent 能力在第十一节「AI 规划 · 三平台」专区露出，Dir 作为全站导航仍由 `index.html` 整站导航卡与 `worldstip-sitemap.html` 承载。
 
 ### 3. 组件与紧凑化参数
 - `.site-grid`：4 列（≤900px 2 列，≤640px 1 列）；`.site-card` 用 `--ac`（强调色）与 `--ac-soft`（图标底色）自定义属性。
@@ -170,3 +172,36 @@ document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
 
 ### 5. 备份
 - 改前版本：`about_pre_sites_20261024.html`（仅归档，勿再引用）。
+
+---
+
+## 十一、2026-11-13 结构调整：四卡换血 + AI 三平台专区（覆盖第十节冲突条款）
+
+> 本节为**最新有效结构**，与第十节四卡数据冲突处，以本节为准。其余设计语言（时间驱动深浅色、CSS 变量、毛玻璃、圆角、字体栈）与第十节组件参数**保持不变**。
+
+### 1. 四卡矩阵变更
+| 项 | 变更前 | 变更后 |
+|---|---|---|
+| `#sites` 四卡 | `moto / agent / fun / dir` | `play / fun / moto / wc` |
+| 移除 | agent（AI 规划）、dir（全站导航）两张卡 | 移出四卡；Agent 在第十一节 AI 专区露出，Dir 经 index/sitemap 可达 |
+| 新增 | — | `play.worldstip.com`（去哪玩/PLAY）、`wc.worldstip.com`（去哪拉/WC）两张新子站卡 |
+
+### 2. `#ai` 区块重构：单行条 → 三平台技能专区
+- 原 `.ai-strip`（金黑单行条，仅千问）**已移除**，改为 `#ai` 内的三张平台卡 `.pf-grid`（3 列，≤900px 2 列，≤640px 1 列），复用 `.site-card` 组件。
+- 三平台（技能介绍 + 专家/技能地址）：
+  | 平台 | 名称 | 副标 | 技能/专家地址 |
+  |---|---|---|---|
+  | 🤖 | WorkBuddy | 智能体市场 | `https://www.workbuddy.cn/share/asset?shareCode=1vcWCDMZzdZOCyznXg4EQg&sig=DWLyHwIltgobijgO` |
+  | 🧩 | SkillHub | 技能中心 | `https://skillhub.cn/skills/indiv-mrdt/worldstip` |
+  | 💡 | 千问 AI | QIANWEN | `https://www.qianwenai.com/hub/skills/@user_gc9bq/worldstip-travel-planner` |
+- 专区末尾 `.ai-note` 一行保留 `agent.worldstip.com` 独立站点露出（国内 + 出境双模式）。
+- 右侧固定 `.aitab`（千问技能）保持不变。
+- 新增 CSS：`.pf-grid`、`.ai-note`（见 about.html `<style>`），已并入第十节响应式断点。
+
+### 3. 元数据同步
+- meta description / og:description / twitter:description / JSON-LD description 的「四大站点」表述由「摩托路线 · 美食娱乐 · AI 规划 · 全站导航」改为「去哪玩 · 美食娱乐 · 摩托路线 · 去哪拉」。
+
+### 4. 校验基线（本次）
+- 标签闭合：0 未闭合、0 错误；区块 `#sites/#ai/#values/#glance/#inside/#since` 齐全；四卡外链各 1 处；三平台外链各 1 处。
+- 桌面 / 平板 / 移动三态截图无破版；`body.scrollWidth` 在 390px 约束下 = 390，无横向溢出。
+- 文件体积 34.7KB → 约 35.3KB（新增三平台专区）。

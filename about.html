@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WorldStip 旅行小册子 · 关于我们</title>
-<meta name="description" content="WorldStip 旅行小册子——把世界路上攒下的贴士，一页页订成的小册子。251 个目的地图文指南，并延伸到摩托路线、美食娱乐、AI 行程规划与全站导航四大站点。">
+<meta name="description" content="WorldStip 旅行小册子——把世界路上攒下的贴士，一页页订成的小册子。251 个目的地图文指南，并延伸到去哪玩、美食娱乐、摩托路线与去哪拉四本姊妹册。">
 <meta name="keywords" content="关于,旅行小册子,旅行攻略,行程规划,自由行,自驾路线,摩托路线,美食,商圈,旅游攻略,AI,旅行规划师,千问技能,WorldStip">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://worldstip.com/about.html">
@@ -13,11 +13,11 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="WorldStip 旅行小册子">
 <meta property="og:title" content="WorldStip 旅行小册子 · 关于我们">
-<meta property="og:description" content="把世界路上攒下的贴士一页页订成册。旅行指南 · 摩托路线 · 美食娱乐 · AI 规划 · 全站导航。">
+<meta property="og:description" content="把世界路上攒下的贴士一页页订成册。旅行指南 · 去哪玩 · 美食娱乐 · 摩托路线 · 去哪拉。">
 <meta property="og:url" content="https://worldstip.com/about.html">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WorldStip 旅行小册子 · 关于我们">
-<meta name="twitter:description" content="把世界路上攒下的贴士一页页订成册。旅行指南 · 摩托路线 · 美食娱乐 · AI 规划 · 全站导航。">
+<meta name="twitter:description" content="把世界路上攒下的贴士一页页订成册。旅行指南 · 去哪玩 · 美食娱乐 · 摩托路线 · 去哪拉。">
 
 <style>
 :root{
@@ -121,31 +121,10 @@ section{scroll-margin-top:72px}
 .hero .sub{font-size:clamp(13.5px,1.7vw,15.5px);font-weight:450;color:var(--ink-2);max-width:620px;margin:10px auto 0;line-height:1.7}
 .hero .sub b{font-weight:720;background:linear-gradient(92deg,#0071e3,#5e5ce6,#af52de);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 
-/* ===== AI 力荐 · 单行条 ===== */
-.ai-strip{
-  display:flex;align-items:center;gap:16px;max-width:1000px;margin:26px auto 0;padding:15px 20px;
-  border-radius:18px;position:relative;overflow:hidden;
-  background:radial-gradient(120% 180% at 92% -30%,rgba(224,178,90,.26),transparent 60%),
-             linear-gradient(120deg,#1b1710 0%,#12100a 60%,#0c0a06 100%);
-  border:1px solid rgba(224,178,90,.34);box-shadow:var(--shadow);
-}
-.ai-strip::before{content:"";position:absolute;inset:0;pointer-events:none;
-  background:repeating-linear-gradient(-45deg,rgba(255,255,255,.022) 0 2px,transparent 2px 9px)}
-.ai-strip .ai-ic{position:relative;flex:none;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:19px;
-  background:linear-gradient(160deg,rgba(224,178,90,.22),rgba(224,178,90,.06));
-  box-shadow:inset 0 0 0 1px rgba(255,217,138,.32)}
-.ai-strip .ai-tx{position:relative;flex:1 1 auto;min-width:0}
-.ai-strip .ai-tx h3{font-size:15px;font-weight:800;color:#fff;letter-spacing:-.01em;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.ai-strip .ai-tx h3 em{font-style:normal;font-size:9.5px;font-weight:700;letter-spacing:.1em;color:#1b1710;
-  background:linear-gradient(135deg,#ffe2a0,#e0b25a);border-radius:999px;padding:2px 8px}
-.ai-strip .ai-tx p{font-size:12px;color:#c7b992;line-height:1.5;margin-top:2px}
-.ai-strip .ai-strip-go{position:relative;margin-left:auto;flex:none;display:inline-flex;align-items:center;gap:6px;
-  padding:10px 20px;border-radius:999px;font-size:13px;font-weight:800;color:#1b1710;white-space:nowrap;
-  background:linear-gradient(135deg,#ffe2a0,#e0b25a 55%,#c9a24a);
-  box-shadow:0 8px 22px rgba(224,178,90,.3),inset 0 1px 0 rgba(255,255,255,.5);
-  transition:transform .18s,box-shadow .18s}
-.ai-strip .ai-strip-go:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(224,178,90,.42)}
-.ai-strip .ai-strip-go:active{transform:scale(.97)}
+/* ===== AI 规划 · 三平台技能 ===== */
+.pf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:1000px;margin:0 auto}
+.ai-note{text-align:center;font-size:12.5px;color:var(--sub);margin:16px auto 0;max-width:760px;line-height:1.7}
+.ai-note a{font-weight:700;color:var(--accent)}
 
 /* ===== 全站矩阵 · 四站 ===== */
 .site-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:1000px;margin:0 auto}
@@ -235,20 +214,17 @@ section{scroll-margin-top:72px}
 /* ===== 响应式 ===== */
 @media(max-width:900px){
   .site-grid{grid-template-columns:1fr 1fr}
+  .pf-grid{grid-template-columns:1fr 1fr}
   .ins-grid{grid-template-columns:1fr 1fr}
   .v-s{grid-template-columns:1fr}
 }
 @media(max-width:640px){
-  .site-grid,.ins-grid{grid-template-columns:1fr}
+  .site-grid,.ins-grid,.pf-grid{grid-template-columns:1fr}
   .stats{grid-template-columns:1fr 1fr}
   .nav-brand small{display:none}
   .hero{padding-top:34px}
   .nav-in{gap:8px}
   .nav-links a{padding:6px 8px;font-size:11.5px}
-  .ai-strip{flex-direction:column;align-items:flex-start;gap:10px;padding:14px 16px}
-  .ai-strip .ai-tx{width:100%;min-width:0}
-  .ai-strip .ai-tx p{white-space:normal}
-  .ai-strip .ai-strip-go{margin-left:0;width:100%;justify-content:center}
   .v-s{grid-template-columns:1fr}
 }
 @media print{body{background:#fff}.nav,.cta{display:none}.stat,.ins-card,.site-card{break-inside:avoid;box-shadow:none;border:1px solid #ddd}}
@@ -318,6 +294,7 @@ section{scroll-margin-top:72px}
   ]
 }
     </script>
+    <!-- /SEO 补齐 -->
 
 </head>
 <body>
@@ -349,31 +326,22 @@ section{scroll-margin-top:72px}
     <p class="sub">我们不追打卡，只把<b>真正有用、真正好看</b>的旅行目的地，一页页订成册，交到你手上。</p>
   </header>
 
-  <!-- ⭐ 全站矩阵：moto / agent / fun / dir -->
+  <!-- ⭐ 全站矩阵：play / fun / moto / wc -->
   <section id="sites">
     <div class="sec-head" style="padding-top:26px">
       <span class="sec-eyebrow">The WorldStip Family</span>
       <h2 class="sec-title">一个品牌，四本册子</h2>
-      <p class="sec-desc">旅行指南之外，我们把同一套「有用且好看」的标准，延伸到了路上的四个方向。</p>
+      <p class="sec-desc">旅行指南之外，我们把同一套「有用且好看」的标准，延伸到了去哪玩、美食、摩托与去哪拉四个方向。</p>
     </div>
     <div class="site-grid">
 
-      <a class="site-card" href="https://moto.worldstip.com/" target="_blank" rel="noopener noreferrer"
-         style="--ac:#ff375f;--ac-soft:linear-gradient(140deg,rgba(255,55,95,.16),rgba(255,149,0,.10))">
+      <a class="site-card" href="https://play.worldstip.com/" target="_blank" rel="noopener noreferrer"
+         style="--ac:#ff9f0a;--ac-soft:linear-gradient(140deg,rgba(255,159,10,.16),rgba(255,45,85,.10))">
         <span class="site-go">↗</span>
-        <span class="site-ic">🏍️</span>
-        <span class="site-name">摩托行<small>MOTO</small></span>
-        <span class="site-desc">按省市组织的摩托车周边短途路线库，真实坐标与道路折线，附禁摩合规校验。</span>
-        <span class="site-meta">31 省区 · 1658 条实测路线</span>
-      </a>
-
-      <a class="site-card" href="https://agent.worldstip.com/" target="_blank" rel="noopener noreferrer"
-         style="--ac:#c9a24a;--ac-soft:linear-gradient(140deg,rgba(224,178,90,.20),rgba(201,162,74,.10))">
-        <span class="site-go">↗</span>
-        <span class="site-ic">🤖</span>
-        <span class="site-name">Agent<small>AI PLANNER</small></span>
-        <span class="site-desc">说出目的地与天数，生成逐日动线、预算与装备清单，国内与出境双模式。</span>
-        <span class="site-meta">千问技能 · 技能主页与更新</span>
+        <span class="site-ic">🎡</span>
+        <span class="site-name">去哪玩<small>PLAY</small></span>
+        <span class="site-desc">各地城市的游乐场所和景点都在哪，一城一图标注。</span>
+        <span class="site-meta">每个城市的景点和评分</span>
       </a>
 
       <a class="site-card" href="https://fun.worldstip.com/" target="_blank" rel="noopener noreferrer"
@@ -385,28 +353,65 @@ section{scroll-margin-top:72px}
         <span class="site-meta">389 城 · 32.9 万 POI</span>
       </a>
 
-      <a class="site-card" href="https://dir.worldstip.com/" target="_blank" rel="noopener noreferrer"
-         style="--ac:#0a84ff;--ac-soft:linear-gradient(140deg,rgba(10,132,255,.16),rgba(94,92,230,.10))">
+      <a class="site-card" href="https://moto.worldstip.com/" target="_blank" rel="noopener noreferrer"
+         style="--ac:#ff375f;--ac-soft:linear-gradient(140deg,rgba(255,55,95,.16),rgba(255,149,0,.10))">
         <span class="site-go">↗</span>
-        <span class="site-ic">🧭</span>
-        <span class="site-name">Dir<small>DIRECTORY</small></span>
-        <span class="site-desc">WorldStip 全站导航：旅行、美食、AI、摩托、图库、全景，一个入口直达。</span>
-        <span class="site-meta">9 个站点 · 一个入口</span>
+        <span class="site-ic">🏍️</span>
+        <span class="site-name">摩托行<small>MOTO</small></span>
+        <span class="site-desc">按省市组织的摩托车周边短途路线库，真实坐标与道路折线，附禁摩合规校验。</span>
+        <span class="site-meta">31 省区 · 1658 条实测路线</span>
+      </a>
+
+      <a class="site-card" href="https://wc.worldstip.com/" target="_blank" rel="noopener noreferrer"
+         style="--ac:#30b0c7;--ac-soft:linear-gradient(140deg,rgba(48,176,199,.16),rgba(10,132,255,.10))">
+        <span class="site-go">↗</span>
+        <span class="site-ic">🚻</span>
+        <span class="site-name">去哪拉<small>WC</small></span>
+        <span class="site-desc">为了不让你随地大小便的我——就近找厕所，实时指引。</span>
+        <span class="site-meta">就近如厕 · 实时指引</span>
       </a>
 
     </div>
   </section>
 
-  <!-- ⭐ AI 力荐 · 单行条 -->
+  <!-- ⭐ AI 规划 · 三平台技能 -->
   <section id="ai">
-    <div class="ai-strip" aria-label="AI 旅行规划师 · 千问技能">
-      <span class="ai-ic">🤖</span>
-      <span class="ai-tx">
-        <h3>AI 旅行规划大师 <em>本期力荐</em></h3>
-        <p>说出目的地与天数，一键生成逐日动线 · 预算拆解 · 装备清单的专属行程报告。</p>
-      </span>
-      <a class="ai-strip-go" href="https://www.qianwenai.com/hub/skills/@user_gc9bq/worldstip-travel-planner" target="_blank" rel="noopener noreferrer">开启 AI 规划 →</a>
+    <div class="sec-head" style="padding-top:30px">
+      <span class="sec-eyebrow">AI Travel Planning</span>
+      <h2 class="sec-title">AI 规划 · 三平台技能</h2>
+      <p class="sec-desc">同一个「WorldStip 旅行小册子」技能已上架三大智能体平台，也拥有独立 AI 站点，挑你顺手的那个。</p>
     </div>
+    <div class="pf-grid">
+
+      <a class="site-card" href="https://www.workbuddy.cn/share/asset?shareCode=1vcWCDMZzdZOCyznXg4EQg&sig=DWLyHwIltgobijgO" target="_blank" rel="noopener noreferrer"
+         style="--ac:#0071e3;--ac-soft:linear-gradient(140deg,rgba(0,113,227,.16),rgba(94,92,230,.10))">
+        <span class="site-go">↗</span>
+        <span class="site-ic">🤖</span>
+        <span class="site-name">WorkBuddy<small>智能体市场</small></span>
+        <span class="site-desc">WorkBuddy 智能体市场的「WorldStip 旅行小册子」技能，对话即可调用全站目的地数据。</span>
+        <span class="site-meta">技能地址 · 一键安装</span>
+      </a>
+
+      <a class="site-card" href="https://skillhub.cn/skills/indiv-mrdt/worldstip" target="_blank" rel="noopener noreferrer"
+         style="--ac:#5e5ce6;--ac-soft:linear-gradient(140deg,rgba(94,92,230,.16),rgba(175,82,222,.10))">
+        <span class="site-go">↗</span>
+        <span class="site-ic">🧩</span>
+        <span class="site-name">SkillHub<small>技能中心</small></span>
+        <span class="site-desc">SkillHub 上的 indiv-mrdt/worldstip 技能主页，安装即用，支持自定义行程。</span>
+        <span class="site-meta">技能地址 · 即装即用</span>
+      </a>
+
+      <a class="site-card" href="https://www.qianwenai.com/hub/skills/@user_gc9bq/worldstip-travel-planner" target="_blank" rel="noopener noreferrer"
+         style="--ac:#c9a24a;--ac-soft:linear-gradient(140deg,rgba(224,178,90,.20),rgba(201,162,74,.10))">
+        <span class="site-go">↗</span>
+        <span class="site-ic">💡</span>
+        <span class="site-name">千问 AI<small>QIANWEN</small></span>
+        <span class="site-desc">通义千问智能体中心的「WorldStip 旅行规划大师」技能，说出目的地与天数即可生成专属行程。</span>
+        <span class="site-meta">技能地址 · 本期力荐</span>
+      </a>
+
+    </div>
+    <p class="ai-note">也欢迎直达独立站点 <a href="https://agent.worldstip.com/" target="_blank" rel="noopener noreferrer">agent.worldstip.com</a>，体验完整的 AI 行程规划（国内 + 出境双模式）。</p>
   </section>
 
   <!-- 理念 -->
@@ -442,7 +447,7 @@ section{scroll-margin-top:72px}
       <h2 class="sec-title">这本小册子，现在长这样</h2>
     </div>
     <div class="stats">
-      <div class="stat"><div class="v">254</div><div class="l">目的地子页</div></div>
+      <div class="stat"><div class="v">251</div><div class="l">目的地子页</div></div>
       <div class="stat"><div class="v">20<small style="font-size:.6em">+</small></div><div class="l">个省份地区</div></div>
       <div class="stat"><div class="v">7</div><div class="l">大主题分类</div></div>
       <div class="stat"><div class="v">9</div><div class="l">大区域直达</div></div>
@@ -470,13 +475,13 @@ section{scroll-margin-top:72px}
     <div class="ins-grid">
       <div class="ins-card" style="--ac:#0a84ff">
         <div class="ins-top"><span class="ins-ic" style="background:linear-gradient(135deg,#3a8dff,#0071e3);color:#fff">📖</span><div class="ins-tx"><b>主册小册子</b><small>一屏直览全部目的地</small></div></div>
-        <div class="ins-num">254 <span class="ins-tag" style="background:linear-gradient(135deg,#0071e3,#5e5ce6)">目录卡片</span></div>
+        <div class="ins-num">251 <span class="ins-tag" style="background:linear-gradient(135deg,#0071e3,#5e5ce6)">目录卡片</span></div>
         <div class="ins-bar"><i style="width:100%;background:linear-gradient(90deg,#0071e3,#5e5ce6)"></i></div>
         <div class="ins-sub">按拼音排序，点开即读，检索直达</div>
       </div>
       <div class="ins-card" style="--ac:#34c759">
         <div class="ins-top"><span class="ins-ic" style="background:linear-gradient(135deg,#44c95b,#2bb673);color:#fff">🗺️</span><div class="ins-tx"><b>目的地子页</b><small>一城一册完整攻略</small></div></div>
-        <div class="ins-num">254 <span class="ins-tag" style="background:linear-gradient(135deg,#34c759,#32ade6)">图文指南</span></div>
+        <div class="ins-num">251 <span class="ins-tag" style="background:linear-gradient(135deg,#34c759,#32ade6)">图文指南</span></div>
         <div class="ins-bar"><i style="width:100%;background:linear-gradient(90deg,#34c759,#32ade6)"></i></div>
         <div class="ins-sub">行程 · 美食 · 住宿 · 避坑全包</div>
       </div>
@@ -593,7 +598,7 @@ section{scroll-margin-top:72px}
   "@type":"WebSite",
   "name":"WorldStip 旅行小册子",
   "url":"https://worldstip.com/",
-  "description":"把世界路上攒下的贴士一页页订成册。251 个目的地图文指南，延伸出摩托路线、美食娱乐、AI 规划与全站导航。"
+  "description":"把世界路上攒下的贴士一页页订成册。251 个目的地图文指南，延伸出去哪玩、美食娱乐、摩托路线与去哪拉。"
 }
 </script>
 <script src="/assets/js/pro-guard.js" defer></script>
